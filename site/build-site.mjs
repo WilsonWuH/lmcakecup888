@@ -4,7 +4,7 @@ import path from "node:path";
 const root = process.cwd();
 const siteDir = path.join(root, "site");
 const distDir = path.join(siteDir, "dist");
-const baseUrl = "https://www.langmaipaper.com";
+const baseUrl = "https://www.lmcakecup.com";
 const localeCodes = ["en", "es", "ru", "ar", "fr", "pt"];
 const defaultLocale = "en";
 

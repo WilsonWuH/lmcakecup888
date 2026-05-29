@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.langmaipaper.com/sitemap.xml
+Sitemap: https://www.lmcakecup.com/sitemap.xml
