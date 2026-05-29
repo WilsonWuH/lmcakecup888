@@ -1,0 +1,9 @@
+.vercel
+.git
+.codex_git
+lmcakecup888_deploy_key
+lmcakecup888_deploy_key.pub
+node_modules
+.codex_tmp_pdf_preview
+.DS_Store
+Thumbs.db

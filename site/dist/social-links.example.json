@@ -1,0 +1,19 @@
+{
+  "socialLinks": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/langmai.paper",
+      "icon": "facebook"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/langmai.paper",
+      "icon": "instagram"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/company/langmai-paper",
+      "icon": "linkedin"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "locale": "en",
+  "label": "English",
+  "dir": "ltr",
+  "apiProvider": {
+    "deeplEnv": "DEEPL_API_KEY",
+    "googleCloudEnv": "GOOGLE_CLOUD_TRANSLATE_API_KEY",
+    "note": "Reserved for production translation workflow. Do not use browser translation as SEO content."
+  },
+  "phrases": {
+    "Products": "Products",
+    "Customization": "Customization",
+    "Applications": "Applications",
+    "Cases": "Cases",
+    "Factory & Certificates": "Factory & Certificates",
+    "Resources": "Resources",
+    "About": "About",
+    "Contact": "Contact",
+    "Request Quote": "Request Quote",
+    "Get Free Sample": "Get Free Sample",
+    "Download Catalog Preview": "Download Catalog Preview",
+    "Send Your Requirements": "Send Your Requirements",
+    "View Products": "View Products",
+    "WhatsApp": "WhatsApp"
+  }
+}

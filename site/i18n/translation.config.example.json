@@ -1,0 +1,12 @@
+{
+  "provider": "deepl-or-google-cloud-translation",
+  "deepl": {
+    "apiKeyEnv": "DEEPL_API_KEY",
+    "endpoint": "https://api-free.deepl.com/v2/translate"
+  },
+  "googleCloudTranslation": {
+    "apiKeyEnv": "GOOGLE_CLOUD_TRANSLATE_API_KEY"
+  },
+  "protectedTerms": ["LANGMAI", "Jinhua Langmai Daily-Using Co., Ltd.", "BSCI", "ISO", "FSC", "FDA", "LFGB", "EUDR", "BRC", "OEM", "ODM", "cake cups", "cupcake liners", "air fryer paper liners"],
+  "note": "Use this for production translation QA. The generated locale files are editable SEO dictionaries, not browser translation output."
+}
