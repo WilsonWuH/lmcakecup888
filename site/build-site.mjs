@@ -28,6 +28,28 @@ const company = {
   whatsapp: "+86 13645700210",
 };
 
+const heroProofPoints = [
+  "Low-Odor Custom Ink",
+  "EUDR System Paper",
+  "PFAS-Free Options",
+  "EU / LFGB / BfR Support",
+];
+
+const buyerAdvantages = [
+  ["Low-odor custom ink", "Specially adjusted food-paper printing inks help reduce odor concerns for baking, takeaway and retail packaging."],
+  ["Paper in the EUDR system", "Paper sourcing information can support European buyers reviewing EUDR due-diligence requirements for paper products."],
+  ["European compliance support", "FDA, EU, LFGB, BfR, DGCCRF and PFAS-free documentation can be reviewed or arranged according to the product and destination market."],
+  ["Complete processing capability", "Printing, slitting, die-cutting, perforation, bag making and forming help turn food paper into export-ready finished products."],
+];
+
+const solutionCategories = [
+  ["PFAS-Free Greaseproof Paper", "Burger wrap, fried chicken paper, fries bags, tray liners and takeaway box liners for foodservice packaging."],
+  ["Baking Paper & Cake Cup Liners", "Cupcake liners, muffin cups, baking cups, tray paper and release paper for bakeries and retail baking ranges."],
+  ["Air Fryer Paper Liners", "Round, square, perforated and formed air fryer liners with heat resistance, grease resistance and retail pack support."],
+  ["Steaming & Dim Sum Paper", "Steamer paper, bun liners and perforated non-stick sheets for high-humidity food applications."],
+  ["Custom Printed Food Paper Packaging", "Low-odor custom printing, private-label patterns, carton planning and food-contact document support."],
+];
+
 const socialLinks = [
   { name: "Facebook", url: "https://www.facebook.com/langmai.paper", icon: "facebook" },
   { name: "Instagram", url: "https://www.instagram.com/langmai.paper", icon: "instagram" },
@@ -670,6 +692,28 @@ function homeVideoSection() {
   </section>`;
 }
 
+function buyerAdvantageSection() {
+  return `<section class="section advantage-section" aria-labelledby="advantage-title">
+    <div class="section-heading">
+      <p class="eyebrow">Food-contact paper advantages</p>
+      <h2 id="advantage-title">Food-grade greaseproof paper solutions buyers can verify</h2>
+      <p>LANGMAI combines low-odor custom printing, EUDR system paper sourcing, PFAS-free options and finished-product processing for global food packaging buyers.</p>
+    </div>
+    <div class="advantage-grid">${buyerAdvantages.map(([title, text]) => `<article><h3>${esc(title)}</h3><p>${esc(text)}</p></article>`).join("")}</div>
+  </section>`;
+}
+
+function solutionCategorySection() {
+  return `<section class="section solution-section" aria-labelledby="solution-title">
+    <div class="section-heading">
+      <p class="eyebrow">Application-based product lines</p>
+      <h2 id="solution-title">From paper material to finished food packaging</h2>
+      <p>Different food scenes need different paper performance. Buyers can start from the application, then confirm material, coating, printing, perforation, forming and packaging.</p>
+    </div>
+    <div class="solution-grid">${solutionCategories.map(([title, text]) => `<article><h3>${esc(title)}</h3><p>${esc(text)}</p></article>`).join("")}</div>
+  </section>`;
+}
+
 function homePage() {
   const content = `<section class="hero">
     <div class="hero-slider" aria-label="LANGMAI product banner carousel">
@@ -678,18 +722,20 @@ function homePage() {
       <img class="hero-slide" src="/assets/banner-paper-straws.png" alt="LANGMAI colorful paper straws for beverage and party buyers">
     </div>
     <div class="hero-copy">
-      <p class="eyebrow">China manufacturer for B2B baking paper buyers</p>
-      <h1>Custom Cupcake Liners & Paper Baking Cups Manufacturer</h1>
-      <p>LANGMAI helps importers, distributors, bakery brands and supermarket buyers source custom cupcake liners, paper baking cups, air fryer liners, paper straws and party paper products with OEM/ODM support, visible certificate documents and export-ready cartons.</p>
+      <p class="eyebrow">Food-grade greaseproof paper packaging manufacturer</p>
+      <h1>Low-Odor Printed Food Paper Packaging for Global Buyers</h1>
+      <p>LANGMAI helps importers, distributors, bakery brands and foodservice buyers source greaseproof paper products, cupcake liners, baking cups and air fryer liners with EUDR system paper, PFAS-free options, low-odor custom ink and European food-contact document support.</p>
+      <div class="hero-proof">${heroProofPoints.map((item) => `<span>${esc(item)}</span>`).join("")}</div>
       <div class="hero-actions">
-        <a class="button primary" href="/products/cake-cups/">Explore Cake Cups</a>
+        <a class="button primary" href="/products/cake-cups/">Explore Food Paper Products</a>
         <a class="button secondary" href="/contact/">Request a Quote</a>
       </div>
     </div>
   </section>
   <section class="trust-strip" aria-label="Factory trust points">
-      <span>Founded in ${company.founded}</span><span>${company.plant} factory</span><span>${company.team}</span><span>${company.certificates.join(" / ")}</span>
+      <span>Founded in ${company.founded}</span><span>${company.plant} factory</span><span>Low-odor custom ink</span><span>EUDR / PFAS-free / LFGB / BfR support</span>
   </section>
+  ${buyerAdvantageSection()}
   ${homeVideoSection()}
   ${marketMapSection()}
   <section class="section trust-evidence">
@@ -709,16 +755,17 @@ function homePage() {
     </div>
     ${productCards()}
   </section>
+  ${solutionCategorySection()}
   <section class="split-section">
     <img src="/assets/ai-langmai-ip-showroom.jpg" alt="LANGMAI showroom with branded product samples">
     <div>
       <p class="eyebrow">Factory trust</p>
-      <h2>Real people, real factory, export-ready supply support</h2>
-      <p>${company.name} was founded in ${company.founded} and positions itself as a ${company.position}. The company profile highlights ${company.plant} factory capacity, ${company.team}, OEM/ODM customization and low-odor food-contact printing support.</p>
+      <h2>Real people, real factory, export-ready food paper support</h2>
+      <p>${company.name} was founded in ${company.founded} and positions itself as a ${company.position}. The company profile highlights ${company.plant} factory capacity, ${company.team}, OEM/ODM customization, EUDR system paper sourcing and low-odor food-contact printing support.</p>
       <ul class="check-list">
         <li>LANGMAI supports wholesale buyers, importers and distributors worldwide.</li>
         <li>Target customers include ${company.customers}.</li>
-        <li>BSCI, ISO, FSC, FDA, LFGB, EUDR and BRC documents are listed clearly for buyer review.</li>
+        <li>BSCI, ISO, FSC, FDA, LFGB, EUDR, BfR, DGCCRF, PFAS and BRC documents can support buyer review.</li>
       </ul>
       <a class="button secondary" href="/factory-certificates/">View Factory & Certificates</a>
     </div>
@@ -726,8 +773,8 @@ function homePage() {
   ${ctaBand()}`;
   return layout({
     route: "/",
-    title: "LANGMAI | Custom Cupcake Liners & Baking Cups Manufacturer",
-    description: "Wholesale cupcake liners, paper baking cups, air fryer liners and paper straws from LANGMAI in China, with OEM printing, certificates, samples and export cartons.",
+    title: "LANGMAI | Low-Odor Food Paper Packaging Manufacturer",
+    description: "Food-grade greaseproof paper packaging, cupcake liners, baking cups and air fryer liners with low-odor custom ink, EUDR system paper and European compliance support.",
     content,
     schema: [websiteSchema()],
   });
@@ -1326,7 +1373,7 @@ function writeStatic() {
     if (hiddenCatalogPages.has(file)) continue;
     fs.copyFileSync(path.join(assetSource, file), path.join(assetTarget, file));
   }
-  fs.writeFileSync(path.join(distDir, "styles.css"), css + productTemplateCss);
+  fs.writeFileSync(path.join(distDir, "styles.css"), css + productTemplateCss + warmThemeCss);
   fs.writeFileSync(path.join(distDir, "site.js"), js);
   fs.writeFileSync(path.join(distDir, "social-links.example.json"), JSON.stringify({ socialLinks }, null, 2));
   fs.writeFileSync(path.join(distDir, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${baseUrl}/sitemap.xml\n`);
@@ -1424,6 +1471,30 @@ const productTemplateCss = `
 .article-cta .button{margin:.35rem .4rem .2rem 0}
 @media (max-width:900px){.product-template,.product-gallery,.home-video-section{grid-template-columns:1fr}.ip-card{position:static;order:-1}.video-frame{width:min(100%,360px)}}
 @media (max-width:900px){.inquiry-shell,.form-row{grid-template-columns:1fr}.inquiry-page{padding:3rem 1rem}.inquiry-form{padding:1rem}.language-switcher{margin-left:0}.language-menu{left:0;right:auto}.social-float{display:none}.footer-social a,.social-float a{width:38px;height:38px}}
+`;
+
+const warmThemeCss = `
+:root{--ink:#2f211b;--muted:#7b675b;--line:#ead7c1;--paper:#fff7eb;--soft:#f7ead8;--green:#456b55;--deep:#3a2a20;--copper:#b36f4b;--gold:#d9a85c;--gold-soft:#f7dfb5;--charcoal:#4a3429;--pink:#f8dfe6;--blue:#eef6ef}
+body{background:linear-gradient(180deg,#fff8ee 0%,#f7ead9 52%,#fffaf2 100%);color:var(--ink)}
+.site-header{background:rgba(255,248,238,.9);border-bottom:1px solid rgba(210,166,105,.26);box-shadow:0 12px 30px rgba(115,81,51,.08)}
+.nav-link{color:#385945}.nav-link:hover,.nav-item:focus-within .nav-link{background:rgba(255,240,221,.94);color:#8a4f31;box-shadow:0 10px 24px rgba(145,92,52,.12),inset 0 0 0 1px rgba(217,168,92,.34)}
+.mega-inner{background:linear-gradient(135deg,rgba(255,250,244,.92),rgba(245,226,204,.86));border-color:rgba(217,168,92,.36);box-shadow:0 26px 70px rgba(119,81,52,.18),inset 0 1px 0 rgba(255,255,255,.72)}
+.mega-intro{background:linear-gradient(145deg,rgba(255,239,214,.96),rgba(255,251,246,.72));color:var(--ink)}
+.mega-intro p{color:var(--muted)}.mega-links a{color:var(--ink);background:rgba(255,255,255,.62);border-color:rgba(217,168,92,.24)}.mega-links a:hover{background:#fff4e4;box-shadow:0 12px 28px rgba(145,92,52,.14)}.mega-links span{color:var(--muted)}
+.primary{background:linear-gradient(135deg,#8b5a3c,#456b55);border-color:rgba(217,168,92,.42);box-shadow:0 12px 28px rgba(111,75,48,.18)}.primary:hover{background:#d9a85c;color:#2f211b}.secondary{background:rgba(255,250,244,.94);color:#456b55;border-color:rgba(69,107,85,.42)}.secondary:hover{background:#fff0db;color:#8a4f31;border-color:#d9a85c}
+.hero{background:#38271f}.hero-slide{filter:brightness(78%) saturate(1.02)}.hero:after{background:linear-gradient(90deg,rgba(62,39,28,.74),rgba(92,59,42,.44),rgba(255,245,232,.12))}.hero .eyebrow{color:#ffe1aa}.hero .hero-copy p{color:rgba(255,250,244,.92)}
+.hero-proof{display:flex;gap:.55rem;flex-wrap:wrap;margin:1.2rem 0 .2rem}.hero-proof span{padding:.42rem .72rem;border-radius:999px;background:rgba(255,248,238,.18);border:1px solid rgba(255,225,170,.5);color:#fff4df;font-weight:850;box-shadow:inset 0 1px 0 rgba(255,255,255,.16)}
+.trust-strip{background:linear-gradient(135deg,#77503b,#6f8b65);border-color:rgba(255,225,170,.35)}.trust-strip span{background:rgba(255,250,244,.16);border-color:rgba(255,231,187,.45)}
+.advantage-section,.solution-section{background:linear-gradient(135deg,rgba(255,244,228,.78),rgba(241,248,236,.68));border-top:1px solid rgba(217,168,92,.18);border-bottom:1px solid rgba(217,168,92,.18);max-width:none}.advantage-section>.section-heading,.solution-section>.section-heading,.advantage-grid,.solution-grid{max-width:1180px;margin-left:auto;margin-right:auto}.advantage-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}.solution-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}.advantage-grid article,.solution-grid article{background:rgba(255,255,255,.72);border:1px solid rgba(217,168,92,.24);border-radius:8px;padding:1rem;box-shadow:0 16px 34px rgba(111,75,48,.08)}.advantage-grid h3,.solution-grid h3{margin:.1rem 0 .55rem;color:#385945;line-height:1.2}.advantage-grid p,.solution-grid p{margin:0;color:var(--muted)}
+.product-card,.resource-grid article,.process-grid article,.lead-form,.certificate-card{background:linear-gradient(180deg,#fffdf8,#fff4e8);border-color:rgba(217,168,92,.24);box-shadow:0 16px 34px rgba(111,75,48,.08)}.trust-evidence{background:linear-gradient(135deg,rgba(255,244,228,.7),rgba(241,248,236,.58))}.map-panel{background:linear-gradient(145deg,#fffdf8,#f7ead8);box-shadow:0 22px 55px rgba(111,75,48,.12),inset 0 1px 0 rgba(255,255,255,.9)}
+th{background:#6f4b38;color:#fff4df}.link-grid a,.badge-grid span{background:#fff4e4;border-color:rgba(217,168,92,.3);color:#456b55}.process-grid span{background:#e8bd75;color:#2f211b}.sample-box{background:#fff1dc}
+.cta-band{background:linear-gradient(135deg,#77503b,#6f8b65 72%,#d9a85c);border-color:rgba(255,225,170,.35)}.site-footer{background:linear-gradient(135deg,#5e4031,#496c55);border-top-color:rgba(255,225,170,.35)}.site-footer p{color:rgba(255,250,244,.78)}
+.whatsapp-float{background:linear-gradient(135deg,#4f9c68,#456b55);box-shadow:0 14px 34px rgba(69,107,85,.24),0 0 0 1px rgba(255,225,170,.35)}
+.ip-card{background:linear-gradient(145deg,rgba(255,253,248,.92),rgba(244,236,220,.82));box-shadow:0 24px 65px rgba(111,75,48,.14),inset 0 1px 0 rgba(255,255,255,.88)}
+.video-frame{background:linear-gradient(145deg,#7b523a,#f4dfbf 62%,#6f8b65);box-shadow:0 26px 70px rgba(111,75,48,.2),0 0 0 1px rgba(217,168,92,.28)}.video-frame:before{background:radial-gradient(circle at 18% 10%,rgba(255,244,220,.4),transparent 34%)}
+.footer-social a,.social-float a{background:linear-gradient(145deg,#fff0db,#d9a85c);border-color:rgba(139,90,60,.28);color:#5e4031;box-shadow:0 10px 28px rgba(111,75,48,.16),inset 0 1px 0 rgba(255,255,255,.42)}.footer-social a:hover,.social-float a:hover{border-color:#b36f4b;box-shadow:0 16px 36px rgba(179,111,75,.18),0 12px 30px rgba(111,75,48,.16)}
+.inquiry-page{background:radial-gradient(circle at 12% 12%,rgba(255,225,170,.34),transparent 28%),radial-gradient(circle at 88% 18%,rgba(111,139,101,.18),transparent 24%),linear-gradient(135deg,#fff7eb,#f4dfc2 58%,#fffaf2);color:var(--ink)}.inquiry-copy h1{color:var(--ink)}.inquiry-copy p{color:var(--muted)}.tech-kicker{color:#b36f4b!important}.inquiry-proof span{border-color:rgba(217,168,92,.32);background:rgba(255,255,255,.54);color:#5e4031}.inquiry-contact{color:var(--ink)}.inquiry-contact a{color:#8a4f31}.inquiry-form{border-color:rgba(217,168,92,.32);background:linear-gradient(145deg,rgba(255,253,248,.92),rgba(255,244,228,.82));box-shadow:0 28px 70px rgba(111,75,48,.16),inset 0 1px 0 rgba(255,255,255,.72)}.inquiry-form label{color:var(--ink)}.inquiry-form label span{color:#b36f4b}.inquiry-form input,.inquiry-form textarea{background:#fffdf8;border-color:rgba(179,111,75,.24);color:var(--ink)}.inquiry-form input::placeholder,.inquiry-form textarea::placeholder{color:#a58d7d}.inquiry-form input:focus,.inquiry-form textarea:focus{outline:2px solid rgba(217,168,92,.42);border-color:#d9a85c}.anti-spam{border-top-color:rgba(217,168,92,.2)}.anti-spam label{color:var(--ink)}.anti-spam p,.inquiry-status{color:var(--muted)}.inquiry-submit{background:linear-gradient(135deg,#d9a85c,#8b5a3c);color:#fffaf2;box-shadow:0 14px 32px rgba(179,111,75,.18)}.article-cta{background:linear-gradient(135deg,#77503b,#6f8b65)}
+@media (max-width:900px){.advantage-grid,.solution-grid{grid-template-columns:1fr}.advantage-section>.section-heading,.solution-section>.section-heading,.advantage-grid,.solution-grid{margin-left:0;margin-right:0}}
 `;
 
 const js = `
