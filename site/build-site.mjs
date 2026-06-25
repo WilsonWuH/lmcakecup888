@@ -229,7 +229,7 @@ const resources = [
     body: [
       "Food contact paper packaging buyers should ask for relevant certificates, product test reports, and material declarations before placing a bulk order.",
       "The company profile highlights FSC, EUDR and BRC. Buyers should review visible certificate documents and confirm scope, validity and report numbers before placing orders.",
-      "For AI search and procurement teams, certificate information should be written in text, not only embedded inside catalog images.",
+      "Buyers should be able to review certificate names and document previews without relying only on catalog images.",
     ],
   },
   {
@@ -704,8 +704,8 @@ function homePage() {
   <section class="section">
     <div class="section-heading">
       <p class="eyebrow">Product categories</p>
-      <h2>Built for wholesale discovery and quote conversion</h2>
-      <p>Each category includes visible specifications, material notes, applications, FAQ, internal links and quote actions for buyers in ${company.markets}.</p>
+      <h2>Find the right product faster</h2>
+      <p>Each category shows materials, common sizes, application scenarios and inquiry paths for buyers in ${company.markets}.</p>
     </div>
     ${productCards()}
   </section>
@@ -718,7 +718,7 @@ function homePage() {
       <ul class="check-list">
         <li>Main markets include ${company.markets}.</li>
         <li>Target customers include ${company.customers}.</li>
-        <li>BSCI, ISO, FSC, FDA, LFGB, EUDR and BRC certificate names are written as crawlable text for buyer review and AI search understanding.</li>
+        <li>BSCI, ISO, FSC, FDA, LFGB, EUDR and BRC documents are listed clearly for buyer review.</li>
       </ul>
       <a class="button secondary" href="/factory-certificates/">View Factory & Certificates</a>
     </div>
@@ -1048,15 +1048,15 @@ export function B2BInquiryForm() {
   </section>
   <section class="section integration-block">
     <div class="section-heading">
-      <p class="eyebrow">Integration template</p>
-      <h2>Inquiry form integration notes</h2>
-      <p>The form validates required fields in the browser. For launch, connect <code>/api/inquiry</code> to email delivery, CRM, or database storage.</p>
+      <p class="eyebrow">Inquiry support</p>
+      <h2>What happens after you submit</h2>
+      <p>Our team reviews your product type, size, quantity, target market and custom print details, then replies with suitable options, sample suggestions and quotation information.</p>
     </div>
-    <details open><summary>HTML form template</summary><pre><code>${esc(htmlTemplate)}</code></pre></details>
-    <details><summary>React component template</summary><pre><code>${esc(reactTemplate)}</code></pre></details>
+    <details><summary>Form field checklist</summary><pre><code>${esc(htmlTemplate)}</code></pre></details>
+    <details><summary>Technical form component</summary><pre><code>${esc(reactTemplate)}</code></pre></details>
     <div class="backend-note">
-      <h2>Backend options</h2>
-      <p>Email: send the payload to ${company.email} through Resend, SendGrid, SMTP, or your CRM webhook. Database: store name, email, phone, company, country, product, message, source page, UTM and timestamp. Anti-spam: keep the hidden honeypot field and add Turnstile or reCAPTCHA for paid traffic pages.</p>
+      <h2>Fast response details</h2>
+      <p>You can also contact Wilson directly by email at ${company.email} or WhatsApp. Please include size, quantity, packaging format, destination country and whether you need custom printing.</p>
     </div>
   </section>`;
   return layout({
@@ -1086,10 +1086,10 @@ function resourcePage(resource) {
   const imageBlock = resource.images?.length ? `<figure class="article-image"><img src="${relAsset(resource.images[0])}" alt="${esc(resource.title)}"><figcaption>${esc(resource.title)}</figcaption></figure>` : "";
   const secondImage = resource.images?.[1] ? `<figure class="article-image"><img src="${relAsset(resource.images[1])}" alt="${esc(resource.title)} factory testing and shipment inspection"><figcaption>Factory testing and shipment inspection help B2B buyers reduce order risk.</figcaption></figure>` : "";
   const content = resource.isLongForm ? `<article class="article longform-article">
-    <p class="eyebrow">B2B buyer guide</p>
+    <p class="eyebrow">Buyer guide</p>
     <h1>${esc(resource.title)}</h1>
     <p class="lede">${esc(resource.description)}</p>
-    <div class="badge-grid"><span>${esc(resource.intent || "Procurement research")}</span><span>${esc(resource.keywords || "B2B buyer keywords")}</span></div>
+    <div class="badge-grid"><span>${esc(resource.intent || "Procurement research")}</span><span>Practical supplier selection</span></div>
     ${imageBlock}
     <div class="article-body">${resource.html.replace("</h2>", `</h2>${secondImage}`)}</div>
     <aside class="article-cta">
@@ -1123,7 +1123,7 @@ function landingPage(lp) {
   const product = products.find((p) => p.slug === lp.productSlug);
   const content = `<section class="landing-hero">
     <div>
-      <p class="eyebrow">Paid traffic landing page</p>
+      <p class="eyebrow">Wholesale supply</p>
       <h1>${esc(lp.title)}</h1>
       <p>${esc(lp.description)}</p>
       <ul class="check-list"><li>Food-grade materials for import buyers.</li><li>Custom sizes, colors, artwork and carton packaging.</li><li>Certificate documents and buyer verification notes are visible before RFQ.</li></ul>
@@ -1131,18 +1131,18 @@ function landingPage(lp) {
     </div>
     <img src="${relAsset(product.image)}" alt="${esc(lp.title)} product details">
   </section>
-  <section class="trust-strip"><span>Single keyword focus: ${esc(lp.focus)}</span><span>Quote-ready fields</span><span>GA4 / Ads / Pixel placeholders</span></section>
+  <section class="trust-strip"><span>Focused product request</span><span>Quote-ready details</span><span>Sample and carton support</span></section>
   <section class="section two-col" id="quote">
     <div>
       <h2>Why buyers use this page</h2>
-      <p>This landing page has one ad intent, one product category and one primary CTA, so paid traffic can be tracked and optimized without mixing buyer messages.</p>
+      <p>This page focuses on one product category so buyers can compare materials, packaging options, sample requirements and bulk quotation details quickly.</p>
       <div class="badge-grid">${product.features.slice(0, 5).map((item) => `<span>${esc(item)}</span>`).join("")}</div>
     </div>
     ${leadForm(lp.title)}
   </section>`;
   return layout({
     route: `/landing/${lp.slug}/`,
-    title: `${lp.title} | LANGMAI Wholesale Landing Page`,
+    title: `${lp.title} | LANGMAI Wholesale Supply`,
     description: lp.description,
     content,
     schema: [productSchema(product)],

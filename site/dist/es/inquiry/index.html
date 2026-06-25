@@ -213,11 +213,11 @@
   </section>
   <section class="section integration-block">
     <div class="section-heading">
-      <p class="eyebrow">Integration template</p>
-      <h2>Inquiry form integration notes</h2>
-      <p>The form validates required fields in the browser. For launch, connect <code>/api/inquiry</code> to email delivery, CRM, or database storage.</p>
+      <p class="eyebrow">Inquiry support</p>
+      <h2>What happens after you submit</h2>
+      <p>Our team reviews your product type, size, quantity, target market and custom print details, then replies with suitable options, sample suggestions and quotation information.</p>
     </div>
-    <details open><summary>HTML form template</summary><pre><code>&lt;form class=&quot;b2b-inquiry-form&quot; method=&quot;post&quot; action=&quot;/api/inquiry&quot;&gt;
+    <details><summary>Form field checklist</summary><pre><code>&lt;form class=&quot;b2b-inquiry-form&quot; method=&quot;post&quot; action=&quot;/api/inquiry&quot;&gt;
   &lt;label&gt;Name *&lt;input name=&quot;name&quot; required placeholder=&quot;Your full name&quot;&gt;&lt;/label&gt;
   &lt;label&gt;Email *&lt;input type=&quot;email&quot; name=&quot;email&quot; required placeholder=&quot;buyer@example.com&quot;&gt;&lt;/label&gt;
   &lt;label&gt;Phone *&lt;input type=&quot;tel&quot; name=&quot;phone&quot; required pattern=&quot;^[+()0-9\s-]{7,24}$&quot; placeholder=&quot;+1 555 123 4567&quot;&gt;&lt;/label&gt;
@@ -228,7 +228,7 @@
   &lt;input class=&quot;hp-field&quot; name=&quot;website&quot; tabindex=&quot;-1&quot; autocomplete=&quot;off&quot;&gt;
   &lt;button type=&quot;submit&quot;&gt;Submit Inquiry&lt;/button&gt;
 &lt;/form&gt;</code></pre></details>
-    <details><summary>React component template</summary><pre><code>import { useState } from &quot;react&quot;;
+    <details><summary>Technical form component</summary><pre><code>import { useState } from &quot;react&quot;;
 
 export function B2BInquiryForm() {
   const [status, setStatus] = useState(&quot;idle&quot;);
@@ -257,8 +257,8 @@ export function B2BInquiryForm() {
   return &lt;form onSubmit={onSubmit}&gt;{/* fields match the HTML template */}&lt;/form&gt;;
 }</code></pre></details>
     <div class="backend-note">
-      <h2>Backend options</h2>
-      <p>Email: send the payload to wh1007209170@gmail.com through Resend, SendGrid, SMTP, or your CRM webhook. Database: store name, email, phone, company, country, product, message, source page, UTM and timestamp. Anti-spam: keep the hidden honeypot field and add Turnstile or reCAPTCHA for paid traffic pages.</p>
+      <h2>Fast response details</h2>
+      <p>You can also contact Wilson directly by email at wh1007209170@gmail.com or WhatsApp. Please include size, quantity, packaging format, destination country and whether you need custom printing.</p>
     </div>
   </section></main>
   <footer class="site-footer">

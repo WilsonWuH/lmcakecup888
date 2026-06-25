@@ -458,7 +458,7 @@ Packaging questions:
 - How many packs per export carton?
 - What are the carton dimensions and gross weight?
 
-For paid traffic landing pages, clear pack photos can improve conversion because buyers immediately understand retail readiness.
+For product inquiry pages, clear pack photos help buyers understand retail readiness before they request samples or bulk pricing.
 
 ## 5. Sample Testing Before Bulk Orders
 
