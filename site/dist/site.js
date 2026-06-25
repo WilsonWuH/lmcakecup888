@@ -6,7 +6,7 @@ document.querySelectorAll("[data-lead-form]").forEach((form)=>{
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({event:"lead_form_submit",product:data.product,country:data.country,quantity:data.quantity});
     const note = form.querySelector("[data-form-note]");
-    note.textContent = "Inquiry captured in this demo. Connect this form to email, CRM or marketing automation before launch.";
+    note.textContent = "Inquiry captured. Connect this form to email, CRM or marketing automation before launch.";
   });
 });
 

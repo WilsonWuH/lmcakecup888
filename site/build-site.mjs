@@ -19,7 +19,7 @@ const company = {
   plant: "30,000+ square meters",
   team: "50+ elite team members",
   position: "Cupcake liner manufacturer / OEM & ODM solution provider",
-  markets: "Middle East, North America, Europe, England, South America",
+  markets: "Middle East, North America, Europe, United Kingdom, South America",
   customers: "Importers, distributors, bakery and confectionery buyers, large supermarkets",
   certificates: ["BSCI", "ISO", "FSC", "FDA", "LFGB", "EUDR", "BRC"],
   contact: "Wilson Wu",
@@ -38,17 +38,17 @@ const certificateFiles = [
   {
     name: "BSCI",
     image: "cert-bsci.png",
-    text: "amfori BSCI audit extract for social compliance review.",
+    text: "amfori BSCI audit extract for social compliance screening.",
   },
   {
     name: "BRC",
     image: "cert-brc.png",
-    text: "BRC-related document signal for importer quality review.",
+    text: "BRC-related document for importer quality review.",
   },
   {
     name: "ISO",
     image: "cert-iso.png",
-    text: "ISO certificate image for factory management confidence.",
+    text: "ISO certificate preview for factory management review.",
   },
   {
     name: "LFGB",
@@ -58,7 +58,7 @@ const certificateFiles = [
   {
     name: "DGCCRF",
     image: "cert-dgccrf.png",
-    text: "DGCCRF test report signal for French and EU compliance checks.",
+    text: "DGCCRF test report for French and EU compliance checks.",
   },
   {
     name: "PFAS",
@@ -123,8 +123,8 @@ const specs = {
 const products = [
   {
     slug: "cake-cups",
-    title: "Paper Cupcake Cup Liners & Custom Cake Cups Wholesale",
-    short: "Food grade greaseproof paper cupcake cup liners for bakery and confectionery buyers, large supermarkets, importers and distributors.",
+    title: "Custom Cupcake Liners & Paper Baking Cups Wholesale",
+    short: "Food-grade greaseproof cupcake liners and paper baking cups for bakeries, importers, distributors and supermarket private-label programs.",
     image: "real-cake-cups-assortment.jpg",
     gallery: ["real-cake-cups-assortment.jpg", "real-cake-cups-stacked.jpg", "cake-cups-clean.jpg"],
     keywords: "paper cupcake cup liner, custom cake cups wholesale, cupcake liner manufacturer, paper baking cups supplier",
@@ -136,8 +136,8 @@ const products = [
   },
   {
     slug: "roll-mouth-cake-cups",
-    title: "Roll Mouth Cake Cups for Baking and Dessert Packaging",
-    short: "PET coated roll mouth cake cups with rigid shape, colorful finishes, and OEM printing support.",
+    title: "Roll-Mouth Paper Baking Cups for OEM Dessert Packaging",
+    short: "PET-coated roll-mouth baking cups with a rigid shape, colorful finishes and OEM printing support for desserts, muffins and retail bakery displays.",
     image: "real-roll-mouth-cups.jpg",
     gallery: ["real-roll-mouth-cups.jpg", "roll-mouth-cake-cups-clean.jpg", "real-cake-cups-stacked.jpg"],
     keywords: "roll mouth cake cups, PET coated cake cups, custom printed baking cups",
@@ -149,8 +149,8 @@ const products = [
   },
   {
     slug: "muffin-baking-cups",
-    title: "Muffin Baking Cup Liners for Bakeries, Cafes and Events",
-    short: "Tall PET coated muffin baking cup liners for branded bakery displays, cafe counters, supermarkets and event desserts.",
+    title: "Muffin Cup Liners for Bakeries, Cafes and Events",
+    short: "Tall PET-coated muffin cup liners for branded bakery displays, cafe counters, supermarkets and event dessert programs.",
     image: "real-cake-cups-stacked.jpg",
     gallery: ["real-cake-cups-stacked.jpg", "muffin-baking-cups-clean.jpg", "real-cake-cups-assortment.jpg"],
     keywords: "muffin baking cup liner, PET coated muffin cups, muffin baking cups wholesale, custom muffin cups",
@@ -162,8 +162,8 @@ const products = [
   },
   {
     slug: "air-fryer-paper-liners",
-    title: "Air Fryer Paper Liner Bulk Supplier",
-    short: "Round and square food grade silicone paper liners for air fryers, ovens, supermarkets and ready-to-cook food packs.",
+    title: "Air Fryer Paper Liners in Bulk for Retail & Foodservice",
+    short: "Round and square food-grade silicone paper liners for air fryers, ovens, supermarkets and ready-to-cook food packs.",
     image: "ai-air-fryer-liners-premium.jpg",
     gallery: ["ai-air-fryer-liners-premium.jpg", "air-fryer-liners-clean.jpg", "ai-quality-export-packaging.jpg"],
     keywords: "air fryer paper liner, air fryer paper liners bulk, air fryer parchment liners supplier, silicone paper liner wholesale",
@@ -175,8 +175,8 @@ const products = [
   },
   {
     slug: "paper-straws",
-    title: "Biodegradable Paper Straws Wholesale",
-    short: "Food grade kraft paper straws in solid, striped, and seasonal designs for beverage and party supply buyers.",
+    title: "Biodegradable Paper Straws for Wholesale Beverage Buyers",
+    short: "Food-grade kraft paper straws in solid, striped and seasonal designs for beverage brands, restaurants, party supply buyers and retail packs.",
     image: "real-paper-straws.jpg",
     gallery: ["real-paper-straws.jpg", "paper-straws-clean.jpg", "ai-quality-export-packaging.jpg"],
     keywords: "paper straws wholesale, biodegradable paper straws, food grade kraft paper straws",
@@ -188,8 +188,8 @@ const products = [
   },
   {
     slug: "party-accessories",
-    title: "Paper Party Accessories and Cupcake Decorations",
-    short: "Cupcake toppers, paper doilies, cake boards, themed cups, straws, plates, and disposable tableware sets.",
+    title: "Paper Party Accessories for Retail and Event Supply",
+    short: "Cupcake toppers, paper doilies, cake boards, themed cups, straws, plates and disposable tableware sets for retail and event channels.",
     image: "party-accessories-clean.jpg",
     gallery: ["party-accessories-clean.jpg", "ai-langmai-ip-showroom.jpg", "ai-quality-export-packaging.jpg"],
     keywords: "paper party accessories supplier, cupcake decorations wholesale, disposable party tableware",
@@ -228,7 +228,7 @@ const resources = [
     description: "What importers should confirm before ordering food contact paper baking products from an OEM supplier.",
     body: [
       "Food contact paper packaging buyers should ask for relevant certificates, product test reports, and material declarations before placing a bulk order.",
-      "The updated company brief highlights FSC, EUDR and BRC as key certificate signals. Public website pages should show certificate names clearly and add scanned files when approved for publication.",
+      "The company profile highlights FSC, EUDR and BRC. Buyers should review visible certificate documents and confirm scope, validity and report numbers before placing orders.",
       "For AI search and procurement teams, certificate information should be written in text, not only embedded inside catalog images.",
     ],
   },
@@ -258,21 +258,21 @@ const landingPages = [
   {
     slug: "custom-cake-cups-wholesale",
     title: "Custom Cake Cups Wholesale",
-    description: "Source custom printed paper cupcake cup liners from a China manufacturer with food grade materials, OEM/ODM designs, FSC/EUDR/BRC signals, and bulk packaging.",
+    description: "Source custom printed cupcake liners and paper cake cups from a China manufacturer with food-grade materials, OEM/ODM design support and bulk export packaging.",
     productSlug: "cake-cups",
     focus: "custom cake cups wholesale",
   },
   {
     slug: "air-fryer-paper-liners-bulk",
     title: "Air Fryer Paper Liners Bulk",
-    description: "Bulk air fryer paper liner options in round and square shapes with food grade silicone paper, heat resistance, and carton packaging.",
+    description: "Bulk air fryer paper liner options in round and square shapes with food-grade silicone paper, heat resistance and carton packaging.",
     productSlug: "air-fryer-paper-liners",
     focus: "air fryer paper liners bulk",
   },
   {
     slug: "custom-cupcake-liners-manufacturer",
     title: "Custom Cupcake Liners Manufacturer",
-    description: "OEM cupcake liner manufacturer for greaseproof, customized odorless ink printed, colorful baking paper cups.",
+    description: "OEM cupcake liner manufacturer for greaseproof, colorful paper baking cups with low-odor food-contact printing and sample confirmation.",
     productSlug: "cake-cups",
     focus: "custom cupcake liners manufacturer",
   },
@@ -465,7 +465,7 @@ function siteHeader() {
     </a>
     <nav class="main-nav" aria-label="Main navigation">
       ${megaNavItem("Products", "/products/", [
-        ["Paper Cupcake Cup Liners", "/products/cake-cups/", "Main wholesale line for bakeries and supermarkets"],
+        ["Cupcake Liners & Baking Cups", "/products/cake-cups/", "Main wholesale line for bakeries and supermarkets"],
         ["Air Fryer Paper Liner", "/products/air-fryer-paper-liners/", "Bulk round and square silicone paper liners"],
         ["Roll Mouth Cake Cups", "/products/roll-mouth-cake-cups/", "PET coated cups for dessert and bakery display"],
         ["Muffin Baking Cup Liners", "/products/muffin-baking-cups/", "Tall cups for cafes, bakeries and food brands"],
@@ -488,14 +488,14 @@ function siteHeader() {
         ["Export Markets", "/#market-map-title", "China to key overseas buying regions"],
       ], "Verify factory")}
       ${megaNavItem("Resources", "/resources/", [
-        ["Buying Guides", "/resources/", "SEO buyer guides for food paper products"],
+        ["Buying Guides", "/resources/", "Practical guides for food paper product buyers"],
         ["Certificate Guide", "/resources/food-paper-certificates/", "Compliance notes for import buyers"],
         ["Cupcake Liner Selection", "/resources/choose-custom-cupcake-liners/", "How to choose baking cup specs"],
       ], "Read resources")}
       <a class="nav-link simple" href="/about/">About</a>
       <a class="nav-link simple" href="/contact/">Contact</a>
     </nav>
-    <a class="header-cta" href="/contact/">Request Quote</a>
+    <a class="header-cta" href="/contact/">Request a Quote</a>
     ${languageSwitcher("/")}
   </div>
 </header>`;
@@ -508,8 +508,8 @@ function megaNavItem(label, href, items, ctaLabel) {
       <div class="mega-inner">
         <div class="mega-intro">
           <p class="eyebrow">${label}</p>
-          <h2>${label === "Products" ? "Wholesale product architecture" : label}</h2>
-          <p>Fast paths for overseas B2B buyers to review product fit, factory trust and quote-ready information.</p>
+          <h2>${label === "Products" ? "Wholesale product categories" : label}</h2>
+          <p>Fast paths for overseas B2B buyers to review product fit, certificate evidence and quote-ready details.</p>
           <a class="button primary" href="${href}">${ctaLabel}</a>
         </div>
         <div class="mega-links">
@@ -525,7 +525,7 @@ function siteFooter() {
   <div class="footer-grid">
     <div>
       <strong>${company.name}</strong>
-      <p>${company.brand} supplies custom cake cups, cupcake liners, air fryer paper liners, paper straws and paper party accessories for B2B buyers.</p>
+      <p>${company.brand} supplies custom cupcake liners, paper baking cups, air fryer paper liners, paper straws and paper party accessories for B2B buyers.</p>
     </div>
     <div>
       <h2>Buyer Actions</h2>
@@ -535,7 +535,7 @@ function siteFooter() {
     </div>
     <div>
       <h2>Trust</h2>
-      <p>Founded in ${company.founded}. ${company.plant} factory capacity. ${company.team}. Key certificate signals: ${company.certificates.join(", ")}.</p>
+      <p>Founded in ${company.founded}. ${company.plant} factory capacity. ${company.team}. Certificate documents: ${company.certificates.join(", ")}.</p>
       <p>Contact: ${company.contact}<br>Email: ${company.email}<br>WhatsApp: ${company.whatsapp}</p>
       ${socialIconLinks("footer-social")}
     </div>
@@ -563,7 +563,7 @@ function ctaBand(title = "Ready to price your next baking paper order?") {
     <div>
       <p class="eyebrow">Wholesale inquiry</p>
       <h2>${esc(title)}</h2>
-      <p>Share product type, size, quantity, target market and custom print needs. LANGMAI can support stock designs, OEM artwork and sample checks.</p>
+      <p>Share product type, size, quantity, destination market and custom print needs. LANGMAI can support stock designs, OEM artwork, samples and export carton planning.</p>
     </div>
     <div class="cta-actions">
       <a class="button primary" href="/contact/">Request a Quote</a>
@@ -572,7 +572,7 @@ function ctaBand(title = "Ready to price your next baking paper order?") {
   </section>`;
 }
 
-function leadForm(defaultProduct = "Custom cake cups") {
+function leadForm(defaultProduct = "Custom cupcake liners") {
   return `<form class="lead-form" data-lead-form>
   <label>Name<input name="name" placeholder="Your name" required></label>
   <label>Email<input type="email" name="email" placeholder="buyer@example.com" required></label>
@@ -582,11 +582,11 @@ function leadForm(defaultProduct = "Custom cake cups") {
   <label>WhatsApp<input name="whatsapp" placeholder="+1 ..."></label>
   <label>Message<textarea name="message" placeholder="Tell us the size, material, custom print, packaging and delivery needs." rows="4"></textarea></label>
   <button class="button primary" type="submit">Send Inquiry</button>
-  <p class="form-note" data-form-note>Thank you. Our sales team will contact you soon. Static demo note: connect this form to ${esc(company.email)} before launch.</p>
+  <p class="form-note" data-form-note>Thank you. Our sales team will contact you soon. For launch, connect this form to ${esc(company.email)}, CRM or marketing automation.</p>
 </form>`;
 }
 
-function ipStickyCard(productTitle = "Custom cake cups") {
+function ipStickyCard(productTitle = "Custom cupcake liners") {
   return `<aside class="ip-card" aria-label="Wilson Wu contact card">
     <img src="/assets/founder.jpg" alt="Wilson Wu, LANGMAI sales contact">
     <div>
@@ -598,7 +598,7 @@ function ipStickyCard(productTitle = "Custom cake cups") {
         <li>Sample and catalog request</li>
         <li>WhatsApp quick reply</li>
       </ul>
-      <a class="button primary" href="/contact/">Request Quote</a>
+      <a class="button primary" href="/contact/">Request a Quote</a>
       <a class="button secondary" href="https://wa.me/8613645700210">WhatsApp Wilson</a>
       <span class="ip-note">${esc(productTitle)}</span>
     </div>
@@ -613,7 +613,7 @@ function productCards() {
       <div>
         <h3><a href="/products/${p.slug}/">${esc(p.title)}</a></h3>
         <p>${esc(p.short)}</p>
-        <a class="text-link" href="/products/${p.slug}/">View specifications</a>
+        <a class="text-link" href="/products/${p.slug}/">View specs and options</a>
       </div>
     </article>`,
     )
@@ -642,7 +642,7 @@ function marketMapSection() {
     <div class="section-heading">
       <p class="eyebrow">Export markets</p>
       <h2 id="market-map-title">From China to key overseas buying regions</h2>
-      <p>LANGMAI supports importers, distributors, bakery and confectionery buyers, and large supermarkets across the Middle East, Europe, England, North America and South America.</p>
+      <p>LANGMAI supports importers, distributors, bakery and confectionery buyers, and large supermarkets across the Middle East, Europe, the United Kingdom, North America and South America.</p>
     </div>
     <div class="map-panel map-image-panel" role="img" aria-label="World map showing LANGMAI export routes from China to overseas markets">
       <img src="/assets/world-market-map.png" alt="LANGMAI export market map from China to North America, Europe, Middle East, South America and Asia">
@@ -655,7 +655,7 @@ function homeVideoSection() {
     <div class="video-copy">
       <p class="eyebrow">Factory video</p>
       <h2 id="home-video-title">A closer look at LANGMAI products and export-ready presentation</h2>
-      <p>This vertical video area is designed for mobile-first B2B buyers. It keeps the original portrait ratio, shows visible controls, and works responsively on desktop and mobile.</p>
+      <p>Use the video to review product appearance, packaging style and factory presentation before requesting samples or a bulk quotation.</p>
       <div class="hero-actions">
         <a class="button primary" href="/inquiry/">Send Your Requirements</a>
         <a class="button secondary" href="/products/">View Products</a>
@@ -679,11 +679,11 @@ function homePage() {
     </div>
     <div class="hero-copy">
       <p class="eyebrow">China manufacturer for B2B baking paper buyers</p>
-      <h1>Wholesale Custom Cake Cups & Baking Paper Products Manufacturer in China</h1>
-      <p>LANGMAI helps importers, distributors, bakery and confectionery buyers, and large supermarkets source paper cupcake cup liners, air fryer paper liner, muffin baking cup liner, paper straws and party paper accessories with OEM/ODM design support.</p>
+      <h1>Custom Cupcake Liners & Paper Baking Cups Manufacturer</h1>
+      <p>LANGMAI helps importers, distributors, bakery brands and supermarket buyers source custom cupcake liners, paper baking cups, air fryer liners, paper straws and party paper products with OEM/ODM support, visible certificate documents and export-ready cartons.</p>
       <div class="hero-actions">
         <a class="button primary" href="/products/cake-cups/">Explore Cake Cups</a>
-        <a class="button secondary" href="/contact/">Request Quote</a>
+        <a class="button secondary" href="/contact/">Request a Quote</a>
       </div>
     </div>
   </section>
@@ -695,17 +695,17 @@ function homePage() {
   <section class="section trust-evidence">
     <div class="section-heading">
       <p class="eyebrow">Buyer trust evidence</p>
-      <h2>Real certificate previews for faster supplier screening</h2>
-      <p>Instead of only listing certificate names, LANGMAI shows visible compliance documents so overseas buyers can quickly assess social audit, food contact and factory management signals before sending an RFQ.</p>
+      <h2>Visible certificate previews for faster supplier screening</h2>
+      <p>Instead of only listing certificate names, LANGMAI shows compliance document previews so overseas buyers can quickly assess social audit, food-contact and factory management evidence before sending an RFQ.</p>
     </div>
     ${certificateCards(3)}
     <p><a class="button secondary" href="/factory-certificates/">View all certificates</a></p>
   </section>
   <section class="section">
     <div class="section-heading">
-      <p class="eyebrow">Product architecture</p>
-      <h2>Built for wholesale discovery, SEO and quote conversion</h2>
-      <p>Each product category includes visible specifications, material notes, applications, FAQ, internal links and quote actions for buyers in ${company.markets}.</p>
+      <p class="eyebrow">Product categories</p>
+      <h2>Built for wholesale discovery and quote conversion</h2>
+      <p>Each category includes visible specifications, material notes, applications, FAQ, internal links and quote actions for buyers in ${company.markets}.</p>
     </div>
     ${productCards()}
   </section>
@@ -713,12 +713,12 @@ function homePage() {
     <img src="/assets/ai-langmai-ip-showroom.jpg" alt="LANGMAI showroom with branded product samples">
     <div>
       <p class="eyebrow">Factory trust</p>
-      <h2>Real people, real factory, export-ready product pages</h2>
-      <p>${company.name} was founded in ${company.founded} and positions itself as a ${company.position}. The updated company brief highlights ${company.plant} factory capacity, ${company.team}, OEM/ODM customization and customized odorless ink support.</p>
+      <h2>Real people, real factory, export-ready supply support</h2>
+      <p>${company.name} was founded in ${company.founded} and positions itself as a ${company.position}. The company profile highlights ${company.plant} factory capacity, ${company.team}, OEM/ODM customization and low-odor food-contact printing support.</p>
       <ul class="check-list">
         <li>Main markets include ${company.markets}.</li>
         <li>Target customers include ${company.customers}.</li>
-        <li>FSC, EUDR and BRC certificate names are written as crawlable text for SEO, AIO and GEO.</li>
+        <li>BSCI, ISO, FSC, FDA, LFGB, EUDR and BRC certificate names are written as crawlable text for buyer review and AI search understanding.</li>
       </ul>
       <a class="button secondary" href="/factory-certificates/">View Factory & Certificates</a>
     </div>
@@ -726,8 +726,8 @@ function homePage() {
   ${ctaBand()}`;
   return layout({
     route: "/",
-    title: "LANGMAI | Custom Cake Cups & Baking Paper Products Manufacturer",
-    description: "Wholesale custom cake cups, cupcake liners, baking paper cups, air fryer paper liners and paper straws from Jinhua Langmai Daily-Using Co., Ltd.",
+    title: "LANGMAI | Custom Cupcake Liners & Baking Cups Manufacturer",
+    description: "Wholesale cupcake liners, paper baking cups, air fryer liners and paper straws from LANGMAI in China, with OEM printing, certificates, samples and export cartons.",
     content,
     schema: [websiteSchema()],
   });
@@ -736,15 +736,15 @@ function homePage() {
 function productsIndex() {
   const content = `<section class="page-hero">
     <p class="eyebrow">Products</p>
-    <h1>Wholesale baking paper products for importers and distributors</h1>
-    <p>Start with cake cups and cupcake liners, then add air fryer paper liners, paper straws and party accessories to build cross-sell product sets.</p>
+    <h1>Wholesale Paper Baking Products for Importers</h1>
+    <p>Compare cupcake liners, roll-mouth baking cups, muffin cups, air fryer liners, paper straws and party paper accessories with materials, specifications, use cases and RFQ paths.</p>
   </section>
   <section class="section">${productCards()}</section>
   ${ctaBand("Need a mixed container or custom printed set?")}`;
   return layout({
     route: "/products/",
-    title: "Products | LANGMAI Baking Paper Manufacturer",
-    description: "Browse LANGMAI cake cups, roll mouth cake cups, muffin baking cups, air fryer paper liners, paper straws and party accessories.",
+    title: "Wholesale Paper Baking Products | LANGMAI",
+    description: "Browse LANGMAI cupcake liners, paper baking cups, muffin cups, air fryer liners, paper straws and party paper accessories for wholesale and OEM orders.",
     content,
   });
 }
@@ -757,9 +757,9 @@ function productPage(product) {
         .join("")}</tbody></table></div>`
     : `<p class="note">Party accessories are selected by theme, shape, color and pack configuration. Send target product photos or a mood board for matching options.</p>`;
   const faq = [
-    [`What material is used for ${product.title}?`, `${product.material}. The catalog highlights food grade materials and export-friendly paper product options.`],
-    ["Can LANGMAI make custom printed designs?", "Yes. Custom colors, sizes, stock designs and OEM artwork are supported. Buyers should confirm artwork, size, packaging and sample approval before mass production."],
-    ["Which certificates should buyers confirm?", "The updated brief highlights FSC, EUDR and BRC. Public certificate scans should be added after approval from the factory team."],
+    [`What material is used for ${product.title}?`, `${product.material}. Buyers can review the visible material notes, specifications and packaging details before requesting samples.`],
+    ["Can LANGMAI make custom printed designs?", "Yes. Custom colors, sizes, stock designs and OEM artwork are supported. Buyers should confirm artwork, material, carton quantity and sample approval before mass production."],
+    ["Which certificates should buyers confirm?", "The website shows BSCI, ISO, FSC, FDA, LFGB, EUDR and BRC certificate names or document previews. Final scope, validity and report numbers should be checked during order review."],
     ["How do I request a quote?", "Send product type, size, quantity, target market, custom print needs, email and WhatsApp through the inquiry form."],
   ];
   const content = `<section class="product-hero">
@@ -768,7 +768,7 @@ function productPage(product) {
       <h1>${esc(product.title)}</h1>
       <p>${esc(product.short)}</p>
       <div class="hero-actions">
-        <a class="button primary" href="#quote">Request Quote</a>
+        <a class="button primary" href="#quote">Request a Quote</a>
         <a class="button secondary" href="/contact/#sample">Get Free Sample</a>
       </div>
     </div>
@@ -779,7 +779,7 @@ function productPage(product) {
       <section class="two-col product-block">
         <div>
           <p class="eyebrow">Materials and features</p>
-          <h2>Buyer-ready product information</h2>
+          <h2>What buyers can confirm on this page</h2>
           <p><strong>Material:</strong> ${esc(product.material)}.</p>
           <ul class="check-list">${product.features.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
         </div>
@@ -792,8 +792,8 @@ function productPage(product) {
       <section class="product-block">
         <div class="section-heading">
           <p class="eyebrow">Specifications</p>
-          <h2>Visible specifications for buyers and search engines</h2>
-          <p>These specification rows are written as HTML text so procurement teams, search engines and AI answer systems can read them directly.</p>
+          <h2>Specifications buyers can quote from</h2>
+          <p>These specification rows are easy for procurement teams to copy into RFQ sheets, supplier comparisons and internal approval notes.</p>
         </div>
         ${specTable}
       </section>
@@ -801,8 +801,8 @@ function productPage(product) {
       <section class="two-col product-block" id="quote">
         <div>
           <p class="eyebrow">OEM / ODM</p>
-          <h2>Custom design, sampling and bulk cartons</h2>
-          <p>LANGMAI supports size selection, pattern design, color matching, custom packaging and production confirmation for overseas buyers.</p>
+          <h2>OEM design, sampling and export cartons</h2>
+          <p>LANGMAI supports size selection, artwork checks, color matching, custom packaging and pre-production sample confirmation for overseas buyers.</p>
           <ol class="process-list"><li>Confirm product and size</li><li>Send artwork or select stock design</li><li>Approve sample and packaging</li><li>Start mass production and inspection</li></ol>
         </div>
         ${leadForm(product.title)}
@@ -821,7 +821,7 @@ function productPage(product) {
   </section>`;
   return layout({
     route: `/products/${product.slug}/`,
-    title: `${product.title} | LANGMAI Wholesale Supplier`,
+    title: `${product.title} | LANGMAI Manufacturer`,
     description: product.short,
     content,
     schema: [productSchema(product), faqSchema(faq)],
@@ -831,8 +831,8 @@ function productPage(product) {
 function customizationPage() {
   const content = `<section class="page-hero">
     <p class="eyebrow">Customization</p>
-    <h1>OEM custom printed baking paper products</h1>
-    <p>Build custom cake cups, cupcake liners, muffin cups, paper straws and party sets around your brand artwork, seasonal theme and target market.</p>
+    <h1>OEM Custom Printed Cupcake Liners and Baking Cups</h1>
+    <p>Build custom cupcake liners, baking cups, muffin cups, paper straws and party sets around your brand artwork, seasonal theme, retail channel and destination market.</p>
   </section>
   <section class="section process-grid">
     ${["Product and size", "Material and print", "Sample approval", "Bulk production", "Packing and shipping"].map((step, i) => `<article><span>${i + 1}</span><h2>${step}</h2><p>${customStepText(i)}</p></article>`).join("")}
@@ -840,23 +840,23 @@ function customizationPage() {
   ${ctaBand("Send artwork, size and quantity for an OEM quote")}`;
   return layout({
     route: "/customization/",
-    title: "Custom Printed Cake Cups & Baking Paper OEM | LANGMAI",
-    description: "OEM custom printed cake cups, cupcake liners, muffin cups, paper straws and party paper accessories with size, pattern and packaging support.",
+    title: "OEM Custom Printed Cupcake Liners & Baking Cups | LANGMAI",
+    description: "Plan custom printed cupcake liners, paper baking cups, muffin cups, paper straws and party paper products with size, artwork, sample and carton support.",
     content,
   });
 }
 
 function applicationsPage() {
   const applications = [
-    ["Bakery and confectionery", "Paper cupcake liners, roll mouth cake cups and muffin baking cup liners for daily production, seasonal launches and branded displays.", "cake-cups-clean.jpg"],
+    ["Bakery and confectionery", "Cupcake liners, roll-mouth baking cups and muffin cup liners for daily production, seasonal launches and branded displays.", "cake-cups-clean.jpg"],
     ["Large supermarkets", "Bulk carton packaging, retail-ready designs and repeatable product specifications for supermarket baking and party aisles.", "product-gallery.jpg"],
-    ["Importers and distributors", "Mixed categories including cupcake liners, air fryer paper liner, paper straws and party accessories for regional wholesale channels.", "air-fryer-liners-clean.jpg"],
+    ["Importers and distributors", "Mixed categories including cupcake liners, air fryer liners, paper straws and party accessories for regional wholesale channels.", "air-fryer-liners-clean.jpg"],
     ["Party and event supply", "Themed cups, toppers, straws, cake boards and disposable tableware sets for birthday, holiday and celebration ranges.", "party-accessories-clean.jpg"],
   ];
   const content = `<section class="page-hero">
     <p class="eyebrow">Applications</p>
-    <h1>Baking paper products for bakeries, supermarkets, importers and party supply buyers</h1>
-    <p>Use this page to connect product categories with buyer scenarios in ${company.markets}, improving both SEO relevance and quote quality.</p>
+    <h1>Applications for Bakeries, Supermarkets and Importers</h1>
+    <p>Match each product category with real buyer scenarios in ${company.markets}, from bakery displays and supermarket shelves to mixed wholesale containers.</p>
   </section>
   <section class="section">
     <div class="product-grid">${applications
@@ -871,8 +871,8 @@ function applicationsPage() {
   ${ctaBand("Tell us your product channel and target country")}`;
   return layout({
     route: "/applications/",
-    title: "Applications | LANGMAI Cupcake Liners and Baking Paper Products",
-    description: "Application scenarios for LANGMAI cupcake liners, air fryer paper liner, muffin baking cup liner, paper straws and party accessories.",
+    title: "Applications | LANGMAI Baking Paper Products",
+    description: "Application scenarios for LANGMAI cupcake liners, air fryer liners, muffin cups, paper straws and party accessories for bakeries, supermarkets and importers.",
     content,
   });
 }
@@ -885,8 +885,8 @@ function casesPage() {
   ];
   const content = `<section class="page-hero">
     <p class="eyebrow">Cases / Projects</p>
-    <h1>Export project references for B2B paper packaging buyers</h1>
-    <p>Use these project-style examples to understand how LANGMAI supports bakeries, importers, distributors, supermarkets and ecommerce buyers from sample planning to shipment inspection.</p>
+    <h1>Export Project Examples for Paper Packaging Buyers</h1>
+    <p>Review how LANGMAI supports bakeries, importers, distributors, supermarkets and ecommerce buyers from sample planning to carton confirmation and shipment inspection.</p>
   </section>
   <section class="section"><div class="product-grid">${cases.map(([title, text, image]) => `<article class="product-card">
     <img src="/assets/${image}" alt="${esc(title)} for LANGMAI overseas buyers">
@@ -895,7 +895,7 @@ function casesPage() {
   ${ctaBand("Planning a private-label paper packaging project?")}`;
   return layout({
     route: "/cases/",
-    title: "Cases and Projects | LANGMAI Export Paper Packaging",
+    title: "Cases | LANGMAI Export Paper Packaging",
     description: "Project-style examples for LANGMAI cupcake liners, air fryer paper liners, OEM export packaging, sample planning and shipment inspection.",
     content,
   });
@@ -903,8 +903,8 @@ function casesPage() {
 
 function customStepText(i) {
   return [
-    "Choose cake cups, roll mouth cups, muffin cups, air fryer liners, paper straws or party accessories.",
-    "Confirm greaseproof paper, PET coated paper, silicone paper, kraft paper, soy ink printing and color requirements.",
+    "Choose cupcake liners, roll-mouth baking cups, muffin cups, air fryer liners, paper straws or party accessories.",
+    "Confirm greaseproof paper, PET-coated paper, silicone paper, kraft paper, low-odor food-contact printing and color requirements.",
     "Review physical samples to check size, color, baking performance and packaging before mass production.",
     "Produce according to approved samples, carton packaging and buyer purchase order requirements.",
     "Prepare export cartons and documents for distributors, bakery brands and retail supply chains.",
@@ -914,21 +914,21 @@ function customStepText(i) {
 function factoryPage() {
   const content = `<section class="page-hero">
     <p class="eyebrow">Factory & Certificates</p>
-    <h1>Jinhua factory trust for food paper packaging buyers</h1>
-    <p>${company.name} was founded in ${company.founded}. The company brief lists ${company.plant} factory capacity and ${company.team} for overseas B2B buyers.</p>
+    <h1>Factory & Certificates for Food Paper Packaging Buyers</h1>
+    <p>${company.name} operates a ${company.plant} factory with ${company.team}, serving B2B buyers that need verified product photos, compliance documents and export-ready paper packaging.</p>
   </section>
   <section class="split-section">
     <img src="/assets/ai-quality-export-packaging.jpg" alt="LANGMAI quality control and export packaging">
     <div>
-      <h2>Factory profile</h2>
-      <p>The updated positioning is ${company.position}, serving ${company.customers} across ${company.markets}.</p>
-      <ul class="check-list"><li>OEM/ODM customization for product, size, print and packaging.</li><li>FSC and EUDR certified signals for compliance-minded buyers.</li><li>Industrial-grade quality control and customized odorless ink.</li></ul>
+      <h2>Factory profile for overseas procurement</h2>
+      <p>LANGMAI focuses on cupcake liners, baking cups, air fryer liners, paper straws and paper party products for ${company.customers} across ${company.markets}.</p>
+      <ul class="check-list"><li>OEM/ODM customization for size, material, print and retail packaging.</li><li>Visible BSCI, BRC, ISO, LFGB, DGCCRF, PFAS and FSC documents for buyer screening.</li><li>Sample checks, carton confirmation and export documentation before shipment.</li></ul>
     </div>
   </section>
   <section class="image-band"><img src="/assets/factory-workshop.jpg" alt="LANGMAI workshop"><img src="/assets/ai-langmai-ip-showroom.jpg" alt="LANGMAI branded showroom and product samples"><img src="/assets/showroom.jpg" alt="LANGMAI showroom"></section>
   <section class="section">
     <p class="eyebrow">Visible certificates and test reports</p>
-    <h2>Compliance evidence buyers can review before RFQ</h2>
+    <h2>Compliance documents buyers can review before RFQ</h2>
     <p class="note">For EU and North American B2B buyers, certificate images reduce uncertainty before sample requests, supplier shortlisting and importer approval. Final validity, scope and report numbers should still be confirmed during order review.</p>
     <div class="badge-grid">${company.certificates.map((item) => `<span>${item}</span>`).join("")}</div>
     ${certificateCards()}
@@ -937,8 +937,8 @@ function factoryPage() {
   ${ctaBand("Need documents for importer approval?")}`;
   return layout({
     route: "/factory-certificates/",
-    title: "Factory & Certificates | LANGMAI Baking Paper Supplier",
-    description: "LANGMAI factory profile, 30,000+ square meters capacity, 50+ team members and certificate signals for BSCI, ISO, FSC, FDA, LFGB, EUDR and BRC.",
+    title: "Factory & Certificates | LANGMAI Food Paper Packaging",
+    description: "Review LANGMAI factory capacity, product photos and certificate documents including BSCI, BRC, ISO, LFGB, DGCCRF, PFAS and FSC for B2B paper packaging buyers.",
     content,
   });
 }
@@ -946,21 +946,21 @@ function factoryPage() {
 function aboutPage() {
   const content = `<section class="page-hero">
     <p class="eyebrow">About LANGMAI</p>
-    <h1>Paper baking product supplier serving domestic and overseas buyers</h1>
-    <p>LANGMAI manufactures cake cups, air fryer paper liners, paper straws, muffin cups and related paper products with various colors, sizes and styles.</p>
+    <h1>About LANGMAI: Paper Baking Product Manufacturer in China</h1>
+    <p>LANGMAI manufactures cupcake liners, paper baking cups, air fryer liners, paper straws and related party paper products for domestic and overseas B2B buyers.</p>
   </section>
   <section class="split-section">
     <img src="/assets/founder.jpg" alt="LANGMAI founder photo">
     <div>
       <h2>A practical export story buyers can verify</h2>
-      <p>For B2B independent-site trust, the founder image should support a real company narrative: factory capacity, catalog clarity, product quality and fast buyer response.</p>
-      <p>Use this page for founder notes, trade show photos, customer visits and shipment examples as they become available.</p>
+      <p>For overseas buyers, a real founder and factory story helps connect product photos, certificate documents, catalog clarity and fast buyer response.</p>
+      <p>This page can continue to grow with trade show photos, customer visits, shipment examples and product inspection records as they become available.</p>
     </div>
   </section>`;
   return layout({
     route: "/about/",
-    title: "About LANGMAI | Jinhua Langmai Daily-Using Co., Ltd.",
-    description: "Learn about Jinhua Langmai Daily-Using Co., Ltd., a China supplier of cake cups, cupcake liners, paper straws and baking paper products.",
+    title: "About LANGMAI | Paper Baking Product Manufacturer",
+    description: "Learn about Jinhua Langmai Daily-Using Co., Ltd., a China manufacturer of cupcake liners, paper baking cups, paper straws and air fryer liners.",
     content,
   });
 }
@@ -972,7 +972,7 @@ function contactPage(route = "/contact/") {
   <label>Phone *<input type="tel" name="phone" required pattern="^[+()0-9\\s-]{7,24}$" placeholder="+1 555 123 4567"></label>
   <label>Company<input name="company" placeholder="Company name"></label>
   <label>Country / Region<input name="country" placeholder="United States, Germany, UAE..."></label>
-  <label>Product Requirement<input name="product" placeholder="Cake cups, cupcake liners, air fryer paper liners..."></label>
+  <label>Product Requirement<input name="product" placeholder="Cupcake liners, paper baking cups, air fryer liners..."></label>
   <label>Message<textarea name="message" placeholder="Size, quantity, custom print, target market..." rows="5"></textarea></label>
   <input class="hp-field" name="website" tabindex="-1" autocomplete="off">
   <button type="submit">Submit Inquiry</button>
@@ -1009,8 +1009,8 @@ export function B2BInquiryForm() {
     <div class="inquiry-shell">
       <div class="inquiry-copy">
         <p class="tech-kicker">B2B Inquiry Gateway</p>
-        <h1>Request a wholesale quote from LANGMAI</h1>
-        <p>Send your contact information and product requirement. Wilson's team can reply with price, sample route, catalog details and OEM/ODM options.</p>
+        <h1>Request a Wholesale Quote from LANGMAI</h1>
+        <p>Send your contact information and product requirements. Wilson's team can reply with pricing, sample route, catalog details and OEM/ODM options.</p>
         <div class="inquiry-proof">
           <span>30,000+ square meters factory</span>
           <span>BSCI / ISO / FSC / FDA / LFGB</span>
@@ -1034,7 +1034,7 @@ export function B2BInquiryForm() {
         </div>
         <div class="form-row">
           <label>Country / Region<input name="country" placeholder="United States, Germany, UAE..."><small></small></label>
-          <label>Product Requirement<input name="product" placeholder="Cake cups, cupcake liners, air fryer paper liners..."><small></small></label>
+          <label>Product Requirement<input name="product" placeholder="Cupcake liners, paper baking cups, air fryer liners..."><small></small></label>
         </div>
         <label>Message<textarea name="message" rows="5" placeholder="Tell us size, quantity, custom print, target market and delivery needs."></textarea><small></small></label>
         <div class="anti-spam">
@@ -1049,8 +1049,8 @@ export function B2BInquiryForm() {
   <section class="section integration-block">
     <div class="section-heading">
       <p class="eyebrow">Integration template</p>
-      <h2>HTML / React component ready for developers</h2>
-      <p>The static demo validates fields in the browser. For launch, connect <code>/api/inquiry</code> to email delivery, CRM, or database storage.</p>
+      <h2>Inquiry form integration notes</h2>
+      <p>The form validates required fields in the browser. For launch, connect <code>/api/inquiry</code> to email delivery, CRM, or database storage.</p>
     </div>
     <details open><summary>HTML form template</summary><pre><code>${esc(htmlTemplate)}</code></pre></details>
     <details><summary>React component template</summary><pre><code>${esc(reactTemplate)}</code></pre></details>
@@ -1061,8 +1061,8 @@ export function B2BInquiryForm() {
   </section>`;
   return layout({
     route,
-    title: "B2B Inquiry Form | Contact LANGMAI",
-    description: "Submit a B2B inquiry to LANGMAI with name, email, phone, company, country, product requirement and message fields.",
+    title: "Request a Quote | LANGMAI",
+    description: "Send product requirements to LANGMAI for cupcake liners, paper baking cups, air fryer liners and paper straws. Include size, quantity, market and custom print needs.",
     content,
   });
 }
@@ -1070,14 +1070,14 @@ export function B2BInquiryForm() {
 function resourcesIndex() {
   const content = `<section class="page-hero">
     <p class="eyebrow">Resources</p>
-    <h1>Buyer guides for baking paper products</h1>
-    <p>These pages create the SEO, AIO and GEO knowledge base around cake cups, cupcake liners, food paper materials, certificates and custom printing.</p>
+    <h1>Buyer Guides for Cupcake Liners and Baking Paper Products</h1>
+    <p>Use these guides to compare materials, certificates, specifications, custom printing, applications and supplier questions before sending an RFQ.</p>
   </section>
-  <section class="section"><div class="resource-grid">${resourcePages.map((r) => `<article><h2><a href="/resources/${r.slug}/">${esc(r.title)}</a></h2><p>${esc(r.description)}</p>${r.isLongForm ? `<p class="note">Long-form SEO / AIO guide</p>` : ""}</article>`).join("")}</div></section>`;
+  <section class="section"><div class="resource-grid">${resourcePages.map((r) => `<article><h2><a href="/resources/${r.slug}/">${esc(r.title)}</a></h2><p>${esc(r.description)}</p>${r.isLongForm ? `<p class="note">In-depth buyer guide</p>` : ""}</article>`).join("")}</div></section>`;
   return layout({
     route: "/resources/",
-    title: "Resources | Baking Paper Product Buying Guides",
-    description: "Buying guides for custom cupcake liners, food paper packaging certificates, greaseproof paper, PET coated paper and baking cup selection.",
+    title: "Resources | LANGMAI Buyer Guides",
+    description: "Buyer guides for custom cupcake liners, food paper packaging certificates, greaseproof paper, PET-coated paper and baking cup selection.",
     content,
   });
 }
@@ -1086,7 +1086,7 @@ function resourcePage(resource) {
   const imageBlock = resource.images?.length ? `<figure class="article-image"><img src="${relAsset(resource.images[0])}" alt="${esc(resource.title)}"><figcaption>${esc(resource.title)}</figcaption></figure>` : "";
   const secondImage = resource.images?.[1] ? `<figure class="article-image"><img src="${relAsset(resource.images[1])}" alt="${esc(resource.title)} factory testing and shipment inspection"><figcaption>Factory testing and shipment inspection help B2B buyers reduce order risk.</figcaption></figure>` : "";
   const content = resource.isLongForm ? `<article class="article longform-article">
-    <p class="eyebrow">SEO / AIO buyer guide</p>
+    <p class="eyebrow">B2B buyer guide</p>
     <h1>${esc(resource.title)}</h1>
     <p class="lede">${esc(resource.description)}</p>
     <div class="badge-grid"><span>${esc(resource.intent || "Procurement research")}</span><span>${esc(resource.keywords || "B2B buyer keywords")}</span></div>
@@ -1105,7 +1105,7 @@ function resourcePage(resource) {
     ${resource.body.map((p) => `<p>${esc(p)}</p>`).join("")}
     <section class="article-links">
       <h2>Next steps</h2>
-      <a href="/products/cake-cups/">View custom cake cups</a>
+      <a href="/products/cake-cups/">View custom cupcake liners</a>
       <a href="/customization/">Review OEM customization process</a>
       <a href="/contact/">Request a quote</a>
     </section>
@@ -1126,7 +1126,7 @@ function landingPage(lp) {
       <p class="eyebrow">Paid traffic landing page</p>
       <h1>${esc(lp.title)}</h1>
       <p>${esc(lp.description)}</p>
-      <ul class="check-list"><li>Food grade materials for import buyers.</li><li>Custom sizes, colors, artwork and carton packaging.</li><li>FSC, EUDR and BRC certificate signals from the updated company brief.</li></ul>
+      <ul class="check-list"><li>Food-grade materials for import buyers.</li><li>Custom sizes, colors, artwork and carton packaging.</li><li>Certificate documents and buyer verification notes are visible before RFQ.</li></ul>
       <div class="hero-actions"><a class="button primary" href="#quote">Request Bulk Price</a><a class="button secondary" href="/products/${product.slug}/">View Product Details</a></div>
     </div>
     <img src="${relAsset(product.image)}" alt="${esc(lp.title)} product details">
@@ -1434,7 +1434,7 @@ document.querySelectorAll("[data-lead-form]").forEach((form)=>{
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({event:"lead_form_submit",product:data.product,country:data.country,quantity:data.quantity});
     const note = form.querySelector("[data-form-note]");
-    note.textContent = "Inquiry captured in this demo. Connect this form to email, CRM or marketing automation before launch.";
+    note.textContent = "Inquiry captured. Connect this form to email, CRM or marketing automation before launch.";
   });
 });
 
