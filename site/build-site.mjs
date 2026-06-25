@@ -485,7 +485,7 @@ function siteHeader() {
       ${megaNavItem("Factory & Certificates", "/factory-certificates/", [
         ["Factory Capacity", "/factory-certificates/", "30,000+ square meters factory and 50+ team members"],
         ["Certificates", "/factory-certificates/", "BSCI, ISO, FSC, FDA, LFGB, EUDR and BRC"],
-        ["Export Markets", "/#market-map-title", "China to key overseas buying regions"],
+        ["Global Supply", "/#market-map-title", "Export routes and worldwide buyer support"],
       ], "Verify factory")}
       ${megaNavItem("Resources", "/resources/", [
         ["Buying Guides", "/resources/", "Practical guides for food paper product buyers"],
@@ -641,8 +641,8 @@ function marketMapSection() {
   return `<section class="market-map section" aria-labelledby="market-map-title">
     <div class="section-heading">
       <p class="eyebrow">Export markets</p>
-      <h2 id="market-map-title">From China to key overseas buying regions</h2>
-      <p>LANGMAI supports importers, distributors, bakery and confectionery buyers, and large supermarkets across the Middle East, Europe, the United Kingdom, North America and South America.</p>
+      <h2 id="market-map-title">From China to global buyers</h2>
+      <p>LANGMAI supports importers, distributors, bakery and confectionery buyers, and large supermarkets worldwide.</p>
     </div>
     <div class="map-panel map-image-panel" role="img" aria-label="World map showing LANGMAI export routes from China to overseas markets">
       <img src="/assets/world-market-map.png" alt="LANGMAI export market map from China to North America, Europe, Middle East, South America and Asia">
@@ -705,7 +705,7 @@ function homePage() {
     <div class="section-heading">
       <p class="eyebrow">Product categories</p>
       <h2>Find the right product faster</h2>
-      <p>Each category shows materials, common sizes, application scenarios and inquiry paths for buyers in ${company.markets}.</p>
+      <p>Each category shows materials, common sizes, application scenarios and inquiry paths for worldwide buyers.</p>
     </div>
     ${productCards()}
   </section>
@@ -716,7 +716,7 @@ function homePage() {
       <h2>Real people, real factory, export-ready supply support</h2>
       <p>${company.name} was founded in ${company.founded} and positions itself as a ${company.position}. The company profile highlights ${company.plant} factory capacity, ${company.team}, OEM/ODM customization and low-odor food-contact printing support.</p>
       <ul class="check-list">
-        <li>Main markets include ${company.markets}.</li>
+        <li>LANGMAI supports wholesale buyers, importers and distributors worldwide.</li>
         <li>Target customers include ${company.customers}.</li>
         <li>BSCI, ISO, FSC, FDA, LFGB, EUDR and BRC documents are listed clearly for buyer review.</li>
       </ul>
@@ -856,7 +856,7 @@ function applicationsPage() {
   const content = `<section class="page-hero">
     <p class="eyebrow">Applications</p>
     <h1>Applications for Bakeries, Supermarkets and Importers</h1>
-    <p>Match each product category with real buyer scenarios in ${company.markets}, from bakery displays and supermarket shelves to mixed wholesale containers.</p>
+    <p>Match each product category with real buyer scenarios worldwide, from bakery displays and supermarket shelves to mixed wholesale containers.</p>
   </section>
   <section class="section">
     <div class="product-grid">${applications
@@ -868,7 +868,7 @@ function applicationsPage() {
       )
       .join("")}</div>
   </section>
-  ${ctaBand("Tell us your product channel and target country")}`;
+  ${ctaBand("Tell us your product channel and destination country")}`;
   return layout({
     route: "/applications/",
     title: "Applications | LANGMAI Baking Paper Products",
@@ -921,7 +921,7 @@ function factoryPage() {
     <img src="/assets/ai-quality-export-packaging.jpg" alt="LANGMAI quality control and export packaging">
     <div>
       <h2>Factory profile for overseas procurement</h2>
-      <p>LANGMAI focuses on cupcake liners, baking cups, air fryer liners, paper straws and paper party products for ${company.customers} across ${company.markets}.</p>
+      <p>LANGMAI focuses on cupcake liners, baking cups, air fryer liners, paper straws and paper party products for ${company.customers} worldwide.</p>
       <ul class="check-list"><li>OEM/ODM customization for size, material, print and retail packaging.</li><li>Visible BSCI, BRC, ISO, LFGB, DGCCRF, PFAS and FSC documents for buyer screening.</li><li>Sample checks, carton confirmation and export documentation before shipment.</li></ul>
     </div>
   </section>
@@ -929,7 +929,7 @@ function factoryPage() {
   <section class="section">
     <p class="eyebrow">Visible certificates and test reports</p>
     <h2>Compliance documents buyers can review before RFQ</h2>
-    <p class="note">For EU and North American B2B buyers, certificate images reduce uncertainty before sample requests, supplier shortlisting and importer approval. Final validity, scope and report numbers should still be confirmed during order review.</p>
+    <p class="note">For overseas B2B buyers, certificate images reduce uncertainty before sample requests, supplier shortlisting and importer approval. Final validity, scope and report numbers should still be confirmed during order review.</p>
     <div class="badge-grid">${company.certificates.map((item) => `<span>${item}</span>`).join("")}</div>
     ${certificateCards()}
     <p><a class="button secondary" href="/assets/cert-fsc.pdf" target="_blank" rel="noopener">View FSC PDF</a></p>
