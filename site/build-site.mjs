@@ -28,6 +28,8 @@ const company = {
   whatsapp: "+86 13645700210",
 };
 
+const newsItems = JSON.parse(fs.readFileSync(path.join(siteDir, "content", "news.json"), "utf8"));
+
 const heroProofPoints = [
   "Low-Odor Custom Ink",
   "EUDR System Paper",
@@ -511,9 +513,11 @@ function siteHeader() {
       ], "Verify factory")}
       ${megaNavItem("Resources", "/resources/", [
         ["Buying Guides", "/resources/", "Practical guides for food paper product buyers"],
+        ["Packaging News", "/news/", "Daily buyer notes on baking paper packaging trends"],
         ["Certificate Guide", "/resources/food-paper-certificates/", "Compliance notes for import buyers"],
         ["Cupcake Liner Selection", "/resources/choose-custom-cupcake-liners/", "How to choose baking cup specs"],
       ], "Read resources")}
+      <a class="nav-link simple" href="/news/">News</a>
       <a class="nav-link simple" href="/about/">About</a>
       <a class="nav-link simple" href="/contact/">Contact</a>
     </nav>
@@ -1129,6 +1133,46 @@ function resourcesIndex() {
   });
 }
 
+function newsPage() {
+  const latestItems = newsItems.slice(0, 10);
+  const content = `<section class="page-hero news-hero">
+    <p class="eyebrow">Industry news</p>
+    <h1>Baking Paper Packaging News</h1>
+    <p>Daily buyer-focused updates on greaseproof paper, baking cups, air fryer paper liners, food-contact paper packaging, PFAS-free materials and EUDR compliance.</p>
+    <div class="hero-actions"><a class="button primary" href="/contact/">Ask for Product Support</a><a class="button secondary" href="/resources/">Read Buyer Guides</a></div>
+  </section>
+  <section class="section news-intro">
+    <div class="section-heading">
+      <p class="eyebrow">Buyer intelligence</p>
+      <h2>What global food paper buyers should watch this week</h2>
+      <p>These short updates are selected for importers, distributors, bakery packaging buyers and foodservice packaging teams. Each note explains why the topic matters for sourcing, compliance or product development.</p>
+    </div>
+    <div class="news-grid">
+      ${latestItems.map((item, index) => `<article class="news-card">
+        <div class="news-meta"><span>${esc(item.date)}</span><span>${esc(item.category)}</span></div>
+        <h2>${index + 1}. <a href="${esc(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(item.title)}</a></h2>
+        <p>${esc(item.summary)}</p>
+        <div class="buyer-note"><strong>Buyer takeaway:</strong> ${esc(item.buyerTakeaway)}</div>
+        <a class="news-source" href="${esc(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">Source: ${esc(item.sourceName)}</a>
+      </article>`).join("")}
+    </div>
+  </section>
+  <section class="cta-band">
+    <div>
+      <h2>Turn market news into a quote-ready specification</h2>
+      <p>Send your product type, destination market, size, quantity and compliance requirements. LANGMAI can help match paper, coating, printing and packaging details to your buying plan.</p>
+    </div>
+    <a class="button primary" href="/inquiry/">Send Requirements</a>
+  </section>`;
+  return layout({
+    route: "/news/",
+    title: "Baking Paper Packaging News | LANGMAI",
+    description: "Daily news and buyer notes on baking paper packaging, greaseproof paper, PFAS-free food paper, EUDR, air fryer liners and food-contact compliance.",
+    content,
+    schema: [newsSchema(latestItems)],
+  });
+}
+
 function resourcePage(resource) {
   const imageBlock = resource.images?.length ? `<figure class="article-image"><img src="${relAsset(resource.images[0])}" alt="${esc(resource.title)}"><figcaption>${esc(resource.title)}</figcaption></figure>` : "";
   const secondImage = resource.images?.[1] ? `<figure class="article-image"><img src="${relAsset(resource.images[1])}" alt="${esc(resource.title)} factory testing and shipment inspection"><figcaption>Factory testing and shipment inspection help B2B buyers reduce order risk.</figcaption></figure>` : "";
@@ -1248,6 +1292,26 @@ function faqSchema(faq) {
 
 function articleSchema(resource) {
   return { "@context": "https://schema.org", "@type": "Article", headline: resource.title, description: resource.description, author: { "@type": "Organization", name: company.name } };
+}
+
+function newsSchema(items) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Baking Paper Packaging News",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: item.sourceUrl,
+      item: {
+        "@type": "NewsArticle",
+        headline: item.title,
+        description: item.summary,
+        datePublished: item.date,
+        publisher: { "@type": "Organization", name: item.sourceName },
+      },
+    })),
+  };
 }
 
 function imageSchema(file, caption) {
@@ -1500,8 +1564,16 @@ th{background:#6f4b38;color:#fff4df}.link-grid a,.badge-grid span{background:#ff
 .video-frame{background:linear-gradient(145deg,#7b523a,#f4dfbf 62%,#6f8b65);box-shadow:0 26px 70px rgba(111,75,48,.2),0 0 0 1px rgba(217,168,92,.28)}.video-frame:before{background:radial-gradient(circle at 18% 10%,rgba(255,244,220,.4),transparent 34%)}
 .footer-social a,.social-float a{background:linear-gradient(145deg,#fff0db,#d9a85c);border-color:rgba(139,90,60,.28);color:#5e4031;box-shadow:0 10px 28px rgba(111,75,48,.16),inset 0 1px 0 rgba(255,255,255,.42)}.footer-social a:hover,.social-float a:hover{border-color:#b36f4b;box-shadow:0 16px 36px rgba(179,111,75,.18),0 12px 30px rgba(111,75,48,.16)}
 .inquiry-page{background:radial-gradient(circle at 12% 12%,rgba(255,225,170,.34),transparent 28%),radial-gradient(circle at 88% 18%,rgba(111,139,101,.18),transparent 24%),linear-gradient(135deg,#fff7eb,#f4dfc2 58%,#fffaf2);color:var(--ink)}.inquiry-copy h1{color:var(--ink)}.inquiry-copy p{color:var(--muted)}.tech-kicker{color:#b36f4b!important}.inquiry-proof span{border-color:rgba(217,168,92,.32);background:rgba(255,255,255,.54);color:#5e4031}.inquiry-contact{color:var(--ink)}.inquiry-contact a{color:#8a4f31}.inquiry-form{border-color:rgba(217,168,92,.32);background:linear-gradient(145deg,rgba(255,253,248,.92),rgba(255,244,228,.82));box-shadow:0 28px 70px rgba(111,75,48,.16),inset 0 1px 0 rgba(255,255,255,.72)}.inquiry-form label{color:var(--ink)}.inquiry-form label span{color:#b36f4b}.inquiry-form input,.inquiry-form textarea{background:#fffdf8;border-color:rgba(179,111,75,.24);color:var(--ink)}.inquiry-form input::placeholder,.inquiry-form textarea::placeholder{color:#a58d7d}.inquiry-form input:focus,.inquiry-form textarea:focus{outline:2px solid rgba(217,168,92,.42);border-color:#d9a85c}.anti-spam{border-top-color:rgba(217,168,92,.2)}.anti-spam label{color:var(--ink)}.anti-spam p,.inquiry-status{color:var(--muted)}.inquiry-submit{background:linear-gradient(135deg,#d9a85c,#8b5a3c);color:#fffaf2;box-shadow:0 14px 32px rgba(179,111,75,.18)}.article-cta{background:linear-gradient(135deg,#77503b,#6f8b65)}
+.news-hero{background:radial-gradient(circle at 15% 18%,rgba(217,168,92,.2),transparent 28%),linear-gradient(135deg,rgba(255,244,228,.9),rgba(241,248,236,.68));border-bottom:1px solid rgba(217,168,92,.2)}
+.news-intro{background:linear-gradient(180deg,rgba(255,250,242,.72),rgba(255,244,228,.42))}
+.news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:1.6rem}
+.news-card{background:linear-gradient(180deg,#fffdf8,#fff5e8);border:1px solid rgba(217,168,92,.26);border-radius:8px;padding:1.15rem;box-shadow:0 18px 38px rgba(111,75,48,.09)}
+.news-card h2{font-size:1.16rem;line-height:1.32;margin:.75rem 0}.news-card h2 a{color:var(--ink);text-decoration:none}.news-card h2 a:hover{color:#8a4f31;text-decoration:underline}
+.news-card p{color:var(--muted)}.news-meta{display:flex;gap:.5rem;flex-wrap:wrap}.news-meta span{display:inline-flex;align-items:center;border-radius:999px;padding:.25rem .55rem;background:#fff0db;border:1px solid rgba(217,168,92,.28);color:#6f4b38;font-size:.82rem;font-weight:800}
+.buyer-note{margin:1rem 0;padding:.85rem;border-radius:8px;background:rgba(111,139,101,.1);border:1px solid rgba(111,139,101,.2);color:#385945}.buyer-note strong{color:#5e4031}
+.news-source{font-weight:850;color:#8a4f31}.news-source:hover{color:#456b55}
 @media (max-width:900px){.advantage-grid,.solution-grid{grid-template-columns:1fr}.advantage-section>.section-heading,.solution-section>.section-heading,.advantage-grid,.solution-grid{margin-left:0;margin-right:0}}
-@media (max-width:900px){.brand img{width:142px;height:52px}.brand{padding:.35rem .48rem}.mega-menu{top:auto;padding-top:0}.nav-item:after{display:none!important}}
+@media (max-width:900px){.brand img{width:142px;height:52px}.brand{padding:.35rem .48rem}.mega-menu{top:auto;padding-top:0}.nav-item:after{display:none!important}.news-grid{grid-template-columns:1fr}}
 `;
 
 const js = `
@@ -1591,6 +1663,7 @@ writePage("/factory-certificates/", factoryPage());
 writePage("/about/", aboutPage());
 writePage("/contact/", contactPage());
 writePage("/inquiry/", contactPage("/inquiry/"));
+writePage("/news/", newsPage());
 writePage("/resources/", resourcesIndex());
 resourcePages.forEach((resource) => writePage(`/resources/${resource.slug}/`, resourcePage(resource)));
 landingPages.forEach((lp) => writePage(`/landing/${lp.slug}/`, landingPage(lp)));
