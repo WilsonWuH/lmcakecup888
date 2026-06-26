@@ -1143,9 +1143,8 @@ function newsPage() {
   </section>
   <section class="section news-intro">
     <div class="section-heading">
-      <p class="eyebrow">Buyer intelligence</p>
-      <h2>What global food paper buyers should watch this week</h2>
-      <p>These short updates are selected for importers, distributors, bakery packaging buyers and foodservice packaging teams. Each note explains why the topic matters for sourcing, compliance or product development.</p>
+      <p class="eyebrow">Market updates</p>
+      <h2>Latest Food Paper Packaging Updates</h2>
     </div>
     <div class="news-grid">
       ${latestItems.map((item, index) => `<article class="news-card">
@@ -1153,7 +1152,6 @@ function newsPage() {
         <div class="news-meta"><span>${esc(item.date)}</span><span>${esc(item.category)}</span></div>
         <h2>${index + 1}. <a href="${esc(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(item.title)}</a></h2>
         <p>${esc(item.summary)}</p>
-        <div class="buyer-note"><strong>Buyer takeaway:</strong> ${esc(item.buyerTakeaway)}</div>
         <a class="news-source" href="${esc(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">Source: ${esc(item.sourceName)}</a>
       </article>`).join("")}
     </div>
