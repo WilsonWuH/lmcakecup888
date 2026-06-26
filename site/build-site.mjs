@@ -442,6 +442,7 @@ const blogImageMap = {
   "how-to-choose-custom-cupcake-liners-wholesale": ["ai-cake-cups-premium.jpg", "ai-quality-export-packaging.jpg"],
   "greaseproof-paper-vs-pet-coated-paper-baking-cups": ["ai-cake-cups-premium.jpg", "ai-quality-export-packaging.jpg"],
   "air-fryer-paper-liners-bulk-buying-guide": ["ai-air-fryer-liners-premium.jpg", "ai-quality-export-packaging.jpg"],
+  "paper-straws-wholesale-foodservice-retail-buyers": ["real-paper-straws.jpg", "ai-quality-export-packaging.jpg"],
 };
 
 function loadBlogArticles() {
