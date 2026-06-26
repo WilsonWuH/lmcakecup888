@@ -578,6 +578,250 @@ Submit button: Get Bulk Quote
 
 ---
 
+# Article 4
+
+## SEO Information
+
+SEO Title: PFAS-Free Greaseproof Paper for EU and US Food Packaging Buyers
+
+Meta Description: A practical PFAS-free greaseproof paper buying checklist for EU and US food packaging buyers, covering documents, testing, samples, printing and shipment checks.
+
+URL Slug: /resources/pfas-free-greaseproof-paper-food-packaging-buyers/
+
+H1: PFAS-Free Greaseproof Paper for EU and US Food Packaging Buyers
+
+Target Keywords: PFAS-free greaseproof paper, PFAS-free food packaging, greaseproof paper food contact, food paper packaging supplier, PFAS-free baking cups
+
+Search Intent: Compliance-led procurement research for importers, distributors, foodservice packaging buyers and private-label buyers who need food paper products with clearer PFAS risk control.
+
+## Introduction
+
+PFAS-free greaseproof paper is food paper designed to resist oil and grease without intentionally added PFAS greaseproofing chemistry. For EU and US food packaging buyers, the practical buying question is not only "is it PFAS-free?" The stronger question is: can the supplier connect the claim to the exact paper grade, coating or treatment, ink system, finished product, test report, sample approval and shipment inspection?
+
+The direct answer: buyers should treat PFAS-free greaseproof paper as a specification to verify, not a slogan to copy into retail packaging. Ask for the intended product use, paper material details, food-contact documents, PFAS test scope, sample performance results, artwork and ink confirmation, and pre-shipment inspection photos before approving bulk production.
+
+This guide is written for overseas B2B buyers sourcing cupcake liners, cake cups, baking cups, burger wrap, fries bags, tray liners, air fryer liners and custom printed food paper packaging from LANGMAI or another supplier. It explains how to evaluate PFAS-free greaseproof paper in a quote-ready way, especially when products will be sold into Europe or North America.
+
+## 1. What PFAS-Free Means in Food Paper Buying
+
+PFAS is a broad name for per- and polyfluoroalkyl substances. Some PFAS chemistry has historically been used to create oil and water resistance in certain paper food packaging. Because regulations and brand policies are moving quickly, many buyers now ask for PFAS-free food paper or packaging without intentionally added PFAS.
+
+For procurement, "PFAS-free" should be defined in the purchase record. A clear specification usually states whether the buyer means no intentionally added PFAS, a test report below a defined method limit, compliance with a destination-market rule, or a retailer's own restricted substance standard. These are related, but they are not identical.
+
+Ask the supplier to confirm:
+
+- Whether the paper grade is made without intentionally added PFAS
+- Whether the claim applies to base paper, coating, printing ink, glue, finished cup or full retail pack
+- Which test method or report can support the claim
+- Whether the report is current and relevant to the exact material
+- Whether replacement materials still meet grease resistance and heat-use needs
+
+This matters because a cupcake liner, printed burger wrap and air fryer liner may use different materials and conversion processes. A certificate for one paper grade should not automatically be used for a different finished item.
+
+## 2. Why EU and US Buyers Ask Earlier in the Sourcing Process
+
+In the United States, the FDA has publicly stated that grease-proofing substances containing PFAS are no longer being sold by manufacturers for food-contact use in the US market. In Europe, PFAS restrictions are also a major policy and market topic, and food-contact packaging is increasingly reviewed by regulators, retailers and brands. Buyers do not need to wait until the container is ready to ship before asking questions.
+
+Early review helps avoid three common problems:
+
+- The buyer chooses a product with good oil resistance but no document path for the target market.
+- The artwork and retail pack are approved before the material claim is confirmed.
+- The supplier provides a generic certificate that does not match the actual finished product.
+
+For importers and supermarket private-label buyers, PFAS review should happen before sample approval. For distributors and foodservice packaging buyers, it should happen before price comparison is finalized. A low unit price is not useful if the product cannot pass the buyer's compliance file review.
+
+## 3. Where PFAS-Free Greaseproof Paper Is Used
+
+PFAS-free greaseproof paper can be relevant across many food paper categories, but the performance target changes by application.
+
+| Application | Buyer concern | What to test |
+|---|---|---|
+| Cupcake liners and baking cups | Oil marks after baking, release, color change | Bake with real recipe, check appearance after cooling |
+| Burger wrap and sandwich paper | Grease holdout, hand feel, print appearance | Wrap hot oily food, check staining and ink transfer risk |
+| Fries bags and snack bags | Oil resistance, bag strength, opening shape | Fill with hot fried food substitute, check side seams |
+| Tray liners and placemats | Surface appearance, print quality, food contact | Check sheet flatness, rub resistance and document scope |
+| Air fryer paper liners | Heat-use condition, oil and moisture resistance, basket fit | Test with food weight in a real basket and review warning text |
+
+The same paper specification may not be suitable for every use. A bakery buyer may accept mild oil shadowing after baking if the cake releases well and the liner looks clean on display. A burger wrap buyer may require stronger grease holdout because oil can move quickly through the paper during takeaway delivery.
+
+For product selection, buyers can review LANGMAI's [custom cupcake liners and baking cups](/products/cake-cups/), [air fryer paper liners](/products/air-fryer-paper-liners/) and broader [OEM customization process](/customization/) before sending a requirement sheet.
+
+## 4. Documents Buyers Should Request
+
+A practical document pack for PFAS-free greaseproof paper may include food contact declarations or test reports, PFAS-related test results, material descriptions, factory audit documents and paper sourcing documents where relevant. The exact requirement depends on the destination market, buyer policy and product type.
+
+For EU-oriented buyers, documents may need to support food-contact review and retailer compliance review. For US-oriented buyers, the buyer may ask whether the paper and any grease-resistant treatment are suitable for the intended food-contact use and whether PFAS-related claims are supported. For buyers also reviewing deforestation risk, paper sourcing may connect to EUDR due-diligence requirements, especially when wood pulp and paper origin information is requested.
+
+Request documents by product and material, not as a general brochure. A strong request can say:
+
+- Product: PFAS-free greaseproof cupcake liner
+- Material: food paper grade, grammage and treatment
+- Use: direct food contact, bakery use, target baking condition
+- Market: EU, US, UK, Canada or other destination
+- Claim: no intentionally added PFAS and supporting test report
+- Packaging: bulk carton, retail pack or private-label box
+
+LANGMAI can support document review discussions for food paper products, including certificate and test-report checks where available. Buyers should still confirm scope, validity, report number and product match before relying on any document for import or retail approval. The [factory and certificates page](/factory-certificates/) is a useful starting point for visible compliance signals.
+
+## 5. Test the Paper, Not Only the Certificate
+
+PFAS-free material selection can change performance. If a buyer is replacing a traditional grease-resistant paper, the sample should be tested with the real product, temperature, oil level and display time. A certificate cannot prove that a baking cup will look clean after a high-fat muffin is baked and cooled.
+
+Factory and buyer sample tests should include:
+
+1. Confirm base diameter, height, sheet size or bag size against the specification.
+2. Run a food-contact use simulation that matches the real application.
+3. Check oil marks after normal use and after cooling.
+4. Compare color before and after heat exposure.
+5. Check release performance for baking cups.
+6. Check odor after heating or packing, especially for printed products.
+7. Review stack height, bag opening, cup forming or sheet flatness.
+8. Keep photos and sample labels for the approval record.
+
+For custom printed food paper, the ink system also matters. LANGMAI's low-odor custom food-paper ink option can be discussed when buyers need printed cupcake liners, wrappers or retail packaging. The buyer should approve physical print samples because paper texture, coating and ink coverage can change color and odor perception.
+
+CTA button: Send Your PFAS-Free Paper Requirement
+
+## 6. Printing, Ink and Private-Label Packaging Checks
+
+Many PFAS-free greaseproof paper projects are private-label or branded packaging projects. The buyer may need a logo, seasonal pattern, supermarket shelf box, ecommerce pack or foodservice carton. Printing should be reviewed together with material compliance, not after it.
+
+Before approving artwork, confirm:
+
+- Does the PFAS-free claim apply after printing and conversion?
+- Is the ink suitable for the intended food paper use?
+- Does the buyer require low-odor ink for bakery or takeaway packaging?
+- Are warning statements or use instructions required?
+- Does the label claim match the test report language?
+- Are barcode, country of origin, item number and carton marks confirmed?
+
+Avoid broad claims such as "chemical free" or "100% safe." They are usually not precise and can create avoidable compliance risk. Use specific, supportable wording that matches the buyer's document file, such as "made without intentionally added PFAS" only when the supplier can support that statement for the exact product.
+
+For retail packs, keep a final approval file that includes artwork, material specification, test report references, packing method, carton marks and inspection points. This file is useful when a repeat order is placed months later.
+
+## 7. Supplier Evaluation Questions
+
+A supplier should be able to discuss material, performance, documents and production control in the same conversation. If the supplier only answers "yes, PFAS-free" without explaining scope, sample testing or document limits, the buyer should slow down.
+
+Useful supplier questions include:
+
+- Which greaseproof paper grade do you recommend for this product?
+- Is the PFAS-free statement about no intentionally added PFAS, a test report, or both?
+- Does the document apply to base paper or finished product?
+- Can you support FDA, EU, LFGB, BfR, DGCCRF or other documents when required for the project?
+- Can you produce custom printed food paper with low-odor ink?
+- Can paper sourcing information be prepared for EUDR-related review if the buyer requires it?
+- What sample can be sent before mass production?
+- What inspection photos or report can be provided before shipment?
+
+LANGMAI's role as an OEM/ODM paper food packaging manufacturer is useful when a buyer needs one supplier to coordinate paper selection, printing, forming, packaging and shipment checks. For RFQ preparation, the [contact page](/contact/) and [inquiry page](/inquiry/) can be used to send product requirements, destination market and document needs.
+
+## 8. Pre-Shipment Inspection Checklist
+
+PFAS-free purchasing does not end after sample approval. Pre-shipment inspection helps confirm the bulk goods match the approved specification and packaging file.
+
+Check the following before loading:
+
+- Product name, item number and size
+- Material grade or approved sample reference
+- Packing quantity per bag, inner box and master carton
+- Retail pack artwork and label version
+- Carton marks, PO number and destination
+- Random product photos from opened cartons
+- Cleanliness, odor and visible print quality
+- Certificate or report file name connected to the order
+- Mixed-size carton separation if multiple SKUs ship together
+
+For importers, these photos help the receiving warehouse identify goods quickly. For private-label buyers, they reduce the risk of incorrect label versions or pack counts. For ecommerce sellers, they help prevent avoidable customer complaints caused by wrong size, poor packaging or inconsistent product appearance.
+
+## 9. How to Send a Quote-Ready Requirement
+
+A clear RFQ reduces back-and-forth and helps the supplier recommend the right material. Instead of asking only for "PFAS-free greaseproof paper price," send a practical product brief.
+
+Include:
+
+- Product type: cupcake liner, baking cup, wrap, bag, tray liner, air fryer liner or sheet
+- Size: base diameter, height, sheet size, bag size or custom drawing
+- Material preference: white, kraft, greaseproof, silicone paper or other option
+- PFAS requirement: no intentionally added PFAS, test report requirement or buyer standard
+- Use condition: baking, takeaway, retail pack, air fryer use or display
+- Printing: plain, one-color, full pattern, logo or private-label pack
+- Quantity: trial order, first bulk order and estimated repeat order
+- Market: EU, US, Canada, UK, Middle East or other destination
+- Packaging: bulk carton, polybag, retail box, shelf-ready carton or mixed pack
+- Documents: food contact, PFAS, FSC, EUDR-related sourcing information or factory audit documents
+
+This detail lets the factory suggest a sample route, quote the correct material and avoid proposing a paper that cannot support the buyer's real use.
+
+## FAQ
+
+### What is PFAS-free greaseproof paper?
+
+PFAS-free greaseproof paper is oil-resistant food paper made without intentionally added PFAS greaseproofing chemistry, or material supported by PFAS-related testing according to the buyer's required standard. Buyers should define the claim in the purchase file.
+
+### Is PFAS-free paper automatically greaseproof?
+
+No. PFAS-free describes a chemistry or test expectation, while greaseproof describes performance against oil penetration. Buyers should test the material with the real food, temperature and display time.
+
+### What documents should EU and US buyers request?
+
+Buyers should request food-contact documents, PFAS-related test reports or declarations, material specifications and any retailer-required documents that apply to the exact paper grade, coating, ink and finished product.
+
+### Can PFAS-free greaseproof paper be custom printed?
+
+Yes, but the buyer should confirm ink suitability, odor expectations, artwork approval, print sample performance and whether the PFAS-related claim still applies to the finished printed product.
+
+### How should buyers compare suppliers?
+
+Compare suppliers by material explanation, document scope, sample testing support, printing control, packaging planning and pre-shipment inspection, not only by unit price.
+
+## CTA
+
+Send your product type, destination market, PFAS requirement, size, quantity and print plan to LANGMAI. The team can help review PFAS-free greaseproof paper options, sample testing steps and export packaging details before bulk production.
+
+CTA button: Ask for Product Catalog
+
+## Conclusion
+
+PFAS-free greaseproof paper is now a practical procurement topic for EU and US food packaging buyers. The best approach is to define the claim, match documents to the exact product, test samples under real use conditions and keep inspection records before shipment. Buyers who connect compliance review with material performance, printing and packaging usually make clearer decisions and reduce order risk.
+
+## Sources
+
+- [FDA: Authorized Uses of PFAS in Food Contact Applications](https://www.fda.gov/food/process-contaminants-food/authorized-uses-pfas-food-contact-applications)
+- [ECHA: Per- and polyfluoroalkyl substances (PFAS)](https://echa.europa.eu/hot-topics/perfluoroalkyl-chemicals-pfas)
+- [European Commission: Regulation on Deforestation-free Products](https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en)
+- [European Commission: Packaging and Packaging Waste](https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en)
+
+## Image Plan and AI Prompts
+
+1. Purpose: Hero image. Insert after introduction. Caption: PFAS-free greaseproof paper should be matched to product use, documents and sample testing. ALT: PFAS-free greaseproof food paper samples for EU and US packaging buyers. Prompt: Photorealistic B2B product photo of clean greaseproof food paper sheets, cupcake liners and takeaway wrap samples on an export packaging desk, document folders nearby with no readable text, bright factory showroom lighting, no watermark.
+
+2. Purpose: Application comparison image. Insert in section 3. Caption: Different food paper applications require different grease resistance and document checks. ALT: Cupcake liners, burger wrap and tray liners made from food paper. Prompt: Premium catalog-style arrangement of cupcake liners, burger wrap sheets, fries bags and tray liners on a clean white table, subtle factory background, no readable text, no stock-photo people.
+
+3. Purpose: Sample testing image. Insert in section 5. Caption: Buyers should test PFAS-free paper with real food conditions before bulk approval. ALT: Greaseproof paper sample being checked after food contact testing. Prompt: Realistic quality testing scene with gloved hands inspecting greaseproof food paper after oil resistance testing, stainless table, checklist with blank lines, modern clean workshop lighting, no fake certificate text.
+
+4. Purpose: Document review image. Insert in section 7. Caption: Compliance documents should match the exact material, ink and finished product. ALT: Food paper samples and compliance document review for export buyers. Prompt: Professional export supplier desk with food paper packaging samples, certificate folders, laptop, carton label mockups with blank text, subtle LANGMAI sign in background, no Chinese characters.
+
+5. Purpose: Shipment inspection image. Insert in section 8. Caption: Pre-shipment inspection confirms product, packing and label details before loading. ALT: PFAS-free greaseproof paper products being inspected before shipment. Prompt: Photorealistic pre-shipment inspection table with stacks of paper baking cups, greaseproof wrap packs, kraft export cartons, gloved inspector hands, clean factory lighting, no readable random text.
+
+## CTA and Popup Plan
+
+Mid-article CTA position: After section 5. CTA text: Send your PFAS-free paper requirement with product use, market and document needs.
+
+End CTA position: After conclusion. CTA text: Ask for Product Catalog.
+
+Popup trigger: Scroll to 45 percent or stay for 45 seconds on the article page.
+
+Popup title: Need PFAS-Free Food Paper?
+
+Popup copy: Share your product type, target market, size and document requirements. LANGMAI will help confirm a practical material and sample route.
+
+Fields: Name required, Email required, Phone or WhatsApp required, Company optional, Country optional, Product requirement optional, Document requirement optional.
+
+Submit button: Send Your Requirements
+
+---
+
 ## Publishing Priority
 
 1. Publish first: How to Choose Custom Cupcake Liners for Bakery Wholesale Orders. This supports the main product category and has the strongest direct inquiry path.
