@@ -443,6 +443,9 @@ const blogImageMap = {
   "greaseproof-paper-vs-pet-coated-paper-baking-cups": ["ai-cake-cups-premium.jpg", "ai-quality-export-packaging.jpg"],
   "air-fryer-paper-liners-bulk-buying-guide": ["ai-air-fryer-liners-premium.jpg", "ai-quality-export-packaging.jpg"],
   "paper-straws-wholesale-foodservice-retail-buyers": ["real-paper-straws.jpg", "ai-quality-export-packaging.jpg"],
+  "custom-printed-food-paper-packaging-low-odor-ink": ["blog-custom-printed-food-paper-packaging.webp", "ai-quality-export-packaging.jpg"],
+  "eudr-paper-baking-cups-traceability-checklist": ["blog-eudr-paper-traceability.webp", "ai-quality-export-packaging.jpg"],
+  "baking-paper-products-quality-control-inspection": ["blog-baking-paper-quality-control.webp", "ai-quality-export-packaging.jpg"],
 };
 
 function loadBlogArticles() {
@@ -465,6 +468,7 @@ function loadBlogArticles() {
         title,
         description,
         seoTitle: field(section, "SEO Title") || title,
+        date: field(section, "Publish Date"),
         keywords: field(section, "Target Keywords"),
         intent: field(section, "Search Intent"),
         html: renderMarkdown(bodyMarkdown),
@@ -1252,6 +1256,7 @@ function resourcePage(resource) {
   const content = resource.isLongForm ? `<article class="article longform-article">
     <p class="eyebrow">Buyer guide</p>
     <h1>${esc(resource.title)}</h1>
+    ${resource.date ? `<p class="note">Published ${esc(resource.date)}</p>` : ""}
     <p class="lede">${esc(resource.description)}</p>
     <div class="badge-grid"><span>${esc(resource.intent || "Procurement research")}</span><span>Practical supplier selection</span></div>
     ${imageBlock}
@@ -1276,7 +1281,7 @@ function resourcePage(resource) {
   </article>`;
   return layout({
     route: `/resources/${resource.slug}/`,
-    title: `${resource.seoTitle || resource.title} | LANGMAI Guide`,
+    title: resource.isLongForm ? (resource.seoTitle || resource.title) : `${resource.seoTitle || resource.title} | LANGMAI Guide`,
     description: resource.description,
     content,
     schema: [articleSchema(resource), ...(resource.faq?.length ? [faqSchema(resource.faq)] : [])],
@@ -1364,7 +1369,17 @@ function faqSchema(faq) {
 }
 
 function articleSchema(resource) {
-  return { "@context": "https://schema.org", "@type": "Article", headline: resource.title, description: resource.description, author: { "@type": "Organization", name: company.name } };
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: resource.title,
+    description: resource.description,
+    image: resource.images?.[0] ? `${baseUrl}${relAsset(resource.images[0])}` : undefined,
+    datePublished: resource.date || undefined,
+    dateModified: resource.date || undefined,
+    author: { "@type": "Organization", name: company.name },
+    publisher: { "@type": "Organization", name: company.name, logo: { "@type": "ImageObject", url: `${baseUrl}/assets/logo.jpg` } },
+  };
 }
 
 function newsSchema(items) {
@@ -1649,7 +1664,7 @@ th{background:#6f4b38;color:#fff4df}.link-grid a,.badge-grid span{background:#ff
 .buyer-note{margin:1rem 0;padding:.85rem;border-radius:8px;background:rgba(111,139,101,.1);border:1px solid rgba(111,139,101,.2);color:#385945}.buyer-note strong{color:#5e4031}
 .news-source{font-weight:850;color:#8a4f31}.news-source:hover{color:#456b55}
 @media (max-width:900px){.advantage-grid,.solution-grid{grid-template-columns:1fr}.advantage-section>.section-heading,.solution-section>.section-heading,.advantage-grid,.solution-grid{margin-left:0;margin-right:0}}
-@media (max-width:900px){.brand img{width:142px;height:52px}.brand{padding:.35rem .48rem}.mega-menu{top:auto;padding-top:0}.nav-item:after{display:none!important}.news-grid{grid-template-columns:1fr}}
+@media (max-width:900px){.brand img{width:142px;height:52px}.brand{padding:.35rem .48rem}.header-inner{width:100%;max-width:100%;min-width:0;overflow:hidden}.main-nav{width:100%;min-width:0;flex:0 1 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.15rem}.nav-item{min-width:0}.nav-link{width:100%;min-width:0;padding:.48rem .35rem;line-height:1.2;white-space:normal;overflow-wrap:anywhere}.mega-menu{top:auto;padding-top:0}.nav-item:after{display:none!important}.news-grid{grid-template-columns:1fr}.article,.longform-article{width:100%;min-width:0;overflow:hidden;padding:3.5rem 1rem}.article h1{font-size:clamp(1.9rem,9vw,2.5rem);overflow-wrap:anywhere}.article-body{min-width:0}.article-body table{display:block;max-width:100%;min-width:0;overflow-x:auto}.badge-grid{max-width:100%;min-width:0}.badge-grid span{max-width:100%;min-width:0;border-radius:8px;overflow-wrap:anywhere}.whatsapp-float{max-width:calc(100vw - 2rem)}}
 `;
 
 const js = `
