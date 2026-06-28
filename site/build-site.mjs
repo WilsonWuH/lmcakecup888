@@ -678,15 +678,16 @@ function ctaBand(title = "Ready to price your next baking paper order?") {
 
 function leadForm(defaultProduct = "Custom cupcake liners") {
   return `<form class="lead-form" data-lead-form>
+  <input class="hp-field" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
   <label>Name<input name="name" placeholder="Your name" required></label>
   <label>Email<input type="email" name="email" placeholder="buyer@example.com" required></label>
   <label>Country<input name="country" placeholder="USA, UAE, Germany..." required></label>
   <label>Product requirement<input name="product" value="${esc(defaultProduct)}" required></label>
   <label>Quantity / target order<input name="quantity" placeholder="Example: 100 cartons"></label>
-  <label>WhatsApp<input name="whatsapp" placeholder="+1 ..."></label>
+  <label>Phone / WhatsApp<input type="tel" name="phone" inputmode="tel" pattern="^[+()0-9\\s-]{7,24}$" placeholder="+1 555 123 4567" required></label>
   <label>Message<textarea name="message" placeholder="Tell us the size, material, custom print, packaging and delivery needs." rows="4"></textarea></label>
   <button class="button primary" type="submit">Send Inquiry</button>
-  <p class="form-note" data-form-note>Thank you. Our sales team will contact you soon. For launch, connect this form to ${esc(company.email)}, CRM or marketing automation.</p>
+  <p class="form-note" data-form-note>Please complete the required fields. Your inquiry will be sent securely to our sales inbox.</p>
 </form>`;
 }
 
@@ -1669,13 +1670,42 @@ th{background:#6f4b38;color:#fff4df}.link-grid a,.badge-grid span{background:#ff
 
 const js = `
 document.querySelectorAll("[data-lead-form]").forEach((form)=>{
-  form.addEventListener("submit",(event)=>{
+  form.addEventListener("submit", async (event)=>{
     event.preventDefault();
+    const note = form.querySelector("[data-form-note]");
+    const button = form.querySelector("button[type='submit']");
+    if (form.website?.value) {
+      note.textContent = "Submission blocked by spam protection.";
+      return;
+    }
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      note.textContent = "Please complete all required fields correctly.";
+      return;
+    }
     const data = Object.fromEntries(new FormData(form).entries());
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({event:"lead_form_submit",product:data.product,country:data.country,quantity:data.quantity});
-    const note = form.querySelector("[data-form-note]");
-    note.textContent = "Inquiry captured. Connect this form to email, CRM or marketing automation before launch.";
+    button.disabled = true;
+    button.textContent = "Sending...";
+    note.textContent = "Sending your inquiry securely...";
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/${company.email}", {
+        method: "POST",
+        headers: {"Content-Type":"application/json","Accept":"application/json"},
+        body: JSON.stringify({...data, _subject:"New LANGMAI product inquiry", _template:"table", _replyto:data.email, page:window.location.href})
+      });
+      const result = await response.json();
+      if (!response.ok || String(result.success).toLowerCase() !== "true") throw new Error(result.message || "Delivery failed");
+      note.textContent = "Thank you. Your inquiry has been sent to Wilson's sales inbox.";
+      button.textContent = "Sent";
+      form.reset();
+    } catch (error) {
+      note.textContent = "We could not send your inquiry. Please email ${company.email} or contact us on WhatsApp.";
+      button.textContent = "Try Again";
+    } finally {
+      setTimeout(()=>{button.disabled=false;button.textContent="Send Inquiry";},1800);
+    }
   });
 });
 
@@ -1725,8 +1755,14 @@ document.querySelectorAll("[data-inquiry-form]").forEach((form)=>{
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({event:"b2b_inquiry_submit",product:data.product,country:data.country});
     try {
-      await new Promise((resolve)=>setTimeout(resolve, 650));
-      status.textContent = "Submitted successfully. Please connect /api/inquiry to email, CRM or database before launch.";
+      const response = await fetch("https://formsubmit.co/ajax/${company.email}", {
+        method: "POST",
+        headers: {"Content-Type":"application/json","Accept":"application/json"},
+        body: JSON.stringify({...data, _subject:"New LANGMAI B2B inquiry", _template:"table", _replyto:data.email, page:window.location.href})
+      });
+      const result = await response.json();
+      if (!response.ok || String(result.success).toLowerCase() !== "true") throw new Error(result.message || "Delivery failed");
+      status.textContent = "Submitted successfully. Your inquiry has been sent to Wilson's sales inbox.";
       status.classList.add("success");
       button.textContent = "Submitted";
       form.reset();

@@ -1,12 +1,41 @@
 
 document.querySelectorAll("[data-lead-form]").forEach((form)=>{
-  form.addEventListener("submit",(event)=>{
+  form.addEventListener("submit", async (event)=>{
     event.preventDefault();
+    const note = form.querySelector("[data-form-note]");
+    const button = form.querySelector("button[type='submit']");
+    if (form.website?.value) {
+      note.textContent = "Submission blocked by spam protection.";
+      return;
+    }
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      note.textContent = "Please complete all required fields correctly.";
+      return;
+    }
     const data = Object.fromEntries(new FormData(form).entries());
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({event:"lead_form_submit",product:data.product,country:data.country,quantity:data.quantity});
-    const note = form.querySelector("[data-form-note]");
-    note.textContent = "Inquiry captured. Connect this form to email, CRM or marketing automation before launch.";
+    button.disabled = true;
+    button.textContent = "Sending...";
+    note.textContent = "Sending your inquiry securely...";
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/wh1007209170@gmail.com", {
+        method: "POST",
+        headers: {"Content-Type":"application/json","Accept":"application/json"},
+        body: JSON.stringify({...data, _subject:"New LANGMAI product inquiry", _template:"table", _replyto:data.email, page:window.location.href})
+      });
+      const result = await response.json();
+      if (!response.ok || String(result.success).toLowerCase() !== "true") throw new Error(result.message || "Delivery failed");
+      note.textContent = "Thank you. Your inquiry has been sent to Wilson's sales inbox.";
+      button.textContent = "Sent";
+      form.reset();
+    } catch (error) {
+      note.textContent = "We could not send your inquiry. Please email wh1007209170@gmail.com or contact us on WhatsApp.";
+      button.textContent = "Try Again";
+    } finally {
+      setTimeout(()=>{button.disabled=false;button.textContent="Send Inquiry";},1800);
+    }
   });
 });
 
@@ -56,8 +85,14 @@ document.querySelectorAll("[data-inquiry-form]").forEach((form)=>{
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({event:"b2b_inquiry_submit",product:data.product,country:data.country});
     try {
-      await new Promise((resolve)=>setTimeout(resolve, 650));
-      status.textContent = "Submitted successfully. Please connect /api/inquiry to email, CRM or database before launch.";
+      const response = await fetch("https://formsubmit.co/ajax/wh1007209170@gmail.com", {
+        method: "POST",
+        headers: {"Content-Type":"application/json","Accept":"application/json"},
+        body: JSON.stringify({...data, _subject:"New LANGMAI B2B inquiry", _template:"table", _replyto:data.email, page:window.location.href})
+      });
+      const result = await response.json();
+      if (!response.ok || String(result.success).toLowerCase() !== "true") throw new Error(result.message || "Delivery failed");
+      status.textContent = "Submitted successfully. Your inquiry has been sent to Wilson's sales inbox.";
       status.classList.add("success");
       button.textContent = "Submitted";
       form.reset();
