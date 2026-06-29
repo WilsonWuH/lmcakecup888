@@ -446,12 +446,21 @@ const blogImageMap = {
   "custom-printed-food-paper-packaging-low-odor-ink": ["blog-custom-printed-food-paper-packaging.webp", "ai-quality-export-packaging.jpg"],
   "eudr-paper-baking-cups-traceability-checklist": ["blog-eudr-paper-traceability.webp", "ai-quality-export-packaging.jpg"],
   "baking-paper-products-quality-control-inspection": ["blog-baking-paper-quality-control.webp", "ai-quality-export-packaging.jpg"],
+  "food-contact-testing-paper-baking-cups": ["blog-baking-paper-quality-control.webp", "ai-quality-export-packaging.jpg"],
+  "party-paper-supplies-wholesale-retail-range": ["blog-party-paper-supplies-wholesale.webp", "ai-quality-export-packaging.jpg"],
 };
 
 function loadBlogArticles() {
-  const file = path.join(siteDir, "content", "blog", "langmai-seo-aio-blog-pack.md");
+  const blogDir = path.join(siteDir, "content", "blog");
+  const file = path.join(blogDir, "langmai-seo-aio-blog-pack.md");
   if (!fs.existsSync(file)) return [];
-  const text = fs.readFileSync(file, "utf8");
+  const articleDir = path.join(blogDir, "articles");
+  const articleFiles = fs.existsSync(articleDir)
+    ? fs.readdirSync(articleDir).filter((name) => name.endsWith(".md")).sort()
+    : [];
+  const text = [file, ...articleFiles.map((name) => path.join(articleDir, name))]
+    .map((source) => fs.readFileSync(source, "utf8"))
+    .join("\n\n");
   return text
     .split(/^# Article \d+$/m)
     .slice(1)
