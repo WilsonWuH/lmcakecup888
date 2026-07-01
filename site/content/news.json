@@ -1,6 +1,15 @@
 [
   {
     "date": "2026-06-23",
+    "category": "Food-contact compliance",
+    "title": "Official guidance puts the EU and Northern Ireland BPA deadline into buyer terms",
+    "summary": "Food Standards Scotland says most newly manufactured or imported food-contact materials first placed on the EU or Northern Ireland market from 20 July 2026 must meet the EU restrictions on intentionally used BPA and other hazardous bisphenols, subject to defined transitions. It also distinguishes this requirement from the current position in Great Britain.",
+    "buyerTakeaway": "For coated, printed or bonded bakery paper supplied to the EU or Northern Ireland, confirm market-placement dates and obtain current supplier assurances, declarations and supporting purity or test data; do not treat a GB-only compliance position as sufficient.",
+    "sourceName": "Food Standards Scotland",
+    "sourceUrl": "https://www.foodstandards.gov.scot/business-guidance/running-a-food-business/publications/bpa-in-food-contact-materials-info-for-uk-businesses-on-eu-bpa-requirements-and-the-current-position-in-gb"
+  },
+  {
+    "date": "2026-06-23",
     "category": "Bakery packaging trends",
     "title": "Carrefour links paper and bakery packaging changes to cost and EPR pressure",
     "summary": "Carrefour plans to remove 5,000 tonnes of plastic packaging through measures covering multipacks, refills, paper formats and bakery packaging. The retailer says packaging savings will support lower prices, showing how material reduction and EPR charges are becoming commercial purchasing factors as well as sustainability targets.",
@@ -51,15 +60,6 @@
     "sourceUrl": "https://www.goodhousekeeping.com/food-recipes/cooking/a71423890/cupcake-trick-taller-liners/",
     "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/1eb477d0-c017-4500-82cf-373c8b7c3572.jpg?crop=1xw:0.749xh;0xw,0.158xh&resize=1200:*",
     "imageAlt": "Taller paper cupcake liners shown in Good Housekeeping's baking report"
-  },
-  {
-    "date": "2026-05-15",
-    "category": "Food-contact printing",
-    "title": "EuPIA explains BPA documentation for food-contact printing inks",
-    "summary": "EuPIA says BPA is not intentionally used in member food-contact inks and explains that compliance with the EU BPA restriction can be supported by documentation on intentional use. It also stresses good manufacturing practice, careful raw-material selection and minimizing unavoidable residues.",
-    "buyerTakeaway": "Ask the printer or converter for an ink-supplier statement on intentional BPA use, then link it to the declaration and risk assessment for the finished package.",
-    "sourceName": "European Printing Ink Association",
-    "sourceUrl": "https://www.eupia.org/wp-content/uploads/2026/06/2026-05-15_EuPIA-Statement-on-BPA-and-Printing-Inks-for-Food-Contact-Materials.pdf"
   },
   {
     "date": "2026-05-04",
