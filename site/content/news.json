@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-06-26",
+    "category": "PFAS testing",
+    "title": "New organic-fluorine screening method sharpens PPWR evidence planning",
+    "summary": "Norner has introduced a Total Organic Fluorine screening method using pyrolysis-GC/MS to distinguish PFAS-relevant organic fluorine from inorganic fluorine in solid materials. The method is positioned for coatings, composites and products with uncertain PFAS histories, with targeted PFAS analysis added where the screening result or risk profile requires it.",
+    "buyerTakeaway": "For EU-bound grease-resistant paper and coated food packaging, agree the screening method, reporting limit, sample construction and escalation to targeted PFAS testing before production; a generic 'PFAS-free' statement is not a substitute for finished-item evidence.",
+    "sourceName": "Packaging Insights",
+    "sourceUrl": "https://www.packaginginsights.com/news/norner-pfas-ppwr-screening-tool.html",
+    "imageUrl": "https://article.innovamarketinsights360.com/articleimgs/resized_rect_newsimages/jpg/639180613556913871AdobeStock_436004349.jpg",
+    "imageAlt": "Laboratory testing image published with Packaging Insights' report on PFAS screening"
+  },
+  {
     "date": "2026-06-23",
     "category": "Food-contact compliance",
     "title": "Official guidance puts the EU and Northern Ireland BPA deadline into buyer terms",
@@ -29,17 +40,6 @@
     "sourceUrl": "https://packagingeurope.com/news/diving-deeper-into-the-eus-latest-guidance-on-the-ppwr/14387.article",
     "imageUrl": "https://d2wrwj382xgrci.cloudfront.net/Pictures/1024x536/5/9/9/19599_pe_eu_flags19_253009.png",
     "imageAlt": "European Union flags accompanying Packaging Europe's PPWR guidance report"
-  },
-  {
-    "date": "2026-06-11",
-    "category": "Food-contact regulation",
-    "title": "U.S. proposal raises buyer scrutiny of PFAS, BPA and phthalates in food packaging",
-    "summary": "The proposed No Toxics in Food Packaging Act would address several chemical classes used in food packaging and processing materials. Whatever its legislative outcome, the proposal reinforces the direction of customer audits toward clearer chemical declarations and finished-packaging evidence.",
-    "buyerTakeaway": "Request PFAS, BPA and phthalate declarations for the final printed or coated paper product before retail or foodservice approval, not only for the base paper.",
-    "sourceName": "Packaging Dive",
-    "sourceUrl": "https://www.packagingdive.com/news/no-toxics-in-food-packaging-act-2026/822601/",
-    "imageUrl": "https://imgproxy.divecdn.com/taIu_fNJCO7rvaiFAdfmQ8xELY6no-ofs49_aqj0Bww/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9yZXNpemVkLmpwZw==.webp",
-    "imageAlt": "Food packaging regulation image published by Packaging Dive"
   },
   {
     "date": "2026-06-05",
