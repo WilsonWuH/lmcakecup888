@@ -452,6 +452,7 @@ const blogImageMap = {
   "muffin-baking-cups-commercial-bakery-guide": ["blog-muffin-baking-cups-commercial-bakery.webp", "ai-quality-export-packaging.jpg"],
   "tulip-baking-cups-vs-standard-muffin-liners": ["ai-cake-cups-premium.jpg", "ai-quality-export-packaging.jpg"],
   "greaseproof-paper-sheets-wholesale-buyer-guide": ["blog-custom-printed-food-paper-packaging.webp", "ai-quality-export-packaging.jpg"],
+  "self-supporting-baking-cups-wholesale-guide": ["real-roll-mouth-cups.jpg", "ai-quality-export-packaging.jpg"],
 };
 
 function loadBlogArticles() {
