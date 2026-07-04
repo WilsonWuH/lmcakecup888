@@ -21,7 +21,7 @@ const company = {
   position: "Cupcake liner manufacturer / OEM & ODM solution provider",
   markets: "Middle East, North America, Europe, United Kingdom, South America",
   customers: "Importers, distributors, bakery and confectionery buyers, large supermarkets",
-  certificates: ["BSCI", "ISO", "FSC", "FDA", "LFGB", "EUDR", "BRC"],
+  certificates: ["BSCI", "ISO", "FSC", "FDA", "LFGB", "BRC"],
   contact: "Wilson Wu",
   email: "wh1007209170@gmail.com",
   phone: "+86 13645700210",
@@ -32,14 +32,14 @@ const newsItems = JSON.parse(fs.readFileSync(path.join(siteDir, "content", "news
 
 const heroProofPoints = [
   "Low-Odor Custom Ink",
-  "EUDR System Paper",
+  "EUDR Traceability Support",
   "PFAS-Free Options",
   "EU / LFGB / BfR Support",
 ];
 
 const buyerAdvantages = [
   ["Low-odor custom ink", "Specially adjusted food-paper printing inks help reduce odor concerns for baking, takeaway and retail packaging."],
-  ["Paper in the EUDR system", "Paper sourcing information can support European buyers reviewing EUDR due-diligence requirements for paper products."],
+  ["EUDR traceability support", "For applicable paper products, sourcing, species, origin, geolocation and batch records can support an EU buyer's due-diligence review."],
   ["European compliance support", "FDA, EU, LFGB, BfR, DGCCRF and PFAS-free documentation can be reviewed or arranged according to the product and destination market."],
   ["Complete processing capability", "Printing, slitting, die-cutting, perforation, bag making and forming help turn food paper into export-ready finished products."],
 ];
@@ -252,7 +252,7 @@ const resources = [
     description: "What importers should confirm before ordering food contact paper baking products from an OEM supplier.",
     body: [
       "Food contact paper packaging buyers should ask for relevant certificates, product test reports, and material declarations before placing a bulk order.",
-      "The company profile highlights FSC, EUDR and BRC. Buyers should review visible certificate documents and confirm scope, validity and report numbers before placing orders.",
+      "The company profile highlights FSC and BRC documents alongside EUDR traceability support. Buyers should confirm document scope, validity and product applicability before placing orders.",
       "Buyers should be able to review certificate names and document previews without relying only on catalog images.",
     ],
   },
@@ -600,9 +600,11 @@ function siteHeader() {
       ], "View applications")}
       ${megaNavItem("Factory & Certificates", "/factory-certificates/", [
         ["Factory Capacity", "/factory-certificates/", "30,000+ square meters factory and 50+ team members"],
-        ["Certificates", "/factory-certificates/", "BSCI, ISO, FSC, FDA, LFGB, EUDR and BRC"],
+        ["Certificates", "/factory-certificates/", "BSCI, ISO, FSC, FDA, LFGB and BRC documents"],
+        ["EUDR Traceability", "/eudr-traceability/", "Origin, geolocation, batch records and optional verification support"],
         ["Global Supply", "/#market-map-title", "Export routes and worldwide buyer support"],
       ], "Verify factory")}
+      <a class="nav-link simple nav-eudr" href="/eudr-traceability/">EUDR</a>
       ${megaNavItem("Resources", "/resources/", [
         ["Buying Guides", "/resources/", "Practical guides for food paper product buyers"],
         ["Packaging News", "/news/", "Daily buyer notes on baking paper packaging trends"],
@@ -649,6 +651,7 @@ function siteFooter() {
       <h2>Buyer Actions</h2>
       <a href="/contact/">Request a Quote</a>
       <a href="/contact/#sample">Get Free Sample</a>
+      <a href="/eudr-traceability/">Review EUDR Traceability</a>
       <a href="/assets/catalog-preview-clean.jpg" download>Download Catalog Preview</a>
     </div>
     <div>
@@ -811,6 +814,33 @@ function solutionCategorySection() {
   </section>`;
 }
 
+function eudrHomeSection() {
+  const steps = [
+    ["01", "Forest origin", "Country, production region and plot-level geolocation data where applicable."],
+    ["02", "Species record", "Common and scientific wood-species information supplied through the paper chain."],
+    ["03", "Pulp and paper", "Paper mill, grade, supplier documentation and incoming material batch records."],
+    ["04", "LANGMAI conversion", "Printing, slitting, forming and packing linked to an internal production lot."],
+    ["05", "Finished order", "Finished SKU, carton quantity, inspection record and shipment reference."],
+    ["06", "Buyer data support", "A structured document pack for the buyer's own EUDR due-diligence process."],
+  ];
+  return `<section class="section eudr-home" aria-labelledby="eudr-home-title">
+    <div class="eudr-home-copy">
+      <p class="eyebrow">EUDR traceability</p>
+      <h2 id="eudr-home-title">Trace paper from source records to the finished shipment</h2>
+      <p class="eudr-lede">For applicable paper products, LANGMAI can connect upstream paper-sourcing information with internal production lots and finished-order records. This helps EU buyers prepare their own due-diligence review without treating EUDR as a simple certificate.</p>
+      <div class="eudr-actions">
+        <a class="button primary" href="/eudr-traceability/">Review EUDR Support</a>
+        <a class="button secondary" href="/inquiry/">Request a Buyer Data Pack</a>
+      </div>
+    </div>
+    <div class="eudr-flow">${steps.map(([number, title, text]) => `<article><span>${number}</span><div><h3>${title}</h3><p>${text}</p></div></article>`).join("")}</div>
+    <div class="eudr-verification-note">
+      <strong>Optional scientific verification</strong>
+      <p>Laboratory-based wood species or origin verification, including genetic testing, can be supported where the sample type, DNA quality and reference database permit. Testing supplements traceability records; it does not replace geolocation, legality evidence, risk assessment or a due diligence statement.</p>
+    </div>
+  </section>`;
+}
+
 function homePage() {
   const content = `<section class="hero">
     <div class="hero-slider" aria-label="LANGMAI product banner carousel">
@@ -821,7 +851,7 @@ function homePage() {
     <div class="hero-copy">
       <p class="eyebrow">Food-grade greaseproof paper packaging manufacturer</p>
       <h1>Low-Odor Printed Food Paper Packaging for Global Buyers</h1>
-      <p>LANGMAI helps importers, distributors, bakery brands and foodservice buyers source greaseproof paper products, cupcake liners, baking cups and air fryer liners with EUDR system paper, PFAS-free options, low-odor custom ink and European food-contact document support.</p>
+      <p>LANGMAI helps importers, distributors, bakery brands and foodservice buyers source greaseproof paper products, cupcake liners, baking cups and air fryer liners with EUDR traceability support, PFAS-free options, low-odor custom ink and European food-contact document support.</p>
       <div class="hero-proof">${heroProofPoints.map((item) => `<span>${esc(item)}</span>`).join("")}</div>
       <div class="hero-actions">
         <a class="button primary" href="/products/cake-cups/">Explore Food Paper Products</a>
@@ -830,9 +860,10 @@ function homePage() {
     </div>
   </section>
   <section class="trust-strip" aria-label="Factory trust points">
-      <span>Founded in ${company.founded}</span><span>${company.plant} factory</span><span>Low-odor custom ink</span><span>EUDR / PFAS-free / LFGB / BfR support</span>
+      <span>Founded in ${company.founded}</span><span>${company.plant} factory</span><span>Low-odor custom ink</span><span>EUDR traceability / PFAS-free / LFGB / BfR support</span>
   </section>
   ${buyerAdvantageSection()}
+  ${eudrHomeSection()}
   ${homeVideoSection()}
   ${marketMapSection()}
   <section class="section trust-evidence">
@@ -858,11 +889,11 @@ function homePage() {
     <div>
       <p class="eyebrow">Factory trust</p>
       <h2>Real people, real factory, export-ready food paper support</h2>
-      <p>${company.name} was founded in ${company.founded} and positions itself as a ${company.position}. The company profile highlights ${company.plant} factory capacity, ${company.team}, OEM/ODM customization, EUDR system paper sourcing and low-odor food-contact printing support.</p>
+      <p>${company.name} was founded in ${company.founded} and positions itself as a ${company.position}. The company profile highlights ${company.plant} factory capacity, ${company.team}, OEM/ODM customization, EUDR traceability support for applicable paper products and low-odor food-contact printing support.</p>
       <ul class="check-list">
         <li>LANGMAI supports wholesale buyers, importers and distributors worldwide.</li>
         <li>Target customers include ${company.customers}.</li>
-        <li>BSCI, ISO, FSC, FDA, LFGB, EUDR, BfR, DGCCRF, PFAS and BRC documents can support buyer review.</li>
+        <li>BSCI, ISO, FSC, FDA, LFGB, BfR, DGCCRF, PFAS and BRC documents support buyer review, with EUDR traceability handled as a separate due-diligence workstream.</li>
       </ul>
       <a class="button secondary" href="/factory-certificates/">View Factory & Certificates</a>
     </div>
@@ -871,7 +902,7 @@ function homePage() {
   return layout({
     route: "/",
     title: "LANGMAI | Low-Odor Food Paper Packaging Manufacturer",
-    description: "Food-grade greaseproof paper packaging, cupcake liners, baking cups and air fryer liners with low-odor custom ink, EUDR system paper and European compliance support.",
+    description: "Food-grade greaseproof paper packaging, cupcake liners, baking cups and air fryer liners with EUDR traceability support, low-odor custom ink and European compliance documents.",
     content,
     schema: [websiteSchema()],
   });
@@ -903,7 +934,7 @@ function productPage(product) {
   const faq = [
     [`What material is used for ${product.title}?`, `${product.material}. Buyers can review the visible material notes, specifications and packaging details before requesting samples.`],
     ["Can LANGMAI make custom printed designs?", "Yes. Custom colors, sizes, stock designs and OEM artwork are supported. Buyers should confirm artwork, material, carton quantity and sample approval before mass production."],
-    ["Which certificates should buyers confirm?", "The website shows BSCI, ISO, FSC, FDA, LFGB, EUDR and BRC certificate names or document previews. Final scope, validity and report numbers should be checked during order review."],
+    ["Which compliance documents should buyers confirm?", "The website shows BSCI, ISO, FSC, FDA, LFGB and BRC names or document previews. EUDR traceability is handled separately because it is a due-diligence system rather than a product certificate. Final scope, validity, applicability and report numbers should be checked during order review."],
     ["How do I request a quote?", "Send product type, size, quantity, target market, custom print needs, email and WhatsApp through the inquiry form."],
   ];
   const content = `<section class="product-hero">
@@ -941,6 +972,21 @@ function productPage(product) {
         </div>
         ${specTable}
       </section>
+      <section class="product-block product-eudr-support" aria-labelledby="product-eudr-title">
+        <div>
+          <p class="eyebrow">EUDR buyer support</p>
+          <h2 id="product-eudr-title">Traceability records for applicable paper products</h2>
+          <p>Product scope depends on the material composition, CN/HS classification and how the product is placed on the EU market. When EUDR applies, LANGMAI can help buyers collect and connect available upstream paper information with the finished production lot.</p>
+          <a class="text-link" href="/eudr-traceability/">See the complete EUDR traceability process</a>
+        </div>
+        <ul class="eudr-data-list">
+          <li>Paper supplier, mill, grade and material batch</li>
+          <li>Wood species and scientific-name data when available</li>
+          <li>Country, production region and plot geolocation support</li>
+          <li>Internal production lot, finished SKU and shipment linkage</li>
+          <li>Optional laboratory verification where technically feasible</li>
+        </ul>
+      </section>
       <section class="image-band product-gallery">${product.gallery.map((img) => `<img src="${relAsset(img)}" alt="${esc(product.title)} product gallery">`).join("")}</section>
       <section class="two-col product-block" id="quote">
         <div>
@@ -969,6 +1015,74 @@ function productPage(product) {
     description: product.short,
     content,
     schema: [productSchema(product), faqSchema(faq)],
+  });
+}
+
+function eudrTraceabilityPage() {
+  const faq = [
+    ["Is EUDR a product certificate?", "No. EUDR is an EU market-access and due-diligence regulation, not a product certification scheme. Certificates may support a buyer's review, but they do not replace the required sourcing information, risk assessment and due diligence statement."],
+    ["Which LANGMAI products are covered by EUDR?", "Coverage must be checked product by product using the material composition, CN or HS classification and the way the product is placed on the EU market. LANGMAI therefore provides traceability support for applicable paper products rather than making a blanket claim for every SKU."],
+    ["What traceability information can LANGMAI support?", "Depending on the paper supplier and order, the data pack can include paper grade and batch, species information, country and region of production, plot geolocation, upstream declarations, internal production lot, finished SKU and shipment references."],
+    ["Does genetic testing prove EUDR compliance?", "No. Genetic testing can provide supplementary evidence about wood species or origin when the sample and reference database are suitable. It does not replace geolocation, legality evidence, supply-chain records, risk assessment or the buyer's due diligence statement."],
+    ["Can buyers request an EUDR data pack before ordering?", "Yes. Send the product, material, destination market and expected quantity. LANGMAI can first confirm scope and then explain which traceability fields and supporting documents are available for that paper and order."],
+  ];
+  const dataFields = [
+    ["Product identity", "SKU, description, CN/HS code, fibre composition and order quantity."],
+    ["Wood information", "Common and scientific species name, subject to upstream paper data."],
+    ["Origin", "Country, production region, plot coordinates or GeoJSON where applicable."],
+    ["Upstream evidence", "Paper supplier, mill, grade, batch, production period and available declaration references."],
+    ["LANGMAI lot link", "Incoming paper batch connected to converting, packing and finished-product records."],
+    ["Shipment record", "Finished SKU, carton quantity, inspection record and commercial shipment reference."],
+  ];
+  const content = `<section class="page-hero eudr-hero">
+    <p class="eyebrow">EUDR support for paper buyers</p>
+    <h1>EUDR-Ready Paper Baking Products with Supply Chain Traceability</h1>
+    <p>LANGMAI supports EU buyers of applicable paper products with structured sourcing, species, origin, geolocation and batch information. The objective is a reviewable chain from upstream paper records to the finished order.</p>
+    <div class="hero-actions"><a class="button primary" href="/inquiry/">Request an EUDR Data Pack</a><a class="button secondary" href="#data-fields">Review Available Fields</a></div>
+  </section>
+  <section class="trust-strip" aria-label="EUDR support highlights"><span>Plot-level geolocation support</span><span>Species and origin records</span><span>Lot-to-shipment traceability</span><span>Optional genetic verification</span></section>
+  <section class="section eudr-definition">
+    <div class="section-heading"><p class="eyebrow">What EUDR means</p><h2>EUDR is due diligence, not a certificate</h2></div>
+    <div class="two-col">
+      <div><p>Products within the regulation's scope must be deforestation-free, produced in accordance with relevant legislation in the country of production, and covered by the required due-diligence documentation before they are placed on or exported from the EU market.</p><p>The EU operator or trader remains responsible for its legal assessment and submission. LANGMAI's role is to provide accurate supplier and production evidence that supports that review.</p></div>
+      <aside class="eudr-scope-note"><strong>Scope check comes first</strong><p>Paper-product coverage depends on the current Annex I wording, material composition, CN/HS classification and product presentation. Recovered or recycled inputs and packaging used only to support another product may require a different analysis.</p></aside>
+    </div>
+  </section>
+  <section class="section eudr-data-section" id="data-fields">
+    <div class="section-heading"><p class="eyebrow">Buyer data pack</p><h2>Information buyers can request for an applicable order</h2><p>Availability is confirmed against the selected paper, supplier and production batch before an order claim is finalized.</p></div>
+    <div class="eudr-data-grid">${dataFields.map(([title, text]) => `<article><h3>${title}</h3><p>${text}</p></article>`).join("")}</div>
+  </section>
+  <section class="section eudr-chain">
+    <div class="section-heading"><p class="eyebrow">Chain of evidence</p><h2>From forest-source data to finished cartons</h2></div>
+    <ol>
+      <li><strong>Source:</strong><span>Forest plot, species, country, production region and harvest or production period.</span></li>
+      <li><strong>Material:</strong><span>Pulp and paper mill information, paper grade, supplier and incoming batch.</span></li>
+      <li><strong>Conversion:</strong><span>Printing, slitting, die-cutting, forming and packing under a LANGMAI production lot.</span></li>
+      <li><strong>Inspection:</strong><span>Approved specification, carton quantity and shipment inspection records.</span></li>
+      <li><strong>Handover:</strong><span>Finished SKU and shipment reference linked to the available upstream evidence.</span></li>
+    </ol>
+  </section>
+  <section class="split-section eudr-genetic">
+    <div>
+      <p class="eyebrow">Scientific verification</p>
+      <h2>Genetic testing can strengthen evidence when technically suitable</h2>
+      <p>LANGMAI can support optional laboratory-based wood species or origin verification, including genetic testing, where the sample contains usable biological material and the laboratory has a suitable species or geographic reference database.</p>
+      <p>Highly processed, bleached, coated or mixed-fibre paper may contain degraded DNA. Testing feasibility and the exact claim must therefore be confirmed by the laboratory before it is included in a buyer file.</p>
+    </div>
+    <div class="eudr-boundaries"><h3>What testing does not replace</h3><ul class="check-list"><li>Plot geolocation or GeoJSON</li><li>Supply-chain and batch records</li><li>Legality and no-deforestation evidence</li><li>Risk assessment and risk mitigation</li><li>The EU operator's due diligence statement</li></ul></div>
+  </section>
+  <section class="section eudr-official-sources">
+    <div class="section-heading"><p class="eyebrow">Primary references</p><h2>Official information for buyer compliance teams</h2></div>
+    <div class="link-grid"><a href="https://eur-lex.europa.eu/legal-content/en/ALL/?uri=CELEX%3A32023R1115" target="_blank" rel="noopener noreferrer">Current EUDR regulation on EUR-Lex</a><a href="https://green-forum.ec.europa.eu/nature-and-biodiversity/deforestation-regulation-implementation_en" target="_blank" rel="noopener noreferrer">European Commission implementation guidance</a><a href="https://green-forum.ec.europa.eu/nature-and-biodiversity/deforestation-regulation-implementation/information-system-deforestation-regulation_en" target="_blank" rel="noopener noreferrer">EUDR Information System</a></div>
+  </section>
+  <section class="section faq"><p class="eyebrow">Buyer FAQ</p><h2>EUDR traceability questions</h2>${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</section>
+  ${ctaBand("Need an EUDR data review for your paper product?")}`;
+  return layout({
+    route: "/eudr-traceability/",
+    title: "EUDR Paper Traceability Support | LANGMAI",
+    description: "Review LANGMAI EUDR traceability support for applicable paper baking products, including origin, geolocation, species, batch records and optional genetic verification.",
+    content,
+    schema: [faqSchema(faq)],
   });
 }
 
@@ -1644,6 +1758,7 @@ const productTemplateCss = `
 const warmThemeCss = `
 :root{--ink:#2f211b;--muted:#7b675b;--line:#ead7c1;--paper:#fff7eb;--soft:#f7ead8;--green:#456b55;--deep:#3a2a20;--copper:#b36f4b;--gold:#d9a85c;--gold-soft:#f7dfb5;--charcoal:#4a3429;--pink:#f8dfe6;--blue:#eef6ef}
 body{background:linear-gradient(180deg,#fff8ee 0%,#f7ead9 52%,#fffaf2 100%);color:var(--ink)}
+html,body{max-width:100%;overflow-x:hidden}main{min-width:0}.eudr-hero{min-width:0}.eudr-hero h1{max-width:1020px;font-size:clamp(2rem,5vw,4.15rem);overflow-wrap:anywhere}
 .site-header{background:rgba(255,248,238,.9);border-bottom:1px solid rgba(210,166,105,.26);box-shadow:0 12px 30px rgba(115,81,51,.08)}
 .brand{display:inline-flex;align-items:center;justify-content:center;padding:.42rem .58rem;border-radius:8px;background:rgba(255,255,255,.82);border:1px solid rgba(217,168,92,.22);box-shadow:0 10px 26px rgba(111,75,48,.1),inset 0 1px 0 rgba(255,255,255,.78)}
 .brand img{width:168px;height:62px;object-fit:contain}
@@ -1678,7 +1793,11 @@ th{background:#6f4b38;color:#fff4df}.link-grid a,.badge-grid span{background:#ff
 .news-card p{color:var(--muted)}.news-meta{display:flex;gap:.5rem;flex-wrap:wrap}.news-meta span{display:inline-flex;align-items:center;border-radius:999px;padding:.25rem .55rem;background:#fff0db;border:1px solid rgba(217,168,92,.28);color:#6f4b38;font-size:.82rem;font-weight:800}
 .buyer-note{margin:1rem 0;padding:.85rem;border-radius:8px;background:rgba(111,139,101,.1);border:1px solid rgba(111,139,101,.2);color:#385945}.buyer-note strong{color:#5e4031}
 .news-source{font-weight:850;color:#8a4f31}.news-source:hover{color:#456b55}
+.eudr-home{display:grid;grid-template-columns:.82fr 1.18fr;gap:2rem;align-items:start;background:linear-gradient(145deg,#3f2d24,#52715d);max-width:none;color:#fff;padding-left:max(1rem,calc((100vw - 1180px)/2));padding-right:max(1rem,calc((100vw - 1180px)/2));border-top:1px solid rgba(255,225,170,.3);border-bottom:1px solid rgba(255,225,170,.3)}.eudr-home .eyebrow{color:#f7dfb5}.eudr-home h2{color:#fff}.eudr-lede{color:rgba(255,250,244,.84);font-size:1.08rem}.eudr-actions{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.4rem}.eudr-flow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem}.eudr-flow article{display:grid;grid-template-columns:42px 1fr;gap:.75rem;padding:.9rem;border:1px solid rgba(255,225,170,.24);border-radius:8px;background:rgba(255,255,255,.08)}.eudr-flow span{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#e4b76d;color:#3a2a20;font-weight:950}.eudr-flow h3{margin:0;color:#fff;font-size:1rem}.eudr-flow p{margin:.2rem 0 0;color:rgba(255,250,244,.72);font-size:.9rem}.eudr-verification-note{grid-column:1/-1;padding:1rem;border-left:4px solid #e4b76d;background:rgba(255,250,244,.1)}.eudr-verification-note p{margin:.3rem 0 0;color:rgba(255,250,244,.8)}
+.product-eudr-support{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;padding:1.35rem!important;border:1px solid rgba(69,107,85,.25);border-radius:8px;background:linear-gradient(135deg,rgba(241,248,236,.9),rgba(255,244,228,.88))}.product-eudr-support h2{margin-top:.15rem}.eudr-data-list{margin:0;padding:1rem 1rem 1rem 2rem;border-radius:8px;background:rgba(255,255,255,.68);border:1px solid rgba(217,168,92,.2)}.eudr-data-list li{margin:.45rem 0}
+.eudr-hero{background:radial-gradient(circle at 88% 12%,rgba(217,168,92,.23),transparent 28%),linear-gradient(135deg,#eef5eb,#fff3df);border-bottom:1px solid rgba(217,168,92,.25)}.eudr-definition,.eudr-data-section{max-width:1180px}.eudr-scope-note,.eudr-boundaries{padding:1.2rem;border-radius:8px;background:#fff4e4;border:1px solid rgba(217,168,92,.3);box-shadow:0 16px 34px rgba(111,75,48,.08)}.eudr-scope-note p{margin:.4rem 0 0}.eudr-data-section{background:linear-gradient(135deg,rgba(255,244,228,.7),rgba(241,248,236,.64))}.eudr-data-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.eudr-data-grid article{padding:1rem;border-radius:8px;background:rgba(255,255,255,.76);border:1px solid rgba(217,168,92,.24);box-shadow:0 14px 30px rgba(111,75,48,.07)}.eudr-data-grid h3{margin:.1rem 0 .5rem;color:#385945}.eudr-data-grid p{margin:0;color:var(--muted)}.eudr-chain ol{display:grid;grid-template-columns:repeat(5,1fr);gap:.8rem;padding:0;list-style:none;counter-reset:eudr}.eudr-chain li{position:relative;padding:1rem;border-top:4px solid #6f8b65;background:#fffdf8;border-radius:8px;box-shadow:0 14px 30px rgba(111,75,48,.08)}.eudr-chain li:after{content:"";position:absolute;right:-.62rem;top:50%;width:.75rem;height:.75rem;border-top:2px solid #d9a85c;border-right:2px solid #d9a85c;transform:rotate(45deg)}.eudr-chain li:last-child:after{display:none}.eudr-chain strong,.eudr-chain span{display:block}.eudr-chain span{margin-top:.4rem;color:var(--muted);font-size:.92rem}.eudr-genetic{align-items:stretch}.eudr-genetic>div{padding:1.2rem}.eudr-official-sources{padding-top:2rem}.eudr-official-sources .link-grid a{border-radius:8px}
 @media (max-width:900px){.advantage-grid,.solution-grid{grid-template-columns:1fr}.advantage-section>.section-heading,.solution-section>.section-heading,.advantage-grid,.solution-grid{margin-left:0;margin-right:0}}
+@media (max-width:900px){.eudr-home,.product-eudr-support{grid-template-columns:1fr}.eudr-flow,.eudr-data-grid,.eudr-chain ol{grid-template-columns:1fr}.eudr-chain li:after{display:none}.eudr-home{padding-left:1rem;padding-right:1rem}.eudr-hero{width:100%;padding:3.2rem 1rem}.eudr-hero h1{font-size:2rem;line-height:1.08;word-break:normal}.eudr-hero p{font-size:1rem}.eudr-hero .hero-actions{display:grid;grid-template-columns:1fr}.eudr-hero .button{width:100%;max-width:100%;white-space:normal;text-align:center}.trust-strip span{max-width:100%;text-align:center}.eudr-flow article{min-width:0}.eudr-flow p,.eudr-data-grid p{overflow-wrap:anywhere}}
 @media (max-width:900px){.brand img{width:142px;height:52px}.brand{padding:.35rem .48rem}.header-inner{width:100%;max-width:100%;min-width:0;overflow:hidden}.main-nav{width:100%;min-width:0;flex:0 1 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.15rem}.nav-item{min-width:0}.nav-link{width:100%;min-width:0;padding:.48rem .35rem;line-height:1.2;white-space:normal;overflow-wrap:anywhere}.mega-menu{top:auto;padding-top:0}.nav-item:after{display:none!important}.news-grid{grid-template-columns:1fr}.article,.longform-article{width:100%;min-width:0;overflow:hidden;padding:3.5rem 1rem}.article h1{font-size:clamp(1.9rem,9vw,2.5rem);overflow-wrap:anywhere}.article-body{min-width:0}.article-body table{display:block;max-width:100%;min-width:0;overflow-x:auto}.badge-grid{max-width:100%;min-width:0}.badge-grid span{max-width:100%;min-width:0;border-radius:8px;overflow-wrap:anywhere}.whatsapp-float{max-width:calc(100vw - 2rem)}}
 `;
 
@@ -1801,6 +1920,7 @@ writePage("/applications/", applicationsPage());
 writePage("/cases/", casesPage());
 writePage("/customization/", customizationPage());
 writePage("/factory-certificates/", factoryPage());
+writePage("/eudr-traceability/", eudrTraceabilityPage());
 writePage("/about/", aboutPage());
 writePage("/contact/", contactPage());
 writePage("/inquiry/", contactPage("/inquiry/"));
