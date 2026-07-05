@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-07-02",
+    "category": "Packaging compliance",
+    "title": "PackUK's 2027 recyclability method gives paper packaging buyers an early data deadline",
+    "summary": "PackUK has published its updated Recyclability Assessment Methodology for packaging supplied in 2027, clarifying material rules, definitions and the evidence used to decide whether packaging is commonly collected. The red, amber and green ratings will feed into UK packaging EPR fee modulation, while 2025 and 2026 reporting continues under the earlier method.",
+    "buyerTakeaway": "Map each bakery and foodservice paper SKU to the correct RAM version, especially coated paperboard and fiber-based composites, and collect construction and recyclability evidence early enough to model 2027 pEPR costs before specifications are locked.",
+    "sourceName": "Packaging Insights",
+    "sourceUrl": "https://www.packaginginsights.com/news/packuk-ram-2027-update.html",
+    "imageUrl": "https://article.innovamarketinsights360.com/articleimgs/resized_rect_newsimages/jpg/639185762167581640recycling_2_.jpg",
+    "imageAlt": "Recycling containers shown with Packaging Insights' report on PackUK's 2027 recyclability methodology"
+  },
+  {
     "date": "2026-07-01",
     "category": "Food paper packaging trends",
     "title": "Seaweed barrier coating trial puts scale and recyclability under scrutiny",
@@ -29,17 +40,6 @@
     "buyerTakeaway": "For coated, printed or bonded bakery paper supplied to the EU or Northern Ireland, confirm market-placement dates and obtain current supplier assurances, declarations and supporting purity or test data; do not treat a GB-only compliance position as sufficient.",
     "sourceName": "Food Standards Scotland",
     "sourceUrl": "https://www.foodstandards.gov.scot/business-guidance/running-a-food-business/publications/bpa-in-food-contact-materials-info-for-uk-businesses-on-eu-bpa-requirements-and-the-current-position-in-gb"
-  },
-  {
-    "date": "2026-06-15",
-    "category": "PFAS-free paper",
-    "title": "EU guidance clarifies the August PFAS checkpoint for food-contact packaging",
-    "summary": "New European Commission guidance explains a stepwise testing approach for the PPWR's PFAS limits and confirms that food-contact packaging placed on the EU market from 12 August 2026 must comply. The guidance also distinguishes stock already placed on the market from new supply.",
-    "buyerTakeaway": "For EU-bound greaseproof paper, baking cups and food wraps, confirm finished-item PFAS evidence and the date each batch will be placed on the market before shipment.",
-    "sourceName": "Packaging Europe",
-    "sourceUrl": "https://packagingeurope.com/news/diving-deeper-into-the-eus-latest-guidance-on-the-ppwr/14387.article",
-    "imageUrl": "https://d2wrwj382xgrci.cloudfront.net/Pictures/1024x536/5/9/9/19599_pe_eu_flags19_253009.png",
-    "imageAlt": "European Union flags accompanying Packaging Europe's PPWR guidance report"
   },
   {
     "date": "2026-06-05",
