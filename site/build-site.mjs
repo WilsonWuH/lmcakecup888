@@ -454,6 +454,7 @@ const blogImageMap = {
   "greaseproof-paper-sheets-wholesale-buyer-guide": ["blog-custom-printed-food-paper-packaging.webp", "ai-quality-export-packaging.jpg"],
   "self-supporting-baking-cups-wholesale-guide": ["real-roll-mouth-cups.jpg", "ai-quality-export-packaging.jpg"],
   "bleached-vs-unbleached-baking-paper": ["blog-bleached-vs-unbleached-baking-paper.webp", "ai-quality-export-packaging.jpg"],
+  "paper-baking-cup-manufacturer-audit": ["blog-paper-baking-cup-manufacturer-audit.webp", "ai-quality-export-packaging.jpg"],
 };
 
 function loadBlogArticles() {
@@ -1383,12 +1384,19 @@ function newsPage() {
 function resourcePage(resource) {
   const imageBlock = resource.images?.length ? `<figure class="article-image"><img src="${relAsset(resource.images[0])}" alt="${esc(resource.title)}"><figcaption>${esc(resource.title)}</figcaption></figure>` : "";
   const secondImage = resource.images?.[1] ? `<figure class="article-image"><img src="${relAsset(resource.images[1])}" alt="${esc(resource.title)} factory testing and shipment inspection"><figcaption>Factory testing and shipment inspection help B2B buyers reduce order risk.</figcaption></figure>` : "";
+  const eudrArticleNote = `<aside class="eudr-article-note" aria-labelledby="eudr-article-note-title">
+      <p class="eyebrow">EUDR paper sourcing</p>
+      <h2 id="eudr-article-note-title">Verify traceability for applicable paper products</h2>
+      <p>LANGMAI supports buyer review of available paper-origin, species, geolocation and batch records for products within EUDR scope. EUDR is due diligence, not a product certificate: buyers should confirm scope and evidence for the selected paper and complete their own operator or trader obligations.</p>
+      <a class="text-link" href="/resources/eudr-paper-baking-cups-traceability-checklist/">Use the EUDR traceability checklist</a>
+    </aside>`;
   const content = resource.isLongForm ? `<article class="article longform-article">
     <p class="eyebrow">Buyer guide</p>
     <h1>${esc(resource.title)}</h1>
     ${resource.date ? `<p class="note">Published ${esc(resource.date)}</p>` : ""}
     <p class="lede">${esc(resource.description)}</p>
     <div class="badge-grid"><span>${esc(resource.intent || "Procurement research")}</span><span>Practical supplier selection</span></div>
+    ${eudrArticleNote}
     ${imageBlock}
     <div class="article-body">${resource.html.replace("</h2>", `</h2>${secondImage}`)}</div>
     <aside class="article-cta">
@@ -1748,6 +1756,7 @@ const productTemplateCss = `
 .article-image{margin:2rem 0;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}
 .article-image img{width:100%;max-height:520px;object-fit:cover}
 .article-image figcaption{padding:.75rem 1rem;color:var(--muted);font-size:.92rem}
+.eudr-article-note{margin:1.5rem 0;padding:1.15rem 1.2rem;border:1px solid rgba(69,107,85,.28);border-left:5px solid var(--green);border-radius:8px;background:linear-gradient(135deg,rgba(238,246,239,.92),rgba(255,247,235,.92))}.eudr-article-note h2{margin:.2rem 0 .55rem;font-size:1.45rem}.eudr-article-note p{margin:.35rem 0 .65rem}.eudr-article-note .eyebrow{color:var(--green)}
 .article-cta{margin-top:2.5rem;padding:1.2rem;border-radius:8px;background:linear-gradient(135deg,var(--deep),#101c18);color:#fff}
 .article-cta h2{color:#fff}
 .article-cta p{color:#d9e2dc}
