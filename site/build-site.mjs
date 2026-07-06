@@ -439,6 +439,7 @@ function extractFaq(markdown) {
 }
 
 const blogImageMap = {
+  "bpa-free-paper-baking-cups": ["blog-bpa-free-paper-baking-cups.webp", "ai-quality-export-packaging.jpg"],
   "how-to-choose-custom-cupcake-liners-wholesale": ["ai-cake-cups-premium.jpg", "ai-quality-export-packaging.jpg"],
   "greaseproof-paper-vs-pet-coated-paper-baking-cups": ["ai-cake-cups-premium.jpg", "ai-quality-export-packaging.jpg"],
   "air-fryer-paper-liners-bulk-buying-guide": ["ai-air-fryer-liners-premium.jpg", "ai-quality-export-packaging.jpg"],
