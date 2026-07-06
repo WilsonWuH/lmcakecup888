@@ -52,6 +52,17 @@
   },
   {
     "date": "2026-05-28",
+    "category": "PFAS-free greaseproof paper",
+    "title": "Potato-starch barriers target PFAS-free grease resistance for bakery paper",
+    "summary": "Royal Avebe presented its plant-based barrier systems for fiber food packaging at Barrier Coatings for Food Packaging 2026. PerfectaFILM is designed to limit oil and grease penetration in paper, while PerfectaCOL combines heat-pressure sealing with barrier performance for dry foods, baked goods and foodservice formats.",
+    "buyerTakeaway": "Ask coating suppliers for finished-paper grease resistance, food-contact status, BfR/FDA support, coat-weight targets and sealing trials on the actual base paper; a bio-based ingredient claim alone does not prove production performance or finished-pack compliance.",
+    "sourceName": "Royal Avebe",
+    "sourceUrl": "https://www.avebe.com/events/barrier-coatings-food-packaging-avebe/",
+    "imageUrl": "https://www.avebe.com/app/uploads/2025/06/image-7-1.png",
+    "imageAlt": "Royal Avebe image for its plant-based barrier coatings for food packaging"
+  },
+  {
+    "date": "2026-05-28",
     "category": "Cupcake liners",
     "title": "Taller cupcake liners emerge as a simple bakery presentation upgrade",
     "summary": "Consumer baking coverage is drawing attention to taller paper liners as a low-cost way to improve cupcake height, shape and shelf presence. For commercial buyers, the trend turns small dimensional differences into a visible part of the finished product.",
@@ -89,14 +100,5 @@
     "sourceUrl": "https://www.indexbox.io/blog/air-fryer-paper-liners-market-forecast-points-higher-toward-2035-on-surging-appliance-adoption/",
     "imageUrl": "https://www.indexbox.io/landing/img/blog/custom-report-v2/world-air-fryer-paper-liners-market-analysis-forecast-size-trends-and-insights-1775827950.webp",
     "imageAlt": "Air fryer paper liners market image published by IndexBox"
-  },
-  {
-    "date": "2026-04-10",
-    "category": "Greaseproof paper",
-    "title": "PFAS-free grease-resistant paper targets demanding foodservice applications",
-    "summary": "Koehler Paper has introduced NexPlus OGR for burgers, fries, wraps and other oily foods, combining a grease-and-oil barrier made without fluorochemicals with recyclability. The launch reflects foodservice demand for paper formats that can meet both functional and circularity requirements.",
-    "buyerTakeaway": "Request finished-paper grease-resistance data for the intended food, temperature and contact time, plus PFAS non-use evidence and recyclability support; a fluorochemical-free formulation still needs application-specific performance validation.",
-    "sourceName": "Koehler Group",
-    "sourceUrl": "https://www.koehler.com/en/news/news-detail/pfas-free-and-recyclable-fast-food-packaging-paper-by-koehler-paper-grease-resistant-for-demanding-applications-2"
   }
 ]
