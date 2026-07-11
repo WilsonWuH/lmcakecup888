@@ -3,7 +3,7 @@
     "date": "2026-07-09",
     "category": "Food-contact packaging regulation",
     "title": "EU bio-based packaging report keeps food-contact safety in the specification",
-    "summary": "Food Packaging Forum reports that a European Commission-supported study sees bio-based polymers as a potential complement to recycled content under PPWR, including for food-contact packaging where virgin-quality inputs can matter. The same coverage cautions that bio-based origin does not automatically remove migration or safety questions.",
+    "summary": "Food Packaging Forum reports that a European Commission-supported study sees bio-based polymers as a possible complement to recycled content under PPWR, including for food-contact packaging where virgin-quality inputs can matter. The same coverage cautions that bio-based origin does not automatically remove migration or safety questions.",
     "buyerTakeaway": "For bakery paper packs, liners and coated food-contact formats, treat bio-based claims as a sourcing attribute, not a compliance shortcut. Ask for food-contact declarations, migration assumptions, fiber or polymer origin evidence and end-of-life data before approving a new material.",
     "sourceName": "Food Packaging Forum",
     "sourceUrl": "https://foodpackagingforum.org/news/report-supports-bio-based-targets-for-plastic-packaging-in-eu"
@@ -15,7 +15,20 @@
     "summary": "The Guardian reports that the U.S. FDA rejected a petition seeking enforceable PFAS limits in food while indicating it may work on action levels. The article also notes that PFAS can enter the food system through several routes, including packaging, making documented source control important for food brands.",
     "buyerTakeaway": "U.S. buyers should keep finished-item PFAS documentation for greaseproof paper, baking paper and foodservice packs even where federal food thresholds remain unsettled. Supplier letters should be backed by formulation controls or testing, not only marketing claims.",
     "sourceName": "The Guardian",
-    "sourceUrl": "https://www.theguardian.com/us-news/2026/jul/08/us-food-and-drug-administration-rejects-petition-to-set-pfas-limits-in-food"
+    "sourceUrl": "https://www.theguardian.com/us-news/2026/jul/08/us-food-and-drug-administration-rejects-petition-to-set-pfas-limits-in-food",
+    "imageUrl": "https://i.guim.co.uk/img/media/2518abf49f6ed84a215491519f17fd6b85e003d0/407_0_4725_3783/master/4725.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=3c262d2fd22dd5bf6b64d3feb831ce8d",
+    "imageAlt": "Article image from The Guardian's report on the FDA decision about PFAS limits in food"
+  },
+  {
+    "date": "2026-07-08",
+    "category": "Bakery packaging trends",
+    "title": "Dessert packaging buyers prioritize freshness, resealability and recyclability",
+    "summary": "Packaging Insights reports that dessert and sweet snack packs are being redesigned around product protection and circularity. Suppliers point to resealable formats, barrier performance, easy opening and recyclable monomaterial structures as brands work to protect texture while meeting consumer and regulatory expectations.",
+    "buyerTakeaway": "For bakery cookies, muffins and sweet snack paper formats, define the product-protection target before changing the pack. Ask suppliers to document grease and moisture control, seal performance, recyclability claims, print system and line compatibility together.",
+    "sourceName": "Packaging Insights",
+    "sourceUrl": "https://www.packaginginsights.com/special-reports/dessert-packaging-resealable-recyclable.html",
+    "imageUrl": "https://article.innovamarketinsights360.com/articleimgs/resized_rect_newsimages/jpg/639190930823266005AdobeStock_208897884.jpg",
+    "imageAlt": "Cookie packaging image published with Packaging Insights' report on dessert packaging trends"
   },
   {
     "date": "2026-07-01",
@@ -27,17 +40,6 @@
     "sourceUrl": "https://www.packagingtechtoday.com/materials/designing-and-selecting-food-contact-materials/",
     "imageUrl": "https://www.packagingtechtoday.com/wp-content/uploads/2026/06/AdobeStock_436556475_Editorial_Use_Only.jpeg",
     "imageAlt": "Printed food packaging image published with Packaging Technology Today's article on food-contact material selection"
-  },
-  {
-    "date": "2026-07-01",
-    "category": "Foodservice packaging regulation",
-    "title": "U.S. July packaging laws push foodservice buyers toward compliant alternatives",
-    "summary": "Packaging Dive's July regulatory roundup notes new and upcoming state-level rules affecting date labels, foam food containers, PFAS-related packaging claims and extended producer responsibility. For foodservice buyers, the patchwork makes packaging specifications and market-by-market compliance checks more important.",
-    "buyerTakeaway": "When replacing foam trays or grease-resistant foodservice packs, verify the target state requirements, PFAS-free evidence, labeling language and EPR reporting data instead of assuming one national pack spec will cover every channel.",
-    "sourceName": "Packaging Dive",
-    "sourceUrl": "https://www.packagingdive.com/news/packaging-laws-july-2026-date-labeling-foam-pfas/824085/",
-    "imageUrl": "https://imgproxy.divecdn.com/-u-bMevsOdQUitFPzvDB-BRR6HK-A_XAGMQ5KFqjhrs/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy02NjQxMzU2MjYuanBn.webp",
-    "imageAlt": "Food packaging regulation image published with Packaging Dive's July 2026 law roundup"
   },
   {
     "date": "2026-06-26",
