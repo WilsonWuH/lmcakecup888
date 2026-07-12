@@ -1,14 +1,5 @@
 [
   {
-    "date": "2026-07-09",
-    "category": "Food-contact packaging regulation",
-    "title": "EU bio-based packaging report keeps food-contact safety in the specification",
-    "summary": "Food Packaging Forum reports that a European Commission-supported study sees bio-based polymers as a possible complement to recycled content under PPWR, including for food-contact packaging where virgin-quality inputs can matter. The same coverage cautions that bio-based origin does not automatically remove migration or safety questions.",
-    "buyerTakeaway": "For bakery paper packs, liners and coated food-contact formats, treat bio-based claims as a sourcing attribute, not a compliance shortcut. Ask for food-contact declarations, migration assumptions, fiber or polymer origin evidence and end-of-life data before approving a new material.",
-    "sourceName": "Food Packaging Forum",
-    "sourceUrl": "https://foodpackagingforum.org/news/report-supports-bio-based-targets-for-plastic-packaging-in-eu"
-  },
-  {
     "date": "2026-07-08",
     "category": "FDA and PFAS",
     "title": "FDA decision on PFAS in food raises the bar for packaging evidence",
@@ -29,6 +20,15 @@
     "sourceUrl": "https://www.packaginginsights.com/special-reports/dessert-packaging-resealable-recyclable.html",
     "imageUrl": "https://article.innovamarketinsights360.com/articleimgs/resized_rect_newsimages/jpg/639190930823266005AdobeStock_208897884.jpg",
     "imageAlt": "Cookie packaging image published with Packaging Insights' report on dessert packaging trends"
+  },
+  {
+    "date": "2026-07-01",
+    "category": "Foodservice paper packaging",
+    "title": "U.S. foodservice packaging laws keep paper alternatives in the sourcing mix",
+    "summary": "Packaging Dive reports that new July 2026 packaging rules include Virginia's expanded ban on expanded polystyrene food containers, California's standardized food date labels and Connecticut PFAS labeling requirements. For restaurants, schools, stores and food trucks, the Virginia change points buyers toward reusable, paper, metal or PET alternatives.",
+    "buyerTakeaway": "Foodservice buyers should qualify paper containers, wraps and bakery packs with regional rules in mind. Confirm PFAS status, food-contact suitability, label language, cost impact and substitute-material availability before replacing foam or mixed-material packaging.",
+    "sourceName": "Packaging Dive",
+    "sourceUrl": "https://www.packagingdive.com/news/packaging-laws-july-2026-date-labeling-foam-pfas/824085/"
   },
   {
     "date": "2026-07-01",
