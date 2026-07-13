@@ -455,6 +455,7 @@ const blogImageMap = {
   "self-supporting-baking-cups-wholesale-guide": ["real-roll-mouth-cups.jpg", "ai-quality-export-packaging.jpg"],
   "bleached-vs-unbleached-baking-paper": ["blog-bleached-vs-unbleached-baking-paper.webp", "ai-quality-export-packaging.jpg"],
   "cake-boards-wholesale-bakery-buyers": ["party-accessories-clean.jpg", "ai-quality-export-packaging.jpg"],
+  "burger-wrapping-paper-wholesale-greaseproof-guide": ["blog-custom-printed-food-paper-packaging.webp", "ai-quality-export-packaging.jpg"],
 };
 
 function loadBlogArticles() {
