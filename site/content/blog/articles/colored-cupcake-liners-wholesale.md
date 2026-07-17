@@ -4,7 +4,7 @@
 
 SEO Title: Colored Cupcake Liners Wholesale: Buyer Checklist
 
-H1: Colored Cupcake Liners Wholesale: Color, Safety and Supplier Checklist
+H1: Colored Cupcake Liners Wholesale Buyer Checklist
 
 URL Slug: /resources/colored-cupcake-liners-wholesale/
 
