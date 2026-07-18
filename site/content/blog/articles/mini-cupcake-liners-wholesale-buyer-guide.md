@@ -16,7 +16,7 @@ Target Keywords: mini cupcake liners wholesale, mini baking cups bulk, small cup
 
 Search Intent: Commercial investigation and supplier evaluation for importers, bakery distributors, supermarket private-label teams, foodservice buyers and contract bakeries sourcing mini cupcake liners or mini baking cups in bulk.
 
-Publish Date: 2026-07-18
+Publish Date: 2026-07-19
 
 ## Introduction
 
