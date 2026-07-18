@@ -9,6 +9,17 @@
     "sourceUrl": "https://foodpackagingforum.org/news/indonesia-updates-fcm-regulation-but-still-allows-certain-chemicals-of-concern"
   },
   {
+    "date": "2026-07-15",
+    "category": "Foodservice paperboard",
+    "title": "Metsa Board expands paperboard design support for faster compliant packaging work",
+    "summary": "Packaging Insights reports that Metsa Board has opened a Milan packaging design studio that combines material expertise, AI-supported simulations, prototyping and design review. The studio is intended to help food, pharma and beauty brands assess lighter, recyclable and regulatory-compliant packaging options earlier in development.",
+    "buyerTakeaway": "For bakery and foodservice paperboard projects, involve the board supplier before artwork lock. Early trials on material efficiency, converting, barrier needs and recyclability evidence can reduce redesigns after compliance review.",
+    "sourceName": "Packaging Insights",
+    "sourceUrl": "https://www.packaginginsights.com/news/metsa-board-accelerates-packaging-development.html",
+    "imageUrl": "https://article.innovamarketinsights360.com/articleimgs/resized_rect_newsimages/jpg/639197051323416085Mets_Milan_Design_Studio_1.jpg",
+    "imageAlt": "Metsa Board Milan packaging design studio image published with Packaging Insights' report"
+  },
+  {
     "date": "2026-07-13",
     "category": "EUDR",
     "title": "European Commission updates EUDR scope and digital tools before year-end application",
@@ -16,6 +27,15 @@
     "buyerTakeaway": "For EU paper packaging orders, re-check whether the SKU is sold as a covered product or only used as carrier packaging, and prepare supplier-origin, fiber and due-diligence records in a format that can support the EUDR Information System.",
     "sourceName": "European Commission",
     "sourceUrl": "https://environment.ec.europa.eu/news/commission-updates-product-scope-and-tools-support-eudr-2026-07-13_en"
+  },
+  {
+    "date": "2026-07-13",
+    "category": "Molded fiber packaging",
+    "title": "Molded fiber growth faces recyclable-labeling and coating evidence questions",
+    "summary": "Packaging Dive reports that molded fiber producers expect growth as brands replace single-use plastics, while California's SB 343 recyclable-labeling rules may create end-of-life claims pressure. The article also notes that PFAS, barriers and coatings remain important regulatory considerations for molded fiber packaging.",
+    "buyerTakeaway": "For bakery trays, foodservice inserts and fiber takeout formats, treat molded fiber as a specification project, not only a plastic substitute. Confirm recyclability claims by sales region and document any grease barrier, coating and PFAS status.",
+    "sourceName": "Packaging Dive",
+    "sourceUrl": "https://www.packagingdive.com/news/molded-fiber-growth-innovations-regulatory-hurdle-sabert-california/825028/"
   },
   {
     "date": "2026-07-08",
@@ -80,27 +100,5 @@
     "sourceUrl": "https://www.avebe.com/events/barrier-coatings-food-packaging-avebe/",
     "imageUrl": "https://www.avebe.com/app/uploads/2025/06/image-7-1.png",
     "imageAlt": "Royal Avebe image for its plant-based barrier coatings for food packaging"
-  },
-  {
-    "date": "2026-05-28",
-    "category": "Cupcake liners",
-    "title": "Taller cupcake liners emerge as a simple bakery presentation upgrade",
-    "summary": "Consumer baking coverage is drawing attention to taller paper liners as a low-cost way to improve cupcake height, shape and shelf presence. For commercial buyers, the trend turns small dimensional differences into a visible part of the finished product.",
-    "buyerTakeaway": "Specify wall height, base diameter, paper weight, rigidity and pan fit on the purchase order. A generic standard size is not enough for consistent presentation.",
-    "sourceName": "Good Housekeeping",
-    "sourceUrl": "https://www.goodhousekeeping.com/food-recipes/cooking/a71423890/cupcake-trick-taller-liners/",
-    "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/1eb477d0-c017-4500-82cf-373c8b7c3572.jpg?crop=1xw:0.749xh;0xw,0.158xh&resize=1200:*",
-    "imageAlt": "Taller paper cupcake liners shown in Good Housekeeping's baking report"
-  },
-  {
-    "date": "2026-04-10",
-    "category": "Air fryer paper liners",
-    "title": "Air fryer paper liner outlook keeps sizing, heat safety and private label in focus",
-    "summary": "A 2026 market outlook links continued paper-liner demand to air-fryer adoption, convenience cooking and commercial-kitchen use. Product development is concentrating on basket fit, grease resistance, heat performance, compostability claims and retail-ready private-label formats.",
-    "buyerTakeaway": "Approve liner shape, dimensions, perforation, heat rating, oil resistance, warning copy and carton configuration together before placing a volume order.",
-    "sourceName": "IndexBox",
-    "sourceUrl": "https://www.indexbox.io/blog/air-fryer-paper-liners-market-forecast-points-higher-toward-2035-on-surging-appliance-adoption/",
-    "imageUrl": "https://www.indexbox.io/landing/img/blog/custom-report-v2/world-air-fryer-paper-liners-market-analysis-forecast-size-trends-and-insights-1775827950.webp",
-    "imageAlt": "Air fryer paper liners market image published by IndexBox"
   }
 ]
