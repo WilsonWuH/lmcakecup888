@@ -4,7 +4,7 @@
 
 SEO Title: Cupcake Toppers Wholesale: Buyer Specification Guide
 
-H1: Cupcake Toppers Wholesale: A Buyer Specification Guide
+H1: Cupcake Toppers Wholesale Buyer Guide
 
 URL Slug: /resources/cupcake-toppers-wholesale-buyer-guide/
 
