@@ -9,17 +9,6 @@
     "sourceUrl": "https://foodpackagingforum.org/news/indonesia-updates-fcm-regulation-but-still-allows-certain-chemicals-of-concern"
   },
   {
-    "date": "2026-07-15",
-    "category": "Foodservice paperboard",
-    "title": "Metsa Board expands paperboard design support for faster compliant packaging work",
-    "summary": "Packaging Insights reports that Metsa Board has opened a Milan packaging design studio that combines material expertise, AI-supported simulations, prototyping and design review. The studio is intended to help food, pharma and beauty brands assess lighter, recyclable and regulatory-compliant packaging options earlier in development.",
-    "buyerTakeaway": "For bakery and foodservice paperboard projects, involve the board supplier before artwork lock. Early trials on material efficiency, converting, barrier needs and recyclability evidence can reduce redesigns after compliance review.",
-    "sourceName": "Packaging Insights",
-    "sourceUrl": "https://www.packaginginsights.com/news/metsa-board-accelerates-packaging-development.html",
-    "imageUrl": "https://article.innovamarketinsights360.com/articleimgs/resized_rect_newsimages/jpg/639197051323416085Mets_Milan_Design_Studio_1.jpg",
-    "imageAlt": "Metsa Board Milan packaging design studio image published with Packaging Insights' report"
-  },
-  {
     "date": "2026-07-13",
     "category": "EUDR",
     "title": "European Commission updates EUDR scope and digital tools before year-end application",
@@ -100,5 +89,14 @@
     "sourceUrl": "https://www.avebe.com/events/barrier-coatings-food-packaging-avebe/",
     "imageUrl": "https://www.avebe.com/app/uploads/2025/06/image-7-1.png",
     "imageAlt": "Royal Avebe image for its plant-based barrier coatings for food packaging"
+  },
+  {
+    "date": "2026-04-30",
+    "category": "BfR and LFGB compliance",
+    "title": "BfR paper-and-board revision puts substance lists under closer review",
+    "summary": "PackagingLaw.com reports that Germany's BfR opened a consultation on Recommendation XXXVI for paper and board food-contact materials, integrating several paper recommendations into one draft and adding clearer tabular substance entries with CAS numbers where available. BfR's own guidance says its recommendations are not binding law, but they are widely used for paper, board and other materials without EU-harmonized specific measures, and LFGB Section 31 restricts placing unsafe articles on the German market.",
+    "buyerTakeaway": "For greaseproof paper, baking cups, liners and printed paper packaging sold into Germany or benchmarked against BfR, ask suppliers to map additives, wet-strength agents, coatings, colorants and CAS numbers against the latest Recommendation XXXVI draft and retain LFGB-ready declarations.",
+    "sourceName": "PackagingLaw.com",
+    "sourceUrl": "https://www.packaginglaw.com/news/german-bfr-has-launched-public-consultation-recommendation-xxxvi-food-contact-paper-and-board"
   }
 ]

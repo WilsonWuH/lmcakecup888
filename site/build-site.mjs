@@ -449,7 +449,6 @@ const blogImageMap = {
   "baking-paper-products-quality-control-inspection": ["blog-baking-paper-quality-control.webp", "ai-quality-export-packaging.jpg"],
   "food-contact-testing-paper-baking-cups": ["blog-baking-paper-quality-control.webp", "ai-quality-export-packaging.jpg"],
   "party-paper-supplies-wholesale-retail-range": ["blog-party-paper-supplies-wholesale.webp", "ai-quality-export-packaging.jpg"],
-  "cupcake-toppers-wholesale-buyer-guide": ["party-accessories-clean.jpg", "ai-quality-export-packaging.jpg"],
   "private-label-cupcake-liners-retail-packaging": ["blog-private-label-cupcake-liners.webp", "ai-quality-export-packaging.jpg"],
   "muffin-baking-cups-commercial-bakery-guide": ["blog-muffin-baking-cups-commercial-bakery.webp", "ai-quality-export-packaging.jpg"],
   "tulip-baking-cups-vs-standard-muffin-liners": ["ai-cake-cups-premium.jpg", "ai-quality-export-packaging.jpg"],
