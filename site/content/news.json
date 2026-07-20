@@ -1,10 +1,10 @@
 [
   {
     "date": "2026-07-16",
-    "category": "Food packaging data",
+    "category": "Food-contact paper rules",
     "title": "Indonesia updates food-contact packaging rules with paper and board in scope",
-    "summary": "Food Packaging Forum reports that Indonesia's BPOM adopted Regulation No. 11 of 2026 on food packaging, replacing the 2019 rule. The regulation covers paper and board as well as plastics, metals, glass, multilayer materials and other food-contact materials, with overall and specific migration requirements, positive and prohibited substance lists, and provisions for reusable and recycled packaging.",
-    "buyerTakeaway": "For Southeast Asia-bound bakery paper, greaseproof wraps and printed food paper packs, confirm whether the finished item needs migration evidence, substance-list checks and updated supplier declarations before the 12-month transition window closes.",
+    "summary": "Food Packaging Forum reports that Indonesia's BPOM adopted Regulation No. 11 of 2026 on food packaging, replacing the 2019 rule. The regulation covers paper and board alongside plastics, metals, glass and multilayer materials, with migration requirements, positive and prohibited substance lists, and provisions for reusable and recycled packaging.",
+    "buyerTakeaway": "For Southeast Asia-bound baking paper, greaseproof wraps and printed food paper packs, confirm migration evidence, substance-list checks and updated supplier declarations before the 12-month transition window closes.",
     "sourceName": "Food Packaging Forum",
     "sourceUrl": "https://foodpackagingforum.org/news/indonesia-updates-fcm-regulation-but-still-allows-certain-chemicals-of-concern"
   },
@@ -50,6 +50,15 @@
   },
   {
     "date": "2026-07-01",
+    "category": "EU compliance",
+    "title": "BPA, heavy-metal and PPWR PFAS deadlines converge for food-contact packs",
+    "summary": "Pack-Lab highlights two near-term EU compliance steps: the bisphenol restriction under Regulation (EU) 2024/3190 from 20 July 2026 for single-use food-contact materials and PPWR Article 5 chemical requirements from 12 August 2026. The article emphasizes analytical evidence for bisphenols, heavy metals and PFAS instead of relying on documentation alone.",
+    "buyerTakeaway": "For EU-bound baking cups, greaseproof paper and printed food paper packaging, align supplier declarations with material tests for BPA-related bisphenols, total heavy metals, individual PFAS, summed PFAS and total fluorine before shipment.",
+    "sourceName": "Pack-Lab",
+    "sourceUrl": "https://www.packlab.gr/en/bpa-pfas-metals-ppwr-what-changes-2026/"
+  },
+  {
+    "date": "2026-07-01",
     "category": "Low-odor printing",
     "title": "Food-contact ink guidance reinforces migration control for printed paper packs",
     "summary": "Packaging Technology Today explains that food-contact packaging materials must be selected with migration, odor, substrate behavior and regulatory documentation in mind. The article highlights migration-optimized inks as one way to reduce set-off and contamination risk when printed packs sit close to food.",
@@ -60,41 +69,28 @@
     "imageAlt": "Printed food packaging image published with Packaging Technology Today's article on food-contact material selection"
   },
   {
-    "date": "2026-06-26",
-    "category": "PFAS testing",
-    "title": "New organic-fluorine screening method sharpens PPWR evidence planning",
-    "summary": "Norner has introduced a Total Organic Fluorine screening method using pyrolysis-GC/MS to distinguish PFAS-relevant organic fluorine from inorganic fluorine in solid materials. The method is positioned for coatings, composites and products with uncertain PFAS histories, with targeted PFAS analysis added where the screening result or risk profile requires it.",
-    "buyerTakeaway": "For EU-bound grease-resistant paper and coated food packaging, agree the screening method, reporting limit, sample construction and escalation to targeted PFAS testing before production. A generic PFAS-free statement is not a substitute for finished-item evidence.",
-    "sourceName": "Packaging Insights",
-    "sourceUrl": "https://www.packaginginsights.com/news/norner-pfas-ppwr-screening-tool.html",
-    "imageUrl": "https://article.innovamarketinsights360.com/articleimgs/resized_rect_newsimages/jpg/639180613556913871AdobeStock_436004349.jpg",
-    "imageAlt": "Laboratory testing image published with Packaging Insights' report on PFAS screening"
+    "date": "2026-05-11",
+    "category": "Air fryer paper liners",
+    "title": "Air fryer paper liner demand rewards standardized sizes and food-contact claims",
+    "summary": "Future Market Insights says the air fryer paper liners market is forecast to grow through 2036, with 7.0 to 9.0 inch liners expected to hold half of the size segment in 2026. The report points to recurring consumable demand, online bulk buying, perforation patterns and rising interest in unbleached or chemical-free paper liner products.",
+    "buyerTakeaway": "For private-label air fryer liners, prioritize mainstream 7 to 9 inch SKUs, perforation consistency, heat-use instructions, food-contact declarations and claims such as unbleached or PFAS-free that can be supported by real test records.",
+    "sourceName": "Future Market Insights",
+    "sourceUrl": "https://www.futuremarketinsights.com/reports/air-fryer-paper-liners-market"
   },
   {
-    "date": "2026-06-23",
-    "category": "Food-contact compliance",
-    "title": "Official guidance puts the EU and Northern Ireland BPA deadline into buyer terms",
-    "summary": "Food Standards Scotland says most newly manufactured or imported food-contact materials first placed on the EU or Northern Ireland market from 20 July 2026 must meet the EU restrictions on intentionally used BPA and other hazardous bisphenols, subject to defined transitions. It also distinguishes this requirement from the current position in Great Britain.",
-    "buyerTakeaway": "For coated, printed or bonded bakery paper supplied to the EU or Northern Ireland, confirm market-placement dates and obtain current supplier assurances, declarations and supporting purity or test data. Do not treat a GB-only compliance position as sufficient.",
-    "sourceName": "Food Standards Scotland",
-    "sourceUrl": "https://www.foodstandards.gov.scot/business-guidance/running-a-food-business/publications/bpa-in-food-contact-materials-info-for-uk-businesses-on-eu-bpa-requirements-and-the-current-position-in-gb"
-  },
-  {
-    "date": "2026-05-28",
-    "category": "PFAS-free greaseproof paper",
-    "title": "Potato-starch barriers target PFAS-free grease resistance for bakery paper",
-    "summary": "Royal Avebe presented its plant-based barrier systems for fiber food packaging at Barrier Coatings for Food Packaging 2026. PerfectaFILM is designed to limit oil and grease penetration in paper, while PerfectaCOL combines heat-pressure sealing with barrier performance for dry foods, baked goods and foodservice formats.",
-    "buyerTakeaway": "Ask coating suppliers for finished-paper grease resistance, food-contact status, BfR/FDA support, coat-weight targets and sealing trials on the actual base paper. A bio-based ingredient claim alone does not prove production performance or finished-pack compliance.",
-    "sourceName": "Royal Avebe",
-    "sourceUrl": "https://www.avebe.com/events/barrier-coatings-food-packaging-avebe/",
-    "imageUrl": "https://www.avebe.com/app/uploads/2025/06/image-7-1.png",
-    "imageAlt": "Royal Avebe image for its plant-based barrier coatings for food packaging"
+    "date": "2026-06-20",
+    "category": "Cupcake liners",
+    "title": "Taller cupcake liners become a simple bakery-style performance upgrade",
+    "summary": "Good Housekeeping reports that baking expert Dan Langan recommends taller cupcake liners to help batter rise upward, reduce spreading and create a more polished bakery-style dome. The article notes that 1.5 inch liners can also help contain recipes that spill over in shorter paper cups.",
+    "buyerTakeaway": "For retail and bakery cupcake liner assortments, consider offering taller paper baking cups alongside standard sizes, with clear height, diameter, capacity and pan-fit specifications so buyers can match presentation goals to recipes and equipment.",
+    "sourceName": "Good Housekeeping",
+    "sourceUrl": "https://www.goodhousekeeping.com/food-recipes/cooking/a71423890/cupcake-trick-taller-liners/"
   },
   {
     "date": "2026-04-30",
     "category": "BfR and LFGB compliance",
     "title": "BfR paper-and-board revision puts substance lists under closer review",
-    "summary": "PackagingLaw.com reports that Germany's BfR opened a consultation on Recommendation XXXVI for paper and board food-contact materials, integrating several paper recommendations into one draft and adding clearer tabular substance entries with CAS numbers where available. BfR's own guidance says its recommendations are not binding law, but they are widely used for paper, board and other materials without EU-harmonized specific measures, and LFGB Section 31 restricts placing unsafe articles on the German market.",
+    "summary": "PackagingLaw.com reports that Germany's BfR opened a consultation on Recommendation XXXVI for paper and board food-contact materials, integrating several paper recommendations into one draft and adding clearer tabular substance entries with CAS numbers where available. BfR recommendations are not binding law, but they are widely used for paper, board and other materials without EU-harmonized specific measures, while LFGB Section 31 restricts unsafe articles on the German market.",
     "buyerTakeaway": "For greaseproof paper, baking cups, liners and printed paper packaging sold into Germany or benchmarked against BfR, ask suppliers to map additives, wet-strength agents, coatings, colorants and CAS numbers against the latest Recommendation XXXVI draft and retain LFGB-ready declarations.",
     "sourceName": "PackagingLaw.com",
     "sourceUrl": "https://www.packaginglaw.com/news/german-bfr-has-launched-public-consultation-recommendation-xxxvi-food-contact-paper-and-board"
