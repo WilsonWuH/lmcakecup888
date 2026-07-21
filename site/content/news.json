@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-07-20",
+    "category": "EU BPA compliance",
+    "title": "EU BPA ban reaches its main food-contact packaging transition deadline",
+    "summary": "Food Packaging Forum reports that the main EU transition period for bisphenol A in food-contact materials ended on July 20, 2026. Most single-use and reusable food-contact articles manufactured with BPA can no longer be newly placed on the EU market, while defined sell-through and longer technical derogation timelines still apply for selected articles.",
+    "buyerTakeaway": "For EU-bound baking cups, greaseproof paper packs and printed food paper items, ask suppliers to refresh BPA and related-bisphenol declarations against Regulation (EU) 2024/3190 and separate newly placed stock from articles already on the market before the deadline.",
+    "sourceName": "Food Packaging Forum",
+    "sourceUrl": "https://foodpackagingforum.org/news/eu-bpa-ban-reaches-main-transition-deadline"
+  },
+  {
     "date": "2026-07-16",
     "category": "Food-contact paper rules",
     "title": "Indonesia updates food-contact packaging rules with paper and board in scope",
@@ -16,15 +25,6 @@
     "buyerTakeaway": "For EU paper packaging orders, re-check whether the SKU is sold as a covered product or only used as carrier packaging, and prepare supplier-origin, fiber and due-diligence records in a format that can support the EUDR Information System.",
     "sourceName": "European Commission",
     "sourceUrl": "https://environment.ec.europa.eu/news/commission-updates-product-scope-and-tools-support-eudr-2026-07-13_en"
-  },
-  {
-    "date": "2026-07-13",
-    "category": "Molded fiber packaging",
-    "title": "Molded fiber growth faces recyclable-labeling and coating evidence questions",
-    "summary": "Packaging Dive reports that molded fiber producers expect growth as brands replace single-use plastics, while California's SB 343 recyclable-labeling rules may create end-of-life claims pressure. The article also notes that PFAS, barriers and coatings remain important regulatory considerations for molded fiber packaging.",
-    "buyerTakeaway": "For bakery trays, foodservice inserts and fiber takeout formats, treat molded fiber as a specification project, not only a plastic substitute. Confirm recyclability claims by sales region and document any grease barrier, coating and PFAS status.",
-    "sourceName": "Packaging Dive",
-    "sourceUrl": "https://www.packagingdive.com/news/molded-fiber-growth-innovations-regulatory-hurdle-sabert-california/825028/"
   },
   {
     "date": "2026-07-08",
@@ -69,15 +69,6 @@
     "imageAlt": "Printed food packaging image published with Packaging Technology Today's article on food-contact material selection"
   },
   {
-    "date": "2026-05-11",
-    "category": "Air fryer paper liners",
-    "title": "Air fryer paper liner demand rewards standardized sizes and food-contact claims",
-    "summary": "Future Market Insights says the air fryer paper liners market is forecast to grow through 2036, with 7.0 to 9.0 inch liners expected to hold half of the size segment in 2026. The report points to recurring consumable demand, online bulk buying, perforation patterns and rising interest in unbleached or chemical-free paper liner products.",
-    "buyerTakeaway": "For private-label air fryer liners, prioritize mainstream 7 to 9 inch SKUs, perforation consistency, heat-use instructions, food-contact declarations and claims such as unbleached or PFAS-free that can be supported by real test records.",
-    "sourceName": "Future Market Insights",
-    "sourceUrl": "https://www.futuremarketinsights.com/reports/air-fryer-paper-liners-market"
-  },
-  {
     "date": "2026-06-20",
     "category": "Cupcake liners",
     "title": "Taller cupcake liners become a simple bakery-style performance upgrade",
@@ -85,6 +76,15 @@
     "buyerTakeaway": "For retail and bakery cupcake liner assortments, consider offering taller paper baking cups alongside standard sizes, with clear height, diameter, capacity and pan-fit specifications so buyers can match presentation goals to recipes and equipment.",
     "sourceName": "Good Housekeeping",
     "sourceUrl": "https://www.goodhousekeeping.com/food-recipes/cooking/a71423890/cupcake-trick-taller-liners/"
+  },
+  {
+    "date": "2026-05-11",
+    "category": "Air fryer paper liners",
+    "title": "Air fryer paper liner demand rewards standardized sizes and food-contact claims",
+    "summary": "Future Market Insights says the air fryer paper liners market is forecast to grow through 2036, with 7.0 to 9.0 inch liners expected to hold half of the size segment in 2026. The report points to recurring consumable demand, online bulk buying, perforation patterns and rising interest in unbleached or chemical-free paper liner products.",
+    "buyerTakeaway": "For private-label air fryer liners, prioritize mainstream 7 to 9 inch SKUs, perforation consistency, heat-use instructions, food-contact declarations and claims such as unbleached or PFAS-free that can be supported by real test records.",
+    "sourceName": "Future Market Insights",
+    "sourceUrl": "https://www.futuremarketinsights.com/reports/air-fryer-paper-liners-market"
   },
   {
     "date": "2026-04-30",
