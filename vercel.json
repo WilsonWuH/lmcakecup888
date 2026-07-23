@@ -2,5 +2,67 @@
   "buildCommand": "npm run build",
   "outputDirectory": "site/dist",
   "installCommand": "npm install",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/en/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/en/news/",
+      "destination": "/news/",
+      "permanent": true
+    },
+    {
+      "source": "/de/news/",
+      "destination": "/news/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/news/",
+      "destination": "/news/",
+      "permanent": true
+    },
+    {
+      "source": "/en",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/en/:path*",
+      "destination": "/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/news",
+      "destination": "/news/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/news",
+      "destination": "/news/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/eudr-traceability/",
+      "destination": "/fr/tracabilite-eudr/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/eudr-traceability",
+      "destination": "/fr/tracabilite-eudr/",
+      "permanent": true
+    },
+    {
+      "source": "/de/eudr-traceability/",
+      "destination": "/de/eudr-rueckverfolgbarkeit/",
+      "permanent": true
+    },
+    {
+      "source": "/de/eudr-traceability",
+      "destination": "/de/eudr-rueckverfolgbarkeit/",
+      "permanent": true
+    }
+  ]
 }
