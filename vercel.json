@@ -3,6 +3,7 @@
   "buildCommand": "npm run build",
   "outputDirectory": "site/dist",
   "installCommand": "npm install",
+  "bulkRedirectsPath": "redirects.csv",
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
