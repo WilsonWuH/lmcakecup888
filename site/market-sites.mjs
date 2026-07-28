@@ -404,8 +404,8 @@ function enRoute(kind, key) {
       compliance: "/factory-certificates/",
       eudr: "/eudr-traceability/",
       about: "/about/",
-      contact: "/contact/",
-      sample: "/contact/",
+      contact: "/inquiry/",
+      sample: "/inquiry/",
       app: "/applications/",
       guide: "/resources/",
     }[kind] || "/"
@@ -605,7 +605,7 @@ function productPage(locale, p) {
     title,
     x[2],
     content,
-    "Product",
+    "WebPage",
   );
 }
 function appIndex(locale) {

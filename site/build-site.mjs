@@ -7,7 +7,9 @@ const root = process.cwd();
 const siteDir = path.join(root, "site");
 const distDir = path.join(siteDir, "dist");
 const baseUrl = "https://www.lmcakecup.com";
-const localeCodes = ["es", "ru", "ar", "pt"];
+// Only publish languages with fully localized, independently maintained content.
+// Thin translated clones caused crawl-budget waste and canonical conflicts in GSC.
+const localeCodes = [];
 const defaultLocale = "en";
 
 fs.rmSync(distDir, { recursive: true, force: true });
@@ -649,7 +651,7 @@ function hreflangTags(route, currentLocale = "") {
   return `  <link rel="alternate" hreflang="en" href="${urlFor(route)}">\n${links}${markets ? `\n${markets}` : ""}\n  <link rel="alternate" hreflang="x-default" href="${urlFor(route)}">`;
 }
 
-function languageSwitcher(route = "/") {
+function legacyLanguageSwitcher(route = "/") {
   const items = [
     ["en", "English"],
     ["es", "Espa帽ol"],
@@ -668,6 +670,20 @@ function languageSwitcher(route = "/") {
           : localizedPath(code, route);
         return `<a data-locale-link="${code}" href="${href}">${label}</a>`;
       }).join("")}
+    </div>
+  </div>`;
+}
+
+function languageSwitcher(route = "/") {
+  const items = [
+    ["en", "English", route],
+    ["de", "Deutsch", marketLocalePath("de", route) || "/de/"],
+    ["fr", "Français", marketLocalePath("fr", route) || "/fr/"],
+  ];
+  return `<div class="language-switcher">
+    <button class="language-current" type="button" aria-label="Select language">EN</button>
+    <div class="language-menu">
+      ${items.map(([code, label, href]) => `<a data-locale-link="${code}" href="${href}">${label}</a>`).join("")}
     </div>
   </div>`;
 }
@@ -755,9 +771,9 @@ function siteHeader() {
         ["Cupcake Liner Selection", "/resources/choose-custom-cupcake-liners/", "How to choose baking cup specs"],
       ], "Read resources")}
       <a class="nav-link simple" href="/about/">About Us</a>
-      <a class="nav-link simple" href="/contact/">Contact</a>
+      <a class="nav-link simple" href="/inquiry/">Contact</a>
     </nav>
-    <a class="header-cta" href="/contact/">Request a Quote</a>
+    <a class="header-cta" href="/inquiry/">Request a Quote</a>
     ${languageSwitcher("/")}
   </div>
 </header>`;
@@ -791,8 +807,8 @@ function siteFooter() {
     </div>
     <div>
       <h2>Buyer Actions</h2>
-      <a href="/contact/">Request a Quote</a>
-      <a href="/contact/#sample">Get Free Sample</a>
+      <a href="/inquiry/">Request a Quote</a>
+      <a href="/inquiry/#sample">Get Free Sample</a>
       <a href="/products/food-wrapping-paper/">Explore Food Wrapping Paper</a>
       <a href="/eudr-traceability/">Review EUDR Traceability</a>
       <a href="/assets/catalog-preview-clean.jpg" download>Download Catalog Preview</a>
@@ -830,8 +846,8 @@ function ctaBand(title = "Ready to price your next baking paper order?") {
       <p>Share product type, size, quantity, destination market and custom print needs. LANGMAI can support stock designs, OEM artwork, samples and export carton planning.</p>
     </div>
     <div class="cta-actions">
-      <a class="button primary" href="/contact/">Request a Quote</a>
-      <a class="button secondary" href="/contact/#sample">Get Free Sample</a>
+      <a class="button primary" href="/inquiry/">Request a Quote</a>
+      <a class="button secondary" href="/inquiry/#sample">Get Free Sample</a>
     </div>
   </section>`;
 }
@@ -863,7 +879,7 @@ function ipStickyCard(productTitle = "Custom cupcake liners") {
         <li>Sample and catalog request</li>
         <li>WhatsApp quick reply</li>
       </ul>
-      <a class="button primary" href="/contact/">Request a Quote</a>
+      <a class="button primary" href="/inquiry/">Request a Quote</a>
       <a class="button secondary" href="https://wa.me/8613645700210">WhatsApp Wilson</a>
       <span class="ip-note">${esc(productTitle)}</span>
     </div>
@@ -1245,13 +1261,13 @@ function foodWrappingProductPage(product) {
   <section class="section two-col"><div><p class="eyebrow">OEM and private label</p><h2>From artwork to export carton</h2><ol class="process-list"><li>Define material, application and dimensions</li><li>Review artwork, colors and print coverage</li><li>Approve a representative product and packaging sample</li><li>Confirm pack count, labels and master cartons</li><li>Link the final order to the approved specification</li></ol></div><div><p class="eyebrow">Packaging options</p><h2>Plan the selling format</h2><ul class="check-list"><li>Bulk sheets or rolls</li><li>Interfolded or dispenser formats where applicable</li><li>Retail pack counts and private-label artwork</li><li>Inner packs, labels and master cartons</li><li>Pallet and container information upon request</li></ul></div></section>
   <section class="section two-col" id="quote"><div><p class="eyebrow">Quote request</p><h2>Send a product-level brief</h2><p>Please confirm technical requirements before ordering. The detailed form helps LANGMAI check material, converting, printing, documents and packaging together.</p></div>${foodWrappingLeadForm(product)}</section>
   <section class="section faq"><p class="eyebrow">FAQ</p><h2>${esc(product.cardTitle)} FAQ</h2>${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</section>
-  <section class="section"><h2>Related food wrapping paper</h2><div class="link-grid">${wrappingProducts.map((item) => `<a href="/products/${item.slug}/">${esc(item.cardTitle)}</a>`).join("")}<a href="/products/food-wrapping-paper/">Food Wrapping Paper Overview</a><a href="/contact/">Contact LANGMAI</a></div></section>`;
+  <section class="section"><h2>Related food wrapping paper</h2><div class="link-grid">${wrappingProducts.map((item) => `<a href="/products/${item.slug}/">${esc(item.cardTitle)}</a>`).join("")}<a href="/products/food-wrapping-paper/">Food Wrapping Paper Overview</a><a href="/inquiry/">Contact LANGMAI</a></div></section>`;
   return layout({
     route: `/products/${product.slug}/`,
     title: product.seoTitle,
     description: product.meta,
     content,
-    schema: [productSchema(product), faqSchema(faq)],
+    schema: [productPageSchema(product, `/products/${product.slug}/`), faqSchema(faq)],
   });
 }
 
@@ -1277,7 +1293,7 @@ function productPage(product) {
       <p>${esc(product.short)}</p>
       <div class="hero-actions">
         <a class="button primary" href="#quote">Request a Quote</a>
-        <a class="button secondary" href="/contact/#sample">Get Free Sample</a>
+        <a class="button secondary" href="/inquiry/#sample">Get Free Sample</a>
       </div>
     </div>
     <img src="${relAsset(product.image)}" alt="${esc(product.title)} specifications and product examples">
@@ -1366,7 +1382,7 @@ function productPage(product) {
     title: `${product.title} | LANGMAI Manufacturer`,
     description: product.short,
     content,
-    schema: [productSchema(product), faqSchema(faq)],
+    schema: [productPageSchema(product, `/products/${product.slug}/`), faqSchema(faq)],
   });
 }
 
@@ -1590,7 +1606,7 @@ function applicationsPage() {
       .map(
         ([title, text, image]) => `<article class="product-card">
         <img src="/assets/${image}" alt="${esc(title)} application for LANGMAI products">
-        <div><h2>${esc(title)}</h2><p>${esc(text)}</p><a class="text-link" href="/contact/">Discuss this application</a></div>
+        <div><h2>${esc(title)}</h2><p>${esc(text)}</p><a class="text-link" href="/inquiry/">Discuss this application</a></div>
       </article>`,
       )
       .join("")}</div>
@@ -1689,7 +1705,7 @@ function aboutPage() {
       <p>Founded in ${company.founded}, LANGMAI has developed around paper products used in baking, food preparation, beverage service and retail presentation. The range includes cupcake liners, muffin and roll-mouth baking cups, baking paper, air fryer paper liners, greaseproof paper, paper straws and selected paper party accessories.</p>
       <p>The company combines product manufacturing with practical project support. Buyers can discuss paper type, dimensions, forming method, printing, color, pack count, retail presentation and export-carton requirements as one controlled specification rather than sourcing each step separately.</p>
       <p>${company.contact} is the named contact for overseas inquiries, helping buyers connect product requirements with samples, document review and quotation follow-up.</p>
-      <div class="hero-actions"><a class="button primary" href="/contact/">Contact ${company.contact}</a><a class="button secondary" href="/factory-certificates/">Review Factory Evidence</a></div>
+      <div class="hero-actions"><a class="button primary" href="/inquiry/">Contact ${company.contact}</a><a class="button secondary" href="/factory-certificates/">Review Factory Evidence</a></div>
     </div>
   </section>
   <section class="section">
@@ -1770,7 +1786,7 @@ function aboutPage() {
   });
 }
 
-function contactPage(route = "/contact/") {
+function contactPage(route = "/inquiry/") {
   const htmlTemplate = `<form class="b2b-inquiry-form" method="post" action="/api/inquiry">
   <label>Name *<input name="name" required placeholder="Your full name"></label>
   <label>Email *<input type="email" name="email" required placeholder="buyer@example.com"></label>
@@ -1893,7 +1909,7 @@ function newsPage() {
     <p class="eyebrow">Industry news</p>
     <h1>Baking Paper Packaging News</h1>
     <p>Daily buyer-focused updates on greaseproof paper, baking cups, air fryer paper liners, food-contact paper packaging, PFAS-free materials and EUDR compliance.</p>
-    <div class="hero-actions"><a class="button primary" href="/contact/">Ask for Product Support</a><a class="button secondary" href="/resources/">Read Buyer Guides</a></div>
+    <div class="hero-actions"><a class="button primary" href="/inquiry/">Ask for Product Support</a><a class="button secondary" href="/resources/">Read Buyer Guides</a></div>
   </section>
   <section class="section news-intro">
     <div class="section-heading">
@@ -1959,7 +1975,7 @@ function resourcePage(resource) {
       <h2>Next steps</h2>
       <a href="/products/cake-cups/">View custom cupcake liners</a>
       <a href="/customization/">Review OEM customization process</a>
-      <a href="/contact/">Request a quote</a>
+      <a href="/inquiry/">Request a quote</a>
     </section>
   </article>`;
   return layout({
@@ -1997,7 +2013,7 @@ function landingPage(lp) {
     title: `${lp.title} | LANGMAI Wholesale Supply`,
     description: lp.description,
     content,
-    schema: [productSchema(product)],
+    schema: [productPageSchema(product, `/landing/${lp.slug}/`)],
     bodyClass: "landing-page",
   });
 }
@@ -2040,18 +2056,18 @@ function breadcrumbSchema(route, title) {
   return { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: items };
 }
 
-function productSchema(product) {
+function productPageSchema(product, route) {
   return {
     "@context": "https://schema.org",
-    "@type": "Product",
+    "@type": "WebPage",
+    url: `${baseUrl}${route}`,
     name: product.title,
     description: product.short,
-    image: `${baseUrl}${relAsset(product.image)}`,
-    brand: { "@type": "Brand", name: "LANGMAI" },
-    manufacturer: { "@type": "Organization", name: company.name },
-    category: "Food paper packaging",
-    material: product.material,
-    additionalProperty: product.features.map((f) => ({ "@type": "PropertyValue", name: "Feature", value: f })),
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      contentUrl: `${baseUrl}${relAsset(product.image)}`,
+    },
+    isPartOf: { "@type": "WebSite", name: "LANGMAI", url: baseUrl },
   };
 }
 
@@ -2563,7 +2579,6 @@ writePage("/markets/", marketsIndexPage());
 writePage("/markets/united-states/", marketPage("united-states"));
 writePage("/markets/europe/", marketPage("europe"));
 writePage("/about/", aboutPage());
-writePage("/contact/", contactPage());
 writePage("/inquiry/", contactPage("/inquiry/"));
 writePage("/news/", newsPage());
 writePage("/resources/", resourcesIndex());

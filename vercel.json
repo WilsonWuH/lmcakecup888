@@ -1,31 +1,18 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "npm run build",
   "outputDirectory": "site/dist",
   "installCommand": "npm install",
   "cleanUrls": true,
+  "trailingSlash": true,
   "redirects": [
     {
+      "source": "/contact/",
+      "destination": "/inquiry/",
+      "permanent": true
+    },
+    {
       "source": "/en/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/en/news/",
-      "destination": "/news/",
-      "permanent": true
-    },
-    {
-      "source": "/de/news/",
-      "destination": "/news/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/news/",
-      "destination": "/news/",
-      "permanent": true
-    },
-    {
-      "source": "/en",
       "destination": "/",
       "permanent": true
     },
@@ -35,12 +22,52 @@
       "permanent": true
     },
     {
-      "source": "/de/news",
+      "source": "/es/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/es/:path*",
+      "destination": "/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/ru/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/:path*",
+      "destination": "/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/ar/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/:path*",
+      "destination": "/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/pt/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/:path*",
+      "destination": "/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/news/",
       "destination": "/news/",
       "permanent": true
     },
     {
-      "source": "/fr/news",
+      "source": "/fr/news/",
       "destination": "/news/",
       "permanent": true
     },
@@ -60,8 +87,143 @@
       "permanent": true
     },
     {
-      "source": "/de/eudr-traceability",
-      "destination": "/de/eudr-rueckverfolgbarkeit/",
+      "source": "/fr/about/",
+      "destination": "/fr/a-propos/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/customization/",
+      "destination": "/fr/emballages-personnalises/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/factory-certificates/",
+      "destination": "/fr/controle-qualite/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/inquiry/",
+      "destination": "/fr/demande-echantillons/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/products/cake-cups/",
+      "destination": "/fr/produits/caissettes-de-cuisson/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/products/muffin-baking-cups/",
+      "destination": "/fr/produits/caissettes-a-muffins/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/products/tulip-baking-cups/",
+      "destination": "/fr/produits/caissettes-tulipe/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/products/self-supporting-baking-cups/",
+      "destination": "/fr/produits/moules-de-cuisson-autoportants/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/products/baking-parchment-paper/",
+      "destination": "/fr/produits/papier-cuisson/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/products/greaseproof-paper/",
+      "destination": "/fr/produits/papier-ingraissable/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/products/air-fryer-paper-liners/",
+      "destination": "/fr/produits/papier-pour-air-fryer/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/products/paper-straws/",
+      "destination": "/fr/produits/pailles-en-papier/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/products/:path*",
+      "destination": "/products/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr/resources/:path*",
+      "destination": "/resources/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/about/",
+      "destination": "/de/ueber-uns/",
+      "permanent": true
+    },
+    {
+      "source": "/de/customization/",
+      "destination": "/de/individuelle-verpackungen/",
+      "permanent": true
+    },
+    {
+      "source": "/de/factory-certificates/",
+      "destination": "/de/qualitaetskontrolle/",
+      "permanent": true
+    },
+    {
+      "source": "/de/inquiry/",
+      "destination": "/de/muster-anfordern/",
+      "permanent": true
+    },
+    {
+      "source": "/de/products/cake-cups/",
+      "destination": "/de/produkte/backfoermchen/",
+      "permanent": true
+    },
+    {
+      "source": "/de/products/muffin-baking-cups/",
+      "destination": "/de/produkte/muffin-backfoermchen/",
+      "permanent": true
+    },
+    {
+      "source": "/de/products/tulip-baking-cups/",
+      "destination": "/de/produkte/tulpen-backfoermchen/",
+      "permanent": true
+    },
+    {
+      "source": "/de/products/self-supporting-baking-cups/",
+      "destination": "/de/produkte/freistehende-papierbackformen/",
+      "permanent": true
+    },
+    {
+      "source": "/de/products/baking-parchment-paper/",
+      "destination": "/de/produkte/backpapier/",
+      "permanent": true
+    },
+    {
+      "source": "/de/products/greaseproof-paper/",
+      "destination": "/de/produkte/fettdichtes-papier/",
+      "permanent": true
+    },
+    {
+      "source": "/de/products/air-fryer-paper-liners/",
+      "destination": "/de/produkte/airfryer-backpapier/",
+      "permanent": true
+    },
+    {
+      "source": "/de/products/paper-straws/",
+      "destination": "/de/produkte/papierstrohhalme/",
+      "permanent": true
+    },
+    {
+      "source": "/de/products/:path*",
+      "destination": "/products/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de/resources/:path*",
+      "destination": "/resources/:path*",
       "permanent": true
     }
   ]
