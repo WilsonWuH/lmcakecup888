@@ -1,231 +1,3010 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "npm run build",
-  "outputDirectory": "site/dist",
-  "installCommand": "npm install",
-  "bulkRedirectsPath": "redirects.csv",
-  "cleanUrls": true,
-  "trailingSlash": true,
-  "redirects": [
-    {
-      "source": "/contact/",
-      "destination": "/inquiry/",
-      "permanent": true
-    },
-    {
-      "source": "/en/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/en/:path*",
-      "destination": "/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/es/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/es/:path*",
-      "destination": "/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/ru/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/ru/:path*",
-      "destination": "/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/ar/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/ar/:path*",
-      "destination": "/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/pt/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/pt/:path*",
-      "destination": "/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/de/news/",
-      "destination": "/news/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/news/",
-      "destination": "/news/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/eudr-traceability/",
-      "destination": "/fr/tracabilite-eudr/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/eudr-traceability",
-      "destination": "/fr/tracabilite-eudr/",
-      "permanent": true
-    },
-    {
-      "source": "/de/eudr-traceability/",
-      "destination": "/de/eudr-rueckverfolgbarkeit/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/about/",
-      "destination": "/fr/a-propos/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/customization/",
-      "destination": "/fr/emballages-personnalises/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/factory-certificates/",
-      "destination": "/fr/controle-qualite/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/inquiry/",
-      "destination": "/fr/demande-echantillons/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/products/cake-cups/",
-      "destination": "/fr/produits/caissettes-de-cuisson/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/products/muffin-baking-cups/",
-      "destination": "/fr/produits/caissettes-a-muffins/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/products/tulip-baking-cups/",
-      "destination": "/fr/produits/caissettes-tulipe/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/products/self-supporting-baking-cups/",
-      "destination": "/fr/produits/moules-de-cuisson-autoportants/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/products/baking-parchment-paper/",
-      "destination": "/fr/produits/papier-cuisson/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/products/greaseproof-paper/",
-      "destination": "/fr/produits/papier-ingraissable/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/products/air-fryer-paper-liners/",
-      "destination": "/fr/produits/papier-pour-air-fryer/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/products/paper-straws/",
-      "destination": "/fr/produits/pailles-en-papier/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/products/:path*",
-      "destination": "/products/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/fr/resources/:path*",
-      "destination": "/resources/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/de/about/",
-      "destination": "/de/ueber-uns/",
-      "permanent": true
-    },
-    {
-      "source": "/de/customization/",
-      "destination": "/de/individuelle-verpackungen/",
-      "permanent": true
-    },
-    {
-      "source": "/de/factory-certificates/",
-      "destination": "/de/qualitaetskontrolle/",
-      "permanent": true
-    },
-    {
-      "source": "/de/inquiry/",
-      "destination": "/de/muster-anfordern/",
-      "permanent": true
-    },
-    {
-      "source": "/de/products/cake-cups/",
-      "destination": "/de/produkte/backfoermchen/",
-      "permanent": true
-    },
-    {
-      "source": "/de/products/muffin-baking-cups/",
-      "destination": "/de/produkte/muffin-backfoermchen/",
-      "permanent": true
-    },
-    {
-      "source": "/de/products/tulip-baking-cups/",
-      "destination": "/de/produkte/tulpen-backfoermchen/",
-      "permanent": true
-    },
-    {
-      "source": "/de/products/self-supporting-baking-cups/",
-      "destination": "/de/produkte/freistehende-papierbackformen/",
-      "permanent": true
-    },
-    {
-      "source": "/de/products/baking-parchment-paper/",
-      "destination": "/de/produkte/backpapier/",
-      "permanent": true
-    },
-    {
-      "source": "/de/products/greaseproof-paper/",
-      "destination": "/de/produkte/fettdichtes-papier/",
-      "permanent": true
-    },
-    {
-      "source": "/de/products/air-fryer-paper-liners/",
-      "destination": "/de/produkte/airfryer-backpapier/",
-      "permanent": true
-    },
-    {
-      "source": "/de/products/paper-straws/",
-      "destination": "/de/produkte/papierstrohhalme/",
-      "permanent": true
-    },
-    {
-      "source": "/de/products/:path*",
-      "destination": "/products/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/de/resources/:path*",
-      "destination": "/resources/:path*",
-      "permanent": true
-    }
-  ]
+    "$schema":  "https://openapi.vercel.sh/vercel.json",
+    "buildCommand":  "npm run build",
+    "outputDirectory":  "site/dist",
+    "installCommand":  "npm install",
+    "cleanUrls":  true,
+    "trailingSlash":  true,
+    "redirects":  [
+                      {
+                          "source":  "/contact/",
+                          "destination":  "/inquiry/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/",
+                          "destination":  "/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/:path*",
+                          "destination":  "/:path*",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/",
+                          "destination":  "/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/:path*",
+                          "destination":  "/:path*",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/",
+                          "destination":  "/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/:path*",
+                          "destination":  "/:path*",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/",
+                          "destination":  "/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/:path*",
+                          "destination":  "/:path*",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/",
+                          "destination":  "/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/:path*",
+                          "destination":  "/:path*",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/news/",
+                          "destination":  "/news/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/news/",
+                          "destination":  "/news/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/eudr-traceability/",
+                          "destination":  "/fr/tracabilite-eudr/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/eudr-traceability",
+                          "destination":  "/fr/tracabilite-eudr/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/eudr-traceability/",
+                          "destination":  "/de/eudr-rueckverfolgbarkeit/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/about/",
+                          "destination":  "/fr/a-propos/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/customization/",
+                          "destination":  "/fr/emballages-personnalises/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/factory-certificates/",
+                          "destination":  "/fr/controle-qualite/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/inquiry/",
+                          "destination":  "/fr/demande-echantillons/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/products/cake-cups/",
+                          "destination":  "/fr/produits/caissettes-de-cuisson/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/products/muffin-baking-cups/",
+                          "destination":  "/fr/produits/caissettes-a-muffins/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/products/tulip-baking-cups/",
+                          "destination":  "/fr/produits/caissettes-tulipe/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/products/self-supporting-baking-cups/",
+                          "destination":  "/fr/produits/moules-de-cuisson-autoportants/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/products/baking-parchment-paper/",
+                          "destination":  "/fr/produits/papier-cuisson/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/products/greaseproof-paper/",
+                          "destination":  "/fr/produits/papier-ingraissable/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/products/air-fryer-paper-liners/",
+                          "destination":  "/fr/produits/papier-pour-air-fryer/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/products/paper-straws/",
+                          "destination":  "/fr/produits/pailles-en-papier/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/products/:path*",
+                          "destination":  "/products/:path*",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/:path*",
+                          "destination":  "/resources/:path*",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/about/",
+                          "destination":  "/de/ueber-uns/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/customization/",
+                          "destination":  "/de/individuelle-verpackungen/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/factory-certificates/",
+                          "destination":  "/de/qualitaetskontrolle/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/inquiry/",
+                          "destination":  "/de/muster-anfordern/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/products/cake-cups/",
+                          "destination":  "/de/produkte/backfoermchen/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/products/muffin-baking-cups/",
+                          "destination":  "/de/produkte/muffin-backfoermchen/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/products/tulip-baking-cups/",
+                          "destination":  "/de/produkte/tulpen-backfoermchen/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/products/self-supporting-baking-cups/",
+                          "destination":  "/de/produkte/freistehende-papierbackformen/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/products/baking-parchment-paper/",
+                          "destination":  "/de/produkte/backpapier/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/products/greaseproof-paper/",
+                          "destination":  "/de/produkte/fettdichtes-papier/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/products/air-fryer-paper-liners/",
+                          "destination":  "/de/produkte/airfryer-backpapier/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/products/paper-straws/",
+                          "destination":  "/de/produkte/papierstrohhalme/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/products/:path*",
+                          "destination":  "/products/:path*",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/:path*",
+                          "destination":  "/resources/:path*",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/products/",
+                          "destination":  "/products/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/products/food-wrapping-paper/",
+                          "destination":  "/products/food-wrapping-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/products/cake-cups/",
+                          "destination":  "/products/cake-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/products/roll-mouth-cake-cups/",
+                          "destination":  "/products/roll-mouth-cake-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/products/muffin-baking-cups/",
+                          "destination":  "/products/muffin-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/products/air-fryer-paper-liners/",
+                          "destination":  "/products/air-fryer-paper-liners/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/products/baking-parchment-paper/",
+                          "destination":  "/products/baking-parchment-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/products/tulip-muffin-cups/",
+                          "destination":  "/products/tulip-muffin-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/products/custom-printed-baking-paper/",
+                          "destination":  "/products/custom-printed-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/products/greaseproof-paper/",
+                          "destination":  "/products/greaseproof-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/products/burger-wrapping-paper/",
+                          "destination":  "/products/burger-wrapping-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/products/wax-paper/",
+                          "destination":  "/products/wax-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/products/butcher-paper/",
+                          "destination":  "/products/butcher-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/products/paper-straws/",
+                          "destination":  "/products/paper-straws/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/products/party-accessories/",
+                          "destination":  "/products/party-accessories/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/applications/",
+                          "destination":  "/applications/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/cases/",
+                          "destination":  "/cases/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/customization/",
+                          "destination":  "/customization/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/factory-certificates/",
+                          "destination":  "/factory-certificates/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/eudr-traceability/",
+                          "destination":  "/eudr-traceability/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/pfas-free-baking-paper/",
+                          "destination":  "/pfas-free-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/markets/",
+                          "destination":  "/markets/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/markets/united-states/",
+                          "destination":  "/markets/united-states/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/markets/europe/",
+                          "destination":  "/markets/europe/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/about/",
+                          "destination":  "/about/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/inquiry/",
+                          "destination":  "/inquiry/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/news/",
+                          "destination":  "/news/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/",
+                          "destination":  "/resources/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/how-to-choose-custom-cupcake-liners-wholesale/",
+                          "destination":  "/resources/how-to-choose-custom-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/greaseproof-paper-vs-pet-coated-paper-baking-cups/",
+                          "destination":  "/resources/greaseproof-paper-vs-pet-coated-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/air-fryer-paper-liners-bulk-buying-guide/",
+                          "destination":  "/resources/air-fryer-paper-liners-bulk-buying-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/pfas-free-greaseproof-paper-food-packaging-buyers/",
+                          "destination":  "/resources/pfas-free-greaseproof-paper-food-packaging-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/paper-straws-wholesale-foodservice-retail-buyers/",
+                          "destination":  "/resources/paper-straws-wholesale-foodservice-retail-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/custom-printed-food-paper-packaging-low-odor-ink/",
+                          "destination":  "/resources/custom-printed-food-paper-packaging-low-odor-ink/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/eudr-paper-baking-cups-traceability-checklist/",
+                          "destination":  "/resources/eudr-paper-baking-cups-traceability-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/baking-paper-products-quality-control-inspection/",
+                          "destination":  "/resources/baking-paper-products-quality-control-inspection/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/cupcake-liner-size-guide-wholesale-buyers/",
+                          "destination":  "/resources/cupcake-liner-size-guide-wholesale-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/air-fryer-paper-liners-wholesale-private-label/",
+                          "destination":  "/resources/air-fryer-paper-liners-wholesale-private-label/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/baking-paper-grammage-buyer-guide/",
+                          "destination":  "/resources/baking-paper-grammage-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/baking-parchment-paper-rolls-wholesale/",
+                          "destination":  "/resources/baking-parchment-paper-rolls-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/bleached-vs-unbleached-baking-paper/",
+                          "destination":  "/resources/bleached-vs-unbleached-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/bpa-free-paper-baking-cups/",
+                          "destination":  "/resources/bpa-free-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/burger-wrapping-paper-wholesale-greaseproof-guide/",
+                          "destination":  "/resources/burger-wrapping-paper-wholesale-greaseproof-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/cake-boards-wholesale-bakery-buyers/",
+                          "destination":  "/resources/cake-boards-wholesale-bakery-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/colored-cupcake-liners-wholesale/",
+                          "destination":  "/resources/colored-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/compostable-cupcake-liners-wholesale/",
+                          "destination":  "/resources/compostable-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/cupcake-liner-retail-packaging-wholesale/",
+                          "destination":  "/resources/cupcake-liner-retail-packaging-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/cupcake-toppers-wholesale-buyer-guide/",
+                          "destination":  "/resources/cupcake-toppers-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/custom-cupcake-liner-artwork-checklist/",
+                          "destination":  "/resources/custom-cupcake-liner-artwork-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/food-contact-testing-paper-baking-cups/",
+                          "destination":  "/resources/food-contact-testing-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/food-grade-wax-paper-wholesale-buyer-guide/",
+                          "destination":  "/resources/food-grade-wax-paper-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/freezer-safe-paper-baking-cups-wholesale/",
+                          "destination":  "/resources/freezer-safe-paper-baking-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/glassine-cupcake-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/glassine-cupcake-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/greaseproof-paper-sheets-wholesale-buyer-guide/",
+                          "destination":  "/resources/greaseproof-paper-sheets-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/mini-cupcake-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/mini-cupcake-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/muffin-baking-cups-commercial-bakery-guide/",
+                          "destination":  "/resources/muffin-baking-cups-commercial-bakery-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/non-stick-cupcake-liners-wholesale/",
+                          "destination":  "/resources/non-stick-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/oven-safe-cupcake-liners-wholesale/",
+                          "destination":  "/resources/oven-safe-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/paper-baking-cup-manufacturer-audit/",
+                          "destination":  "/resources/paper-baking-cup-manufacturer-audit/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/paper-baking-cup-packaging-specification/",
+                          "destination":  "/resources/paper-baking-cup-packaging-specification/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/paper-baking-cup-samples-approval-checklist/",
+                          "destination":  "/resources/paper-baking-cup-samples-approval-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/paper-baking-cups-automated-bakery-lines/",
+                          "destination":  "/resources/paper-baking-cups-automated-bakery-lines/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/paper-cake-doilies-wholesale-buyer-guide/",
+                          "destination":  "/resources/paper-cake-doilies-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/paper-straw-sizes-wholesale-guide/",
+                          "destination":  "/resources/paper-straw-sizes-wholesale-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/party-paper-supplies-wholesale-retail-range/",
+                          "destination":  "/resources/party-paper-supplies-wholesale-retail-range/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/ppwr-paper-baking-cups-buyer-checklist/",
+                          "destination":  "/resources/ppwr-paper-baking-cups-buyer-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/precut-parchment-paper-sheets-wholesale-buyer-guide/",
+                          "destination":  "/resources/precut-parchment-paper-sheets-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/private-label-cupcake-liners-retail-packaging/",
+                          "destination":  "/resources/private-label-cupcake-liners-retail-packaging/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/private-label-paper-straws-wholesale/",
+                          "destination":  "/resources/private-label-paper-straws-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/roll-mouth-cake-cups-wholesale/",
+                          "destination":  "/resources/roll-mouth-cake-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/sandwich-wrapping-paper-wholesale-deli-bakery-buyers/",
+                          "destination":  "/resources/sandwich-wrapping-paper-wholesale-deli-bakery-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/self-supporting-baking-cups-wholesale-guide/",
+                          "destination":  "/resources/self-supporting-baking-cups-wholesale-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/silicone-coated-baking-paper-buyer-guide/",
+                          "destination":  "/resources/silicone-coated-baking-paper-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/steamer-paper-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/steamer-paper-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/tulip-baking-cups-vs-standard-muffin-liners/",
+                          "destination":  "/resources/tulip-baking-cups-vs-standard-muffin-liners/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/choose-custom-cupcake-liners/",
+                          "destination":  "/resources/choose-custom-cupcake-liners/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/greaseproof-vs-pet-coated-paper/",
+                          "destination":  "/resources/greaseproof-vs-pet-coated-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/food-paper-certificates/",
+                          "destination":  "/resources/food-paper-certificates/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/custom-printed-cake-cups-process/",
+                          "destination":  "/resources/custom-printed-cake-cups-process/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/resources/baking-cups-for-bakeries-cafes-events/",
+                          "destination":  "/resources/baking-cups-for-bakeries-cafes-events/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/landing/custom-cake-cups-wholesale/",
+                          "destination":  "/landing/custom-cake-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/landing/air-fryer-paper-liners-bulk/",
+                          "destination":  "/landing/air-fryer-paper-liners-bulk/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/en/landing/custom-cupcake-liners-manufacturer/",
+                          "destination":  "/landing/custom-cupcake-liners-manufacturer/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/products/",
+                          "destination":  "/products/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/products/food-wrapping-paper/",
+                          "destination":  "/products/food-wrapping-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/products/cake-cups/",
+                          "destination":  "/products/cake-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/products/roll-mouth-cake-cups/",
+                          "destination":  "/products/roll-mouth-cake-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/products/muffin-baking-cups/",
+                          "destination":  "/products/muffin-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/products/air-fryer-paper-liners/",
+                          "destination":  "/products/air-fryer-paper-liners/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/products/baking-parchment-paper/",
+                          "destination":  "/products/baking-parchment-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/products/tulip-muffin-cups/",
+                          "destination":  "/products/tulip-muffin-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/products/custom-printed-baking-paper/",
+                          "destination":  "/products/custom-printed-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/products/greaseproof-paper/",
+                          "destination":  "/products/greaseproof-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/products/burger-wrapping-paper/",
+                          "destination":  "/products/burger-wrapping-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/products/wax-paper/",
+                          "destination":  "/products/wax-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/products/butcher-paper/",
+                          "destination":  "/products/butcher-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/products/paper-straws/",
+                          "destination":  "/products/paper-straws/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/products/party-accessories/",
+                          "destination":  "/products/party-accessories/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/applications/",
+                          "destination":  "/applications/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/cases/",
+                          "destination":  "/cases/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/customization/",
+                          "destination":  "/customization/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/factory-certificates/",
+                          "destination":  "/factory-certificates/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/eudr-traceability/",
+                          "destination":  "/eudr-traceability/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/pfas-free-baking-paper/",
+                          "destination":  "/pfas-free-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/markets/",
+                          "destination":  "/markets/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/markets/united-states/",
+                          "destination":  "/markets/united-states/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/markets/europe/",
+                          "destination":  "/markets/europe/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/about/",
+                          "destination":  "/about/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/inquiry/",
+                          "destination":  "/inquiry/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/news/",
+                          "destination":  "/news/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/",
+                          "destination":  "/resources/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/how-to-choose-custom-cupcake-liners-wholesale/",
+                          "destination":  "/resources/how-to-choose-custom-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/greaseproof-paper-vs-pet-coated-paper-baking-cups/",
+                          "destination":  "/resources/greaseproof-paper-vs-pet-coated-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/air-fryer-paper-liners-bulk-buying-guide/",
+                          "destination":  "/resources/air-fryer-paper-liners-bulk-buying-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/pfas-free-greaseproof-paper-food-packaging-buyers/",
+                          "destination":  "/resources/pfas-free-greaseproof-paper-food-packaging-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/paper-straws-wholesale-foodservice-retail-buyers/",
+                          "destination":  "/resources/paper-straws-wholesale-foodservice-retail-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/custom-printed-food-paper-packaging-low-odor-ink/",
+                          "destination":  "/resources/custom-printed-food-paper-packaging-low-odor-ink/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/eudr-paper-baking-cups-traceability-checklist/",
+                          "destination":  "/resources/eudr-paper-baking-cups-traceability-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/baking-paper-products-quality-control-inspection/",
+                          "destination":  "/resources/baking-paper-products-quality-control-inspection/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/cupcake-liner-size-guide-wholesale-buyers/",
+                          "destination":  "/resources/cupcake-liner-size-guide-wholesale-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/air-fryer-paper-liners-wholesale-private-label/",
+                          "destination":  "/resources/air-fryer-paper-liners-wholesale-private-label/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/baking-paper-grammage-buyer-guide/",
+                          "destination":  "/resources/baking-paper-grammage-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/baking-parchment-paper-rolls-wholesale/",
+                          "destination":  "/resources/baking-parchment-paper-rolls-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/bleached-vs-unbleached-baking-paper/",
+                          "destination":  "/resources/bleached-vs-unbleached-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/bpa-free-paper-baking-cups/",
+                          "destination":  "/resources/bpa-free-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/burger-wrapping-paper-wholesale-greaseproof-guide/",
+                          "destination":  "/resources/burger-wrapping-paper-wholesale-greaseproof-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/cake-boards-wholesale-bakery-buyers/",
+                          "destination":  "/resources/cake-boards-wholesale-bakery-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/colored-cupcake-liners-wholesale/",
+                          "destination":  "/resources/colored-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/compostable-cupcake-liners-wholesale/",
+                          "destination":  "/resources/compostable-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/cupcake-liner-retail-packaging-wholesale/",
+                          "destination":  "/resources/cupcake-liner-retail-packaging-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/cupcake-toppers-wholesale-buyer-guide/",
+                          "destination":  "/resources/cupcake-toppers-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/custom-cupcake-liner-artwork-checklist/",
+                          "destination":  "/resources/custom-cupcake-liner-artwork-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/food-contact-testing-paper-baking-cups/",
+                          "destination":  "/resources/food-contact-testing-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/food-grade-wax-paper-wholesale-buyer-guide/",
+                          "destination":  "/resources/food-grade-wax-paper-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/freezer-safe-paper-baking-cups-wholesale/",
+                          "destination":  "/resources/freezer-safe-paper-baking-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/glassine-cupcake-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/glassine-cupcake-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/greaseproof-paper-sheets-wholesale-buyer-guide/",
+                          "destination":  "/resources/greaseproof-paper-sheets-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/mini-cupcake-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/mini-cupcake-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/muffin-baking-cups-commercial-bakery-guide/",
+                          "destination":  "/resources/muffin-baking-cups-commercial-bakery-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/non-stick-cupcake-liners-wholesale/",
+                          "destination":  "/resources/non-stick-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/oven-safe-cupcake-liners-wholesale/",
+                          "destination":  "/resources/oven-safe-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/paper-baking-cup-manufacturer-audit/",
+                          "destination":  "/resources/paper-baking-cup-manufacturer-audit/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/paper-baking-cup-packaging-specification/",
+                          "destination":  "/resources/paper-baking-cup-packaging-specification/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/paper-baking-cup-samples-approval-checklist/",
+                          "destination":  "/resources/paper-baking-cup-samples-approval-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/paper-baking-cups-automated-bakery-lines/",
+                          "destination":  "/resources/paper-baking-cups-automated-bakery-lines/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/paper-cake-doilies-wholesale-buyer-guide/",
+                          "destination":  "/resources/paper-cake-doilies-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/paper-straw-sizes-wholesale-guide/",
+                          "destination":  "/resources/paper-straw-sizes-wholesale-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/party-paper-supplies-wholesale-retail-range/",
+                          "destination":  "/resources/party-paper-supplies-wholesale-retail-range/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/ppwr-paper-baking-cups-buyer-checklist/",
+                          "destination":  "/resources/ppwr-paper-baking-cups-buyer-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/precut-parchment-paper-sheets-wholesale-buyer-guide/",
+                          "destination":  "/resources/precut-parchment-paper-sheets-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/private-label-cupcake-liners-retail-packaging/",
+                          "destination":  "/resources/private-label-cupcake-liners-retail-packaging/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/private-label-paper-straws-wholesale/",
+                          "destination":  "/resources/private-label-paper-straws-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/roll-mouth-cake-cups-wholesale/",
+                          "destination":  "/resources/roll-mouth-cake-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/sandwich-wrapping-paper-wholesale-deli-bakery-buyers/",
+                          "destination":  "/resources/sandwich-wrapping-paper-wholesale-deli-bakery-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/self-supporting-baking-cups-wholesale-guide/",
+                          "destination":  "/resources/self-supporting-baking-cups-wholesale-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/silicone-coated-baking-paper-buyer-guide/",
+                          "destination":  "/resources/silicone-coated-baking-paper-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/steamer-paper-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/steamer-paper-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/tulip-baking-cups-vs-standard-muffin-liners/",
+                          "destination":  "/resources/tulip-baking-cups-vs-standard-muffin-liners/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/choose-custom-cupcake-liners/",
+                          "destination":  "/resources/choose-custom-cupcake-liners/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/greaseproof-vs-pet-coated-paper/",
+                          "destination":  "/resources/greaseproof-vs-pet-coated-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/food-paper-certificates/",
+                          "destination":  "/resources/food-paper-certificates/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/custom-printed-cake-cups-process/",
+                          "destination":  "/resources/custom-printed-cake-cups-process/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/resources/baking-cups-for-bakeries-cafes-events/",
+                          "destination":  "/resources/baking-cups-for-bakeries-cafes-events/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/landing/custom-cake-cups-wholesale/",
+                          "destination":  "/landing/custom-cake-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/landing/air-fryer-paper-liners-bulk/",
+                          "destination":  "/landing/air-fryer-paper-liners-bulk/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/es/landing/custom-cupcake-liners-manufacturer/",
+                          "destination":  "/landing/custom-cupcake-liners-manufacturer/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/products/",
+                          "destination":  "/products/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/products/food-wrapping-paper/",
+                          "destination":  "/products/food-wrapping-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/products/cake-cups/",
+                          "destination":  "/products/cake-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/products/roll-mouth-cake-cups/",
+                          "destination":  "/products/roll-mouth-cake-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/products/muffin-baking-cups/",
+                          "destination":  "/products/muffin-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/products/air-fryer-paper-liners/",
+                          "destination":  "/products/air-fryer-paper-liners/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/products/baking-parchment-paper/",
+                          "destination":  "/products/baking-parchment-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/products/tulip-muffin-cups/",
+                          "destination":  "/products/tulip-muffin-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/products/custom-printed-baking-paper/",
+                          "destination":  "/products/custom-printed-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/products/greaseproof-paper/",
+                          "destination":  "/products/greaseproof-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/products/burger-wrapping-paper/",
+                          "destination":  "/products/burger-wrapping-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/products/wax-paper/",
+                          "destination":  "/products/wax-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/products/butcher-paper/",
+                          "destination":  "/products/butcher-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/products/paper-straws/",
+                          "destination":  "/products/paper-straws/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/products/party-accessories/",
+                          "destination":  "/products/party-accessories/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/applications/",
+                          "destination":  "/applications/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/cases/",
+                          "destination":  "/cases/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/customization/",
+                          "destination":  "/customization/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/factory-certificates/",
+                          "destination":  "/factory-certificates/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/eudr-traceability/",
+                          "destination":  "/eudr-traceability/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/pfas-free-baking-paper/",
+                          "destination":  "/pfas-free-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/markets/",
+                          "destination":  "/markets/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/markets/united-states/",
+                          "destination":  "/markets/united-states/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/markets/europe/",
+                          "destination":  "/markets/europe/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/about/",
+                          "destination":  "/about/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/inquiry/",
+                          "destination":  "/inquiry/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/news/",
+                          "destination":  "/news/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/",
+                          "destination":  "/resources/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/how-to-choose-custom-cupcake-liners-wholesale/",
+                          "destination":  "/resources/how-to-choose-custom-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/greaseproof-paper-vs-pet-coated-paper-baking-cups/",
+                          "destination":  "/resources/greaseproof-paper-vs-pet-coated-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/air-fryer-paper-liners-bulk-buying-guide/",
+                          "destination":  "/resources/air-fryer-paper-liners-bulk-buying-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/pfas-free-greaseproof-paper-food-packaging-buyers/",
+                          "destination":  "/resources/pfas-free-greaseproof-paper-food-packaging-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/paper-straws-wholesale-foodservice-retail-buyers/",
+                          "destination":  "/resources/paper-straws-wholesale-foodservice-retail-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/custom-printed-food-paper-packaging-low-odor-ink/",
+                          "destination":  "/resources/custom-printed-food-paper-packaging-low-odor-ink/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/eudr-paper-baking-cups-traceability-checklist/",
+                          "destination":  "/resources/eudr-paper-baking-cups-traceability-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/baking-paper-products-quality-control-inspection/",
+                          "destination":  "/resources/baking-paper-products-quality-control-inspection/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/cupcake-liner-size-guide-wholesale-buyers/",
+                          "destination":  "/resources/cupcake-liner-size-guide-wholesale-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/air-fryer-paper-liners-wholesale-private-label/",
+                          "destination":  "/resources/air-fryer-paper-liners-wholesale-private-label/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/baking-paper-grammage-buyer-guide/",
+                          "destination":  "/resources/baking-paper-grammage-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/baking-parchment-paper-rolls-wholesale/",
+                          "destination":  "/resources/baking-parchment-paper-rolls-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/bleached-vs-unbleached-baking-paper/",
+                          "destination":  "/resources/bleached-vs-unbleached-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/bpa-free-paper-baking-cups/",
+                          "destination":  "/resources/bpa-free-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/burger-wrapping-paper-wholesale-greaseproof-guide/",
+                          "destination":  "/resources/burger-wrapping-paper-wholesale-greaseproof-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/cake-boards-wholesale-bakery-buyers/",
+                          "destination":  "/resources/cake-boards-wholesale-bakery-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/colored-cupcake-liners-wholesale/",
+                          "destination":  "/resources/colored-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/compostable-cupcake-liners-wholesale/",
+                          "destination":  "/resources/compostable-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/cupcake-liner-retail-packaging-wholesale/",
+                          "destination":  "/resources/cupcake-liner-retail-packaging-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/cupcake-toppers-wholesale-buyer-guide/",
+                          "destination":  "/resources/cupcake-toppers-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/custom-cupcake-liner-artwork-checklist/",
+                          "destination":  "/resources/custom-cupcake-liner-artwork-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/food-contact-testing-paper-baking-cups/",
+                          "destination":  "/resources/food-contact-testing-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/food-grade-wax-paper-wholesale-buyer-guide/",
+                          "destination":  "/resources/food-grade-wax-paper-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/freezer-safe-paper-baking-cups-wholesale/",
+                          "destination":  "/resources/freezer-safe-paper-baking-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/glassine-cupcake-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/glassine-cupcake-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/greaseproof-paper-sheets-wholesale-buyer-guide/",
+                          "destination":  "/resources/greaseproof-paper-sheets-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/mini-cupcake-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/mini-cupcake-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/muffin-baking-cups-commercial-bakery-guide/",
+                          "destination":  "/resources/muffin-baking-cups-commercial-bakery-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/non-stick-cupcake-liners-wholesale/",
+                          "destination":  "/resources/non-stick-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/oven-safe-cupcake-liners-wholesale/",
+                          "destination":  "/resources/oven-safe-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/paper-baking-cup-manufacturer-audit/",
+                          "destination":  "/resources/paper-baking-cup-manufacturer-audit/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/paper-baking-cup-packaging-specification/",
+                          "destination":  "/resources/paper-baking-cup-packaging-specification/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/paper-baking-cup-samples-approval-checklist/",
+                          "destination":  "/resources/paper-baking-cup-samples-approval-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/paper-baking-cups-automated-bakery-lines/",
+                          "destination":  "/resources/paper-baking-cups-automated-bakery-lines/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/paper-cake-doilies-wholesale-buyer-guide/",
+                          "destination":  "/resources/paper-cake-doilies-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/paper-straw-sizes-wholesale-guide/",
+                          "destination":  "/resources/paper-straw-sizes-wholesale-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/party-paper-supplies-wholesale-retail-range/",
+                          "destination":  "/resources/party-paper-supplies-wholesale-retail-range/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/ppwr-paper-baking-cups-buyer-checklist/",
+                          "destination":  "/resources/ppwr-paper-baking-cups-buyer-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/precut-parchment-paper-sheets-wholesale-buyer-guide/",
+                          "destination":  "/resources/precut-parchment-paper-sheets-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/private-label-cupcake-liners-retail-packaging/",
+                          "destination":  "/resources/private-label-cupcake-liners-retail-packaging/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/private-label-paper-straws-wholesale/",
+                          "destination":  "/resources/private-label-paper-straws-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/roll-mouth-cake-cups-wholesale/",
+                          "destination":  "/resources/roll-mouth-cake-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/sandwich-wrapping-paper-wholesale-deli-bakery-buyers/",
+                          "destination":  "/resources/sandwich-wrapping-paper-wholesale-deli-bakery-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/self-supporting-baking-cups-wholesale-guide/",
+                          "destination":  "/resources/self-supporting-baking-cups-wholesale-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/silicone-coated-baking-paper-buyer-guide/",
+                          "destination":  "/resources/silicone-coated-baking-paper-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/steamer-paper-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/steamer-paper-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/tulip-baking-cups-vs-standard-muffin-liners/",
+                          "destination":  "/resources/tulip-baking-cups-vs-standard-muffin-liners/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/choose-custom-cupcake-liners/",
+                          "destination":  "/resources/choose-custom-cupcake-liners/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/greaseproof-vs-pet-coated-paper/",
+                          "destination":  "/resources/greaseproof-vs-pet-coated-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/food-paper-certificates/",
+                          "destination":  "/resources/food-paper-certificates/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/custom-printed-cake-cups-process/",
+                          "destination":  "/resources/custom-printed-cake-cups-process/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/resources/baking-cups-for-bakeries-cafes-events/",
+                          "destination":  "/resources/baking-cups-for-bakeries-cafes-events/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/landing/custom-cake-cups-wholesale/",
+                          "destination":  "/landing/custom-cake-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/landing/air-fryer-paper-liners-bulk/",
+                          "destination":  "/landing/air-fryer-paper-liners-bulk/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/landing/custom-cupcake-liners-manufacturer/",
+                          "destination":  "/landing/custom-cupcake-liners-manufacturer/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/products/",
+                          "destination":  "/products/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/products/food-wrapping-paper/",
+                          "destination":  "/products/food-wrapping-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/products/cake-cups/",
+                          "destination":  "/products/cake-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/products/roll-mouth-cake-cups/",
+                          "destination":  "/products/roll-mouth-cake-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/products/muffin-baking-cups/",
+                          "destination":  "/products/muffin-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/products/air-fryer-paper-liners/",
+                          "destination":  "/products/air-fryer-paper-liners/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/products/baking-parchment-paper/",
+                          "destination":  "/products/baking-parchment-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/products/tulip-muffin-cups/",
+                          "destination":  "/products/tulip-muffin-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/products/custom-printed-baking-paper/",
+                          "destination":  "/products/custom-printed-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/products/greaseproof-paper/",
+                          "destination":  "/products/greaseproof-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/products/burger-wrapping-paper/",
+                          "destination":  "/products/burger-wrapping-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/products/wax-paper/",
+                          "destination":  "/products/wax-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/products/butcher-paper/",
+                          "destination":  "/products/butcher-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/products/paper-straws/",
+                          "destination":  "/products/paper-straws/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/products/party-accessories/",
+                          "destination":  "/products/party-accessories/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/applications/",
+                          "destination":  "/applications/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/cases/",
+                          "destination":  "/cases/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/customization/",
+                          "destination":  "/customization/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/factory-certificates/",
+                          "destination":  "/factory-certificates/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/eudr-traceability/",
+                          "destination":  "/eudr-traceability/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/pfas-free-baking-paper/",
+                          "destination":  "/pfas-free-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/markets/",
+                          "destination":  "/markets/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/markets/united-states/",
+                          "destination":  "/markets/united-states/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/markets/europe/",
+                          "destination":  "/markets/europe/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/about/",
+                          "destination":  "/about/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/inquiry/",
+                          "destination":  "/inquiry/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/news/",
+                          "destination":  "/news/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/",
+                          "destination":  "/resources/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/how-to-choose-custom-cupcake-liners-wholesale/",
+                          "destination":  "/resources/how-to-choose-custom-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/greaseproof-paper-vs-pet-coated-paper-baking-cups/",
+                          "destination":  "/resources/greaseproof-paper-vs-pet-coated-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/air-fryer-paper-liners-bulk-buying-guide/",
+                          "destination":  "/resources/air-fryer-paper-liners-bulk-buying-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/pfas-free-greaseproof-paper-food-packaging-buyers/",
+                          "destination":  "/resources/pfas-free-greaseproof-paper-food-packaging-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/paper-straws-wholesale-foodservice-retail-buyers/",
+                          "destination":  "/resources/paper-straws-wholesale-foodservice-retail-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/custom-printed-food-paper-packaging-low-odor-ink/",
+                          "destination":  "/resources/custom-printed-food-paper-packaging-low-odor-ink/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/eudr-paper-baking-cups-traceability-checklist/",
+                          "destination":  "/resources/eudr-paper-baking-cups-traceability-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/baking-paper-products-quality-control-inspection/",
+                          "destination":  "/resources/baking-paper-products-quality-control-inspection/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/cupcake-liner-size-guide-wholesale-buyers/",
+                          "destination":  "/resources/cupcake-liner-size-guide-wholesale-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/air-fryer-paper-liners-wholesale-private-label/",
+                          "destination":  "/resources/air-fryer-paper-liners-wholesale-private-label/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/baking-paper-grammage-buyer-guide/",
+                          "destination":  "/resources/baking-paper-grammage-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/baking-parchment-paper-rolls-wholesale/",
+                          "destination":  "/resources/baking-parchment-paper-rolls-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/bleached-vs-unbleached-baking-paper/",
+                          "destination":  "/resources/bleached-vs-unbleached-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/bpa-free-paper-baking-cups/",
+                          "destination":  "/resources/bpa-free-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/burger-wrapping-paper-wholesale-greaseproof-guide/",
+                          "destination":  "/resources/burger-wrapping-paper-wholesale-greaseproof-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/cake-boards-wholesale-bakery-buyers/",
+                          "destination":  "/resources/cake-boards-wholesale-bakery-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/colored-cupcake-liners-wholesale/",
+                          "destination":  "/resources/colored-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/compostable-cupcake-liners-wholesale/",
+                          "destination":  "/resources/compostable-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/cupcake-liner-retail-packaging-wholesale/",
+                          "destination":  "/resources/cupcake-liner-retail-packaging-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/cupcake-toppers-wholesale-buyer-guide/",
+                          "destination":  "/resources/cupcake-toppers-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/custom-cupcake-liner-artwork-checklist/",
+                          "destination":  "/resources/custom-cupcake-liner-artwork-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/food-contact-testing-paper-baking-cups/",
+                          "destination":  "/resources/food-contact-testing-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/food-grade-wax-paper-wholesale-buyer-guide/",
+                          "destination":  "/resources/food-grade-wax-paper-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/freezer-safe-paper-baking-cups-wholesale/",
+                          "destination":  "/resources/freezer-safe-paper-baking-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/glassine-cupcake-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/glassine-cupcake-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/greaseproof-paper-sheets-wholesale-buyer-guide/",
+                          "destination":  "/resources/greaseproof-paper-sheets-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/mini-cupcake-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/mini-cupcake-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/muffin-baking-cups-commercial-bakery-guide/",
+                          "destination":  "/resources/muffin-baking-cups-commercial-bakery-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/non-stick-cupcake-liners-wholesale/",
+                          "destination":  "/resources/non-stick-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/oven-safe-cupcake-liners-wholesale/",
+                          "destination":  "/resources/oven-safe-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/paper-baking-cup-manufacturer-audit/",
+                          "destination":  "/resources/paper-baking-cup-manufacturer-audit/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/paper-baking-cup-packaging-specification/",
+                          "destination":  "/resources/paper-baking-cup-packaging-specification/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/paper-baking-cup-samples-approval-checklist/",
+                          "destination":  "/resources/paper-baking-cup-samples-approval-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/paper-baking-cups-automated-bakery-lines/",
+                          "destination":  "/resources/paper-baking-cups-automated-bakery-lines/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/paper-cake-doilies-wholesale-buyer-guide/",
+                          "destination":  "/resources/paper-cake-doilies-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/paper-straw-sizes-wholesale-guide/",
+                          "destination":  "/resources/paper-straw-sizes-wholesale-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/party-paper-supplies-wholesale-retail-range/",
+                          "destination":  "/resources/party-paper-supplies-wholesale-retail-range/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/ppwr-paper-baking-cups-buyer-checklist/",
+                          "destination":  "/resources/ppwr-paper-baking-cups-buyer-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/precut-parchment-paper-sheets-wholesale-buyer-guide/",
+                          "destination":  "/resources/precut-parchment-paper-sheets-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/private-label-cupcake-liners-retail-packaging/",
+                          "destination":  "/resources/private-label-cupcake-liners-retail-packaging/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/private-label-paper-straws-wholesale/",
+                          "destination":  "/resources/private-label-paper-straws-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/roll-mouth-cake-cups-wholesale/",
+                          "destination":  "/resources/roll-mouth-cake-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/sandwich-wrapping-paper-wholesale-deli-bakery-buyers/",
+                          "destination":  "/resources/sandwich-wrapping-paper-wholesale-deli-bakery-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/self-supporting-baking-cups-wholesale-guide/",
+                          "destination":  "/resources/self-supporting-baking-cups-wholesale-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/silicone-coated-baking-paper-buyer-guide/",
+                          "destination":  "/resources/silicone-coated-baking-paper-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/steamer-paper-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/steamer-paper-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/tulip-baking-cups-vs-standard-muffin-liners/",
+                          "destination":  "/resources/tulip-baking-cups-vs-standard-muffin-liners/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/choose-custom-cupcake-liners/",
+                          "destination":  "/resources/choose-custom-cupcake-liners/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/greaseproof-vs-pet-coated-paper/",
+                          "destination":  "/resources/greaseproof-vs-pet-coated-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/food-paper-certificates/",
+                          "destination":  "/resources/food-paper-certificates/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/custom-printed-cake-cups-process/",
+                          "destination":  "/resources/custom-printed-cake-cups-process/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/resources/baking-cups-for-bakeries-cafes-events/",
+                          "destination":  "/resources/baking-cups-for-bakeries-cafes-events/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/landing/custom-cake-cups-wholesale/",
+                          "destination":  "/landing/custom-cake-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/landing/air-fryer-paper-liners-bulk/",
+                          "destination":  "/landing/air-fryer-paper-liners-bulk/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ar/landing/custom-cupcake-liners-manufacturer/",
+                          "destination":  "/landing/custom-cupcake-liners-manufacturer/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/products/",
+                          "destination":  "/products/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/products/food-wrapping-paper/",
+                          "destination":  "/products/food-wrapping-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/products/cake-cups/",
+                          "destination":  "/products/cake-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/products/roll-mouth-cake-cups/",
+                          "destination":  "/products/roll-mouth-cake-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/products/muffin-baking-cups/",
+                          "destination":  "/products/muffin-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/products/air-fryer-paper-liners/",
+                          "destination":  "/products/air-fryer-paper-liners/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/products/baking-parchment-paper/",
+                          "destination":  "/products/baking-parchment-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/products/tulip-muffin-cups/",
+                          "destination":  "/products/tulip-muffin-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/products/custom-printed-baking-paper/",
+                          "destination":  "/products/custom-printed-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/products/greaseproof-paper/",
+                          "destination":  "/products/greaseproof-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/products/burger-wrapping-paper/",
+                          "destination":  "/products/burger-wrapping-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/products/wax-paper/",
+                          "destination":  "/products/wax-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/products/butcher-paper/",
+                          "destination":  "/products/butcher-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/products/paper-straws/",
+                          "destination":  "/products/paper-straws/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/products/party-accessories/",
+                          "destination":  "/products/party-accessories/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/applications/",
+                          "destination":  "/applications/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/cases/",
+                          "destination":  "/cases/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/customization/",
+                          "destination":  "/customization/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/factory-certificates/",
+                          "destination":  "/factory-certificates/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/eudr-traceability/",
+                          "destination":  "/eudr-traceability/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/pfas-free-baking-paper/",
+                          "destination":  "/pfas-free-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/markets/",
+                          "destination":  "/markets/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/markets/united-states/",
+                          "destination":  "/markets/united-states/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/markets/europe/",
+                          "destination":  "/markets/europe/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/about/",
+                          "destination":  "/about/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/inquiry/",
+                          "destination":  "/inquiry/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/news/",
+                          "destination":  "/news/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/",
+                          "destination":  "/resources/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/how-to-choose-custom-cupcake-liners-wholesale/",
+                          "destination":  "/resources/how-to-choose-custom-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/greaseproof-paper-vs-pet-coated-paper-baking-cups/",
+                          "destination":  "/resources/greaseproof-paper-vs-pet-coated-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/air-fryer-paper-liners-bulk-buying-guide/",
+                          "destination":  "/resources/air-fryer-paper-liners-bulk-buying-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/pfas-free-greaseproof-paper-food-packaging-buyers/",
+                          "destination":  "/resources/pfas-free-greaseproof-paper-food-packaging-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/paper-straws-wholesale-foodservice-retail-buyers/",
+                          "destination":  "/resources/paper-straws-wholesale-foodservice-retail-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/custom-printed-food-paper-packaging-low-odor-ink/",
+                          "destination":  "/resources/custom-printed-food-paper-packaging-low-odor-ink/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/eudr-paper-baking-cups-traceability-checklist/",
+                          "destination":  "/resources/eudr-paper-baking-cups-traceability-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/baking-paper-products-quality-control-inspection/",
+                          "destination":  "/resources/baking-paper-products-quality-control-inspection/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/cupcake-liner-size-guide-wholesale-buyers/",
+                          "destination":  "/resources/cupcake-liner-size-guide-wholesale-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/air-fryer-paper-liners-wholesale-private-label/",
+                          "destination":  "/resources/air-fryer-paper-liners-wholesale-private-label/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/baking-paper-grammage-buyer-guide/",
+                          "destination":  "/resources/baking-paper-grammage-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/baking-parchment-paper-rolls-wholesale/",
+                          "destination":  "/resources/baking-parchment-paper-rolls-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/bleached-vs-unbleached-baking-paper/",
+                          "destination":  "/resources/bleached-vs-unbleached-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/bpa-free-paper-baking-cups/",
+                          "destination":  "/resources/bpa-free-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/burger-wrapping-paper-wholesale-greaseproof-guide/",
+                          "destination":  "/resources/burger-wrapping-paper-wholesale-greaseproof-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/cake-boards-wholesale-bakery-buyers/",
+                          "destination":  "/resources/cake-boards-wholesale-bakery-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/colored-cupcake-liners-wholesale/",
+                          "destination":  "/resources/colored-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/compostable-cupcake-liners-wholesale/",
+                          "destination":  "/resources/compostable-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/cupcake-liner-retail-packaging-wholesale/",
+                          "destination":  "/resources/cupcake-liner-retail-packaging-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/cupcake-toppers-wholesale-buyer-guide/",
+                          "destination":  "/resources/cupcake-toppers-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/custom-cupcake-liner-artwork-checklist/",
+                          "destination":  "/resources/custom-cupcake-liner-artwork-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/food-contact-testing-paper-baking-cups/",
+                          "destination":  "/resources/food-contact-testing-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/food-grade-wax-paper-wholesale-buyer-guide/",
+                          "destination":  "/resources/food-grade-wax-paper-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/freezer-safe-paper-baking-cups-wholesale/",
+                          "destination":  "/resources/freezer-safe-paper-baking-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/glassine-cupcake-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/glassine-cupcake-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/greaseproof-paper-sheets-wholesale-buyer-guide/",
+                          "destination":  "/resources/greaseproof-paper-sheets-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/mini-cupcake-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/mini-cupcake-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/muffin-baking-cups-commercial-bakery-guide/",
+                          "destination":  "/resources/muffin-baking-cups-commercial-bakery-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/non-stick-cupcake-liners-wholesale/",
+                          "destination":  "/resources/non-stick-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/oven-safe-cupcake-liners-wholesale/",
+                          "destination":  "/resources/oven-safe-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/paper-baking-cup-manufacturer-audit/",
+                          "destination":  "/resources/paper-baking-cup-manufacturer-audit/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/paper-baking-cup-packaging-specification/",
+                          "destination":  "/resources/paper-baking-cup-packaging-specification/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/paper-baking-cup-samples-approval-checklist/",
+                          "destination":  "/resources/paper-baking-cup-samples-approval-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/paper-baking-cups-automated-bakery-lines/",
+                          "destination":  "/resources/paper-baking-cups-automated-bakery-lines/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/paper-cake-doilies-wholesale-buyer-guide/",
+                          "destination":  "/resources/paper-cake-doilies-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/paper-straw-sizes-wholesale-guide/",
+                          "destination":  "/resources/paper-straw-sizes-wholesale-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/party-paper-supplies-wholesale-retail-range/",
+                          "destination":  "/resources/party-paper-supplies-wholesale-retail-range/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/ppwr-paper-baking-cups-buyer-checklist/",
+                          "destination":  "/resources/ppwr-paper-baking-cups-buyer-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/precut-parchment-paper-sheets-wholesale-buyer-guide/",
+                          "destination":  "/resources/precut-parchment-paper-sheets-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/private-label-cupcake-liners-retail-packaging/",
+                          "destination":  "/resources/private-label-cupcake-liners-retail-packaging/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/private-label-paper-straws-wholesale/",
+                          "destination":  "/resources/private-label-paper-straws-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/roll-mouth-cake-cups-wholesale/",
+                          "destination":  "/resources/roll-mouth-cake-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/sandwich-wrapping-paper-wholesale-deli-bakery-buyers/",
+                          "destination":  "/resources/sandwich-wrapping-paper-wholesale-deli-bakery-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/self-supporting-baking-cups-wholesale-guide/",
+                          "destination":  "/resources/self-supporting-baking-cups-wholesale-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/silicone-coated-baking-paper-buyer-guide/",
+                          "destination":  "/resources/silicone-coated-baking-paper-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/steamer-paper-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/steamer-paper-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/tulip-baking-cups-vs-standard-muffin-liners/",
+                          "destination":  "/resources/tulip-baking-cups-vs-standard-muffin-liners/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/choose-custom-cupcake-liners/",
+                          "destination":  "/resources/choose-custom-cupcake-liners/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/greaseproof-vs-pet-coated-paper/",
+                          "destination":  "/resources/greaseproof-vs-pet-coated-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/food-paper-certificates/",
+                          "destination":  "/resources/food-paper-certificates/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/custom-printed-cake-cups-process/",
+                          "destination":  "/resources/custom-printed-cake-cups-process/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/resources/baking-cups-for-bakeries-cafes-events/",
+                          "destination":  "/resources/baking-cups-for-bakeries-cafes-events/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/landing/custom-cake-cups-wholesale/",
+                          "destination":  "/landing/custom-cake-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/landing/air-fryer-paper-liners-bulk/",
+                          "destination":  "/landing/air-fryer-paper-liners-bulk/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/pt/landing/custom-cupcake-liners-manufacturer/",
+                          "destination":  "/landing/custom-cupcake-liners-manufacturer/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/products/",
+                          "destination":  "/products/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/products/food-wrapping-paper/",
+                          "destination":  "/products/food-wrapping-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/products/roll-mouth-cake-cups/",
+                          "destination":  "/products/roll-mouth-cake-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/products/tulip-muffin-cups/",
+                          "destination":  "/products/tulip-muffin-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/products/custom-printed-baking-paper/",
+                          "destination":  "/products/custom-printed-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/products/burger-wrapping-paper/",
+                          "destination":  "/products/burger-wrapping-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/products/wax-paper/",
+                          "destination":  "/products/wax-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/products/butcher-paper/",
+                          "destination":  "/products/butcher-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/products/party-accessories/",
+                          "destination":  "/products/party-accessories/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/applications/",
+                          "destination":  "/applications/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/cases/",
+                          "destination":  "/cases/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/pfas-free-baking-paper/",
+                          "destination":  "/pfas-free-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/markets/",
+                          "destination":  "/markets/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/markets/united-states/",
+                          "destination":  "/markets/united-states/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/markets/europe/",
+                          "destination":  "/markets/europe/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/",
+                          "destination":  "/resources/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/how-to-choose-custom-cupcake-liners-wholesale/",
+                          "destination":  "/resources/how-to-choose-custom-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/greaseproof-paper-vs-pet-coated-paper-baking-cups/",
+                          "destination":  "/resources/greaseproof-paper-vs-pet-coated-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/air-fryer-paper-liners-bulk-buying-guide/",
+                          "destination":  "/resources/air-fryer-paper-liners-bulk-buying-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/pfas-free-greaseproof-paper-food-packaging-buyers/",
+                          "destination":  "/resources/pfas-free-greaseproof-paper-food-packaging-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/paper-straws-wholesale-foodservice-retail-buyers/",
+                          "destination":  "/resources/paper-straws-wholesale-foodservice-retail-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/custom-printed-food-paper-packaging-low-odor-ink/",
+                          "destination":  "/resources/custom-printed-food-paper-packaging-low-odor-ink/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/eudr-paper-baking-cups-traceability-checklist/",
+                          "destination":  "/resources/eudr-paper-baking-cups-traceability-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/baking-paper-products-quality-control-inspection/",
+                          "destination":  "/resources/baking-paper-products-quality-control-inspection/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/cupcake-liner-size-guide-wholesale-buyers/",
+                          "destination":  "/resources/cupcake-liner-size-guide-wholesale-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/air-fryer-paper-liners-wholesale-private-label/",
+                          "destination":  "/resources/air-fryer-paper-liners-wholesale-private-label/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/baking-paper-grammage-buyer-guide/",
+                          "destination":  "/resources/baking-paper-grammage-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/baking-parchment-paper-rolls-wholesale/",
+                          "destination":  "/resources/baking-parchment-paper-rolls-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/bleached-vs-unbleached-baking-paper/",
+                          "destination":  "/resources/bleached-vs-unbleached-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/bpa-free-paper-baking-cups/",
+                          "destination":  "/resources/bpa-free-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/burger-wrapping-paper-wholesale-greaseproof-guide/",
+                          "destination":  "/resources/burger-wrapping-paper-wholesale-greaseproof-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/cake-boards-wholesale-bakery-buyers/",
+                          "destination":  "/resources/cake-boards-wholesale-bakery-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/colored-cupcake-liners-wholesale/",
+                          "destination":  "/resources/colored-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/compostable-cupcake-liners-wholesale/",
+                          "destination":  "/resources/compostable-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/cupcake-liner-retail-packaging-wholesale/",
+                          "destination":  "/resources/cupcake-liner-retail-packaging-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/cupcake-toppers-wholesale-buyer-guide/",
+                          "destination":  "/resources/cupcake-toppers-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/custom-cupcake-liner-artwork-checklist/",
+                          "destination":  "/resources/custom-cupcake-liner-artwork-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/food-contact-testing-paper-baking-cups/",
+                          "destination":  "/resources/food-contact-testing-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/food-grade-wax-paper-wholesale-buyer-guide/",
+                          "destination":  "/resources/food-grade-wax-paper-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/freezer-safe-paper-baking-cups-wholesale/",
+                          "destination":  "/resources/freezer-safe-paper-baking-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/glassine-cupcake-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/glassine-cupcake-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/greaseproof-paper-sheets-wholesale-buyer-guide/",
+                          "destination":  "/resources/greaseproof-paper-sheets-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/mini-cupcake-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/mini-cupcake-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/muffin-baking-cups-commercial-bakery-guide/",
+                          "destination":  "/resources/muffin-baking-cups-commercial-bakery-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/non-stick-cupcake-liners-wholesale/",
+                          "destination":  "/resources/non-stick-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/oven-safe-cupcake-liners-wholesale/",
+                          "destination":  "/resources/oven-safe-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/paper-baking-cup-manufacturer-audit/",
+                          "destination":  "/resources/paper-baking-cup-manufacturer-audit/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/paper-baking-cup-packaging-specification/",
+                          "destination":  "/resources/paper-baking-cup-packaging-specification/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/paper-baking-cup-samples-approval-checklist/",
+                          "destination":  "/resources/paper-baking-cup-samples-approval-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/paper-baking-cups-automated-bakery-lines/",
+                          "destination":  "/resources/paper-baking-cups-automated-bakery-lines/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/paper-cake-doilies-wholesale-buyer-guide/",
+                          "destination":  "/resources/paper-cake-doilies-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/paper-straw-sizes-wholesale-guide/",
+                          "destination":  "/resources/paper-straw-sizes-wholesale-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/party-paper-supplies-wholesale-retail-range/",
+                          "destination":  "/resources/party-paper-supplies-wholesale-retail-range/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/ppwr-paper-baking-cups-buyer-checklist/",
+                          "destination":  "/resources/ppwr-paper-baking-cups-buyer-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/precut-parchment-paper-sheets-wholesale-buyer-guide/",
+                          "destination":  "/resources/precut-parchment-paper-sheets-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/private-label-cupcake-liners-retail-packaging/",
+                          "destination":  "/resources/private-label-cupcake-liners-retail-packaging/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/private-label-paper-straws-wholesale/",
+                          "destination":  "/resources/private-label-paper-straws-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/roll-mouth-cake-cups-wholesale/",
+                          "destination":  "/resources/roll-mouth-cake-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/sandwich-wrapping-paper-wholesale-deli-bakery-buyers/",
+                          "destination":  "/resources/sandwich-wrapping-paper-wholesale-deli-bakery-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/self-supporting-baking-cups-wholesale-guide/",
+                          "destination":  "/resources/self-supporting-baking-cups-wholesale-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/silicone-coated-baking-paper-buyer-guide/",
+                          "destination":  "/resources/silicone-coated-baking-paper-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/steamer-paper-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/steamer-paper-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/tulip-baking-cups-vs-standard-muffin-liners/",
+                          "destination":  "/resources/tulip-baking-cups-vs-standard-muffin-liners/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/choose-custom-cupcake-liners/",
+                          "destination":  "/resources/choose-custom-cupcake-liners/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/greaseproof-vs-pet-coated-paper/",
+                          "destination":  "/resources/greaseproof-vs-pet-coated-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/food-paper-certificates/",
+                          "destination":  "/resources/food-paper-certificates/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/custom-printed-cake-cups-process/",
+                          "destination":  "/resources/custom-printed-cake-cups-process/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/resources/baking-cups-for-bakeries-cafes-events/",
+                          "destination":  "/resources/baking-cups-for-bakeries-cafes-events/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/landing/custom-cake-cups-wholesale/",
+                          "destination":  "/landing/custom-cake-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/landing/air-fryer-paper-liners-bulk/",
+                          "destination":  "/landing/air-fryer-paper-liners-bulk/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/de/landing/custom-cupcake-liners-manufacturer/",
+                          "destination":  "/landing/custom-cupcake-liners-manufacturer/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/products/",
+                          "destination":  "/products/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/products/food-wrapping-paper/",
+                          "destination":  "/products/food-wrapping-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/products/roll-mouth-cake-cups/",
+                          "destination":  "/products/roll-mouth-cake-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/products/tulip-muffin-cups/",
+                          "destination":  "/products/tulip-muffin-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/products/custom-printed-baking-paper/",
+                          "destination":  "/products/custom-printed-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/products/burger-wrapping-paper/",
+                          "destination":  "/products/burger-wrapping-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/products/wax-paper/",
+                          "destination":  "/products/wax-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/products/butcher-paper/",
+                          "destination":  "/products/butcher-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/products/party-accessories/",
+                          "destination":  "/products/party-accessories/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/cases/",
+                          "destination":  "/cases/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/pfas-free-baking-paper/",
+                          "destination":  "/pfas-free-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/markets/",
+                          "destination":  "/markets/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/markets/united-states/",
+                          "destination":  "/markets/united-states/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/markets/europe/",
+                          "destination":  "/markets/europe/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/",
+                          "destination":  "/resources/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/how-to-choose-custom-cupcake-liners-wholesale/",
+                          "destination":  "/resources/how-to-choose-custom-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/greaseproof-paper-vs-pet-coated-paper-baking-cups/",
+                          "destination":  "/resources/greaseproof-paper-vs-pet-coated-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/air-fryer-paper-liners-bulk-buying-guide/",
+                          "destination":  "/resources/air-fryer-paper-liners-bulk-buying-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/pfas-free-greaseproof-paper-food-packaging-buyers/",
+                          "destination":  "/resources/pfas-free-greaseproof-paper-food-packaging-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/paper-straws-wholesale-foodservice-retail-buyers/",
+                          "destination":  "/resources/paper-straws-wholesale-foodservice-retail-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/custom-printed-food-paper-packaging-low-odor-ink/",
+                          "destination":  "/resources/custom-printed-food-paper-packaging-low-odor-ink/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/eudr-paper-baking-cups-traceability-checklist/",
+                          "destination":  "/resources/eudr-paper-baking-cups-traceability-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/baking-paper-products-quality-control-inspection/",
+                          "destination":  "/resources/baking-paper-products-quality-control-inspection/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/cupcake-liner-size-guide-wholesale-buyers/",
+                          "destination":  "/resources/cupcake-liner-size-guide-wholesale-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/air-fryer-paper-liners-wholesale-private-label/",
+                          "destination":  "/resources/air-fryer-paper-liners-wholesale-private-label/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/baking-paper-grammage-buyer-guide/",
+                          "destination":  "/resources/baking-paper-grammage-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/baking-parchment-paper-rolls-wholesale/",
+                          "destination":  "/resources/baking-parchment-paper-rolls-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/bleached-vs-unbleached-baking-paper/",
+                          "destination":  "/resources/bleached-vs-unbleached-baking-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/bpa-free-paper-baking-cups/",
+                          "destination":  "/resources/bpa-free-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/burger-wrapping-paper-wholesale-greaseproof-guide/",
+                          "destination":  "/resources/burger-wrapping-paper-wholesale-greaseproof-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/cake-boards-wholesale-bakery-buyers/",
+                          "destination":  "/resources/cake-boards-wholesale-bakery-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/colored-cupcake-liners-wholesale/",
+                          "destination":  "/resources/colored-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/compostable-cupcake-liners-wholesale/",
+                          "destination":  "/resources/compostable-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/cupcake-liner-retail-packaging-wholesale/",
+                          "destination":  "/resources/cupcake-liner-retail-packaging-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/cupcake-toppers-wholesale-buyer-guide/",
+                          "destination":  "/resources/cupcake-toppers-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/custom-cupcake-liner-artwork-checklist/",
+                          "destination":  "/resources/custom-cupcake-liner-artwork-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/food-contact-testing-paper-baking-cups/",
+                          "destination":  "/resources/food-contact-testing-paper-baking-cups/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/food-grade-wax-paper-wholesale-buyer-guide/",
+                          "destination":  "/resources/food-grade-wax-paper-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/freezer-safe-paper-baking-cups-wholesale/",
+                          "destination":  "/resources/freezer-safe-paper-baking-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/glassine-cupcake-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/glassine-cupcake-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/greaseproof-paper-sheets-wholesale-buyer-guide/",
+                          "destination":  "/resources/greaseproof-paper-sheets-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/mini-cupcake-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/mini-cupcake-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/muffin-baking-cups-commercial-bakery-guide/",
+                          "destination":  "/resources/muffin-baking-cups-commercial-bakery-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/non-stick-cupcake-liners-wholesale/",
+                          "destination":  "/resources/non-stick-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/oven-safe-cupcake-liners-wholesale/",
+                          "destination":  "/resources/oven-safe-cupcake-liners-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/paper-baking-cup-manufacturer-audit/",
+                          "destination":  "/resources/paper-baking-cup-manufacturer-audit/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/paper-baking-cup-packaging-specification/",
+                          "destination":  "/resources/paper-baking-cup-packaging-specification/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/paper-baking-cup-samples-approval-checklist/",
+                          "destination":  "/resources/paper-baking-cup-samples-approval-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/paper-baking-cups-automated-bakery-lines/",
+                          "destination":  "/resources/paper-baking-cups-automated-bakery-lines/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/paper-cake-doilies-wholesale-buyer-guide/",
+                          "destination":  "/resources/paper-cake-doilies-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/paper-straw-sizes-wholesale-guide/",
+                          "destination":  "/resources/paper-straw-sizes-wholesale-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/party-paper-supplies-wholesale-retail-range/",
+                          "destination":  "/resources/party-paper-supplies-wholesale-retail-range/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/ppwr-paper-baking-cups-buyer-checklist/",
+                          "destination":  "/resources/ppwr-paper-baking-cups-buyer-checklist/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/precut-parchment-paper-sheets-wholesale-buyer-guide/",
+                          "destination":  "/resources/precut-parchment-paper-sheets-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/private-label-cupcake-liners-retail-packaging/",
+                          "destination":  "/resources/private-label-cupcake-liners-retail-packaging/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/private-label-paper-straws-wholesale/",
+                          "destination":  "/resources/private-label-paper-straws-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/roll-mouth-cake-cups-wholesale/",
+                          "destination":  "/resources/roll-mouth-cake-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/sandwich-wrapping-paper-wholesale-deli-bakery-buyers/",
+                          "destination":  "/resources/sandwich-wrapping-paper-wholesale-deli-bakery-buyers/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/self-supporting-baking-cups-wholesale-guide/",
+                          "destination":  "/resources/self-supporting-baking-cups-wholesale-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/silicone-coated-baking-paper-buyer-guide/",
+                          "destination":  "/resources/silicone-coated-baking-paper-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/steamer-paper-liners-wholesale-buyer-guide/",
+                          "destination":  "/resources/steamer-paper-liners-wholesale-buyer-guide/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/tulip-baking-cups-vs-standard-muffin-liners/",
+                          "destination":  "/resources/tulip-baking-cups-vs-standard-muffin-liners/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/choose-custom-cupcake-liners/",
+                          "destination":  "/resources/choose-custom-cupcake-liners/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/greaseproof-vs-pet-coated-paper/",
+                          "destination":  "/resources/greaseproof-vs-pet-coated-paper/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/food-paper-certificates/",
+                          "destination":  "/resources/food-paper-certificates/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/custom-printed-cake-cups-process/",
+                          "destination":  "/resources/custom-printed-cake-cups-process/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/resources/baking-cups-for-bakeries-cafes-events/",
+                          "destination":  "/resources/baking-cups-for-bakeries-cafes-events/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/landing/custom-cake-cups-wholesale/",
+                          "destination":  "/landing/custom-cake-cups-wholesale/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/landing/air-fryer-paper-liners-bulk/",
+                          "destination":  "/landing/air-fryer-paper-liners-bulk/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/fr/landing/custom-cupcake-liners-manufacturer/",
+                          "destination":  "/landing/custom-cupcake-liners-manufacturer/",
+                          "permanent":  true
+                      }
+                  ]
 }
