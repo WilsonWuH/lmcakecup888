@@ -526,7 +526,10 @@ function renderMarkdown(markdown) {
 function extractFaq(markdown) {
   const faqStart = markdown.indexOf("## FAQ");
   if (faqStart === -1) return [];
-  const faqEnd = markdown.indexOf("## CTA", faqStart);
+  const faqEnds = ["## Conclusion", "## CTA", "## Sources"]
+    .map((heading) => markdown.indexOf(heading, faqStart))
+    .filter((index) => index > faqStart);
+  const faqEnd = faqEnds.length ? Math.min(...faqEnds) : -1;
   const faqText = markdown.slice(faqStart, faqEnd > -1 ? faqEnd : undefined);
   const items = [];
   const matches = [...faqText.matchAll(/^###\s+(.+?)\s*\n+([\s\S]*?)(?=^###\s+|$)/gm)];
@@ -572,6 +575,13 @@ const blogImageMap = {
   "silicone-coated-baking-paper-buyer-guide": ["blog-silicone-coated-baking-paper.webp", "ai-quality-export-packaging.jpg"],
   "cake-boards-wholesale-bakery-buyers": ["party-accessories-clean.jpg", "ai-quality-export-packaging.jpg"],
   "burger-wrapping-paper-wholesale-greaseproof-guide": ["blog-custom-printed-food-paper-packaging.webp", "ai-quality-export-packaging.jpg"],
+  "parchment-paper-rounds-wholesale-buyer-guide": ["blog-precut-parchment-paper-sheets-wholesale.webp", "ai-quality-export-packaging.jpg"],
+  "greaseproof-paper-rolls-wholesale-buyer-guide": ["blog-custom-printed-food-paper-packaging.webp", "ai-quality-export-packaging.jpg"],
+  "individually-wrapped-paper-straws-wholesale-guide": ["real-paper-straws.jpg", "ai-quality-export-packaging.jpg"],
+  "cupcake-liner-grease-resistance-testing-guide": ["blog-baking-paper-quality-control.webp", "ai-quality-export-packaging.jpg"],
+  "custom-printed-greaseproof-paper-wholesale-guide": ["blog-custom-printed-food-paper-packaging.webp", "ai-quality-export-packaging.jpg"],
+  "food-paper-packaging-supplier-audit-checklist": ["blog-baking-paper-quality-control.webp", "ai-quality-export-packaging.jpg"],
+  "parchment-paper-vs-wax-paper-wholesale-guide": ["blog-precut-parchment-paper-sheets-wholesale.webp", "ai-quality-export-packaging.jpg"],
 };
 
 function loadBlogArticles() {
