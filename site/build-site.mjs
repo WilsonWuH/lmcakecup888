@@ -582,6 +582,9 @@ const blogImageMap = {
   "custom-printed-greaseproof-paper-wholesale-guide": ["blog-custom-printed-food-paper-packaging.webp", "ai-quality-export-packaging.jpg"],
   "food-paper-packaging-supplier-audit-checklist": ["blog-baking-paper-quality-control.webp", "ai-quality-export-packaging.jpg"],
   "parchment-paper-vs-wax-paper-wholesale-guide": ["blog-precut-parchment-paper-sheets-wholesale.webp", "ai-quality-export-packaging.jpg"],
+  "cupcake-liners-vs-baking-cups-commercial-guide": ["real-cake-cups-assortment.jpg", "ai-quality-export-packaging.jpg"],
+  "greaseproof-paper-bags-wholesale-buyer-guide": ["blog-custom-printed-food-paper-packaging.webp", "ai-quality-export-packaging.jpg"],
+  "paper-straw-durability-testing-quality-checklist-wholesale-buyers": ["real-paper-straws.jpg", "ai-quality-export-packaging.jpg"],
 };
 
 function loadBlogArticles() {
