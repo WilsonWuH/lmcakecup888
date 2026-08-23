@@ -714,7 +714,7 @@ Useful supplier questions include:
 - What sample can be sent before mass production?
 - What inspection photos or report can be provided before shipment?
 
-LANGMAI's role as an OEM/ODM paper food packaging manufacturer is useful when a buyer needs one supplier to coordinate paper selection, printing, forming, packaging and shipment checks. For RFQ preparation, the [contact page](/contact/) and [inquiry page](/inquiry/) can be used to send product requirements, destination market and document needs.
+LANGMAI's role as an OEM/ODM paper food packaging manufacturer is useful when a buyer needs one supplier to coordinate paper selection, printing, forming, packaging and shipment checks. For RFQ preparation, the [inquiry page](/inquiry/) can be used to send product requirements, destination market and document needs.
 
 ## 8. Pre-Shipment Inspection Checklist
 
@@ -830,8 +830,8 @@ Submit button: Send Your Requirements
 
 ## Internal Linking Plan
 
-- Article 1 should link to `/products/cake-cups/`, `/products/roll-mouth-cake-cups/`, `/customization/` and `/contact/`.
-- Article 2 should link to `/products/cake-cups/`, `/products/muffin-baking-cups/`, `/factory-certificates/` and `/contact/`.
+- Article 1 should link to `/products/cake-cups/`, `/products/roll-mouth-cake-cups/`, `/customization/` and `/inquiry/`.
+- Article 2 should link to `/products/cake-cups/`, `/products/muffin-baking-cups/`, `/factory-certificates/` and `/inquiry/`.
 - Article 3 should link to `/products/air-fryer-paper-liners/`, `/landing/air-fryer-paper-liners-bulk/` and `/inquiry/`.
 
 ## Schema Suggestions

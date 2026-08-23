@@ -200,4 +200,4 @@ Send every supplier the same drawing, tray details, food application, pack count
 
 Mini cupcake liners wholesale purchasing works best when the buyer treats the liner as a controlled food-contact packaging component, not a small commodity item. Define the size, test with the real tray and recipe, confirm food-contact document scope, approve packed samples and inspect bulk production against a retained reference. That process helps importers, bakery distributors, foodservice buyers and private-label teams reduce fit problems, visual complaints, count disputes and late compliance surprises.
 
-For a quote-ready review, send LANGMAI your mini liner dimensions, application, destination market, color or print plan, pack count and target order volume. [Submit your mini cupcake liner requirements](/contact/) and ask for a sample route before approving bulk production.
+For a quote-ready review, send LANGMAI your mini liner dimensions, application, destination market, color or print plan, pack count and target order volume. [Submit your mini cupcake liner requirements](/inquiry/) and ask for a sample route before approving bulk production.
