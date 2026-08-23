@@ -496,7 +496,7 @@ function loadBlogArticles() {
         intent: field(section, "Search Intent"),
         html: renderMarkdown(bodyMarkdown),
         faq: extractFaq(bodyMarkdown),
-        images: blogImageMap[slug] || ["ai-cake-cups-premium.jpg", "ai-quality-export-packaging.jpg"],
+        images: blogImageMap[slug] || [field(section, "Image 1 File"), field(section, "Image 2 File")].filter(Boolean),
         isLongForm: true,
       };
     })
@@ -1548,7 +1548,7 @@ function writeStatic() {
   ]);
   for (const file of fs.readdirSync(assetSource)) {
     if (hiddenCatalogPages.has(file)) continue;
-    fs.copyFileSync(path.join(assetSource, file), path.join(assetTarget, file));
+    fs.cpSync(path.join(assetSource, file), path.join(assetTarget, file), { recursive: true });
   }
   fs.writeFileSync(path.join(distDir, "styles.css"), css + productTemplateCss + warmThemeCss);
   fs.writeFileSync(path.join(distDir, "site.js"), js);
