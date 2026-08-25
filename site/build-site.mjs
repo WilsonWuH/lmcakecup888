@@ -142,6 +142,7 @@ const products = [
   {
     slug: "cake-cups",
     title: "Custom Cupcake Liners & Paper Baking Cups Wholesale",
+    seoTitle: "Custom Cupcake Liners Wholesale | LANGMAI",
     short: "Food-grade greaseproof cupcake liners and paper baking cups for bakeries, importers, distributors and supermarket private-label programs.",
     image: "real-cake-cups-assortment.jpg",
     gallery: ["real-cake-cups-assortment.jpg", "real-cake-cups-stacked.jpg", "cake-cups-clean.jpg"],
@@ -181,6 +182,7 @@ const products = [
   {
     slug: "air-fryer-paper-liners",
     title: "Air Fryer Paper Liners in Bulk for Retail & Foodservice",
+    seoTitle: "Air Fryer Paper Liners Bulk | LANGMAI",
     short: "Round and square food-grade silicone paper liners for air fryers, ovens, supermarkets and ready-to-cook food packs.",
     image: "ai-air-fryer-liners-premium.jpg",
     gallery: ["ai-air-fryer-liners-premium.jpg", "air-fryer-liners-clean.jpg", "ai-quality-export-packaging.jpg"],
@@ -194,6 +196,7 @@ const products = [
   {
     slug: "baking-parchment-paper",
     title: "Baking Parchment Paper for Wholesale and Private Label",
+    seoTitle: "Baking Parchment Paper Wholesale | LANGMAI",
     short: "Food-contact baking parchment in sheet, roll and die-cut formats for bakery, foodservice, retail and private-label programs.",
     image: "ai-quality-export-packaging.jpg",
     gallery: ["ai-quality-export-packaging.jpg", "factory-workshop.jpg", "showroom.jpg"],
@@ -220,6 +223,7 @@ const products = [
   {
     slug: "custom-printed-baking-paper",
     title: "Custom Printed Baking Paper for Private-Label Buyers",
+    seoTitle: "Custom Printed Baking Paper | LANGMAI",
     short: "Printed baking paper, liners and bakery paper formats with artwork review, low-odor ink options, sampling and export packaging support.",
     image: "real-cake-cups-assortment.jpg",
     gallery: ["real-cake-cups-assortment.jpg", "ai-langmai-ip-showroom.jpg", "ai-quality-export-packaging.jpg"],
@@ -236,7 +240,7 @@ const products = [
     template: "food-wrapping",
     title: "Custom Greaseproof Paper Manufacturer",
     cardTitle: "Greaseproof Paper",
-    seoTitle: "Custom Greaseproof Paper Manufacturer & Supplier | LANGMAI",
+    seoTitle: "Custom Greaseproof Paper Supplier | LANGMAI",
     short: "Custom greaseproof paper sheets and rolls for bakeries, restaurants, foodservice and private-label brands, with product-specific PFAS and food-contact document review.",
     meta: "Custom greaseproof paper sheets and rolls for bakeries, restaurants, foodservice and private-label brands. PFAS-free material options, printing and food-contact documentation are available.",
     image: "food-wrap-greaseproof.webp",
@@ -786,7 +790,7 @@ function siteHeader() {
       <a class="nav-link simple" href="/about/">About Us</a>
       <a class="nav-link simple" href="/inquiry/">Contact</a>
     </nav>
-    <a class="header-cta" href="/inquiry/">Request a Quote</a>
+    <a class="header-cta" href="/inquiry/" data-cta-type="quote">Request a Quote</a>
     ${languageSwitcher("/")}
   </div>
 </header>`;
@@ -820,11 +824,11 @@ function siteFooter() {
     </div>
     <div>
       <h2>Buyer Actions</h2>
-      <a href="/inquiry/">Request a Quote</a>
-      <a href="/inquiry/#sample">Get Free Sample</a>
+      <a href="/inquiry/" data-cta-type="quote">Request a Quote</a>
+      <a href="/inquiry/#sample" data-cta-type="sample">Get Free Sample</a>
       <a href="/products/food-wrapping-paper/">Explore Food Wrapping Paper</a>
       <a href="/eudr-traceability/">Review EUDR Traceability</a>
-      <a href="/assets/catalog-preview-clean.jpg" download>Download Catalog Preview</a>
+      <a href="/assets/catalog-preview-clean.jpg" download data-cta-type="catalog">Download Catalog Preview</a>
     </div>
     <div>
       <h2>Trust</h2>
@@ -859,14 +863,14 @@ function ctaBand(title = "Ready to price your next baking paper order?") {
       <p>Share product type, size, quantity, destination market and custom print needs. LANGMAI can support stock designs, OEM artwork, samples and export carton planning.</p>
     </div>
     <div class="cta-actions">
-      <a class="button primary" href="/inquiry/">Request a Quote</a>
-      <a class="button secondary" href="/inquiry/#sample">Get Free Sample</a>
+      <a class="button primary" href="/inquiry/" data-cta-type="quote">Request a Quote</a>
+      <a class="button secondary" href="/inquiry/#sample" data-cta-type="sample">Get Free Sample</a>
     </div>
   </section>`;
 }
 
 function leadForm(defaultProduct = "Custom cupcake liners") {
-  return `<form class="lead-form" data-lead-form>
+  return `<form class="lead-form" data-lead-form data-form-type="quote">
   <input class="hp-field" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
   <label>Name<input name="name" placeholder="Your name" required></label>
   <label>Email<input type="email" name="email" placeholder="buyer@example.com" required></label>
@@ -892,8 +896,8 @@ function ipStickyCard(productTitle = "Custom cupcake liners") {
         <li>Sample and catalog request</li>
         <li>WhatsApp quick reply</li>
       </ul>
-      <a class="button primary" href="/inquiry/">Request a Quote</a>
-      <a class="button secondary" href="https://wa.me/8613645700210">WhatsApp Wilson</a>
+      <a class="button primary" href="/inquiry/" data-cta-type="quote">Request a Quote</a>
+      <a class="button secondary" href="https://wa.me/8613645700210" data-cta-type="whatsapp">WhatsApp Wilson</a>
       <span class="ip-note">${esc(productTitle)}</span>
     </div>
   </aside>`;
@@ -905,9 +909,9 @@ function productCards(items = products) {
       (p) => `<article class="product-card">
       <img src="${relAsset(p.image)}" loading="lazy" decoding="async" alt="${esc(p.title)}">
       <div>
-        <h3><a href="/products/${p.slug}/">${esc(p.cardTitle || p.title)}</a></h3>
+      <h3><a href="/products/${p.slug}/" data-cta-type="product" data-product="${esc(p.slug)}">${esc(p.cardTitle || p.title)}</a></h3>
         <p>${esc(p.short)}</p>
-        <a class="text-link" href="/products/${p.slug}/">View specs and options</a>
+        <a class="text-link" href="/products/${p.slug}/" data-cta-type="product" data-product="${esc(p.slug)}">View specs and options</a>
       </div>
     </article>`,
     )
@@ -1046,8 +1050,8 @@ function homePage() {
       <p>Custom baking cups, cupcake liners, baking parchment, air fryer paper and food wrapping paper solutions for bakery brands, distributors, foodservice suppliers and private-label programs worldwide.</p>
       <div class="hero-proof">${heroProofPoints.map((item) => `<span>${esc(item)}</span>`).join("")}</div>
       <div class="hero-actions">
-        <a class="button primary" href="/products/">Explore Baking Paper Products</a>
-        <a class="button secondary" href="/inquiry/">Request Samples & Documents</a>
+        <a class="button primary" href="/products/" data-cta-type="product">Explore Baking Paper Products</a>
+        <a class="button secondary" href="/inquiry/" data-cta-type="sample">Request Samples & Documents</a>
       </div>
     </div>
   </section>
@@ -1165,7 +1169,7 @@ function productsIndex() {
 }
 
 function foodWrappingLeadForm(product) {
-  return `<form class="lead-form wrapping-inquiry-form" data-lead-form>
+  return `<form class="lead-form wrapping-inquiry-form" data-lead-form data-form-type="quote">
     <input class="hp-field" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
     <label>Email *<input type="email" name="email" placeholder="buyer@example.com" required></label>
     <label>Product type *<input name="product" value="${esc(product.cardTitle || product.title)}" required></label>
@@ -1248,10 +1252,11 @@ function foodWrappingProductPage(product) {
       <p class="eyebrow">Food wrapping paper 路 ${esc(statusLabel)}</p>
       <h1>${esc(product.title)}</h1>
       <p>${esc(product.short)}</p>
-      <div class="hero-actions"><a class="button primary" href="#quote">Request a Quote</a><a class="button secondary" href="/products/food-wrapping-paper/">View Wrapping Paper Range</a></div>
+      <div class="hero-actions"><a class="button primary" href="#quote" data-cta-type="quote" data-product="${esc(product.slug)}">Request a Quote</a><a class="button secondary" href="/products/food-wrapping-paper/" data-cta-type="product">View Wrapping Paper Range</a></div>
     </div>
     <img src="/assets/${product.image}" width="1440" height="${product.slug === "greaseproof-paper" ? "768" : "960"}" decoding="async" alt="${esc(product.cardTitle)} sheets, rolls and food wrapping applications">
   </section>
+  ${buyerBrief(product)}
   <section class="trust-strip">${product.features.map((item) => `<span>${esc(item)}</span>`).join("")}</section>
   ${isButcher ? `<section class="section verification-alert"><p class="eyebrow">Specification gate</p><h2>Performance claims remain subject to product verification</h2><p>Before production or marketing approval, confirm available colors, grammage, wet strength, coating status, food-contact suitability, freezer conditions, direct fresh-meat contact, BBQ or smoker suitability, heat resistance, PFAS status, reports, roll widths and sheet sizes. The catalogue is a visual reference and does not replace product-level confirmation.</p></section>` : ""}
   <section class="section two-col wrapping-overview">
@@ -1284,6 +1289,39 @@ function foodWrappingProductPage(product) {
   });
 }
 
+function buyerBrief(product) {
+  const label = product.cardTitle || product.title;
+  return `<section class="section buyer-brief" aria-labelledby="buyer-brief-title">
+    <div>
+      <p class="eyebrow">Quote-ready product brief</p>
+      <h2 id="buyer-brief-title">Send the details buyers need to approve</h2>
+      <p>Use the inquiry form to connect the product, intended use and destination-market requirements in one request.</p>
+      <ul class="check-list">
+        <li>Product and food application: ${esc(label)}</li>
+        <li>Target dimensions, format and paper construction</li>
+        <li>Estimated quantity, pack count and private-label packaging</li>
+        <li>Artwork, printing, coating or material requirements</li>
+        <li>Destination country and requested food-contact or PFAS documents</li>
+      </ul>
+    </div>
+    <div>
+      <p class="eyebrow">Sampling and approval path</p>
+      <h2>Review the specification before repeat supply</h2>
+      <ol class="process-list">
+        <li>Confirm application, dimensions and material requirements</li>
+        <li>Review artwork, packaging and available product evidence</li>
+        <li>Approve a representative sample and finished pack</li>
+        <li>Link the quotation and repeat order to the approved specification</li>
+      </ol>
+      <div class="link-grid">
+        <a href="/factory-certificates/#food-contact">Food-contact documents</a>
+        <a href="/pfas-free-baking-paper/">PFAS evidence process</a>
+        <a href="/inquiry/" data-cta-type="quote" data-product="${esc(product.slug)}">Send ${esc(label)} brief</a>
+      </div>
+    </div>
+  </section>`;
+}
+
 function productPage(product) {
   if (product.template === "food-wrapping") return foodWrappingProductPage(product);
   const related = products.filter((p) => p.slug !== product.slug).slice(0, 3);
@@ -1305,12 +1343,13 @@ function productPage(product) {
       <h1>${esc(product.title)}</h1>
       <p>${esc(product.short)}</p>
       <div class="hero-actions">
-        <a class="button primary" href="#quote">Request a Quote</a>
-        <a class="button secondary" href="/inquiry/#sample">Get Free Sample</a>
+        <a class="button primary" href="#quote" data-cta-type="quote" data-product="${esc(product.slug)}">Request a Quote</a>
+        <a class="button secondary" href="/inquiry/#sample" data-cta-type="sample" data-product="${esc(product.slug)}">Get Free Sample</a>
       </div>
     </div>
     <img src="${relAsset(product.image)}" alt="${esc(product.title)} specifications and product examples">
   </section>
+  ${buyerBrief(product)}
   <section class="product-template section">
     <div class="product-main">
       <section class="two-col product-block">
@@ -1350,7 +1389,7 @@ function productPage(product) {
             <li>Declaration, report date and tested sample identity</li>
             <li>Change-control requirements for repeat orders</li>
           </ul>
-          <a class="button primary" href="/inquiry/">Request PFAS Documents & Samples</a>
+          <a class="button primary" href="/inquiry/" data-cta-type="quote" data-product="${esc(product.slug)}">Request PFAS Documents & Samples</a>
         </div>
       </section>` : ""}
       <section class="product-block product-eudr-support" aria-labelledby="product-eudr-title">
@@ -1392,7 +1431,7 @@ function productPage(product) {
   </section>`;
   return layout({
     route: `/products/${product.slug}/`,
-    title: `${product.title} | LANGMAI Manufacturer`,
+    title: product.seoTitle || `${product.title} | LANGMAI Manufacturer`,
     description: product.short,
     content,
     schema: [productPageSchema(product, `/products/${product.slug}/`), faqSchema(faq)],
@@ -1619,7 +1658,7 @@ function applicationsPage() {
       .map(
         ([title, text, image]) => `<article class="product-card">
         <img src="/assets/${image}" alt="${esc(title)} application for LANGMAI products">
-        <div><h2>${esc(title)}</h2><p>${esc(text)}</p><a class="text-link" href="/inquiry/">Discuss this application</a></div>
+    <div><h2>${esc(title)}</h2><p>${esc(text)}</p><a class="text-link" href="/inquiry/" data-cta-type="quote">Discuss this application</a></div>
       </article>`,
       )
       .join("")}</div>
@@ -1646,7 +1685,7 @@ function casesPage() {
   </section>
   <section class="section"><div class="product-grid">${cases.map(([title, text, image]) => `<article class="product-card">
     <img src="/assets/${image}" alt="${esc(title)} for LANGMAI overseas buyers">
-    <div><h2>${esc(title)}</h2><p>${esc(text)}</p><a class="text-link" href="/inquiry/">Discuss a similar project</a></div>
+    <div><h2>${esc(title)}</h2><p>${esc(text)}</p><a class="text-link" href="/inquiry/" data-cta-type="quote">Discuss a similar project</a></div>
   </article>`).join("")}</div></section>
   ${ctaBand("Planning a private-label paper packaging project?")}`;
   return layout({
@@ -1852,11 +1891,11 @@ export function B2BInquiryForm() {
         </div>
         <div class="inquiry-contact">
           <strong>${company.contact}</strong>
-          <a href="mailto:${company.email}">${company.email}</a>
-          <a href="https://wa.me/8613645700210">${company.whatsapp}</a>
+          <a href="mailto:${company.email}" data-cta-type="email">${company.email}</a>
+          <a href="https://wa.me/8613645700210" data-cta-type="whatsapp">${company.whatsapp}</a>
         </div>
       </div>
-      <form class="inquiry-form" data-inquiry-form novalidate>
+      <form class="inquiry-form" data-inquiry-form data-form-type="${route.includes("sample") ? "sample" : "quote"}" novalidate>
         <input class="hp-field" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="form-row">
           <label>Name <span>*</span><input name="name" required placeholder="Your full name" data-error="Please enter your name."><small></small></label>
@@ -2468,6 +2507,19 @@ if (document.readyState === "complete") queueDeferredHeroSlides();
 else window.addEventListener("load", queueDeferredHeroSlides, { once: true });
 
 const inquiryPaths = new Set(["/inquiry/", "/de/kontakt/", "/de/muster-anfordern/", "/fr/contact/", "/fr/demande-echantillons/"]);
+const samplePaths = new Set(["/de/muster-anfordern/", "/fr/demande-echantillons/"]);
+const pageLocale = () => document.documentElement.lang || (window.location.pathname.startsWith("/de/") ? "de" : window.location.pathname.startsWith("/fr/") ? "fr" : "en");
+const pushCtaEvent = (eventName, link, destination) => {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: eventName,
+    cta_label: link.textContent.replace(/\\s+/g, " ").trim().slice(0, 120),
+    cta_href: destination.protocol === "mailto:" ? destination.href.replace(/^mailto:/i, "mailto:") : destination.origin === window.location.origin ? destination.pathname + destination.hash : destination.href,
+    page_path: window.location.pathname,
+    locale: pageLocale(),
+    product: link.dataset.product || undefined,
+  });
+};
 document.addEventListener("click", (event)=>{
   const link = event.target.closest?.("a[href]");
   if (!link) return;
@@ -2477,14 +2529,24 @@ document.addEventListener("click", (event)=>{
   } catch {
     return;
   }
-  if (destination.origin !== window.location.origin || !inquiryPaths.has(destination.pathname)) return;
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
-    event: "inquiry_cta_click",
-    cta_label: link.textContent.replace(/\\s+/g, " ").trim().slice(0, 120),
-    cta_href: destination.pathname + destination.hash,
-    page_path: window.location.pathname,
-  });
+  const rawHref = link.getAttribute("href") || "";
+  const ctaType = (link.dataset.ctaType || "").toLowerCase();
+  const isSameOrigin = destination.origin === window.location.origin;
+  const isInquiry = isSameOrigin && inquiryPaths.has(destination.pathname);
+  const isSample = ctaType === "sample" || (isSameOrigin && (destination.hash === "#sample" || samplePaths.has(destination.pathname)));
+  const isEmail = destination.protocol === "mailto:" || rawHref.toLowerCase().startsWith("mailto:");
+  const isWhatsApp = ctaType === "whatsapp" || /(?:wa\\.me|whatsapp)/i.test(destination.href);
+  const isCatalog = ctaType === "catalog" || /catalog/i.test(destination.pathname + rawHref);
+  const isProduct = ctaType === "product" || (isSameOrigin && /^\\/(?:products|produkte|produits)\\//.test(destination.pathname));
+  const events = [];
+  if (isInquiry) events.push("inquiry_cta_click");
+  if (ctaType === "quote" || (isInquiry && !isSample)) events.push("quote_cta_click");
+  if (isSample) events.push("sample_cta_click");
+  if (isEmail) events.push("email_click");
+  if (isWhatsApp) events.push("whatsapp_click");
+  if (isCatalog) events.push("catalog_download");
+  if (isProduct) events.push("product_cta_click");
+  [...new Set(events)].forEach((eventName) => pushCtaEvent(eventName, link, destination));
 });
 
 document.querySelectorAll("[data-lead-form]").forEach((form)=>{
@@ -2503,7 +2565,10 @@ document.querySelectorAll("[data-lead-form]").forEach((form)=>{
     }
     const data = Object.fromEntries(new FormData(form).entries());
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({event:"lead_form_submit",product:data.product,country:data.country,quantity:data.quantity});
+    const formEvent = form.dataset.formType === "sample" || samplePaths.has(window.location.pathname) ? "sample_request_submit" : "quote_form_submit";
+    const formPayload = {product:data.product,country:data.country,quantity:data.quantity,page_path:window.location.pathname,locale:pageLocale()};
+    window.dataLayer.push({event:"lead_form_submit",...formPayload});
+    window.dataLayer.push({event:formEvent,...formPayload});
     button.disabled = true;
     button.textContent = "Sending...";
     note.textContent = "Sending your inquiry securely...";
@@ -2571,7 +2636,10 @@ document.querySelectorAll("[data-inquiry-form]").forEach((form)=>{
     button.textContent = "Submitting...";
     const data = Object.fromEntries(new FormData(form).entries());
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({event:"b2b_inquiry_submit",product:data.product,country:data.country});
+    const formEvent = form.dataset.formType === "sample" || samplePaths.has(window.location.pathname) ? "sample_request_submit" : "quote_form_submit";
+    const formPayload = {product:data.product,country:data.country,page_path:window.location.pathname,locale:pageLocale()};
+    window.dataLayer.push({event:"b2b_inquiry_submit",...formPayload});
+    window.dataLayer.push({event:formEvent,...formPayload});
     try {
       const response = await fetch("https://formsubmit.co/ajax/${company.email}", {
         method: "POST",
