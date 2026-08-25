@@ -390,10 +390,14 @@ function enRoute(kind, key) {
       {
         "baking-cups": "/products/cake-cups/",
         "muffin-cups": "/products/muffin-baking-cups/",
+        "tulip-cups": "/products/tulip-muffin-cups/",
+        "baking-paper": "/products/baking-parchment-paper/",
         "air-fryer": "/products/air-fryer-paper-liners/",
+        "greaseproof": "/products/greaseproof-paper/",
         "paper-straws": "/products/paper-straws/",
-      }[key] || "/products/"
+      }[key] || null
     );
+  if (["app", "guide", "compliance", "sample"].includes(kind)) return null;
   return (
     {
       products: "/products/",
@@ -401,11 +405,10 @@ function enRoute(kind, key) {
       guides: "/resources/",
       custom: "/customization/",
       quality: "/factory-certificates/",
-      compliance: "/factory-certificates/",
-      eudr: "/eudr-traceability/",
-      about: "/about/",
-      contact: "/inquiry/",
-      sample: "/inquiry/",
+    eudr: "/eudr-traceability/",
+    about: "/about/",
+    contact: "/inquiry/",
+      sample: null,
       app: "/applications/",
       guide: "/resources/",
     }[kind] || "/"
@@ -454,7 +457,18 @@ function layout(
       brand: { "@type": "Brand", name: "LANGMAI" },
     },
   ]).replaceAll("</", "<\\/");
-  return `<!doctype html><html lang="${locale}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)}</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${BASE}${route}"><link rel="alternate" hreflang="en" href="${BASE}${en}"><link rel="alternate" hreflang="de" href="${BASE}${de}"><link rel="alternate" hreflang="fr" href="${BASE}${fr}"><link rel="alternate" hreflang="x-default" href="${BASE}${en}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:image" content="${BASE}/assets/banner.jpg"><link rel="stylesheet" href="/styles.css"><script type="application/ld+json">${schema}</script></head><body class="localized-site localized-${locale}"><a class="skip-link" href="#main">${locale === "de" ? "Zum Inhalt" : "Aller au contenu"}</a><header class="site-header"><div class="header-inner"><a class="brand" href="${c.home}"><img src="/assets/logo.jpg" alt="Logo LANGMAI"><span><strong>LANGMAI</strong><small>${locale === "de" ? "Papierverpackungen für Lebensmittel" : "Emballages alimentaires en papier"}</small></span></a><nav class="main-nav">${c.nav.map(([a, b]) => `<a href="${b}">${a}</a>`).join("")}</nav><div class="header-actions"><a class="button primary" href="${c.contact}">${c.quote}</a><div class="language-switcher"><button class="language-current" type="button">${locale.toUpperCase()}</button><div class="language-menu"><a href="${en}">English</a><a href="${de}">Deutsch</a><a href="${fr}">Français</a></div></div></div></div></header><main id="main">${content}</main><footer class="site-footer"><div><strong>LANGMAI</strong><p>${locale === "de" ? "Lebensmittelechte Papierverpackungen für Bäckerei, Industrie und Gastronomie." : "Emballages alimentaires en papier pour boulangerie, pâtisserie et restauration."}</p></div><div><a href="${c.products}">${c.productLabel}</a><a href="${c.guides}">${c.guideLabel}</a><a href="${c.contact}">Contact</a></div><div><a href="mailto:wh1007209170@gmail.com">wh1007209170@gmail.com</a><a href="https://wa.me/8613645700210">WhatsApp +86 136 4570 0210</a></div></footer><a class="whatsapp-float" href="https://wa.me/8613645700210">WhatsApp</a><script src="/site.js" defer></script></body></html>`;
+  const alternateTags = [
+    en ? `<link rel="alternate" hreflang="en" href="${BASE}${en}">` : "",
+    `<link rel="alternate" hreflang="de" href="${BASE}${de}">`,
+    `<link rel="alternate" hreflang="fr" href="${BASE}${fr}">`,
+    en ? `<link rel="alternate" hreflang="x-default" href="${BASE}${en}">` : "",
+  ].filter(Boolean).join("");
+  const languageLinks = [
+    en ? `<a href="${en}">English</a>` : "",
+    `<a href="${de}">Deutsch</a>`,
+    `<a href="${fr}">Français</a>`,
+  ].filter(Boolean).join("");
+  return `<!doctype html><html lang="${locale}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)}</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${BASE}${route}">${alternateTags}<meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:image" content="${BASE}/assets/banner.jpg"><link rel="stylesheet" href="/styles.css"><script type="application/ld+json">${schema}</script></head><body class="localized-site localized-${locale}"><a class="skip-link" href="#main">${locale === "de" ? "Zum Inhalt" : "Aller au contenu"}</a><header class="site-header"><div class="header-inner"><a class="brand" href="${c.home}"><img src="/assets/logo.jpg" alt="Logo LANGMAI"><span><strong>LANGMAI</strong><small>${locale === "de" ? "Papierverpackungen für Lebensmittel" : "Emballages alimentaires en papier"}</small></span></a><nav class="main-nav">${c.nav.map(([a, b]) => `<a href="${b}">${a}</a>`).join("")}</nav><div class="header-actions"><a class="button primary" href="${c.contact}">${c.quote}</a><div class="language-switcher"><button class="language-current" type="button">${locale.toUpperCase()}</button><div class="language-menu">${languageLinks}</div></div></div></div></header><main id="main">${content}</main><footer class="site-footer"><div><strong>LANGMAI</strong><p>${locale === "de" ? "Lebensmittelechte Papierverpackungen für Bäckerei, Industrie und Gastronomie." : "Emballages alimentaires en papier pour boulangerie, pâtisserie et restauration."}</p></div><div><a href="${c.products}">${c.productLabel}</a><a href="${c.guides}">${c.guideLabel}</a><a href="${c.contact}">Contact</a></div><div><a href="mailto:wh1007209170@gmail.com">wh1007209170@gmail.com</a><a href="https://wa.me/8613645700210">WhatsApp +86 13645700210</a></div></footer><a class="whatsapp-float" href="https://wa.me/8613645700210">WhatsApp</a><script src="/site.js" defer></script></body></html>`;
 }
 function form(locale, sample = false) {
   const de = locale === "de";
