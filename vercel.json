@@ -7,6 +7,16 @@
     "trailingSlash":  true,
     "redirects":  [
                       {
+                          "source":  "/ar/contact/",
+                          "destination":  "/inquiry/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ru/applications/cafe/",
+                          "destination":  "/applications/",
+                          "permanent":  true
+                      },
+                      {
                           "source":  "/contact/",
                           "destination":  "/inquiry/",
                           "permanent":  true

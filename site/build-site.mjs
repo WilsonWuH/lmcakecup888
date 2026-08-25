@@ -2467,6 +2467,26 @@ const queueDeferredHeroSlides = () => {
 if (document.readyState === "complete") queueDeferredHeroSlides();
 else window.addEventListener("load", queueDeferredHeroSlides, { once: true });
 
+const inquiryPaths = new Set(["/inquiry/", "/de/kontakt/", "/de/muster-anfordern/", "/fr/contact/", "/fr/demande-echantillons/"]);
+document.addEventListener("click", (event)=>{
+  const link = event.target.closest?.("a[href]");
+  if (!link) return;
+  let destination;
+  try {
+    destination = new URL(link.href, window.location.href);
+  } catch {
+    return;
+  }
+  if (destination.origin !== window.location.origin || !inquiryPaths.has(destination.pathname)) return;
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: "inquiry_cta_click",
+    cta_label: link.textContent.replace(/\\s+/g, " ").trim().slice(0, 120),
+    cta_href: destination.pathname + destination.hash,
+    page_path: window.location.pathname,
+  });
+});
+
 document.querySelectorAll("[data-lead-form]").forEach((form)=>{
   form.addEventListener("submit", async (event)=>{
     event.preventDefault();
