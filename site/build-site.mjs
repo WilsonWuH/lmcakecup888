@@ -2565,7 +2565,7 @@ document.querySelectorAll("[data-lead-form]").forEach((form)=>{
     }
     const data = Object.fromEntries(new FormData(form).entries());
     window.dataLayer = window.dataLayer || [];
-    const formEvent = form.dataset.formType === "sample" || samplePaths.has(window.location.pathname) ? "sample_request_submit" : "quote_form_submit";
+    const formEvent = form.dataset.formType === "sample" || samplePaths.has(window.location.pathname) || window.location.hash === "#sample" ? "sample_request_submit" : "quote_form_submit";
     const formPayload = {product:data.product,country:data.country,quantity:data.quantity,page_path:window.location.pathname,locale:pageLocale()};
     window.dataLayer.push({event:"lead_form_submit",...formPayload});
     window.dataLayer.push({event:formEvent,...formPayload});
@@ -2636,7 +2636,7 @@ document.querySelectorAll("[data-inquiry-form]").forEach((form)=>{
     button.textContent = "Submitting...";
     const data = Object.fromEntries(new FormData(form).entries());
     window.dataLayer = window.dataLayer || [];
-    const formEvent = form.dataset.formType === "sample" || samplePaths.has(window.location.pathname) ? "sample_request_submit" : "quote_form_submit";
+    const formEvent = form.dataset.formType === "sample" || samplePaths.has(window.location.pathname) || window.location.hash === "#sample" ? "sample_request_submit" : "quote_form_submit";
     const formPayload = {product:data.product,country:data.country,page_path:window.location.pathname,locale:pageLocale()};
     window.dataLayer.push({event:"b2b_inquiry_submit",...formPayload});
     window.dataLayer.push({event:formEvent,...formPayload});
