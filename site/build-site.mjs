@@ -633,6 +633,38 @@ function loadBlogArticles() {
 const blogArticles = loadBlogArticles();
 const resourcePages = [...blogArticles, ...resources];
 
+const articleCommercialLinks = {
+  "cupcake-liner-grease-resistance-testing-guide": ["/products/cake-cups/", "Review cupcake liner options", "Connect grease-resistance testing with the approved cake-cup construction."],
+  "cupcake-liner-retail-packaging-wholesale": ["/products/cake-cups/", "Review retail-ready cake cups", "Compare paper, print and pack requirements on the main product page."],
+  "cupcake-liners-vs-baking-cups-commercial-guide": ["/products/cake-cups/", "Compare baking cup options", "Move from terminology and selection questions to a quote-ready product review."],
+  "paper-baking-cup-samples-approval-checklist": ["/products/cake-cups/", "Request a cake-cup sample", "Use the product page to connect sample checks with the final size and construction."],
+  "paper-baking-cup-manufacturer-audit": ["/products/cake-cups/", "Review cake-cup supply options", "Check the product range before sending a manufacturer-audit brief."],
+  "baking-paper-grammage-buyer-guide": ["/products/baking-parchment-paper/", "Review baking parchment formats", "Connect grammage and specification questions with sheets, rolls and die-cut requirements."],
+  "baking-parchment-paper-rolls-wholesale": ["/products/baking-parchment-paper/", "Review parchment paper options", "Confirm roll, sheet and packaging requirements against the main product range."],
+  "precut-parchment-paper-sheets-wholesale-buyer-guide": ["/products/baking-parchment-paper/", "Review parchment sheet supply", "Send the intended sheet format and destination-market requirements for review."],
+  "parchment-paper-rounds-wholesale-buyer-guide": ["/products/baking-parchment-paper/", "Review baking paper formats", "Use the product page to connect round-sheet requirements with the wider quotation brief."],
+  "parchment-paper-vs-wax-paper-wholesale-guide": ["/products/baking-parchment-paper/", "Review baking parchment", "Separate baking use from wrapping use before requesting the approved paper construction."],
+  "greaseproof-paper-sheets-wholesale-buyer-guide": ["/products/greaseproof-paper/", "Review greaseproof paper sheets", "Move from sheet-format questions to the product-specific quote and document review."],
+  "greaseproof-paper-rolls-wholesale-buyer-guide": ["/products/greaseproof-paper/", "Review greaseproof paper rolls", "Confirm roll dimensions, printing and packaging against the main product page."],
+  "custom-printed-greaseproof-paper-wholesale-guide": ["/products/greaseproof-paper/", "Review printed greaseproof paper", "Connect artwork, ink and paper questions with the selected greaseproof construction."],
+  "greaseproof-paper-bags-wholesale-buyer-guide": ["/products/greaseproof-paper/", "Review greaseproof paper supply", "Treat bags as an application and confirm the finished format before ordering."],
+  "food-paper-packaging-odor-testing": ["/products/greaseproof-paper/", "Review greaseproof paper requirements", "Link odor-testing questions to the exact paper, print system and finished format."],
+  "pfas-free-paper-packaging-evidence": ["/pfas-free-baking-paper/", "Review PFAS evidence", "Match any PFAS-related claim to the exact construction, test scope and intended use."],
+  "air-fryer-paper-liners-wholesale-private-label": ["/products/air-fryer-paper-liners/", "Review private-label air fryer liners", "Connect retail-packaging questions with the product-level sample and quote route."],
+  "air-fryer-liners-frozen-food-brands": ["/products/air-fryer-paper-liners/", "Review air fryer liner options", "Confirm food application, format, packaging and destination-market requirements."],
+  "air-fryer-liners-restaurant-kitchens": ["/products/air-fryer-paper-liners/", "Review foodservice liner options", "Move from kitchen-use questions to a product-level specification review."],
+  "air-fryer-liner-label-compliance": ["/products/air-fryer-paper-liners/", "Review air fryer liner supply", "Connect label and document questions with the selected liner construction."],
+  "food-paper-packaging-supplier-audit-checklist": ["/factory-certificates/", "Review factory and quality evidence", "Check available company and product-document review paths before an RFQ."],
+  "food-paper-supplier-certificate-verification": ["/factory-certificates/", "Review certificate evidence", "Confirm document scope, tested construction and destination-market applicability."],
+};
+
+function articleCommercialLink(resource) {
+  const link = articleCommercialLinks[resource.slug];
+  if (!link) return "";
+  const [href, label, description] = link;
+  return `<aside class="sample-box article-product-link"><p class="eyebrow">Related product review</p><p>${esc(description)}</p><a class="text-link" href="${href}">${esc(label)}</a></aside>`;
+}
+
 function urlFor(route) {
   return route === "/" ? `${baseUrl}/` : `${baseUrl}${route}`;
 }
@@ -2009,6 +2041,7 @@ function resourcePage(resource) {
     ${resource.date ? `<p class="note">Published ${esc(resource.date)}</p>` : ""}
     <p class="lede">${esc(resource.description)}</p>
     <div class="badge-grid"><span>${esc(resource.intent || "Procurement research")}</span><span>Practical supplier selection</span></div>
+    ${articleCommercialLink(resource)}
     ${eudrArticleNote}
     ${imageBlock}
     <div class="article-body">${resource.html.replace("</h2>", `</h2>${secondImage}`)}</div>
@@ -2047,7 +2080,7 @@ function landingPage(lp) {
       <h1>${esc(lp.title)}</h1>
       <p>${esc(lp.description)}</p>
       <ul class="check-list"><li>Food-grade materials for import buyers.</li><li>Custom sizes, colors, artwork and carton packaging.</li><li>Certificate documents and buyer verification notes are visible before RFQ.</li></ul>
-      <div class="hero-actions"><a class="button primary" href="#quote">Request Bulk Price</a><a class="button secondary" href="/products/${product.slug}/">View Product Details</a></div>
+      <div class="hero-actions"><a class="button primary" href="#quote">Request Bulk Price</a><a class="button secondary" href="/products/${product.slug}/" data-cta-type="product" data-product="${esc(product.slug)}" aria-label="View ${esc(product.title)} main product page">View Product Details</a></div>
     </div>
     <img src="${relAsset(product.image)}" alt="${esc(lp.title)} product details">
   </section>
