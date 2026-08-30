@@ -169,6 +169,7 @@ const products = [
   {
     slug: "muffin-baking-cups",
     title: "Muffin Cup Liners for Bakeries, Cafes and Events",
+    seoTitle: "Muffin Baking Cups Wholesale | LANGMAI",
     short: "Tall PET-coated muffin cup liners for branded bakery displays, cafe counters, supermarkets and event dessert programs.",
     image: "real-cake-cups-stacked.jpg",
     gallery: ["real-cake-cups-stacked.jpg", "muffin-baking-cups-clean.jpg", "real-cake-cups-assortment.jpg"],
@@ -242,7 +243,7 @@ const products = [
     cardTitle: "Greaseproof Paper",
     seoTitle: "Custom Greaseproof Paper Supplier | LANGMAI",
     short: "Custom greaseproof paper sheets and rolls for bakeries, restaurants, foodservice and private-label brands, with product-specific PFAS and food-contact document review.",
-    meta: "Custom greaseproof paper sheets and rolls for bakeries, restaurants, foodservice and private-label brands. PFAS-free material options, printing and food-contact documentation are available.",
+    meta: "Custom greaseproof paper sheets and rolls for bakeries, restaurants and private-label brands, with printing and product-specific PFAS and food-contact review.",
     image: "food-wrap-greaseproof.webp",
     keywords: "greaseproof paper manufacturer, custom greaseproof paper, printed greaseproof paper, PFAS-free greaseproof paper, greaseproof paper sheets, greaseproof paper rolls",
     material: "White or natural brown grease-resistant paper, subject to the selected grade and approved specification",
@@ -916,7 +917,8 @@ function leadForm(defaultProduct = "Custom cupcake liners") {
 </form>`;
 }
 
-function ipStickyCard(productTitle = "Custom cupcake liners") {
+function ipStickyCard(productTitle = "Custom cupcake liners", productSlug = "") {
+  const productAttr = productSlug ? ` data-product="${esc(productSlug)}"` : "";
   return `<aside class="ip-card" aria-label="Wilson Wu contact card">
     <img src="/assets/founder.jpg" alt="Wilson Wu, LANGMAI sales contact">
     <div>
@@ -928,7 +930,7 @@ function ipStickyCard(productTitle = "Custom cupcake liners") {
         <li>Sample and catalog request</li>
         <li>WhatsApp quick reply</li>
       </ul>
-      <a class="button primary" href="/inquiry/" data-cta-type="quote">Request a Quote</a>
+      <a class="button primary" href="/inquiry/" data-cta-type="quote"${productAttr}>Request a Quote</a>
       <a class="button secondary" href="https://wa.me/8613645700210" data-cta-type="whatsapp">WhatsApp Wilson</a>
       <span class="ip-note">${esc(productTitle)}</span>
     </div>
@@ -1459,7 +1461,7 @@ function productPage(product) {
         <div class="link-grid">${related.map((p) => `<a href="/products/${p.slug}/">${esc(p.title)}</a>`).join("")}<a href="/customization/">Custom printed baking cups process</a></div>
       </section>
     </div>
-    ${ipStickyCard(product.title)}
+    ${ipStickyCard(product.title, product.slug)}
   </section>`;
   return layout({
     route: `/products/${product.slug}/`,
@@ -2670,7 +2672,7 @@ document.querySelectorAll("[data-inquiry-form]").forEach((form)=>{
     const data = Object.fromEntries(new FormData(form).entries());
     window.dataLayer = window.dataLayer || [];
     const formEvent = form.dataset.formType === "sample" || samplePaths.has(window.location.pathname) || window.location.hash === "#sample" ? "sample_request_submit" : "quote_form_submit";
-    const formPayload = {product:data.product,country:data.country,page_path:window.location.pathname,locale:pageLocale()};
+    const formPayload = {product:form.dataset.product || data.product,country:data.country,page_path:window.location.pathname,locale:pageLocale()};
     window.dataLayer.push({event:"b2b_inquiry_submit",...formPayload});
     window.dataLayer.push({event:formEvent,...formPayload});
     try {
