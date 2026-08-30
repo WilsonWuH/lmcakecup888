@@ -1069,7 +1069,7 @@ function homePage() {
     ["Does LANGMAI support private-label packaging?", "Yes. Buyers can coordinate artwork, dimensions, paper construction, pack count, labels, retail presentation, cartons and sample approval as one private-label program."],
     ["How should a buyer start an inquiry?", "Send the product, target size, intended use, estimated quantity, destination market, packaging request and required documents. LANGMAI can then identify the suitable sample and quotation route."],
   ];
-  const featured = ["cake-cups", "baking-parchment-paper", "air-fryer-paper-liners", "custom-printed-baking-paper"].map((slug) => products.find((product) => product.slug === slug));
+  const featured = ["cake-cups", "muffin-baking-cups", "baking-parchment-paper", "air-fryer-paper-liners", "custom-printed-baking-paper"].map((slug) => products.find((product) => product.slug === slug));
   const content = `<section class="hero">
     <div class="hero-slider" aria-label="LANGMAI product banner carousel">
       <img class="hero-slide is-active" src="/assets/banner-cake-cups-1448.webp" srcset="/assets/banner-cake-cups-720.webp 720w, /assets/banner-cake-cups-1448.webp 1448w" sizes="100vw" width="1448" height="1086" fetchpriority="high" decoding="async" alt="LANGMAI colorful cupcake liners and cake cups">
