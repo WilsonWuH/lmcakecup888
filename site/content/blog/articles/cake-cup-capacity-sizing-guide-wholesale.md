@@ -2,16 +2,16 @@
 
 ## SEO Information
 
-- SEO Title: Cake Cup Capacity Guide: ml/oz Sizing for Wholesale Buyers | LANGMAI
-- H1: Cake Cup Capacity and Sizing Guide for Wholesale Buyers
-- URL Slug: /resources/cake-cup-capacity-sizing-guide-wholesale/
-- Meta Description: A practical cake cup capacity guide for wholesale buyers: ml and oz size ranges, fill ratios, batter rise, matching cup size to product, and the sizing mistakes that cost bakeries money.
-- Primary Keyword: cake cup capacity
-- Target Keywords: cake cup sizing guide, cake cup sizes ml, cupcake liner capacity ml, baking cup fill ratio, wholesale cake cups sizing
-- Search Intent: Commercial / B2B — wholesale buyers and bakery procurement teams specifying cake cup sizes
-- Publish Date: 2026-09-15
-- Image 1 File: blog/cake-cup-capacity-sizing-guide-wholesale-production.webp
-- Image 2 File: blog/cake-cup-capacity-sizing-guide-wholesale-sizes.webp
+SEO Title: Cake Cup Capacity Guide: ml/oz Sizing for Wholesale Buyers | LANGMAI
+H1: Cake Cup Capacity and Sizing Guide for Wholesale Buyers
+URL Slug: /resources/cake-cup-capacity-sizing-guide-wholesale/
+Meta Description: A practical cake cup capacity guide for wholesale buyers: ml and oz size ranges, fill ratios, batter rise, matching cup size to product, and the sizing mistakes that cost bakeries money.
+Primary Keyword: cake cup capacity
+Target Keywords: cake cup sizing guide, cake cup sizes ml, cupcake liner capacity ml, baking cup fill ratio, wholesale cake cups sizing
+Search Intent: Commercial / B2B — wholesale buyers and bakery procurement teams specifying cake cup sizes
+Publish Date: 2026-09-15
+Image 1 File: blog/cake-cup-capacity-sizing-guide-wholesale-production.webp
+Image 2 File: blog/cake-cup-capacity-sizing-guide-wholesale-sizes.webp
 
 ## Introduction
 
