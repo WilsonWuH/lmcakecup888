@@ -2,7 +2,7 @@
 
 ## SEO Information
 
-SEO Title: Cake Boards Wholesale: Size, Load and Pack-Out Guide for Bakery Buyers
+SEO Title: Wholesale Cake Boards: Size, Load and Pack-Out Guide
 
 Meta Description: Learn how to source cake boards wholesale, including size selection, food-contact review, load support, retail packs, carton specs and supplier checks.
 

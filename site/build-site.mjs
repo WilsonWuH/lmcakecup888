@@ -1,4 +1,4 @@
-import fs from "node:fs";
+﻿import fs from "node:fs";
 import path from "node:path";
 
 import { buildMarketSites } from "./market-sites.mjs";
@@ -7,9 +7,7 @@ const root = process.cwd();
 const siteDir = path.join(root, "site");
 const distDir = path.join(siteDir, "dist");
 const baseUrl = "https://www.lmcakecup.com";
-// Only publish languages with fully localized, independently maintained content.
-// Thin translated clones caused crawl-budget waste and canonical conflicts in GSC.
-const localeCodes = [];
+const localeCodes = ["es", "ru", "ar", "pt"];
 const defaultLocale = "en";
 
 fs.rmSync(distDir, { recursive: true, force: true });
@@ -21,11 +19,11 @@ const company = {
   address: "City, Province, China",
   founded: "2006",
   plant: "30,000+ square meters",
-  team: "50+ elite team members",
-  position: "Cupcake liner manufacturer / OEM & ODM solution provider",
+  team: "team of 50+",
+  position: "Baking paper & food paper packaging manufacturer / custom printing & OEM partner",
   markets: "Middle East, North America, Europe, United Kingdom, South America",
   customers: "Importers, distributors, bakery and confectionery buyers, large supermarkets",
-  certificates: ["BSCI", "ISO", "FSC", "FDA", "LFGB", "BRC"],
+  certificates: ["BSCI", "ISO", "FSC", "LFGB", "DGCCRF", "PFAS-related review"],
   contact: "Wilson Wu",
   email: "wh1007209170@gmail.com",
   phone: "+86 13645700210",
@@ -142,7 +140,6 @@ const products = [
   {
     slug: "cake-cups",
     title: "Custom Cupcake Liners & Paper Baking Cups Wholesale",
-    seoTitle: "Custom Cupcake Liners Wholesale | LANGMAI",
     short: "Food-grade greaseproof cupcake liners and paper baking cups for bakeries, importers, distributors and supermarket private-label programs.",
     image: "real-cake-cups-assortment.jpg",
     gallery: ["real-cake-cups-assortment.jpg", "real-cake-cups-stacked.jpg", "cake-cups-clean.jpg"],
@@ -169,7 +166,6 @@ const products = [
   {
     slug: "muffin-baking-cups",
     title: "Muffin Cup Liners for Bakeries, Cafes and Events",
-    seoTitle: "Muffin Baking Cups Wholesale | LANGMAI",
     short: "Tall PET-coated muffin cup liners for branded bakery displays, cafe counters, supermarkets and event dessert programs.",
     image: "real-cake-cups-stacked.jpg",
     gallery: ["real-cake-cups-stacked.jpg", "muffin-baking-cups-clean.jpg", "real-cake-cups-assortment.jpg"],
@@ -183,7 +179,6 @@ const products = [
   {
     slug: "air-fryer-paper-liners",
     title: "Air Fryer Paper Liners in Bulk for Retail & Foodservice",
-    seoTitle: "Air Fryer Paper Liners Bulk | LANGMAI",
     short: "Round and square food-grade silicone paper liners for air fryers, ovens, supermarkets and ready-to-cook food packs.",
     image: "ai-air-fryer-liners-premium.jpg",
     gallery: ["ai-air-fryer-liners-premium.jpg", "air-fryer-liners-clean.jpg", "ai-quality-export-packaging.jpg"],
@@ -197,10 +192,9 @@ const products = [
   {
     slug: "baking-parchment-paper",
     title: "Baking Parchment Paper for Wholesale and Private Label",
-    seoTitle: "Baking Parchment Paper Wholesale | LANGMAI",
     short: "Food-contact baking parchment in sheet, roll and die-cut formats for bakery, foodservice, retail and private-label programs.",
-    image: "ai-quality-export-packaging.jpg",
-    gallery: ["ai-quality-export-packaging.jpg", "factory-workshop.jpg", "showroom.jpg"],
+    image: "factory-real-roll-line-1600.webp",
+    gallery: ["factory-real-roll-line-1600.webp", "factory-real-printing-process-1600.webp", "factory-real-production-team-1600.webp"],
     keywords: "baking parchment paper manufacturer, parchment paper wholesale, private label baking paper",
     material: "Food-contact parchment or silicone-treated baking paper selected for the approved application",
     features: ["Sheet and roll options", "Grease-resistant options", "Release performance review", "Custom dimensions", "Retail packaging support"],
@@ -224,10 +218,9 @@ const products = [
   {
     slug: "custom-printed-baking-paper",
     title: "Custom Printed Baking Paper for Private-Label Buyers",
-    seoTitle: "Custom Printed Baking Paper | LANGMAI",
     short: "Printed baking paper, liners and bakery paper formats with artwork review, low-odor ink options, sampling and export packaging support.",
-    image: "real-cake-cups-assortment.jpg",
-    gallery: ["real-cake-cups-assortment.jpg", "ai-langmai-ip-showroom.jpg", "ai-quality-export-packaging.jpg"],
+    image: "factory-real-printing-process-1600.webp",
+    gallery: ["factory-real-printing-process-1600.webp", "factory-real-printing-wide-1600.webp", "real-cake-cups-assortment.jpg"],
     keywords: "custom printed baking paper, branded parchment paper, private label baking paper manufacturer",
     material: "Food-contact paper and ink system selected for the approved product, print coverage and destination market",
     features: ["Low-odor ink options", "Artwork and color proofing", "Custom dimensions", "Private-label packaging", "Pre-production sample approval"],
@@ -241,9 +234,9 @@ const products = [
     template: "food-wrapping",
     title: "Custom Greaseproof Paper Manufacturer",
     cardTitle: "Greaseproof Paper",
-    seoTitle: "Custom Greaseproof Paper Supplier | LANGMAI",
+    seoTitle: "Custom Greaseproof Paper Manufacturer & Supplier | LANGMAI",
     short: "Custom greaseproof paper sheets and rolls for bakeries, restaurants, foodservice and private-label brands, with product-specific PFAS and food-contact document review.",
-    meta: "Custom greaseproof paper sheets and rolls for bakeries, restaurants and private-label brands, with printing and product-specific PFAS and food-contact review.",
+    meta: "Custom greaseproof paper sheets and rolls for bakeries, restaurants, foodservice and private-label brands. PFAS-free material options, printing and food-contact documentation are available.",
     image: "food-wrap-greaseproof.webp",
     keywords: "greaseproof paper manufacturer, custom greaseproof paper, printed greaseproof paper, PFAS-free greaseproof paper, greaseproof paper sheets, greaseproof paper rolls",
     material: "White or natural brown grease-resistant paper, subject to the selected grade and approved specification",
@@ -573,7 +566,6 @@ const blogImageMap = {
   "roll-mouth-cake-cups-wholesale": ["real-roll-mouth-cups.jpg", "ai-quality-export-packaging.jpg"],
   "bleached-vs-unbleached-baking-paper": ["blog-bleached-vs-unbleached-baking-paper.webp", "ai-quality-export-packaging.jpg"],
   "baking-parchment-paper-rolls-wholesale": ["blog-bleached-vs-unbleached-baking-paper.webp", "ai-quality-export-packaging.jpg"],
-  "precut-parchment-paper-sheets-wholesale-buyer-guide": ["blog-precut-parchment-paper-sheets-wholesale.webp", "ai-quality-export-packaging.jpg"],
   "paper-baking-cup-manufacturer-audit": ["blog-paper-baking-cup-manufacturer-audit.webp", "ai-quality-export-packaging.jpg"],
   "oven-safe-cupcake-liners-wholesale": ["ai-cake-cups-premium.jpg", "ai-quality-export-packaging.jpg"],
   "non-stick-cupcake-liners-wholesale": ["real-cake-cups-assortment.jpg", "ai-quality-export-packaging.jpg"],
@@ -587,9 +579,6 @@ const blogImageMap = {
   "custom-printed-greaseproof-paper-wholesale-guide": ["blog-custom-printed-food-paper-packaging.webp", "ai-quality-export-packaging.jpg"],
   "food-paper-packaging-supplier-audit-checklist": ["blog-baking-paper-quality-control.webp", "ai-quality-export-packaging.jpg"],
   "parchment-paper-vs-wax-paper-wholesale-guide": ["blog-precut-parchment-paper-sheets-wholesale.webp", "ai-quality-export-packaging.jpg"],
-  "cupcake-liners-vs-baking-cups-commercial-guide": ["real-cake-cups-assortment.jpg", "ai-quality-export-packaging.jpg"],
-  "greaseproof-paper-bags-wholesale-buyer-guide": ["blog-custom-printed-food-paper-packaging.webp", "ai-quality-export-packaging.jpg"],
-  "paper-straw-durability-testing-quality-checklist-wholesale-buyers": ["real-paper-straws.jpg", "ai-quality-export-packaging.jpg"],
 };
 
 function loadBlogArticles() {
@@ -634,38 +623,6 @@ function loadBlogArticles() {
 const blogArticles = loadBlogArticles();
 const resourcePages = [...blogArticles, ...resources];
 
-const articleCommercialLinks = {
-  "cupcake-liner-grease-resistance-testing-guide": ["/products/cake-cups/", "Review cupcake liner options", "Connect grease-resistance testing with the approved cake-cup construction."],
-  "cupcake-liner-retail-packaging-wholesale": ["/products/cake-cups/", "Review retail-ready cake cups", "Compare paper, print and pack requirements on the main product page."],
-  "cupcake-liners-vs-baking-cups-commercial-guide": ["/products/cake-cups/", "Compare baking cup options", "Move from terminology and selection questions to a quote-ready product review."],
-  "paper-baking-cup-samples-approval-checklist": ["/products/cake-cups/", "Request a cake-cup sample", "Use the product page to connect sample checks with the final size and construction."],
-  "paper-baking-cup-manufacturer-audit": ["/products/cake-cups/", "Review cake-cup supply options", "Check the product range before sending a manufacturer-audit brief."],
-  "baking-paper-grammage-buyer-guide": ["/products/baking-parchment-paper/", "Review baking parchment formats", "Connect grammage and specification questions with sheets, rolls and die-cut requirements."],
-  "baking-parchment-paper-rolls-wholesale": ["/products/baking-parchment-paper/", "Review parchment paper options", "Confirm roll, sheet and packaging requirements against the main product range."],
-  "precut-parchment-paper-sheets-wholesale-buyer-guide": ["/products/baking-parchment-paper/", "Review parchment sheet supply", "Send the intended sheet format and destination-market requirements for review."],
-  "parchment-paper-rounds-wholesale-buyer-guide": ["/products/baking-parchment-paper/", "Review baking paper formats", "Use the product page to connect round-sheet requirements with the wider quotation brief."],
-  "parchment-paper-vs-wax-paper-wholesale-guide": ["/products/baking-parchment-paper/", "Review baking parchment", "Separate baking use from wrapping use before requesting the approved paper construction."],
-  "greaseproof-paper-sheets-wholesale-buyer-guide": ["/products/greaseproof-paper/", "Review greaseproof paper sheets", "Move from sheet-format questions to the product-specific quote and document review."],
-  "greaseproof-paper-rolls-wholesale-buyer-guide": ["/products/greaseproof-paper/", "Review greaseproof paper rolls", "Confirm roll dimensions, printing and packaging against the main product page."],
-  "custom-printed-greaseproof-paper-wholesale-guide": ["/products/greaseproof-paper/", "Review printed greaseproof paper", "Connect artwork, ink and paper questions with the selected greaseproof construction."],
-  "greaseproof-paper-bags-wholesale-buyer-guide": ["/products/greaseproof-paper/", "Review greaseproof paper supply", "Treat bags as an application and confirm the finished format before ordering."],
-  "food-paper-packaging-odor-testing": ["/products/greaseproof-paper/", "Review greaseproof paper requirements", "Link odor-testing questions to the exact paper, print system and finished format."],
-  "pfas-free-paper-packaging-evidence": ["/pfas-free-baking-paper/", "Review PFAS evidence", "Match any PFAS-related claim to the exact construction, test scope and intended use."],
-  "air-fryer-paper-liners-wholesale-private-label": ["/products/air-fryer-paper-liners/", "Review private-label air fryer liners", "Connect retail-packaging questions with the product-level sample and quote route."],
-  "air-fryer-liners-frozen-food-brands": ["/products/air-fryer-paper-liners/", "Review air fryer liner options", "Confirm food application, format, packaging and destination-market requirements."],
-  "air-fryer-liners-restaurant-kitchens": ["/products/air-fryer-paper-liners/", "Review foodservice liner options", "Move from kitchen-use questions to a product-level specification review."],
-  "air-fryer-liner-label-compliance": ["/products/air-fryer-paper-liners/", "Review air fryer liner supply", "Connect label and document questions with the selected liner construction."],
-  "food-paper-packaging-supplier-audit-checklist": ["/factory-certificates/", "Review factory and quality evidence", "Check available company and product-document review paths before an RFQ."],
-  "food-paper-supplier-certificate-verification": ["/factory-certificates/", "Review certificate evidence", "Confirm document scope, tested construction and destination-market applicability."],
-};
-
-function articleCommercialLink(resource) {
-  const link = articleCommercialLinks[resource.slug];
-  if (!link) return "";
-  const [href, label, description] = link;
-  return `<aside class="sample-box article-product-link"><p class="eyebrow">Related product review</p><p>${esc(description)}</p><a class="text-link" href="${href}">${esc(label)}</a></aside>`;
-}
-
 function urlFor(route) {
   return route === "/" ? `${baseUrl}/` : `${baseUrl}${route}`;
 }
@@ -681,10 +638,10 @@ function localizedPath(locale, route) {
 function marketLocalePath(locale, route) {
   const routes = {
     de: {
-      "/": "/de/", "/products/": "/de/produkte/", "/applications/": "/de/anwendungen/", "/customization/": "/de/individuelle-verpackungen/", "/factory-certificates/": "/de/qualitaetskontrolle/", "/about/": "/de/ueber-uns/", "/contact/": "/de/kontakt/", "/inquiry/": "/de/kontakt/", "/resources/": "/de/ratgeber/", "/eudr-traceability/": "/de/eudr-rueckverfolgbarkeit/", "/products/cake-cups/": "/de/produkte/backfoermchen/", "/products/muffin-baking-cups/": "/de/produkte/muffin-backfoermchen/", "/products/tulip-muffin-cups/": "/de/produkte/tulpen-backfoermchen/", "/products/baking-parchment-paper/": "/de/produkte/backpapier/", "/products/air-fryer-paper-liners/": "/de/produkte/airfryer-backpapier/", "/products/greaseproof-paper/": "/de/produkte/fettdichtes-papier/", "/products/paper-straws/": "/de/produkte/papierstrohhalme/",
+      "/": "/de/", "/products/": "/de/produkte/", "/applications/": "/de/anwendungen/", "/customization/": "/de/individuelle-verpackungen/", "/factory-certificates/": "/de/qualitaetskontrolle/", "/compliance/": "/de/lebensmittelkontakt-konformitaet/", "/about/": "/de/ueber-uns/", "/contact/": "/de/kontakt/", "/inquiry/": "/de/muster-anfordern/", "/resources/": "/de/ratgeber/", "/eudr-traceability/": "/de/eudr-rueckverfolgbarkeit/", "/applications/bakery/": "/de/anwendungen/baeckereien-und-konditoreien/", "/applications/food-service/": "/de/anwendungen/gastronomie-und-catering/", "/products/cake-cups/": "/de/produkte/backfoermchen/", "/products/muffin-baking-cups/": "/de/produkte/muffin-backfoermchen/", "/products/roll-mouth-cake-cups/": "/de/produkte/freistehende-papierbackformen/", "/products/baking-parchment-paper/": "/de/produkte/backpapier/", "/products/tulip-muffin-cups/": "/de/produkte/tulpen-backfoermchen/", "/products/air-fryer-paper-liners/": "/de/produkte/airfryer-backpapier/", "/products/greaseproof-paper/": "/de/produkte/fettdichtes-papier/", "/products/paper-straws/": "/de/produkte/papierstrohhalme/",
     },
     fr: {
-      "/": "/fr/", "/products/": "/fr/produits/", "/applications/": "/fr/applications/", "/customization/": "/fr/emballages-personnalises/", "/factory-certificates/": "/fr/controle-qualite/", "/about/": "/fr/a-propos/", "/contact/": "/fr/contact/", "/inquiry/": "/fr/contact/", "/resources/": "/fr/guides/", "/eudr-traceability/": "/fr/tracabilite-eudr/", "/products/cake-cups/": "/fr/produits/caissettes-de-cuisson/", "/products/muffin-baking-cups/": "/fr/produits/caissettes-a-muffins/", "/products/tulip-muffin-cups/": "/fr/produits/caissettes-tulipe/", "/products/baking-parchment-paper/": "/fr/produits/papier-cuisson/", "/products/air-fryer-paper-liners/": "/fr/produits/papier-pour-air-fryer/", "/products/greaseproof-paper/": "/fr/produits/papier-ingraissable/", "/products/paper-straws/": "/fr/produits/pailles-en-papier/",
+      "/": "/fr/", "/products/": "/fr/produits/", "/applications/": "/fr/applications/", "/customization/": "/fr/emballages-personnalises/", "/factory-certificates/": "/fr/controle-qualite/", "/compliance/": "/fr/conformite-contact-alimentaire/", "/about/": "/fr/a-propos/", "/contact/": "/fr/contact/", "/inquiry/": "/fr/demande-echantillons/", "/resources/": "/fr/guides/", "/eudr-traceability/": "/fr/tracabilite-eudr/", "/applications/bakery/": "/fr/applications/boulangeries-patisseries/", "/applications/food-service/": "/fr/applications/restauration-et-traiteurs/", "/products/cake-cups/": "/fr/produits/caissettes-de-cuisson/", "/products/muffin-baking-cups/": "/fr/produits/caissettes-a-muffins/", "/products/roll-mouth-cake-cups/": "/fr/produits/moules-de-cuisson-autoportants/", "/products/baking-parchment-paper/": "/fr/produits/papier-cuisson/", "/products/tulip-muffin-cups/": "/fr/produits/caissettes-tulipe/", "/products/air-fryer-paper-liners/": "/fr/produits/papier-pour-air-fryer/", "/products/greaseproof-paper/": "/fr/produits/papier-ingraissable/", "/products/paper-straws/": "/fr/produits/pailles-en-papier/",
     },
   };
   return routes[locale]?.[route] || null;
@@ -701,39 +658,27 @@ function hreflangTags(route, currentLocale = "") {
   return `  <link rel="alternate" hreflang="en" href="${urlFor(route)}">\n${links}${markets ? `\n${markets}` : ""}\n  <link rel="alternate" hreflang="x-default" href="${urlFor(route)}">`;
 }
 
-function legacyLanguageSwitcher(route = "/") {
+function languageSwitcher(route = "/") {
   const items = [
     ["en", "English"],
-    ["es", "Espa帽ol"],
-    ["ru", "袪褍褋褋泻懈泄"],
-    ["ar", "丕賱毓乇亘賷丞"],
-    ["fr", "Fran莽ais"],
+    ["es", "Español"],
+    ["ru", "Русский"],
+    ["ar", "العربية"],
+    ["fr", "Français"],
     ["de", "Deutsch"],
-    ["pt", "Portugu锚s"],
+    ["pt", "Português"],
   ];
   return `<div class="language-switcher">
     <button class="language-current" type="button" aria-label="Select language">EN</button>
     <div class="language-menu">
       ${items.map(([code, label]) => {
-        const href = ["de", "fr"].includes(code)
-          ? marketLocalePath(code, route) || localizedPath(code, "/")
-          : localizedPath(code, route);
+        const href = code === "en"
+          ? route
+          : ["de", "fr"].includes(code)
+            ? marketLocalePath(code, route) || localizedPath(code, "/")
+            : localizedPath(code, route);
         return `<a data-locale-link="${code}" href="${href}">${label}</a>`;
       }).join("")}
-    </div>
-  </div>`;
-}
-
-function languageSwitcher(route = "/") {
-  const items = [
-    ["en", "English", route],
-    ["de", "Deutsch", marketLocalePath("de", route) || "/de/"],
-    ["fr", "Français", marketLocalePath("fr", route) || "/fr/"],
-  ];
-  return `<div class="language-switcher">
-    <button class="language-current" type="button" aria-label="Select language">EN</button>
-    <div class="language-menu">
-      ${items.map(([code, label, href]) => `<a data-locale-link="${code}" href="${href}">${label}</a>`).join("")}
     </div>
   </div>`;
 }
@@ -741,13 +686,13 @@ function languageSwitcher(route = "/") {
 function layout({ route, title, description, content, schema = [], bodyClass = "" }) {
   const canonical = urlFor(route);
   const performanceHints = route === "/"
-    ? `  <link rel="preload" as="image" type="image/webp" href="/assets/banner-cake-cups-1448.webp" imagesrcset="/assets/banner-cake-cups-720.webp 720w, /assets/banner-cake-cups-1448.webp 1448w" imagesizes="100vw" fetchpriority="high">\n`
+    ? `  <link rel="preload" as="image" type="image/webp" href="/assets/home-bakery-banner-1600.webp" imagesrcset="/assets/home-bakery-banner-800.webp 800w, /assets/home-bakery-banner-1600.webp 1600w" imagesizes="100vw" fetchpriority="high">\n`
     : "";
   const schemaText = JSON.stringify(
     [
       organizationSchema(),
       breadcrumbSchema(route, title),
-      imageSchema("banner.jpg", "LANGMAI baking paper products banner"),
+      imageSchema("og.png", "LANGMAI sustainable food paper packaging solutions"),
       ...schema,
     ],
     null,
@@ -764,13 +709,17 @@ function layout({ route, title, description, content, schema = [], bodyClass = "
 ${hreflangTags(route)}
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(description)}">
-  <meta property="og:image" content="${baseUrl}${relAsset("banner.jpg")}">
+  <meta property="og:image" content="${baseUrl}${relAsset("og.png")}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="${baseUrl}${relAsset("og.png")}">
 ${performanceHints}  <link rel="stylesheet" href="/styles.css">
   <script type="application/ld+json">${schemaText}</script>
 </head>
 <body class="${bodyClass}">
   <a class="skip-link" href="#main">Skip to content</a>
-  ${siteHeader()}
+  ${siteHeader(route)}
   <main id="main">${content}</main>
   ${siteFooter()}
   <a class="whatsapp-float" href="https://wa.me/8613645700210" aria-label="Chat on WhatsApp">WhatsApp</a>
@@ -780,51 +729,24 @@ ${performanceHints}  <link rel="stylesheet" href="/styles.css">
 </html>`;
 }
 
-function siteHeader() {
+function siteHeader(route = "/") {
   return `<header class="site-header">
   <div class="header-inner">
     <a class="brand" href="/" aria-label="LANGMAI home">
       <img src="/assets/logo.jpg" width="136" height="46" decoding="async" alt="LANGMAI logo">
     </a>
-    <nav class="main-nav" aria-label="Main navigation">
-      ${megaNavItem("Products", "/products/", [
-        ["Baking Paper Products", "/products/#baking-paper-products", "Core cups, parchment, liners and printed baking paper"],
-        ["Cupcake Liners & Baking Cups", "/products/cake-cups/", "Main wholesale line for bakeries and supermarkets"],
-        ["Baking Parchment Paper", "/products/baking-parchment-paper/", "Sheets, rolls and die-cut baking paper formats"],
-        ["Air Fryer Paper Liners", "/products/air-fryer-paper-liners/", "Round, square, flat and formed paper liners"],
-        ["Food Wrapping Paper", "/products/food-wrapping-paper/", "Greaseproof, burger, wax and butcher paper"],
-        ["Greaseproof Paper", "/products/greaseproof-paper/", "White, brown, printed, sheet and roll options"],
-        ["Burger Wrapping Paper", "/products/burger-wrapping-paper/", "Custom printed sheets for fast-food programs"],
-        ["Wax & Butcher Paper", "/products/food-wrapping-paper/#wrapping-products", "Food handling, separation and wrapping formats"],
-      ], "Browse all products")}
-      ${megaNavItem("Custom Solutions", "/customization/", [
-        ["OEM / ODM Process", "/customization/", "Size, material, print and packaging workflow"],
-        ["Custom Printed Cake Cups", "/resources/custom-printed-cake-cups-process/", "Artwork, sample, MOQ and lead time guide"],
-        ["Material Selection", "/resources/greaseproof-vs-pet-coated-paper/", "Greaseproof paper vs PET coated paper"],
-      ], "Plan custom order")}
-      <a class="nav-link simple" href="/pfas-free-baking-paper/">PFAS-Free</a>
-      ${megaNavItem("Compliance", "/factory-certificates/", [
-        ["Food-Contact Documents", "/factory-certificates/#food-contact", "Product-specific LFGB, DGCCRF and related evidence"],
-        ["PFAS Evidence", "/factory-certificates/#pfas-evidence", "Material declarations and test evidence review"],
-        ["EUDR Traceability", "/eudr-traceability/", "Origin, geolocation, batch records and optional verification support"],
-        ["Factory & Quality", "/factory-certificates/#quality-management", "Factory profile, audits and production controls"],
-      ], "Review documents")}
-      ${megaNavItem("Markets", "/markets/", [
-        ["United States", "/markets/united-states/", "PFAS, retail packs and importer support"],
-        ["Europe", "/markets/europe/", "EU food-contact, LFGB, EUDR and metric specifications"],
-        ["Applications", "/applications/", "Bakery, foodservice, retail and distribution channels"],
-      ], "Explore market support")}
-      ${megaNavItem("Resources", "/resources/", [
-        ["Buying Guides", "/resources/", "Practical guides for food paper product buyers"],
-        ["Packaging News", "/news/", "Daily buyer notes on baking paper packaging trends"],
-        ["Certificate Guide", "/resources/food-paper-certificates/", "Compliance notes for import buyers"],
-        ["Cupcake Liner Selection", "/resources/choose-custom-cupcake-liners/", "How to choose baking cup specs"],
-      ], "Read resources")}
-      <a class="nav-link simple" href="/about/">About Us</a>
-      <a class="nav-link simple" href="/inquiry/">Contact</a>
+    <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button>
+    <nav id="main-navigation" class="main-nav" aria-label="Main navigation">
+      <a class="nav-link simple" href="/products/">Solutions</a>
+      <a class="nav-link simple" href="/applications/">Applications</a>
+      <a class="nav-link simple" href="/custom-oem/">Custom OEM</a>
+      <a class="nav-link simple" href="/compliance/">Compliance</a>
+      <a class="nav-link simple" href="/resources/">Resources</a>
+      <a class="nav-link simple" href="/about/">About</a>
+      <a class="nav-link simple" href="/contact/">Contact</a>
     </nav>
-    <a class="header-cta" href="/inquiry/" data-cta-type="quote">Request a Quote</a>
-    ${languageSwitcher("/")}
+    <a class="header-cta" href="/inquiry/">Request a Quote</a>
+    ${languageSwitcher(route)}
   </div>
 </header>`;
 }
@@ -853,19 +775,20 @@ function siteFooter() {
   <div class="footer-grid">
     <div>
       <strong>${company.name}</strong>
-      <p>${company.brand} supplies baking cups, cupcake liners, baking parchment and air fryer paper as its core range, plus greaseproof and food wrapping paper for B2B buyers.</p>
+      <p>${company.brand} manufactures baking paper and food paper packaging for importers, distributors, foodservice operators and private-label brands.</p>
     </div>
     <div>
-      <h2>Buyer Actions</h2>
-      <a href="/inquiry/" data-cta-type="quote">Request a Quote</a>
-      <a href="/inquiry/#sample" data-cta-type="sample">Get Free Sample</a>
+      <h2>Start Here</h2>
+      <a href="/contact/">Request a Quote</a>
+      <a href="/contact/#sample">Get Free Sample</a>
       <a href="/products/food-wrapping-paper/">Explore Food Wrapping Paper</a>
-      <a href="/eudr-traceability/">Review EUDR Traceability</a>
-      <a href="/assets/catalog-preview-clean.jpg" download data-cta-type="catalog">Download Catalog Preview</a>
+      <a href="/custom-oem/">Custom Printing & OEM</a>
+      <a href="/factory-certificates/">Factory & Quality</a>
+      <a href="/assets/catalog-preview-clean.jpg" target="_blank" rel="noopener">View Catalogue Preview</a>
     </div>
     <div>
-      <h2>Trust</h2>
-      <p>Founded in ${company.founded}. ${company.plant} factory capacity. ${company.team}. Certificate documents: ${company.certificates.join(", ")}.</p>
+      <h2>Factory Facts</h2>
+      <p>Founded in ${company.founded}. ${company.plant} manufacturing site. ${company.team}. Document review is product-, scope- and validity-specific; ask for the applicable ${company.certificates.join(", ")} or FDA-related support documents.</p>
       <p>Contact: ${company.contact}<br>Email: ${company.email}<br>WhatsApp: ${company.whatsapp}</p>
       ${socialIconLinks("footer-social")}
     </div>
@@ -896,14 +819,14 @@ function ctaBand(title = "Ready to price your next baking paper order?") {
       <p>Share product type, size, quantity, destination market and custom print needs. LANGMAI can support stock designs, OEM artwork, samples and export carton planning.</p>
     </div>
     <div class="cta-actions">
-      <a class="button primary" href="/inquiry/" data-cta-type="quote">Request a Quote</a>
-      <a class="button secondary" href="/inquiry/#sample" data-cta-type="sample">Get Free Sample</a>
+      <a class="button primary" href="/contact/">Request a Quote</a>
+      <a class="button secondary" href="/contact/#sample">Get Free Sample</a>
     </div>
   </section>`;
 }
 
 function leadForm(defaultProduct = "Custom cupcake liners") {
-  return `<form class="lead-form" data-lead-form data-form-type="quote">
+  return `<form id="sample" class="lead-form" data-lead-form>
   <input class="hp-field" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
   <label>Name<input name="name" placeholder="Your name" required></label>
   <label>Email<input type="email" name="email" placeholder="buyer@example.com" required></label>
@@ -917,8 +840,7 @@ function leadForm(defaultProduct = "Custom cupcake liners") {
 </form>`;
 }
 
-function ipStickyCard(productTitle = "Custom cupcake liners", productSlug = "") {
-  const productAttr = productSlug ? ` data-product="${esc(productSlug)}"` : "";
+function ipStickyCard(productTitle = "Custom cupcake liners") {
   return `<aside class="ip-card" aria-label="Wilson Wu contact card">
     <img src="/assets/founder.jpg" alt="Wilson Wu, LANGMAI sales contact">
     <div>
@@ -930,8 +852,8 @@ function ipStickyCard(productTitle = "Custom cupcake liners", productSlug = "") 
         <li>Sample and catalog request</li>
         <li>WhatsApp quick reply</li>
       </ul>
-      <a class="button primary" href="/inquiry/" data-cta-type="quote"${productAttr}>Request a Quote</a>
-      <a class="button secondary" href="https://wa.me/8613645700210" data-cta-type="whatsapp">WhatsApp Wilson</a>
+      <a class="button primary" href="/contact/">Request a Quote</a>
+      <a class="button secondary" href="https://wa.me/8613645700210">WhatsApp Wilson</a>
       <span class="ip-note">${esc(productTitle)}</span>
     </div>
   </aside>`;
@@ -943,9 +865,9 @@ function productCards(items = products) {
       (p) => `<article class="product-card">
       <img src="${relAsset(p.image)}" loading="lazy" decoding="async" alt="${esc(p.title)}">
       <div>
-      <h3><a href="/products/${p.slug}/" data-cta-type="product" data-product="${esc(p.slug)}">${esc(p.cardTitle || p.title)}</a></h3>
+        <h3><a href="/products/${p.slug}/">${esc(p.cardTitle || p.title)}</a></h3>
         <p>${esc(p.short)}</p>
-        <a class="text-link" href="/products/${p.slug}/" data-cta-type="product" data-product="${esc(p.slug)}">View specs and options</a>
+        <a class="text-link" href="/products/${p.slug}/">View specs and options</a>
       </div>
     </article>`,
     )
@@ -1064,111 +986,42 @@ function eudrHomeSection() {
 }
 
 function homePage() {
-  const faq = [
-    ["Which paper products can LANGMAI manufacture?", "Baking paper remains LANGMAI's core range, including cupcake liners, baking cups, muffin and tulip cups, baking parchment, air fryer liners and custom printed baking paper. Greaseproof paper, burger wrapping paper, wax paper and specification-led butcher paper are available as a secondary food-wrapping line."],
-    ["Are PFAS-free material options available?", "PFAS-free material options can be discussed for applicable baking paper products. The exact paper, coating, print system, intended use, destination market and supporting evidence should be confirmed for each approved construction."],
-    ["Can buyers request food-contact and EUDR documents?", "Yes. Available documentation is reviewed by product and market. Food-contact reports, supplier declarations and EUDR-related sourcing or lot records may support buyer review, but scope and applicability must be confirmed for the exact order."],
-    ["Does LANGMAI support private-label packaging?", "Yes. Buyers can coordinate artwork, dimensions, paper construction, pack count, labels, retail presentation, cartons and sample approval as one private-label program."],
-    ["How should a buyer start an inquiry?", "Send the product, target size, intended use, estimated quantity, destination market, packaging request and required documents. LANGMAI can then identify the suitable sample and quotation route."],
+  const knowledge = [
+    ["PFAS-Free Baking Paper Buyer Guide", "/pfas-free-baking-paper/", "Match material choices and available evidence to the finished food-contact product."],
+    ["How to Choose Custom Cupcake Liners", "/resources/choose-custom-cupcake-liners/", "Compare size, material, print, packing and approval requirements."],
+    ["Food Paper Certificate Guide", "/resources/food-paper-certificates/", "Understand which documents to review for a product and destination market."],
   ];
-  const featured = ["cake-cups", "muffin-baking-cups", "baking-parchment-paper", "air-fryer-paper-liners", "custom-printed-baking-paper"].map((slug) => products.find((product) => product.slug === slug));
-  const content = `<section class="hero">
-    <div class="hero-slider" aria-label="LANGMAI product banner carousel">
-      <img class="hero-slide is-active" src="/assets/banner-cake-cups-1448.webp" srcset="/assets/banner-cake-cups-720.webp 720w, /assets/banner-cake-cups-1448.webp 1448w" sizes="100vw" width="1448" height="1086" fetchpriority="high" decoding="async" alt="LANGMAI colorful cupcake liners and cake cups">
-      <img class="hero-slide" data-src="/assets/banner-air-fryer-paper-1448.webp" data-srcset="/assets/banner-air-fryer-paper-720.webp 720w, /assets/banner-air-fryer-paper-1448.webp 1448w" sizes="100vw" width="1448" height="1086" fetchpriority="low" decoding="async" alt="LANGMAI air fryer paper liners in round and square shapes">
-      <img class="hero-slide" data-src="/assets/banner-paper-straws-1448.webp" data-srcset="/assets/banner-paper-straws-720.webp 720w, /assets/banner-paper-straws-1448.webp 1448w" sizes="100vw" width="1448" height="1086" fetchpriority="low" decoding="async" alt="LANGMAI colorful paper straws for beverage and party buyers">
+  const content = `<section class="home-hero">
+    <div class="home-hero-copy">
+      <p class="eyebrow">Baking paper & food paper packaging manufacturer</p>
+      <h1>Baking paper & food paper packaging manufacturer for global B2B buyers.</h1>
+      <p>LANGMAI supplies baking paper, food wrapping paper and paper beverage accessories for importers, distributors, bakeries, cafes and private-label brands. Start with a product brief, sample or drawing; we will confirm the construction before quotation.</p>
+      <div class="hero-proof"><span>Food-contact paper formats</span><span>Custom printing & OEM</span><span>PFAS-free options</span><span>Market-specific document review</span></div>
+      <div class="hero-actions"><a class="button primary" href="/inquiry/#sample">Request Free Sample</a><a class="button secondary" href="/assets/catalog-preview-clean.jpg" target="_blank" rel="noopener">View Catalogue Preview</a></div>
+      <p class="hero-microcopy">Established in ${company.founded} · ${company.plant} site · ${company.team}</p>
     </div>
-    <div class="hero-copy">
-      <p class="eyebrow">Baking paper products manufacturer</p>
-      <h1>Baking Paper Products Manufacturer for Global Brands and Distributors</h1>
-      <p>Custom baking cups, cupcake liners, baking parchment, air fryer paper and food wrapping paper solutions for bakery brands, distributors, foodservice suppliers and private-label programs worldwide.</p>
-      <div class="hero-proof">${heroProofPoints.map((item) => `<span>${esc(item)}</span>`).join("")}</div>
-      <div class="hero-actions">
-        <a class="button primary" href="/products/" data-cta-type="product">Explore Baking Paper Products</a>
-        <a class="button secondary" href="/inquiry/" data-cta-type="sample">Request Samples & Documents</a>
-      </div>
-    </div>
+    <figure class="home-hero-media"><img src="/assets/home-bakery-banner-1600.webp" srcset="/assets/home-bakery-banner-800.webp 800w, /assets/home-bakery-banner-1600.webp 1600w" sizes="100vw" width="1600" height="900" fetchpriority="high" decoding="async" alt="Baking paper, cupcake liners and parchment prepared in a bakery kitchen"><figcaption>Paper formats selected around real baking workflows</figcaption></figure>
   </section>
-  <section class="trust-strip" aria-label="Factory trust points">
-      <span>Founded in ${company.founded}</span><span>${company.plant} factory</span><span>OEM / private-label support</span><span>Product-specific document review</span>
-  </section>
-  ${solutionCategorySection()}
-  <section class="section pfas-home-section">
-    <div class="section-heading">
-      <p class="eyebrow">PFAS-free baking paper</p>
-      <h2>Match material evidence to the finished product</h2>
-      <p>PFAS-related claims depend on the exact paper, coating, ink and finished construction. LANGMAI can support applicable projects with material options, available declarations, product-specific testing discussions and controlled sample approval.</p>
-    </div>
-    <div class="evidence-grid">
-      <article><h3>Define the construction</h3><p>Confirm paper grade, coating, print coverage, converting method and intended use before selecting evidence.</p></article>
-      <article><h3>Review the evidence</h3><p>Check the supplier declaration or report against the tested sample, test method, date and buyer protocol.</p></article>
-      <article><h3>Control repeat orders</h3><p>Keep the approved specification and review material or supplier changes that could affect the claim.</p></article>
-    </div>
-    <div class="hero-actions"><a class="button primary" href="/pfas-free-baking-paper/">Explore PFAS-Free Solutions</a><a class="button secondary" href="/inquiry/">Request PFAS Documents</a></div>
-  </section>
-  ${buyerAdvantageSection()}
-  <section class="split-section">
-    <img src="/assets/ai-langmai-ip-showroom.jpg" loading="lazy" decoding="async" alt="Custom baking paper and private-label product samples in the LANGMAI showroom">
-    <div>
-      <p class="eyebrow">Custom and private label</p>
-      <h2>Coordinate product, print and packaging as one approved program</h2>
-      <p>LANGMAI supports buyers from initial size and paper selection through artwork, sample review, retail pack configuration, carton marking and repeat-order control.</p>
-      <ul class="check-list"><li>Custom dimensions, shapes, colors and low-odor printing options</li><li>Stock or buyer-supplied artwork with proof and sample review</li><li>Retail pack count, labels, UPC-ready artwork placement and master cartons</li><li>Destination-market documents reviewed before the final claim is approved</li></ul>
-      <a class="button primary" href="/customization/">Plan a Custom Program</a>
-    </div>
-  </section>
-  <section class="section trust-evidence">
-    <div class="section-heading">
-      <p class="eyebrow">Compliance and documentation</p>
-      <h2>Organized evidence for faster buyer review</h2>
-      <p>Food-contact files, PFAS evidence, paper-sourcing information and factory-quality documents are grouped by purpose. Buyers should confirm validity and scope for the exact product and market.</p>
-    </div>
-    ${certificateCards(3)}
-    <div class="hero-actions"><a class="button secondary" href="/factory-certificates/">Review Compliance Documents</a><a class="button secondary" href="/eudr-traceability/">Review EUDR Support</a></div>
-  </section>
-  <section class="split-section">
-    <div>
-      <p class="eyebrow">Factory and quality control</p>
-      <h2>Manufacturing support from specification to export carton</h2>
-      <p>LANGMAI combines printing, slitting, die-cutting, perforation, forming, bag making and packing around an approved product specification. Incoming material, production lot, appearance, dimensions, pack count and shipment preparation can be reviewed at the relevant control points.</p>
-      <a class="button secondary" href="/factory-certificates/#quality-management">See Factory & Quality Management</a>
-    </div>
-    <img src="/assets/factory-workshop.jpg" loading="lazy" decoding="async" alt="LANGMAI baking paper products manufacturing workshop">
-  </section>
-  <section class="section">
-    <div class="section-heading"><p class="eyebrow">Applications</p><h2>Baking paper products for four purchasing channels</h2><p>Start with the use conditions and sales channel, then confirm material, dimensions, printing, packing and market documents.</p></div>
-    <div class="solution-grid">
-      <article><h3>Bakery and confectionery</h3><p>Cupcake liners, muffin cups, parchment and branded paper for daily production and seasonal launches.</p></article>
-      <article><h3>Foodservice supply</h3><p>Baking paper and air fryer liners packed for kitchens, distributors and operator supply programs.</p></article>
-      <article><h3>Retail and private label</h3><p>Consumer pack counts, labels, artwork, barcodes and master-carton planning for retail shelves.</p></article>
-      <article><h3>Importers and distributors</h3><p>Mixed-category sourcing, samples, documentation and shipment coordination for regional resale.</p></article>
-    </div>
-    <p><a class="text-link" href="/applications/">View application details</a></p>
-  </section>
-  <section class="section">
-    <div class="section-heading">
-      <p class="eyebrow">Featured products</p>
-      <h2>Compare core baking paper and wrapping categories</h2>
-      <p>Baking paper remains the primary range, with greaseproof and food wrapping paper presented as a supporting product line.</p>
-    </div>
-    ${productCards(featured).replace(/<\/div>$/, `${foodWrappingCategoryCard()}</div>`)}
-  </section>
-  <section class="section">
-    <div class="section-heading"><p class="eyebrow">Buyer projects</p><h2>From approved sample to repeatable supply</h2><p>Project examples show how product specifications, packaging and shipment checks can be connected for bakery wholesale, retail air fryer liners and OEM export programs.</p></div>
-    <div class="link-grid"><a href="/cases/">Review project examples</a><a href="/markets/united-states/">U.S. buyer support</a><a href="/markets/europe/">European buyer support</a></div>
-  </section>
-  <section class="section faq">
-    <p class="eyebrow">FAQ</p>
-    <h2>Baking paper sourcing FAQ</h2>
-    ${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}
-  </section>
-  ${ctaBand("Request samples, documents and a quote-ready specification")}`;
+  <section class="trust-strip" aria-label="LANGMAI trust advantages"><span>Founded in ${company.founded}</span><span>${company.plant} manufacturing site</span><span>Product-specific document support</span><span>OEM and private-label programs</span></section>
+  <section class="section home-solutions"><div class="section-heading"><p class="eyebrow">Solutions</p><h2>Choose the packaging route that matches your operation</h2><p>Different food applications need different paper, treatment, format and pack decisions. Start with the use case, then move into an approved specification.</p></div><div class="home-solution-grid">
+    <a href="/applications/bakery/"><img src="/assets/real-cake-cups-assortment.jpg" loading="lazy" decoding="async" alt="Colorful paper baking cups and cupcake liners"><div><span>01 · Bakery Packaging</span><h3>Cake cups, liners and baking paper</h3><p>For commercial bakeries, dessert brands and retail baking ranges.</p><strong>Explore bakery solutions →</strong></div></a>
+    <a href="/applications/food-service/"><img src="/assets/food-wrap-burger.webp" loading="lazy" decoding="async" alt="Greaseproof food wrapping paper for takeaway service"><div><span>02 · Food Wrapping</span><h3>Greaseproof and takeaway paper</h3><p>Sheets, rolls and printed wraps for foodservice and restaurant programs.</p><strong>Explore wrapping solutions →</strong></div></a>
+    <a href="/products/baking-parchment-paper/"><img src="/assets/blog-silicone-coated-baking-paper.webp" loading="lazy" decoding="async" alt="Silicone-coated baking parchment paper sheets and rolls for commercial programs"><div><span>03 · Parchment Paper</span><h3>Baking parchment for commercial programs</h3><p>Silicone-coated sheets, rolls and custom formats for bakery, foodservice and private-label programs.</p><strong>Explore parchment paper →</strong></div></a>
+  </div></section>
+  <section class="section home-capabilities"><div class="section-heading"><p class="eyebrow">What buyers can specify</p><h2>One packaging program, reviewed from paper to carton</h2></div><div class="preview-advantage-grid"><article><span>01</span><h3>Material fit</h3><p>Paper, grease resistance, release, coating or treatment are discussed against the food and use conditions.</p></article><article><span>02</span><h3>Custom printing</h3><p>Artwork, colors, print coverage and low-odor ink options are reviewed before a production sample is approved.</p></article><article><span>03</span><h3>Format conversion</h3><p>Slitting, sheets, perforation, die-cutting, forming and bag making can be coordinated for the selected product.</p></article><article><span>04</span><h3>Buyer evidence</h3><p>Available food-contact, PFAS, sourcing and management documents are matched to scope—not used as blanket claims.</p></article></div></section>
+  <section class="section home-applications"><div class="section-heading"><p class="eyebrow">Applications</p><h2>Built around real food-business workflows</h2><p>Move from an application page to the relevant products, requirements and sample path.</p></div><div class="application-paths"><a href="/applications/bakery/"><strong>Bakery & dessert</strong><span>Baking, display, retail and private label</span></a><a href="/applications/cafe/"><strong>Cafe & beverage</strong><span>Drink service, paper straws and branded packs</span></a><a href="/applications/food-service/"><strong>Food service</strong><span>Wrapping, trays, baskets and takeaway</span></a></div></section>
+  <section class="split-section home-oem"><figure><img src="/assets/factory-real-printing-process-1600.webp" loading="lazy" decoding="async" alt="Printed paper web moving through LANGMAI production equipment"><figcaption>Custom printing is reviewed against the approved paper construction.</figcaption></figure><div><p class="eyebrow">Custom printing & OEM</p><h2>Bring a logo, drawing or reference sample.</h2><p>We connect requirement review, sample development, printing, production, inspection and delivery through one documented brief. For selected approved printed parchment constructions, printing is completed before the subsequent silicone-coating step when that construction calls for it.</p><ol class="compact-process"><li>Requirement review</li><li>Sample development</li><li>Production</li><li>Quality inspection</li><li>Global delivery</li></ol><a class="button primary" href="/custom-oem/">Review the OEM process</a></div></section>
+  <section class="section home-compliance"><div><p class="eyebrow">Compliance & sustainability</p><h2>Evidence that stays tied to the product</h2><p>Available certificates, test reports and sourcing information have different scopes. We help buyers review the exact paper construction, intended use, destination market, sample identity and validity before a commercial claim is made.</p><div class="badge-grid"><span>PFAS-free options</span><span>FDA-related support</span><span>EU / LFGB / BfR review</span><span>FSC & EUDR support</span></div><div class="hero-actions"><a class="button primary" href="/compliance/">Visit Compliance Center</a><a class="button secondary" href="/factory-certificates/#document-library">View document library</a></div></div><img src="/assets/cert-lfgb.png" loading="lazy" decoding="async" alt="Preview of an available LANGMAI LFGB food-contact test document"></section>
+  <section class="split-section home-factory"><div><p class="eyebrow">Real factory evidence</p><h2>Printing, roll processing, converting and packing under one roof.</h2><p>Our team works from approved materials and samples, with process checkpoints for the finished format and export pack. Visit the factory page to see real production views and the document library.</p><div class="factory-stats"><span><strong>2006</strong>Founded</span><span><strong>30,000+</strong>m² site</span><span><strong>50+</strong>team members</span></div><a class="button secondary" href="/factory-certificates/">See factory & quality evidence</a></div><div class="factory-photo-stack"><img src="/assets/factory-real-printing-wide-1600.webp" loading="lazy" decoding="async" alt="LANGMAI printing line with paper rolls"><img src="/assets/factory-real-production-team-1600.webp" loading="lazy" decoding="async" alt="LANGMAI production team working in the paper packaging workshop"></div></section>
+  <section class="section home-knowledge"><div class="section-heading"><p class="eyebrow">Knowledge center</p><h2>Useful reading before you send a brief</h2><p>Existing buyer guides help you compare materials, prepare artwork and understand document scope.</p></div><div class="knowledge-grid">${knowledge.map(([title, href, text], index) => `<a href="${href}"><span>0${index + 1}</span><h3>${title}</h3><p>${text}</p><strong>Read guide →</strong></a>`).join("")}</div></section>
+  ${ctaBand("Ready to review your next food paper packaging program?")}`;
   return layout({
     route: "/",
-    title: "Baking Paper Products Manufacturer | Cake Cups & Parchment | LANGMAI",
-    description: "LANGMAI manufactures baking cups, cupcake liners, baking parchment, air fryer paper and custom printed baking paper products for global brands and distributors. PFAS-free materials, OEM packaging and compliance documents are available.",
+    title: "Baking Paper & Food Paper Packaging Manufacturer | LANGMAI",
+    description: "LANGMAI manufactures baking paper, food wrapping paper and paper beverage accessories for global B2B buyers, with custom printing, OEM development and product-specific document support.",
     content,
-    schema: [websiteSchema(), faqSchema(faq)],
+    schema: [websiteSchema()],
+    bodyClass: "preview-home",
   });
 }
 
@@ -1176,34 +1029,25 @@ function productsIndex() {
   const bakingProducts = products.filter((product) => product.group !== "food-wrapping" && !["paper-straws", "party-accessories"].includes(product.slug));
   const foodWrappingProducts = products.filter((product) => product.group === "food-wrapping");
   const supportingProducts = products.filter((product) => ["paper-straws", "party-accessories"].includes(product.slug));
-  const content = `<section class="page-hero">
-    <p class="eyebrow">Products</p>
-    <h1>Baking Paper Products for Global Brands and Distributors</h1>
-    <p>Compare baking cups, cupcake liners, muffin and tulip cups, baking parchment, air fryer paper liners and custom printed baking paper with materials, use cases, documentation and RFQ paths.</p>
+  const content = `<section class="products-hero">
+    <div><p class="eyebrow">Solutions</p><h1>Baking paper and food paper packaging products.</h1><p>Browse formats by food application, then confirm the material, dimensions, print, pack configuration and destination-market documents with the LANGMAI team.</p><div class="hero-actions"><a class="button primary" href="/inquiry/">Request Product Review</a><a class="button secondary" href="/custom-oem/">Discuss Custom OEM</a></div></div>
+    <img src="/assets/real-cake-cups-assortment.jpg" width="1200" height="900" fetchpriority="high" decoding="async" alt="LANGMAI paper baking cups and food packaging formats">
   </section>
-  <section class="section" id="baking-paper-products">
-    <div class="section-heading"><p class="eyebrow">Core baking paper range</p><h2>Products for bakery, foodservice and private label</h2></div>
-    ${productCards(bakingProducts)}
-  </section>
-  <section class="section food-wrapping-range">
-    <div class="section-heading"><p class="eyebrow">Secondary product line</p><h2>Food Wrapping Paper</h2><p>Greaseproof paper, custom burger wrapping paper, wax paper and specification-led butcher paper for bakery, restaurant, foodservice and private-label programs.</p><a class="text-link" href="/products/food-wrapping-paper/">View the food wrapping category</a></div>
-    ${productCards(foodWrappingProducts)}
-  </section>
-  <section class="section supporting-products">
-    <div class="section-heading"><p class="eyebrow">Supporting categories</p><h2>Selected paper accessories</h2><p>Paper straws and party paper items remain available for buyers combining bakery and event assortments, but they are secondary to the core baking paper range.</p></div>
-    ${productCards(supportingProducts)}
-  </section>
-  ${ctaBand("Need a mixed container or custom printed set?")}`;
+  <section class="trust-strip" aria-label="Product range highlights"><span>Bakery paper</span><span>Food wrapping</span><span>Paper straws</span><span>OEM printing</span></section>
+  <section class="section" id="baking-paper-products"><div class="section-heading"><p class="eyebrow">Bakery Packaging</p><h2>Cups, liners, parchment and cooking paper</h2><p>Core formats for bakeries, dessert brands, foodservice distributors and private-label retail programs.</p><a class="text-link" href="/products/baking-paper/">Explore all baking paper solutions →</a></div>${productCards(bakingProducts)}</section>
+  <section class="section food-wrapping-range"><div class="section-heading"><p class="eyebrow">Food Wrapping</p><h2>Greaseproof paper for takeaway and service</h2><p>Greaseproof, burger, wax and butcher paper formats selected around the approved food application and print requirement.</p><a class="text-link" href="/products/food-wrapping-paper/">View the food wrapping category →</a></div>${productCards(foodWrappingProducts)}</section>
+  <section class="section supporting-products"><div class="section-heading"><p class="eyebrow">Beverage & supporting formats</p><h2>Paper straws and selected paper accessories</h2><p>Straight or flexible bendable paper straws and related paper items for beverage, event and seasonal retail programs.</p></div>${productCards(supportingProducts)}</section>
+  ${ctaBand("Need a mixed product program or custom printed set?")}`;
   return layout({
     route: "/products/",
-    title: "Baking Paper Products | Cups, Parchment & Air Fryer Liners",
-    description: "Browse LANGMAI baking cups, cupcake liners, baking parchment and air fryer liners, plus greaseproof, burger wrapping, wax and butcher paper for B2B buyers.",
+    title: "Baking Paper & Food Paper Products | LANGMAI",
+    description: "Browse LANGMAI baking cups, parchment, air fryer liners, food wrapping paper and paper straws for B2B buyers, with custom printing and OEM support.",
     content,
   });
 }
 
 function foodWrappingLeadForm(product) {
-  return `<form class="lead-form wrapping-inquiry-form" data-lead-form data-form-type="quote">
+  return `<form class="lead-form wrapping-inquiry-form" data-lead-form>
     <input class="hp-field" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
     <label>Email *<input type="email" name="email" placeholder="buyer@example.com" required></label>
     <label>Product type *<input name="product" value="${esc(product.cardTitle || product.title)}" required></label>
@@ -1283,14 +1127,13 @@ function foodWrappingProductPage(product) {
   const statusLabel = isButcher ? "Requires product verification" : isWax ? "Confirmed with usage disclaimer" : "Confirmed product category";
   const content = `<section class="product-hero wrapping-product-hero">
     <div>
-      <p class="eyebrow">Food wrapping paper 路 ${esc(statusLabel)}</p>
+      <p class="eyebrow">Food wrapping paper · ${esc(statusLabel)}</p>
       <h1>${esc(product.title)}</h1>
       <p>${esc(product.short)}</p>
-      <div class="hero-actions"><a class="button primary" href="#quote" data-cta-type="quote" data-product="${esc(product.slug)}">Request a Quote</a><a class="button secondary" href="/products/food-wrapping-paper/" data-cta-type="product">View Wrapping Paper Range</a></div>
+      <div class="hero-actions"><a class="button primary" href="#quote">Request a Quote</a><a class="button secondary" href="/products/food-wrapping-paper/">View Wrapping Paper Range</a></div>
     </div>
     <img src="/assets/${product.image}" width="1440" height="${product.slug === "greaseproof-paper" ? "768" : "960"}" decoding="async" alt="${esc(product.cardTitle)} sheets, rolls and food wrapping applications">
   </section>
-  ${buyerBrief(product)}
   <section class="trust-strip">${product.features.map((item) => `<span>${esc(item)}</span>`).join("")}</section>
   ${isButcher ? `<section class="section verification-alert"><p class="eyebrow">Specification gate</p><h2>Performance claims remain subject to product verification</h2><p>Before production or marketing approval, confirm available colors, grammage, wet strength, coating status, food-contact suitability, freezer conditions, direct fresh-meat contact, BBQ or smoker suitability, heat resistance, PFAS status, reports, roll widths and sheet sizes. The catalogue is a visual reference and does not replace product-level confirmation.</p></section>` : ""}
   <section class="section two-col wrapping-overview">
@@ -1313,51 +1156,261 @@ function foodWrappingProductPage(product) {
   <section class="section two-col"><div><p class="eyebrow">OEM and private label</p><h2>From artwork to export carton</h2><ol class="process-list"><li>Define material, application and dimensions</li><li>Review artwork, colors and print coverage</li><li>Approve a representative product and packaging sample</li><li>Confirm pack count, labels and master cartons</li><li>Link the final order to the approved specification</li></ol></div><div><p class="eyebrow">Packaging options</p><h2>Plan the selling format</h2><ul class="check-list"><li>Bulk sheets or rolls</li><li>Interfolded or dispenser formats where applicable</li><li>Retail pack counts and private-label artwork</li><li>Inner packs, labels and master cartons</li><li>Pallet and container information upon request</li></ul></div></section>
   <section class="section two-col" id="quote"><div><p class="eyebrow">Quote request</p><h2>Send a product-level brief</h2><p>Please confirm technical requirements before ordering. The detailed form helps LANGMAI check material, converting, printing, documents and packaging together.</p></div>${foodWrappingLeadForm(product)}</section>
   <section class="section faq"><p class="eyebrow">FAQ</p><h2>${esc(product.cardTitle)} FAQ</h2>${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</section>
-  <section class="section"><h2>Related food wrapping paper</h2><div class="link-grid">${wrappingProducts.map((item) => `<a href="/products/${item.slug}/">${esc(item.cardTitle)}</a>`).join("")}<a href="/products/food-wrapping-paper/">Food Wrapping Paper Overview</a><a href="/inquiry/">Contact LANGMAI</a></div></section>`;
+  <section class="section"><h2>Related food wrapping paper</h2><div class="link-grid">${wrappingProducts.map((item) => `<a href="/products/${item.slug}/">${esc(item.cardTitle)}</a>`).join("")}<a href="/products/food-wrapping-paper/">Food Wrapping Paper Overview</a><a href="/contact/">Contact LANGMAI</a></div></section>`;
   return layout({
     route: `/products/${product.slug}/`,
     title: product.seoTitle,
     description: product.meta,
     content,
-    schema: [productPageSchema(product, `/products/${product.slug}/`), faqSchema(faq)],
+    schema: [productSchema(product), faqSchema(faq)],
   });
 }
 
-function buyerBrief(product) {
-  const label = product.cardTitle || product.title;
-  return `<section class="section buyer-brief" aria-labelledby="buyer-brief-title">
-    <div>
-      <p class="eyebrow">Quote-ready product brief</p>
-      <h2 id="buyer-brief-title">Send the details buyers need to approve</h2>
-      <p>Use the inquiry form to connect the product, intended use and destination-market requirements in one request.</p>
-      <ul class="check-list">
-        <li>Product and food application: ${esc(label)}</li>
-        <li>Target dimensions, format and paper construction</li>
-        <li>Estimated quantity, pack count and private-label packaging</li>
-        <li>Artwork, printing, coating or material requirements</li>
-        <li>Destination country and requested food-contact or PFAS documents</li>
-      </ul>
+function premiumSpecTable(headers, rows) {
+  return `<div class="table-wrap premium-spec-table"><table><thead><tr>${headers.map((heading) => `<th>${esc(heading)}</th>`).join("")}</tr></thead><tbody>${rows.map((row) => `<tr>${row.map((cell) => `<td>${esc(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+}
+
+function premiumFeatureGrid(items) {
+  return `<div class="premium-feature-grid">${items.map(([number, title, text]) => `<article><span>${esc(number)}</span><h3>${esc(title)}</h3><p>${esc(text)}</p></article>`).join("")}</div>`;
+}
+
+function premiumApplicationGrid(items) {
+  return `<div class="premium-application-grid">${items.map(([title, text]) => `<article><h3>${esc(title)}</h3><p>${esc(text)}</p></article>`).join("")}</div>`;
+}
+
+function cakeCupsProductPage(product) {
+  const title = "Custom Cake Cups Manufacturer for Global Bakery Brands";
+  const faq = [
+    ["Are LANGMAI cake cups food safe?", "LANGMAI can provide cake cups made with food-contact paper selected for the approved bakery application. The exact paper, print system, use conditions and available documents are confirmed for each specification before order approval."],
+    ["Can cake cup sizes be customized?", "Yes. Buyers can select a reference size or send a drawing, sample or target dimensions. Top diameter, base diameter, height, paper construction and packing are reviewed together."],
+    ["Can you print our logo or pattern?", "Yes. Custom colors, patterns and brand artwork can be developed after artwork review, color proofing and pre-production sample approval."],
+    ["Are PFAS-free options available?", "Intentionally added PFAS-free paper options can be discussed for the selected cake cup construction. Any declaration or test evidence must be matched to the exact material and finished product supplied."],
+    ["What information is needed for a quote?", "Please send the cup dimensions, intended baked product, oven conditions, print artwork, pack count, destination market and estimated order quantity."],
+  ];
+  const content = `<section class="premium-product-hero cake-cups-premium">
+    <div class="premium-hero-copy">
+      <p class="eyebrow">Bakery packaging · OEM manufacturing</p>
+      <h1>${title}</h1>
+      <p>LANGMAI develops food-contact paper cake cups and cupcake liners for bakeries, dessert brands, food manufacturers and private-label programs worldwide.</p>
+      <div class="premium-trust"><span>Food-contact paper options</span><span>11 reference sizes</span><span>Custom colors & prints</span><span>Private-label packing</span></div>
+      <div class="hero-actions"><a class="button primary" href="#quote">Request Product Sample</a><a class="button secondary" href="#quote">Get Factory Quote</a></div>
     </div>
-    <div>
-      <p class="eyebrow">Sampling and approval path</p>
-      <h2>Review the specification before repeat supply</h2>
-      <ol class="process-list">
-        <li>Confirm application, dimensions and material requirements</li>
-        <li>Review artwork, packaging and available product evidence</li>
-        <li>Approve a representative sample and finished pack</li>
-        <li>Link the quotation and repeat order to the approved specification</li>
-      </ol>
-      <div class="link-grid">
-        <a href="/factory-certificates/#food-contact">Food-contact documents</a>
-        <a href="/pfas-free-baking-paper/">PFAS evidence process</a>
-        <a href="/inquiry/" data-cta-type="quote" data-product="${esc(product.slug)}">Send ${esc(label)} brief</a>
-      </div>
+    <div class="premium-hero-media"><img src="/assets/ai-cake-cups-premium.jpg" width="1200" height="800" fetchpriority="high" decoding="async" alt="Premium cupcakes and muffins presented in LANGMAI paper cake cups"><span>Bakery-ready presentation</span></div>
+  </section>
+  <section class="section premium-overview">
+    <div class="section-heading"><p class="eyebrow">Product overview</p><h2>Food-Grade Cake Cups Designed for Professional Baking</h2><p>Cake cups support baking performance, handling and final product presentation. LANGMAI reviews paper selection, grease resistance, dimensions, printing and packing as one approved specification.</p></div>
+    ${premiumFeatureGrid([
+      ["01", "Food-Contact Paper Selection", "Paper and print systems are selected against the intended cake, baking conditions and destination-market review."],
+      ["02", "Heat & Grease Performance", "Cup geometry and material construction are sampled for shape retention, release and visible grease performance."],
+      ["03", "Custom Brand Presentation", "Logo, patterns, brand colors and seasonal artwork are supported with proofing before mass production."],
+      ["04", "Flexible Size & Packing", "Reference sizes, custom dimensions, inner packs, retail formats and export cartons can be quoted together."],
+    ])}
+  </section>
+  <section class="section premium-applications">
+    <div class="section-heading"><p class="eyebrow">Applications</p><h2>Packaging Built Around Bakery Workflows</h2></div>
+    ${premiumApplicationGrid([
+      ["Bakeries", "Cupcake and muffin formats for artisan bakeries, central kitchens and multi-site bakery chains."],
+      ["Dessert Brands", "Consistent presentation for premium cakes, sweet products and seasonal collections."],
+      ["Cafes", "Counter-ready formats for coffee shops, takeaway desserts and branded service programs."],
+      ["Food Manufacturers", "Repeatable specifications, carton planning and inspection support for larger production programs."],
+    ])}
+  </section>
+  <section class="section premium-split premium-oem-section">
+    <img src="/assets/real-cake-cups-assortment.jpg" loading="lazy" decoding="async" alt="Custom colors and patterns available for LANGMAI cake cups">
+    <div><p class="eyebrow">Customization</p><h2>Create Your Own Branded Cake Cups</h2><p>Every bakery program starts with a different product, line speed and selling format. LANGMAI connects the cup specification with artwork and packing from the beginning.</p>
+      <ul class="check-list"><li>Top, base and height customization</li><li>Paper construction selected for the intended use</li><li>Logo, pattern and color development</li><li>Bulk, inner-pack or private-label retail packing</li><li>Pre-production sample and bulk inspection planning</li></ul>
+      <a class="text-link" href="/custom-oem/">Review the five-step OEM process</a>
     </div>
-  </section>`;
+  </section>
+  <section class="section premium-specifications">
+    <div class="section-heading"><p class="eyebrow">Technical specifications</p><h2>Reference Cake Cup Sizes for RFQ Planning</h2><p>Use these rows to shortlist a format. Final tolerances, material, color, print, pack count and oven performance are confirmed by quotation and approved sample.</p></div>
+    ${premiumSpecTable(["Top Diameter", "Base Diameter", "Height", "Reference Packing"], product.specs)}
+    <p class="note">Reference packing is not a universal order promise. Carton configuration can change with paper, print, pack count and destination requirements.</p>
+  </section>
+  <section class="section premium-compliance">
+    <div><p class="eyebrow">Compliance & sustainability</p><h2>Evidence Matched to the Approved Construction</h2><p>Food-contact and PFAS-related support is reviewed for the exact paper, ink, finished cup and destination market. Certificate names shown on the website do not mean every cake cup carries every certification.</p><div class="hero-actions"><a class="button secondary" href="/compliance/">Visit Compliance Center</a><a class="button secondary" href="/pfas-free-baking-paper/">Review PFAS-Free Options</a></div></div>
+    <div class="premium-evidence"><h3>Buyer review checklist</h3><ul class="check-list"><li>Intended food and contact conditions</li><li>Baking temperature and duration</li><li>Paper, coating and print system</li><li>EU, LFGB, BfR or other requested scope</li><li>Report identity, validity and tested sample</li></ul></div>
+  </section>
+  <section class="section premium-split premium-factory">
+    <div><p class="eyebrow">Production capability</p><h2>A Reliable Cake Cup Manufacturing Partner</h2><p>From incoming paper and artwork checks to forming, packing and final inspection, production records are tied to the approved product specification.</p><ol class="compact-process"><li>Material review</li><li>Print proofing</li><li>Cup forming</li><li>Quality inspection</li><li>Export packing</li></ol></div>
+    <img src="/assets/factory-workshop.jpg" loading="lazy" decoding="async" alt="LANGMAI food paper packaging production workshop">
+  </section>
+  <section class="section premium-rfq" id="quote">
+    <div><p class="eyebrow">Sample & quotation</p><h2>Tell Us What You Need to Bake and Sell</h2><p>For a useful sample and quote, include cup dimensions, bakery application, oven conditions, print coverage, pack count, destination and estimated quantity.</p></div>
+    ${leadForm("Custom Cake Cups")}
+  </section>
+  <section class="section faq"><p class="eyebrow">FAQ</p><h2>Cake Cups Buyer FAQ</h2>${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</section>
+  <section class="section"><h2>Related Bakery Packaging</h2><div class="link-grid"><a href="/products/muffin-baking-cups/">Muffin Baking Cups</a><a href="/products/tulip-muffin-cups/">Tulip Muffin Cups</a><a href="/products/custom-printed-baking-paper/">Custom Printed Baking Paper</a><a href="/applications/bakery/">Bakery Packaging Solutions</a></div></section>`;
+  return layout({
+    route: "/products/cake-cups/",
+    title: "Custom Cake Cups Manufacturer | Cupcake Liners Supplier | LANGMAI",
+    description: "LANGMAI manufactures custom food-contact paper cake cups and cupcake liners for bakeries, dessert brands and food manufacturers, with OEM sizes, printing and packing.",
+    content,
+    schema: [productSchema({ ...product, title, short: "Custom food-contact paper cake cups and cupcake liners with OEM size, print and packing support." }), faqSchema(faq)],
+    bodyClass: "premium-product-page",
+  });
+}
+
+function bakingPaperHubPage() {
+  const faq = [
+    ["Is every LANGMAI baking paper PFAS-free?", "No blanket claim is made for every construction. Intentionally added PFAS-free options can be discussed and supporting declarations or product-specific evidence reviewed for the exact paper, coating, print and finished format."],
+    ["Can baking paper sizes be customized?", "Yes. Sheets, rolls, die-cut liners and retail pack dimensions can be developed around trays, ovens, air fryers, foodservice use and private-label requirements."],
+    ["Can LANGMAI provide private-label packaging?", "Yes. Retail boxes, roll packaging, inner packs, labels and export cartons can be developed after format, artwork, pack count and destination requirements are confirmed."],
+    ["What temperature can the baking paper withstand?", "Temperature performance depends on the selected paper, coating, contact conditions and duration. LANGMAI confirms the intended use and product-specific evidence instead of publishing one temperature for every format."],
+    ["Which markets can LANGMAI support?", "LANGMAI works with international buyers. Food-contact, PFAS and labeling requirements are reviewed against the exact destination market and approved product specification."],
+  ];
+  const content = `<section class="premium-product-hero baking-paper-premium">
+    <div class="premium-hero-copy">
+      <p class="eyebrow">Baking paper product family</p>
+      <h1>PFAS-Free Baking Paper Solutions for Global Food Brands</h1>
+      <p>LANGMAI supplies parchment, air fryer liners, pre-cut sheets and custom printed baking paper for bakery, foodservice, food manufacturing and private-label programs.</p>
+      <div class="premium-trust"><span>PFAS-free options</span><span>Food-contact material review</span><span>Custom sizes & packing</span><span>Global OEM support</span></div>
+      <div class="hero-actions"><a class="button primary" href="#quote">Request Product Sample</a><a class="button secondary" href="#quote">Get Factory Quote</a></div>
+    </div>
+    <div class="premium-hero-media"><img src="/assets/blog-baking-paper-quality-control.webp" width="1200" height="800" fetchpriority="high" decoding="async" alt="Baking paper quality review for professional food preparation"><span>Specification-led supply</span></div>
+  </section>
+  <section class="section premium-overview">
+    <div class="section-heading"><p class="eyebrow">Product overview</p><h2>High-Performance Baking Paper for Modern Food Preparation</h2><p>The right baking paper depends on food, temperature, contact duration, release expectations and selling format. LANGMAI turns those requirements into a sample-ready paper, coating, size and pack specification.</p></div>
+    ${premiumFeatureGrid([
+      ["01", "Release Performance", "Material options are reviewed for the intended cakes, cookies, bread, pastries or prepared foods."],
+      ["02", "Heat-Use Review", "Oven, air fryer and preparation conditions are confirmed for the exact construction and contact duration."],
+      ["03", "Grease Management", "Paper grade and surface treatment are selected to support product appearance and handling cleanliness."],
+      ["04", "PFAS-Free Options", "Intentionally added PFAS-free options and available evidence can be matched to the selected finished product."],
+    ])}
+  </section>
+  <section class="section baking-family-section" id="product-types">
+    <div class="section-heading"><p class="eyebrow">Product types</p><h2>Complete Baking Paper Solutions</h2><p>Use this page to select a family, then open the format-specific page for detailed sourcing information.</p></div>
+    <div class="baking-family-grid">
+      <a href="/products/baking-parchment-paper/"><img src="/assets/blog-silicone-coated-baking-paper.webp" loading="lazy" decoding="async" alt="Baking parchment paper sheets and rolls"><div><span>01</span><h3>Baking Parchment Paper</h3><p>Sheet and roll options for cakes, cookies, bread and pastry production.</p><strong>View parchment paper →</strong></div></a>
+      <a href="/products/air-fryer-paper-liners/"><img src="/assets/ai-air-fryer-liners-premium.jpg" loading="lazy" decoding="async" alt="Round and square air fryer paper liners"><div><span>02</span><h3>Air Fryer Paper Liners</h3><p>Round and square formats for foodservice, retail and private-label programs.</p><strong>View air fryer liners →</strong></div></a>
+      <a href="/products/baking-parchment-paper/"><img src="/assets/blog-precut-parchment-paper-sheets-wholesale.webp" loading="lazy" decoding="async" alt="Pre-cut parchment paper sheets for commercial bakeries"><div><span>03</span><h3>Pre-Cut Baking Sheets</h3><p>Ready-to-use dimensions for repeat trays, bakery lines and food preparation.</p><strong>Plan pre-cut sheets →</strong></div></a>
+      <a href="/products/custom-printed-baking-paper/"><img src="/assets/blog-custom-printed-food-paper-packaging.webp" loading="lazy" decoding="async" alt="Custom printed baking paper for branded food packaging"><div><span>04</span><h3>Custom Printed Baking Paper</h3><p>Artwork, pattern and private-label development for brand-led programs.</p><strong>View printed paper →</strong></div></a>
+    </div>
+  </section>
+  <section class="section premium-applications">
+    <div class="section-heading"><p class="eyebrow">Applications</p><h2>Designed for Professional Food Applications</h2></div>
+    ${premiumApplicationGrid([
+      ["Bakeries", "Tray lining, cake production, bread, cookies, pastries and repeat commercial workflows."],
+      ["Restaurants", "Oven cooking, food preparation, takeaway and back-of-house foodservice use."],
+      ["Food Manufacturers", "Specification-led sheets and liners for industrial baking and prepared-food programs."],
+      ["Retail Brands", "Consumer rolls, sheets and air fryer packs with private-label artwork and carton planning."],
+    ])}
+  </section>
+  <section class="section premium-split premium-oem-section">
+    <img src="/assets/ai-quality-export-packaging.jpg" loading="lazy" decoding="async" alt="Private-label baking paper packing and export preparation">
+    <div><p class="eyebrow">Customization</p><h2>Build the Format Around Your Product and Market</h2><p>Send a current item, target drawing or buying specification. LANGMAI will review the paper and converting requirements before sampling.</p><ul class="check-list"><li>Paper grade and surface construction</li><li>Sheet, roll, die-cut or liner format</li><li>Tray, oven, air fryer or retail dimensions</li><li>Print artwork and brand presentation</li><li>Retail pack, inner pack and export carton</li></ul><a class="text-link" href="/custom-oem/">Explore Custom OEM</a></div>
+  </section>
+  <section class="section premium-specifications">
+    <div class="section-heading"><p class="eyebrow">Technical specification</p><h2>Five Inputs Needed for a Quote-Ready Baking Paper Brief</h2></div>
+    ${premiumFeatureGrid([
+      ["01", "Construction", "White or natural paper, coating or treatment, grammage and requested evidence."],
+      ["02", "Format", "Roll, sheet, pre-cut, round, square, die-cut or another approved shape."],
+      ["03", "Dimensions", "Width, length, diameter, wall height, roll core and dimensional tolerances."],
+      ["04", "Use Conditions", "Food type, direct contact, temperature, duration, grease and release expectations."],
+      ["05", "Selling Pack", "Bulk carton, retail box, dispenser, label, pack count, pallet and destination."],
+    ])}
+  </section>
+  <section class="section premium-compliance" id="pfas-options">
+    <div><p class="eyebrow">Food safety & sustainability</p><h2>PFAS and Food-Contact Support at Product Level</h2><p>PFAS-free, FDA-market, EU, LFGB or BfR support must be checked against the finished construction and requested use. LANGMAI can organize available declarations and reports for buyer review without treating one document as universal coverage.</p><div class="hero-actions"><a class="button secondary" href="/pfas-free-baking-paper/">PFAS-Free Program</a><a class="button secondary" href="/compliance/">Compliance Center</a></div></div>
+    <div class="premium-evidence"><h3>Evidence alignment</h3><ul class="check-list"><li>Exact paper and coating identity</li><li>Printed or unprinted finished format</li><li>Food, temperature and contact duration</li><li>Destination-market protocol</li><li>Report date and sample linkage</li></ul></div>
+  </section>
+  <section class="section premium-split premium-factory">
+    <div><p class="eyebrow">Manufacturing capability</p><h2>From Paper Selection to Finished Packing</h2><p>Converting, cutting, forming, packing and inspection are planned around an approved sample and order specification.</p><ol class="compact-process"><li>Material review</li><li>Sample conversion</li><li>Cutting & forming</li><li>Quality inspection</li><li>Export packing</li></ol></div>
+    <img src="/assets/factory-clean.jpg" loading="lazy" decoding="async" alt="LANGMAI clean food paper packaging production area">
+  </section>
+  <section class="section premium-rfq" id="quote"><div><p class="eyebrow">Sample & quotation</p><h2>Start with the Food, Format and Destination</h2><p>Tell us what you are cooking or baking, the required size, use conditions, packing format, destination and order estimate. We will route the inquiry to the correct product family.</p></div>${leadForm("Baking Paper Solutions")}</section>
+  <section class="section faq"><p class="eyebrow">FAQ</p><h2>Baking Paper Buyer FAQ</h2>${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</section>
+  <section class="section"><h2>Continue Your Product Review</h2><div class="link-grid"><a href="/products/baking-parchment-paper/">Baking Parchment Paper</a><a href="/products/air-fryer-paper-liners/">Air Fryer Paper Liners</a><a href="/products/custom-printed-baking-paper/">Custom Printed Baking Paper</a><a href="/applications/bakery/">Bakery Applications</a></div></section>`;
+  return layout({
+    route: "/products/baking-paper/",
+    title: "Baking Paper Manufacturer | Parchment & PFAS-Free Options | LANGMAI",
+    description: "Explore LANGMAI baking paper solutions including parchment, air fryer liners, pre-cut sheets and custom printed formats, with PFAS-free options and OEM support.",
+    content,
+    schema: [faqSchema(faq)],
+    bodyClass: "premium-product-page",
+  });
+}
+
+function paperStrawsProductPage(product) {
+  const title = "Custom Paper Straw Solutions for Global Beverage Brands";
+  const faq = [
+    ["Are LANGMAI paper straws suitable for food contact?", "Food-contact paper and print systems can be selected for the approved beverage application. Buyers should confirm the drink, temperature, contact duration, destination and required documents before approval."],
+    ["Can paper straw printing be customized?", "Yes. Logo, patterns and brand colors can be reviewed for straight, bendable and selected larger-diameter formats, subject to artwork and sample approval."],
+    ["Do you produce bendable paper straws?", "Yes. Flexible bendable paper straw constructions are available. Confirm diameter, length, beverage, packing and order quantity so LANGMAI can prepare the appropriate sample."],
+    ["Are individual wrapping and retail packs available?", "Packing options can be discussed for each project. Bulk packs, wrapping format, retail presentation, labels and cartons must be confirmed in the quotation rather than assumed for every size."],
+    ["How long do the straws remain firm in a drink?", "Performance depends on the beverage, temperature, acidity, ice, diameter and contact time. Share the intended drink and target use duration so the selected construction can be sampled under relevant conditions."],
+  ];
+  const content = `<section class="premium-product-hero paper-straws-premium">
+    <div class="premium-hero-copy">
+      <p class="eyebrow">Beverage packaging · OEM manufacturing</p>
+      <h1>${title}</h1>
+      <p>LANGMAI supplies straight, flexible bendable, jumbo and custom printed paper straw options for cafes, restaurants, beverage brands and foodservice programs.</p>
+      <div class="premium-trust"><span>Food-contact paper options</span><span>Straight & bendable styles</span><span>Custom print review</span><span>OEM packaging</span></div>
+      <div class="hero-actions"><a class="button primary" href="#quote">Request Product Sample</a><a class="button secondary" href="#quote">Get Factory Quote</a></div>
+    </div>
+    <div class="premium-hero-media"><img src="/assets/banner-paper-straws-1448.webp" width="1448" height="1086" fetchpriority="high" decoding="async" alt="Colorful custom paper straws for beverage brands and cafes"><span>Plastic-reduction option</span></div>
+  </section>
+  <section class="section premium-overview">
+    <div class="section-heading"><p class="eyebrow">Product overview</p><h2>Paper Straw Programs Built Around the Beverage</h2><p>A reliable paper straw specification starts with the drink, cup, use duration and customer experience. LANGMAI reviews those conditions before recommending structure, diameter, length, print and packing.</p></div>
+    ${premiumFeatureGrid([
+      ["01", "Food-Contact Material Review", "Paper, adhesive and print choices are reviewed against the approved beverage application and destination."],
+      ["02", "Performance Sampling", "The drink, temperature, acidity, ice and target duration are used to select and test the construction."],
+      ["03", "Custom Brand Capability", "Patterns, colors and logo concepts can be developed with artwork review and pre-production approval."],
+      ["04", "Plastic-Reduction Support", "Paper-based formats can support a brand's plastic-reduction program while performance is verified for actual use."],
+    ])}
+  </section>
+  <section class="section straw-types-section">
+    <div class="section-heading"><p class="eyebrow">Paper straw types</p><h2>Straight, Bendable, Jumbo and Printed Options</h2></div>
+    <div class="straw-type-grid">
+      <article><span>01</span><h3>Straight Paper Straws</h3><p>Standard formats for water, soft drinks, juice and cafe beverage programs.</p></article>
+      <article class="featured"><span>02</span><h3>Flexible Bendable Paper Straws</h3><p>Confirmed bendable capability for milk drinks, children's beverages and convenient drinking angles.</p></article>
+      <article><span>03</span><h3>Jumbo Paper Straws</h3><p>Larger-diameter options for smoothies and thicker beverages, subject to drink-flow sampling.</p></article>
+      <article><span>04</span><h3>Custom Printed Paper Straws</h3><p>Brand colors and patterns for promotions, premium beverage launches and private-label packs.</p></article>
+    </div>
+  </section>
+  <section class="section premium-applications">
+    <div class="section-heading"><p class="eyebrow">Applications</p><h2>Designed for Beverage and Foodservice Programs</h2></div>
+    ${premiumApplicationGrid([
+      ["Coffee Shops", "Cafe chains and independent brands ordering service straws or custom-branded beverage accessories."],
+      ["Beverage Brands", "Juice, soft drink and functional beverage programs needing repeat print and pack specifications."],
+      ["Restaurants", "Dine-in and takeaway paper straw formats for foodservice operations and distributors."],
+      ["Events & Promotions", "Custom patterns and campaign artwork for launches, events and seasonal programs."],
+    ])}
+  </section>
+  <section class="section premium-split premium-oem-section">
+    <img src="/assets/real-paper-straws.jpg" loading="lazy" decoding="async" alt="LANGMAI straight and custom colored paper straw assortment">
+    <div><p class="eyebrow">Customization</p><h2>Create a Paper Straw Specification for Your Brand</h2><p>The best result comes from reviewing the drink and the selling format together. Flexible bendable designs can be included in the sampling brief.</p><ul class="check-list"><li>Straight or flexible bendable construction</li><li>Diameter and length</li><li>Drink type and target use duration</li><li>Logo, pattern and color review</li><li>Bulk, wrapped or retail packing discussion</li></ul><a class="text-link" href="/custom-oem/">Review Custom OEM</a></div>
+  </section>
+  <section class="section premium-specifications">
+    <div class="section-heading"><p class="eyebrow">Technical specifications</p><h2>Reference Straight Straw Sizes</h2><p>These are current reference straight-straw rows. Flexible bendable, printed and other formats are quoted after drink, dimensions and packing are confirmed.</p></div>
+    ${premiumSpecTable(["Diameter", "Length", "Reference Packing"], product.specs)}
+    <p class="note">Reference dimensions and packing are planning information. Finished structure, tolerances, print, wrapping and carton configuration require an approved quotation and sample.</p>
+  </section>
+  <section class="section premium-compliance">
+    <div><p class="eyebrow">Food safety & sustainability</p><h2>Support Plastic Reduction Without Blanket Claims</h2><p>Paper straws can support a brand's plastic-reduction strategy. Material origin, recyclability, biodegradability or compostability should only be claimed when the exact finished construction and destination rules support that statement.</p><div class="hero-actions"><a class="button secondary" href="/compliance/">Visit Compliance Center</a><a class="button secondary" href="/applications/cafe/">Cafe Packaging Solutions</a></div></div>
+    <div class="premium-evidence"><h3>Confirm for sampling</h3><ul class="check-list"><li>Beverage and serving temperature</li><li>Target contact duration</li><li>Straight or bendable structure</li><li>Paper, adhesive and print requirements</li><li>Destination and requested documents</li></ul></div>
+  </section>
+  <section class="section premium-split premium-factory">
+    <div><p class="eyebrow">Production capability</p><h2>A Repeatable Paper Straw Supply Process</h2><p>Material preparation, printing, forming, packing and inspection are planned against the approved sample and order specification.</p><ol class="compact-process"><li>Material review</li><li>Artwork proof</li><li>Straw forming</li><li>Performance check</li><li>Export packing</li></ol></div>
+    <img src="/assets/ai-quality-export-packaging.jpg" loading="lazy" decoding="async" alt="LANGMAI quality inspection and export packaging preparation">
+  </section>
+  <section class="section premium-rfq" id="quote"><div><p class="eyebrow">Sample & quotation</p><h2>Start with Your Beverage and Target Use Duration</h2><p>Include straight or bendable style, diameter, length, drink, temperature, use duration, artwork, packing, destination and estimated quantity.</p></div>${leadForm("Custom Paper Straws")}</section>
+  <section class="section faq"><p class="eyebrow">FAQ</p><h2>Paper Straws Buyer FAQ</h2>${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</section>
+  <section class="section"><h2>Related Beverage Packaging Paths</h2><div class="link-grid"><a href="/applications/cafe/">Cafe & Beverage Applications</a><a href="/custom-oem/">Custom OEM Process</a><a href="/compliance/">Compliance Center</a><a href="/products/party-accessories/">Party Paper Accessories</a></div></section>`;
+  return layout({
+    route: "/products/paper-straws/",
+    title: "Custom Paper Straws Manufacturer | Bendable & Printed Straws | LANGMAI",
+    description: "LANGMAI supplies straight, flexible bendable and custom printed paper straws for beverage brands, cafes and foodservice buyers, with OEM sizes and packing.",
+    content,
+    schema: [productSchema({ ...product, title, short: "Straight, flexible bendable and custom printed paper straws for beverage and foodservice programs.", features: ["Straight paper straws", "Flexible bendable paper straws", "Custom printing", "OEM packaging"] }), faqSchema(faq)],
+    bodyClass: "premium-product-page",
+  });
 }
 
 function productPage(product) {
   if (product.template === "food-wrapping") return foodWrappingProductPage(product);
+  if (product.slug === "cake-cups") return cakeCupsProductPage(product);
+  if (product.slug === "paper-straws") return paperStrawsProductPage(product);
   const related = products.filter((p) => p.slug !== product.slug).slice(0, 3);
   const isBakingPaperProduct = product.group !== "food-wrapping" && !["paper-straws", "party-accessories"].includes(product.slug);
   const specTable = product.specs.length
@@ -1377,13 +1430,12 @@ function productPage(product) {
       <h1>${esc(product.title)}</h1>
       <p>${esc(product.short)}</p>
       <div class="hero-actions">
-        <a class="button primary" href="#quote" data-cta-type="quote" data-product="${esc(product.slug)}">Request a Quote</a>
-        <a class="button secondary" href="/inquiry/#sample" data-cta-type="sample" data-product="${esc(product.slug)}">Get Free Sample</a>
+        <a class="button primary" href="#quote">Request a Quote</a>
+        <a class="button secondary" href="/contact/#sample">Get Free Sample</a>
       </div>
     </div>
     <img src="${relAsset(product.image)}" alt="${esc(product.title)} specifications and product examples">
   </section>
-  ${buyerBrief(product)}
   <section class="product-template section">
     <div class="product-main">
       <section class="two-col product-block">
@@ -1423,7 +1475,7 @@ function productPage(product) {
             <li>Declaration, report date and tested sample identity</li>
             <li>Change-control requirements for repeat orders</li>
           </ul>
-          <a class="button primary" href="/inquiry/" data-cta-type="quote" data-product="${esc(product.slug)}">Request PFAS Documents & Samples</a>
+          <a class="button primary" href="/inquiry/">Request PFAS Documents & Samples</a>
         </div>
       </section>` : ""}
       <section class="product-block product-eudr-support" aria-labelledby="product-eudr-title">
@@ -1461,14 +1513,14 @@ function productPage(product) {
         <div class="link-grid">${related.map((p) => `<a href="/products/${p.slug}/">${esc(p.title)}</a>`).join("")}<a href="/customization/">Custom printed baking cups process</a></div>
       </section>
     </div>
-    ${ipStickyCard(product.title, product.slug)}
+    ${ipStickyCard(product.title)}
   </section>`;
   return layout({
     route: `/products/${product.slug}/`,
-    title: product.seoTitle || `${product.title} | LANGMAI Manufacturer`,
+    title: `${product.title} | LANGMAI Manufacturer`,
     description: product.short,
     content,
-    schema: [productPageSchema(product, `/products/${product.slug}/`), faqSchema(faq)],
+    schema: [productSchema(product), faqSchema(faq)],
   });
 }
 
@@ -1558,6 +1610,195 @@ function customizationPage() {
   });
 }
 
+function applicationLandingPage(type) {
+  const pages = {
+    bakery: {
+      route: "/applications/bakery/",
+      seoTitle: "Bakery Packaging Solutions | Cake Cups & Baking Paper | LANGMAI",
+      meta: "LANGMAI provides bakery packaging solutions including custom cake cups, cupcake liners and baking paper for bakeries, dessert brands and food manufacturers.",
+      eyebrow: "Bakery packaging solutions",
+      title: "Complete Bakery Packaging Solutions for Global Brands",
+      description: "From artisan bakeries to food manufacturers, LANGMAI develops paper packaging around baking performance, product presentation, food-contact review and brand growth.",
+      image: "ai-cake-cups-premium.jpg",
+      alt: "Premium cupcakes presented in LANGMAI paper baking cups",
+      sampleLabel: "Request Bakery Packaging Sample",
+      trust: ["Cake cups & cupcake liners", "Baking paper formats", "Custom print & packing", "Product-specific compliance"],
+      challenges: [
+        ["Food Safety", "Select food-contact paper and print systems around the intended recipe, temperature, contact time and destination market."],
+        ["Product Presentation", "Coordinate cup profile, paper color, release and grease performance with the finished cake or pastry."],
+        ["Brand Differentiation", "Use custom colors, patterns, logo printing and private-label packing to create a recognizable bakery range."],
+        ["Supply Reliability", "Approve dimensions, artwork, pack count, inspection points and repeat-order controls before bulk production."],
+      ],
+      products: [
+        ["Cake Cups", "/products/cake-cups/", "real-cake-cups-assortment.jpg", "Cupcake, muffin, dessert and mini-cake formats with reference sizes, custom printing and packing."],
+        ["Baking Paper", "/products/baking-paper/", "blog-baking-paper-quality-control.webp", "Parchment, pre-cut sheets, air fryer liners and custom printed formats with PFAS-free options."],
+        ["Custom Bakery Packaging", "/custom-oem/", "ai-quality-export-packaging.jpg", "OEM artwork, sample development, private-label packing and export-carton planning."],
+      ],
+      scenarios: [
+        ["Artisan Bakeries", "Flexible formats for premium counters, seasonal products and smaller branded ranges."],
+        ["Bakery Chains", "Approved specifications, consistent presentation and repeat packing for multi-site programs."],
+        ["Dessert Brands", "Distinctive cake cups and printed paper for premium, social-first and takeaway presentation."],
+        ["Industrial Bakeries", "Quote-ready dimensions, volume forecasts, inspection criteria and production planning."],
+      ],
+      customization: ["Cup dimensions around the baked product", "Paper construction and grease-performance review", "Logo, brand colors and pattern development", "Bulk, retail and private-label packing", "Pre-production sample and repeat-order control"],
+      complianceTitle: "Safe and Responsible Bakery Packaging",
+      complianceText: "Food-contact and PFAS requirements are reviewed for the exact paper, coating, ink, finished format and destination market. Available evidence supports only the product and scope it clearly represents.",
+      faq: [
+        ["Can LANGMAI customize cake cups for our bakery brand?", "Yes. Size, paper construction, colors, patterns, artwork and packing can be developed after the bakery application and order requirements are confirmed."],
+        ["Can we request samples before bulk production?", "Yes. Send the product, dimensions, food use, baking conditions, artwork, destination and estimated quantity so the sample represents the intended order."],
+        ["Can LANGMAI support bakery-chain programs?", "LANGMAI can review forecast volume, approved specifications, pack counts, inspection requirements and delivery planning for multi-site or repeat-order programs."],
+        ["Are PFAS-free baking paper options available?", "Intentionally added PFAS-free options can be discussed for the selected baking paper construction. Declarations or test evidence must be matched to the exact finished product."],
+      ],
+    },
+    cafe: {
+      route: "/applications/cafe/",
+      seoTitle: "Cafe Packaging Solutions | Paper Straws & Food Paper | LANGMAI",
+      meta: "Explore LANGMAI cafe packaging solutions including bendable paper straws, bakery cups and greaseproof paper with custom printing and OEM packing support.",
+      eyebrow: "Cafe packaging solutions",
+      title: "Sustainable Packaging Solutions for Modern Cafes",
+      description: "Build a coordinated cafe and beverage program with straight or bendable paper straws, bakery cups and greaseproof paper selected for counter service, takeaway and brand presentation.",
+      image: "banner-paper-straws-1448.webp",
+      alt: "Colorful paper straws for cafe and beverage packaging programs",
+      sampleLabel: "Request Cafe Packaging Sample",
+      trust: ["Straight & bendable straws", "Cafe bakery formats", "Custom brand printing", "Plastic-reduction support"],
+      challenges: [
+        ["Brand Experience", "Coordinate beverage accessories, pastry liners and wrapping paper so every counter touchpoint feels consistent."],
+        ["Beverage Performance", "Confirm drink type, temperature, acidity, ice and target use duration before selecting a paper straw."],
+        ["Sustainable Choice", "Use paper-based formats to support plastic-reduction goals without making unsupported recyclability or biodegradability claims."],
+        ["Custom Identity", "Review colors, pattern repeat, artwork, pack count and foodservice or retail packing at sample stage."],
+      ],
+      products: [
+        ["Paper Straws", "/products/paper-straws/", "real-paper-straws.jpg", "Straight, flexible bendable, jumbo and custom printed options selected around the beverage."],
+        ["Cafe Bakery Cups", "/products/cake-cups/", "real-cake-cups-stacked.jpg", "Cupcake and muffin formats for counter display, takeaway desserts and seasonal launches."],
+        ["Greaseproof Paper", "/products/greaseproof-paper/", "food-wrap-greaseproof.webp", "Sheets and printed formats for pastries, sandwiches, tray liners and cafe takeaway."],
+      ],
+      scenarios: [
+        ["Independent Coffee Shops", "Flexible branded formats for drinks, pastries, counter display and takeaway."],
+        ["Cafe Chains", "Repeat specifications, consistent artwork and pack planning across multiple locations."],
+        ["Beverage Brands", "Printed straw and packing programs for juice, soft drinks and promotional launches."],
+        ["Foodservice Distributors", "Coordinated paper-product assortments for cafe and beverage customers."],
+      ],
+      customization: ["Straight or flexible bendable straw structure", "Diameter, length, drink and target duration", "Cake cup sizes and grease-performance review", "Logo, pattern and brand color development", "Bulk, wrapped or retail packing discussion"],
+      complianceTitle: "Paper-Based Options with Product-Level Evidence",
+      complianceText: "Food-contact suitability and performance depend on the exact paper, adhesive, ink, drink or food, use duration and destination. Environmental claims are made only when evidence supports the finished construction.",
+      faq: [
+        ["Can LANGMAI produce bendable paper straws?", "Yes. Flexible bendable paper straw constructions are available. Confirm diameter, length, beverage, packing and quantity for sampling."],
+        ["Can cafe packaging carry our brand artwork?", "Yes. Paper straw patterns, cake cup artwork and selected printed wrapping formats can be developed after artwork and food-contact review."],
+        ["How do we select the right straw?", "Share the beverage, temperature, acidity, ice, cup height and target drinking duration. LANGMAI can then recommend a sample-ready structure and dimensions."],
+        ["Can one inquiry include several cafe products?", "Yes. Buyers can combine paper straws, bakery cups and greaseproof paper in one sourcing brief, while each product keeps its own approved specification and packing."],
+      ],
+    },
+    "food-service": {
+      route: "/applications/food-service/",
+      seoTitle: "Food Service Packaging Solutions | Greaseproof Paper | LANGMAI",
+      meta: "LANGMAI supplies greaseproof paper, burger wrapping paper and food wrapping solutions for restaurants, takeaway brands, chains and food manufacturers.",
+      eyebrow: "Food service packaging solutions",
+      title: "Reliable Food Packaging Solutions for Restaurants & Food Brands",
+      description: "Select greaseproof paper, burger sheets and food wrapping formats around oil resistance, serving conditions, kitchen workflow, brand printing and destination-market requirements.",
+      image: "food-wrap-burger.webp",
+      alt: "Burger and takeaway food presented in greaseproof wrapping paper",
+      sampleLabel: "Request Food Service Sample",
+      trust: ["Grease-resistant options", "Custom sheet & roll sizes", "Brand printing review", "Food-contact support"],
+      challenges: [
+        ["Oil Resistance", "Define the burger, fried food, pastry or deli application, fat level, temperature and contact time before paper selection."],
+        ["Food Safety", "Match paper, treatment and ink evidence to the exact direct-food-contact use and destination market."],
+        ["Operational Speed", "Confirm sheet size, roll width, folding, dispensing method and pack count for the kitchen workflow."],
+        ["Custom Branding", "Align print coverage, artwork repeat, food-contact ink review and carton configuration before approval."],
+      ],
+      products: [
+        ["Greaseproof Paper", "/products/greaseproof-paper/", "food-wrap-greaseproof.webp", "White, natural and printed options in sheets or rolls for bakery and foodservice use."],
+        ["Burger Wrapping Paper", "/products/burger-wrapping-paper/", "food-wrap-burger.webp", "Custom printed sheets for burgers, sandwiches, deli products and takeaway programs."],
+        ["Food Wrapping Range", "/products/food-wrapping-paper/", "food-wrap-wax.webp", "Compare greaseproof, burger, wax and specification-led butcher paper formats."],
+      ],
+      scenarios: [
+        ["Restaurants", "Application-led sheets and rolls for kitchen preparation, serving and takeaway."],
+        ["Fast Food Chains", "Repeat sizes, approved artwork, pack counts and operational consistency across locations."],
+        ["Takeaway Brands", "Printed wrapping formats that support presentation, handling and brand recognition."],
+        ["Food Manufacturers", "Specification, volume, inspection and packing review for repeat industrial programs."],
+      ],
+      customization: ["Paper grade, color and grammage", "Sheet, roll, interfolded or approved format", "Food type, grease level and contact conditions", "Logo printing, colors and artwork repeat", "Inner pack, master carton and pallet requirements"],
+      complianceTitle: "Food-Contact Review for the Actual Use",
+      complianceText: "Grease, temperature, moisture, print and direct-contact conditions affect material selection. FDA-market, EU, LFGB, BfR, PFAS or other support is reviewed only for the exact proposed construction and scope.",
+      faq: [
+        ["Which paper is suitable for burgers or fried food?", "The correct specification depends on fat level, temperature, contact time, moisture, presentation and whether the contact is direct. Send the food and workflow so the paper can be sampled appropriately."],
+        ["Can food wrapping paper use custom printing?", "Yes. Artwork, print coverage, paper grade, ink system, odor expectations and food-contact scope are reviewed before sample approval."],
+        ["Are sheets and rolls both available?", "Sheets, rolls and selected interfolded or dispenser formats can be discussed according to the product and converting specification."],
+        ["Can LANGMAI support restaurant-chain packing?", "LANGMAI can review repeat sizes, location or distributor pack counts, labels, cartons, inspection requirements and shipment planning for chain programs."],
+      ],
+    },
+  };
+  const page = pages[type];
+  const content = `<section class="industry-application-hero">
+    <div><p class="eyebrow">${page.eyebrow}</p><h1>${page.title}</h1><p>${page.description}</p><div class="application-trust">${page.trust.map((item) => `<span>${esc(item)}</span>`).join("")}</div><div class="hero-actions"><a class="button primary" href="#application-quote">${page.sampleLabel}</a><a class="button secondary" href="/contact/">Talk to a Packaging Expert</a></div></div>
+    <div class="industry-hero-image"><img src="/assets/${page.image}" width="1200" height="800" fetchpriority="high" decoding="async" alt="${page.alt}"><span>Application-led product selection</span></div>
+  </section>
+  <section class="section industry-challenges"><div class="section-heading"><p class="eyebrow">Industry challenges</p><h2>Turn Operating Requirements into a Clear Packaging Specification</h2><p>Good packaging is not selected by appearance alone. Product use, performance, brand presentation and supply controls must be approved together.</p></div><div class="industry-challenge-grid">${page.challenges.map(([title, text], index) => `<article><span>0${index + 1}</span><h3>${title}</h3><p>${text}</p></article>`).join("")}</div></section>
+  <section class="section industry-products"><div class="section-heading"><p class="eyebrow">Complete solutions</p><h2>Relevant Products for This Application</h2><p>Open a product page for technical detail, or send one combined application brief for coordinated sampling.</p></div><div class="industry-product-grid">${page.products.map(([title, href, image, text], index) => `<a href="${href}"><img src="/assets/${image}" loading="lazy" decoding="async" alt="${esc(title)} for ${esc(page.eyebrow)}"><div><span>0${index + 1}</span><h3>${esc(title)}</h3><p>${esc(text)}</p><strong>Explore solution →</strong></div></a>`).join("")}</div></section>
+  <section class="section industry-scenarios"><div class="section-heading"><p class="eyebrow">Business scenarios</p><h2>Designed for Different Operating Models</h2></div><div class="industry-scenario-grid">${page.scenarios.map(([title, text]) => `<article><h3>${esc(title)}</h3><p>${esc(text)}</p></article>`).join("")}</div></section>
+  <section class="section industry-customization"><div class="industry-custom-copy"><p class="eyebrow">Custom OEM</p><h2>Build the Packaging Around Your Brand and Workflow</h2><p>LANGMAI connects product selection, artwork, sampling, production, inspection and delivery through one approved specification.</p><a class="button secondary" href="/custom-oem/">Review the Five-Step OEM Process</a></div><div class="industry-custom-list">${page.customization.map((item, index) => `<div><span>0${index + 1}</span><p>${esc(item)}</p></div>`).join("")}</div></section>
+  <section class="section industry-compliance"><div><p class="eyebrow">Food safety & sustainability</p><h2>${page.complianceTitle}</h2><p>${page.complianceText}</p><div class="hero-actions"><a class="button secondary" href="/compliance/">Visit Compliance Center</a><a class="button secondary" href="/factory-certificates/">View Document Previews</a></div></div><div class="industry-evidence"><h3>Confirm before approval</h3><ul class="check-list"><li>Exact product, material and finished construction</li><li>Food or beverage and real use conditions</li><li>Print, packaging and destination market</li><li>Required declarations, tests or sourcing records</li><li>Approved sample and repeat-order change control</li></ul></div></section>
+  <section class="section industry-why"><div class="section-heading"><p class="eyebrow">Why LANGMAI</p><h2>A Practical Manufacturing Partner for Global Buyers</h2></div><div class="industry-why-grid"><article><h3>Professional Manufacturing</h3><p>Material, converting and packing are aligned to an approved product specification.</p></article><article><h3>Flexible OEM</h3><p>Sizes, artwork, samples and packing can be developed for the target channel.</p></article><article><h3>Quality Control</h3><p>Inspection points can cover dimensions, appearance, print, pack count and shipment preparation.</p></article><article><h3>Global Service</h3><p>Destination, documents, carton planning and buyer communication are reviewed before production.</p></article></div></section>
+  <section class="section industry-quote" id="application-quote"><div><p class="eyebrow">Sample & inquiry</p><h2>Share the Conditions That Affect Product Fit</h2><p>Include the food or beverage, dimensions, use conditions, artwork, packing, destination, required documents and estimated quantity.</p></div>${leadForm(page.title)}</section>
+  <section class="section faq"><p class="eyebrow">FAQ</p><h2>${esc(page.eyebrow)} FAQ</h2>${page.faq.map(([question, answer]) => `<details><summary>${esc(question)}</summary><p>${esc(answer)}</p></details>`).join("")}</section>
+  ${ctaBand("Discuss the right packaging construction for your application")}`;
+  return layout({
+    route: page.route,
+    title: page.seoTitle,
+    description: page.meta,
+    content,
+    schema: [faqSchema(page.faq)],
+    bodyClass: "industry-application-page",
+  });
+}
+
+function complianceCenterPage() {
+  const content = `<section class="landing-hero compliance-hero">
+    <div><p class="eyebrow">Compliance center</p><h1>Food-Contact and Material Evidence for Buyer Review</h1><p>Review available PFAS, food-contact, sourcing and factory-quality support by product construction and destination market. A document supports only the sample or scope it clearly represents.</p><div class="hero-actions"><a class="button primary" href="/inquiry/">Request Relevant Documents</a><a class="button secondary" href="/factory-certificates/">View Document Previews</a></div></div>
+    <img src="/assets/cert-lfgb.png" alt="Preview of an available LANGMAI LFGB food-contact test report">
+  </section>
+  <section class="trust-strip"><span>Product-specific scope</span><span>Destination-market review</span><span>Sample identity matching</span><span>Repeat-order change control</span></section>
+  <section class="section compliance-preview-grid">
+    <article id="pfas-free"><p class="eyebrow">PFAS-free options</p><h2>Match the claim to the finished construction</h2><p>Applicable PFAS-free paper options can be discussed after the base paper, treatment, coating, ink, converting method and intended use are defined. Available declarations or testing should be checked against the exact approved specification.</p><a class="text-link" href="/pfas-free-baking-paper/">Review the PFAS-free program →</a></article>
+    <article id="food-contact"><p class="eyebrow">Food-contact safety</p><h2>Review available support by market and product</h2><p>Available FDA-related, EU food-contact, LFGB, BfR or DGCCRF documentation may support buyer review when its sample, material, test conditions and validity align with the proposed product. Availability is not a blanket certification of every item.</p><a class="text-link" href="/factory-certificates/#food-contact">View available document previews →</a></article>
+    <article><p class="eyebrow">Sourcing & traceability</p><h2>Connect paper records to the finished order</h2><p>For applicable paper products, sourcing information and internal production-lot records may help EU buyers prepare their own EUDR due-diligence review.</p><a class="text-link" href="/eudr-traceability/">Review EUDR support →</a></article>
+    <article><p class="eyebrow">Factory quality</p><h2>Control the approved specification</h2><p>Incoming material, dimensions, appearance, print, pack count and shipment preparation can be checked at relevant points. Required controls should be agreed for the order.</p><a class="text-link" href="/factory-certificates/#quality-management">Explore quality management →</a></article>
+  </section>
+  <section class="section buyer-checklist"><div class="section-heading"><p class="eyebrow">Buyer checklist</p><h2>Information needed for a useful document review</h2></div><div class="badge-grid"><span>Exact product and construction</span><span>Intended food-contact conditions</span><span>Destination market</span><span>Required claim or protocol</span><span>Current sample identity</span></div></section>
+  ${ctaBand("Request documents matched to your product and market")}`;
+  return layout({
+    route: "/compliance/",
+    title: "Food Paper Packaging Compliance Center | LANGMAI",
+    description: "Review LANGMAI food-contact, PFAS-free, LFGB, BfR, FDA-related, EUDR and factory-quality support by product construction and destination market.",
+    content,
+    bodyClass: "preview-landing",
+  });
+}
+
+function customOemPage() {
+  const steps = [
+    ["01", "Requirement confirmation", "Share the food application, size, material performance, quantity, destination market, artwork and pack requirements."],
+    ["02", "Sample development", "Confirm construction, artwork, color, dimensions and pack presentation through an agreed sample route."],
+    ["03", "Approved production", "Manufacture against the approved material, artwork, sample and packing instruction."],
+    ["04", "Quality inspection", "Review relevant material, dimensions, appearance, print, pack count and shipment preparation checkpoints."],
+    ["05", "Global delivery", "Coordinate export cartons, shipping marks, documents and the agreed delivery plan."],
+  ];
+  const content = `<section class="oem-hero-new">
+    <div><p class="eyebrow">Custom printing & OEM</p><h1>Turn your paper packaging brief into an approved sample.</h1><p>LANGMAI connects product selection, artwork, printing, sampling, production, inspection and export packing for branded food paper programs.</p><div class="hero-actions"><a class="button primary" href="/inquiry/">Start Your OEM Project</a><a class="button secondary" href="/assets/catalog-preview-clean.jpg" target="_blank" rel="noopener">View Catalogue Preview</a></div><p class="hero-microcopy">Bring a logo, target drawing, current item or reference sample.</p></div>
+    <figure><img src="/assets/factory-real-printing-process-1600.webp" width="1600" height="900" fetchpriority="high" decoding="async" alt="Printed food paper web moving through LANGMAI production equipment"><figcaption>Real printing line in the LANGMAI factory</figcaption></figure>
+  </section>
+  <section class="section oem-printing-note"><div class="section-heading"><p class="eyebrow">Printing workflow</p><h2>Artwork and paper construction are approved together.</h2><p>We review print coverage, colors, artwork repeat, paper surface and intended food use before sampling. “Printing first. Silicone coating after.” applies only to selected approved printed parchment constructions where that sequence is part of the agreed specification; it is not a blanket claim for every product.</p></div><div class="home-capability-list"><article><h3>Artwork & color review</h3><p>Confirm files, print colors, repeat, coverage and the reference sample before production.</p></article><article><h3>Material & treatment review</h3><p>Match paper, coating or treatment to the required release, grease, temperature and food-contact conditions.</p></article><article><h3>Pack presentation</h3><p>Plan bulk, foodservice, retail or private-label packs with labels, counts and export cartons.</p></article></div></section>
+  <section class="section"><div class="section-heading"><p class="eyebrow">Five-stage OEM process</p><h2>A clear path from requirement to repeat order.</h2></div><div class="oem-process">${steps.map(([number, title, text]) => `<article><span>${number}</span><div><h3>${title}</h3><p>${text}</p></div></article>`).join("")}</div></section>
+  <section class="split-section oem-brief"><div><p class="eyebrow">Project brief</p><h2>The more specific the brief, the more useful the first sample.</h2><ul class="check-list"><li>Product type, size or reference sample</li><li>Food application and use conditions</li><li>Artwork, print colors and packaging format</li><li>Estimated quantity and destination market</li><li>Required documents and target timing</li></ul></div><div>${leadForm("Custom printed food paper packaging")}</div></section>
+  ${ctaBand("Ready to turn your packaging idea into a sample-ready specification?")}`;
+  return layout({
+    route: "/custom-oem/",
+    title: "Custom Printing & OEM Food Paper Packaging | LANGMAI",
+    description: "Develop custom printed baking paper, food wrapping and paper packaging with LANGMAI through artwork review, sampling, production, inspection and global delivery.",
+    content,
+    bodyClass: "preview-landing",
+  });
+}
+
 function pfasFreePage() {
   const faq = [
     ["Does PFAS-free mean the same thing in every market?", "No. Definitions, thresholds and buyer protocols can differ. The intended claim, destination market, product construction and agreed test method should be confirmed before approval."],
@@ -1574,7 +1815,7 @@ function pfasFreePage() {
   </section>
   <section class="trust-strip"><span>Product-specific scope</span><span>Material and supplier review</span><span>Test-evidence matching</span><span>Repeat-order change control</span></section>
   <section class="section">
-    <div class="section-heading"><p class="eyebrow">What the claim means</p><h2>Define 鈥淧FAS-free鈥?before selecting a paper</h2><p>PFAS is a broad group of substances, and market rules or customer protocols may use different definitions, methods and reporting thresholds. A useful sourcing program begins with the intended claim and the finished product鈥攏ot a blanket statement about every paper item.</p></div>
+    <div class="section-heading"><p class="eyebrow">What the claim means</p><h2>Define “PFAS-free” before selecting a paper</h2><p>PFAS is a broad group of substances, and market rules or customer protocols may use different definitions, methods and reporting thresholds. A useful sourcing program begins with the intended claim and the finished product—not a blanket statement about every paper item.</p></div>
     <div class="evidence-grid">
       <article><h3>Intended use</h3><p>Record the food type, temperature, contact time, baking or cooking conditions and expected grease or moisture performance.</p></article>
       <article><h3>Product construction</h3><p>Identify the base paper, coating or treatment, ink system, adhesive where relevant, forming process and finished format.</p></article>
@@ -1677,32 +1918,28 @@ function marketPage(region) {
 
 function applicationsPage() {
   const applications = [
-    ["Bakery and confectionery", "Cupcake liners, roll-mouth baking cups and muffin cup liners for daily production, seasonal launches and branded displays.", "cake-cups-clean.jpg"],
-    ["Large supermarkets", "Bulk carton packaging, retail-ready designs and repeatable product specifications for supermarket baking and party aisles.", "product-gallery.jpg"],
-    ["Importers and distributors", "Mixed categories including cupcake liners, air fryer liners, paper straws and party accessories for regional wholesale channels.", "air-fryer-liners-clean.jpg"],
-    ["Party and event supply", "Themed cups, toppers, straws, cake boards and disposable tableware sets for birthday, holiday and celebration ranges.", "party-accessories-clean.jpg"],
+    ["Bakery Packaging", "/applications/bakery/", "ai-cake-cups-premium.jpg", "Cake cups, cupcake liners, baking paper and custom bakery packaging for artisan bakeries, chains, dessert brands and food manufacturers.", ["Cake cups", "Baking paper", "Custom OEM"]],
+    ["Cafe Packaging", "/applications/cafe/", "banner-paper-straws-1448.webp", "Straight and bendable paper straws, bakery cups and greaseproof paper for coffee shops, cafe chains and beverage brands.", ["Paper straws", "Cafe bakery cups", "Greaseproof paper"]],
+    ["Food Service Packaging", "/applications/food-service/", "food-wrap-burger.webp", "Greaseproof sheets, burger paper and food wrapping formats for restaurants, takeaway brands, chains and food manufacturers.", ["Greaseproof paper", "Burger wrapping", "Food wrapping"]],
   ];
-  const content = `<section class="page-hero">
-    <p class="eyebrow">Applications</p>
-    <h1>Applications for Bakeries, Supermarkets and Importers</h1>
-    <p>Match each product category with real buyer scenarios worldwide, from bakery displays and supermarket shelves to mixed wholesale containers.</p>
+  const content = `<section class="applications-hub-hero">
+    <p class="eyebrow">Packaging applications</p>
+    <h1>Food Paper Packaging Solutions Built Around Your Industry</h1>
+    <p>Start with the way the packaging will be used. LANGMAI connects bakery, cafe and foodservice requirements with the right paper construction, format, OEM process and buyer evidence.</p>
+    <div class="hero-actions"><a class="button primary" href="#application-paths">Explore Industry Solutions</a><a class="button secondary" href="/inquiry/">Request Relevant Samples</a></div>
   </section>
-  <section class="section">
-    <div class="product-grid">${applications
-      .map(
-        ([title, text, image]) => `<article class="product-card">
-        <img src="/assets/${image}" alt="${esc(title)} application for LANGMAI products">
-    <div><h2>${esc(title)}</h2><p>${esc(text)}</p><a class="text-link" href="/inquiry/" data-cta-type="quote">Discuss this application</a></div>
-      </article>`,
-      )
-      .join("")}</div>
+  <section class="section applications-hub-intro"><div><p class="eyebrow">Why application-led sourcing</p><h2>One Paper Product Can Perform Differently in Every Use</h2></div><p>Food, beverage, temperature, grease, contact time, equipment and selling format affect the final specification. These industry paths help buyers reach the relevant products and prepare a useful sample request faster.</p></section>
+  <section class="section applications-hub-grid" id="application-paths">${applications.map(([title, href, image, text, products], index) => `<a href="${href}" class="applications-hub-card"><img src="/assets/${image}" loading="${index === 0 ? "eager" : "lazy"}" decoding="async" alt="${esc(title)} solution from LANGMAI"><div><span>0${index + 1}</span><h2>${esc(title)}</h2><p>${esc(text)}</p><ul>${products.map((item) => `<li>${esc(item)}</li>`).join("")}</ul><strong>Explore ${esc(title)} →</strong></div></a>`).join("")}</section>
+  <section class="section application-conversion-flow"><div class="section-heading"><p class="eyebrow">From use case to approved order</p><h2>A Clear Path for B2B Packaging Buyers</h2></div><ol><li><span>01</span><h3>Choose an industry</h3><p>Start from the bakery, cafe or foodservice application.</p></li><li><span>02</span><h3>Review relevant products</h3><p>Compare formats that fit the food, beverage and workflow.</p></li><li><span>03</span><h3>Define the specification</h3><p>Confirm dimensions, performance, artwork, packing and evidence.</p></li><li><span>04</span><h3>Request samples</h3><p>Approve a representative product before bulk production.</p></li></ol></section>
+  <section class="section applications-hub-links"><div><p class="eyebrow">Buyer support</p><h2>Continue from Application to Approval</h2></div><div class="link-grid"><a href="/products/">Browse All Products</a><a href="/custom-oem/">Review Custom OEM</a><a href="/compliance/">Visit Compliance Center</a><a href="/inquiry/">Request Samples & Quote</a></div>
   </section>
-  ${ctaBand("Tell us your product channel and destination country")}`;
+  ${ctaBand("Tell us the application, destination and expected order")}`;
   return layout({
     route: "/applications/",
-    title: "Applications | LANGMAI Baking Paper Products",
-    description: "Application scenarios for LANGMAI cupcake liners, air fryer liners, muffin cups, paper straws and party accessories for bakeries, supermarkets and importers.",
+    title: "Food Paper Packaging Applications | Bakery, Cafe & Food Service",
+    description: "Explore LANGMAI bakery, cafe and foodservice paper packaging solutions, with relevant products, custom OEM support, compliance review and sample inquiry paths.",
     content,
+    bodyClass: "applications-hub-page",
   });
 }
 
@@ -1719,7 +1956,7 @@ function casesPage() {
   </section>
   <section class="section"><div class="product-grid">${cases.map(([title, text, image]) => `<article class="product-card">
     <img src="/assets/${image}" alt="${esc(title)} for LANGMAI overseas buyers">
-    <div><h2>${esc(title)}</h2><p>${esc(text)}</p><a class="text-link" href="/inquiry/" data-cta-type="quote">Discuss a similar project</a></div>
+    <div><h2>${esc(title)}</h2><p>${esc(text)}</p><a class="text-link" href="/inquiry/">Discuss a similar project</a></div>
   </article>`).join("")}</div></section>
   ${ctaBand("Planning a private-label paper packaging project?")}`;
   return layout({
@@ -1741,138 +1978,40 @@ function customStepText(i) {
 }
 
 function factoryPage() {
-  const content = `<section class="page-hero">
-    <p class="eyebrow">Compliance, factory and quality</p>
-    <h1>Baking Paper Compliance Documents & Factory Quality</h1>
-    <p>Review LANGMAI evidence in four practical groups: food-contact documents, PFAS evidence, sustainability and paper sourcing, and factory-quality management. Final scope, validity and product applicability should be confirmed for each order.</p>
-  </section>
-  <section class="split-section">
-    <img src="/assets/ai-quality-export-packaging.jpg" alt="LANGMAI quality control and export packaging">
-    <div>
-      <h2>Use documents as product evidence鈥攏ot as a badge list</h2>
-      <p>A useful buyer review connects each declaration, report or certificate to the correct company, site, material, tested construction, intended use and validity period.</p>
-      <ul class="check-list"><li>Identify whether the file covers the factory, management system, raw material or finished product.</li><li>Check the sample description, test method, date, issuing body and destination-market relevance.</li><li>Confirm whether changes in paper, coating, ink or supplier require a new review.</li></ul>
-    </div>
-  </section>
-  <section class="section compliance-groups">
-    <article id="food-contact"><p class="eyebrow">01 路 Food-contact documents</p><h2>Product and intended-use evidence</h2><p>Available LFGB, DGCCRF and related food-contact reports can support buyer review when the tested paper or finished construction represents the proposed order. Confirm food type, contact conditions, temperature and test scope.</p><div class="badge-grid"><span>LFGB</span><span>BfR review</span><span>DGCCRF</span><span>Product-specific scope</span></div></article>
-    <article id="pfas-evidence"><p class="eyebrow">02 路 PFAS evidence</p><h2>Declarations and testing matched to construction</h2><p>PFAS-related evidence may include supplier declarations, material statements or product-specific reports. Review analyte scope, method, reporting limits and sample identity before using a commercial claim.</p><div class="hero-actions"><a class="button secondary" href="/pfas-free-baking-paper/">See PFAS-Free Program</a></div></article>
-    <article id="sustainability-sourcing"><p class="eyebrow">03 路 Sustainability and paper sourcing</p><h2>FSC and EUDR are separate workstreams</h2><p>FSC documentation can support certified sourcing claims for the applicable paper and chain-of-custody route. EUDR requires product-scope analysis and due-diligence data such as origin, species and geolocation; it is not a product certificate.</p><div class="hero-actions"><a class="button secondary" href="/assets/cert-fsc.pdf" target="_blank" rel="noopener">View FSC PDF</a><a class="button secondary" href="/eudr-traceability/">Review EUDR Support</a></div></article>
-    <article id="quality-management"><p class="eyebrow">04 路 Factory and quality management</p><h2>Site, process and shipment controls</h2><p>${company.name} operates a ${company.plant} factory with ${company.team}. Available BSCI, BRC and ISO-related files support supplier screening, while order-level control should still cover approved materials, dimensions, artwork, production lots, pack counts and shipment preparation.</p><div class="badge-grid"><span>BSCI</span><span>BRC</span><span>ISO</span><span>Incoming material</span><span>Production lot</span><span>Final packing</span></div></article>
-  </section>
-  <section class="image-band"><img src="/assets/factory-workshop.jpg" loading="lazy" decoding="async" alt="LANGMAI baking paper workshop"><img src="/assets/ai-langmai-ip-showroom.jpg" loading="lazy" decoding="async" alt="LANGMAI baking paper samples and showroom"><img src="/assets/showroom.jpg" loading="lazy" decoding="async" alt="LANGMAI finished product showroom"></section>
-  <section class="section"><p class="eyebrow">Document previews</p><h2>Files available for initial buyer screening</h2><p class="note">These previews help buyers identify the available evidence. Current validity, issuing party, exact report number, tested construction and order applicability should be confirmed during the RFQ and approval process.</p>${certificateCards()}</section>
-  ${ctaBand("Need documents for importer approval?")}`;
+  const content = `<section class="factory-hero-new"><div><p class="eyebrow">Factory & process evidence</p><h1>See how food paper moves from roll to finished pack.</h1><p>LANGMAI combines printing, roll processing, converting and packing in a ${company.plant} site supported by a ${company.team}. The exact process depends on the approved paper construction and product format.</p><div class="hero-actions"><a class="button primary" href="/inquiry/">Ask for a Factory Review</a><a class="button secondary" href="#document-library">View Document Library</a></div></div><figure><img src="/assets/factory-real-overview-1600.webp" width="1600" height="1200" fetchpriority="high" decoding="async" alt="LANGMAI paper packaging production floor with roll-processing equipment"><figcaption>Real production view from LANGMAI</figcaption></figure></section>
+  <section class="trust-strip" aria-label="Factory facts"><span>Founded in ${company.founded}</span><span>${company.plant} site</span><span>${company.team}</span><span>Export-ready packing support</span></section>
+  <section class="section factory-process-section"><div class="section-heading"><p class="eyebrow">Production capability</p><h2>Four visible stages behind the finished product.</h2><p>These photos document the factory environment and equipment. They do not replace an order-specific process review or product certificate.</p></div><div class="factory-process-grid"><article><img src="/assets/factory-real-printing-wide-1600.webp" loading="lazy" decoding="async" alt="LANGMAI printing line with large paper rolls"><div><span>01</span><h3>Printing</h3><p>Artwork, print coverage and ink options are reviewed against the selected food-paper construction before a sample is approved.</p></div></article><article><img src="/assets/factory-real-roll-line-1600.webp" loading="lazy" decoding="async" alt="LANGMAI roll-processing equipment in a clean production area"><div><span>02</span><h3>Coating & roll processing</h3><p>Where the approved construction calls for coating or treatment, roll processing is arranged against its material, food-contact and performance specification.</p></div></article><article><img src="/assets/factory-real-converting-1600.webp" loading="lazy" decoding="async" alt="LANGMAI paper converting equipment for finished food packaging formats"><div><span>03</span><h3>Converting</h3><p>Slitting, sheets, perforation, die-cutting, forming and bag making are selected for the required finished format.</p></div></article><article><img src="/assets/factory-real-production-team-1600.webp" loading="lazy" decoding="async" alt="LANGMAI production team working in the paper packaging workshop"><div><span>04</span><h3>Production team & packing</h3><p>People, packing instructions, lot identification and shipment preparation keep the approved version connected to the export carton.</p></div></article></div></section>
+  <section class="split-section factory-quality-note"><div><p class="eyebrow">Quality management</p><h2>Use factory evidence to ask better approval questions.</h2><p>A useful buyer review connects each declaration, report or certificate to the correct company, site, material, tested construction, intended use and validity period.</p><ul class="check-list"><li>Confirm whether a file covers the factory, management system, raw material or finished product.</li><li>Check sample description, test method, date, issuing body and destination-market relevance.</li><li>Record the approved material, dimensions, artwork, production lot, pack count and shipment checks.</li></ul></div><img src="/assets/factory-real-printing-process-1600.webp" loading="lazy" decoding="async" alt="Printed paper web moving through LANGMAI production equipment"></section>
+  <section class="section compliance-groups"><article id="food-contact"><p class="eyebrow">01 · Food-contact documents</p><h2>Product and intended-use evidence</h2><p>Available LFGB, DGCCRF and related food-contact reports can support buyer review when the tested paper or finished construction represents the proposed order. Confirm food type, contact conditions, temperature and test scope.</p><div class="badge-grid"><span>LFGB</span><span>BfR review</span><span>DGCCRF</span><span>Product-specific scope</span></div></article><article id="pfas-evidence"><p class="eyebrow">02 · PFAS evidence</p><h2>Declarations and testing matched to construction</h2><p>PFAS-related evidence may include supplier declarations, material statements or product-specific reports. Review analyte scope, method, reporting limits and sample identity before using a commercial claim.</p><a class="text-link" href="/pfas-free-baking-paper/">Review PFAS-free options →</a></article><article id="sustainability-sourcing"><p class="eyebrow">03 · Sustainability and paper sourcing</p><h2>FSC and EUDR are separate workstreams</h2><p>FSC documentation can support certified sourcing claims for the applicable paper and chain-of-custody route. EUDR requires product-scope analysis and due-diligence data such as origin, species and geolocation; it is not a product certificate.</p><div class="hero-actions"><a class="button secondary" href="/assets/cert-fsc.pdf" target="_blank" rel="noopener">View FSC PDF</a><a class="button secondary" href="/eudr-traceability/">Review EUDR Support</a></div></article><article id="quality-management"><p class="eyebrow">04 · Factory and quality management</p><h2>Site, process and shipment controls</h2><p>Available BSCI, BRC and ISO-related files support supplier screening. Order-level control should still cover approved materials, dimensions, artwork, production lots, pack counts and shipment preparation.</p><div class="badge-grid"><span>BSCI</span><span>BRC</span><span>ISO</span><span>Incoming material</span><span>Production lot</span><span>Final packing</span></div></article></section>
+  <section class="section" id="document-library"><p class="eyebrow">Document previews</p><h2>Files available for initial buyer screening.</h2><p class="note">These previews help buyers identify the available evidence. Current validity, issuing party, exact report number, tested construction and order applicability should be confirmed during the RFQ and approval process.</p>${certificateCards()}</section>
+  ${ctaBand("Need factory or product documents for importer approval?")}`;
   return layout({
     route: "/factory-certificates/",
-    title: "Baking Paper Compliance Documents & Factory | LANGMAI",
-    description: "Review LANGMAI food-contact documents, PFAS evidence, FSC and EUDR sourcing support, plus BSCI, BRC, ISO and factory quality management.",
+    title: "Food Paper Packaging Factory & Quality Evidence | LANGMAI",
+    description: "See LANGMAI printing, roll processing, converting and packing capability, then review available food-contact, PFAS, sourcing and factory-quality documents.",
     content,
   });
 }
 
 function aboutPage() {
-  const content = `<section class="page-hero">
-    <p class="eyebrow">About LANGMAI</p>
-    <h1>About LANGMAI: Food Paper Packaging Manufacturer Since 2006</h1>
-    <p>${company.name} is a paper baking and food packaging manufacturer based in ${company.city}. LANGMAI supports importers, distributors, bakery and confectionery businesses, foodservice buyers and large supermarkets with product development, OEM/ODM customization and export-ready order support.</p>
-  </section>
-  <section class="trust-strip about-facts" aria-label="LANGMAI company facts">
-    <span><strong>${company.founded}</strong> founded</span>
-    <span><strong>${company.plant}</strong> factory</span>
-    <span><strong>${company.team}</strong></span>
-    <span><strong>Global B2B</strong> export support</span>
-  </section>
-  <section class="split-section">
-    <img src="/assets/founder.jpg" loading="lazy" decoding="async" alt="LANGMAI founder and overseas buyer contact">
-    <div>
-      <p class="eyebrow">Company profile</p>
-      <h2>From paper baking products to complete buyer-ready programs</h2>
-      <p>Founded in ${company.founded}, LANGMAI has developed around paper products used in baking, food preparation, beverage service and retail presentation. The range includes cupcake liners, muffin and roll-mouth baking cups, baking paper, air fryer paper liners, greaseproof paper, paper straws and selected paper party accessories.</p>
-      <p>The company combines product manufacturing with practical project support. Buyers can discuss paper type, dimensions, forming method, printing, color, pack count, retail presentation and export-carton requirements as one controlled specification rather than sourcing each step separately.</p>
-      <p>${company.contact} is the named contact for overseas inquiries, helping buyers connect product requirements with samples, document review and quotation follow-up.</p>
-      <div class="hero-actions"><a class="button primary" href="/inquiry/">Contact ${company.contact}</a><a class="button secondary" href="/factory-certificates/">Review Factory Evidence</a></div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="section-heading">
-      <p class="eyebrow">Factory and processing</p>
-      <h2>Manufacturing capabilities behind the finished paper product</h2>
-      <p>The ${company.plant} site and ${company.team} support the conversion of food-contact paper into formed, printed and packed products. The exact process depends on the approved construction and intended use.</p>
-    </div>
-    <div class="solution-grid">
-      <article><h3>Printing</h3><p>Custom colors and patterns can be prepared with low-odor food-paper ink options, subject to artwork, material and destination-market review.</p></article>
-      <article><h3>Slitting and die-cutting</h3><p>Paper is converted to the dimensions and shapes required for liners, sheets, cups and other finished formats.</p></article>
-      <article><h3>Perforation</h3><p>Hole patterns can be matched to air fryer, steaming and food-preparation applications where airflow or moisture release is required.</p></article>
-      <article><h3>Forming</h3><p>Fluted liners, muffin cups, roll-mouth cups and formed paper liners are produced against approved dimensions and samples.</p></article>
-      <article><h3>Bag making and retail packing</h3><p>Inner packs, retail quantities, labels and carton configuration can be planned for wholesale, supermarket and private-label channels.</p></article>
-      <article><h3>Export-carton preparation</h3><p>Pack counts, carton marks and shipment presentation are confirmed before dispatch to support receiving and repeat orders.</p></article>
-    </div>
-  </section>
-  <section class="image-band about-gallery">
-    <img src="/assets/factory-workshop.jpg" loading="lazy" decoding="async" alt="LANGMAI paper product workshop in Jinhua">
-    <img src="/assets/showroom.jpg" loading="lazy" decoding="async" alt="LANGMAI showroom with baking paper products">
-    <img src="/assets/ai-langmai-ip-showroom.jpg" loading="lazy" decoding="async" alt="LANGMAI branded product range for overseas buyers">
-  </section>
-  <section class="section">
-    <div class="section-heading">
-      <p class="eyebrow">Product portfolio</p>
-      <h2>Paper products for baking, foodservice, retail and private label</h2>
-      <p>LANGMAI works with buyers who need either a focused product line or a mixed paper-product program supported by common sampling, packaging and documentation workflows.</p>
-    </div>
-    <div class="product-grid">
-      <article class="product-card"><img src="/assets/real-cake-cups-assortment.jpg" loading="lazy" decoding="async" alt="LANGMAI cupcake liners and paper baking cups"><div><h3>Cupcake liners and baking cups</h3><p>Standard, muffin, tulip, roll-mouth and decorative formats for bakeries, confectionery brands and retail baking ranges.</p><a class="text-link" href="/products/cake-cups/">View cake cups</a></div></article>
-      <article class="product-card"><img src="/assets/ai-air-fryer-liners-premium.jpg" loading="lazy" decoding="async" alt="LANGMAI round and square air fryer paper liners"><div><h3>Air fryer and cooking paper</h3><p>Round, square, flat, formed and perforated options for retail packs, foodservice and prepared-food programs.</p><a class="text-link" href="/products/air-fryer-paper-liners/">View air fryer liners</a></div></article>
-      <article class="product-card"><img src="/assets/real-paper-straws.jpg" loading="lazy" decoding="async" alt="LANGMAI colored paper straws"><div><h3>Paper straws and party paper products</h3><p>Paper straws plus selected paper accessories for beverage, bakery, event and seasonal retail channels.</p><a class="text-link" href="/products/paper-straws/">View paper straws</a></div></article>
-    </div>
-  </section>
-  <section class="section">
-    <div class="section-heading">
-      <p class="eyebrow">How LANGMAI works with buyers</p>
-      <h2>A documented path from requirement to repeat order</h2>
-      <p>The goal is to connect the commercial quotation, approved sample, product specification, packaging and shipment checks so that all parties review the same version.</p>
-    </div>
-    <div class="process-grid">${[
-      ["01", "Define the application", "Confirm the food, dimensions, temperature, contact time, sales channel, destination market and expected quantity."],
-      ["02", "Select the construction", "Match paper, coating, shape, print, color and pack format to the intended product and buyer requirements."],
-      ["03", "Review samples", "Check dimensions, appearance, forming, odor, grease resistance, use performance and production-style packaging."],
-      ["04", "Approve the specification", "Record the accepted material, size, artwork, pack count, carton details and relevant inspection points."],
-      ["05", "Produce and inspect", "Manufacture against the approved version and review product, packing, lot identification and shipment preparation."],
-      ["06", "Support repeat supply", "Use the approved specification and retained order records as the reference for reorders and controlled changes."],
-    ].map(([number, title, text]) => `<article><span>${number}</span><h3>${title}</h3><p>${text}</p></article>`).join("")}</div>
-  </section>
-  <section class="split-section">
-    <div>
-      <p class="eyebrow">Quality and documentation</p>
-      <h2>Evidence is reviewed against the product and destination market</h2>
-      <p>Available company and product files include previews or documents associated with BSCI, BRC, ISO, FSC, LFGB, DGCCRF and PFAS-related review. Buyers should confirm the current validity, issuing party, tested construction, intended use and market applicability for the exact item being ordered.</p>
-      <p>For applicable paper products, LANGMAI can also support EUDR-related paper-origin and lot-traceability discussions. EUDR is a due-diligence process rather than a product certificate, and the responsible EU operator retains its own scope, risk-assessment and declaration duties.</p>
-      <div class="badge-grid">${["BSCI", "BRC", "ISO", "FSC", "LFGB", "DGCCRF", "PFAS review", "EUDR traceability support"].map((item) => `<span>${item}</span>`).join("")}</div>
-    </div>
-    <img src="/assets/ai-quality-export-packaging.jpg" loading="lazy" decoding="async" alt="LANGMAI quality review and export packaging preparation">
-  </section>
-  <section class="section two-col">
-    <div>
-      <p class="eyebrow">Markets and buyer types</p>
-      <h2>Built for international B2B purchasing workflows</h2>
-      <p>LANGMAI serves buyers in ${company.markets}. Typical customers include ${company.customers}. Support can cover mixed-product inquiries, private-label artwork, samples, target-market documents, retail packing and export cartons.</p>
-    </div>
-    <div>
-      <h2>What to send for a useful first review</h2>
-      <ul class="check-list"><li>Product photo, drawing or reference size</li><li>Material, food use and operating conditions</li><li>Estimated quantity and pack format</li><li>Custom print or private-label requirements</li><li>Destination country and required documents</li><li>Target delivery timing and port</li></ul>
-      <a class="button primary" href="/inquiry/">Send Your Requirements</a>
-    </div>
-  </section>
+  const content = `<section class="about-hero-new"><div><p class="eyebrow">About LANGMAI</p><h1>A paper packaging partner for practical B2B programs.</h1><p>${company.name} has supplied food paper products from ${company.city} since ${company.founded}. We work with importers, distributors, bakeries, foodservice buyers and private-label brands that need clear specifications, responsive sampling and export-ready packing.</p><div class="hero-actions"><a class="button primary" href="/contact/">Contact ${company.contact}</a><a class="button secondary" href="/factory-certificates/">Review Factory Evidence</a></div></div><figure><img src="/assets/factory-real-production-team-1600.webp" width="1600" height="900" fetchpriority="high" decoding="async" alt="LANGMAI production team working in the paper packaging workshop"><figcaption>People and process behind the finished paper format</figcaption></figure></section>
+  <section class="trust-strip about-facts" aria-label="LANGMAI company facts"><span><strong>${company.founded}</strong> founded</span><span><strong>${company.plant}</strong> site</span><span><strong>${company.team}</strong></span><span><strong>Global B2B</strong> export support</span></section>
+  <section class="split-section about-profile"><img src="/assets/factory-real-overview-1600.webp" loading="lazy" decoding="async" alt="LANGMAI paper packaging production floor"><div><p class="eyebrow">Company profile</p><h2>Clear product decisions make repeat orders easier.</h2><p>The product range covers cake cups, cupcake liners, muffin and tulip cups, baking parchment, air fryer liners, greaseproof wrapping paper, paper straws and selected paper accessories.</p><p>Buyers can discuss paper type, dimensions, forming, printing, color, pack count, retail presentation and export-carton requirements as one controlled specification rather than sourcing each step separately.</p><p>${company.contact} is the named contact for overseas inquiries, helping connect product requirements with samples, document review and quotation follow-up.</p></div></section>
+  <section class="section"><div class="section-heading"><p class="eyebrow">How we support a project</p><h2>From first brief to repeat supply.</h2></div><div class="process-grid">${[["01", "Define the application", "Confirm the food, dimensions, use conditions, destination market and quantity."],["02", "Select the construction", "Match paper, treatment, shape, print, color and pack format to the approved use."],["03", "Review samples", "Check appearance, dimensions, forming, odor, grease resistance and packing."],["04", "Approve the specification", "Record accepted material, size, artwork, pack count, carton details and inspection points."],["05", "Produce and inspect", "Manufacture against the approved version and review lot and shipment preparation."],["06", "Support repeat supply", "Use the approved specification as the reference for reorders and controlled changes."]].map(([number, title, text]) => `<article><span>${number}</span><h3>${title}</h3><p>${text}</p></article>`).join("")}</div></section>
+  <section class="section about-capabilities"><div class="section-heading"><p class="eyebrow">Factory capability</p><h2>Printing, converting and packing for food paper formats.</h2><p>The exact process depends on the approved construction and intended use.</p></div><div class="home-capability-list"><article><h3>Printing</h3><p>Artwork, colors and low-odor ink options are reviewed against the selected paper.</p></article><article><h3>Roll processing</h3><p>Paper rolls can be processed for the selected coating, treatment, width and downstream format.</p></article><article><h3>Converting</h3><p>Slitting, sheets, perforation, die-cutting, forming and bag making support finished formats.</p></article><article><h3>Packing</h3><p>Bulk, foodservice, retail and private-label packs can be planned with export cartons.</p></article></div></section>
+  <section class="image-band about-gallery"><img src="/assets/factory-real-printing-wide-1600.webp" loading="lazy" decoding="async" alt="LANGMAI printing line with paper rolls"><img src="/assets/factory-real-roll-line-1600.webp" loading="lazy" decoding="async" alt="LANGMAI roll processing equipment"><img src="/assets/factory-real-converting-1600.webp" loading="lazy" decoding="async" alt="LANGMAI paper converting equipment"></section>
+  <section class="section two-col"><div><p class="eyebrow">Markets and buyer types</p><h2>Built for international purchasing workflows.</h2><p>LANGMAI serves buyers in ${company.markets}. Typical customers include ${company.customers}. Support can cover mixed-product inquiries, private-label artwork, samples, target-market documents, retail packing and export cartons.</p></div><div><p class="eyebrow">Start a conversation</p><h2>Send the details that matter.</h2><ul class="check-list"><li>Product photo, drawing or reference size</li><li>Material, food use and operating conditions</li><li>Estimated quantity and pack format</li><li>Custom print or private-label requirements</li><li>Destination country and required documents</li><li>Target delivery timing and port</li></ul><a class="button primary" href="/inquiry/">Send Your Requirements</a></div></section>
+  <section class="split-section about-evidence"><div><p class="eyebrow">Quality and documentation</p><h2>Evidence is reviewed against the product and market.</h2><p>Available files include previews or documents associated with BSCI, BRC, ISO, FSC, LFGB, DGCCRF and PFAS-related review. Buyers should confirm current validity, issuing party, tested construction, intended use and market applicability for the exact item being ordered.</p><div class="badge-grid">${["BSCI", "BRC", "ISO", "FSC", "LFGB", "DGCCRF", "PFAS review", "EUDR support"].map((item) => `<span>${item}</span>`).join("")}</div></div><img src="/assets/cert-lfgb.png" loading="lazy" decoding="async" alt="Preview of an available LANGMAI LFGB food-contact test document"></section>
   ${ctaBand("Looking for a paper packaging manufacturer for your next program?")}`;
   return layout({
     route: "/about/",
     title: "About LANGMAI | Food Paper Packaging Manufacturer Since 2006",
-    description: "Learn about LANGMAI in Jinhua, China: founded in 2006 with a 30,000+ m虏 factory, 50+ team, paper baking products, OEM/ODM, quality and export support.",
+    description: "Learn about LANGMAI in Jinhua, China: a food paper packaging manufacturer supporting product development, custom printing, OEM sampling, quality review and export supply.",
     content,
   });
 }
 
-function contactPage(route = "/inquiry/") {
+function contactPage(route = "/contact/") {
   const htmlTemplate = `<form class="b2b-inquiry-form" method="post" action="/api/inquiry">
   <label>Name *<input name="name" required placeholder="Your full name"></label>
   <label>Email *<input type="email" name="email" required placeholder="buyer@example.com"></label>
@@ -1920,16 +2059,16 @@ export function B2BInquiryForm() {
         <p>Send your contact information and product requirements. Wilson's team can reply with pricing, sample route, catalog details and OEM/ODM options.</p>
         <div class="inquiry-proof">
           <span>30,000+ square meters factory</span>
-          <span>BSCI / ISO / FSC / FDA / LFGB</span>
+           <span>Available document review may include BSCI, ISO, FSC, LFGB and FDA-related support; verify product, scope and validity.</span>
           <span>WhatsApp quick reply</span>
         </div>
         <div class="inquiry-contact">
           <strong>${company.contact}</strong>
-          <a href="mailto:${company.email}" data-cta-type="email">${company.email}</a>
-          <a href="https://wa.me/8613645700210" data-cta-type="whatsapp">${company.whatsapp}</a>
+          <a href="mailto:${company.email}">${company.email}</a>
+          <a href="https://wa.me/8613645700210">${company.whatsapp}</a>
         </div>
       </div>
-      <form class="inquiry-form" data-inquiry-form data-form-type="${route.includes("sample") ? "sample" : "quote"}" novalidate>
+      <form id="sample" class="inquiry-form" data-inquiry-form novalidate>
         <input class="hp-field" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="form-row">
           <label>Name <span>*</span><input name="name" required placeholder="Your full name" data-error="Please enter your name."><small></small></label>
@@ -1995,7 +2134,7 @@ function newsPage() {
     <p class="eyebrow">Industry news</p>
     <h1>Baking Paper Packaging News</h1>
     <p>Daily buyer-focused updates on greaseproof paper, baking cups, air fryer paper liners, food-contact paper packaging, PFAS-free materials and EUDR compliance.</p>
-    <div class="hero-actions"><a class="button primary" href="/inquiry/">Ask for Product Support</a><a class="button secondary" href="/resources/">Read Buyer Guides</a></div>
+    <div class="hero-actions"><a class="button primary" href="/contact/">Ask for Product Support</a><a class="button secondary" href="/resources/">Read Buyer Guides</a></div>
   </section>
   <section class="section news-intro">
     <div class="section-heading">
@@ -2043,7 +2182,6 @@ function resourcePage(resource) {
     ${resource.date ? `<p class="note">Published ${esc(resource.date)}</p>` : ""}
     <p class="lede">${esc(resource.description)}</p>
     <div class="badge-grid"><span>${esc(resource.intent || "Procurement research")}</span><span>Practical supplier selection</span></div>
-    ${articleCommercialLink(resource)}
     ${eudrArticleNote}
     ${imageBlock}
     <div class="article-body">${resource.html.replace("</h2>", `</h2>${secondImage}`)}</div>
@@ -2062,7 +2200,7 @@ function resourcePage(resource) {
       <h2>Next steps</h2>
       <a href="/products/cake-cups/">View custom cupcake liners</a>
       <a href="/customization/">Review OEM customization process</a>
-      <a href="/inquiry/">Request a quote</a>
+      <a href="/contact/">Request a quote</a>
     </section>
   </article>`;
   return layout({
@@ -2082,7 +2220,7 @@ function landingPage(lp) {
       <h1>${esc(lp.title)}</h1>
       <p>${esc(lp.description)}</p>
       <ul class="check-list"><li>Food-grade materials for import buyers.</li><li>Custom sizes, colors, artwork and carton packaging.</li><li>Certificate documents and buyer verification notes are visible before RFQ.</li></ul>
-      <div class="hero-actions"><a class="button primary" href="#quote">Request Bulk Price</a><a class="button secondary" href="/products/${product.slug}/" data-cta-type="product" data-product="${esc(product.slug)}" aria-label="View ${esc(product.title)} main product page">View Product Details</a></div>
+      <div class="hero-actions"><a class="button primary" href="#quote">Request Bulk Price</a><a class="button secondary" href="/products/${product.slug}/">View Product Details</a></div>
     </div>
     <img src="${relAsset(product.image)}" alt="${esc(lp.title)} product details">
   </section>
@@ -2100,7 +2238,7 @@ function landingPage(lp) {
     title: `${lp.title} | LANGMAI Wholesale Supply`,
     description: lp.description,
     content,
-    schema: [productPageSchema(product, `/landing/${lp.slug}/`)],
+    schema: [productSchema(product)],
     bodyClass: "landing-page",
   });
 }
@@ -2143,18 +2281,18 @@ function breadcrumbSchema(route, title) {
   return { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: items };
 }
 
-function productPageSchema(product, route) {
+function productSchema(product) {
   return {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    url: `${baseUrl}${route}`,
+    "@type": "Product",
     name: product.title,
     description: product.short,
-    primaryImageOfPage: {
-      "@type": "ImageObject",
-      contentUrl: `${baseUrl}${relAsset(product.image)}`,
-    },
-    isPartOf: { "@type": "WebSite", name: "LANGMAI", url: baseUrl },
+    image: `${baseUrl}${relAsset(product.image)}`,
+    brand: { "@type": "Brand", name: "LANGMAI" },
+    manufacturer: { "@type": "Organization", name: company.name },
+    category: "Food paper packaging",
+    material: product.material,
+    additionalProperty: product.features.map((f) => ({ "@type": "PropertyValue", name: "Feature", value: f })),
   };
 }
 
@@ -2223,12 +2361,18 @@ function escapeRegExp(value) {
 }
 
 function translateHtml(html, localeData) {
-  let output = html;
+  const schemaBlocks = [];
+  let output = html.replace(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi, (block) => {
+    const token = `__LANGMAI_SCHEMA_BLOCK_${schemaBlocks.length}__`;
+    schemaBlocks.push([token, block]);
+    return token;
+  });
   const entries = Object.entries(localeData.phrases || {}).sort((a, b) => b[0].length - a[0].length);
   for (const [source, target] of entries) {
     if (!source || source === target) continue;
     output = output.replace(new RegExp(escapeRegExp(source), "g"), target);
   }
+  for (const [token, block] of schemaBlocks) output = output.replace(token, block);
   return output;
 }
 
@@ -2262,11 +2406,11 @@ function setLocalizedSeo(html) {
 function localeSwitcherHtml(route, currentLocale) {
   const localeNames = {
     en: "English",
-    es: "Espa帽ol",
-    ru: "袪褍褋褋泻懈泄",
-    ar: "丕賱毓乇亘賷丞",
-    fr: "Fran莽ais",
-    pt: "Portugu锚s",
+    es: "Español",
+    ru: "Русский",
+    ar: "العربية",
+    fr: "Français",
+    pt: "Português",
   };
   const switcherCodes = ["en", "es", "ru", "ar", "fr", "de", "pt"];
   localeNames.de = "Deutsch";
@@ -2342,7 +2486,7 @@ function writeStatic() {
     if (hiddenCatalogPages.has(file)) continue;
     fs.cpSync(path.join(assetSource, file), path.join(assetTarget, file), { recursive: true });
   }
-  fs.writeFileSync(path.join(distDir, "styles.css"), css + productTemplateCss + warmThemeCss);
+  fs.writeFileSync(path.join(distDir, "styles.css"), css + productTemplateCss + warmThemeCss + redesignCss);
   fs.writeFileSync(path.join(distDir, "site.js"), js);
   fs.writeFileSync(path.join(distDir, "social-links.example.json"), JSON.stringify({ socialLinks }, null, 2));
   fs.writeFileSync(path.join(distDir, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${baseUrl}/sitemap.xml\n`);
@@ -2477,6 +2621,15 @@ html,body{max-width:100%;overflow-x:hidden}main{min-width:0}.eudr-hero{min-width
 th{background:#6f4b38;color:#fff4df}.link-grid a,.badge-grid span{background:#fff4e4;border-color:rgba(217,168,92,.3);color:#456b55}.process-grid span{background:#e8bd75;color:#2f211b}.sample-box{background:#fff1dc}
 .cta-band{background:linear-gradient(135deg,#77503b,#6f8b65 72%,#d9a85c);border-color:rgba(255,225,170,.35)}.site-footer{background:linear-gradient(135deg,#5e4031,#496c55);border-top-color:rgba(255,225,170,.35)}.site-footer p{color:rgba(255,250,244,.78)}
 .whatsapp-float{background:linear-gradient(135deg,#4f9c68,#456b55);box-shadow:0 14px 34px rgba(69,107,85,.24),0 0 0 1px rgba(255,225,170,.35)}
+.preview-home{background:#fbfaf5}.preview-home .hero{min-height:760px}.preview-home .hero:after{background:linear-gradient(90deg,rgba(27,48,39,.88) 0%,rgba(27,48,39,.68) 46%,rgba(27,48,39,.14) 78%)}.preview-home .hero-copy{max-width:840px}.preview-home .hero h1{font-size:clamp(2.7rem,5.4vw,5.4rem);max-width:830px}.preview-home .hero-copy>p:not(.eyebrow){max-width:720px;font-size:1.18rem}.preview-home .hero-actions .button{min-width:190px}.preview-home .trust-strip{background:#28493b}
+.preview-solutions{padding-top:6rem;padding-bottom:6rem}.preview-solution-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem}.preview-solution-card{position:relative;display:flex;min-height:480px;overflow:hidden;border-radius:14px;padding:1.25rem;color:#fff;text-decoration:none;align-items:flex-end;background-position:center;background-size:cover;box-shadow:0 24px 52px rgba(33,50,42,.15);isolation:isolate}.preview-solution-card:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,37,30,.05),rgba(20,37,30,.88));z-index:-1}.preview-solution-card:after{content:"";position:absolute;inset:0;background:rgba(255,255,255,.08);opacity:0;transition:opacity .25s}.preview-solution-card:hover:after{opacity:1}.preview-solution-card.bakery{background-image:url("/assets/ai-cake-cups-premium.jpg")}.preview-solution-card.wrapping{background-image:url("/assets/food-wrap-burger.webp")}.preview-solution-card.beverage{background-image:url("/assets/banner-paper-straws-1448.webp")}.preview-solution-card>span{position:absolute;top:1.2rem;right:1.2rem;color:rgba(255,255,255,.8);font-size:.88rem;font-weight:900}.preview-solution-card p{margin:0 0 .35rem;color:#f4dca9;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;font-weight:900}.preview-solution-card h3{font-size:clamp(1.4rem,2.4vw,2.1rem);line-height:1.1;margin:.2rem 0 .9rem;color:#fff}.preview-solution-card small{font-weight:850;font-size:.92rem}
+.preview-advantages{max-width:none;background:#eaf0e8;padding-left:max(1rem,calc((100vw - 1180px)/2));padding-right:max(1rem,calc((100vw - 1180px)/2))}.preview-advantage-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}.preview-advantage-grid article{padding:1.35rem;border-top:3px solid #6f8b65;background:rgba(255,255,255,.75);box-shadow:0 14px 34px rgba(33,50,42,.07)}.preview-advantage-grid article>span{display:block;margin-bottom:1.3rem;color:#b48548;font-size:.8rem;font-weight:950}.preview-advantage-grid h3{color:#294b3d;margin:.2rem 0 .65rem}.preview-advantage-grid p{color:var(--muted);margin:0}
+.preview-applications{padding-top:6rem;padding-bottom:6rem}.application-paths{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #cfd8ce;border-bottom:1px solid #cfd8ce}.application-paths a{display:grid;gap:.35rem;padding:1.7rem;text-decoration:none;color:var(--ink);border-right:1px solid #cfd8ce;transition:background .2s}.application-paths a:last-child{border-right:0}.application-paths a:hover{background:#eef3ec}.application-paths strong{font-family:Georgia,"Times New Roman",serif;font-size:1.45rem;color:#294b3d}.application-paths span{color:var(--muted)}
+.preview-oem{padding-top:6rem;padding-bottom:6rem}.preview-oem img,.preview-factory img{min-height:520px}.compact-process{display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem;list-style:none;padding:0;counter-reset:compact}.compact-process li{position:relative;padding-top:2.4rem;color:#294b3d;font-size:.82rem;font-weight:850}.compact-process li:before{counter-increment:compact;content:"0" counter(compact);position:absolute;top:0;left:0;color:#b48548;font-size:.72rem}.compact-process li:not(:last-child):after{content:"";position:absolute;top:.55rem;left:1.8rem;width:calc(100% - 2rem);height:1px;background:#c7d2c6}
+.preview-compliance{display:grid;grid-template-columns:1.2fr .8fr;gap:3rem;align-items:center;max-width:none;padding:6rem max(1rem,calc((100vw - 1180px)/2));background:#254638;color:#fff}.preview-compliance h2{color:#fff}.preview-compliance>div>p:not(.eyebrow){color:rgba(255,255,255,.75)}.preview-compliance .eyebrow{color:#efd29d}.preview-compliance .badge-grid span{background:rgba(255,255,255,.08);border-color:rgba(239,210,157,.28);color:#fff}.preview-compliance img{display:block;width:100%;max-height:420px;object-fit:cover;object-position:top;border-radius:12px;box-shadow:0 25px 60px rgba(0,0,0,.25)}
+.preview-factory{padding-top:6rem;padding-bottom:6rem}.factory-stats{display:flex;gap:1.8rem;flex-wrap:wrap;margin:1.7rem 0}.factory-stats span{display:grid;color:var(--muted);font-size:.85rem}.factory-stats strong{color:#294b3d;font-family:Georgia,"Times New Roman",serif;font-size:1.85rem;line-height:1.1}
+.preview-knowledge{max-width:none;background:#f3ecdf;padding:6rem max(1rem,calc((100vw - 1180px)/2))}.knowledge-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.knowledge-grid>a{display:block;min-height:270px;padding:1.45rem;background:#fffdf8;border:1px solid rgba(86,112,91,.18);color:var(--ink);text-decoration:none;box-shadow:0 18px 38px rgba(43,59,49,.07);transition:transform .2s,box-shadow .2s}.knowledge-grid>a:hover{transform:translateY(-4px);box-shadow:0 24px 48px rgba(43,59,49,.12)}.knowledge-grid>a>span{display:block;color:#b48548;font-size:.8rem;font-weight:950}.knowledge-grid h3{margin:2.6rem 0 .7rem;font-family:Georgia,"Times New Roman",serif;font-size:1.35rem;color:#294b3d}.knowledge-grid p{color:var(--muted)}.knowledge-grid strong{display:block;margin-top:1.2rem;color:#456b55}
+.preview-landing{background:#fbfaf5}.preview-landing .landing-hero{max-width:none;padding:5rem max(1rem,calc((100vw - 1180px)/2));background:linear-gradient(135deg,#eef3eb,#f6ead8)}.preview-landing .landing-hero h1{max-width:760px;font-size:clamp(2.6rem,5vw,4.7rem);color:#294b3d}.preview-landing .landing-hero img{max-height:560px;min-height:460px}.application-products{max-width:none;padding-left:max(1rem,calc((100vw - 1180px)/2));padding-right:max(1rem,calc((100vw - 1180px)/2));background:#edf2e9}.application-checklist{align-items:start}.application-checklist .lead-form{margin:0}.compliance-preview-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.compliance-preview-grid>article{padding:1.7rem;background:#fff;border:1px solid rgba(86,112,91,.19);box-shadow:0 18px 38px rgba(43,59,49,.07);scroll-margin-top:120px}.compliance-preview-grid h2{font-size:1.55rem}.oem-process{display:grid;grid-template-columns:1fr;max-width:880px;margin:auto}.oem-process article{display:grid;grid-template-columns:80px 1fr;gap:1.4rem;padding:1.5rem 0;border-bottom:1px solid #d4ddd2}.oem-process article>span{font-family:Georgia,"Times New Roman",serif;font-size:2.2rem;color:#b48548}.oem-process h3{margin:.1rem 0 .4rem;color:#294b3d;font-size:1.35rem}.oem-process p{margin:0;color:var(--muted)}
 .ip-card{background:linear-gradient(145deg,rgba(255,253,248,.92),rgba(244,236,220,.82));box-shadow:0 24px 65px rgba(111,75,48,.14),inset 0 1px 0 rgba(255,255,255,.88)}
 .video-frame{background:linear-gradient(145deg,#7b523a,#f4dfbf 62%,#6f8b65);box-shadow:0 26px 70px rgba(111,75,48,.2),0 0 0 1px rgba(217,168,92,.28)}.video-frame:before{background:radial-gradient(circle at 18% 10%,rgba(255,244,220,.4),transparent 34%)}
 .footer-social a,.social-float a{background:linear-gradient(145deg,#fff0db,#d9a85c);border-color:rgba(139,90,60,.28);color:#5e4031;box-shadow:0 10px 28px rgba(111,75,48,.16),inset 0 1px 0 rgba(255,255,255,.42)}.footer-social a:hover,.social-float a:hover{border-color:#b36f4b;box-shadow:0 16px 36px rgba(179,111,75,.18),0 12px 30px rgba(111,75,48,.16)}
@@ -2494,9 +2647,15 @@ th{background:#6f4b38;color:#fff4df}.link-grid a,.badge-grid span{background:#ff
 .eudr-home{display:grid;grid-template-columns:.82fr 1.18fr;gap:2rem;align-items:start;background:linear-gradient(145deg,#3f2d24,#52715d);max-width:none;color:#fff;padding-left:max(1rem,calc((100vw - 1180px)/2));padding-right:max(1rem,calc((100vw - 1180px)/2));border-top:1px solid rgba(255,225,170,.3);border-bottom:1px solid rgba(255,225,170,.3)}.eudr-home .eyebrow{color:#f7dfb5}.eudr-home h2{color:#fff}.eudr-lede{color:rgba(255,250,244,.84);font-size:1.08rem}.eudr-actions{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.4rem}.eudr-flow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem}.eudr-flow article{display:grid;grid-template-columns:42px 1fr;gap:.75rem;padding:.9rem;border:1px solid rgba(255,225,170,.24);border-radius:8px;background:rgba(255,255,255,.08)}.eudr-flow span{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#e4b76d;color:#3a2a20;font-weight:950}.eudr-flow h3{margin:0;color:#fff;font-size:1rem}.eudr-flow p{margin:.2rem 0 0;color:rgba(255,250,244,.72);font-size:.9rem}.eudr-verification-note{grid-column:1/-1;padding:1rem;border-left:4px solid #e4b76d;background:rgba(255,250,244,.1)}.eudr-verification-note p{margin:.3rem 0 0;color:rgba(255,250,244,.8)}
 .product-eudr-support{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;padding:1.35rem!important;border:1px solid rgba(69,107,85,.25);border-radius:8px;background:linear-gradient(135deg,rgba(241,248,236,.9),rgba(255,244,228,.88))}.product-eudr-support h2{margin-top:.15rem}.eudr-data-list{margin:0;padding:1rem 1rem 1rem 2rem;border-radius:8px;background:rgba(255,255,255,.68);border:1px solid rgba(217,168,92,.2)}.eudr-data-list li{margin:.45rem 0}
 .eudr-hero{background:radial-gradient(circle at 88% 12%,rgba(217,168,92,.23),transparent 28%),linear-gradient(135deg,#eef5eb,#fff3df);border-bottom:1px solid rgba(217,168,92,.25)}.eudr-definition,.eudr-data-section{max-width:1180px}.eudr-scope-note,.eudr-boundaries{padding:1.2rem;border-radius:8px;background:#fff4e4;border:1px solid rgba(217,168,92,.3);box-shadow:0 16px 34px rgba(111,75,48,.08)}.eudr-scope-note p{margin:.4rem 0 0}.eudr-data-section{background:linear-gradient(135deg,rgba(255,244,228,.7),rgba(241,248,236,.64))}.eudr-data-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.eudr-data-grid article{padding:1rem;border-radius:8px;background:rgba(255,255,255,.76);border:1px solid rgba(217,168,92,.24);box-shadow:0 14px 30px rgba(111,75,48,.07)}.eudr-data-grid h3{margin:.1rem 0 .5rem;color:#385945}.eudr-data-grid p{margin:0;color:var(--muted)}.eudr-chain ol{display:grid;grid-template-columns:repeat(5,1fr);gap:.8rem;padding:0;list-style:none;counter-reset:eudr}.eudr-chain li{position:relative;padding:1rem;border-top:4px solid #6f8b65;background:#fffdf8;border-radius:8px;box-shadow:0 14px 30px rgba(111,75,48,.08)}.eudr-chain li:after{content:"";position:absolute;right:-.62rem;top:50%;width:.75rem;height:.75rem;border-top:2px solid #d9a85c;border-right:2px solid #d9a85c;transform:rotate(45deg)}.eudr-chain li:last-child:after{display:none}.eudr-chain strong,.eudr-chain span{display:block}.eudr-chain span{margin-top:.4rem;color:var(--muted);font-size:.92rem}.eudr-genetic{align-items:stretch}.eudr-genetic>div{padding:1.2rem}.eudr-official-sources{padding-top:2rem}.eudr-official-sources .link-grid a{border-radius:8px}
-@media (max-width:900px){.advantage-grid,.solution-grid,.evidence-grid,.pfas-product-module,.wrapping-inquiry-form{grid-template-columns:1fr}.advantage-section>.section-heading,.solution-section>.section-heading,.advantage-grid,.solution-grid{margin-left:0;margin-right:0}.wrapping-inquiry-form label,.wrapping-inquiry-form button,.wrapping-inquiry-form .form-note{grid-column:1}.wrapping-category-hero,.wrapping-product-hero{padding:3.2rem 1rem}.wrapping-category-hero img,.wrapping-product-hero img{max-height:none}}
+.premium-product-page{background:#fbfaf5}.premium-product-hero{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(380px,.96fr);gap:3.2rem;align-items:center;max-width:none;padding:5.5rem max(1rem,calc((100vw - 1180px)/2));background:radial-gradient(circle at 8% 12%,rgba(217,168,92,.18),transparent 28%),linear-gradient(135deg,#f6ead8 0%,#eef3eb 100%);border-bottom:1px solid rgba(86,112,91,.18)}.premium-hero-copy{min-width:0}.premium-hero-copy h1{max-width:780px;margin:.45rem 0 1.15rem;font-size:clamp(2.55rem,5vw,4.9rem);line-height:1.02;color:#294b3d}.premium-hero-copy>p:not(.eyebrow){max-width:720px;font-size:1.12rem;color:#655448}.premium-trust{display:flex;gap:.55rem;flex-wrap:wrap;margin:1.4rem 0}.premium-trust span{padding:.46rem .7rem;border:1px solid rgba(69,107,85,.25);border-radius:999px;background:rgba(255,255,255,.62);color:#385945;font-size:.82rem;font-weight:850}.premium-hero-media{position:relative;overflow:hidden;border-radius:16px;box-shadow:0 28px 65px rgba(43,59,49,.18)}.premium-hero-media img{display:block;width:100%;height:560px;object-fit:cover}.premium-hero-media:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 62%,rgba(26,44,36,.62))}.premium-hero-media>span{position:absolute;z-index:1;left:1.2rem;bottom:1.1rem;color:#fff;font-weight:900;letter-spacing:.04em}.paper-straws-premium .premium-hero-media img{object-position:center}.premium-overview,.premium-applications,.premium-specifications,.straw-types-section,.baking-family-section{padding-top:5.5rem;padding-bottom:5.5rem}.premium-feature-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}.premium-feature-grid article{padding:1.35rem;border-top:3px solid #6f8b65;background:#fff;border-radius:6px;box-shadow:0 16px 38px rgba(43,59,49,.08)}.premium-feature-grid article>span,.straw-type-grid article>span,.baking-family-grid a div>span{display:block;margin-bottom:1.5rem;color:#b48548;font-size:.78rem;font-weight:950}.premium-feature-grid h3,.straw-type-grid h3{margin:.2rem 0 .6rem;color:#294b3d}.premium-feature-grid p,.straw-type-grid p{margin:0;color:var(--muted)}.premium-application-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid #ccd7cc;border-bottom:1px solid #ccd7cc}.premium-application-grid article{padding:1.55rem;border-right:1px solid #ccd7cc}.premium-application-grid article:last-child{border-right:0}.premium-application-grid h3{margin:.1rem 0 .55rem;font-family:Georgia,"Times New Roman",serif;font-size:1.35rem;color:#294b3d}.premium-application-grid p{margin:0;color:var(--muted)}.premium-split{display:grid;grid-template-columns:1fr 1fr;gap:3.2rem;align-items:center;padding-top:5.5rem;padding-bottom:5.5rem}.premium-split>img{display:block;width:100%;height:520px;object-fit:cover;border-radius:14px;box-shadow:0 24px 58px rgba(43,59,49,.14)}.premium-oem-section{max-width:none;padding-left:max(1rem,calc((100vw - 1180px)/2));padding-right:max(1rem,calc((100vw - 1180px)/2));background:#edf2e9}.premium-oem-section .check-list{margin:1.3rem 0}.premium-spec-table table{min-width:760px}.premium-spec-table th{background:#294b3d;color:#fff}.premium-spec-table tr:nth-child(even) td{background:rgba(237,242,233,.7)}.premium-specifications .note{margin-top:1rem}.premium-compliance{display:grid;grid-template-columns:1.12fr .88fr;gap:3rem;align-items:center;max-width:none;padding:5.5rem max(1rem,calc((100vw - 1180px)/2));background:#254638;color:#fff}.premium-compliance h2,.premium-compliance h3{color:#fff}.premium-compliance p{color:rgba(255,255,255,.76)}.premium-compliance .eyebrow{color:#efd29d}.premium-evidence{padding:1.35rem;border:1px solid rgba(239,210,157,.24);border-radius:10px;background:rgba(255,255,255,.08)}.premium-evidence .check-list li{color:rgba(255,255,255,.86)}.premium-factory{max-width:1180px}.premium-rfq{display:grid;grid-template-columns:.85fr 1.15fr;gap:2.5rem;align-items:start;scroll-margin-top:120px}.premium-rfq .lead-form{margin:0}.baking-family-section{max-width:none;padding-left:max(1rem,calc((100vw - 1180px)/2));padding-right:max(1rem,calc((100vw - 1180px)/2));background:#f3ecdf}.baking-family-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.baking-family-grid>a{display:grid;grid-template-columns:180px 1fr;min-height:240px;overflow:hidden;border:1px solid rgba(86,112,91,.18);background:#fff;text-decoration:none;color:var(--ink);box-shadow:0 18px 40px rgba(43,59,49,.08);transition:transform .2s,box-shadow .2s}.baking-family-grid>a:hover{transform:translateY(-4px);box-shadow:0 24px 50px rgba(43,59,49,.13)}.baking-family-grid img{width:100%;height:100%;object-fit:cover}.baking-family-grid a>div{padding:1.25rem}.baking-family-grid h3{margin:.15rem 0 .65rem;font-family:Georgia,"Times New Roman",serif;font-size:1.35rem;color:#294b3d}.baking-family-grid p{color:var(--muted)}.baking-family-grid strong{color:#456b55}.straw-type-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}.straw-type-grid article{padding:1.35rem;border:1px solid rgba(86,112,91,.18);background:#fff;box-shadow:0 16px 38px rgba(43,59,49,.08)}.straw-type-grid article.featured{background:linear-gradient(145deg,#294b3d,#456b55);border-color:#294b3d}.straw-type-grid article.featured h3{color:#fff}.straw-type-grid article.featured p{color:rgba(255,255,255,.76)}.straw-type-grid article.featured>span{color:#efd29d}
+@media (max-width:900px){.advantage-grid,.solution-grid,.evidence-grid,.pfas-product-module,.wrapping-inquiry-form,.preview-solution-grid,.preview-advantage-grid,.knowledge-grid,.compliance-preview-grid{grid-template-columns:1fr}.advantage-section>.section-heading,.solution-section>.section-heading,.advantage-grid,.solution-grid{margin-left:0;margin-right:0}.wrapping-inquiry-form label,.wrapping-inquiry-form button,.wrapping-inquiry-form .form-note{grid-column:1}.wrapping-category-hero,.wrapping-product-hero{padding:3.2rem 1rem}.wrapping-category-hero img,.wrapping-product-hero img{max-height:none}.preview-home .hero{min-height:720px}.preview-home .hero h1{font-size:clamp(2.35rem,11vw,3.6rem)}.preview-home .hero:after{background:linear-gradient(90deg,rgba(27,48,39,.88),rgba(27,48,39,.62))}.preview-solution-card{min-height:390px}.application-paths{grid-template-columns:1fr}.application-paths a{border-right:0;border-bottom:1px solid #cfd8ce}.application-paths a:last-child{border-bottom:0}.preview-compliance{grid-template-columns:1fr;padding:4rem 1rem}.compact-process{grid-template-columns:1fr}.compact-process li{padding:.4rem 0 .4rem 2.4rem}.compact-process li:before{top:.4rem}.compact-process li:after{display:none}.preview-oem img,.preview-factory img,.preview-landing .landing-hero img{min-height:0}.factory-stats{gap:1.2rem}.preview-knowledge{padding:4rem 1rem}.knowledge-grid>a{min-height:0}.knowledge-grid h3{margin-top:1.5rem}}
+@media (max-width:900px){.premium-product-hero,.premium-feature-grid,.premium-application-grid,.premium-split,.premium-compliance,.premium-rfq,.baking-family-grid,.straw-type-grid{grid-template-columns:1fr}.premium-product-hero{padding:3.4rem 1rem;gap:2rem}.premium-hero-copy h1{font-size:clamp(2.25rem,11vw,3.4rem)}.premium-hero-media img{height:auto;max-height:470px}.premium-overview,.premium-applications,.premium-specifications,.straw-types-section,.baking-family-section,.premium-split{padding-top:4rem;padding-bottom:4rem}.premium-feature-grid,.straw-type-grid{gap:.75rem}.premium-application-grid article{border-right:0;border-bottom:1px solid #ccd7cc}.premium-application-grid article:last-child{border-bottom:0}.premium-split>img{height:auto;max-height:440px}.premium-oem-section,.baking-family-section,.premium-compliance{padding-left:1rem;padding-right:1rem}.premium-compliance{padding-top:4rem;padding-bottom:4rem}.premium-rfq{gap:1.5rem}.baking-family-grid>a{grid-template-columns:120px 1fr;min-height:220px}.baking-family-grid a>div{padding:1rem}.premium-trust{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.premium-trust span{display:flex;align-items:center;border-radius:8px;font-size:.74rem}.premium-spec-table{max-width:100%;overflow-x:auto}}
 @media (max-width:900px){.eudr-home,.product-eudr-support{grid-template-columns:1fr}.eudr-flow,.eudr-data-grid,.eudr-chain ol{grid-template-columns:1fr}.eudr-chain li:after{display:none}.eudr-home{padding-left:1rem;padding-right:1rem}.eudr-hero{width:100%;padding:3.2rem 1rem}.eudr-hero h1{font-size:2rem;line-height:1.08;word-break:normal}.eudr-hero p{font-size:1rem}.eudr-hero .hero-actions{display:grid;grid-template-columns:1fr}.eudr-hero .button{width:100%;max-width:100%;white-space:normal;text-align:center}.trust-strip span{max-width:100%;text-align:center}.eudr-flow article{min-width:0}.eudr-flow p,.eudr-data-grid p{overflow-wrap:anywhere}}
 @media (max-width:900px){.brand img{width:116px;height:40px}.brand{padding:.28rem .4rem}.header-inner{position:relative;width:100%;max-width:100%;min-width:0;overflow:hidden;padding:.55rem .7rem;gap:.35rem}.main-nav{width:100%;min-width:0;flex:0 1 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.08rem}.nav-item{min-width:0}.nav-link{width:100%;min-width:0;min-height:34px;padding:.3rem .2rem;font-size:.76rem;line-height:1.12;white-space:normal;overflow-wrap:anywhere}.language-switcher{position:absolute;right:.7rem;top:.75rem;margin:0}.language-menu{right:0;left:auto}.mega-menu{top:auto;padding-top:0}.nav-item:after{display:none!important}.hero-copy{padding:2.8rem 1rem}.hero-proof{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.4rem}.hero-proof span{display:flex;align-items:center;padding:.35rem .48rem;font-size:.72rem;line-height:1.2}.news-grid{grid-template-columns:1fr}.article,.longform-article{width:100%;min-width:0;overflow:hidden;padding:3.5rem 1rem}.article h1{font-size:clamp(1.9rem,9vw,2.5rem);overflow-wrap:anywhere}.article-body{min-width:0}.article-body table{display:block;max-width:100%;min-width:0;overflow-x:auto}.badge-grid{max-width:100%;min-width:0}.badge-grid span{max-width:100%;min-width:0;border-radius:8px;overflow-wrap:anywhere}.whatsapp-float{max-width:calc(100vw - 2rem)}}
+.premium-product-hero{padding-top:4.5rem;padding-bottom:4.5rem}.premium-hero-copy h1{font-size:clamp(2.55rem,4.35vw,4.25rem);line-height:1.04}
+@media (max-width:900px){.premium-product-hero{padding:3.4rem 1rem}.premium-hero-copy h1{font-size:clamp(2.25rem,11vw,3.4rem)}}
+.industry-application-page,.applications-hub-page{background:#fbfaf5}.industry-application-hero{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(380px,.96fr);gap:3.1rem;align-items:center;max-width:none;padding:4.5rem max(1rem,calc((100vw - 1180px)/2));background:radial-gradient(circle at 10% 10%,rgba(217,168,92,.18),transparent 28%),linear-gradient(135deg,#f6ead8,#eef3eb);border-bottom:1px solid rgba(86,112,91,.18)}.industry-application-hero h1{max-width:790px;margin:.45rem 0 1.1rem;font-size:clamp(2.55rem,4.35vw,4.25rem);line-height:1.04;color:#294b3d}.industry-application-hero>div>p:not(.eyebrow){max-width:720px;font-size:1.1rem;color:#655448}.application-trust{display:flex;gap:.5rem;flex-wrap:wrap;margin:1.35rem 0}.application-trust span{padding:.45rem .68rem;border:1px solid rgba(69,107,85,.25);border-radius:999px;background:rgba(255,255,255,.62);color:#385945;font-size:.8rem;font-weight:850}.industry-hero-image{position:relative;overflow:hidden;border-radius:16px;box-shadow:0 28px 65px rgba(43,59,49,.18)}.industry-hero-image img{display:block;width:100%;height:540px;object-fit:cover}.industry-hero-image:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 62%,rgba(26,44,36,.62))}.industry-hero-image>span{position:absolute;z-index:1;left:1.2rem;bottom:1.1rem;color:#fff;font-weight:900}.industry-challenges,.industry-products,.industry-scenarios,.industry-why{padding-top:5.5rem;padding-bottom:5.5rem}.industry-challenge-grid,.industry-why-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}.industry-challenge-grid article,.industry-why-grid article{padding:1.35rem;border-top:3px solid #6f8b65;background:#fff;box-shadow:0 16px 38px rgba(43,59,49,.08)}.industry-challenge-grid article>span{display:block;margin-bottom:1.5rem;color:#b48548;font-size:.78rem;font-weight:950}.industry-challenge-grid h3,.industry-why-grid h3{margin:.15rem 0 .6rem;color:#294b3d}.industry-challenge-grid p,.industry-why-grid p{margin:0;color:var(--muted)}.industry-products{max-width:none;padding-left:max(1rem,calc((100vw - 1180px)/2));padding-right:max(1rem,calc((100vw - 1180px)/2));background:#f3ecdf}.industry-product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.industry-product-grid>a{display:block;overflow:hidden;background:#fff;color:var(--ink);text-decoration:none;box-shadow:0 18px 40px rgba(43,59,49,.08);transition:transform .2s,box-shadow .2s}.industry-product-grid>a:hover{transform:translateY(-4px);box-shadow:0 24px 50px rgba(43,59,49,.13)}.industry-product-grid img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}.industry-product-grid a>div{padding:1.25rem}.industry-product-grid a span{color:#b48548;font-size:.78rem;font-weight:950}.industry-product-grid h3{margin:.8rem 0 .6rem;font-family:Georgia,"Times New Roman",serif;font-size:1.4rem;color:#294b3d}.industry-product-grid p{color:var(--muted)}.industry-product-grid strong{color:#456b55}.industry-scenario-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #ccd7cc;border-bottom:1px solid #ccd7cc}.industry-scenario-grid article{padding:1.5rem;border-right:1px solid #ccd7cc}.industry-scenario-grid article:last-child{border-right:0}.industry-scenario-grid h3{margin:.1rem 0 .55rem;font-family:Georgia,"Times New Roman",serif;font-size:1.3rem;color:#294b3d}.industry-scenario-grid p{margin:0;color:var(--muted)}.industry-customization{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem;align-items:start;max-width:none;padding:5.5rem max(1rem,calc((100vw - 1180px)/2));background:#edf2e9}.industry-custom-copy{position:sticky;top:125px}.industry-custom-list{display:grid;gap:.55rem}.industry-custom-list>div{display:grid;grid-template-columns:54px 1fr;gap:1rem;align-items:center;padding:1rem;border-bottom:1px solid #c9d5c8;background:rgba(255,255,255,.56)}.industry-custom-list span{color:#b48548;font-weight:950}.industry-custom-list p{margin:0;color:#294b3d;font-weight:850}.industry-compliance{display:grid;grid-template-columns:1.12fr .88fr;gap:3rem;align-items:center;max-width:none;padding:5.5rem max(1rem,calc((100vw - 1180px)/2));background:#254638;color:#fff}.industry-compliance h2,.industry-compliance h3{color:#fff}.industry-compliance p{color:rgba(255,255,255,.76)}.industry-compliance .eyebrow{color:#efd29d}.industry-evidence{padding:1.35rem;border:1px solid rgba(239,210,157,.24);border-radius:10px;background:rgba(255,255,255,.08)}.industry-evidence .check-list li{color:rgba(255,255,255,.86)}.industry-quote{display:grid;grid-template-columns:.85fr 1.15fr;gap:2.5rem;align-items:start;scroll-margin-top:120px}.industry-quote .lead-form{margin:0}.applications-hub-hero{max-width:none;padding:6rem max(1rem,calc((100vw - 1180px)/2));background:radial-gradient(circle at 82% 20%,rgba(217,168,92,.2),transparent 24%),linear-gradient(135deg,#eef3eb,#f6ead8)}.applications-hub-hero h1{max-width:930px;margin:.45rem 0 1rem;font-size:clamp(2.7rem,5vw,5rem);line-height:1.02;color:#294b3d}.applications-hub-hero>p:not(.eyebrow){max-width:780px;font-size:1.12rem;color:#655448}.applications-hub-intro{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem;align-items:end;padding-top:4.5rem;padding-bottom:3rem}.applications-hub-intro>p{font-size:1.08rem;color:var(--muted)}.applications-hub-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;padding-top:1rem;padding-bottom:5.5rem}.applications-hub-card{display:block;overflow:hidden;background:#fff;color:var(--ink);text-decoration:none;box-shadow:0 20px 44px rgba(43,59,49,.1);transition:transform .2s,box-shadow .2s}.applications-hub-card:hover{transform:translateY(-5px);box-shadow:0 28px 58px rgba(43,59,49,.15)}.applications-hub-card>img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}.applications-hub-card>div{padding:1.35rem}.applications-hub-card span{color:#b48548;font-size:.78rem;font-weight:950}.applications-hub-card h2{margin:.8rem 0 .6rem;font-family:Georgia,"Times New Roman",serif;font-size:1.55rem;color:#294b3d}.applications-hub-card p{color:var(--muted)}.applications-hub-card ul{display:flex;gap:.35rem;flex-wrap:wrap;padding:0;list-style:none}.applications-hub-card li{padding:.3rem .5rem;border-radius:999px;background:#edf2e9;color:#385945;font-size:.75rem;font-weight:850}.applications-hub-card strong{display:block;margin-top:1rem;color:#456b55}.application-conversion-flow{max-width:none;padding-left:max(1rem,calc((100vw - 1180px)/2));padding-right:max(1rem,calc((100vw - 1180px)/2));background:#f3ecdf}.application-conversion-flow ol{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;padding:0;list-style:none}.application-conversion-flow li{padding:1.2rem;border-top:3px solid #6f8b65;background:#fff}.application-conversion-flow span{color:#b48548;font-size:.78rem;font-weight:950}.application-conversion-flow h3{margin:1rem 0 .5rem;color:#294b3d}.application-conversion-flow p{margin:0;color:var(--muted)}.applications-hub-links{display:grid;grid-template-columns:.8fr 1.2fr;gap:2rem;align-items:end}
+@media (max-width:900px){.industry-application-hero,.industry-challenge-grid,.industry-product-grid,.industry-scenario-grid,.industry-customization,.industry-compliance,.industry-why-grid,.industry-quote,.applications-hub-intro,.applications-hub-grid,.application-conversion-flow ol,.applications-hub-links{grid-template-columns:1fr}.industry-application-hero{padding:3.4rem 1rem;gap:2rem}.industry-application-hero h1{font-size:clamp(2.25rem,11vw,3.4rem)}.industry-hero-image img{height:auto;max-height:470px}.application-trust{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.application-trust span{display:flex;align-items:center;border-radius:8px;font-size:.74rem}.industry-application-hero .hero-actions,.applications-hub-hero .hero-actions{display:grid;grid-template-columns:1fr}.industry-application-hero .button,.applications-hub-hero .button{width:100%;white-space:normal;text-align:center}.industry-challenges,.industry-products,.industry-scenarios,.industry-why{padding-top:4rem;padding-bottom:4rem}.industry-products,.industry-customization,.industry-compliance{padding-left:1rem;padding-right:1rem}.industry-scenario-grid article{border-right:0;border-bottom:1px solid #ccd7cc}.industry-scenario-grid article:last-child{border-bottom:0}.industry-customization,.industry-compliance{padding-top:4rem;padding-bottom:4rem}.industry-custom-copy{position:static}.industry-quote{gap:1.5rem}.applications-hub-hero{padding:4rem 1rem}.applications-hub-hero h1{font-size:clamp(2.35rem,11vw,3.5rem)}.applications-hub-intro{padding-top:3.5rem}.applications-hub-grid{padding-bottom:4rem}.application-conversion-flow{padding-left:1rem;padding-right:1rem}.whatsapp-float{display:flex;align-items:center;justify-content:center;width:52px;height:52px;padding:0;border-radius:50%;font-size:0}.whatsapp-float:after{content:"WA";font-size:.78rem;font-weight:950}}
 `;
 
 const js = `
@@ -2541,47 +2700,15 @@ const queueDeferredHeroSlides = () => {
 if (document.readyState === "complete") queueDeferredHeroSlides();
 else window.addEventListener("load", queueDeferredHeroSlides, { once: true });
 
-const inquiryPaths = new Set(["/inquiry/", "/de/kontakt/", "/de/muster-anfordern/", "/fr/contact/", "/fr/demande-echantillons/"]);
-const samplePaths = new Set(["/de/muster-anfordern/", "/fr/demande-echantillons/"]);
-const pageLocale = () => document.documentElement.lang || (window.location.pathname.startsWith("/de/") ? "de" : window.location.pathname.startsWith("/fr/") ? "fr" : "en");
-const pushCtaEvent = (eventName, link, destination) => {
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
-    event: eventName,
-    cta_label: link.textContent.replace(/\\s+/g, " ").trim().slice(0, 120),
-    cta_href: destination.protocol === "mailto:" ? destination.href.replace(/^mailto:/i, "mailto:") : destination.origin === window.location.origin ? destination.pathname + destination.hash : destination.href,
-    page_path: window.location.pathname,
-    locale: pageLocale(),
-    product: link.dataset.product || undefined,
+document.querySelectorAll(".mobile-menu-toggle").forEach((toggle)=>{
+  const targetId = toggle.getAttribute("aria-controls");
+  const target = targetId ? document.getElementById(targetId) : null;
+  if (!target) return;
+  toggle.addEventListener("click",()=>{
+    const isOpen = target.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", String(isOpen));
+    toggle.textContent = isOpen ? "Close" : "Menu";
   });
-};
-document.addEventListener("click", (event)=>{
-  const link = event.target.closest?.("a[href]");
-  if (!link) return;
-  let destination;
-  try {
-    destination = new URL(link.href, window.location.href);
-  } catch {
-    return;
-  }
-  const rawHref = link.getAttribute("href") || "";
-  const ctaType = (link.dataset.ctaType || "").toLowerCase();
-  const isSameOrigin = destination.origin === window.location.origin;
-  const isInquiry = isSameOrigin && inquiryPaths.has(destination.pathname);
-  const isSample = ctaType === "sample" || (isSameOrigin && (destination.hash === "#sample" || samplePaths.has(destination.pathname)));
-  const isEmail = destination.protocol === "mailto:" || rawHref.toLowerCase().startsWith("mailto:");
-  const isWhatsApp = ctaType === "whatsapp" || /(?:wa\\.me|whatsapp)/i.test(destination.href);
-  const isCatalog = ctaType === "catalog" || /catalog/i.test(destination.pathname + rawHref);
-  const isProduct = ctaType === "product" || (isSameOrigin && /^\\/(?:products|produkte|produits)\\//.test(destination.pathname));
-  const events = [];
-  if (isInquiry) events.push("inquiry_cta_click");
-  if (ctaType === "quote" || (isInquiry && !isSample)) events.push("quote_cta_click");
-  if (isSample) events.push("sample_cta_click");
-  if (isEmail) events.push("email_click");
-  if (isWhatsApp) events.push("whatsapp_click");
-  if (isCatalog) events.push("catalog_download");
-  if (isProduct) events.push("product_cta_click");
-  [...new Set(events)].forEach((eventName) => pushCtaEvent(eventName, link, destination));
 });
 
 document.querySelectorAll("[data-lead-form]").forEach((form)=>{
@@ -2600,10 +2727,7 @@ document.querySelectorAll("[data-lead-form]").forEach((form)=>{
     }
     const data = Object.fromEntries(new FormData(form).entries());
     window.dataLayer = window.dataLayer || [];
-    const formEvent = form.dataset.formType === "sample" || samplePaths.has(window.location.pathname) || window.location.hash === "#sample" ? "sample_request_submit" : "quote_form_submit";
-    const formPayload = {product:data.product,country:data.country,quantity:data.quantity,page_path:window.location.pathname,locale:pageLocale()};
-    window.dataLayer.push({event:"lead_form_submit",...formPayload});
-    window.dataLayer.push({event:formEvent,...formPayload});
+    window.dataLayer.push({event:"lead_form_submit",product:data.product,country:data.country,quantity:data.quantity});
     button.disabled = true;
     button.textContent = "Sending...";
     note.textContent = "Sending your inquiry securely...";
@@ -2671,10 +2795,7 @@ document.querySelectorAll("[data-inquiry-form]").forEach((form)=>{
     button.textContent = "Submitting...";
     const data = Object.fromEntries(new FormData(form).entries());
     window.dataLayer = window.dataLayer || [];
-    const formEvent = form.dataset.formType === "sample" || samplePaths.has(window.location.pathname) || window.location.hash === "#sample" ? "sample_request_submit" : "quote_form_submit";
-    const formPayload = {product:form.dataset.product || data.product,country:data.country,page_path:window.location.pathname,locale:pageLocale()};
-    window.dataLayer.push({event:"b2b_inquiry_submit",...formPayload});
-    window.dataLayer.push({event:formEvent,...formPayload});
+    window.dataLayer.push({event:"b2b_inquiry_submit",product:data.product,country:data.country});
     try {
       const response = await fetch("https://formsubmit.co/ajax/${company.email}", {
         method: "POST",
@@ -2701,13 +2822,34 @@ document.querySelectorAll("[data-inquiry-form]").forEach((form)=>{
 });
 `;
 
+const redesignCss = `
+.home-hero,.products-hero,.oem-hero-new,.factory-hero-new,.about-hero-new{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(360px,.95fr);gap:3rem;align-items:center;max-width:none;padding:5.6rem max(1rem,calc((100vw - 1180px)/2));background:radial-gradient(circle at 8% 12%,rgba(217,168,92,.18),transparent 27%),linear-gradient(135deg,#eef3eb,#f6ead8);border-bottom:1px solid rgba(86,112,91,.18)}
+.home-hero-copy,.products-hero>div,.oem-hero-new>div,.factory-hero-new>div,.about-hero-new>div{min-width:0}.home-hero h1,.products-hero h1,.oem-hero-new h1,.factory-hero-new h1,.about-hero-new h1{max-width:780px;margin:.45rem 0 1.1rem;font-size:clamp(2.55rem,5vw,4.9rem);line-height:1.02;color:#294b3d}.home-hero p:not(.eyebrow),.products-hero p:not(.eyebrow),.oem-hero-new p:not(.eyebrow),.factory-hero-new p:not(.eyebrow),.about-hero-new p:not(.eyebrow){max-width:720px;font-size:1.1rem;color:#655448}.hero-microcopy{margin-top:1.25rem!important;font-size:.9rem!important;color:#6e806e!important;font-weight:800}
+.home-hero-media,.oem-hero-new figure,.factory-hero-new figure,.about-hero-new figure,.home-oem figure{position:relative;margin:0;overflow:hidden;border-radius:16px;background:#fff;box-shadow:0 28px 65px rgba(43,59,49,.18)}.home-hero-media img,.oem-hero-new figure img,.factory-hero-new figure img,.about-hero-new figure img{display:block;width:100%;height:540px;object-fit:cover}.home-hero-media figcaption,.oem-hero-new figcaption,.factory-hero-new figcaption,.about-hero-new figcaption,.home-oem figcaption{position:absolute;left:1.2rem;right:1.2rem;bottom:1rem;color:#fff;font-size:.88rem;font-weight:900;text-shadow:0 2px 12px rgba(0,0,0,.55)}
+.home-solutions,.home-applications,.home-knowledge{padding-top:6rem;padding-bottom:6rem}.home-solution-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem}.home-solution-grid>a{display:block;overflow:hidden;background:#fff;color:var(--ink);text-decoration:none;box-shadow:0 20px 44px rgba(43,59,49,.1);transition:transform .2s,box-shadow .2s}.home-solution-grid>a:hover{transform:translateY(-5px);box-shadow:0 28px 58px rgba(43,59,49,.15)}.home-solution-grid img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}.home-solution-grid a>div{padding:1.3rem}.home-solution-grid span{color:#b48548;font-size:.78rem;font-weight:950}.home-solution-grid h3{margin:.65rem 0 .45rem;font-family:Georgia,"Times New Roman",serif;font-size:1.45rem;color:#294b3d}.home-solution-grid p{margin:0;color:var(--muted)}.home-solution-grid strong{display:block;margin-top:1rem;color:#456b55}
+.home-capabilities{max-width:none;padding-left:max(1rem,calc((100vw - 1180px)/2));padding-right:max(1rem,calc((100vw - 1180px)/2));background:#eaf0e8}.home-capability-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;max-width:1180px;margin:0 auto}.home-capability-list article{padding:1.35rem;border-top:3px solid #6f8b65;background:rgba(255,255,255,.76);box-shadow:0 14px 34px rgba(33,50,42,.07)}.home-capability-list h3{margin:.2rem 0 .65rem;color:#294b3d}.home-capability-list p{margin:0;color:var(--muted)}.home-oem{padding-top:6rem;padding-bottom:6rem}.home-oem figure{height:100%;min-height:470px}.home-oem figure img{display:block;width:100%;height:100%;min-height:470px;object-fit:cover}
+.home-compliance{display:grid;grid-template-columns:1.2fr .8fr;gap:3rem;align-items:center;max-width:none;padding:6rem max(1rem,calc((100vw - 1180px)/2));background:#254638;color:#fff}.home-compliance h2{color:#fff}.home-compliance>div>p:not(.eyebrow){color:rgba(255,255,255,.76)}.home-compliance .eyebrow{color:#efd29d}.home-compliance .badge-grid span{background:rgba(255,255,255,.08);border-color:rgba(239,210,157,.28);color:#fff}.home-compliance>img{display:block;width:100%;max-height:420px;object-fit:cover;object-position:top;border-radius:12px;box-shadow:0 25px 60px rgba(0,0,0,.25)}.home-factory{padding-top:6rem;padding-bottom:6rem}.factory-photo-stack{display:grid;grid-template-columns:1.2fr .8fr;gap:.8rem;align-items:stretch}.factory-photo-stack img{display:block;width:100%;height:100%;min-height:245px;object-fit:cover;border-radius:12px;border:1px solid var(--line)}.factory-process-section{max-width:none;padding-left:max(1rem,calc((100vw - 1180px)/2));padding-right:max(1rem,calc((100vw - 1180px)/2));background:#f3ecdf}.factory-process-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;max-width:1180px;margin:auto}.factory-process-grid article{overflow:hidden;background:#fff;box-shadow:0 18px 38px rgba(43,59,49,.08)}.factory-process-grid article img{display:block;width:100%;height:260px;object-fit:cover}.factory-process-grid article>div{padding:1.2rem}.factory-process-grid article span{color:#b48548;font-size:.8rem;font-weight:950}.factory-process-grid h3{margin:.35rem 0 .55rem;color:#294b3d;font-size:1.35rem}.factory-process-grid p{margin:0;color:var(--muted)}.factory-quality-note,.about-profile,.about-evidence{padding-top:5.5rem;padding-bottom:5.5rem}.factory-quality-note img,.about-profile img,.about-evidence img{display:block;width:100%;max-height:520px;object-fit:cover;border-radius:14px;box-shadow:0 24px 58px rgba(43,59,49,.14)}.about-hero-new{background:radial-gradient(circle at 85% 20%,rgba(217,168,92,.2),transparent 24%),linear-gradient(135deg,#f6ead8,#eef3eb)}.about-capabilities{max-width:none;padding-left:max(1rem,calc((100vw - 1180px)/2));padding-right:max(1rem,calc((100vw - 1180px)/2));background:#edf2e9}.about-gallery img{height:300px}.products-hero{background:radial-gradient(circle at 82% 20%,rgba(217,168,92,.2),transparent 24%),linear-gradient(135deg,#f6ead8,#eef3eb)}.products-hero>img{display:block;width:100%;height:520px;object-fit:cover;border-radius:16px;box-shadow:0 28px 65px rgba(43,59,49,.18)}.oem-hero-new{background:radial-gradient(circle at 8% 12%,rgba(217,168,92,.2),transparent 27%),linear-gradient(135deg,#eef3eb,#f6ead8)}.oem-printing-note{max-width:none;padding-left:max(1rem,calc((100vw - 1180px)/2));padding-right:max(1rem,calc((100vw - 1180px)/2));background:#f3ecdf}.oem-printing-note>.section-heading,.oem-printing-note>.home-capability-list{max-width:1180px}.oem-brief{padding-top:5.5rem;padding-bottom:5.5rem}.factory-hero-new{background:radial-gradient(circle at 85% 15%,rgba(217,168,92,.2),transparent 24%),linear-gradient(135deg,#eef3eb,#f6ead8)}
+@media (max-width:900px){.home-hero,.products-hero,.oem-hero-new,.factory-hero-new,.about-hero-new{grid-template-columns:1fr;padding:3.6rem 1rem;gap:2rem}.home-hero h1,.products-hero h1,.oem-hero-new h1,.factory-hero-new h1,.about-hero-new h1{font-size:clamp(2.25rem,11vw,3.5rem)}.home-hero-media img,.oem-hero-new figure img,.factory-hero-new figure img,.about-hero-new figure img{height:auto;max-height:470px}.home-solution-grid,.home-capability-list,.factory-process-grid,.home-compliance,.factory-photo-stack{grid-template-columns:1fr}.home-solutions,.home-applications,.home-knowledge,.home-oem,.home-factory,.factory-quality-note,.about-profile,.about-evidence{padding-top:4rem;padding-bottom:4rem}.home-compliance{padding:4rem 1rem}.home-oem figure,.home-oem figure img{min-height:0;height:auto}.factory-process-grid article img{height:auto;max-height:300px}.products-hero>img{height:auto;max-height:440px}.factory-photo-stack img{min-height:0;height:auto}.home-capability-list{gap:.75rem}.home-factory .factory-stats{gap:1.2rem}}
+ .home-hero .hero-proof span{background:#fff7eb;color:#294b3d;border-color:#d8c5a6;box-shadow:none}.mobile-menu-toggle{display:none}
+@media (max-width:900px){.header-inner{flex-direction:row;flex-wrap:wrap;align-items:center;width:100%;padding:.62rem .7rem;gap:.5rem;overflow:visible}.brand{flex:0 0 auto}.brand img{width:112px;height:40px}.mobile-menu-toggle{display:inline-flex;align-items:center;justify-content:center;min-height:38px;margin-left:auto;padding:.42rem .68rem;border:1px solid rgba(69,107,85,.42);border-radius:6px;background:#fff7eb;color:#294b3d;font-weight:900;cursor:pointer}.main-nav{display:none;width:100%;flex:1 0 100%;flex-direction:column;align-items:stretch;gap:.15rem;padding:.55rem 0 .15rem;border-top:1px solid rgba(69,107,85,.18)}.main-nav.is-open{display:flex}.main-nav .nav-link{width:100%;min-height:40px;padding:.55rem .65rem;font-size:.9rem;text-align:left}.language-switcher{position:static;flex:0 0 auto;margin:0}.language-current{min-height:38px;min-width:46px}.header-cta{display:none}.home-hero .hero-proof span{font-size:.76rem}}
+.home-hero{position:relative;display:block;aspect-ratio:16/9;min-height:620px;padding:0 max(1rem,calc((100vw - 1180px)/2));overflow:hidden;background:#f6ead8}
+.home-hero-media{position:absolute;inset:0;height:100%;border-radius:0;box-shadow:none;background:#f6ead8;z-index:0}.home-hero-media img{width:100%;height:100%;object-fit:contain;object-position:center}.home-hero-media:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,248,238,.94) 0%,rgba(255,248,238,.82) 40%,rgba(255,248,238,.2) 72%,rgba(255,248,238,.04) 100%);pointer-events:none}.home-hero-media figcaption{color:#fff;text-shadow:0 2px 14px rgba(27,48,39,.7)}.home-hero-copy{position:relative;z-index:1;max-width:700px;padding:5.3rem 0 4.8rem}.home-hero-copy h1{max-width:700px;font-size:clamp(2.3rem,3.2vw,3.65rem);line-height:1.06;color:#294b3d}.home-hero-copy>p:not(.eyebrow){max-width:650px;color:#4f4a3f}.home-hero-copy .hero-proof span{background:rgba(255,253,248,.82);color:#294b3d;border-color:rgba(69,107,85,.35);box-shadow:0 5px 18px rgba(43,59,49,.08)}
+@media (max-width:900px){.home-hero{display:flex;min-height:0;aspect-ratio:auto;padding:0;flex-direction:column}.home-hero-copy{max-width:100%;padding:3.2rem 1rem 2.6rem;background:#fff8ee}.home-hero-copy h1{font-size:clamp(2.05rem,9vw,2.8rem);line-height:1.08}.home-hero-copy>p:not(.eyebrow){max-width:34rem}.home-hero .hero-proof{max-width:28rem}.home-hero-media{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:16/9;order:2}.home-hero-media img{object-fit:contain;object-position:center}.home-hero-media:after{display:none}.home-hero-media figcaption{font-size:.78rem}}
+`;
+
 writePage("/", homePage());
 writePage("/products/", productsIndex());
+writePage("/products/baking-paper/", bakingPaperHubPage());
 writePage("/products/food-wrapping-paper/", foodWrappingCategoryPage());
 products.forEach((product) => writePage(`/products/${product.slug}/`, productPage(product)));
 writePage("/applications/", applicationsPage());
+writePage("/applications/bakery/", applicationLandingPage("bakery"));
+writePage("/applications/cafe/", applicationLandingPage("cafe"));
+writePage("/applications/food-service/", applicationLandingPage("food-service"));
 writePage("/cases/", casesPage());
 writePage("/customization/", customizationPage());
+writePage("/custom-oem/", customOemPage());
+writePage("/compliance/", complianceCenterPage());
 writePage("/factory-certificates/", factoryPage());
 writePage("/eudr-traceability/", eudrTraceabilityPage());
 writePage("/pfas-free-baking-paper/", pfasFreePage());
@@ -2715,6 +2857,7 @@ writePage("/markets/", marketsIndexPage());
 writePage("/markets/united-states/", marketPage("united-states"));
 writePage("/markets/europe/", marketPage("europe"));
 writePage("/about/", aboutPage());
+writePage("/contact/", contactPage());
 writePage("/inquiry/", contactPage("/inquiry/"));
 writePage("/news/", newsPage());
 writePage("/resources/", resourcesIndex());
@@ -2722,3 +2865,19 @@ resourcePages.forEach((resource) => writePage(`/resources/${resource.slug}/`, re
 landingPages.forEach((lp) => writePage(`/landing/${lp.slug}/`, landingPage(lp)));
 writeStatic();
 console.log(`Built ${pages.length} pages in ${distDir}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

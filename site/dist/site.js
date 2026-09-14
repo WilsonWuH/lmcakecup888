@@ -1,4 +1,56 @@
 
+const startHeroCarousel = () => {
+  const slides = [...document.querySelectorAll(".hero-slide")];
+  if (slides.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  let activeIndex = 0;
+  window.setInterval(() => {
+    slides[activeIndex].classList.remove("is-active");
+    activeIndex = (activeIndex + 1) % slides.length;
+    slides[activeIndex].classList.add("is-active");
+  }, 6000);
+};
+const loadDeferredHeroSlides = async () => {
+  const images = [...document.querySelectorAll(".hero-slide[data-src]")];
+  await Promise.all(images.map(async (image) => {
+    if (image.dataset.srcset) image.srcset = image.dataset.srcset;
+    image.src = image.dataset.src;
+    image.removeAttribute("data-src");
+    image.removeAttribute("data-srcset");
+    try {
+      await image.decode();
+    } catch {
+      await new Promise((resolve) => {
+        if (image.complete) resolve();
+        else {
+          image.addEventListener("load", resolve, { once: true });
+          image.addEventListener("error", resolve, { once: true });
+        }
+      });
+    }
+  }));
+  startHeroCarousel();
+};
+const queueDeferredHeroSlides = () => {
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(loadDeferredHeroSlides, { timeout: 1200 });
+  } else {
+    window.setTimeout(loadDeferredHeroSlides, 0);
+  }
+};
+if (document.readyState === "complete") queueDeferredHeroSlides();
+else window.addEventListener("load", queueDeferredHeroSlides, { once: true });
+
+document.querySelectorAll(".mobile-menu-toggle").forEach((toggle)=>{
+  const targetId = toggle.getAttribute("aria-controls");
+  const target = targetId ? document.getElementById(targetId) : null;
+  if (!target) return;
+  toggle.addEventListener("click",()=>{
+    const isOpen = target.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", String(isOpen));
+    toggle.textContent = isOpen ? "Close" : "Menu";
+  });
+});
+
 document.querySelectorAll("[data-lead-form]").forEach((form)=>{
   form.addEventListener("submit", async (event)=>{
     event.preventDefault();
