@@ -2,16 +2,16 @@
 
 ## SEO Information
 
-- **SEO Title:** Cake Cup Color Fastness Testing: Wholesale Quality Guide
-- **H1:** Cake Cup Color Fastness Testing: A Wholesale Buyer's Quality Guide
-- **URL Slug:** /resources/cake-cup-color-fastness-testing-wholesale-guide/
-- **Meta Description:** Learn how to specify and verify color fastness for printed and colored cake cups. Testing methods, acceptance criteria, and documentation wholesale buyers should demand from suppliers.
-- **Primary Keyword:** cake cup color fastness testing
-- **Target Keywords:** colored cake cups wholesale, color fastness paper packaging, printed baking cup fading, crocking test paper cups, cupcake liner color quality
-- **Search Intent:** Informational/quality-control — buyers setting QC standards for colored and printed cake cups
-- **Publish Date:** 2026-09-17
-- **Image 1 File:** blog/cake-cup-color-fastness-testing-wholesale-guide-testing.webp
-- **Image 2 File:** blog/cake-cup-color-fastness-testing-wholesale-guide-cups.webp
+SEO Title: Cake Cup Color Fastness Testing: Wholesale Quality Guide
+H1: Cake Cup Color Fastness Testing: A Wholesale Buyer's Quality Guide
+URL Slug: /resources/cake-cup-color-fastness-testing-wholesale-guide/
+Meta Description: Learn how to specify and verify color fastness for printed and colored cake cups. Testing methods, acceptance criteria, and documentation wholesale buyers should demand from suppliers.
+Primary Keyword: cake cup color fastness testing
+Target Keywords: colored cake cups wholesale, color fastness paper packaging, printed baking cup fading, crocking test paper cups, cupcake liner color quality
+Search Intent: Informational/quality-control — buyers setting QC standards for colored and printed cake cups
+Publish Date: 2026-09-17
+Image 1 File: blog/cake-cup-color-fastness-testing-wholesale-guide-testing.webp
+Image 2 File: blog/cake-cup-color-fastness-testing-wholesale-guide-cups.webp
 
 ## Introduction
 
