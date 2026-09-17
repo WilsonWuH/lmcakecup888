@@ -176,6 +176,9 @@ form.rfq-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .file-btn:hover{border-color:#fff;background:rgba(255,255,255,.08)}
 .file-name{font-size:13px;color:rgba(255,255,255,.65)}
 .rfq-form .btn{grid-column:1/-1;justify-self:start}
+.rfq-status{grid-column:1/-1;margin:0;font-size:14px;min-height:1em}
+.rfq-status.ok{color:#9fd8a8}
+.rfq-status.err{color:#f0b9a2}
 .rfq-side p{font-size:15px}
 
 /* Footer */
@@ -633,8 +636,11 @@ footer a{color:#e0d7cd;text-decoration:none;margin-right:18px}
         <p class="sub">Send us your size, quantity, artwork or reference product. We'll recommend the paper, printing and packaging configuration.</p>
         <a class="wa" href="https://wa.me/8613645700210">WhatsApp: +86 136 4570 0210 →</a>
       </div>
-      <!-- Wire this form to the site inquiry backend before go-live; fallback: redirect to /inquiry/ -->
-      <form class="rfq-form" action="/inquiry/" method="post" enctype="multipart/form-data">
+      <form class="rfq-form" id="rfq-form" action="https://formsubmit.co/wh1007209170@gmail.com" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="New LANGMAI parchment paper RFQ">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" id="f-next" value="">
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
         <div class="field">
           <label for="f-size">Size *</label>
           <input id="f-size" name="size" type="text" placeholder="e.g. 40 x 60 cm sheet" required>
@@ -675,7 +681,8 @@ footer a{color:#e0d7cd;text-decoration:none;margin-right:18px}
           <label for="f-email">Email *</label>
           <input id="f-email" name="email" type="email" placeholder="you@company.com" required>
         </div>
-        <button class="btn btn-primary" type="submit">Get My Custom Quote</button>
+        <button class="btn btn-primary" type="submit" id="rfq-submit">Get My Custom Quote</button>
+        <p class="rfq-status" id="rfq-status" role="status"></p>
       </form>
     </div>
   </div>
@@ -763,6 +770,57 @@ footer a{color:#e0d7cd;text-decoration:none;margin-right:18px}
 document.getElementById('f-artwork').addEventListener('change', function(){
   document.getElementById('f-artwork-name').textContent = this.files.length ? this.files[0].name : 'PDF, AI, EPS, PNG or JPG';
 });
+(function(){
+  var form = document.getElementById('rfq-form');
+  var status = document.getElementById('rfq-status');
+  var next = document.getElementById('f-next');
+  next.value = location.origin + location.pathname + '?rfq=sent';
+  if (location.search.indexOf('rfq=sent') !== -1) {
+    status.textContent = 'Thank you. Your inquiry has been sent to our sales inbox.';
+    status.className = 'rfq-status ok';
+    if (history.replaceState) history.replaceState(null, '', location.pathname);
+  }
+  form.addEventListener('submit', function(e){
+    if (form.querySelector('[name="_honey"]').value !== '') { e.preventDefault(); return; }
+    if (!form.checkValidity()) { e.preventDefault(); form.reportValidity(); return; }
+    var file = document.getElementById('f-artwork');
+    if (file.files.length) {
+      // attachment: native multipart POST to FormSubmit, redirect back via _next
+      document.getElementById('rfq-submit').disabled = true;
+      return;
+    }
+    e.preventDefault();
+    var data = {};
+    new FormData(form).forEach(function(v, k){ if (typeof v === 'string') data[k] = v; });
+    data._subject = 'New LANGMAI parchment paper RFQ';
+    data._template = 'table';
+    data._replyto = data.email || '';
+    data.page = location.href;
+    var btn = document.getElementById('rfq-submit');
+    btn.disabled = true; btn.textContent = 'Sending…';
+    status.textContent = 'Sending your inquiry…';
+    status.className = 'rfq-status';
+    fetch('https://formsubmit.co/ajax/wh1007209170@gmail.com', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data)
+    }).then(function(r){ return r.json().then(function(j){ return { ok: r.ok, j: j }; }); }).then(function(res){
+      if (res.ok && String(res.j.success).toLowerCase() === 'true') {
+        status.textContent = 'Thank you. Your inquiry has been sent to our sales inbox.';
+        status.className = 'rfq-status ok';
+        form.reset();
+        document.getElementById('f-artwork-name').textContent = 'PDF, AI, EPS, PNG or JPG';
+      } else {
+        throw new Error(res.j.message || 'Delivery failed');
+      }
+    }).catch(function(){
+      status.textContent = 'Something went wrong. Please email wh1007209170@gmail.com or message us on WhatsApp.';
+      status.className = 'rfq-status err';
+    }).finally(function(){
+      btn.disabled = false; btn.textContent = 'Get My Custom Quote';
+    });
+  });
+})();
 </script>
 </body>
 </html>
