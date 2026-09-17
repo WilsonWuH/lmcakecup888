@@ -2499,6 +2499,16 @@ function writeStatic() {
   for (const [locale, routes] of Object.entries(perLanguage)) {
     fs.writeFileSync(path.join(distDir, `sitemap-${locale}.xml`), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${routes.map((route) => `  <url><loc>${baseUrl}${route}</loc></url>`).join("\n")}\n</urlset>\n`);
   }
+  const customPagesDir = path.join(siteDir, "custom-pages");
+  if (fs.existsSync(customPagesDir)) {
+    for (const entry of fs.readdirSync(customPagesDir, { withFileTypes: true })) {
+      if (!entry.isDirectory()) continue;
+      const target = path.join(distDir, entry.name.replace(/--/g, "/"));
+      fs.rmSync(target, { recursive: true, force: true });
+      fs.cpSync(path.join(customPagesDir, entry.name), target, { recursive: true });
+      console.log(`custom page override: ${entry.name.replace(/--/g, "/")}`);
+    }
+  }
 }
 
 const css = `
