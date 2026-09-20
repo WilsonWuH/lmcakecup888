@@ -2601,6 +2601,7 @@ const productTemplateCss = `
 .article-cta .button{margin:.35rem .4rem .2rem 0}
 @media (max-width:900px){.product-template,.product-gallery,.home-video-section{grid-template-columns:1fr}.ip-card{position:static;order:-1}.video-frame{width:min(100%,360px)}}
 @media (max-width:900px){.inquiry-shell,.form-row{grid-template-columns:1fr}.inquiry-page{padding:3rem 1rem}.inquiry-form{padding:1rem}.language-switcher{margin-left:0}.language-menu{left:0;right:auto}.social-float{display:none}.footer-social a,.social-float a{width:38px;height:38px}}
+ .reference-steps img{width:150px!important;height:150px!important}.reference-steps h3{margin-top:.85rem}
 `;
 
 const warmThemeCss = `
