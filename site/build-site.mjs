@@ -193,7 +193,7 @@ const products = [
     slug: "baking-parchment-paper",
     title: "Baking Parchment Paper for Wholesale and Private Label",
     short: "Food-contact baking parchment in sheet, roll and die-cut formats for bakery, foodservice, retail and private-label programs.",
-    image: "factory-real-roll-line-1600.webp",
+    image: "parchment-product-cover-1600.webp",
     gallery: ["factory-real-roll-line-1600.webp", "factory-real-printing-process-1600.webp", "factory-real-production-team-1600.webp"],
     keywords: "baking parchment paper manufacturer, parchment paper wholesale, private label baking paper",
     material: "Food-contact parchment or silicone-treated baking paper selected for the approved application",
