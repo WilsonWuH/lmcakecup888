@@ -603,6 +603,10 @@ function loadBlogArticles() {
       const start = section.indexOf("## Introduction");
       const end = section.indexOf("## Image Plan and AI Prompts");
       const bodyMarkdown = section.slice(start, end > -1 ? end : undefined).trim();
+      const coverFile = `blog/${slug}-cover.webp`;
+      const hasCover = fs.existsSync(path.join(siteDir, "assets", coverFile));
+      const images = blogImageMap[slug] || [field(section, "Image 1 File"), field(section, "Image 2 File")].filter(Boolean);
+      if (!images.length && hasCover) images.push(coverFile);
       return {
         slug,
         title,
@@ -613,7 +617,8 @@ function loadBlogArticles() {
         intent: field(section, "Search Intent"),
         html: renderMarkdown(bodyMarkdown),
         faq: extractFaq(bodyMarkdown),
-        images: blogImageMap[slug] || [field(section, "Image 1 File"), field(section, "Image 2 File")].filter(Boolean),
+        cover: hasCover ? coverFile : "",
+        images,
         isLongForm: true,
       };
     })
@@ -622,6 +627,73 @@ function loadBlogArticles() {
 
 const blogArticles = loadBlogArticles();
 const resourcePages = [...blogArticles, ...resources];
+
+const RESOURCE_CATEGORIES = [
+  { id: "baking", label: "Baking & Foodservice" },
+  { id: "technical", label: "Technical & Performance" },
+  { id: "compliance", label: "Food Safety & Compliance" },
+  { id: "custom", label: "Customization & Printing" },
+  { id: "insights", label: "Industry Insights" },
+];
+
+const CATEGORY_OVERRIDES = {
+  "greaseproof-paper-vs-parchment-paper-wholesale-guide": "baking",
+  "baking-paper-vs-aluminium-foil-wholesale-guide": "technical",
+  "cupcake-liners-vs-baking-cups-commercial-guide": "baking",
+  "tulip-baking-cups-vs-standard-muffin-liners": "baking",
+  "greaseproof-paper-vs-pet-coated-paper-baking-cups": "technical",
+  "parchment-paper-vs-wax-paper-wholesale-guide": "technical",
+  "bleached-vs-unbleached-baking-paper": "technical",
+  "unbleached-vs-bleached-baking-paper-wholesale-guide": "technical",
+  "baking-paper-deck-ovens-wholesale": "baking",
+  "baking-paper-industrial-tunnel-ovens": "baking",
+  "steamer-paper-liners-wholesale-buyer-guide": "baking",
+  "paper-baking-cups-automated-bakery-lines": "baking",
+  "baking-cups-denesting-automation-guide-wholesale": "technical",
+  "food-paper-packaging-supplier-audit-checklist": "insights",
+  "paper-baking-cup-manufacturer-audit": "insights",
+  "baking-paper-payment-terms-incoterms-wholesale-guide": "insights",
+  "baking-paper-price-increase-negotiation-wholesale-guide": "insights",
+  "baking-paper-cost-per-bake-tco-guide": "insights",
+  "b2b-paper-packaging-rfq-template": "insights",
+  "baking-paper-moq-lead-time-production-planning-wholesale": "insights",
+  "baking-cups-moq-lead-time-production-planning-wholesale": "insights",
+  "parchment-paper-vs-greaseproof-paper": "baking",
+  "muffin-cups-seasonal-holiday-programs-wholesale": "baking",
+  "jumbo-muffin-cups-wholesale": "baking",
+  "muffin-cups-cafe-chains-wholesale": "baking",
+  "paper-baking-cups-supermarket-bakeries": "baking",
+  "paper-baking-cups-commissary-kitchens": "baking",
+  "air-fryer-liners-frozen-food-brands": "baking",
+  "colored-cupcake-liners-wholesale": "baking",
+  "paper-straw-sizes-wholesale-guide": "technical",
+  "paper-packaging-shipment-release-checklist": "insights",
+};
+
+function classifyResource(r) {
+  if (CATEGORY_OVERRIDES[r.slug]) return CATEGORY_OVERRIDES[r.slug];
+  // Classify from slug + title only: the Target Keywords field is keyword-stuffed and distorts matching.
+  const t = `${r.slug} ${r.title}`.toLowerCase();
+  const has = (...words) => words.some((w) => t.includes(w));
+  if (has("pfas", "fda", "compliance", "certificate", "certified", "brcgs", "fsc", "fssc-22000", "eudr", "bpa", "ppwr", "allergen", "halal", "kosher", "bsci", "sedex", "gmp", "lfgb", "traceability", "food-contact", "food contact", "migration", "declaration", "documents", "compostable", "recycled-content", "retained-sample", "retained samples", "due-diligence", "label compliance")) return "compliance";
+  if (has("custom", "printed", "printing", "private-label", "private label", "artwork", "oem")) return "custom";
+  if (has("silicone", "grammage", "-vs-", "vs-", "versus", "temperature", "grease-resistance", "grease resistance", "release", "coating", "non-stick", "glassine", "wax-paper", "testing", "durability", "color-fastness", "color fastness", "denesting", "perforat", "freezer-safe", "microwave", "humidity")) return "technical";
+  if (has("cost", "price", "negotiation", "payment", "incoterm", "audit", "supplier", "manufacturer", "rfq", "moq", "lead-time", "lead time", "tco", "yield", "warehouse", "checklist", "sample", "inspection", "complaint", "change-control", "corrective", "shipment", "transition", "scoring", "specification-approval")) return "insights";
+  return "baking";
+}
+
+function coverFor(r) {
+  const coverFile = `blog/${r.slug}-cover.webp`;
+  if (fs.existsSync(path.join(siteDir, "assets", coverFile))) return coverFile;
+  if (r.images?.length) return r.images[0];
+  return "";
+}
+
+const FEATURED_RESOURCE_SLUG = "greaseproof-paper-vs-parchment-paper-wholesale-guide";
+
+function sortedResourceArticles() {
+  return [...blogArticles].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+}
 
 function urlFor(route) {
   return route === "/" ? `${baseUrl}/` : `${baseUrl}${route}`;
@@ -683,7 +755,8 @@ function languageSwitcher(route = "/") {
   </div>`;
 }
 
-function layout({ route, title, description, content, schema = [], bodyClass = "" }) {
+function layout({ route, title, description, content, schema = [], bodyClass = "", ogImage = "" }) {
+  const socialImage = ogImage || "og.png";
   const canonical = urlFor(route);
   const performanceHints = route === "/"
     ? `  <link rel="preload" as="image" type="image/webp" href="/assets/home-bakery-banner-1600.webp" imagesrcset="/assets/home-bakery-banner-800.webp 800w, /assets/home-bakery-banner-1600.webp 1600w" imagesizes="100vw" fetchpriority="high">\n`
@@ -709,11 +782,11 @@ function layout({ route, title, description, content, schema = [], bodyClass = "
 ${hreflangTags(route)}
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(description)}">
-  <meta property="og:image" content="${baseUrl}${relAsset("og.png")}">
+  <meta property="og:image" content="${baseUrl}${relAsset(socialImage)}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="${baseUrl}${relAsset("og.png")}">
+  <meta name="twitter:image" content="${baseUrl}${relAsset(socialImage)}">
 ${performanceHints}  <link rel="stylesheet" href="/styles.css">
   <script type="application/ld+json">${schemaText}</script>
 </head>
@@ -2112,13 +2185,65 @@ export function B2BInquiryForm() {
   });
 }
 
+function resourceCard(r) {
+  const catId = classifyResource(r);
+  const cat = RESOURCE_CATEGORIES.find((c) => c.id === catId);
+  const cover = coverFor(r);
+  const media = cover
+    ? `<a class="resource-card-media" href="/resources/${r.slug}/" tabindex="-1" aria-hidden="true"><img src="${relAsset(cover)}" alt="" loading="lazy" decoding="async" width="800" height="450"></a>`
+    : `<a class="resource-card-media resource-card-fallback cat-${catId}" href="/resources/${r.slug}/" tabindex="-1" aria-hidden="true"></a>`;
+  return `<article class="resource-card" data-cat="${catId}">
+    ${media}
+    <div class="resource-card-body">
+      <span class="resource-tag cat-${catId}">${esc(cat.label)}</span>
+      <h2><a href="/resources/${r.slug}/">${esc(r.title)}</a></h2>
+      <p>${esc(r.description)}</p>
+      <a class="text-link" href="/resources/${r.slug}/">Read More →</a>
+    </div>
+  </article>`;
+}
+
 function resourcesIndex() {
-  const content = `<section class="page-hero">
-    <p class="eyebrow">Resources</p>
-    <h1>Buyer Guides for Cupcake Liners and Baking Paper Products</h1>
-    <p>Use these guides to compare materials, certificates, specifications, custom printing, applications and supplier questions before sending an RFQ.</p>
+  const sorted = sortedResourceArticles();
+  const featured = resourcePages.find((r) => r.slug === FEATURED_RESOURCE_SLUG)
+    || sorted.find((r) => coverFor(r))
+    || sorted[0];
+  const rest = sorted.filter((r) => r.slug !== featured.slug);
+  const grid = [...rest, ...resources];
+  const featuredCover = coverFor(featured);
+  const featuredCat = RESOURCE_CATEGORIES.find((c) => c.id === classifyResource(featured));
+  const counts = grid.reduce((acc, r) => { const c = classifyResource(r); acc[c] = (acc[c] || 0) + 1; return acc; }, {});
+  const content = `<section class="resources-hero">
+    <div class="resources-hero-inner">
+      <p class="eyebrow">Resources</p>
+      <h1>Buyer Guides for Cupcake Liners and Baking Paper Products</h1>
+      <p>Practical knowledge on food-grade paper, baking and packaging applications, certifications and supplier selection to help you make better sourcing decisions.</p>
+    </div>
   </section>
-  <section class="section"><div class="resource-grid">${resourcePages.map((r) => `<article><h2><a href="/resources/${r.slug}/">${esc(r.title)}</a></h2><p>${esc(r.description)}</p>${r.isLongForm ? `<p class="note">In-depth buyer guide</p>` : ""}</article>`).join("")}</div></section>`;
+  <section class="section resources-body">
+    <article class="resource-featured">
+      <a class="resource-featured-media" href="/resources/${featured.slug}/" tabindex="-1" aria-hidden="true"><img src="${relAsset(featuredCover || featured.images?.[0] || "og.png")}" alt="${esc(featured.title)}" ${featuredCover ? "" : 'loading="lazy"'} decoding="async" width="800" height="450" fetchpriority="high"></a>
+      <div class="resource-featured-body">
+        <span class="resource-tag cat-${classifyResource(featured)}">${esc(featuredCat.label)}</span>
+        <h2>${esc(featured.title)}</h2>
+        <p>${esc(featured.description)}</p>
+        <a class="button primary" href="/resources/${featured.slug}/">Read the Full Article →</a>
+      </div>
+    </article>
+    <div class="resource-filter" role="group" aria-label="Filter resources by topic">
+      <button class="resource-chip active" data-filter="all" type="button">All Articles (${grid.length})</button>
+      ${RESOURCE_CATEGORIES.map((c) => `<button class="resource-chip chip-${c.id}" data-filter="${c.id}" type="button">${esc(c.label)} (${counts[c.id] || 0})</button>`).join("")}
+    </div>
+    <div class="resources-grid-heading"><h2>Latest Resources</h2></div>
+    <div class="resource-v2-grid">${grid.map(resourceCard).join("")}</div>
+  </section>
+  <section class="section"><div class="resource-help-band">
+    <div>
+      <h2>Need help choosing the right food-grade paper?</h2>
+      <p>Tell us your application, size, temperature and monthly volume. Our team will recommend the right paper, coating and printing route for your market.</p>
+    </div>
+    <a class="button primary" href="/inquiry/">Contact Our Team</a>
+  </div></section>`;
   return layout({
     route: "/resources/",
     title: "Resources | LANGMAI Buyer Guides",
@@ -2207,6 +2332,7 @@ function resourcePage(resource) {
     title: resource.isLongForm ? (resource.seoTitle || resource.title) : `${resource.seoTitle || resource.title} | LANGMAI Guide`,
     description: resource.description,
     content,
+    ogImage: resource.cover || resource.images?.[0] || "",
     schema: [articleSchema(resource), ...(resource.faq?.length ? [faqSchema(resource.faq)] : [])],
   });
 }
@@ -2305,7 +2431,7 @@ function articleSchema(resource) {
     "@type": "Article",
     headline: resource.title,
     description: resource.description,
-    image: resource.images?.[0] ? `${baseUrl}${relAsset(resource.images[0])}` : undefined,
+    image: resource.cover || resource.images?.[0] ? `${baseUrl}${relAsset(resource.cover || resource.images[0])}` : undefined,
     datePublished: resource.date || undefined,
     dateModified: resource.date || undefined,
     author: { "@type": "Organization", name: company.name },
@@ -2485,7 +2611,7 @@ function writeStatic() {
     if (hiddenCatalogPages.has(file)) continue;
     fs.cpSync(path.join(assetSource, file), path.join(assetTarget, file), { recursive: true });
   }
-  fs.writeFileSync(path.join(distDir, "styles.css"), css + productTemplateCss + warmThemeCss + redesignCss);
+  fs.writeFileSync(path.join(distDir, "styles.css"), css + productTemplateCss + warmThemeCss + redesignCss + resourcesV2Css);
   fs.writeFileSync(path.join(distDir, "site.js"), js);
   fs.writeFileSync(path.join(distDir, "social-links.example.json"), JSON.stringify({ socialLinks }, null, 2));
   fs.writeFileSync(path.join(distDir, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${baseUrl}/sitemap.xml\n`);
@@ -2669,6 +2795,60 @@ th{background:#6f4b38;color:#fff4df}.link-grid a,.badge-grid span{background:#ff
 @media (max-width:900px){.industry-application-hero,.industry-challenge-grid,.industry-product-grid,.industry-scenario-grid,.industry-customization,.industry-compliance,.industry-why-grid,.industry-quote,.applications-hub-intro,.applications-hub-grid,.application-conversion-flow ol,.applications-hub-links{grid-template-columns:1fr}.industry-application-hero{padding:3.4rem 1rem;gap:2rem}.industry-application-hero h1{font-size:clamp(2.25rem,11vw,3.4rem)}.industry-hero-image img{height:auto;max-height:470px}.application-trust{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.application-trust span{display:flex;align-items:center;border-radius:8px;font-size:.74rem}.industry-application-hero .hero-actions,.applications-hub-hero .hero-actions{display:grid;grid-template-columns:1fr}.industry-application-hero .button,.applications-hub-hero .button{width:100%;white-space:normal;text-align:center}.industry-challenges,.industry-products,.industry-scenarios,.industry-why{padding-top:4rem;padding-bottom:4rem}.industry-products,.industry-customization,.industry-compliance{padding-left:1rem;padding-right:1rem}.industry-scenario-grid article{border-right:0;border-bottom:1px solid #ccd7cc}.industry-scenario-grid article:last-child{border-bottom:0}.industry-customization,.industry-compliance{padding-top:4rem;padding-bottom:4rem}.industry-custom-copy{position:static}.industry-quote{gap:1.5rem}.applications-hub-hero{padding:4rem 1rem}.applications-hub-hero h1{font-size:clamp(2.35rem,11vw,3.5rem)}.applications-hub-intro{padding-top:3.5rem}.applications-hub-grid{padding-bottom:4rem}.application-conversion-flow{padding-left:1rem;padding-right:1rem}.whatsapp-float{display:flex;align-items:center;justify-content:center;width:52px;height:52px;padding:0;border-radius:50%;font-size:0}.whatsapp-float:after{content:"WA";font-size:.78rem;font-weight:950}}
 `;
 
+const resourcesV2Css = `
+/* Resources knowledge center v2 */
+.resources-hero{background:linear-gradient(90deg,rgba(255,249,239,.97) 0%,rgba(255,249,239,.88) 42%,rgba(255,249,239,.35) 100%),url('/assets/home-bakery-banner-800.webp') right center/cover no-repeat;border-bottom:1px solid rgba(216,180,90,.25)}
+.resources-hero-inner{max-width:1180px;margin:auto;padding:4.5rem 1rem}
+.resources-hero h1{font-size:clamp(2rem,4.2vw,3.4rem);line-height:1.08;margin:.25rem 0 1rem;max-width:640px}
+.resources-hero p{font-size:1.1rem;color:var(--muted);max-width:600px}
+.resources-body{padding-top:2.5rem}
+.resource-featured{display:grid;grid-template-columns:1.05fr 1fr;gap:2rem;align-items:center;background:linear-gradient(180deg,#fffdf8,#fff7ea);border:1px solid rgba(216,180,90,.28);border-radius:10px;padding:1.25rem;box-shadow:0 22px 48px rgba(17,21,19,.1);margin-bottom:2.25rem}
+.resource-featured-media img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:8px;border:1px solid rgba(216,180,90,.22)}
+.resource-featured-body{padding:.5rem 1rem 1rem .25rem;display:grid;gap:.7rem;justify-items:start}
+.resource-featured-body h2{font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.16;margin:0}
+.resource-featured-body p{margin:0;color:var(--muted)}
+.resource-filter{display:flex;flex-wrap:wrap;gap:.55rem;margin:0 0 1.5rem}
+.resource-chip{cursor:pointer;border:1px solid rgba(31,58,49,.28);background:#fffaf0;color:var(--green);border-radius:999px;padding:.5rem .85rem;font:inherit;font-size:.9rem;font-weight:800;transition:background .15s ease,color .15s ease,border-color .15s ease}
+.resource-chip:hover{background:#111513;color:var(--gold);border-color:#111513}
+.resource-chip.active{background:#111513;color:var(--gold);border-color:#111513}
+.resources-grid-heading h2{font-size:clamp(1.35rem,2.4vw,1.8rem);margin:0 0 1.25rem}
+.resource-v2-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.15rem}
+.resource-card{display:flex;flex-direction:column;background:linear-gradient(180deg,#fffdf8,#fff7ea);border:1px solid rgba(216,180,90,.22);border-radius:10px;overflow:hidden;box-shadow:0 14px 30px rgba(17,21,19,.07);transition:transform .16s ease,box-shadow .16s ease}
+.resource-card:hover{transform:translateY(-3px);box-shadow:0 22px 44px rgba(17,21,19,.12)}
+.resource-card-media{display:block}
+.resource-card-media img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;border-bottom:1px solid rgba(216,180,90,.18)}
+.resource-card-fallback{display:block;aspect-ratio:16/9;border-bottom:1px solid rgba(216,180,90,.18)}
+.resource-card-body{display:flex;flex-direction:column;gap:.5rem;padding:1rem 1rem 1.15rem;flex:1}
+.resource-card-body h2{font-size:1.06rem;line-height:1.3;margin:0}
+.resource-card-body h2 a{text-decoration:none}
+.resource-card-body p{margin:0;color:var(--muted);font-size:.95rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.resource-card-body .text-link{margin-top:auto;font-size:.95rem}
+.resource-tag{display:inline-flex;align-items:center;width:fit-content;border-radius:999px;padding:.28rem .65rem;font-size:.78rem;font-weight:800;letter-spacing:.01em}
+.resource-help-band{display:flex;align-items:center;justify-content:space-between;gap:2rem;background:linear-gradient(135deg,#0e1110,#1f3a31 72%);border:1px solid rgba(216,180,90,.3);border-radius:10px;padding:1.75rem 2rem;color:#fff;box-shadow:0 22px 48px rgba(17,21,19,.16)}
+.resource-help-band h2{margin:0 0 .4rem;font-size:clamp(1.2rem,2.2vw,1.6rem);color:#fff}
+.resource-help-band p{margin:0;color:rgba(255,255,255,.78);max-width:640px}
+.resource-help-band .button.primary{flex-shrink:0}
+/* Category accents — light tints only (tags, hairlines, hover) */
+.resource-tag.cat-baking{background:#f6e7d0;color:#8a5a24}
+.resource-tag.cat-technical{background:#e7edf2;color:#3d566e}
+.resource-tag.cat-compliance{background:#e6f0e4;color:#2f5d3a}
+.resource-tag.cat-custom{background:#f0e4da;color:#7a4a2b}
+.resource-tag.cat-insights{background:#f5ecd2;color:#7d661a}
+.resource-card{border-top:3px solid transparent}
+.resource-card[data-cat="baking"]:hover{border-top-color:rgba(196,138,61,.55)}
+.resource-card[data-cat="technical"]:hover{border-top-color:rgba(93,126,153,.55)}
+.resource-card[data-cat="compliance"]:hover{border-top-color:rgba(96,138,96,.55)}
+.resource-card[data-cat="custom"]:hover{border-top-color:rgba(148,94,60,.55)}
+.resource-card[data-cat="insights"]:hover{border-top-color:rgba(172,143,60,.55)}
+.resource-card-fallback.cat-baking{background:repeating-linear-gradient(135deg,#f6e7d0,#f6e7d0 14px,#f0dcbf 14px,#f0dcbf 28px)}
+.resource-card-fallback.cat-technical{background:repeating-linear-gradient(135deg,#e7edf2,#e7edf2 14px,#dbe4ec 14px,#dbe4ec 28px)}
+.resource-card-fallback.cat-compliance{background:repeating-linear-gradient(135deg,#e6f0e4,#e6f0e4 14px,#dae8d8 14px,#dae8d8 28px)}
+.resource-card-fallback.cat-custom{background:repeating-linear-gradient(135deg,#f0e4da,#f0e4da 14px,#e7d7c8 14px,#e7d7c8 28px)}
+.resource-card-fallback.cat-insights{background:repeating-linear-gradient(135deg,#f5ecd2,#f5ecd2 14px,#ede0ba 14px,#ede0ba 28px)}
+@media (max-width:980px){.resource-featured{grid-template-columns:1fr}.resource-v2-grid{grid-template-columns:repeat(2,1fr)}.resource-help-band{flex-direction:column;align-items:flex-start}}
+@media (max-width:640px){.resource-v2-grid{grid-template-columns:1fr}}
+`;
+
 const js = `
 const startHeroCarousel = () => {
   const slides = [...document.querySelectorAll(".hero-slide")];
@@ -2719,6 +2899,16 @@ document.querySelectorAll(".mobile-menu-toggle").forEach((toggle)=>{
     const isOpen = target.classList.toggle("is-open");
     toggle.setAttribute("aria-expanded", String(isOpen));
     toggle.textContent = isOpen ? "Close" : "Menu";
+  });
+});
+
+document.querySelectorAll(".resource-chip").forEach((chip)=>{
+  chip.addEventListener("click",()=>{
+    const filter = chip.dataset.filter || "all";
+    document.querySelectorAll(".resource-chip").forEach((c)=>c.classList.toggle("active", c === chip));
+    document.querySelectorAll(".resource-card").forEach((card)=>{
+      card.style.display = (filter === "all" || card.dataset.cat === filter) ? "" : "none";
+    });
   });
 });
 

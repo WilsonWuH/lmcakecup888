@@ -51,6 +51,16 @@ document.querySelectorAll(".mobile-menu-toggle").forEach((toggle)=>{
   });
 });
 
+document.querySelectorAll(".resource-chip").forEach((chip)=>{
+  chip.addEventListener("click",()=>{
+    const filter = chip.dataset.filter || "all";
+    document.querySelectorAll(".resource-chip").forEach((c)=>c.classList.toggle("active", c === chip));
+    document.querySelectorAll(".resource-card").forEach((card)=>{
+      card.style.display = (filter === "all" || card.dataset.cat === filter) ? "" : "none";
+    });
+  });
+});
+
 document.querySelectorAll("[data-lead-form]").forEach((form)=>{
   form.addEventListener("submit", async (event)=>{
     event.preventDefault();
