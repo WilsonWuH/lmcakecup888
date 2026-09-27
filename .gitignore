@@ -7,3 +7,4 @@ node_modules
 .codex_tmp_pdf_preview
 .DS_Store
 Thumbs.db
+.env*
