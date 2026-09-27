@@ -14,8 +14,6 @@
  *   ZEPTOMAIL_FROM_NAME default LANGMAI Website
  *   ZEPTOMAIL_TO        default wilson@lmcakecup.com
  *   ZEPTOMAIL_CC        comma separated, optional
- *   ZEPTOMAIL_AUTOREPLY set to "0" to disable the confirmation email sent to the visitor
- *                       (enabled by default, failure to send it never fails the inquiry)
  */
 
 const API_URL = process.env.ZEPTOMAIL_API_URL || "https://api.zeptomail.com/v1.1/email";
@@ -152,60 +150,7 @@ function buildPayload(data, page) {
   <p style="margin:8px 0 0;color:#8a8074;font-size:12px">Sent from lmcakecup.com inquiry form via Zoho ZeptoMail.</p>
 </div>`;
 
-  return { html, text: `${text}${page ? `\n\nSubmitted on page: ${page}` : ""}`, rows, entries };
-}
-
-function buildAutoReply(name, rows, entries) {
-  const greeting = name ? `Hi ${esc(name)},` : "Hi there,";
-  const summary = entries.map(([k, v]) => `${k}: ${v}`).join("\n");
-  const html = `<div style="font-family:Arial,Helvetica,sans-serif;color:#2b2620;font-size:14px;line-height:1.6">
-  <p style="margin:0 0 12px">${greeting}</p>
-  <p style="margin:0 0 12px">Thank you for contacting LANGMAI. This is an automatic confirmation that your inquiry has reached our sales team. <strong>Wilson will reply personally, usually within 24 hours on working days (China time).</strong></p>
-  <p style="margin:16px 0 8px"><strong>What you sent us:</strong></p>
-  <table style="border-collapse:collapse;width:100%;max-width:720px">${rows}</table>
-  <p style="margin:16px 0 8px">If your enquiry is urgent, or you want to add artwork, sizes or target quantities, reach us directly:</p>
-  <ul style="margin:0;padding-left:18px">
-    <li>Email: wilson@lmcakecup.com</li>
-    <li>WhatsApp: +86 136 4570 0210</li>
-  </ul>
-  <p style="margin:20px 0 0">Best regards,<br><strong>Wilson</strong><br>LANGMAI · Jinhua Langmai Daily-Using Co., Ltd.<br>Baking paper &amp; food paper packaging manufacturer since 2006</p>
-</div>`;
-
-  const text = `${name ? `Hi ${name},` : "Hi there,"}
-
-Thank you for contacting LANGMAI. This is an automatic confirmation that your inquiry has reached our sales team. Wilson will reply personally, usually within 24 hours on working days (China time).
-
-What you sent us:
-${summary}
-
-Urgent? Reach us directly:
-Email: wilson@lmcakecup.com
-WhatsApp: +86 136 4570 0210
-
-Best regards,
-Wilson
-LANGMAI - Jinhua Langmai Daily-Using Co., Ltd.`;
-
-  return { html, text };
-}
-
-async function sendMail(payload) {
-  const token = process.env.ZEPTOMAIL_TOKEN;
-  const response = await fetch(API_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-      Authorization: `Zoho-enczapikey ${token}`,
-    },
-    body: JSON.stringify(payload),
-  });
-  const raw = await response.text();
-  if (!response.ok) {
-    console.error("zeptomail_error", response.status, raw.slice(0, 500));
-    return { ok: false };
-  }
-  return { ok: true };
+  return { html, text: `${text}${page ? `\n\nSubmitted on page: ${page}` : ""}` };
 }
 
 function recipients(list) {
@@ -275,7 +220,7 @@ module.exports = async function handler(req, res) {
     : "New LANGMAI website inquiry";
   const name = typeof data.name === "string" ? data.name.trim().slice(0, 120) : "";
 
-  const { html, text, rows, entries } = buildPayload(data, page);
+  const { html, text } = buildPayload(data, page);
 
   const payload = {
     from: { address: FROM_ADDRESS, name: FROM_NAME },
@@ -291,28 +236,31 @@ module.exports = async function handler(req, res) {
   if (attachment) payload.attachments = [attachment];
 
   try {
-    const sent = await sendMail(payload);
-    if (!sent.ok) {
+    const response = await fetch(API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        Authorization: `Zoho-enczapikey ${token}`,
+      },
+      body: JSON.stringify(payload),
+    });
+
+    const raw = await response.text();
+    let result = {};
+    try {
+      result = raw ? JSON.parse(raw) : {};
+    } catch {
+      result = {};
+    }
+
+    if (!response.ok) {
+      console.error("zeptomail_error", response.status, raw.slice(0, 500));
       res.status(502).json({ success: false, message: "Mail provider rejected the message." });
       return;
     }
 
     console.log("inquiry_sent", { to: TO[0], subject, page });
-
-    const autoReply = (process.env.ZEPTOMAIL_AUTOREPLY || "1") !== "0";
-    if (autoReply) {
-      const confirmation = buildAutoReply(name, rows, entries);
-      const replySent = await sendMail({
-        from: { address: FROM_ADDRESS, name: FROM_NAME },
-        to: [{ email_address: { address: email, name: name || email } }],
-        subject: "We received your inquiry - LANGMAI",
-        htmlbody: confirmation.html,
-        textbody: confirmation.text,
-        reply_to: [{ address: TO[0], name: FROM_NAME }],
-      }).catch(() => ({ ok: false }));
-      console.log("autoreply", replySent.ok ? `sent to ${email}` : `failed for ${email}`);
-    }
-
     res.status(200).json({ success: true, message: "Inquiry sent." });
   } catch (error) {
     console.error("inquiry_failed", String(error));
