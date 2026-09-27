@@ -2933,12 +2933,12 @@ document.querySelectorAll("[data-lead-form]").forEach((form)=>{
     button.textContent = "Sending...";
     note.textContent = "Sending your inquiry securely...";
     try {
-      const response = await fetch("https://formsubmit.co/ajax/${company.email}", {
+      const response = await fetch("/api/inquiry", {
         method: "POST",
         headers: {"Content-Type":"application/json","Accept":"application/json"},
-        body: JSON.stringify({...data, _subject:"New LANGMAI product inquiry", _template:"table", _replyto:data.email, page:window.location.href})
+        body: JSON.stringify({...data, _subject:"New LANGMAI product inquiry", subject:"New LANGMAI product inquiry", page:window.location.href})
       });
-      const result = await response.json();
+      const result = await response.json().catch(() => ({}));
       if (!response.ok || String(result.success).toLowerCase() !== "true") throw new Error(result.message || "Delivery failed");
       note.textContent = "Thank you. Your inquiry has been sent to Wilson's sales inbox.";
       button.textContent = "Sent";
@@ -2998,12 +2998,12 @@ document.querySelectorAll("[data-inquiry-form]").forEach((form)=>{
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({event:"b2b_inquiry_submit",product:data.product,country:data.country});
     try {
-      const response = await fetch("https://formsubmit.co/ajax/${company.email}", {
+      const response = await fetch("/api/inquiry", {
         method: "POST",
         headers: {"Content-Type":"application/json","Accept":"application/json"},
-        body: JSON.stringify({...data, _subject:"New LANGMAI B2B inquiry", _template:"table", _replyto:data.email, page:window.location.href})
+        body: JSON.stringify({...data, _subject:"New LANGMAI B2B inquiry", subject:"New LANGMAI B2B inquiry", page:window.location.href})
       });
-      const result = await response.json();
+      const result = await response.json().catch(() => ({}));
       if (!response.ok || String(result.success).toLowerCase() !== "true") throw new Error(result.message || "Delivery failed");
       status.textContent = "Submitted successfully. Your inquiry has been sent to Wilson's sales inbox.";
       status.classList.add("success");

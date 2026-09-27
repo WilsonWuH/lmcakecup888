@@ -636,11 +636,10 @@ footer a{color:#e0d7cd;text-decoration:none;margin-right:18px}
         <p class="sub">Send us your size, quantity, artwork or reference product. We'll recommend the paper, printing and packaging configuration.</p>
         <a class="wa" href="https://wa.me/8613645700210">WhatsApp: +86 136 4570 0210 →</a>
       </div>
-      <form class="rfq-form" id="rfq-form" action="https://formsubmit.co/wilson@lmcakecup.com" method="post" enctype="multipart/form-data">
+      <form class="rfq-form" id="rfq-form">
         <input type="hidden" name="_subject" value="New LANGMAI parchment paper RFQ">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" id="f-next" value="">
         <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+        <noscript><p class="rfq-status">JavaScript is required to submit this form. Please email <a href="mailto:wilson@lmcakecup.com">wilson@lmcakecup.com</a>.</p></noscript>
         <div class="field">
           <label for="f-size">Size *</label>
           <input id="f-size" name="size" type="text" placeholder="e.g. 40 x 60 cm sheet" required>
@@ -773,50 +772,58 @@ document.getElementById('f-artwork').addEventListener('change', function(){
 (function(){
   var form = document.getElementById('rfq-form');
   var status = document.getElementById('rfq-status');
-  var next = document.getElementById('f-next');
-  next.value = location.origin + location.pathname + '?rfq=sent';
-  if (location.search.indexOf('rfq=sent') !== -1) {
-    status.textContent = 'Thank you. Your inquiry has been sent to our sales inbox.';
-    status.className = 'rfq-status ok';
-    if (history.replaceState) history.replaceState(null, '', location.pathname);
+  var MAX_BYTES = 3 * 1024 * 1024;
+  function toBase64(file){
+    return new Promise(function(resolve, reject){
+      var reader = new FileReader();
+      reader.onload = function(){ resolve(String(reader.result).split(',').pop() || ''); };
+      reader.onerror = function(){ reject(new Error('read failed')); };
+      reader.readAsDataURL(file);
+    });
   }
   form.addEventListener('submit', function(e){
-    if (form.querySelector('[name="_honey"]').value !== '') { e.preventDefault(); return; }
-    if (!form.checkValidity()) { e.preventDefault(); form.reportValidity(); return; }
-    var file = document.getElementById('f-artwork');
-    if (file.files.length) {
-      // attachment: native multipart POST to FormSubmit, redirect back via _next
-      document.getElementById('rfq-submit').disabled = true;
-      return;
-    }
     e.preventDefault();
+    if (form.querySelector('[name="_honey"]').value !== '') { return; }
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    var btn = document.getElementById('rfq-submit');
+    var fileInput = document.getElementById('f-artwork');
+    var file = fileInput.files.length ? fileInput.files[0] : null;
     var data = {};
     new FormData(form).forEach(function(v, k){ if (typeof v === 'string') data[k] = v; });
-    data._subject = 'New LANGMAI parchment paper RFQ';
-    data._template = 'table';
-    data._replyto = data.email || '';
+    data.subject = 'New LANGMAI parchment paper RFQ';
     data.page = location.href;
-    var btn = document.getElementById('rfq-submit');
+    if (file && file.size > MAX_BYTES) {
+      status.textContent = 'Artwork file is larger than 3 MB. Please email it to wilson@lmcakecup.com, or submit without the attachment.';
+      status.className = 'rfq-status err';
+      return;
+    }
     btn.disabled = true; btn.textContent = 'Sending…';
     status.textContent = 'Sending your inquiry…';
     status.className = 'rfq-status';
-    fetch('https://formsubmit.co/ajax/wilson@lmcakecup.com', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(data)
-    }).then(function(r){ return r.json().then(function(j){ return { ok: r.ok, j: j }; }); }).then(function(res){
-      if (res.ok && String(res.j.success).toLowerCase() === 'true') {
+    var ready = file
+      ? toBase64(file).then(function(b64){ data.attachment = { name: file.name, mimeType: file.type || 'application/octet-stream', content: b64 }; })
+      : Promise.resolve();
+    ready.then(function(){
+      return fetch('/api/inquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      }).then(function(r){
+        return r.json().catch(function(){ return {}; }).then(function(j){ return { ok: r.ok, j: j }; });
+      });
+    }).then(function(res){
+      if (res.ok && res.j && res.j.success === true) {
         status.textContent = 'Thank you. Your inquiry has been sent to our sales inbox.';
         status.className = 'rfq-status ok';
         form.reset();
         document.getElementById('f-artwork-name').textContent = 'PDF, AI, EPS, PNG or JPG';
       } else {
-        throw new Error(res.j.message || 'Delivery failed');
+        throw new Error((res.j && res.j.message) || 'Delivery failed');
       }
     }).catch(function(){
       status.textContent = 'Something went wrong. Please email wilson@lmcakecup.com or message us on WhatsApp.';
       status.className = 'rfq-status err';
-    }).finally(function(){
+    }).then(function(){
       btn.disabled = false; btn.textContent = 'Get My Custom Quote';
     });
   });
