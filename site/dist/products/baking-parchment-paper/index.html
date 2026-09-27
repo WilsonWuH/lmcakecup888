@@ -804,7 +804,7 @@ document.getElementById('f-artwork').addEventListener('change', function(){
       ? toBase64(file).then(function(b64){ data.attachment = { name: file.name, mimeType: file.type || 'application/octet-stream', content: b64 }; })
       : Promise.resolve();
     ready.then(function(){
-      return fetch('/api/inquiry', {
+      return fetch('/api/inquiry/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(data)

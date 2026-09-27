@@ -82,7 +82,7 @@ document.querySelectorAll("[data-lead-form]").forEach((form)=>{
     button.textContent = "Sending...";
     note.textContent = "Sending your inquiry securely...";
     try {
-      const response = await fetch("/api/inquiry", {
+      const response = await fetch("/api/inquiry/", {
         method: "POST",
         headers: {"Content-Type":"application/json","Accept":"application/json"},
         body: JSON.stringify({...data, _subject:"New LANGMAI product inquiry", subject:"New LANGMAI product inquiry", page:window.location.href})
@@ -147,7 +147,7 @@ document.querySelectorAll("[data-inquiry-form]").forEach((form)=>{
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({event:"b2b_inquiry_submit",product:data.product,country:data.country});
     try {
-      const response = await fetch("/api/inquiry", {
+      const response = await fetch("/api/inquiry/", {
         method: "POST",
         headers: {"Content-Type":"application/json","Accept":"application/json"},
         body: JSON.stringify({...data, _subject:"New LANGMAI B2B inquiry", subject:"New LANGMAI B2B inquiry", page:window.location.href})

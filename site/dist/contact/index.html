@@ -183,7 +183,7 @@ export function B2BInquiryForm() {
     setStatus(&quot;submitting&quot;);
     const payload = Object.fromEntries(new FormData(form).entries());
     try {
-      const res = await fetch(&quot;/api/inquiry&quot;, {
+      const res = await fetch(&quot;/api/inquiry/&quot;, {
         method: &quot;POST&quot;,
         headers: { &quot;Content-Type&quot;: &quot;application/json&quot; },
         body: JSON.stringify(payload)
