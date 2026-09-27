@@ -25,7 +25,7 @@ const company = {
   customers: "Importers, distributors, bakery and confectionery buyers, large supermarkets",
   certificates: ["BSCI", "ISO", "FSC", "LFGB", "DGCCRF", "PFAS-related review"],
   contact: "Wilson Wu",
-  email: "wh1007209170@gmail.com",
+  email: "wilson@lmcakecup.com",
   phone: "+86 13645700210",
   whatsapp: "+86 13645700210",
 };

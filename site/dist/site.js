@@ -82,7 +82,7 @@ document.querySelectorAll("[data-lead-form]").forEach((form)=>{
     button.textContent = "Sending...";
     note.textContent = "Sending your inquiry securely...";
     try {
-      const response = await fetch("https://formsubmit.co/ajax/wh1007209170@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/wilson@lmcakecup.com", {
         method: "POST",
         headers: {"Content-Type":"application/json","Accept":"application/json"},
         body: JSON.stringify({...data, _subject:"New LANGMAI product inquiry", _template:"table", _replyto:data.email, page:window.location.href})
@@ -93,7 +93,7 @@ document.querySelectorAll("[data-lead-form]").forEach((form)=>{
       button.textContent = "Sent";
       form.reset();
     } catch (error) {
-      note.textContent = "We could not send your inquiry. Please email wh1007209170@gmail.com or contact us on WhatsApp.";
+      note.textContent = "We could not send your inquiry. Please email wilson@lmcakecup.com or contact us on WhatsApp.";
       button.textContent = "Try Again";
     } finally {
       setTimeout(()=>{button.disabled=false;button.textContent="Send Inquiry";},1800);
@@ -147,7 +147,7 @@ document.querySelectorAll("[data-inquiry-form]").forEach((form)=>{
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({event:"b2b_inquiry_submit",product:data.product,country:data.country});
     try {
-      const response = await fetch("https://formsubmit.co/ajax/wh1007209170@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/wilson@lmcakecup.com", {
         method: "POST",
         headers: {"Content-Type":"application/json","Accept":"application/json"},
         body: JSON.stringify({...data, _subject:"New LANGMAI B2B inquiry", _template:"table", _replyto:data.email, page:window.location.href})
