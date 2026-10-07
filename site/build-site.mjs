@@ -2366,7 +2366,16 @@ function writePage(route, html) {
 
 function readLocale(locale) {
   const file = path.join(siteDir, "i18n", `${locale}.json`);
-  return JSON.parse(fs.readFileSync(file, "utf8"));
+  const data = JSON.parse(fs.readFileSync(file, "utf8"));
+  // Optional curated overlay for the core (non-article) pages: titles, H1s and
+  // meta descriptions. Kept separate from the shared UI phrase table.
+  const coreFile = path.join(siteDir, "i18n", "core", `${locale}.json`);
+  if (fs.existsSync(coreFile)) {
+    const core = JSON.parse(fs.readFileSync(coreFile, "utf8"));
+    data.phrases = { ...(data.phrases || {}), ...(core.phrases || {}) };
+    data.meta = { ...(data.meta || {}), ...(core.meta || {}) };
+  }
+  return data;
 }
 
 function escapeRegExp(value) {
@@ -2421,9 +2430,15 @@ function textOnly(value) {
 }
 
 function setLocalizedSeo(html, source = {}) {
-  const { h1: sourceH1 = "", title: sourceTitle = "", phrases = {} } = source;
+  const {
+    h1: sourceH1 = "",
+    title: sourceTitle = "",
+    meta: sourceMeta = "",
+    phrases = {},
+    metaDescriptions = {},
+  } = source;
   const h1 = textOnly((html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i) || [])[1] || "");
-  if (!h1 && !sourceTitle) return html;
+  if (!h1 && !sourceTitle && !sourceMeta) return html;
   // translateHtml() rewrites matching substrings everywhere, so a title such as
   // "Food-Contact Paper" can come out half translated ("Food-Contacto Paper").
   // Trust only curated entries of the locale phrase table: either the whole title
@@ -2434,10 +2449,20 @@ function setLocalizedSeo(html, source = {}) {
     const localizedHeading = phrases[sourceH1];
     title = localizedHeading.length <= 55 ? `${localizedHeading} | LANGMAI` : localizedHeading;
   }
-  if (!title) return html;
-  return html
-    .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(title)}</title>`)
-    .replace(/<meta property="og:title" content="[^"]*">/, `<meta property="og:title" content="${esc(title)}">`);
+  // Meta descriptions live in a dedicated `meta` map (EN meta -> localized) so
+  // they never participate in body substring replacement.
+  const meta = metaDescriptions[sourceMeta] || "";
+  if (title) {
+    html = html
+      .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(title)}</title>`)
+      .replace(/<meta property="og:title" content="[^"]*">/, `<meta property="og:title" content="${esc(title)}">`);
+  }
+  if (meta) {
+    html = html
+      .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(meta)}">`)
+      .replace(/<meta property="og:description" content="[^"]*">/, `<meta property="og:description" content="${esc(meta)}">`);
+  }
+  return html;
 }
 
 function localeSwitcherHtml(route, currentLocale) {
@@ -2471,13 +2496,20 @@ function localizeHtml(html, route, locale, localeData) {
   const canonical = `${baseUrl}${localizedPath(locale, route)}`;
   const sourceH1 = textOnly((html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i) || [])[1] || "");
   const sourceTitle = ((html.match(/<title>([\s\S]*?)<\/title>/) || [])[1] || "").trim();
+  const sourceMeta = ((html.match(/<meta name="description" content="([^"]*)"/) || [])[1] || "").trim();
   let output = html
     .replace('<html lang="en">', `<html lang="${locale}" dir="${localeData.dir || "ltr"}">`)
     .replace(/<link rel="canonical" href="[^"]+">/, `<link rel="canonical" href="${canonical}">`)
     .replace(/<div class="language-switcher">[\s\S]*?<\/div>\s*<\/div>/, `${localeSwitcherHtml(route, locale)}\n  </div>`);
   output = prefixInternalLinks(output, locale);
   output = translateHtml(output, localeData);
-  output = setLocalizedSeo(output, { h1: sourceH1, title: sourceTitle, phrases: localeData.phrases || {} });
+  output = setLocalizedSeo(output, {
+    h1: sourceH1,
+    title: sourceTitle,
+    meta: sourceMeta,
+    phrases: localeData.phrases || {},
+    metaDescriptions: localeData.meta || {},
+  });
   return output;
 }
 

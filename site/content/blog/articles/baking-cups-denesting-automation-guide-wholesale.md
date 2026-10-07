@@ -140,7 +140,7 @@ CTA button: Request Samples and Quote
 - [EUR-Lex Regulation (EC) No 1935/2004 on food contact materials](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02004R1935-20210327)
 - [EUR-Lex Regulation (EC) No 2023/2006 on good manufacturing practice](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02006R2023-20080417)
 - [BfR Recommendations on Food Contact Materials](https://www.bfr.bund.de/en/bfr-recommendations-on-food-contact-materials-1711.html)
-- [SGS Consumer Goods and Retail Testing Services](https://www.sgs.com/en/consumer-goods-and-retail)
+- [SGS Food Contact Materials Testing and Product Certification](https://www.sgs.com/en-gb/news/2025/05/food-contact-materials-testing-and-product-certification)
 
 ## Image Plan and AI Prompts
 
