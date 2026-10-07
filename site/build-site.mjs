@@ -2,6 +2,7 @@
 import path from "node:path";
 
 import { buildMarketSites } from "./market-sites.mjs";
+import { isLiveRoute } from "./live-routes.mjs";
 
 const root = process.cwd();
 const siteDir = path.join(root, "site");
@@ -58,7 +59,8 @@ const solutionCategories = [
 const socialLinks = [
   { name: "Facebook", url: "https://www.facebook.com/langmai.paper", icon: "facebook" },
   { name: "Instagram", url: "https://www.instagram.com/langmai.paper", icon: "instagram" },
-  { name: "LinkedIn", url: "https://www.linkedin.com/company/langmai-paper", icon: "linkedin" },
+  // LinkedIn removed 2026-10-07: https://www.linkedin.com/company/langmai-paper returns 404
+  // (3,236 broken footer links site-wide). Re-add the entry once a live company page exists.
 ];
 
 const certificateFiles = [
@@ -720,14 +722,23 @@ function marketLocalePath(locale, route) {
 }
 
 function hreflangTags(route, currentLocale = "") {
-  const links = localeCodes
-    .map((locale) => `  <link rel="alternate" hreflang="${locale}" href="${baseUrl}${localizedPath(locale, route)}">`)
-    .join("\n");
-  const markets = ["de", "fr"].map((locale) => {
+  // A page that vercel.json redirects away is never indexed: emitting hreflang
+  // for it would only create non-200 hreflang targets.
+  if (!isLiveRoute(route)) return "";
+  const entries = [`  <link rel="alternate" hreflang="en" href="${urlFor(route)}">`];
+  for (const locale of localeCodes) {
+    const localized = localizedPath(locale, route);
+    if (!isLiveRoute(localized)) continue;
+    entries.push(`  <link rel="alternate" hreflang="${locale}" href="${baseUrl}${localized}">`);
+  }
+  for (const locale of ["de", "fr"]) {
     const mapped = marketLocalePath(locale, route);
-    return mapped ? `  <link rel="alternate" hreflang="${locale}" href="${baseUrl}${mapped}">` : "";
-  }).filter(Boolean).join("\n");
-  return `  <link rel="alternate" hreflang="en" href="${urlFor(route)}">\n${links}${markets ? `\n${markets}` : ""}\n  <link rel="alternate" hreflang="x-default" href="${urlFor(route)}">`;
+    if (mapped && isLiveRoute(mapped)) {
+      entries.push(`  <link rel="alternate" hreflang="${locale}" href="${baseUrl}${mapped}">`);
+    }
+  }
+  entries.push(`  <link rel="alternate" hreflang="x-default" href="${urlFor(route)}">`);
+  return entries.join("\n");
 }
 
 function languageSwitcher(route = "/") {
@@ -740,17 +751,22 @@ function languageSwitcher(route = "/") {
     ["de", "Deutsch"],
     ["pt", "Português"],
   ];
+  const links = items
+    .map(([code, label]) => {
+      const href = code === "en"
+        ? route
+        : ["de", "fr"].includes(code)
+          ? marketLocalePath(code, route) || localizedPath(code, "/")
+          : localizedPath(code, route);
+      if (!isLiveRoute(href)) return "";
+      return `<a data-locale-link="${code}" href="${href}">${label}</a>`;
+    })
+    .filter(Boolean)
+    .join("");
   return `<div class="language-switcher">
     <button class="language-current" type="button" aria-label="Select language">EN</button>
     <div class="language-menu">
-      ${items.map(([code, label]) => {
-        const href = code === "en"
-          ? route
-          : ["de", "fr"].includes(code)
-            ? marketLocalePath(code, route) || localizedPath(code, "/")
-            : localizedPath(code, route);
-        return `<a data-locale-link="${code}" href="${href}">${label}</a>`;
-      }).join("")}
+      ${links}
     </div>
   </div>`;
 }
@@ -816,7 +832,7 @@ function siteHeader(route = "/") {
       <a class="nav-link simple" href="/compliance/">Compliance</a>
       <a class="nav-link simple" href="/resources/">Resources</a>
       <a class="nav-link simple" href="/about/">About</a>
-      <a class="nav-link simple" href="/contact/">Contact</a>
+      <a class="nav-link simple" href="/inquiry/">Contact</a>
     </nav>
     <a class="header-cta" href="/inquiry/">Request a Quote</a>
     ${languageSwitcher(route)}
@@ -852,8 +868,8 @@ function siteFooter() {
     </div>
     <div>
       <h2>Start Here</h2>
-      <a href="/contact/">Request a Quote</a>
-      <a href="/contact/#sample">Get Free Sample</a>
+      <a href="/inquiry/">Request a Quote</a>
+      <a href="/inquiry/#sample">Get Free Sample</a>
       <a href="/products/food-wrapping-paper/">Explore Food Wrapping Paper</a>
       <a href="/custom-oem/">Custom Printing & OEM</a>
       <a href="/factory-certificates/">Factory & Quality</a>
@@ -892,8 +908,8 @@ function ctaBand(title = "Ready to price your next baking paper order?") {
       <p>Share product type, size, quantity, destination market and custom print needs. LANGMAI can support stock designs, OEM artwork, samples and export carton planning.</p>
     </div>
     <div class="cta-actions">
-      <a class="button primary" href="/contact/">Request a Quote</a>
-      <a class="button secondary" href="/contact/#sample">Get Free Sample</a>
+      <a class="button primary" href="/inquiry/">Request a Quote</a>
+      <a class="button secondary" href="/inquiry/#sample">Get Free Sample</a>
     </div>
   </section>`;
 }
@@ -925,7 +941,7 @@ function ipStickyCard(productTitle = "Custom cupcake liners") {
         <li>Sample and catalog request</li>
         <li>WhatsApp quick reply</li>
       </ul>
-      <a class="button primary" href="/contact/">Request a Quote</a>
+      <a class="button primary" href="/inquiry/">Request a Quote</a>
       <a class="button secondary" href="https://wa.me/8613645700210">WhatsApp Wilson</a>
       <span class="ip-note">${esc(productTitle)}</span>
     </div>
@@ -1228,7 +1244,7 @@ function foodWrappingProductPage(product) {
   <section class="section two-col"><div><p class="eyebrow">OEM and private label</p><h2>From artwork to export carton</h2><ol class="process-list"><li>Define material, application and dimensions</li><li>Review artwork, colors and print coverage</li><li>Approve a representative product and packaging sample</li><li>Confirm pack count, labels and master cartons</li><li>Link the final order to the approved specification</li></ol></div><div><p class="eyebrow">Packaging options</p><h2>Plan the selling format</h2><ul class="check-list"><li>Bulk sheets or rolls</li><li>Interfolded or dispenser formats where applicable</li><li>Retail pack counts and private-label artwork</li><li>Inner packs, labels and master cartons</li><li>Pallet and container information upon request</li></ul></div></section>
   <section class="section two-col" id="quote"><div><p class="eyebrow">Quote request</p><h2>Send a product-level brief</h2><p>Please confirm technical requirements before ordering. The detailed form helps LANGMAI check material, converting, printing, documents and packaging together.</p></div>${foodWrappingLeadForm(product)}</section>
   <section class="section faq"><p class="eyebrow">FAQ</p><h2>${esc(product.cardTitle)} FAQ</h2>${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</section>
-  <section class="section"><h2>Related food wrapping paper</h2><div class="link-grid">${wrappingProducts.map((item) => `<a href="/products/${item.slug}/">${esc(item.cardTitle)}</a>`).join("")}<a href="/products/food-wrapping-paper/">Food Wrapping Paper Overview</a><a href="/contact/">Contact LANGMAI</a></div></section>`;
+  <section class="section"><h2>Related food wrapping paper</h2><div class="link-grid">${wrappingProducts.map((item) => `<a href="/products/${item.slug}/">${esc(item.cardTitle)}</a>`).join("")}<a href="/products/food-wrapping-paper/">Food Wrapping Paper Overview</a><a href="/inquiry/">Contact LANGMAI</a></div></section>`;
   return layout({
     route: `/products/${product.slug}/`,
     title: product.seoTitle,
@@ -1503,7 +1519,7 @@ function productPage(product) {
       <p>${esc(product.short)}</p>
       <div class="hero-actions">
         <a class="button primary" href="#quote">Request a Quote</a>
-        <a class="button secondary" href="/contact/#sample">Get Free Sample</a>
+        <a class="button secondary" href="/inquiry/#sample">Get Free Sample</a>
       </div>
     </div>
     <img src="${relAsset(product.image)}" alt="${esc(product.title)} specifications and product examples">
@@ -1801,7 +1817,7 @@ function applicationLandingPage(type) {
   };
   const page = pages[type];
   const content = `<section class="industry-application-hero">
-    <div><p class="eyebrow">${page.eyebrow}</p><h1>${page.title}</h1><p>${page.description}</p><div class="application-trust">${page.trust.map((item) => `<span>${esc(item)}</span>`).join("")}</div><div class="hero-actions"><a class="button primary" href="#application-quote">${page.sampleLabel}</a><a class="button secondary" href="/contact/">Talk to a Packaging Expert</a></div></div>
+    <div><p class="eyebrow">${page.eyebrow}</p><h1>${page.title}</h1><p>${page.description}</p><div class="application-trust">${page.trust.map((item) => `<span>${esc(item)}</span>`).join("")}</div><div class="hero-actions"><a class="button primary" href="#application-quote">${page.sampleLabel}</a><a class="button secondary" href="/inquiry/">Talk to a Packaging Expert</a></div></div>
     <div class="industry-hero-image"><img src="/assets/${page.image}" width="1200" height="800" fetchpriority="high" decoding="async" alt="${page.alt}"><span>Application-led product selection</span></div>
   </section>
   <section class="section industry-challenges"><div class="section-heading"><p class="eyebrow">Industry challenges</p><h2>Turn Operating Requirements into a Clear Packaging Specification</h2><p>Good packaging is not selected by appearance alone. Product use, performance, brand presentation and supply controls must be approved together.</p></div><div class="industry-challenge-grid">${page.challenges.map(([title, text], index) => `<article><span>0${index + 1}</span><h3>${title}</h3><p>${text}</p></article>`).join("")}</div></section>
@@ -2066,7 +2082,7 @@ function factoryPage() {
 }
 
 function aboutPage() {
-  const content = `<section class="about-hero-new"><div><p class="eyebrow">About LANGMAI</p><h1>A paper packaging partner for practical B2B programs.</h1><p>${company.name} has supplied food paper products from ${company.city} since ${company.founded}. We work with importers, distributors, bakeries, foodservice buyers and private-label brands that need clear specifications, responsive sampling and export-ready packing.</p><div class="hero-actions"><a class="button primary" href="/contact/">Contact ${company.contact}</a><a class="button secondary" href="/factory-certificates/">Review Factory Evidence</a></div></div><figure><img src="/assets/factory-real-production-team-1600.webp" width="1600" height="900" fetchpriority="high" decoding="async" alt="LANGMAI production team working in the paper packaging workshop"><figcaption>People and process behind the finished paper format</figcaption></figure></section>
+  const content = `<section class="about-hero-new"><div><p class="eyebrow">About LANGMAI</p><h1>A paper packaging partner for practical B2B programs.</h1><p>${company.name} has supplied food paper products from ${company.city} since ${company.founded}. We work with importers, distributors, bakeries, foodservice buyers and private-label brands that need clear specifications, responsive sampling and export-ready packing.</p><div class="hero-actions"><a class="button primary" href="/inquiry/">Contact ${company.contact}</a><a class="button secondary" href="/factory-certificates/">Review Factory Evidence</a></div></div><figure><img src="/assets/factory-real-production-team-1600.webp" width="1600" height="900" fetchpriority="high" decoding="async" alt="LANGMAI production team working in the paper packaging workshop"><figcaption>People and process behind the finished paper format</figcaption></figure></section>
   <section class="trust-strip about-facts" aria-label="LANGMAI company facts"><span><strong>${company.founded}</strong> founded</span><span><strong>${company.plant}</strong> site</span><span><strong>${company.team}</strong></span><span><strong>Global B2B</strong> export support</span></section>
   <section class="split-section about-profile"><img src="/assets/factory-real-overview-1600.webp" loading="lazy" decoding="async" alt="LANGMAI paper packaging production floor"><div><p class="eyebrow">Company profile</p><h2>Clear product decisions make repeat orders easier.</h2><p>The product range covers cake cups, cupcake liners, muffin and tulip cups, baking parchment, air fryer liners, greaseproof wrapping paper, paper straws and selected paper accessories.</p><p>Buyers can discuss paper type, dimensions, forming, printing, color, pack count, retail presentation and export-carton requirements as one controlled specification rather than sourcing each step separately.</p><p>${company.contact} is the named contact for overseas inquiries, helping connect product requirements with samples, document review and quotation follow-up.</p></div></section>
   <section class="section"><div class="section-heading"><p class="eyebrow">How we support a project</p><h2>From first brief to repeat supply.</h2></div><div class="process-grid">${[["01", "Define the application", "Confirm the food, dimensions, use conditions, destination market and quantity."],["02", "Select the construction", "Match paper, treatment, shape, print, color and pack format to the approved use."],["03", "Review samples", "Check appearance, dimensions, forming, odor, grease resistance and packing."],["04", "Approve the specification", "Record accepted material, size, artwork, pack count, carton details and inspection points."],["05", "Produce and inspect", "Manufacture against the approved version and review lot and shipment preparation."],["06", "Support repeat supply", "Use the approved specification as the reference for reorders and controlled changes."]].map(([number, title, text]) => `<article><span>${number}</span><h3>${title}</h3><p>${text}</p></article>`).join("")}</div></section>
@@ -2258,7 +2274,7 @@ function newsPage() {
     <p class="eyebrow">Industry news</p>
     <h1>Baking Paper Packaging News</h1>
     <p>Daily buyer-focused updates on greaseproof paper, baking cups, air fryer paper liners, food-contact paper packaging, PFAS-free materials and EUDR compliance.</p>
-    <div class="hero-actions"><a class="button primary" href="/contact/">Ask for Product Support</a><a class="button secondary" href="/resources/">Read Buyer Guides</a></div>
+    <div class="hero-actions"><a class="button primary" href="/inquiry/">Ask for Product Support</a><a class="button secondary" href="/resources/">Read Buyer Guides</a></div>
   </section>
   <section class="section news-intro">
     <div class="section-heading">
@@ -2324,7 +2340,7 @@ function resourcePage(resource) {
       <h2>Next steps</h2>
       <a href="/products/cake-cups/">View custom cupcake liners</a>
       <a href="/customization/">Review OEM customization process</a>
-      <a href="/contact/">Request a quote</a>
+      <a href="/inquiry/">Request a quote</a>
     </section>
   </article>`;
   return layout({
@@ -2503,10 +2519,23 @@ function translateHtml(html, localeData) {
 
 function prefixInternalLinks(html, locale) {
   const reserved = new Set(["assets", "en", "es", "ru", "ar", "fr", "de", "pt"]);
+  // /contact/ and /inquiry/ are the same "request a quote" page in two flavours.
+  // English canonicalises on /inquiry/ (vercel.json 308s /contact/ into it) while
+  // es/ru/pt keep their localised /{locale}/contact/ page live. Keep every visitor
+  // on a live page in their own language instead of bouncing through a redirect.
+  const CONTACT_FALLBACK = { inquiry: "contact" };
   return html.replace(/\s(href|action)="\/([^"#?]*)([#?][^"]*)?"/g, (match, attr, pathPart, suffix = "") => {
     const first = pathPart.split("/")[0];
     if (reserved.has(first) || pathPart === "styles.css" || pathPart === "site.js" || pathPart === "sitemap.xml" || pathPart === "robots.txt") return match;
-    return ` ${attr}="/${locale}/${pathPart}${suffix}"`;
+    const localized = `/${locale}/${pathPart}`;
+    if (isLiveRoute(localized)) return ` ${attr}="${localized}${suffix}"`;
+    const fallback = CONTACT_FALLBACK[first];
+    if (fallback) {
+      const alias = `/${locale}/${fallback}${pathPart.slice(first.length)}`;
+      if (isLiveRoute(alias)) return ` ${attr}="${alias}${suffix}"`;
+    }
+    // Otherwise keep the live English URL rather than burning a 308 on every link.
+    return match;
   });
 }
 
@@ -2519,10 +2548,21 @@ function textOnly(value) {
     .trim();
 }
 
-function setLocalizedSeo(html) {
+function setLocalizedSeo(html, source = {}) {
+  const { h1: sourceH1 = "", title: sourceTitle = "", phrases = {} } = source;
   const h1 = textOnly((html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i) || [])[1] || "");
-  if (!h1) return html;
-  const title = `${h1} | LANGMAI`;
+  if (!h1 && !sourceTitle) return html;
+  // translateHtml() rewrites matching substrings everywhere, so a title such as
+  // "Food-Contact Paper" can come out half translated ("Food-Contacto Paper").
+  // Trust only curated entries of the locale phrase table: either the whole title
+  // or the whole heading was translated, otherwise keep the hand-written title.
+  const cleanTitle = (sourceTitle || "").trim() || (h1 ? `${h1} | LANGMAI` : "");
+  let title = phrases[sourceTitle] || cleanTitle;
+  if (!phrases[sourceTitle] && sourceH1 && phrases[sourceH1]) {
+    const localizedHeading = phrases[sourceH1];
+    title = localizedHeading.length <= 55 ? `${localizedHeading} | LANGMAI` : localizedHeading;
+  }
+  if (!title) return html;
   return html
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(title)}</title>`)
     .replace(/<meta property="og:title" content="[^"]*">/, `<meta property="og:title" content="${esc(title)}">`);
@@ -2548,21 +2588,24 @@ function localeSwitcherHtml(route, currentLocale) {
           : ["de", "fr"].includes(code)
             ? marketLocalePath(code, route) || localizedPath(code, "/")
             : localizedPath(code, route);
+        if (!isLiveRoute(href)) return "";
         return `<a data-locale-link="${code}" href="${href}">${localeNames[code]}</a>`;
-      }).join("")}
+      }).filter(Boolean).join("")}
     </div>
   </div>`;
 }
 
 function localizeHtml(html, route, locale, localeData) {
   const canonical = `${baseUrl}${localizedPath(locale, route)}`;
+  const sourceH1 = textOnly((html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i) || [])[1] || "");
+  const sourceTitle = ((html.match(/<title>([\s\S]*?)<\/title>/) || [])[1] || "").trim();
   let output = html
     .replace('<html lang="en">', `<html lang="${locale}" dir="${localeData.dir || "ltr"}">`)
     .replace(/<link rel="canonical" href="[^"]+">/, `<link rel="canonical" href="${canonical}">`)
     .replace(/<div class="language-switcher">[\s\S]*?<\/div>\s*<\/div>/, `${localeSwitcherHtml(route, locale)}\n  </div>`);
   output = prefixInternalLinks(output, locale);
   output = translateHtml(output, localeData);
-  output = setLocalizedSeo(output);
+  output = setLocalizedSeo(output, { h1: sourceH1, title: sourceTitle, phrases: localeData.phrases || {} });
   return output;
 }
 
@@ -2573,6 +2616,9 @@ function localizePages() {
     for (const locale of localeCodes) {
       const localeData = readLocale(locale);
       const localizedRoute = localizedPath(locale, route);
+      // Do not ship locale copies that vercel.json redirects back to English:
+      // they would only ever be served as 308s.
+      if (!isLiveRoute(localizedRoute)) continue;
       const dir = localizedRoute === `/${locale}/` ? path.join(distDir, locale) : path.join(distDir, localizedRoute);
       fs.mkdirSync(dir, { recursive: true });
       fs.writeFileSync(path.join(dir, "index.html"), localizeHtml(html, route, locale, localeData));
@@ -2616,11 +2662,13 @@ function writeStatic() {
   fs.writeFileSync(path.join(distDir, "social-links.example.json"), JSON.stringify({ socialLinks }, null, 2));
   fs.writeFileSync(path.join(distDir, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${baseUrl}/sitemap.xml\n`);
   localizePages();
-  const marketRoutes = buildMarketSites(distDir);
-  const translatedRoutes = pages.flatMap((route) => localeCodes.map((locale) => localizedPath(locale, route)));
-  const sitemapRoutes = [...pages, ...translatedRoutes, ...marketRoutes];
+  const marketRoutes = buildMarketSites(distDir).filter(isLiveRoute);
+  const translatedRoutes = pages
+    .flatMap((route) => localeCodes.map((locale) => localizedPath(locale, route)))
+    .filter(isLiveRoute);
+  const sitemapRoutes = [...pages.filter(isLiveRoute), ...translatedRoutes, ...marketRoutes];
   fs.writeFileSync(path.join(distDir, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapRoutes.map((route) => `  <url><loc>${baseUrl}${route}</loc></url>`).join("\n")}\n</urlset>\n`);
-  const perLanguage = { en: pages, de: marketRoutes.filter((route) => route.startsWith("/de/")), fr: marketRoutes.filter((route) => route.startsWith("/fr/")) };
+  const perLanguage = { en: pages.filter(isLiveRoute), de: marketRoutes.filter((route) => route.startsWith("/de/")), fr: marketRoutes.filter((route) => route.startsWith("/fr/")) };
   for (const [locale, routes] of Object.entries(perLanguage)) {
     fs.writeFileSync(path.join(distDir, `sitemap-${locale}.xml`), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${routes.map((route) => `  <url><loc>${baseUrl}${route}</loc></url>`).join("\n")}\n</urlset>\n`);
   }

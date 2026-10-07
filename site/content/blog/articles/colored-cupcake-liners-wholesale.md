@@ -206,4 +206,4 @@ For a stronger RFQ, send the supplier the color reference, cup dimensions, recip
 
 LANGMAI supports global B2B buyers with cupcake liners, paper baking cups, cake cups and custom food-paper packaging for bakery, foodservice, retail and party ranges. To source colored cupcake liners for your next program, share your target specification and request samples before bulk approval.
 
-[Send your colored cupcake liner inquiry](/contact/)
+[Send your colored cupcake liner inquiry](/inquiry/)

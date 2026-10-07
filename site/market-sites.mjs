@@ -1,6 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 
+import { isLiveRoute } from "./live-routes.mjs";
+
 const BASE = "https://www.lmcakecup.com";
 const company = "Jinhua Langmai Daily-Using Co., Ltd.";
 const locales = {
@@ -410,7 +412,7 @@ function enRoute(kind, key) {
       compliance: "/compliance/",
       eudr: "/eudr-traceability/",
       about: "/about/",
-      contact: "/contact/",
+      contact: "/inquiry/",
       sample: "/inquiry/",
       app: "/applications/",
       guide: "/resources/",
@@ -441,14 +443,18 @@ function layout(
     de = locale === "de" ? route : alt,
     fr = locale === "fr" ? route : alt;
   const hasCounterpart = hasLocalizedCounterpart(kind, key);
+  // Only reference hreflang targets that actually resolve with a 200: the es/ru/ar/pt
+  // copies of core pages are redirected back to English by vercel.json.
   const hreflang = hasCounterpart
     ? [
         ["en", `${BASE}${en}`],
-        ...["es", "ru", "ar", "pt"].map((code) => [code, `${BASE}${localizedEnglishRoute(code, en)}`]),
+        ...["es", "ru", "ar", "pt"]
+          .map((code) => [code, `${BASE}${localizedEnglishRoute(code, en)}`])
+          .filter(([, href]) => isLiveRoute(href.replace(BASE, ""))),
         ["de", `${BASE}${de}`],
         ["fr", `${BASE}${fr}`],
         ["x-default", `${BASE}${en}`],
-      ]
+      ].filter(([, href]) => isLiveRoute(href.replace(BASE, "")))
     : [[locale, `${BASE}${route}`]];
   const schema = JSON.stringify([
     {
