@@ -1,7 +1,7 @@
 // Verify the rebuilt site: no hreflang / canonical / internal link may point at a
 // path that vercel.json redirects away. Mirrors what Screaming Frog reported.
-const fs = require('fs');
-const path = require('path');
+import fs from 'node:fs';
+import path from 'node:path';
 
 const ROOT = 'D:/Projects/lmcakecup888';
 const DIST = path.join(ROOT, 'site/dist');

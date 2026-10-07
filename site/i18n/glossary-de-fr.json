@@ -1,0 +1,814 @@
+{
+  "meta": {
+    "id": "glossary-de-fr",
+    "version": "1.0.0",
+    "date": "2026-10-07",
+    "scope": ["de", "fr"],
+    "workflow": "英文母版 (EN master) -> 德语/法语本地化 (glossary-driven) -> SEO 检查 (scripts/glossary-check.mjs)",
+    "source": "术语全部提取自 lmcakecup.com 实际内容：EN 母版 (site/content, site/custom-pages, dist 产物) 与既有 DE/FR 手工文案 (site/market-sites.mjs)。不凭空造词。",
+    "statuses": {
+      "preferred": "✅ Preferred —— 优先使用，全站统一",
+      "context": "△ Context —— 仅在特定语境使用，备注中说明",
+      "forbidden": "❌ Forbidden —— 不要这样翻（机器翻译陷阱 / 直译错误）",
+      "compliance": "⚠️ Compliance —— 涉及法规合规，只允许按备注口径翻译，禁止 AI 自行扩展、概括或新增任何合规声明"
+    }
+  },
+  "categories": [
+    { "id": "product", "no": "①", "title": "核心产品", "desc": "产品类目名。Title / H1 / 内链锚文本统一用 preferred 词条。" },
+    { "id": "process", "no": "②", "title": "工艺与技术", "desc": "涂布、印刷、规格、检测等工艺词汇。" },
+    { "id": "compliance", "no": "③", "title": "合规（全部 ⚠️）", "desc": "法规与合规词汇。翻译时只做语言转换，绝不扩展声明范围。站点既有政策：不做全品类 blanket claim，一切表述挂条件。" },
+    { "id": "b2b", "no": "④", "title": "B2B & RFQ", "desc": "询盘、报价、规格、交期等采购流程词汇。" },
+    { "id": "seo", "no": "⑤", "title": "SEO 关键词与模板", "desc": "德/法市场优先关键词、Title/H1/Meta 模板、FAQ 常用表达、同义词与长尾词。" },
+    { "id": "rules", "no": "⑥", "title": "全局规则与特别标记", "desc": "品牌词、单位、格式与机器可检查的禁用模式。" }
+  ],
+  "terms": [
+    {
+      "id": "baking-parchment-paper",
+      "category": "product",
+      "en": "baking parchment paper; baking paper",
+      "de": { "value": "Backpapier", "status": "preferred", "alt": ["Backpapier als Rolle", "Backpapier-Zuschnitt"], "avoid": ["Pergamentpapier"] },
+      "fr": { "value": "papier cuisson", "status": "preferred", "alt": ["papier sulfurisé"], "avoid": ["papier parchemin"] },
+      "note": "德语市场主词就是 Backpapier；Pergamentpapier 仅 Spezialhandel 语境（△）。法语 papier sulfurisé 与 papier cuisson 同义常用（△ 可互换），papier parchemin 是英式直译（❌）。"
+    },
+    {
+      "id": "cake-cups",
+      "category": "product",
+      "en": "cake cups; baking cups",
+      "de": { "value": "Backförmchen", "status": "preferred", "avoid": ["Kuchenbecher", "Kuchenschalen"] },
+      "fr": { "value": "caissettes de cuisson", "status": "preferred", "alt": ["caissettes"], "avoid": ["gobelets à gâteau", "tasses à gâteau"] },
+      "note": "站内既有用法（market-sites 已上线）。"
+    },
+    {
+      "id": "muffin-cups",
+      "category": "product",
+      "en": "muffin cups; muffin baking cups",
+      "de": { "value": "Muffin-Backförmchen", "status": "preferred", "alt": ["Muffinförmchen"], "avoid": ["Muffinbecher"] },
+      "fr": { "value": "caissettes à muffins", "status": "preferred", "avoid": ["moules à muffins en papier"] },
+      "note": "法语 moules à muffins 保留给金属/硅胶模具，纸质品统一 caissettes。"
+    },
+    {
+      "id": "tulip-cups",
+      "category": "product",
+      "en": "tulip cups; tulip muffin cups",
+      "de": { "value": "Tulpen-Backförmchen", "status": "preferred" },
+      "fr": { "value": "caissettes tulipe", "status": "preferred", "alt": ["caissettes à tulipe"] },
+      "note": ""
+    },
+    {
+      "id": "free-standing-cups",
+      "category": "product",
+      "en": "free-standing baking molds; free-standing paper molds",
+      "de": { "value": "freistehende Papierbackformen", "status": "preferred" },
+      "fr": { "value": "moules de cuisson autoportants", "status": "preferred" },
+      "note": ""
+    },
+    {
+      "id": "roll-mouth-cups",
+      "category": "product",
+      "en": "roll-mouth cake cups",
+      "de": { "value": "Rollrandformen", "status": "preferred", "alt": ["Backformen mit Rollrand"] },
+      "fr": { "value": "moules à bord roulé", "status": "preferred" },
+      "note": "见于 about 页德法文案，站内既有。"
+    },
+    {
+      "id": "air-fryer-liners",
+      "category": "product",
+      "en": "air fryer paper liners",
+      "de": { "value": "Airfryer-Backpapier", "status": "preferred", "alt": ["Papier für Airfryer"] },
+      "fr": { "value": "papier pour air fryer", "status": "preferred", "alt": ["papier air fryer"] },
+      "note": "德语市场习惯把 Airfryer 写成一个词（△ 大小写：名词 Airfryer 大写）。"
+    },
+    {
+      "id": "greaseproof-paper",
+      "category": "product",
+      "en": "greaseproof paper",
+      "de": { "value": "fettdichtes Papier", "status": "preferred", "alt": ["Fettpapier", "Backtrennpapier"], "avoid": ["öldichtes Papier"] },
+      "fr": { "value": "papier ingraissable", "status": "preferred", "alt": ["papier anti-graisse"], "avoid": ["papier imperméable à la graisse"] },
+      "note": "Fettpapier / Backtrennpapier 是德语市场真实同义词（△ 商品页可用作同义词段）；fr papier anti-graisse 亦常见（△）。"
+    },
+    {
+      "id": "paper-straws",
+      "category": "product",
+      "en": "paper straws",
+      "de": { "value": "Papierstrohhalme", "status": "preferred", "avoid": ["Papierhalme (nur colloquial)"] },
+      "fr": { "value": "pailles en papier", "status": "preferred", "alt": ["pailles papier"] },
+      "note": ""
+    },
+    {
+      "id": "wax-paper",
+      "category": "product",
+      "en": "wax paper",
+      "de": { "value": "Wachspapier", "status": "preferred" },
+      "fr": { "value": "papier ciré", "status": "preferred", "alt": ["papier paraffiné"] },
+      "note": ""
+    },
+    {
+      "id": "butcher-paper",
+      "category": "product",
+      "en": "butcher paper",
+      "de": { "value": "Metzgerpapier", "status": "preferred", "alt": ["Fleischerpapier"] },
+      "fr": { "value": "papier de boucherie", "status": "preferred" },
+      "note": ""
+    },
+    {
+      "id": "burger-wrapping-paper",
+      "category": "product",
+      "en": "burger wrapping paper",
+      "de": { "value": "Burger-Papier", "status": "preferred", "alt": ["Burgerpapier", "Papier für Burger-Wrapping"] },
+      "fr": { "value": "papier à hamburgers", "status": "preferred", "alt": ["papier d'emballage hamburger", "papier burger"] },
+      "note": "V1 新增产品页用词，与英文站 burger-wrapping-paper 对应。"
+    },
+    {
+      "id": "custom-printed-baking-paper",
+      "category": "product",
+      "en": "custom printed baking paper",
+      "de": { "value": "individuell bedrucktes Backpapier", "status": "preferred", "alt": ["bedrucktes Backpapier"] },
+      "fr": { "value": "papier cuisson imprimé personnalisé", "status": "preferred", "alt": ["papier cuisson personnalisé"] },
+      "note": "V1 新增产品页用词。"
+    },
+    {
+      "id": "food-wrapping-paper",
+      "category": "product",
+      "en": "food wrapping paper",
+      "de": { "value": "Lebensmittelverpackungspapier", "status": "preferred", "alt": ["Papier für Lebensmittelverpackung"] },
+      "fr": { "value": "papier d'emballage alimentaire", "status": "preferred" },
+      "note": "V1 新增产品页用词。"
+    },
+    {
+      "id": "party-accessories",
+      "category": "product",
+      "en": "paper party accessories",
+      "de": { "value": "Partyartikel aus Papier", "status": "preferred" },
+      "fr": { "value": "articles de fête en papier", "status": "preferred" },
+      "note": "V1 新增产品页用词。"
+    },
+    {
+      "id": "cake-boards",
+      "category": "product",
+      "en": "cake boards",
+      "de": { "value": "Kuchenplatten", "status": "preferred", "alt": ["Kuchenunterlagen (△ Einweg/Karton-Kontext)"] },
+      "fr": { "value": "socles à gâteau", "status": "preferred", "alt": ["plateaux à gâteau"] },
+      "note": "英文站归在 party-accessories 类目与博客文章，无独立产品页；术语先入词库备用。"
+    },
+    {
+      "id": "cupcake-liners",
+      "category": "product",
+      "en": "cupcake liners",
+      "de": { "value": "Cupcake-Backförmchen", "status": "preferred", "alt": ["Cupcakeförmchen"] },
+      "fr": { "value": "caissettes à cupcakes", "status": "preferred", "alt": ["caissettes cupcake"] },
+      "note": "德语市场 Cupcakeförmchen 搜索量真实存在（△ 同义词段可用）。"
+    },
+    {
+      "id": "printing",
+      "category": "process",
+      "en": "printing",
+      "de": { "value": "Druck", "status": "preferred", "verb": "drucken" },
+      "fr": { "value": "impression", "status": "preferred" },
+      "note": ""
+    },
+    {
+      "id": "custom-printing",
+      "category": "process",
+      "en": "custom printing; individual printing",
+      "de": { "value": "individueller Druck", "status": "preferred", "alt": ["Kundeneigener Druck"] },
+      "fr": { "value": "impression personnalisée", "status": "preferred" },
+      "note": "RFQ 表单字段既译（Impression personnalisée）。"
+    },
+    {
+      "id": "silicone-coating",
+      "category": "process",
+      "en": "silicone coating",
+      "de": { "value": "Silikonbeschichtung", "status": "preferred" },
+      "fr": { "value": "revêtement silicone", "status": "preferred", "alt": ["enduction silicone"] },
+      "note": "fr enduction silicone 是纸加工行业术语（△ 技术文章可用）。"
+    },
+    {
+      "id": "single-side-coating",
+      "category": "process",
+      "en": "single-sided silicone coating",
+      "de": { "value": "einseitige Silikonbeschichtung", "status": "preferred" },
+      "fr": { "value": "revêtement silicone simple face", "status": "preferred" },
+      "note": ""
+    },
+    {
+      "id": "double-side-coating",
+      "category": "process",
+      "en": "double-sided silicone coating",
+      "de": { "value": "beidseitige Silikonbeschichtung", "status": "preferred", "alt": ["doppelseitige Silikonbeschichtung"] },
+      "fr": { "value": "revêtement silicone double face", "status": "preferred" },
+      "note": "beidseitig / doppelseitig 都正确（△ 同义），站内统一 beidseitig。"
+    },
+    {
+      "id": "coat-weight",
+      "category": "process",
+      "en": "silicone coat weight",
+      "de": { "value": "Silikanauftrag (g/m²)", "status": "preferred" },
+      "fr": { "value": "grammage de silicone (g/m²)", "status": "preferred" },
+      "note": ""
+    },
+    {
+      "id": "food-grade-ink",
+      "category": "process",
+      "en": "food-grade ink",
+      "de": { "value": "lebensmittelechte Tinte", "status": "preferred", "alt": ["Lebensmittelfarbe (❌ 指食用色素，勿混)"] },
+      "fr": { "value": "encre alimentaire", "status": "preferred", "alt": ["encre de qualité alimentaire"] },
+      "note": "❌ Lebensmittelfarbe 是烘焙食用色素，不是印刷油墨。"
+    },
+    {
+      "id": "low-odor-ink",
+      "category": "process",
+      "en": "low-odor ink",
+      "de": { "value": "geruchsarme Tinte", "status": "preferred" },
+      "fr": { "value": "encre à faible odeur", "status": "preferred" },
+      "note": ""
+    },
+    {
+      "id": "grease-resistance",
+      "category": "process",
+      "en": "grease resistance",
+      "de": { "value": "Fettbeständigkeit", "status": "preferred" },
+      "fr": { "value": "résistance aux graisses", "status": "preferred" },
+      "note": "站内既有（Qualitätskontrolle 检查点列表）。"
+    },
+    {
+      "id": "grease-kit-value",
+      "category": "process",
+      "en": "grease resistance kit value (KIT 1-12)",
+      "de": { "value": "Fettbeständigkeit nach KIT-Prüfung (KIT 1-12)", "status": "preferred" },
+      "fr": { "value": "valeur KIT de résistance aux graisses (KIT 1-12)", "status": "preferred" },
+      "note": "KIT 是行业标准测试名，缩写保留，德法都不翻译 KIT 本身。"
+    },
+    {
+      "id": "temperature-resistance",
+      "category": "process",
+      "en": "temperature resistance; heat resistance",
+      "de": { "value": "Temperaturbeständigkeit", "status": "preferred", "alt": ["Hitzebeständigkeit (△ 口语)"] },
+      "fr": { "value": "résistance à la température", "status": "preferred" },
+      "note": ""
+    },
+    {
+      "id": "roll",
+      "category": "process",
+      "en": "roll",
+      "de": { "value": "Rolle", "status": "preferred" },
+      "fr": { "value": "rouleau", "status": "preferred" },
+      "note": ""
+    },
+    {
+      "id": "sheet",
+      "category": "process",
+      "en": "sheet",
+      "de": { "value": "Bogen", "status": "preferred", "alt": ["Zuschnitt (△ 裁切尺寸语境)"] },
+      "fr": { "value": "feuille", "status": "preferred" },
+      "note": ""
+    },
+    {
+      "id": "interfolded",
+      "category": "process",
+      "en": "interfolded paper",
+      "de": { "value": "vorgefalztes Papier (Interfold)", "status": "context" },
+      "fr": { "value": "papier interplié", "status": "context" },
+      "note": "△ 只在 wax-paper 抽取/餐巾纸类语境用；德法市场对该词均无统一惯用词，带括号保留英文。"
+    },
+    {
+      "id": "core-diameter",
+      "category": "process",
+      "en": "core diameter",
+      "de": { "value": "Hülsendurchmesser", "status": "preferred" },
+      "fr": { "value": "diamètre du mandrin", "status": "preferred" },
+      "note": "Hülse = 纸管芯（DE），mandrin（FR）。"
+    },
+    {
+      "id": "grammage",
+      "category": "process",
+      "en": "grammage; basis weight; GSM",
+      "de": { "value": "Grammatur (g/m²)", "status": "preferred", "avoid": ["Flächengewicht (△ 学术语境可用，站内统一 Grammatur)"] },
+      "fr": { "value": "grammage (g/m²)", "status": "preferred" },
+      "note": "单位写法统一 g/m²（站内既有）。GSM 缩写仅在括号补注时用：Grammatur (GSM, g/m²)。"
+    },
+    {
+      "id": "die-cut",
+      "category": "process",
+      "en": "die-cut shapes",
+      "de": { "value": "Stanzformen / gestanzte Formen", "status": "preferred" },
+      "fr": { "value": "formes découpées / découpe à l'emporte-pièce", "status": "preferred" },
+      "note": "站内 about 页既译：Schneiden und Stanzen / Découpe et emporte-pièce。"
+    },
+    {
+      "id": "perforation",
+      "category": "process",
+      "en": "perforation",
+      "de": { "value": "Perforation", "status": "preferred" },
+      "fr": { "value": "perforation", "status": "preferred" },
+      "note": "站内既有。"
+    },
+    {
+      "id": "release",
+      "category": "process",
+      "en": "release (performance); non-stick",
+      "de": { "value": "Trennwirkung / Antihaftwirkung", "status": "preferred" },
+      "fr": { "value": "antiadhérence / démoulage", "status": "preferred" },
+      "note": "release paper 本体 = Trennpapier(DE) / papier de démoulage(FR)（△ 仅材料学语境）。"
+    },
+    {
+      "id": "release-force-test",
+      "category": "process",
+      "en": "release force test; peel test",
+      "de": { "value": "Trennkraftprüfung (Schältest)", "status": "preferred" },
+      "fr": { "value": "test de force de délaminage (test de pelage)", "status": "preferred" },
+      "note": ""
+    },
+    {
+      "id": "denesting",
+      "category": "process",
+      "en": "denesting",
+      "de": { "value": "Entstapelung", "status": "preferred" },
+      "fr": { "value": "désemboîtement", "status": "preferred" },
+      "note": "工业烘焙线语境。站内既有（industrielle Backlinien 指南）。"
+    },
+    {
+      "id": "pleat",
+      "category": "process",
+      "en": "pleat; fluting",
+      "de": { "value": "Falz / Faltung", "status": "preferred" },
+      "fr": { "value": "pli / plissage", "status": "preferred" },
+      "note": "fluted cups = geflammte/gefaltete Förmchen；fr plissé。"
+    },
+    {
+      "id": "base-paper",
+      "category": "process",
+      "en": "base paper; raw paper",
+      "de": { "value": "Rohpapier", "status": "preferred" },
+      "fr": { "value": "papier de base", "status": "preferred" },
+      "note": "站内既有（vom Rohpapier bis zum Versand / du papier brut à l'expédition）。"
+    },
+    {
+      "id": "artwork-approval",
+      "category": "process",
+      "en": "artwork approval; print proof approval",
+      "de": { "value": "Druckfreigabe / Musterfreigabe", "status": "preferred" },
+      "fr": { "value": "BAT (bon à tirer)", "status": "preferred", "alt": ["validation du BAT"] },
+      "note": "fr 行业标准词就是 BAT（首字母缩写保留）。站内既有。"
+    },
+    {
+      "id": "pfas-free",
+      "category": "compliance",
+      "en": "PFAS-free",
+      "de": { "value": "PFAS-frei", "status": "compliance" },
+      "fr": { "value": "sans PFAS", "status": "compliance" },
+      "note": "⚠️ 站内口径是条件式：'PFAS-freie Optionen auf Anfrage' / 'Options sans PFAS sur demande'。禁止写成全品类声明 'PFAS-freie Produkte'（无条件限定）。PFAS 缩写不翻译。"
+    },
+    {
+      "id": "food-contact",
+      "category": "compliance",
+      "en": "food contact",
+      "de": { "value": "Lebensmittelkontakt", "status": "compliance" },
+      "fr": { "value": "contact alimentaire", "status": "compliance" },
+      "note": "⚠️ food-contact paper = Papier für Lebensmittelkontakt（材料语境）。"
+    },
+    {
+      "id": "food-grade",
+      "category": "compliance",
+      "en": "food-grade",
+      "de": { "value": "lebensmittelecht", "status": "compliance", "alt": ["für den Lebensmittelkontakt geeignet (△ 正式表述)"] },
+      "fr": { "value": "de qualité alimentaire", "status": "compliance", "alt": ["alimentaire (△ 形容词省略式，如 encre alimentaire)"] },
+      "note": "⚠️ lebensmittelecht 在德语有法定含义（QM 等），只描述材料本身，不得引申为'已获批准'。"
+    },
+    {
+      "id": "food-contact-material",
+      "category": "compliance",
+      "en": "food contact material (FCM)",
+      "de": { "value": "Lebensmittelkontaktmaterial", "status": "compliance" },
+      "fr": { "value": "matériau de contact alimentaire", "status": "compliance", "alt": ["matériaux au contact des aliments (MoCA △ 法国官方语境)"] },
+      "note": "⚠️ MoCA 是法国官方缩写（Matériaux au Contact des Aliments），仅在引用法国官方框架时使用。"
+    },
+    {
+      "id": "lfgb",
+      "category": "compliance",
+      "en": "LFGB",
+      "de": { "value": "LFGB", "status": "compliance" },
+      "fr": { "value": "LFGB", "status": "compliance" },
+      "note": "⚠️ 缩写两语言都保留。站内口径：'LFGB-Unterstützung je nach Produkt'（支持提供 LFGB 相关文件），禁止 'LFGB-zertifiziert' / 'certifié LFGB'——LFGB 是德国食品法，不是产品认证。需要展开时全称：Lebensmittel- und Futtermittelgesetzbuch。"
+    },
+    {
+      "id": "bfr",
+      "category": "compliance",
+      "en": "BfR",
+      "de": { "value": "BfR", "status": "compliance" },
+      "fr": { "value": "BfR", "status": "compliance" },
+      "note": "⚠️ BfR（Bundesinstitut für Risikobewertung）是德国联邦风险评估所，只发布建议（Empfehlung），不认证产品。禁止 'BfR-geprüft' / 'BfR-zertifiziert' / 'approuvé par le BfR'。正确表述：'entsprechend anwendbarer BfR-Empfehlungen hergestellt (je nach Produkt)'。"
+    },
+    {
+      "id": "eu-framework",
+      "category": "compliance",
+      "en": "EU framework for food contact",
+      "de": { "value": "EU-Rahmen für Lebensmittelkontakt", "status": "compliance" },
+      "fr": { "value": "cadre européen du contact alimentaire", "status": "compliance" },
+      "note": "⚠️ 站内既有。除非引用官方文本，不写具体法规编号（如 (EG) Nr. 1935/2004）；需要引用时编号逐字照抄官方公报，禁止凭记忆写编号。"
+    },
+    {
+      "id": "eudr",
+      "category": "compliance",
+      "en": "EUDR; EU Deforestation Regulation",
+      "de": { "value": "EUDR", "status": "compliance", "alt": ["EUDR-Rückverfolgbarkeit"] },
+      "fr": { "value": "EUDR", "status": "compliance", "alt": ["traçabilité EUDR"] },
+      "note": "⚠️ 站内既有核心页。口径固定：EUDR 是 Sorgfaltspflicht/diligence raisonnée（尽职调查义务），不是产品证书（'kein Produktzertifikat' / 'pas d'un certificat produit'）。EU-Marktteilnehmer（operator）承担最终责任。此定性禁止改写。"
+    },
+    {
+      "id": "test-report",
+      "category": "compliance",
+      "en": "test report",
+      "de": { "value": "Prüfbericht", "status": "compliance" },
+      "fr": { "value": "rapport d'essai", "status": "compliance" },
+      "note": "⚠️ 站内既有。只说'可提供'（bereitgestellt / fourni），不说'已通过'，除非引用具体报告。"
+    },
+    {
+      "id": "certificate",
+      "category": "compliance",
+      "en": "certificate",
+      "de": { "value": "Zertifikat", "status": "compliance" },
+      "fr": { "value": "certificat", "status": "compliance" },
+      "note": "⚠️ 站内 about 页口径：'Verfügbare Unterlagen umfassen ... BSCI-, BRC-, ISO-, FSC-, LFGB-, DGCCRF- ... Gültigkeit, Umfang und Anwendbarkeit werden für den konkreten Artikel bestätigt.' 证书名单只允许这几个既定项，不得新增任何认证名。"
+    },
+    {
+      "id": "declaration",
+      "category": "compliance",
+      "en": "declaration; declaration of compliance (DoC)",
+      "de": { "value": "(Konformitäts-)Erklärung", "status": "compliance" },
+      "fr": { "value": "déclaration (de conformité)", "status": "compliance" },
+      "note": "⚠️ DoC 的提供与否挂产品与市场条件。"
+    },
+    {
+      "id": "per-product-market",
+      "category": "compliance",
+      "en": "depending on product, material and target market",
+      "de": { "value": "je nach Produkt, Material und Zielmarkt", "status": "compliance" },
+      "fr": { "value": "selon le produit, la matière et le marché", "status": "compliance" },
+      "note": "⚠️ 这是全站合规表述的锚点句式——任何合规能力描述必须挂这个条件（或 'auf Anfrage' / 'sur demande'）。站点政策：'Eine pauschale Zertifizierung aller Produkte wird nicht behauptet' / 'Aucune certification générale de tous les produits n'est revendiquée'。"
+    },
+    {
+      "id": "gmp",
+      "category": "compliance",
+      "en": "GMP; good manufacturing practice",
+      "de": { "value": "Gute Herstellungspraxis (GMP)", "status": "compliance" },
+      "fr": { "value": "bonnes pratiques de fabrication (GMP)", "status": "compliance" },
+      "note": "⚠️ 站内既有（compliance 页检查清单）。"
+    },
+    {
+      "id": "migration-test",
+      "category": "compliance",
+      "en": "migration testing; migration limits",
+      "de": { "value": "Migrationsprüfung; Migrationsgrenzwerte", "status": "compliance" },
+      "fr": { "value": "test de migration; limites de migration", "status": "compliance" },
+      "note": "⚠️ 迁移测试结论只描述测试行为本身，不得引申为'安全'结论。"
+    },
+    {
+      "id": "moq",
+      "category": "b2b",
+      "en": "MOQ; minimum order quantity",
+      "de": { "value": "Mindestbestellmenge (MOQ)", "status": "preferred" },
+      "fr": { "value": "quantité minimale de commande (MOQ)", "status": "preferred", "alt": ["MOQ"] },
+      "note": "MOQ 缩写德法 B2B 读者都懂，首现全称+缩写，后文可单用 MOQ。"
+    },
+    {
+      "id": "custom-sample",
+      "category": "b2b",
+      "en": "custom sample",
+      "de": { "value": "individuelles Muster", "status": "preferred", "alt": ["kundenspezifisches Muster"] },
+      "fr": { "value": "échantillon personnalisé", "status": "preferred" },
+      "note": "standard sample = Standardmuster / échantillon standard。"
+    },
+    {
+      "id": "monthly-usage",
+      "category": "b2b",
+      "en": "monthly usage; monthly volume",
+      "de": { "value": "Monatsbedarf", "status": "preferred", "alt": ["monatlicher Bedarf"] },
+      "fr": { "value": "consommation mensuelle", "status": "preferred", "alt": ["volume mensuel"] },
+      "note": "RFQ 收集字段。"
+    },
+    {
+      "id": "roll-width",
+      "category": "b2b",
+      "en": "roll width",
+      "de": { "value": "Rollenbreite", "status": "preferred" },
+      "fr": { "value": "largeur de rouleau", "status": "preferred" },
+      "note": ""
+    },
+    {
+      "id": "roll-diameter",
+      "category": "b2b",
+      "en": "roll diameter",
+      "de": { "value": "Rollendurchmesser", "status": "preferred" },
+      "fr": { "value": "diamètre de rouleau", "status": "preferred" },
+      "note": ""
+    },
+    {
+      "id": "target-market",
+      "category": "b2b",
+      "en": "country; target market",
+      "de": { "value": "Zielmarkt (Land)", "status": "preferred" },
+      "fr": { "value": "marché de destination (pays)", "status": "preferred" },
+      "note": "RFQ 表单字段既译（Zielmarkt / Marché de destination）。"
+    },
+    {
+      "id": "request-a-quote",
+      "category": "b2b",
+      "en": "Request a quote; Request for quotation",
+      "de": { "value": "Angebot anfordern", "status": "preferred" },
+      "fr": { "value": "Demander un devis", "status": "preferred" },
+      "note": "站内既有（CTA 按钮、导航）。"
+    },
+    {
+      "id": "request-a-sample",
+      "category": "b2b",
+      "en": "Request a (free) sample",
+      "de": { "value": "Muster anfordern", "status": "preferred", "alt": ["Kostenloses Muster anfordern (△ 强调免费时)"] },
+      "fr": { "value": "Demander des échantillons", "status": "preferred", "alt": ["Demander un échantillon (△ 单件)"] },
+      "note": "站内既有。英文 free sample 的 'free' 译出时必须是 tatsächlich kostenlos 的语境。"
+    },
+    {
+      "id": "lead-time",
+      "category": "b2b",
+      "en": "lead time",
+      "de": { "value": "Lieferzeit", "status": "preferred", "alt": ["Produktionsvorlauf / Vorlaufzeit (△ 只指生产段)"] },
+      "fr": { "value": "délai de production", "status": "preferred", "alt": ["délai de livraison (△ 只指发运段)"] },
+      "note": "英文 lead time 覆盖生产+发运，德法各拆两个词——按语境选择，不要统一直译。"
+    },
+    {
+      "id": "rfq",
+      "category": "b2b",
+      "en": "RFQ; request for quotation",
+      "de": { "value": "Anfrage (RFQ)", "status": "preferred" },
+      "fr": { "value": "demande de devis", "status": "preferred" },
+      "note": "站内表单 action 即 /api/inquiry。"
+    },
+    {
+      "id": "private-label",
+      "category": "b2b",
+      "en": "private label",
+      "de": { "value": "Private Label", "status": "preferred", "avoid": ["Eigenmarke (△ 零售行业惯用，站内统一 Private Label)"] },
+      "fr": { "value": "marque distributeur", "status": "preferred", "alt": ["marque de distributeur"] },
+      "note": "德语区 B2B 采购语境直接用 Private Label（站内既有）；法语必须翻译。"
+    },
+    {
+      "id": "oem-odm",
+      "category": "b2b",
+      "en": "OEM / ODM",
+      "de": { "value": "OEM / ODM", "status": "preferred" },
+      "fr": { "value": "OEM / ODM", "status": "preferred" },
+      "note": "缩写保留，站内既有。"
+    },
+    {
+      "id": "wholesale",
+      "category": "b2b",
+      "en": "wholesale",
+      "de": { "value": "Großhandel", "status": "preferred", "alt": ["für den Großhandel"] },
+      "fr": { "value": "en gros", "status": "preferred", "alt": ["grossiste (名词：批发商)", "achat en gros"] },
+      "note": "站内既有（Großhändler und Importeure / Grossistes et importateurs）。"
+    },
+    {
+      "id": "manufacturer",
+      "category": "b2b",
+      "en": "manufacturer",
+      "de": { "value": "Hersteller", "status": "preferred" },
+      "fr": { "value": "fabricant", "status": "preferred" },
+      "note": "站内 Title 模式核心词：Hersteller / fabricant。"
+    },
+    {
+      "id": "supplier",
+      "category": "b2b",
+      "en": "supplier",
+      "de": { "value": "Lieferant", "status": "preferred" },
+      "fr": { "value": "fournisseur", "status": "preferred" },
+      "note": ""
+    },
+    {
+      "id": "specification",
+      "category": "b2b",
+      "en": "specification; buyer specification",
+      "de": { "value": "Spezifikation", "status": "preferred" },
+      "fr": { "value": "spécification", "status": "preferred", "alt": ["cahier des charges (△ 特指买方需求文件时更地道)"] },
+      "note": "fr 'votre cahier des charges'（您的规格要求）站内既有。"
+    },
+    {
+      "id": "tolerance",
+      "category": "b2b",
+      "en": "tolerance",
+      "de": { "value": "Toleranz", "status": "preferred" },
+      "fr": { "value": "tolérance", "status": "preferred" },
+      "note": ""
+    },
+    {
+      "id": "lot",
+      "category": "b2b",
+      "en": "lot; batch",
+      "de": { "value": "Charge", "status": "preferred" },
+      "fr": { "value": "lot", "status": "preferred" },
+      "note": "lot traceability = Chargenrückverfolgbarkeit / traçabilité des lots（站内既有）。"
+    },
+    {
+      "id": "traceability",
+      "category": "b2b",
+      "en": "traceability",
+      "de": { "value": "Rückverfolgbarkeit", "status": "preferred" },
+      "fr": { "value": "traçabilité", "status": "preferred" },
+      "note": "站内既有。"
+    },
+    {
+      "id": "tooling",
+      "category": "b2b",
+      "en": "tooling (costs)",
+      "de": { "value": "Werkzeugkosten", "status": "preferred", "alt": ["Werkzeug (△ 设备本体)"] },
+      "fr": { "value": "outillage", "status": "preferred", "alt": ["coûts d'outillage"] },
+      "note": "站内 FAQ 既译：outillage / Werkzeug。"
+    },
+    {
+      "id": "port-of-destination",
+      "category": "b2b",
+      "en": "port of destination",
+      "de": { "value": "Lieferhafen", "status": "preferred", "alt": ["Zielhafen"] },
+      "fr": { "value": "port de destination", "status": "preferred" },
+      "note": "RFQ 表单字段既译。"
+    }
+  ],
+  "seo": {
+    "de": {
+      "priority_keywords": [
+        "Backpapier Großhandel",
+        "Backpapier Hersteller",
+        "Backförmchen Großhandel",
+        "Backförmchen individually bedruckt",
+        "Muffin-Backförmchen kaufen Großhandel",
+        "Tulpen-Backförmchen Großhandel",
+        "Papierstrohhalme Hersteller",
+        "Papierstrohhalme Großhandel",
+        "fettdichtes Papier kaufen",
+        "Wachspapier Großhandel",
+        "Airfryer-Backpapier Großhandel",
+        "individuell bedrucktes Backpapier",
+        "PFAS-freies Backpapier",
+        "Backpapier Rolle Großhandel",
+        "private label Backpapier"
+      ],
+      "title_pattern": "{Produkt} Hersteller | OEM & Private Label | LANGMAI",
+      "title_rules": [
+        "核心词前置（Hersteller / Großhandel 紧跟产品词）",
+        "总长（含 ' | LANGMAI'）≤ 60 字符；超长时先去掉 '& Private Label' 再去 'OEM'",
+        "品牌后缀固定 ' | LANGMAI'，不改写"
+      ],
+      "h1_rules": [
+        "H1 与 Title 可不同：H1 用完整产品词+用途限定（如 'Individuell bedrucktes Backpapier für Handelsmarken'）",
+        "一个页面只有一个 H1"
+      ],
+      "meta_description_rules": [
+        "120-156 字符，德语名词复合词长，优先保住：产品词 + Hersteller/Großhandel + 一个差异化点（individuell, PFAS-frei Optionen, Dokumente）",
+        "必须含至少一个 SEO 优先关键词的自然变体",
+        "禁止句号堆叠，一句话+一个从句为上限"
+      ],
+      "faq_phrases": [
+        "Sind individuelle Größen möglich?",
+        "Welche Unterlagen sind verfügbar?",
+        "Kann ich Muster erhalten?",
+        "Was ist die Mindestbestellmenge (MOQ)?",
+        "Wie lange dauert die Produktion?",
+        "Sind PFAS-freie Optionen verfügbar?"
+      ],
+      "synonyms_long_tail": [
+        "Backpapier Rolle 30 m Großhandel",
+        "Backförmchen für industrielle Backlinien",
+        "Papierstrohhalme einzeln verpackt",
+        "Fettdichtes Papier für Bäckerei",
+        "Backpapier geruchsarm bedruckt"
+      ]
+    },
+    "fr": {
+      "priority_keywords": [
+        "papier cuisson gros",
+        "papier cuisson fabricant",
+        "caissettes de cuisson professionnelles",
+        "caissettes à muffins gros",
+        "caissettes tulipe",
+        "pailles en papier grossiste",
+        "papier ingraissable professionnel",
+        "papier ciré alimentaire",
+        "papier pour air fryer grossiste",
+        "papier cuisson imprimé personnalisé",
+        "papier cuisson sans PFAS",
+        "rouleau papier cuisson gros",
+        "marque distributeur emballage papier"
+      ],
+      "title_pattern": "{Produit} fabricant | OEM & Private Label | LANGMAI",
+      "title_rules": [
+        "核心词前置（fabricant / gros 紧跟产品词）",
+        "总长（含 ' | LANGMAI'）≤ 60 字符；法语介词冠词占字符多，必要时用 'gros' 替代 'grossiste'",
+        "品牌后缀固定 ' | LANGMAI'"
+      ],
+      "h1_rules": [
+        "H1 用完整产品词+用途限定（如 'Papier cuisson imprimé pour les marques'）",
+        "一个页面只有一个 H1"
+      ],
+      "meta_description_rules": [
+        "120-156 字符，保住：产品词 + fabricant/gros + 差异化点（personnalisé, sans PFAS sur demande, documents)",
+        "必须含至少一个 SEO 优先关键词的自然变体",
+        "法语标点：冒号/分号前留窄空格（半角空格亦可），撇号用 ’"
+      ],
+      "faq_phrases": [
+        "Les dimensions sont-elles personnalisables ?",
+        "Quels documents sont disponibles ?",
+        "Puis-je recevoir des échantillons ?",
+        "Quelle est la quantité minimale de commande (MOQ) ?",
+        "Quel est le délai de production ?",
+        "Des options sans PFAS sont-elles disponibles ?"
+      ],
+      "synonyms_long_tail": [
+        "rouleau papier cuisson 30 m professionnel",
+        "caissettes pour production industrielle",
+        "pailles en papier emballées individuellement",
+        "papier ingraissable pour boulangerie",
+        "papier cuisson sans odeur imprimé"
+      ]
+    }
+  },
+  "rules": {
+    "brand": [
+      "LANGMAI 任何语言不翻译、不变形（LANGMAI® 也不加 ®，站内未注册商标标法）",
+      "公司法定名 'Jinhua Langmai Daily-Using Co., Ltd.' 逐字保留",
+      "邮箱 wilson@lmcakecup.com、电话 +86 13645700210 逐字保留"
+    ],
+    "format": [
+      "单位原样保留：g/m²、°C、mm、cm、m、KG；数字与小数点格式跟随德法习惯（德语小数逗号 32,5 g/m²；法语 32,5 g/m²）",
+      "缩写不翻译：MOQ、OEM、ODM、GSM（首现时括注 g/m²）、PFAS、LFGB、BfR、EUDR、BRC、BSCI、ISO、FSC、FDA、DGCCRF、BAT、KIT、GMP",
+      "德语正字法：ß 保留（Großhändler），URL slug 用 ae/oe/ue 转写（grosshaendler）",
+      "法语撇号统一 ’（右单引号），站内既有文案已如此",
+      "德语 B2B 敬语一律 Sie（禁 du）；法语一律 vous"
+    ],
+    "compliance_hedges": [
+      "任何合规能力描述必须挂条件：'je nach Produkt, Material und Zielmarkt' / 'selon le produit, la matière et le marché'，或 'auf Anfrage' / 'sur demande'",
+      "禁止无条件全品类声明（见下方 machine-checkable patterns）",
+      "认证名单封闭集合：BSCI、BRC、ISO、FSC、LFGB、DGCCRF、PFAS(选项)——不得新增任何认证/法规名",
+      "EUDR 定性不可改：Sorgfaltspflicht/diligence raisonnée，不是 Produktzertifikat/certificat produit"
+    ],
+    "machine_checks": [
+      {
+        "id": "no-blanket-lfgb-de",
+        "pattern": "LFGB-zertifiziert|LFGB zertifiziert|LFGB-geprüft|LFGB-geprueft",
+        "severity": "error",
+        "message": "LFGB 是德国食品法（法律），不是产品认证——禁止 'LFGB-zertifiziert/-geprüft'"
+      },
+      {
+        "id": "no-blanket-lfgb-fr",
+        "pattern": "certifié LFGB|certifie LFGB|approuvé LFGB|approuve LFGB",
+        "severity": "error",
+        "message": "禁止 'certifié/approuvé LFGB'"
+      },
+      {
+        "id": "no-blanket-bfr",
+        "pattern": "BfR-zertifiziert|BfR-geprüft|BfR-geprueft|certifié BfR|certifie BfR",
+        "severity": "error",
+        "message": "BfR 是风险评估所，只发布建议（Empfehlung），不认证产品"
+      },
+      {
+        "id": "no-blanket-brc",
+        "pattern": "BRC-zertifiziert|BRC-zugelassen|certifié BRC|certifie BRC",
+        "severity": "error",
+        "message": "BRC 相关只能按站内口径条件式提及"
+      },
+      {
+        "id": "no-blanket-fda",
+        "pattern": "FDA-zugelassen|FDA-zertifiziert|FDA-approved|approuvé FDA|homologué FDA",
+        "severity": "error",
+        "message": "FDA 不批准产品/工厂（只批准食品添加剂等），禁止绝对化"
+      },
+      {
+        "id": "no-unconditional-pfas",
+        "pattern": "PFAS-freie Produkte|produits sans PFAS(?! sur demande)",
+        "severity": "error",
+        "message": "PFAS-free 必须挂 'Optionen ... auf Anfrage' / 'sur demande' 条件"
+      },
+      {
+        "id": "no-eudr-certificate",
+        "pattern": "EUDR-Zertifikat|EUDR-zertifiziert|certificat EUDR|certifié EUDR",
+        "severity": "error",
+        "message": "EUDR 是尽职调查义务，不是证书——站内定性不可改"
+      },
+      {
+        "id": "no-mt-traps-de",
+        "pattern": "Kuchenbecher|Kuchenschalen|Muffinbecher|Lebensmittelfarbe|öldichtes Papier",
+        "severity": "error",
+        "message": "机翻陷阱词（❌ Forbidden 词条）"
+      },
+      {
+        "id": "no-mt-traps-fr",
+        "pattern": "gobelets à gâteau|gobelets a gateau|tasses à gâteau|papier parchemin",
+        "severity": "error",
+        "message": "机翻陷阱词（❌ Forbidden 词条）"
+      },
+      {
+        "id": "informal-address-de",
+        "pattern": "\\bDein \\w+|\\bdu eine Anfrage|Du kannst",
+        "severity": "warn",
+        "message": "德语 B2B 必须用 Sie 敬语"
+      }
+    ]
+  }
+}

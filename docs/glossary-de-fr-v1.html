@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LANGMAI 德/法本地化术语库 V1.0.0</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { font-family: "Segoe UI", "Microsoft YaHei", system-ui, sans-serif; margin: 0; background: #f6f7f9; color: #1f2933; line-height: 1.65; }
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 32px 24px 80px; }
+  header.hero { background: #0f2b46; color: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 28px; }
+  header.hero h1 { margin: 0 0 8px; font-size: 26px; }
+  header.hero p { margin: 4px 0; color: #c9d8e8; font-size: 14px; }
+  header.hero .v { color: #7ee0a3; font-weight: 600; }
+  .legend { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 0; }
+  .legend span { font-size: 13px; }
+  .badge { display: inline-block; font-size: 11px; padding: 1px 8px; border-radius: 999px; margin-right: 6px; white-space: nowrap; }
+  .badge.ok { background: #e3f7e9; color: #136c34; }
+  .badge.ctx { background: #fff4dd; color: #8a5a00; }
+  .badge.bad { background: #ffe6e4; color: #a4271a; }
+  .badge.comp { background: #e5e9ff; color: #3b45c4; }
+  h2 { font-size: 20px; margin: 40px 0 6px; border-bottom: 2px solid #dbe2ea; padding-bottom: 8px; }
+  h2 .count { font-size: 13px; color: #64748b; font-weight: 500; }
+  .cat-desc { color: #52606d; font-size: 14px; margin-top: 0; }
+  table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 3px rgba(16,24,40,.08); font-size: 13.5px; }
+  th { background: #eef2f6; text-align: left; padding: 10px 12px; font-size: 12.5px; letter-spacing: .03em; color: #3e4c59; }
+  td { padding: 10px 12px; border-top: 1px solid #edf0f3; vertical-align: top; }
+  td.en strong { font-size: 14px; }
+  td .id { color: #9aa5b1; font-size: 11px; margin-top: 3px; font-family: ui-monospace, Consolas, monospace; }
+  td .alt, td .avoid { display: block; font-size: 12px; margin-top: 4px; }
+  td .alt { color: #8a5a00; }
+  td .avoid { color: #a4271a; }
+  td.note { color: #52606d; font-size: 12.5px; max-width: 330px; }
+  .seo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  @media (max-width: 900px) { .seo-grid { grid-template-columns: 1fr; } td.note { max-width: none; } }
+  .seo-card { background: #fff; border-radius: 10px; padding: 18px 22px; box-shadow: 0 1px 3px rgba(16,24,40,.08); }
+  .seo-card h3 { margin: 0 0 10px; font-size: 17px; }
+  .seo-card h4 { margin: 14px 0 6px; font-size: 13px; color: #3e4c59; text-transform: none; }
+  .seo-card ul { margin: 0; padding-left: 18px; font-size: 13.5px; }
+  .seo-card .pattern { font-family: ui-monospace, Consolas, monospace; background: #f0f4f8; padding: 8px 12px; border-radius: 8px; font-size: 13px; margin: 6px 0; }
+  ul.kw li { margin: 2px 0; }
+  .rules card, .rule-card { background: #fff; border-radius: 10px; padding: 18px 22px; box-shadow: 0 1px 3px rgba(16,24,40,.08); margin-bottom: 16px; }
+  .rule-card h3 { margin: 0 0 8px; font-size: 15.5px; }
+  .rule-card ul { margin: 0; padding-left: 18px; font-size: 13.5px; }
+  .check { font-family: ui-monospace, Consolas, monospace; font-size: 12px; background: #f7f9fb; border-left: 3px solid #c8d2dc; padding: 8px 12px; margin: 8px 0; border-radius: 0 6px 6px 0; }
+  .check.error { border-left-color: #d9480f; }
+  .check.warn { border-left-color: #e8a013; }
+  .check b { font-size: 12.5px; }
+  footer { margin-top: 48px; color: #7b8794; font-size: 12.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <h1>LANGMAI 德语/法语本地化术语库 <span class="v">V1.0.0</span></h1>
+  <p>工作流：英文母版 (EN master) -&gt; 德语/法语本地化 (glossary-driven) -&gt; SEO 检查 (scripts/glossary-check.mjs)</p>
+  <p>术语来源：术语全部提取自 lmcakecup.com 实际内容：EN 母版 (site/content, site/custom-pages, dist 产物) 与既有 DE/FR 手工文案 (site/market-sites.mjs)。不凭空造词。</p>
+  <p>更新日期：2026-10-07 · 词条总数：76 · 机器可读源文件：<code>site/i18n/glossary-de-fr.json</code></p>
+  <div class="legend">
+    <span>✅ Preferred —— 优先使用，全站统一</span><span>△ Context —— 仅在特定语境使用，备注中说明</span><span>❌ Forbidden —— 不要这样翻（机器翻译陷阱 / 直译错误）</span><span>⚠️ Compliance —— 涉及法规合规，只允许按备注口径翻译，禁止 AI 自行扩展、概括或新增任何合规声明</span>
+  </div>
+</header>
+
+<section id="product">
+  <h2>① 核心产品 <span class="count">17 词条</span></h2>
+  <p class="cat-desc">产品类目名。Title / H1 / 内链锚文本统一用 preferred 词条。</p>
+  <table>
+    <thead><tr><th>EN（母版）</th><th>DE</th><th>FR</th><th>备注</th></tr></thead>
+    <tbody><tr>
+  <td class="en"><strong>baking parchment paper; baking paper</strong><div class="id">#baking-parchment-paper</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Backpapier</strong> <span class="alt">△ 同义：Backpapier als Rolle；Backpapier-Zuschnitt</span> <span class="avoid">❌ 禁用：Pergamentpapier</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>papier cuisson</strong> <span class="alt">△ 同义：papier sulfurisé</span> <span class="avoid">❌ 禁用：papier parchemin</span></td>
+  <td class="note">德语市场主词就是 Backpapier；Pergamentpapier 仅 Spezialhandel 语境（△）。法语 papier sulfurisé 与 papier cuisson 同义常用（△ 可互换），papier parchemin 是英式直译（❌）。</td>
+</tr>
+<tr>
+  <td class="en"><strong>cake cups; baking cups</strong><div class="id">#cake-cups</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Backförmchen</strong> <span class="avoid">❌ 禁用：Kuchenbecher；Kuchenschalen</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>caissettes de cuisson</strong> <span class="alt">△ 同义：caissettes</span> <span class="avoid">❌ 禁用：gobelets à gâteau；tasses à gâteau</span></td>
+  <td class="note">站内既有用法（market-sites 已上线）。</td>
+</tr>
+<tr>
+  <td class="en"><strong>muffin cups; muffin baking cups</strong><div class="id">#muffin-cups</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Muffin-Backförmchen</strong> <span class="alt">△ 同义：Muffinförmchen</span> <span class="avoid">❌ 禁用：Muffinbecher</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>caissettes à muffins</strong> <span class="avoid">❌ 禁用：moules à muffins en papier</span></td>
+  <td class="note">法语 moules à muffins 保留给金属/硅胶模具，纸质品统一 caissettes。</td>
+</tr>
+<tr>
+  <td class="en"><strong>tulip cups; tulip muffin cups</strong><div class="id">#tulip-cups</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Tulpen-Backförmchen</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>caissettes tulipe</strong> <span class="alt">△ 同义：caissettes à tulipe</span></td>
+  <td class="note"></td>
+</tr>
+<tr>
+  <td class="en"><strong>free-standing baking molds; free-standing paper molds</strong><div class="id">#free-standing-cups</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>freistehende Papierbackformen</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>moules de cuisson autoportants</strong></td>
+  <td class="note"></td>
+</tr>
+<tr>
+  <td class="en"><strong>roll-mouth cake cups</strong><div class="id">#roll-mouth-cups</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Rollrandformen</strong> <span class="alt">△ 同义：Backformen mit Rollrand</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>moules à bord roulé</strong></td>
+  <td class="note">见于 about 页德法文案，站内既有。</td>
+</tr>
+<tr>
+  <td class="en"><strong>air fryer paper liners</strong><div class="id">#air-fryer-liners</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Airfryer-Backpapier</strong> <span class="alt">△ 同义：Papier für Airfryer</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>papier pour air fryer</strong> <span class="alt">△ 同义：papier air fryer</span></td>
+  <td class="note">德语市场习惯把 Airfryer 写成一个词（△ 大小写：名词 Airfryer 大写）。</td>
+</tr>
+<tr>
+  <td class="en"><strong>greaseproof paper</strong><div class="id">#greaseproof-paper</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>fettdichtes Papier</strong> <span class="alt">△ 同义：Fettpapier；Backtrennpapier</span> <span class="avoid">❌ 禁用：öldichtes Papier</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>papier ingraissable</strong> <span class="alt">△ 同义：papier anti-graisse</span> <span class="avoid">❌ 禁用：papier imperméable à la graisse</span></td>
+  <td class="note">Fettpapier / Backtrennpapier 是德语市场真实同义词（△ 商品页可用作同义词段）；fr papier anti-graisse 亦常见（△）。</td>
+</tr>
+<tr>
+  <td class="en"><strong>paper straws</strong><div class="id">#paper-straws</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Papierstrohhalme</strong> <span class="avoid">❌ 禁用：Papierhalme (nur colloquial)</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>pailles en papier</strong> <span class="alt">△ 同义：pailles papier</span></td>
+  <td class="note"></td>
+</tr>
+<tr>
+  <td class="en"><strong>wax paper</strong><div class="id">#wax-paper</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Wachspapier</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>papier ciré</strong> <span class="alt">△ 同义：papier paraffiné</span></td>
+  <td class="note"></td>
+</tr>
+<tr>
+  <td class="en"><strong>butcher paper</strong><div class="id">#butcher-paper</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Metzgerpapier</strong> <span class="alt">△ 同义：Fleischerpapier</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>papier de boucherie</strong></td>
+  <td class="note"></td>
+</tr>
+<tr>
+  <td class="en"><strong>burger wrapping paper</strong><div class="id">#burger-wrapping-paper</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Burger-Papier</strong> <span class="alt">△ 同义：Burgerpapier；Papier für Burger-Wrapping</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>papier à hamburgers</strong> <span class="alt">△ 同义：papier d'emballage hamburger；papier burger</span></td>
+  <td class="note">V1 新增产品页用词，与英文站 burger-wrapping-paper 对应。</td>
+</tr>
+<tr>
+  <td class="en"><strong>custom printed baking paper</strong><div class="id">#custom-printed-baking-paper</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>individuell bedrucktes Backpapier</strong> <span class="alt">△ 同义：bedrucktes Backpapier</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>papier cuisson imprimé personnalisé</strong> <span class="alt">△ 同义：papier cuisson personnalisé</span></td>
+  <td class="note">V1 新增产品页用词。</td>
+</tr>
+<tr>
+  <td class="en"><strong>food wrapping paper</strong><div class="id">#food-wrapping-paper</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Lebensmittelverpackungspapier</strong> <span class="alt">△ 同义：Papier für Lebensmittelverpackung</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>papier d'emballage alimentaire</strong></td>
+  <td class="note">V1 新增产品页用词。</td>
+</tr>
+<tr>
+  <td class="en"><strong>paper party accessories</strong><div class="id">#party-accessories</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Partyartikel aus Papier</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>articles de fête en papier</strong></td>
+  <td class="note">V1 新增产品页用词。</td>
+</tr>
+<tr>
+  <td class="en"><strong>cake boards</strong><div class="id">#cake-boards</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Kuchenplatten</strong> <span class="alt">△ 同义：Kuchenunterlagen (△ Einweg/Karton-Kontext)</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>socles à gâteau</strong> <span class="alt">△ 同义：plateaux à gâteau</span></td>
+  <td class="note">英文站归在 party-accessories 类目与博客文章，无独立产品页；术语先入词库备用。</td>
+</tr>
+<tr>
+  <td class="en"><strong>cupcake liners</strong><div class="id">#cupcake-liners</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Cupcake-Backförmchen</strong> <span class="alt">△ 同义：Cupcakeförmchen</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>caissettes à cupcakes</strong> <span class="alt">△ 同义：caissettes cupcake</span></td>
+  <td class="note">德语市场 Cupcakeförmchen 搜索量真实存在（△ 同义词段可用）。</td>
+</tr></tbody>
+  </table>
+</section>
+<section id="process">
+  <h2>② 工艺与技术 <span class="count">24 词条</span></h2>
+  <p class="cat-desc">涂布、印刷、规格、检测等工艺词汇。</p>
+  <table>
+    <thead><tr><th>EN（母版）</th><th>DE</th><th>FR</th><th>备注</th></tr></thead>
+    <tbody><tr>
+  <td class="en"><strong>printing</strong><div class="id">#printing</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Druck</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>impression</strong></td>
+  <td class="note"></td>
+</tr>
+<tr>
+  <td class="en"><strong>custom printing; individual printing</strong><div class="id">#custom-printing</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>individueller Druck</strong> <span class="alt">△ 同义：Kundeneigener Druck</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>impression personnalisée</strong></td>
+  <td class="note">RFQ 表单字段既译（Impression personnalisée）。</td>
+</tr>
+<tr>
+  <td class="en"><strong>silicone coating</strong><div class="id">#silicone-coating</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Silikonbeschichtung</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>revêtement silicone</strong> <span class="alt">△ 同义：enduction silicone</span></td>
+  <td class="note">fr enduction silicone 是纸加工行业术语（△ 技术文章可用）。</td>
+</tr>
+<tr>
+  <td class="en"><strong>single-sided silicone coating</strong><div class="id">#single-side-coating</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>einseitige Silikonbeschichtung</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>revêtement silicone simple face</strong></td>
+  <td class="note"></td>
+</tr>
+<tr>
+  <td class="en"><strong>double-sided silicone coating</strong><div class="id">#double-side-coating</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>beidseitige Silikonbeschichtung</strong> <span class="alt">△ 同义：doppelseitige Silikonbeschichtung</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>revêtement silicone double face</strong></td>
+  <td class="note">beidseitig / doppelseitig 都正确（△ 同义），站内统一 beidseitig。</td>
+</tr>
+<tr>
+  <td class="en"><strong>silicone coat weight</strong><div class="id">#coat-weight</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Silikanauftrag (g/m²)</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>grammage de silicone (g/m²)</strong></td>
+  <td class="note"></td>
+</tr>
+<tr>
+  <td class="en"><strong>food-grade ink</strong><div class="id">#food-grade-ink</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>lebensmittelechte Tinte</strong> <span class="alt">△ 同义：Lebensmittelfarbe (❌ 指食用色素，勿混)</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>encre alimentaire</strong> <span class="alt">△ 同义：encre de qualité alimentaire</span></td>
+  <td class="note">❌ Lebensmittelfarbe 是烘焙食用色素，不是印刷油墨。</td>
+</tr>
+<tr>
+  <td class="en"><strong>low-odor ink</strong><div class="id">#low-odor-ink</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>geruchsarme Tinte</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>encre à faible odeur</strong></td>
+  <td class="note"></td>
+</tr>
+<tr>
+  <td class="en"><strong>grease resistance</strong><div class="id">#grease-resistance</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Fettbeständigkeit</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>résistance aux graisses</strong></td>
+  <td class="note">站内既有（Qualitätskontrolle 检查点列表）。</td>
+</tr>
+<tr>
+  <td class="en"><strong>grease resistance kit value (KIT 1-12)</strong><div class="id">#grease-kit-value</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Fettbeständigkeit nach KIT-Prüfung (KIT 1-12)</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>valeur KIT de résistance aux graisses (KIT 1-12)</strong></td>
+  <td class="note">KIT 是行业标准测试名，缩写保留，德法都不翻译 KIT 本身。</td>
+</tr>
+<tr>
+  <td class="en"><strong>temperature resistance; heat resistance</strong><div class="id">#temperature-resistance</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Temperaturbeständigkeit</strong> <span class="alt">△ 同义：Hitzebeständigkeit (△ 口语)</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>résistance à la température</strong></td>
+  <td class="note"></td>
+</tr>
+<tr>
+  <td class="en"><strong>roll</strong><div class="id">#roll</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Rolle</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>rouleau</strong></td>
+  <td class="note"></td>
+</tr>
+<tr>
+  <td class="en"><strong>sheet</strong><div class="id">#sheet</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Bogen</strong> <span class="alt">△ 同义：Zuschnitt (△ 裁切尺寸语境)</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>feuille</strong></td>
+  <td class="note"></td>
+</tr>
+<tr>
+  <td class="en"><strong>interfolded paper</strong><div class="id">#interfolded</div></td>
+  <td><span class="badge ctx">△ Context</span> <strong>vorgefalztes Papier (Interfold)</strong></td>
+  <td><span class="badge ctx">△ Context</span> <strong>papier interplié</strong></td>
+  <td class="note">△ 只在 wax-paper 抽取/餐巾纸类语境用；德法市场对该词均无统一惯用词，带括号保留英文。</td>
+</tr>
+<tr>
+  <td class="en"><strong>core diameter</strong><div class="id">#core-diameter</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Hülsendurchmesser</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>diamètre du mandrin</strong></td>
+  <td class="note">Hülse = 纸管芯（DE），mandrin（FR）。</td>
+</tr>
+<tr>
+  <td class="en"><strong>grammage; basis weight; GSM</strong><div class="id">#grammage</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Grammatur (g/m²)</strong> <span class="avoid">❌ 禁用：Flächengewicht (△ 学术语境可用，站内统一 Grammatur)</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>grammage (g/m²)</strong></td>
+  <td class="note">单位写法统一 g/m²（站内既有）。GSM 缩写仅在括号补注时用：Grammatur (GSM, g/m²)。</td>
+</tr>
+<tr>
+  <td class="en"><strong>die-cut shapes</strong><div class="id">#die-cut</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Stanzformen / gestanzte Formen</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>formes découpées / découpe à l'emporte-pièce</strong></td>
+  <td class="note">站内 about 页既译：Schneiden und Stanzen / Découpe et emporte-pièce。</td>
+</tr>
+<tr>
+  <td class="en"><strong>perforation</strong><div class="id">#perforation</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Perforation</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>perforation</strong></td>
+  <td class="note">站内既有。</td>
+</tr>
+<tr>
+  <td class="en"><strong>release (performance); non-stick</strong><div class="id">#release</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Trennwirkung / Antihaftwirkung</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>antiadhérence / démoulage</strong></td>
+  <td class="note">release paper 本体 = Trennpapier(DE) / papier de démoulage(FR)（△ 仅材料学语境）。</td>
+</tr>
+<tr>
+  <td class="en"><strong>release force test; peel test</strong><div class="id">#release-force-test</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Trennkraftprüfung (Schältest)</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>test de force de délaminage (test de pelage)</strong></td>
+  <td class="note"></td>
+</tr>
+<tr>
+  <td class="en"><strong>denesting</strong><div class="id">#denesting</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Entstapelung</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>désemboîtement</strong></td>
+  <td class="note">工业烘焙线语境。站内既有（industrielle Backlinien 指南）。</td>
+</tr>
+<tr>
+  <td class="en"><strong>pleat; fluting</strong><div class="id">#pleat</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Falz / Faltung</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>pli / plissage</strong></td>
+  <td class="note">fluted cups = geflammte/gefaltete Förmchen；fr plissé。</td>
+</tr>
+<tr>
+  <td class="en"><strong>base paper; raw paper</strong><div class="id">#base-paper</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Rohpapier</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>papier de base</strong></td>
+  <td class="note">站内既有（vom Rohpapier bis zum Versand / du papier brut à l'expédition）。</td>
+</tr>
+<tr>
+  <td class="en"><strong>artwork approval; print proof approval</strong><div class="id">#artwork-approval</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Druckfreigabe / Musterfreigabe</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>BAT (bon à tirer)</strong> <span class="alt">△ 同义：validation du BAT</span></td>
+  <td class="note">fr 行业标准词就是 BAT（首字母缩写保留）。站内既有。</td>
+</tr></tbody>
+  </table>
+</section>
+<section id="compliance">
+  <h2>③ 合规（全部 ⚠️） <span class="count">14 词条</span></h2>
+  <p class="cat-desc">法规与合规词汇。翻译时只做语言转换，绝不扩展声明范围。站点既有政策：不做全品类 blanket claim，一切表述挂条件。</p>
+  <table>
+    <thead><tr><th>EN（母版）</th><th>DE</th><th>FR</th><th>备注</th></tr></thead>
+    <tbody><tr>
+  <td class="en"><strong>PFAS-free</strong><div class="id">#pfas-free</div></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>PFAS-frei</strong></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>sans PFAS</strong></td>
+  <td class="note">⚠️ 站内口径是条件式：'PFAS-freie Optionen auf Anfrage' / 'Options sans PFAS sur demande'。禁止写成全品类声明 'PFAS-freie Produkte'（无条件限定）。PFAS 缩写不翻译。</td>
+</tr>
+<tr>
+  <td class="en"><strong>food contact</strong><div class="id">#food-contact</div></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>Lebensmittelkontakt</strong></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>contact alimentaire</strong></td>
+  <td class="note">⚠️ food-contact paper = Papier für Lebensmittelkontakt（材料语境）。</td>
+</tr>
+<tr>
+  <td class="en"><strong>food-grade</strong><div class="id">#food-grade</div></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>lebensmittelecht</strong> <span class="alt">△ 同义：für den Lebensmittelkontakt geeignet (△ 正式表述)</span></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>de qualité alimentaire</strong> <span class="alt">△ 同义：alimentaire (△ 形容词省略式，如 encre alimentaire)</span></td>
+  <td class="note">⚠️ lebensmittelecht 在德语有法定含义（QM 等），只描述材料本身，不得引申为'已获批准'。</td>
+</tr>
+<tr>
+  <td class="en"><strong>food contact material (FCM)</strong><div class="id">#food-contact-material</div></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>Lebensmittelkontaktmaterial</strong></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>matériau de contact alimentaire</strong> <span class="alt">△ 同义：matériaux au contact des aliments (MoCA △ 法国官方语境)</span></td>
+  <td class="note">⚠️ MoCA 是法国官方缩写（Matériaux au Contact des Aliments），仅在引用法国官方框架时使用。</td>
+</tr>
+<tr>
+  <td class="en"><strong>LFGB</strong><div class="id">#lfgb</div></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>LFGB</strong></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>LFGB</strong></td>
+  <td class="note">⚠️ 缩写两语言都保留。站内口径：'LFGB-Unterstützung je nach Produkt'（支持提供 LFGB 相关文件），禁止 'LFGB-zertifiziert' / 'certifié LFGB'——LFGB 是德国食品法，不是产品认证。需要展开时全称：Lebensmittel- und Futtermittelgesetzbuch。</td>
+</tr>
+<tr>
+  <td class="en"><strong>BfR</strong><div class="id">#bfr</div></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>BfR</strong></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>BfR</strong></td>
+  <td class="note">⚠️ BfR（Bundesinstitut für Risikobewertung）是德国联邦风险评估所，只发布建议（Empfehlung），不认证产品。禁止 'BfR-geprüft' / 'BfR-zertifiziert' / 'approuvé par le BfR'。正确表述：'entsprechend anwendbarer BfR-Empfehlungen hergestellt (je nach Produkt)'。</td>
+</tr>
+<tr>
+  <td class="en"><strong>EU framework for food contact</strong><div class="id">#eu-framework</div></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>EU-Rahmen für Lebensmittelkontakt</strong></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>cadre européen du contact alimentaire</strong></td>
+  <td class="note">⚠️ 站内既有。除非引用官方文本，不写具体法规编号（如 (EG) Nr. 1935/2004）；需要引用时编号逐字照抄官方公报，禁止凭记忆写编号。</td>
+</tr>
+<tr>
+  <td class="en"><strong>EUDR; EU Deforestation Regulation</strong><div class="id">#eudr</div></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>EUDR</strong> <span class="alt">△ 同义：EUDR-Rückverfolgbarkeit</span></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>EUDR</strong> <span class="alt">△ 同义：traçabilité EUDR</span></td>
+  <td class="note">⚠️ 站内既有核心页。口径固定：EUDR 是 Sorgfaltspflicht/diligence raisonnée（尽职调查义务），不是产品证书（'kein Produktzertifikat' / 'pas d'un certificat produit'）。EU-Marktteilnehmer（operator）承担最终责任。此定性禁止改写。</td>
+</tr>
+<tr>
+  <td class="en"><strong>test report</strong><div class="id">#test-report</div></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>Prüfbericht</strong></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>rapport d'essai</strong></td>
+  <td class="note">⚠️ 站内既有。只说'可提供'（bereitgestellt / fourni），不说'已通过'，除非引用具体报告。</td>
+</tr>
+<tr>
+  <td class="en"><strong>certificate</strong><div class="id">#certificate</div></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>Zertifikat</strong></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>certificat</strong></td>
+  <td class="note">⚠️ 站内 about 页口径：'Verfügbare Unterlagen umfassen ... BSCI-, BRC-, ISO-, FSC-, LFGB-, DGCCRF- ... Gültigkeit, Umfang und Anwendbarkeit werden für den konkreten Artikel bestätigt.' 证书名单只允许这几个既定项，不得新增任何认证名。</td>
+</tr>
+<tr>
+  <td class="en"><strong>declaration; declaration of compliance (DoC)</strong><div class="id">#declaration</div></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>(Konformitäts-)Erklärung</strong></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>déclaration (de conformité)</strong></td>
+  <td class="note">⚠️ DoC 的提供与否挂产品与市场条件。</td>
+</tr>
+<tr>
+  <td class="en"><strong>depending on product, material and target market</strong><div class="id">#per-product-market</div></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>je nach Produkt, Material und Zielmarkt</strong></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>selon le produit, la matière et le marché</strong></td>
+  <td class="note">⚠️ 这是全站合规表述的锚点句式——任何合规能力描述必须挂这个条件（或 'auf Anfrage' / 'sur demande'）。站点政策：'Eine pauschale Zertifizierung aller Produkte wird nicht behauptet' / 'Aucune certification générale de tous les produits n'est revendiquée'。</td>
+</tr>
+<tr>
+  <td class="en"><strong>GMP; good manufacturing practice</strong><div class="id">#gmp</div></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>Gute Herstellungspraxis (GMP)</strong></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>bonnes pratiques de fabrication (GMP)</strong></td>
+  <td class="note">⚠️ 站内既有（compliance 页检查清单）。</td>
+</tr>
+<tr>
+  <td class="en"><strong>migration testing; migration limits</strong><div class="id">#migration-test</div></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>Migrationsprüfung; Migrationsgrenzwerte</strong></td>
+  <td><span class="badge comp">⚠️ Compliance</span> <strong>test de migration; limites de migration</strong></td>
+  <td class="note">⚠️ 迁移测试结论只描述测试行为本身，不得引申为'安全'结论。</td>
+</tr></tbody>
+  </table>
+</section>
+<section id="b2b">
+  <h2>④ B2B &amp; RFQ <span class="count">21 词条</span></h2>
+  <p class="cat-desc">询盘、报价、规格、交期等采购流程词汇。</p>
+  <table>
+    <thead><tr><th>EN（母版）</th><th>DE</th><th>FR</th><th>备注</th></tr></thead>
+    <tbody><tr>
+  <td class="en"><strong>MOQ; minimum order quantity</strong><div class="id">#moq</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Mindestbestellmenge (MOQ)</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>quantité minimale de commande (MOQ)</strong> <span class="alt">△ 同义：MOQ</span></td>
+  <td class="note">MOQ 缩写德法 B2B 读者都懂，首现全称+缩写，后文可单用 MOQ。</td>
+</tr>
+<tr>
+  <td class="en"><strong>custom sample</strong><div class="id">#custom-sample</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>individuelles Muster</strong> <span class="alt">△ 同义：kundenspezifisches Muster</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>échantillon personnalisé</strong></td>
+  <td class="note">standard sample = Standardmuster / échantillon standard。</td>
+</tr>
+<tr>
+  <td class="en"><strong>monthly usage; monthly volume</strong><div class="id">#monthly-usage</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Monatsbedarf</strong> <span class="alt">△ 同义：monatlicher Bedarf</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>consommation mensuelle</strong> <span class="alt">△ 同义：volume mensuel</span></td>
+  <td class="note">RFQ 收集字段。</td>
+</tr>
+<tr>
+  <td class="en"><strong>roll width</strong><div class="id">#roll-width</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Rollenbreite</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>largeur de rouleau</strong></td>
+  <td class="note"></td>
+</tr>
+<tr>
+  <td class="en"><strong>roll diameter</strong><div class="id">#roll-diameter</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Rollendurchmesser</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>diamètre de rouleau</strong></td>
+  <td class="note"></td>
+</tr>
+<tr>
+  <td class="en"><strong>country; target market</strong><div class="id">#target-market</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Zielmarkt (Land)</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>marché de destination (pays)</strong></td>
+  <td class="note">RFQ 表单字段既译（Zielmarkt / Marché de destination）。</td>
+</tr>
+<tr>
+  <td class="en"><strong>Request a quote; Request for quotation</strong><div class="id">#request-a-quote</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Angebot anfordern</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Demander un devis</strong></td>
+  <td class="note">站内既有（CTA 按钮、导航）。</td>
+</tr>
+<tr>
+  <td class="en"><strong>Request a (free) sample</strong><div class="id">#request-a-sample</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Muster anfordern</strong> <span class="alt">△ 同义：Kostenloses Muster anfordern (△ 强调免费时)</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Demander des échantillons</strong> <span class="alt">△ 同义：Demander un échantillon (△ 单件)</span></td>
+  <td class="note">站内既有。英文 free sample 的 'free' 译出时必须是 tatsächlich kostenlos 的语境。</td>
+</tr>
+<tr>
+  <td class="en"><strong>lead time</strong><div class="id">#lead-time</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Lieferzeit</strong> <span class="alt">△ 同义：Produktionsvorlauf / Vorlaufzeit (△ 只指生产段)</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>délai de production</strong> <span class="alt">△ 同义：délai de livraison (△ 只指发运段)</span></td>
+  <td class="note">英文 lead time 覆盖生产+发运，德法各拆两个词——按语境选择，不要统一直译。</td>
+</tr>
+<tr>
+  <td class="en"><strong>RFQ; request for quotation</strong><div class="id">#rfq</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Anfrage (RFQ)</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>demande de devis</strong></td>
+  <td class="note">站内表单 action 即 /api/inquiry。</td>
+</tr>
+<tr>
+  <td class="en"><strong>private label</strong><div class="id">#private-label</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Private Label</strong> <span class="avoid">❌ 禁用：Eigenmarke (△ 零售行业惯用，站内统一 Private Label)</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>marque distributeur</strong> <span class="alt">△ 同义：marque de distributeur</span></td>
+  <td class="note">德语区 B2B 采购语境直接用 Private Label（站内既有）；法语必须翻译。</td>
+</tr>
+<tr>
+  <td class="en"><strong>OEM / ODM</strong><div class="id">#oem-odm</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>OEM / ODM</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>OEM / ODM</strong></td>
+  <td class="note">缩写保留，站内既有。</td>
+</tr>
+<tr>
+  <td class="en"><strong>wholesale</strong><div class="id">#wholesale</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Großhandel</strong> <span class="alt">△ 同义：für den Großhandel</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>en gros</strong> <span class="alt">△ 同义：grossiste (名词：批发商)；achat en gros</span></td>
+  <td class="note">站内既有（Großhändler und Importeure / Grossistes et importateurs）。</td>
+</tr>
+<tr>
+  <td class="en"><strong>manufacturer</strong><div class="id">#manufacturer</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Hersteller</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>fabricant</strong></td>
+  <td class="note">站内 Title 模式核心词：Hersteller / fabricant。</td>
+</tr>
+<tr>
+  <td class="en"><strong>supplier</strong><div class="id">#supplier</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Lieferant</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>fournisseur</strong></td>
+  <td class="note"></td>
+</tr>
+<tr>
+  <td class="en"><strong>specification; buyer specification</strong><div class="id">#specification</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Spezifikation</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>spécification</strong> <span class="alt">△ 同义：cahier des charges (△ 特指买方需求文件时更地道)</span></td>
+  <td class="note">fr 'votre cahier des charges'（您的规格要求）站内既有。</td>
+</tr>
+<tr>
+  <td class="en"><strong>tolerance</strong><div class="id">#tolerance</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Toleranz</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>tolérance</strong></td>
+  <td class="note"></td>
+</tr>
+<tr>
+  <td class="en"><strong>lot; batch</strong><div class="id">#lot</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Charge</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>lot</strong></td>
+  <td class="note">lot traceability = Chargenrückverfolgbarkeit / traçabilité des lots（站内既有）。</td>
+</tr>
+<tr>
+  <td class="en"><strong>traceability</strong><div class="id">#traceability</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Rückverfolgbarkeit</strong></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>traçabilité</strong></td>
+  <td class="note">站内既有。</td>
+</tr>
+<tr>
+  <td class="en"><strong>tooling (costs)</strong><div class="id">#tooling</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Werkzeugkosten</strong> <span class="alt">△ 同义：Werkzeug (△ 设备本体)</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>outillage</strong> <span class="alt">△ 同义：coûts d'outillage</span></td>
+  <td class="note">站内 FAQ 既译：outillage / Werkzeug。</td>
+</tr>
+<tr>
+  <td class="en"><strong>port of destination</strong><div class="id">#port-of-destination</div></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>Lieferhafen</strong> <span class="alt">△ 同义：Zielhafen</span></td>
+  <td><span class="badge ok">✅ Preferred</span> <strong>port de destination</strong></td>
+  <td class="note">RFQ 表单字段既译。</td>
+</tr></tbody>
+  </table>
+</section>
+
+<section id="seo">
+  <h2>⑤ SEO 关键词与模板</h2>
+  <div class="seo-grid">
+    <div class="seo-card">
+  <h3>🇩🇪 德语</h3>
+  <h4>优先关键词</h4>
+  <ul class="kw"><li>Backpapier Großhandel</li><li>Backpapier Hersteller</li><li>Backförmchen Großhandel</li><li>Backförmchen individually bedruckt</li><li>Muffin-Backförmchen kaufen Großhandel</li><li>Tulpen-Backförmchen Großhandel</li><li>Papierstrohhalme Hersteller</li><li>Papierstrohhalme Großhandel</li><li>fettdichtes Papier kaufen</li><li>Wachspapier Großhandel</li><li>Airfryer-Backpapier Großhandel</li><li>individuell bedrucktes Backpapier</li><li>PFAS-freies Backpapier</li><li>Backpapier Rolle Großhandel</li><li>private label Backpapier</li></ul>
+  <h4>Title 模板</h4>
+  <p class="pattern">{Produkt} Hersteller | OEM &amp; Private Label | LANGMAI</p>
+  <ul><li>核心词前置（Hersteller / Großhandel 紧跟产品词）</li><li>总长（含 ' | LANGMAI'）≤ 60 字符；超长时先去掉 '&amp; Private Label' 再去 'OEM'</li><li>品牌后缀固定 ' | LANGMAI'，不改写</li></ul>
+  <h4>H1 规则</h4>
+  <ul><li>H1 与 Title 可不同：H1 用完整产品词+用途限定（如 'Individuell bedrucktes Backpapier für Handelsmarken'）</li><li>一个页面只有一个 H1</li></ul>
+  <h4>Meta Description 规则</h4>
+  <ul><li>120-156 字符，德语名词复合词长，优先保住：产品词 + Hersteller/Großhandel + 一个差异化点（individuell, PFAS-frei Optionen, Dokumente）</li><li>必须含至少一个 SEO 优先关键词的自然变体</li><li>禁止句号堆叠，一句话+一个从句为上限</li></ul>
+  <h4>FAQ 常用表达</h4>
+  <ul class="kw"><li>Sind individuelle Größen möglich?</li><li>Welche Unterlagen sind verfügbar?</li><li>Kann ich Muster erhalten?</li><li>Was ist die Mindestbestellmenge (MOQ)?</li><li>Wie lange dauert die Produktion?</li><li>Sind PFAS-freie Optionen verfügbar?</li></ul>
+  <h4>同义词与长尾词</h4>
+  <ul class="kw"><li>Backpapier Rolle 30 m Großhandel</li><li>Backförmchen für industrielle Backlinien</li><li>Papierstrohhalme einzeln verpackt</li><li>Fettdichtes Papier für Bäckerei</li><li>Backpapier geruchsarm bedruckt</li></ul>
+</div>
+    <div class="seo-card">
+  <h3>🇫🇷 法语</h3>
+  <h4>优先关键词</h4>
+  <ul class="kw"><li>papier cuisson gros</li><li>papier cuisson fabricant</li><li>caissettes de cuisson professionnelles</li><li>caissettes à muffins gros</li><li>caissettes tulipe</li><li>pailles en papier grossiste</li><li>papier ingraissable professionnel</li><li>papier ciré alimentaire</li><li>papier pour air fryer grossiste</li><li>papier cuisson imprimé personnalisé</li><li>papier cuisson sans PFAS</li><li>rouleau papier cuisson gros</li><li>marque distributeur emballage papier</li></ul>
+  <h4>Title 模板</h4>
+  <p class="pattern">{Produit} fabricant | OEM &amp; Private Label | LANGMAI</p>
+  <ul><li>核心词前置（fabricant / gros 紧跟产品词）</li><li>总长（含 ' | LANGMAI'）≤ 60 字符；法语介词冠词占字符多，必要时用 'gros' 替代 'grossiste'</li><li>品牌后缀固定 ' | LANGMAI'</li></ul>
+  <h4>H1 规则</h4>
+  <ul><li>H1 用完整产品词+用途限定（如 'Papier cuisson imprimé pour les marques'）</li><li>一个页面只有一个 H1</li></ul>
+  <h4>Meta Description 规则</h4>
+  <ul><li>120-156 字符，保住：产品词 + fabricant/gros + 差异化点（personnalisé, sans PFAS sur demande, documents)</li><li>必须含至少一个 SEO 优先关键词的自然变体</li><li>法语标点：冒号/分号前留窄空格（半角空格亦可），撇号用 ’</li></ul>
+  <h4>FAQ 常用表达</h4>
+  <ul class="kw"><li>Les dimensions sont-elles personnalisables ?</li><li>Quels documents sont disponibles ?</li><li>Puis-je recevoir des échantillons ?</li><li>Quelle est la quantité minimale de commande (MOQ) ?</li><li>Quel est le délai de production ?</li><li>Des options sans PFAS sont-elles disponibles ?</li></ul>
+  <h4>同义词与长尾词</h4>
+  <ul class="kw"><li>rouleau papier cuisson 30 m professionnel</li><li>caissettes pour production industrielle</li><li>pailles en papier emballées individuellement</li><li>papier ingraissable pour boulangerie</li><li>papier cuisson sans odeur imprimé</li></ul>
+</div>
+  </div>
+</section>
+
+<section id="rules">
+  <h2>⑥ 全局规则与特别标记</h2>
+  <div class="rule-card"><h3>品牌与联系信息</h3><ul><li>LANGMAI 任何语言不翻译、不变形（LANGMAI® 也不加 ®，站内未注册商标标法）</li><li>公司法定名 'Jinhua Langmai Daily-Using Co., Ltd.' 逐字保留</li><li>邮箱 wilson@lmcakecup.com、电话 +86 13645700210 逐字保留</li></ul></div>
+  <div class="rule-card"><h3>格式与正字法</h3><ul><li>单位原样保留：g/m²、°C、mm、cm、m、KG；数字与小数点格式跟随德法习惯（德语小数逗号 32,5 g/m²；法语 32,5 g/m²）</li><li>缩写不翻译：MOQ、OEM、ODM、GSM（首现时括注 g/m²）、PFAS、LFGB、BfR、EUDR、BRC、BSCI、ISO、FSC、FDA、DGCCRF、BAT、KIT、GMP</li><li>德语正字法：ß 保留（Großhändler），URL slug 用 ae/oe/ue 转写（grosshaendler）</li><li>法语撇号统一 ’（右单引号），站内既有文案已如此</li><li>德语 B2B 敬语一律 Sie（禁 du）；法语一律 vous</li></ul></div>
+  <div class="rule-card"><h3>合规表述口径（⚠️ 最高优先级）</h3><ul><li>任何合规能力描述必须挂条件：'je nach Produkt, Material und Zielmarkt' / 'selon le produit, la matière et le marché'，或 'auf Anfrage' / 'sur demande'</li><li>禁止无条件全品类声明（见下方 machine-checkable patterns）</li><li>认证名单封闭集合：BSCI、BRC、ISO、FSC、LFGB、DGCCRF、PFAS(选项)——不得新增任何认证/法规名</li><li>EUDR 定性不可改：Sorgfaltspflicht/diligence raisonnée，不是 Produktzertifikat/certificat produit</li></ul></div>
+  <div class="rule-card">
+    <h3>机器可检查的禁用模式（scripts/glossary-check.mjs 执行）</h3>
+    <div class="check error"><b>no-blanket-lfgb-de [error]</b><br>正则：<code>LFGB-zertifiziert|LFGB zertifiziert|LFGB-geprüft|LFGB-geprueft</code><br>LFGB 是德国食品法（法律），不是产品认证——禁止 'LFGB-zertifiziert/-geprüft'</div><div class="check error"><b>no-blanket-lfgb-fr [error]</b><br>正则：<code>certifié LFGB|certifie LFGB|approuvé LFGB|approuve LFGB</code><br>禁止 'certifié/approuvé LFGB'</div><div class="check error"><b>no-blanket-bfr [error]</b><br>正则：<code>BfR-zertifiziert|BfR-geprüft|BfR-geprueft|certifié BfR|certifie BfR</code><br>BfR 是风险评估所，只发布建议（Empfehlung），不认证产品</div><div class="check error"><b>no-blanket-brc [error]</b><br>正则：<code>BRC-zertifiziert|BRC-zugelassen|certifié BRC|certifie BRC</code><br>BRC 相关只能按站内口径条件式提及</div><div class="check error"><b>no-blanket-fda [error]</b><br>正则：<code>FDA-zugelassen|FDA-zertifiziert|FDA-approved|approuvé FDA|homologué FDA</code><br>FDA 不批准产品/工厂（只批准食品添加剂等），禁止绝对化</div><div class="check error"><b>no-unconditional-pfas [error]</b><br>正则：<code>PFAS-freie Produkte|produits sans PFAS(?! sur demande)</code><br>PFAS-free 必须挂 'Optionen ... auf Anfrage' / 'sur demande' 条件</div><div class="check error"><b>no-eudr-certificate [error]</b><br>正则：<code>EUDR-Zertifikat|EUDR-zertifiziert|certificat EUDR|certifié EUDR</code><br>EUDR 是尽职调查义务，不是证书——站内定性不可改</div><div class="check error"><b>no-mt-traps-de [error]</b><br>正则：<code>Kuchenbecher|Kuchenschalen|Muffinbecher|Lebensmittelfarbe|öldichtes Papier</code><br>机翻陷阱词（❌ Forbidden 词条）</div><div class="check error"><b>no-mt-traps-fr [error]</b><br>正则：<code>gobelets à gâteau|gobelets a gateau|tasses à gâteau|papier parchemin</code><br>机翻陷阱词（❌ Forbidden 词条）</div><div class="check warn"><b>informal-address-de [warn]</b><br>正则：<code>\bDein \w+|\bdu eine Anfrage|Du kannst</code><br>德语 B2B 必须用 Sie 敬语</div>
+  </div>
+</section>
+
+<footer>
+  本文档由 <code>scripts/build-glossary-doc.mjs</code> 从 <code>site/i18n/glossary-de-fr.json</code> 自动生成——改术语请改 JSON 后重新生成，不要直接编辑本文件。
+  SEO 一致性检查：<code>node scripts/glossary-check.mjs</code>
+</footer>
+</div>
+</body>
+</html>

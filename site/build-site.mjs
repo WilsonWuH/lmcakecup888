@@ -1,8 +1,9 @@
 ﻿import fs from "node:fs";
 import path from "node:path";
 
-import { buildMarketSites } from "./market-sites.mjs";
+import { buildMarketSites, marketArticleMap } from "./market-sites.mjs";
 import { isLiveRoute } from "./live-routes.mjs";
+import { esc, field, renderMarkdown, extractFaq } from "./markdown.mjs";
 
 const root = process.cwd();
 const siteDir = path.join(root, "site");
@@ -407,143 +408,6 @@ const landingPages = [
 
 const pages = [];
 
-function esc(value) {
-  return String(value ?? "")
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;");
-}
-
-function field(text, label) {
-  const match = text.match(new RegExp(`^${label}:\\s*(.+)$`, "m"));
-  return match ? match[1].trim() : "";
-}
-
-function renderInline(text) {
-  const placeholders = [];
-  let safe = esc(text).replace(/\[([^\]]+)\]\((\/[^)\s]+|https:\/\/[^)\s]+)\)/g, (_, label, href) => {
-    const token = `@@LINK${placeholders.length}@@`;
-    const external = href.startsWith("https://") ? ` target="_blank" rel="noopener noreferrer"` : "";
-    placeholders.push(`<a href="${esc(href)}"${external}>${label}</a>`);
-    return token;
-  });
-  safe = safe.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
-  placeholders.forEach((html, index) => {
-    safe = safe.replace(`@@LINK${index}@@`, html);
-  });
-  return safe;
-}
-
-function isTableDivider(line) {
-  return /^\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?$/.test(line);
-}
-
-function parseTableRow(line) {
-  return line
-    .replace(/^\|/, "")
-    .replace(/\|$/, "")
-    .split("|")
-    .map((cell) => cell.trim());
-}
-
-function renderMarkdown(markdown) {
-  const lines = markdown.split(/\r?\n/);
-  const html = [];
-  let list = null;
-  let table = null;
-  const closeList = () => {
-    if (list) {
-      html.push(`</${list}>`);
-      list = null;
-    }
-  };
-  const closeTable = () => {
-    if (table) {
-      html.push("</tbody></table>");
-      table = null;
-    }
-  };
-  for (let index = 0; index < lines.length; index += 1) {
-    const raw = lines[index];
-    const line = raw.trim();
-    if (!line) {
-      closeList();
-      closeTable();
-      continue;
-    }
-    if (line.includes("|") && lines[index + 1] && isTableDivider(lines[index + 1].trim())) {
-      closeList();
-      closeTable();
-      const headers = parseTableRow(line);
-      html.push(`<table><thead><tr>${headers.map((cell) => `<th>${renderInline(cell)}</th>`).join("")}</tr></thead><tbody>`);
-      table = true;
-      continue;
-    }
-    if (isTableDivider(line)) {
-      continue;
-    }
-    if (table && line.includes("|")) {
-      const cells = parseTableRow(line);
-      html.push(`<tr>${cells.map((cell) => `<td>${renderInline(cell)}</td>`).join("")}</tr>`);
-      continue;
-    }
-    closeTable();
-    if (line.startsWith("### ")) {
-      closeList();
-      html.push(`<h3>${renderInline(line.slice(4))}</h3>`);
-    } else if (line.startsWith("## ")) {
-      closeList();
-      html.push(`<h2>${renderInline(line.slice(3))}</h2>`);
-    } else if (line.startsWith("- ")) {
-      if (list !== "ul") {
-        closeList();
-        html.push("<ul>");
-        list = "ul";
-      }
-      html.push(`<li>${renderInline(line.slice(2))}</li>`);
-    } else if (/^\d+\.\s/.test(line)) {
-      if (list !== "ol") {
-        closeList();
-        html.push("<ol>");
-        list = "ol";
-      }
-      html.push(`<li>${renderInline(line.replace(/^\d+\.\s/, ""))}</li>`);
-    } else if (line.startsWith("CTA button:")) {
-      closeList();
-      const label = line.replace("CTA button:", "").trim();
-      html.push(`<p><a class="button primary" href="/inquiry/">${esc(label || "Get a Quote")}</a></p>`);
-    } else {
-      closeList();
-      html.push(`<p>${renderInline(line)}</p>`);
-    }
-  }
-  closeList();
-  closeTable();
-  return html.join("\n");
-}
-
-function extractFaq(markdown) {
-  const faqStart = markdown.indexOf("## FAQ");
-  if (faqStart === -1) return [];
-  const faqEnds = ["## Conclusion", "## CTA", "## Sources"]
-    .map((heading) => markdown.indexOf(heading, faqStart))
-    .filter((index) => index > faqStart);
-  const faqEnd = faqEnds.length ? Math.min(...faqEnds) : -1;
-  const faqText = markdown.slice(faqStart, faqEnd > -1 ? faqEnd : undefined);
-  const items = [];
-  const matches = [...faqText.matchAll(/^###\s+(.+?)\s*\n+([\s\S]*?)(?=^###\s+|$)/gm)];
-  matches.forEach((match) => {
-    const answer = match[2]
-      .split(/\r?\n/)
-      .map((line) => line.trim())
-      .filter(Boolean)
-      .join(" ");
-    if (match[1] && answer) items.push([match[1].trim(), answer]);
-  });
-  return items;
-}
-
 const blogImageMap = {
   "bpa-free-paper-baking-cups": ["blog-bpa-free-paper-baking-cups.webp", "ai-quality-export-packaging.jpg"],
   "how-to-choose-custom-cupcake-liners-wholesale": ["ai-cake-cups-premium.jpg", "ai-quality-export-packaging.jpg"],
@@ -709,16 +573,24 @@ function localizedPath(locale, route) {
   return `/${locale}${route === "/" ? "/" : route}`;
 }
 
+let marketArticleMapCache = null;
 function marketLocalePath(locale, route) {
   const routes = {
     de: {
-      "/": "/de/", "/products/": "/de/produkte/", "/applications/": "/de/anwendungen/", "/customization/": "/de/individuelle-verpackungen/", "/factory-certificates/": "/de/qualitaetskontrolle/", "/compliance/": "/de/lebensmittelkontakt-konformitaet/", "/about/": "/de/ueber-uns/", "/contact/": "/de/kontakt/", "/inquiry/": "/de/muster-anfordern/", "/resources/": "/de/ratgeber/", "/eudr-traceability/": "/de/eudr-rueckverfolgbarkeit/", "/applications/bakery/": "/de/anwendungen/baeckereien-und-konditoreien/", "/applications/food-service/": "/de/anwendungen/gastronomie-und-catering/", "/products/cake-cups/": "/de/produkte/backfoermchen/", "/products/muffin-baking-cups/": "/de/produkte/muffin-backfoermchen/", "/products/roll-mouth-cake-cups/": "/de/produkte/freistehende-papierbackformen/", "/products/baking-parchment-paper/": "/de/produkte/backpapier/", "/products/tulip-muffin-cups/": "/de/produkte/tulpen-backfoermchen/", "/products/air-fryer-paper-liners/": "/de/produkte/airfryer-backpapier/", "/products/greaseproof-paper/": "/de/produkte/fettdichtes-papier/", "/products/paper-straws/": "/de/produkte/papierstrohhalme/",
+      "/": "/de/", "/products/": "/de/produkte/", "/applications/": "/de/anwendungen/", "/customization/": "/de/individuelle-verpackungen/", "/factory-certificates/": "/de/qualitaetskontrolle/", "/compliance/": "/de/lebensmittelkontakt-konformitaet/", "/about/": "/de/ueber-uns/", "/contact/": "/de/kontakt/", "/inquiry/": "/de/muster-anfordern/", "/resources/": "/de/ratgeber/", "/eudr-traceability/": "/de/eudr-rueckverfolgbarkeit/", "/applications/bakery/": "/de/anwendungen/baeckereien-und-konditoreien/", "/applications/food-service/": "/de/anwendungen/gastronomie-und-catering/", "/products/cake-cups/": "/de/produkte/backfoermchen/", "/products/muffin-baking-cups/": "/de/produkte/muffin-backfoermchen/", "/products/roll-mouth-cake-cups/": "/de/produkte/freistehende-papierbackformen/", "/products/baking-parchment-paper/": "/de/produkte/backpapier/", "/products/tulip-muffin-cups/": "/de/produkte/tulpen-backfoermchen/", "/products/air-fryer-paper-liners/": "/de/produkte/airfryer-backpapier/", "/products/greaseproof-paper/": "/de/produkte/fettdichtes-papier/", "/products/paper-straws/": "/de/produkte/papierstrohhalme/", "/products/burger-wrapping-paper/": "/de/produkte/burger-papier/", "/products/butcher-paper/": "/de/produkte/metzgerpapier/", "/products/custom-printed-baking-paper/": "/de/produkte/individuell-bedrucktes-backpapier/", "/products/food-wrapping-paper/": "/de/produkte/lebensmittelverpackungspapier/", "/products/wax-paper/": "/de/produkte/wachspapier/", "/products/party-accessories/": "/de/produkte/partyartikel/",
     },
     fr: {
-      "/": "/fr/", "/products/": "/fr/produits/", "/applications/": "/fr/applications/", "/customization/": "/fr/emballages-personnalises/", "/factory-certificates/": "/fr/controle-qualite/", "/compliance/": "/fr/conformite-contact-alimentaire/", "/about/": "/fr/a-propos/", "/contact/": "/fr/contact/", "/inquiry/": "/fr/demande-echantillons/", "/resources/": "/fr/guides/", "/eudr-traceability/": "/fr/tracabilite-eudr/", "/applications/bakery/": "/fr/applications/boulangeries-patisseries/", "/applications/food-service/": "/fr/applications/restauration-et-traiteurs/", "/products/cake-cups/": "/fr/produits/caissettes-de-cuisson/", "/products/muffin-baking-cups/": "/fr/produits/caissettes-a-muffins/", "/products/roll-mouth-cake-cups/": "/fr/produits/moules-de-cuisson-autoportants/", "/products/baking-parchment-paper/": "/fr/produits/papier-cuisson/", "/products/tulip-muffin-cups/": "/fr/produits/caissettes-tulipe/", "/products/air-fryer-paper-liners/": "/fr/produits/papier-pour-air-fryer/", "/products/greaseproof-paper/": "/fr/produits/papier-ingraissable/", "/products/paper-straws/": "/fr/produits/pailles-en-papier/",
+      "/": "/fr/", "/products/": "/fr/produits/", "/applications/": "/fr/applications/", "/customization/": "/fr/emballages-personnalises/", "/factory-certificates/": "/fr/controle-qualite/", "/compliance/": "/fr/conformite-contact-alimentaire/", "/about/": "/fr/a-propos/", "/contact/": "/fr/contact/", "/inquiry/": "/fr/demande-echantillons/", "/resources/": "/fr/guides/", "/eudr-traceability/": "/fr/tracabilite-eudr/", "/applications/bakery/": "/fr/applications/boulangeries-patisseries/", "/applications/food-service/": "/fr/applications/restauration-et-traiteurs/", "/products/cake-cups/": "/fr/produits/caissettes-de-cuisson/", "/products/muffin-baking-cups/": "/fr/produits/caissettes-a-muffins/", "/products/roll-mouth-cake-cups/": "/fr/produits/moules-de-cuisson-autoportants/", "/products/baking-parchment-paper/": "/fr/produits/papier-cuisson/", "/products/tulip-muffin-cups/": "/fr/produits/caissettes-tulipe/", "/products/air-fryer-paper-liners/": "/fr/produits/papier-pour-air-fryer/", "/products/greaseproof-paper/": "/fr/produits/papier-ingraissable/", "/products/paper-straws/": "/fr/produits/pailles-en-papier/", "/products/burger-wrapping-paper/": "/fr/produits/papier-a-hamburgers/", "/products/butcher-paper/": "/fr/produits/papier-de-boucherie/", "/products/custom-printed-baking-paper/": "/fr/produits/papier-cuisson-imprime-personnalise/", "/products/food-wrapping-paper/": "/fr/produits/papier-emballage-alimentaire/", "/products/wax-paper/": "/fr/produits/papier-cire/", "/products/party-accessories/": "/fr/produits/articles-de-fete/",
     },
   };
-  return routes[locale]?.[route] || null;
+  const mapped = routes[locale]?.[route] || null;
+  if (mapped) return mapped;
+  // Long-form translated guides (i18n/articles) register their own mapping.
+  if (route.startsWith("/resources/")) {
+    marketArticleMapCache = marketArticleMapCache || marketArticleMap();
+    return marketArticleMapCache[route]?.[locale] || null;
+  }
+  return null;
 }
 
 function hreflangTags(route, currentLocale = "") {

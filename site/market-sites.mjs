@@ -1,7 +1,15 @@
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 import { isLiveRoute } from "./live-routes.mjs";
+import { field, renderMarkdown } from "./markdown.mjs";
+
+const siteDir = path.dirname(fileURLToPath(import.meta.url));
+// Long-form translated buyer guides. Source of truth for terminology:
+// site/i18n/glossary-de-fr.json (V1). Each file carries an "EN Slug" field that
+// pairs it with the English master article for reciprocal hreflang.
+const articlesRoot = path.join(siteDir, "i18n", "articles");
 
 const BASE = "https://www.lmcakecup.com";
 const company = "Jinhua Langmai Daily-Using Co., Ltd.";
@@ -159,6 +167,90 @@ const products = [
       "pailles-en-papier",
       "Pailles en papier",
       "Pailles en papier pour restauration et boissons. Diamètre, longueur, couleur, flexibilité, impression et emballage individuel sont configurables.",
+    ],
+  ],
+  [
+    "burger-wrapping-paper",
+    "food-wrap-burger.webp",
+    [
+      "burger-papier",
+      "Burger-Papier",
+      "Bedrucktes Burger-Papier für Burger, Sandwiches, Wraps und Takeaway-Konzepte. Fettdichte Ausführungen, geruchsarmer Druck und Verkaufsverpackung werden projektspezifisch definiert.",
+    ],
+    [
+      "papier-a-hamburgers",
+      "Papier à hamburgers",
+      "Papier à hamburgers imprimé pour burgers, sandwichs, wraps et vente à emporter. Versions ingraissables, impression à faible odeur et emballage de vente définis par projet.",
+    ],
+  ],
+  [
+    "butcher-paper",
+    "food-wrap-butcher.webp",
+    [
+      "metzgerpapier",
+      "Metzgerpapier",
+      "Metzgerpapier als Rolle oder Bogen für Fleisch, Wurst, Fisch und Deli-Anwendungen. Grammatur, Format und Verpackung richten sich nach Verarbeitung und Vertrieb.",
+    ],
+    [
+      "papier-de-boucherie",
+      "Papier de boucherie",
+      "Papier de boucherie en rouleaux ou feuilles pour viande, poisson, charcuterie et traiteur. Grammage, format et conditionnement selon la transformation et la vente.",
+    ],
+  ],
+  [
+    "custom-printed-baking-paper",
+    "factory-real-printing-process-1600.webp",
+    [
+      "individuell-bedrucktes-backpapier",
+      "Individuell bedrucktes Backpapier",
+      "Individuell bedrucktes Backpapier für Marken und Handelsprogramme. Druckdaten, Farben, geruchsarme Tinten und Freigabemuster werden in einem dokumentierten OEM-Prozess abgestimmt.",
+    ],
+    [
+      "papier-cuisson-imprime-personnalise",
+      "Papier cuisson imprimé personnalisé",
+      "Papier cuisson imprimé personnalisé pour marques et programmes distributeurs. Fichiers, couleurs, encres à faible odeur et BAT suivent un processus OEM documenté.",
+    ],
+  ],
+  [
+    "food-wrapping-paper",
+    "food-wrap-greaseproof.webp",
+    [
+      "lebensmittelverpackungspapier",
+      "Lebensmittelverpackungspapier",
+      "Papier für Lebensmittelverpackung: fettdichte, gewachste und bedruckte Ausführungen für Bäckerei, Foodservice und Handel. Struktur und Barriere werden nach Produkt und Prozess gewählt.",
+    ],
+    [
+      "papier-emballage-alimentaire",
+      "Papier d’emballage alimentaire",
+      "Papier d’emballage alimentaire : versions ingraissables, cirées et imprimées pour boulangerie, restauration et commerce. Structure et barrière choisies selon le produit et le procédé.",
+    ],
+  ],
+  [
+    "wax-paper",
+    "food-wrap-wax.webp",
+    [
+      "wachspapier",
+      "Wachspapier",
+      "Wachspapier als Bogen, Rolle oder Interfold-Zuschnitt für Bäckereien, Deli und Food-to-go. Wachsauftrag, Format und Verpackung werden anwendungsspezifisch festgelegt.",
+    ],
+    [
+      "papier-cire",
+      "Papier ciré",
+      "Papier ciré en feuilles, rouleaux ou interplié pour boulangeries, traiteurs et vente à emporter. Couchage de cire, format et conditionnement définis par application.",
+    ],
+  ],
+  [
+    "party-accessories",
+    "party-accessories-clean.jpg",
+    [
+      "partyartikel",
+      "Partyartikel aus Papier",
+      "Partyartikel aus Papier für Einzelhandel und Events: Cupcake-Topper, Tortenspitzen, Kuchenplatten, Strohhalme und Sets. Sortiment und Verpackung werden programmbezogen zusammengestellt.",
+    ],
+    [
+      "articles-de-fete",
+      "Articles de fête en papier",
+      "Articles de fête en papier pour retail et événements : toppers à cupcakes, dentelles en papier, socles à gâteau, pailles et assortiments. Gamme et emballage composés selon le programme.",
     ],
   ],
 ];
@@ -344,6 +436,60 @@ const esc = (v) =>
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
+
+// --- Translated long-form buyer guides (i18n/articles/{de,fr}/*.md) ---------
+// Terminology follows site/i18n/glossary-de-fr.json. "EN Slug" pairs each file
+// with the English master article for reciprocal hreflang + language switcher.
+function loadGuideArticles(locale) {
+  const dir = path.join(articlesRoot, locale);
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((name) => name.endsWith(".md"))
+    .sort()
+    .map((name) => {
+      const md = fs.readFileSync(path.join(dir, name), "utf8");
+      const start = md.indexOf("## Introduction");
+      const bodyMarkdown = start === -1 ? "" : md.slice(start).trim();
+      const images = [field(md, "Image 1 File"), field(md, "Image 2 File")].filter(Boolean);
+      return {
+        slug: name.replace(/\.md$/, ""),
+        enSlug: field(md, "EN Slug"),
+        seoTitle: field(md, "SEO Title"),
+        h1: field(md, "H1"),
+        description: field(md, "Meta Description"),
+        date: field(md, "Publish Date"),
+        bodyMarkdown,
+        images,
+      };
+    })
+    .filter((a) => a.bodyMarkdown && a.h1 && a.seoTitle && a.description);
+}
+
+const guideArticlesByLocale = { de: loadGuideArticles("de"), fr: loadGuideArticles("fr") };
+
+// EN route -> { de, fr } market routes, consumed by build-site.mjs so English
+// master articles emit reciprocal hreflang / switcher links to the translations.
+export function marketArticleMap() {
+  const map = {};
+  for (const locale of ["de", "fr"]) {
+    const c = locales[locale];
+    for (const art of guideArticlesByLocale[locale]) {
+      if (!art.enSlug) continue;
+      const en = `/resources/${art.enSlug}/`;
+      map[en] = map[en] || {};
+      map[en][locale] = `${c.guides}${art.slug}/`;
+    }
+  }
+  return map;
+}
+
+function articlePairRoute(locale, enSlug) {
+  const o = other(locale),
+    c = locales[o];
+  const art = guideArticlesByLocale[o].find((a) => a.enSlug === enSlug);
+  return art ? `${c.guides}${art.slug}/` : null;
+}
 const side = (locale) => (locale === "de" ? 2 : 3);
 const other = (locale) => (locale === "de" ? "fr" : "de");
 function pairRoute(locale, kind, key) {
@@ -364,6 +510,12 @@ function pairRoute(locale, kind, key) {
   if (kind === "guide") {
     const x = guides.find((p) => p[0] === key);
     return `${c.guides}${x[side(o) - 1][0]}/`;
+  }
+  if (kind === "article") {
+    const mapped = articlePairRoute(locale, key);
+    if (mapped) return mapped;
+    // No counterpart translation: fall back to the English master article.
+    return `/resources/${key}/`;
   }
   const core = {
     custom: {
@@ -398,6 +550,12 @@ function enRoute(kind, key) {
         "air-fryer": "/products/air-fryer-paper-liners/",
         greaseproof: "/products/greaseproof-paper/",
         "paper-straws": "/products/paper-straws/",
+        "burger-wrapping-paper": "/products/burger-wrapping-paper/",
+        "butcher-paper": "/products/butcher-paper/",
+        "custom-printed-baking-paper": "/products/custom-printed-baking-paper/",
+        "food-wrapping-paper": "/products/food-wrapping-paper/",
+        "wax-paper": "/products/wax-paper/",
+        "party-accessories": "/products/party-accessories/",
       }[key] || "/products/"
     );
   if (kind === "app")
@@ -416,12 +574,14 @@ function enRoute(kind, key) {
       sample: "/inquiry/",
       app: "/applications/",
       guide: "/resources/",
+      article: `/resources/${key}/`,
     }[kind] || "/"
   );
 }
 function hasLocalizedCounterpart(kind, key) {
   if (kind === "app") return ["bakeries", "foodservice"].includes(key);
   if (kind === "guide") return false;
+  if (kind === "article") return true;
   return true;
 }
 function localizedEnglishRoute(locale, route) {
@@ -595,9 +755,15 @@ function productPage(locale, p) {
   const de = locale === "de",
     c = locales[locale],
     x = p[side(locale)],
-    route = `${c.products}${x[0]}/`,
-    title = `${x[1]} ${de ? "Hersteller" : "fabricant"} | OEM & Private Label | LANGMAI`,
-    faq = de
+    route = `${c.products}${x[0]}/`;
+  const role = de ? "Hersteller" : "fabricant";
+  const base = `${x[1]} ${role}`;
+  const full = `${base} | OEM & Private Label | LANGMAI`;
+  const mid = `${base} | LANGMAI`;
+  // Keep titles under ~60 chars for SERP display.
+  const title =
+    full.length <= 60 ? full : mid.length <= 60 ? mid : `${x[1]} | LANGMAI`;
+  const faq = de
       ? [
           [
             "Sind individuelle Größen möglich?",
@@ -732,8 +898,8 @@ function corePage(locale, type) {
       about: [
         de ? "/de/ueber-uns/" : "/fr/a-propos/",
         de
-          ? "LANGMAI: Hersteller für Papierback- und Foodservice-Produkte"
-          : "LANGMAI : fabricant de produits papier pour cuisson et restauration",
+          ? "Hersteller: Papierback- und Foodservice-Produkte"
+          : "Fabricant de papier cuisson et emballage",
         de
           ? "Jinhua Langmai Daily-Using Co., Ltd. wurde 2006 in Jinhua gegründet und unterstützt internationale B2B-Einkäufer mit Papierbackprodukten, OEM/ODM, Qualitätsprüfung und Exportverpackung."
           : "Fondée en 2006 à Jinhua, Jinhua Langmai Daily-Using Co., Ltd. accompagne les acheteurs B2B avec des produits papier, l’OEM/ODM, le contrôle qualité et l’emballage export.",
@@ -809,6 +975,8 @@ function guideIndex(locale) {
         const x = g[side(locale) - 1];
         return `<article><p class="eyebrow">${de ? "Einkaufsratgeber" : "Guide d’achat"}</p><h2><a href="${c.guides}${x[0]}/">${x[1]}</a></h2><p>${x[2]}</p></article>`;
       })
+      .join("")}${guideArticlesByLocale[locale]
+      .map((a) => `<article><p class="eyebrow">${de ? "Kaufmannischer Fachratgeber" : "Guide d’achat détaillé"}</p><h2><a href="${c.guides}${a.slug}/">${a.h1}</a></h2><p>${a.description}</p></article>`)
       .join("")}</div></section>`,
   );
 }
@@ -855,6 +1023,20 @@ function guidePage(locale, g) {
     "Article",
   );
 }
+function guideArticlePage(locale, art) {
+  const de = locale === "de",
+    c = locales[locale],
+    route = `${c.guides}${art.slug}/`,
+    title = `${art.seoTitle} | LANGMAI`,
+    bodyHtml = renderMarkdown(art.bodyMarkdown, { ctaHref: c.contact }),
+    heroImage = art.images[0] ? `<figure class="article-image"><img src="/assets/${art.images[0]}" alt="${esc(art.h1)}"><figcaption>${esc(art.h1)}</figcaption></figure>` : "",
+    detailImage = art.images[1]
+      ? `<figure class="article-image"><img src="/assets/${art.images[1]}" alt="${esc(art.h1)} – ${de ? "Prüfung und Versand" : "contrôle et expédition"}" loading="lazy" decoding="async"><figcaption>${de ? "Werksprüfung und Versandvorbereitung reduzieren das Bestellrisiko für B2B-Einkäufer." : "Le contrôle en usine et la préparation d’expédition réduisent le risque de commande pour les acheteurs B2B."}</figcaption></figure>`
+      : "";
+  const content = `<article class="article-page"><header class="page-hero"><p class="eyebrow">${de ? "Technischer Ratgeber" : "Guide technique"}</p><h1>${esc(art.h1)}</h1><p class="note">${de ? "Veröffentlicht" : "Publié"} ${esc(art.date)}</p><p>${esc(art.description)}</p></header><div class="article-shell"><div class="article-content">${heroImage}${bodyHtml}</div><aside class="article-sidebar"><h2>${de ? "Projekt prüfen" : "Étudier votre projet"}</h2><p>${de ? "Senden Sie Ihre Spezifikation für eine Machbarkeitsprüfung." : "Envoyez votre cahier des charges pour étude."}</p><a class="button primary" href="${c.contact}">${c.quote}</a>${detailImage}</aside></div></article>${cta(locale, de ? "Passende Muster anfordern" : "Demander des échantillons adaptés")}`;
+  return layout(locale, route, "article", art.enSlug || art.slug, title, art.description, content, "Article");
+}
+
 function write(dist, route, html) {
   const dir = path.join(dist, route);
   fs.mkdirSync(dir, { recursive: true });
@@ -907,6 +1089,9 @@ export function buildMarketSites(dist) {
     add(c.guides, guideIndex(locale));
     guides.forEach((g) =>
       add(`${c.guides}${g[side(locale) - 1][0]}/`, guidePage(locale, g)),
+    );
+    guideArticlesByLocale[locale].forEach((a) =>
+      add(`${c.guides}${a.slug}/`, guideArticlePage(locale, a)),
     );
   }
   return routes;
