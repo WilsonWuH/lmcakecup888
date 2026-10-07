@@ -2369,11 +2369,16 @@ function readLocale(locale) {
   const data = JSON.parse(fs.readFileSync(file, "utf8"));
   // Optional curated overlay for the core (non-article) pages: titles, H1s and
   // meta descriptions. Kept separate from the shared UI phrase table.
-  const coreFile = path.join(siteDir, "i18n", "core", `${locale}.json`);
-  if (fs.existsSync(coreFile)) {
-    const core = JSON.parse(fs.readFileSync(coreFile, "utf8"));
-    data.phrases = { ...(data.phrases || {}), ...(core.phrases || {}) };
-    data.meta = { ...(data.meta || {}), ...(core.meta || {}) };
+  // Merge every overlay in i18n/core/ for this locale: core/<locale>.json for
+  // the core pages plus core/articles-<locale>.json for article title/meta.
+  const coreDir = path.join(siteDir, "i18n", "core");
+  if (fs.existsSync(coreDir)) {
+    for (const entry of fs.readdirSync(coreDir)) {
+      if (entry !== `${locale}.json` && entry !== `articles-${locale}.json`) continue;
+      const core = JSON.parse(fs.readFileSync(path.join(coreDir, entry), "utf8"));
+      data.phrases = { ...(data.phrases || {}), ...(core.phrases || {}) };
+      data.meta = { ...(data.meta || {}), ...(core.meta || {}) };
+    }
   }
   return data;
 }
