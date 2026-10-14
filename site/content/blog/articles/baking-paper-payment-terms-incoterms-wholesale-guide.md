@@ -15,17 +15,17 @@ Image 2 File: blog/baking-paper-payment-terms-incoterms-wholesale-guide-document
 
 ## Introduction
 
-Most wholesale baking paper buyers spend their negotiating energy on price, grammage, and sheet size — then sign the trade terms almost as an afterthought. That is a mistake. Payment terms and Incoterms determine when risk transfers, who pays for freight and insurance, what happens when a carton is damaged in transit, and how much working capital an order consumes before a single sheet arrives. On a container-load order, a poorly chosen term can cost more than the discount you negotiated on unit price.
+Most wholesale baking paper buyers spend their negotiating energy on price, grammage, and sheet size — then sign the trade terms almost as an afterthought. That is a mistake. Payment terms and Incoterms determine when risk transfers, who pays for freight and insurance, what happens when a carton is damaged in transit, and how much working capital an order consumes before a single sheet arrives. On a container-load order, a poorly chosen term can cost more than the discount you negotiated on unit price. Every document in our compliance library is tied to a specific construction; see how the [custom printed baking parchment paper](/products/baking-parchment-paper/) programme aligns test reports with the exact grade supplied.
 
-This guide walks through the two halves of every international baking paper purchase: how you pay, and who carries the goods, costs, and risk at each stage of the journey. It is written for importers, distributors, bakery groups, and private-label buyers sourcing baking paper, cake cups, and food packaging papers from overseas manufacturers. Nothing here is legal advice; the goal is to make you conversant enough to ask the right questions before you sign.
+This guide walks through the two halves of every international baking paper purchase: how you pay, and who carries the goods, costs, and risk at each stage of the journey. It is written for importers, distributors, bakery groups, and private-label buyers sourcing baking paper, cake cups, and food packaging papers from overseas manufacturers. Nothing here is legal advice; the goal is to make you conversant enough to ask the right questions before you sign. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 ## Payment Terms: The Four Structures That Matter
 
 ### Telegraphic Transfer (TT) — Deposit and Balance
 
-TT against deposit and balance dominates the packaging trade: typically 30% to start production and 70% against a copy of the bill of lading. The split protects both sides — the supplier covers raw material purchases (custom-printed orders cannot be resold), while the buyer pays the balance only when shipped goods are evidenced by documents.
+TT against deposit and balance dominates the packaging trade: typically 30% to start production and 70% against a copy of the bill of lading. The split protects both sides — the supplier covers raw material purchases (custom-printed orders cannot be resold), while the buyer pays the balance only when shipped goods are evidenced by documents. Documentation scope is confirmed per SKU and destination market, as outlined on our [silicone-coated parchment sheets and rolls](/products/baking-parchment-paper/) page.
 
-Buyer protections worth negotiating: pay the deposit only to the bank account matching the contract entity; require shipping documents before the final transfer; and for first orders, make a third-party inspection report a condition of paying the balance. Also agree up front what happens to the deposit if production is cancelled — easier to write that clause before paying than to negotiate it after a dispute.
+Buyer protections worth negotiating: pay the deposit only to the bank account matching the contract entity; require shipping documents before the final transfer; and for first orders, make a third-party inspection report a condition of paying the balance. Also agree up front what happens to the deposit if production is cancelled — easier to write that clause before paying than to negotiate it after a dispute. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
 
 ### Letter of Credit (LC)
 
@@ -34,6 +34,19 @@ An LC shifts payment risk to the banking system: your bank commits to pay when a
 ### Open Account and Other Mechanisms
 
 Under open account terms the supplier ships and is paid later — net 30 to 60 days, for example. This is generally reserved for long-standing customers or large buyers with credit insurance; if offered early, verify the cost is not simply priced in. A common compromise is partial open account once a relationship has history. Marketplace escrow and trade assurance products sit between TT and LC: useful for trial orders below the size where an LC justifies its overhead, usually unnecessary for repeat volume with a proven supplier.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## Incoterms: Who Carries What, and Until When
 
@@ -83,9 +96,22 @@ No. Under CIF, risk transfers to the buyer when goods are loaded on board at the
 
 DDP places every obligation on the supplier: freight, insurance, import clearance, duties, and taxes, delivered to your door. Suppliers price that obligation and risk into the quote, and many manufacturers cannot handle foreign import formalities directly. It is best suited to trial shipments and markets where the buyer lacks customs capability.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-Trade terms are not fine print; they are the plumbing of your supply chain, and they are fully negotiable. On the payment side, match the structure to the trust level: deposits and document conditions for new relationships, TT against documents for steady volume, LCs for large or complicated transactions. On the delivery side, pick the Incoterm that puts each leg of the journey in the hands of whoever manages it best — usually FOB once you have a forwarder, CIF or DAP before that. Write the named place and edition year into every contract, condition every payment on documents that prove performance, and revisit the terms annually as your volume grows. Buyers who master this vocabulary consistently land better total costs than those who negotiate only the unit price.
+Trade terms are not fine print; they are the plumbing of your supply chain, and they are fully negotiable. On the payment side, match the structure to the trust level: deposits and document conditions for new relationships, TT against documents for steady volume, LCs for large or complicated transactions. On the delivery side, pick the Incoterm that puts each leg of the journey in the hands of whoever manages it best — usually FOB once you have a forwarder, CIF or DAP before that. Write the named place and edition year into every contract, condition every payment on documents that prove performance, and revisit the terms annually as your volume grows. Buyers who master this vocabulary consistently land better total costs than those who negotiate only the unit price. Our [food-grade die-cut parchment rounds](/products/baking-parchment-paper/) programme is audited against the same standards referenced in this guide.
 
 ## Call to Action
 

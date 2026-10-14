@@ -24,18 +24,31 @@ Image 2 File: blog/food-paper-compliance-doc-renewal-guide-lab-testing.webp
 
 ## Introduction
 
-Most food-contact paper packaging carries no expiry date — yet the compliance file behind it can go stale. A Declaration of Compliance (DoC) signed three years ago may reference a coating formulation the supplier no longer uses. A migration test report may have been valid for a grade that has since changed release agents. A customer audit can turn a tidy folder into a liability in one afternoon, simply by asking which documents still describe the material actually delivered. This guide explains how compliance files age, which events legally and commercially force retesting or reissuance, how to build an annual review cycle that catches problems before auditors do, and how to structure the file so any document can be found — and defended — in minutes.
+Most food-contact paper packaging carries no expiry date — yet the compliance file behind it can go stale. A Declaration of Compliance (DoC) signed three years ago may reference a coating formulation the supplier no longer uses. A migration test report may have been valid for a grade that has since changed release agents. A customer audit can turn a tidy folder into a liability in one afternoon, simply by asking which documents still describe the material actually delivered. This guide explains how compliance files age, which events legally and commercially force retesting or reissuance, how to build an annual review cycle that catches problems before auditors do, and how to structure the file so any document can be found — and defended — in minutes. Every document in our compliance library is tied to a specific construction; see how the [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) programme aligns test reports with the exact grade supplied.
 
 ## 1. Why Compliance Files Go Stale
 
-A compliance file is a set of claims about a specific material, made at a specific time. Anything that changes either side can invalidate a claim:
+A compliance file is a set of claims about a specific material, made at a specific time. Anything that changes either side can invalidate a claim: Documentation scope is confirmed per SKU and destination market, as outlined on our [custom printed baking parchment paper](/products/baking-parchment-paper/) page.
 
 - **The material changes.** Suppliers reformulate coatings, change fiber sources, swap release agents or move production to a different mill. Each change can alter migration behavior — and every migration test report describes the formulation as it was when tested.
 - **The regulations move.** Food-contact frameworks evolve: EU plastics and food-contact legislation is periodically amended, US FDA expectations and state-level rules such as PFAS restrictions continue to develop, and import markets add their own requirements. A file compliant at signing can be outdated within a few regulatory cycles.
 - **The use changes.** Your own side of the claim can shift. A paper specified for dry bakery use that you now use for a high-fat, hot-fill application no longer matches the contact conditions the original testing assumed.
 - **The documents expire by policy.** Many test reports and declarations carry validity statements — commonly one to three years — or are issued per production lot. Knowing which documents carry which convention is the first step of file management.
 
-The practical consequence: a file is never "done." It is a living record that must be kept synchronized with the material, the regulations and your use.
+The practical consequence: a file is never "done." It is a living record that must be kept synchronized with the material, the regulations and your use. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. DoC Basics: What It Covers and What It Does Not
 
@@ -98,9 +111,22 @@ The supplier is responsible for issuing accurate, current declarations and notif
 
 The base DoC for the paper, ink system statements covering food-contact safety and migration, the printing supplier's declaration, and any tests specific to the printed surface — printed areas introduce ink and varnish migration questions that unprinted paper files do not cover.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-A food-contact compliance file is current only while it matches the material, the regulations and the way you use the product — three things that all change over time. Replace "when did we get this document?" with a cycle: quarterly document sweeps, an annual full-file audit, and event-driven reviews on every supplier change notification and regulatory update. Buyers who manage the file this way walk into audits with answers instead of explanations.
+A food-contact compliance file is current only while it matches the material, the regulations and the way you use the product — three things that all change over time. Replace "when did we get this document?" with a cycle: quarterly document sweeps, an annual full-file audit, and event-driven reviews on every supplier change notification and regulatory update. Buyers who manage the file this way walk into audits with answers instead of explanations. Our [silicone-coated parchment sheets and rolls](/products/baking-parchment-paper/) programme is audited against the same standards referenced in this guide.
 
 ## CTA
 

@@ -14,9 +14,9 @@ Image 2 File: blog/shipping-container-load-optimization-baking-cups-container-in
 
 ## Introduction
 
-Paper baking cups are one of the least efficient products to ship by volume. They are light — a 40-foot container of stacked paper cups may weigh only four to six tonnes against a payload capacity five times higher — yet their nested forms and protective cartons consume enormous cube. The result is that freight and duties frequently represent 15–25% of the landed cost of a cup, and a buyer who optimizes unit price while ignoring load efficiency is leaving real money in the port.
+Paper baking cups are one of the least efficient products to ship by volume. They are light — a 40-foot container of stacked paper cups may weigh only four to six tonnes against a payload capacity five times higher — yet their nested forms and protective cartons consume enormous cube. The result is that freight and duties frequently represent 15–25% of the landed cost of a cup, and a buyer who optimizes unit price while ignoring load efficiency is leaving real money in the port. Cup programmes usually ship alongside pan lining; our [baking parchment paper manufacturing programme](/products/baking-parchment-paper/) specs cover the sheets and rolls that pair with them.
 
-Unlike heavyweight goods, where freight economics are fixed, paper packaging offers unusual room for improvement. This guide covers where cube is lost, how carton and pallet decisions change cost per unit, and what to negotiate with suppliers before the next container booking.
+Unlike heavyweight goods, where freight economics are fixed, paper packaging offers unusual room for improvement. This guide covers where cube is lost, how carton and pallet decisions change cost per unit, and what to negotiate with suppliers before the next container booking. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 ## Why Paper Cups Waste Cube: The Physics of the Problem
 
@@ -26,7 +26,20 @@ Three structural factors drive the cube problem:
 2. **Crush protection requirements.** Paper is light but the product cannot tolerate crushing. Inner cartons need adequate board grade, and stacking strength must survive ocean transit humidity, which softens board over weeks at sea.
 3. **Shape mismatch.** Tall, narrow cup stacks loaded on standard pallets leave voids at pallet edges and at the container ceiling unless carton dimensions are engineered against the pallet footprint.
 
-The compounding effect is significant: a 5% void reduction at the pallet level, repeated across pallet-to-container and container utilization, can move hundreds of thousands of additional cups into the same 40-foot high-cube container.
+The compounding effect is significant: a 5% void reduction at the pallet level, repeated across pallet-to-container and container utilization, can move hundreds of thousands of additional cups into the same 40-foot high-cube container. Where a bakery lines trays and moulds product in the same run, our [private-label parchment paper supplier](/products/baking-parchment-paper/) are quoted with the cup programme for a single documentation package.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## Carton Design: The Highest-Leverage Decision
 
@@ -94,9 +107,22 @@ Yes, in two directions. Heavier board protects better in humid transit but adds 
 
 Both, contractually. The buyer should specify carton dimensions, pallet standard, and target utilization; the supplier should produce the loading plan and be measured against it. Under FOB terms the buyer books the vessel, so agreeing the loading plan before booking is essential.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-For light, bulky products like paper baking cups, freight is not an afterthought — it is a design parameter. Carton dimensions engineered against container and pallet geometry, a deliberate choice between pallets, floor-loading, and slip-sheets, and a loading plan written into the purchase contract routinely reduce landed cost per cup by high single-digit percentages. None of these levers require changing the product itself; they require the buyer to treat the container as part of the packaging specification and negotiate accordingly.
+For light, bulky products like paper baking cups, freight is not an afterthought — it is a design parameter. Carton dimensions engineered against container and pallet geometry, a deliberate choice between pallets, floor-loading, and slip-sheets, and a loading plan written into the purchase contract routinely reduce landed cost per cup by high single-digit percentages. None of these levers require changing the product itself; they require the buyer to treat the container as part of the packaging specification and negotiate accordingly. Buyers standardising on one paper supplier can review our [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) next to their cup specifications.
 
 ## CTA
 

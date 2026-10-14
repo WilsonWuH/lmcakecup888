@@ -24,21 +24,34 @@ Image 2 File: blog/fluted-vs-smooth-wall-cake-cups-wholesale-guide-detail.webp
 
 ## Introduction
 
-Wall design is one of the most consequential decisions in a cake cup specification, yet it is often treated as an aesthetic afterthought. Whether a cup is fluted (pleated or corrugated at the sidewall) or smooth walled changes how it is formed, how it denests, how it handles batter and grease, how it presents on the shelf, and what it costs per unit at wholesale volumes.
+Wall design is one of the most consequential decisions in a cake cup specification, yet it is often treated as an aesthetic afterthought. Whether a cup is fluted (pleated or corrugated at the sidewall) or smooth walled changes how it is formed, how it denests, how it handles batter and grease, how it presents on the shelf, and what it costs per unit at wholesale volumes. Cup programmes usually ship alongside pan lining; our [wholesale parchment paper rolls and sheets](/products/baking-parchment-paper/) specs cover the sheets and rolls that pair with them.
 
-Buyers who specify wall construction without understanding the production trade-offs discover problems downstream: fluted cups that jam in a denesting magazine, smooth cups that oil-stain on the shelf, or a distinctive fluted product that costs 15 percent more with no commercial benefit for the application.
+Buyers who specify wall construction without understanding the production trade-offs discover problems downstream: fluted cups that jam in a denesting magazine, smooth cups that oil-stain on the shelf, or a distinctive fluted product that costs 15 percent more with no commercial benefit for the application. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 This guide compares fluted and smooth wall paper cake cups across forming methods, structural and barrier behaviour, filling-line compatibility, presentation and cost, with a decision framework and specification language for RFQs.
 
 ## 1. How the Two Constructions Are Made
 
-The production difference is fundamental, and it explains nearly every downstream behaviour.
+The production difference is fundamental, and it explains nearly every downstream behaviour. Where a bakery lines trays and moulds product in the same run, our [baking parchment paper manufacturing programme](/products/baking-parchment-paper/) are quoted with the cup programme for a single documentation package.
 
-Smooth wall cups are die-cut from a web and formed on a rotary or single-point cupping machine. The sidewall is a simple truncated cone or cylinder with a rolled or curled rim for stiffness. Forming is fast, tooling is straightforward, and the construction suits food-grade barrier papers including greaseproof and coated stocks.
+Smooth wall cups are die-cut from a web and formed on a rotary or single-point cupping machine. The sidewall is a simple truncated cone or cylinder with a rolled or curled rim for stiffness. Forming is fast, tooling is straightforward, and the construction suits food-grade barrier papers including greaseproof and coated stocks. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
 
 Fluted cups pass the paper through a pleating or corrugating section before or during forming. Fluting depth and pitch are fixed by tooling, forming speed is typically lower, and the paper must crease cleanly without cracking the coating or splitting the fibre.
 
 For buyers, the practical consequence is that fluted cups have a narrower range of compatible paper grades and higher sensitivity to stiffness and moisture; a paper that runs well on a smooth-wall line can crack at the flutes unless validated for fluting.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. Structure, Release and Barrier Behaviour
 
@@ -106,9 +119,22 @@ Fluted forming is slower and tooling is more complex, and fewer paper grades are
 
 Smooth walls accept continuous artwork and small text cleanly. Fluted walls distort printed graphics along the pleats, so designs must be adapted to the flute pattern. Request a printed proof from production tooling, not a flat mock-up, before approving artwork on either construction.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-Fluted versus smooth wall is not a style question dressed up as an engineering one — it is an engineering decision with style consequences. Fluting buys stiffness, release behaviour and shelf presence; smooth walls buy line speed, packing density, printing flexibility and lower MOQ. The right answer depends on your product's fat and moisture profile, your filling line, your freight lane and your shelf strategy.
+Fluted versus smooth wall is not a style question dressed up as an engineering one — it is an engineering decision with style consequences. Fluting buys stiffness, release behaviour and shelf presence; smooth walls buy line speed, packing density, printing flexibility and lower MOQ. The right answer depends on your product's fat and moisture profile, your filling line, your freight lane and your shelf strategy. Buyers standardising on one paper supplier can review our [private-label parchment paper supplier](/products/baking-parchment-paper/) next to their cup specifications.
 
 Buyers who treat wall construction as a specified parameter — validated on the real line, priced on total applied cost including freight, and locked into the specification document — get the benefits of their chosen construction without the surprises. Buyers who treat it as a catalogue checkbox discover the trade-offs one production day at a time.
 

@@ -24,7 +24,7 @@ Image 2 File: blog/greaseproof-paper-qsr-fried-food-programs-wholesale-service-c
 
 ## Introduction
 
-Fried food is the harshest environment a paper product will meet in foodservice. Product leaves the fryer at high temperature, carries surface oil for its entire hold time, sits in warming cabinets where heat keeps the fat mobile, and is often finished with sauces that keep working after the wrap is closed. A wrap that handles a bakery pastry fails visibly on fried chicken: grease stains, sheet delamination, torn corners, and printed logos that turn into blotches within minutes. This is a specification exercise, not a catalog pick. This guide covers how grease resistance is measured, which KIT levels match which applications, how to choose among wrap, basket liner and interfolded sheet formats, and a checklist that keeps quotations comparable.
+Fried food is the harshest environment a paper product will meet in foodservice. Product leaves the fryer at high temperature, carries surface oil for its entire hold time, sits in warming cabinets where heat keeps the fat mobile, and is often finished with sauces that keep working after the wrap is closed. A wrap that handles a bakery pastry fails visibly on fried chicken: grease stains, sheet delamination, torn corners, and printed logos that turn into blotches within minutes. This is a specification exercise, not a catalog pick. This guide covers how grease resistance is measured, which KIT levels match which applications, how to choose among wrap, basket liner and interfolded sheet formats, and a checklist that keeps quotations comparable. Buyers comparing these specifications can review our [silicone-coated parchment sheets and rolls](/products/baking-parchment-paper/) programme, where coating weight, base grammage and release values are documented per construction.
 
 ## 1. Why Fried Food Punishes the Wrong Paper
 
@@ -34,7 +34,20 @@ Three stress factors stack in fried food service:
 - **Hold time.** QSR items sit wrapped for minutes in cabinets and delivery bags. Grease penetration is a time phenomenon: a sheet that looks dry at thirty seconds can be saturated at ten. Specify for the longest realistic hold, including delivery.
 - **Mechanical handling.** Wraps are folded and pressed; basket liners are grabbed and dragged. A sheet whose resistance depends on a fragile surface treatment can fail mechanically even when its barrier holds.
 
-The consequences are not cosmetic. Grease strike-through drives glove changes, counter cleaning and guest complaints — recurring costs that dwarf the price difference between a correct and an underspecified sheet.
+The consequences are not cosmetic. Grease strike-through drives glove changes, counter cleaning and guest complaints — recurring costs that dwarf the price difference between a correct and an underspecified sheet. For production volumes, the same construction logic applies to our [food-grade die-cut parchment rounds](/products/baking-parchment-paper/) line, quoted per roll, sheet or die-cut format.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. Specifying Grease Resistance: the KIT Rating
 
@@ -107,9 +120,22 @@ Properly refined greaseproof achieves grease resistance through intensive fiber 
 
 Use 40 gsm or heavier for basket and tray liners under fried foods, paired with KIT 12 resistance. Lighter sheets stain through under pooled oil.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-Fried food programs fail paper at the intersection of heat, oil, time and speed — and the suppliers who win them quote KIT levels per lot, hold interfold tolerances and prove compliance for printed wraps. Specify by KIT rating, gram weight and verified hold-time performance, compare bids on cost per usable sheet, and the paper becomes part of the product experience.
+Fried food programs fail paper at the intersection of heat, oil, time and speed — and the suppliers who win them quote KIT levels per lot, hold interfold tolerances and prove compliance for printed wraps. Specify by KIT rating, gram weight and verified hold-time performance, compare bids on cost per usable sheet, and the paper becomes part of the product experience. Our [custom silicone-coated baking parchment paper](/products/baking-parchment-paper/) programme publishes the test data behind each grade so specifications can be verified before ordering.
 
 ## CTA
 

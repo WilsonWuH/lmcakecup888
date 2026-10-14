@@ -24,17 +24,30 @@ Image 2 File: blog/greaseproof-paper-food-trucks-concessions-wholesale-guide-kit
 
 ## Introduction
 
-A food truck kitchen is not a scaled-down restaurant. One person works a window about a metre wide, everything must be reachable with one hand, storage is measured in cupboards rather than rooms, and a queue forms the moment service slows. Paper that works perfectly in a prep kitchen can fail badly in that environment.
+A food truck kitchen is not a scaled-down restaurant. One person works a window about a metre wide, everything must be reachable with one hand, storage is measured in cupboards rather than rooms, and a queue forms the moment service slows. Paper that works perfectly in a prep kitchen can fail badly in that environment. Buyers comparing these specifications can review our [private-label parchment paper supplier](/products/baking-parchment-paper/) programme, where coating weight, base grammage and release values are documented per construction.
 
-For distributors and buying groups serving these operators, that difference is the whole business case. Mobile and concession accounts order less per drop but more often, they run out rather than over-stock, and they judge their supplier by whether the paper behaved during a busy service rather than by unit price.
+For distributors and buying groups serving these operators, that difference is the whole business case. Mobile and concession accounts order less per drop but more often, they run out rather than over-stock, and they judge their supplier by whether the paper behaved during a busy service rather than by unit price. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 This guide covers what mobile service demands of greaseproof paper, how to choose a grease-resistance level, when to sell rolls versus pre-cut sheets, how to size around truck ergonomics, how to plan quantities when storage is the constraint, and what documentation operators need.
 
 ## 1. What Mobile Service Demands From Paper
 
-Four conditions define mobile use. Contact time with hot, oily food is short but intense, because fried chicken, burgers, loaded fries and doughnuts go straight into a wrap at high temperature. Moisture is constant, from sauces, steam and condensation inside a closed wrap. Handling is one-handed, with the operator usually holding something else. And there is no time or surface for cutting.
+Four conditions define mobile use. Contact time with hot, oily food is short but intense, because fried chicken, burgers, loaded fries and doughnuts go straight into a wrap at high temperature. Moisture is constant, from sauces, steam and condensation inside a closed wrap. Handling is one-handed, with the operator usually holding something else. And there is no time or surface for cutting. For production volumes, the same construction logic applies to our [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) line, quoted per roll, sheet or die-cut format.
 
-That combination rules out a lot. Uncoated deli tissue soaks through quickly. Paper without wet strength loses integrity the moment it meets sauce. Sheets that nest tightly are hard to separate with greasy hands. Anything stored loose blows around in a moving vehicle. Greaseproof paper — dense, calendared, oil-resistant without a plastic laminate — is the natural fit because it resists oil through the paper structure rather than through a coating that can crack or melt.
+That combination rules out a lot. Uncoated deli tissue soaks through quickly. Paper without wet strength loses integrity the moment it meets sauce. Sheets that nest tightly are hard to separate with greasy hands. Anything stored loose blows around in a moving vehicle. Greaseproof paper — dense, calendared, oil-resistant without a plastic laminate — is the natural fit because it resists oil through the paper structure rather than through a coating that can crack or melt. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. Choosing a Grease Resistance Level
 
@@ -77,9 +90,22 @@ Storage conditions matter too. Heat, humidity and condensation degrade performan
 
 For distributors the logic is straightforward: consolidate fleet SKUs, set a standing reorder schedule, and offer mixed cases so a small operator can take two sizes without a full case of each.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-Spec systems for mobile catering means trading paper price for service speed and predictability. Match grease resistance to the menu rather than buying the heaviest grade, choose pre-cut or interfolded formats at busy windows and rolls in the commissary, standardise sizes to fit the galley, set reorder quantities around available storage, and keep documentation on hand.
+Spec systems for mobile catering means trading paper price for service speed and predictability. Match grease resistance to the menu rather than buying the heaviest grade, choose pre-cut or interfolded formats at busy windows and rolls in the commissary, standardise sizes to fit the galley, set reorder quantities around available storage, and keep documentation on hand. Our [custom printed baking parchment paper](/products/baking-parchment-paper/) programme publishes the test data behind each grade so specifications can be verified before ordering.
 
 ### What greaseproof grade do we need for fried chicken or battered fish?
 

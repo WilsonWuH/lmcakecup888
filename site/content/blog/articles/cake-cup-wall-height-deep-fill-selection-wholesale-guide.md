@@ -24,15 +24,28 @@ Image 2 File: blog/cake-cup-wall-height-deep-fill-selection-wholesale-guide-cup-
 
 ## Introduction
 
-Diameter gets all the attention in cake cup specifications, but wall height is the dimension that decides whether the product looks the way the marketing photo promised. A cup too short for its batter overflows into the pan, wastes product and glues trays together; a cup too tall shades the batter, slows the bake and leaves a pale, under-browned shoulder that reads as undercooked. Between those two failures sits a specifiable band — and like diameter and grammage, wall height is a number buyers should write down, not leave to "standard."
+Diameter gets all the attention in cake cup specifications, but wall height is the dimension that decides whether the product looks the way the marketing photo promised. A cup too short for its batter overflows into the pan, wastes product and glues trays together; a cup too tall shades the batter, slows the bake and leaves a pale, under-browned shoulder that reads as undercooked. Between those two failures sits a specifiable band — and like diameter and grammage, wall height is a number buyers should write down, not leave to "standard." Cup programmes usually ship alongside pan lining; our [wholesale parchment paper rolls and sheets](/products/baking-parchment-paper/) specs cover the sheets and rolls that pair with them.
 
-This guide explains how wall height interacts with batter volume, fill depth and bake behavior, what height ranges suit which products, and how to specify and verify height across production shipments so that what arrives matches what was approved.
+This guide explains how wall height interacts with batter volume, fill depth and bake behavior, what height ranges suit which products, and how to specify and verify height across production shipments so that what arrives matches what was approved. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 ## 1. Why Wall Height Matters More in Production Than in the Sample
 
-In the test kitchen, a marginally short cup is invisible. In commercial production it multiplies: thousands of fills per hour, each one engineered to deposit a target batter weight. When batter rises above the cup rim — as it reliably does with deep-fill muffin deposits of 90–110 g in a standard-height cup — the excess contacts the pan or the adjacent cup, bakes into a bridged crown, and turns a clean de-panning operation into a scraping and re-cleaning cycle. Overfill also changes the product itself: an overflowing crown bakes darker at the rim, sticks to the cup wall, and can tear away on removal.
+In the test kitchen, a marginally short cup is invisible. In commercial production it multiplies: thousands of fills per hour, each one engineered to deposit a target batter weight. When batter rises above the cup rim — as it reliably does with deep-fill muffin deposits of 90–110 g in a standard-height cup — the excess contacts the pan or the adjacent cup, bakes into a bridged crown, and turns a clean de-panning operation into a scraping and re-cleaning cycle. Overfill also changes the product itself: an overflowing crown bakes darker at the rim, sticks to the cup wall, and can tear away on removal. Where a bakery lines trays and moulds product in the same run, our [baking parchment paper manufacturing programme](/products/baking-parchment-paper/) are quoted with the cup programme for a single documentation package.
 
-Height does the opposite job from the top down. Excess wall height shades batter from the oven's radiant heat, extends bake time by minutes at scale, and leaves the classic pale ring at the cup's upper wall on chocolate and whole-grain batters. Height also has commercial afterlives: it sets the stacked height of the finished product in retail packs and deli display cases, and whether a standard dome lid clears the crown. A wall height that bakes beautifully and does not fit the lid is still a failed specification.
+Height does the opposite job from the top down. Excess wall height shades batter from the oven's radiant heat, extends bake time by minutes at scale, and leaves the classic pale ring at the cup's upper wall on chocolate and whole-grain batters. Height also has commercial afterlives: it sets the stacked height of the finished product in retail packs and deli display cases, and whether a standard dome lid clears the crown. A wall height that bakes beautifully and does not fit the lid is still a failed specification. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. Height Ranges and What They Suit
 
@@ -75,9 +88,22 @@ Taller cups contain rise, but they also shade the batter and slow browning — t
 
 Yes. Crown height after baking determines whether products fit standard dome lids, retail clamshells and display tray heights without crushing. Specify the post-bake height target alongside the cup height, and verify it in the bake check — a cup that bakes well but fails the lid fit is a specification failure either way.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-Wall height is the quiet half of cake cup geometry — invisible in the sample, decisive in the production run. Pair the cup height with batter weight and fill depth, choose the height family that matches the product's rise and presentation, and verify both the incoming dimension and the post-bake crown on a schedule. Buyers who treat height as a specified, measured number get cups that contain the batter, brown the product and fit the box — every shipment, not just the approved one.
+Wall height is the quiet half of cake cup geometry — invisible in the sample, decisive in the production run. Pair the cup height with batter weight and fill depth, choose the height family that matches the product's rise and presentation, and verify both the incoming dimension and the post-bake crown on a schedule. Buyers who treat height as a specified, measured number get cups that contain the batter, brown the product and fit the box — every shipment, not just the approved one. Buyers standardising on one paper supplier can review our [private-label parchment paper supplier](/products/baking-parchment-paper/) next to their cup specifications.
 
 ## CTA
 

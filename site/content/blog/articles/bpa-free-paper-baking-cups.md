@@ -20,9 +20,9 @@ Publish Date: 2026-07-06
 
 ## Introduction
 
-What should a buyer verify when sourcing BPA-free paper baking cups? Start with the complete finished construction, not the word “paper.” Identify the base paper, grease or release treatment, printing ink, coating, adhesive and any silicone or plastic layer; define the food, contact time and baking conditions; then match the supplier declaration and supporting evidence to that exact SKU. “BPA-free” addresses one substance claim. It does not by itself prove overall food-contact compliance, oven performance or suitability for an EU and US program.
+What should a buyer verify when sourcing BPA-free paper baking cups? Start with the complete finished construction, not the word “paper.” Identify the base paper, grease or release treatment, printing ink, coating, adhesive and any silicone or plastic layer; define the food, contact time and baking conditions; then match the supplier declaration and supporting evidence to that exact SKU. “BPA-free” addresses one substance claim. It does not by itself prove overall food-contact compliance, oven performance or suitability for an EU and US program. Cup programmes usually ship alongside pan lining; our [custom silicone-coated baking parchment paper](/products/baking-parchment-paper/) specs cover the sheets and rolls that pair with them.
 
-The distinction is especially important in the EU. The European Commission’s official [implementation guidance for Regulation (EU) 2024/3190](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A52025XC06721) says paper and board are not themselves among the material groups listed in the Regulation. However, a paper article may include printing inks, adhesives, silicones, varnishes or coatings that are in scope. A finished printed or treated baking cup can therefore require a declaration of compliance under the Regulation even though the paper substrate alone is not listed.
+The distinction is especially important in the EU. The European Commission’s official [implementation guidance for Regulation (EU) 2024/3190](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A52025XC06721) says paper and board are not themselves among the material groups listed in the Regulation. However, a paper article may include printing inks, adhesives, silicones, varnishes or coatings that are in scope. A finished printed or treated baking cup can therefore require a declaration of compliance under the Regulation even though the paper substrate alone is not listed. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 The United States uses a different framework. FDA says currently approved BPA uses in food containers and packaging remain safe, while the regulatory status of a finished food-contact material depends on its individual substances, intended use and applicable limitations. A buyer should not treat an EU declaration as an automatic US clearance, or an FDA reference as proof of conformity with the EU restriction.
 
@@ -30,7 +30,7 @@ This guide turns those differences into a practical purchasing workflow for samp
 
 ## 1. Define What “BPA-Free” Means for the Purchased SKU
 
-A purchase specification should state the claim, product and evidence boundary. “BPA-free paper” may refer only to the base sheet. “BPA-free coating” may say nothing about an adhesive or printing ink. “BPA-free finished baking cup” is broader, but still needs a defined analytical or supply-chain basis and must not be mistaken for a complete safety conclusion.
+A purchase specification should state the claim, product and evidence boundary. “BPA-free paper” may refer only to the base sheet. “BPA-free coating” may say nothing about an adhesive or printing ink. “BPA-free finished baking cup” is broader, but still needs a defined analytical or supply-chain basis and must not be mistaken for a complete safety conclusion. Where a bakery lines trays and moulds product in the same run, our [wholesale parchment paper rolls and sheets](/products/baking-parchment-paper/) are quoted with the cup programme for a single documentation package.
 
 Build a construction sheet for the exact item:
 
@@ -43,9 +43,22 @@ Build a construction sheet for the exact item:
 - finished dimensions, pack count, artwork revision and destination markets;
 - intended food, maximum contact time, baking temperature and other foreseeable use.
 
-Ask the supplier whether BPA or another relevant bisphenol is intentionally used in any in-scope component, what upstream statements support that answer, and whether testing applies to raw material or the finished article. Record the exact wording. “Not intentionally added,” “not used in manufacture,” “not detected above a stated method limit” and “complies with Regulation (EU) 2024/3190” are different statements.
+Ask the supplier whether BPA or another relevant bisphenol is intentionally used in any in-scope component, what upstream statements support that answer, and whether testing applies to raw material or the finished article. Record the exact wording. “Not intentionally added,” “not used in manufacture,” “not detected above a stated method limit” and “complies with Regulation (EU) 2024/3190” are different statements. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
 
 Do not silently convert one into another. A non-detect result depends on the sampled item, method, extraction, detection limit and laboratory report. A formulation declaration relies on controlled composition and supply-chain information. Both can be useful when their scope is clear.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. Apply the EU Rule to Components, Not Just Paper
 
@@ -217,9 +230,22 @@ Upstream paper and component evidence is useful, but the finished printed and fo
 
 A new paper, ink, adhesive, coating, silicone, supplier, production site, artwork, intended use or destination market can change the evidence needed. Define notification and reapproval rules in the specification and purchase order.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-Sourcing BPA-free paper baking cups is a component-control and evidence-matching task. Start with the complete finished construction, separate EU and US legal bases, and define exactly what the BPA-free claim covers. In the EU, bare paper and board are not listed in Regulation 2024/3190, but in-scope inks, adhesives, coatings, silicones or other components can bring a finished paper article within its requirements. In the United States, evaluate each component against its authorization and conditions of use.
+Sourcing BPA-free paper baking cups is a component-control and evidence-matching task. Start with the complete finished construction, separate EU and US legal bases, and define exactly what the BPA-free claim covers. In the EU, bare paper and board are not listed in Regulation 2024/3190, but in-scope inks, adhesives, coatings, silicones or other components can bring a finished paper article within its requirements. In the United States, evaluate each component against its authorization and conditions of use. Buyers standardising on one paper supplier can review our [baking parchment paper manufacturing programme](/products/baking-parchment-paper/) next to their cup specifications.
 
 The most defensible buying file links the specification, bill of materials, declarations, reports, representative samples, bake trials, packaging, lot inspection and change history. That process gives procurement, quality and compliance teams evidence they can actually review instead of relying on a logo or generic certificate name.
 

@@ -24,15 +24,28 @@ Image 2 File: blog/cake-cups-cloud-kitchen-dessert-brands-wholesale-guide-delive
 
 ## Introduction
 
-A cloud kitchen dessert brand lives or dies by two things: how the product survives delivery, and how it looks in the photo that earned the order. Paper cake cups sit at the center of both. Unlike a dine-in bakery, a delivery-only operation never controls the last thirty minutes — the cup rides in a bag through traffic, next to a hot coffee and a cold smoothie, gets opened on a customer's table and is judged first through a camera lens. Standard retail packaging assumptions break down here. This guide covers how delivery-focused dessert brands should size cake cups, which barrier properties actually matter when there is no display case, how to design for the photo, and how to structure wholesale purchasing around MOQs and growth.
+A cloud kitchen dessert brand lives or dies by two things: how the product survives delivery, and how it looks in the photo that earned the order. Paper cake cups sit at the center of both. Unlike a dine-in bakery, a delivery-only operation never controls the last thirty minutes — the cup rides in a bag through traffic, next to a hot coffee and a cold smoothie, gets opened on a customer's table and is judged first through a camera lens. Standard retail packaging assumptions break down here. This guide covers how delivery-focused dessert brands should size cake cups, which barrier properties actually matter when there is no display case, how to design for the photo, and how to structure wholesale purchasing around MOQs and growth. Cup programmes usually ship alongside pan lining; our [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) specs cover the sheets and rolls that pair with them.
 
 ## 1. Why Delivery Changes the Cup Specification
 
-Three differences between a cloud kitchen and a retail bakery define the spec:
+Three differences between a cloud kitchen and a retail bakery define the spec: Where a bakery lines trays and moulds product in the same run, our [custom printed baking parchment paper](/products/baking-parchment-paper/) are quoted with the cup programme for a single documentation package.
 
 - **No climate control in transit.** Chilled mousses, no-bake cheesecakes and panna cotta cups leave refrigeration and sit in insulated bags. The cup must hold its shape and barrier through condensation cycles — a property that matters far more than in a refrigerated display. Cup behavior in chilled applications is detailed in the [chilled no-bake dessert cups guide](https://www.lmcakecup.com/resources/cake-cups-chilled-no-bake-desserts-wholesale-guide/).
 - **Movement instead of stillness.** Delivery bags tilt, bounce and stack. A weak base or a thin sidewall that is invisible in a static bakery becomes a leaning, leaking dessert on arrival. Self-supporting construction and a flat, rigid base are non-negotiable for transit.
 - **The unboxing moment is the store visit.** The customer's first physical contact with the brand is opening the box. A cup that is soggy at the rim, stained on the outside or collapsed at the corner damages the brand more than a late driver does.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. Capacity and Sizing for Dessert Menus
 
@@ -90,9 +103,22 @@ Specify grease-resistant paper grades and confirm performance on your actual for
 
 Many manufacturers offer digital or short-run flexo printing for smaller first orders, with unit prices falling at standard MOQs. Keep the artwork simple, confirm food-safe inks and expect longer lead times than for stock cups.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-For cloud kitchen dessert brands, the cake cup is packaging, merchandising and quality control in one purchase. Size for the menu's economics and the camera, specify for transit rather than the display case, verify barriers against your real recipes, and buy in two standard capacities with volume commitments only on proven items. Brands that treat the cup as a specification — not a consumable — win the unboxing moment, order after order.
+For cloud kitchen dessert brands, the cake cup is packaging, merchandising and quality control in one purchase. Size for the menu's economics and the camera, specify for transit rather than the display case, verify barriers against your real recipes, and buy in two standard capacities with volume commitments only on proven items. Brands that treat the cup as a specification — not a consumable — win the unboxing moment, order after order. Buyers standardising on one paper supplier can review our [silicone-coated parchment sheets and rolls](/products/baking-parchment-paper/) next to their cup specifications.
 
 ## CTA
 

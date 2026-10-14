@@ -18,17 +18,17 @@ Search Intent: Compliance-led procurement and test-report review for importers, 
 
 ## Introduction
 
-Food contact testing for paper baking cups is not a single pass-or-fail certificate that covers every recipe, temperature, market and product construction. A useful compliance file connects the exact finished article to its paper, grease barrier, print and other relevant components; identifies the intended food and baking conditions; states the test methods and limits used; and shows that the tested sample represents the item being purchased.
+Food contact testing for paper baking cups is not a single pass-or-fail certificate that covers every recipe, temperature, market and product construction. A useful compliance file connects the exact finished article to its paper, grease barrier, print and other relevant components; identifies the intended food and baking conditions; states the test methods and limits used; and shows that the tested sample represents the item being purchased. Cup programmes usually ship alongside pan lining; our [baking parchment paper manufacturing programme](/products/baking-parchment-paper/) specs cover the sheets and rolls that pair with them.
 
-The direct answer for buyers is simple: review a report by matching five things before accepting it—product identity, material construction, food type, time and temperature, and destination-market basis. Then confirm that the approved sample, purchase specification, production lot and carton labels preserve that match. A report for unprinted flat paper, room-temperature dry food or another supplier's coating should not automatically be treated as evidence for a printed cupcake liner used with a fatty batter in a hot oven.
+The direct answer for buyers is simple: review a report by matching five things before accepting it—product identity, material construction, food type, time and temperature, and destination-market basis. Then confirm that the approved sample, purchase specification, production lot and carton labels preserve that match. A report for unprinted flat paper, room-temperature dry food or another supplier's coating should not automatically be treated as evidence for a printed cupcake liner used with a fatty batter in a hot oven. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 This guide explains how importers, distributors, bakery chains, foodservice packaging buyers and private-label teams can review evidence without pretending to be a laboratory or legal adviser. It focuses on procurement decisions: what to define before testing, what to look for in a report, when a gap needs clarification, and how to carry the approved specification into production and shipment inspection.
 
 ## 1. Start With Intended Use, Not a Certificate Name
 
-The safety question is always tied to foreseeable use. The same paper article can face very different exposure depending on the food, contact time and temperature. A dry decorative liner placed around a finished confectionery product is not the same use as a cup filled with high-fat batter and baked. A paper cup for a chilled dessert is not the same as one reheated or used in a microwave.
+The safety question is always tied to foreseeable use. The same paper article can face very different exposure depending on the food, contact time and temperature. A dry decorative liner placed around a finished confectionery product is not the same use as a cup filled with high-fat batter and baked. A paper cup for a chilled dessert is not the same as one reheated or used in a microwave. Where a bakery lines trays and moulds product in the same run, our [private-label parchment paper supplier](/products/baking-parchment-paper/) are quoted with the cup programme for a single documentation package.
 
-Before asking a supplier for documents, write an intended-use statement that covers:
+Before asking a supplier for documents, write an intended-use statement that covers: The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
 
 - the finished product type and construction;
 - whether food touches the paper, a coating, or both;
@@ -42,6 +42,19 @@ Before asking a supplier for documents, write an intended-use statement that cov
 The US Food and Drug Administration's reference tables separate food types and conditions of use. Bakery products are divided according to moisture and whether the surface contains free fat or oil, while cooking above 250°F is a separate condition of use. This is a practical reminder that “for food contact” is less informative than “for moist, fatty bakery food under the stated baking conditions.” See the [FDA food types and conditions of use tables](https://www.fda.gov/food/packaging-food-contact-substances-fcs/food-types-conditions-use-food-contact-substances).
 
 For EU sales, the general principle is similar even though the regulatory structure differs. Regulation (EC) No 1935/2004 applies under normal or foreseeable conditions of use. It requires food-contact materials not to transfer constituents at levels that endanger health, cause an unacceptable change in food composition, or deteriorate taste and smell. Buyers should therefore avoid treating an abstract material declaration as a substitute for a use-specific assessment.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. Identify the Exact Finished Article
 
@@ -188,9 +201,22 @@ Send LANGMAI your target cup dimensions, representative food, baking conditions,
 
 CTA button: Request Samples and a Quote
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-Food contact testing for paper baking cups is most useful when it is treated as a traceable decision system, not a certificate collection exercise. Define the intended use, identify the exact finished article, understand the EU or US regulatory path, review the complete laboratory report, approve samples in the real application and carry the controlled specification into the purchase order and shipment inspection.
+Food contact testing for paper baking cups is most useful when it is treated as a traceable decision system, not a certificate collection exercise. Define the intended use, identify the exact finished article, understand the EU or US regulatory path, review the complete laboratory report, approve samples in the real application and carry the controlled specification into the purchase order and shipment inspection. Buyers standardising on one paper supplier can review our [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) next to their cup specifications.
 
 The practical test is whether a buyer can connect the carton received to the product assessed and explain why the evidence covers the actual food and baking conditions. When that chain is clear, procurement teams can compare suppliers on relevant facts and resolve gaps before production rather than after goods arrive.
 

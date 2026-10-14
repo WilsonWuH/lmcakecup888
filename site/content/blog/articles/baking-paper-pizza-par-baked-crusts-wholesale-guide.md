@@ -24,20 +24,33 @@ Image 2 File: blog/baking-paper-pizza-par-baked-crusts-wholesale-guide-productio
 
 ## Introduction
 
-Par-baked crusts changed the economics of pizza: bake the base once at the plant, freeze or chill it, then finish with toppings and a short final bake at the store. Every stage of that flow — dough pressing, par-bake, blast chill, stacking, frozen distribution, re-bake — puts one consumable in contact with the product: baking paper.
+Par-baked crusts changed the economics of pizza: bake the base once at the plant, freeze or chill it, then finish with toppings and a short final bake at the store. Every stage of that flow — dough pressing, par-bake, blast chill, stacking, frozen distribution, re-bake — puts one consumable in contact with the product: baking paper. Buyers comparing these specifications can review our [private-label parchment paper supplier](/products/baking-parchment-paper/) programme, where coating weight, base grammage and release values are documented per construction.
 
-It is a small line item that causes large problems when wrong. Dough sticks to under-specified liners and tears during demolding; cheap sheets curl in blast freezers and jam automated stackers; wrinkled liners print flour-and-oil patterns into the base that customers read as a defect. This guide walks the par-bake flow stage by stage, gives liner specifications for each step, and closes with a cost model and an RFQ checklist.
+It is a small line item that causes large problems when wrong. Dough sticks to under-specified liners and tears during demolding; cheap sheets curl in blast freezers and jam automated stackers; wrinkled liners print flour-and-oil patterns into the base that customers read as a defect. This guide walks the par-bake flow stage by stage, gives liner specifications for each step, and closes with a cost model and an RFQ checklist. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 ## 1. Where Baking Paper Sits in the Par-Bake Flow
 
-A typical industrial flow looks like this: dough balls are pressed or sheeted, proved, then par-baked — typically 5 to 8 minutes at high temperature — just long enough to set the crumb while keeping the base flexible, then cooled, stacked and frozen or chilled, distributed, and finished with a 2 to 4 minute re-bake with toppings. Baking paper appears at four points:
+A typical industrial flow looks like this: dough balls are pressed or sheeted, proved, then par-baked — typically 5 to 8 minutes at high temperature — just long enough to set the crumb while keeping the base flexible, then cooled, stacked and frozen or chilled, distributed, and finished with a 2 to 4 minute re-bake with toppings. Baking paper appears at four points: For production volumes, the same construction logic applies to our [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) line, quoted per roll, sheet or die-cut format.
 
 - Under the raw dough disc during pressing and proofing, where release and dimensional stability matter most.
 - On the par-bake oven conveyor or pan, where heat tolerance and release after bake matter.
 - Between stacked crusts during chilling and freezing, preventing crusts from welding into one block.
 - On the finishing tray or screen at the store, supporting the frozen crust through the re-bake.
 
-Each stage stresses a different property. Buying one sheet for all four is possible, but only if it is specified against the hardest stage — usually dough release before the bake.
+Each stage stresses a different property. Buying one sheet for all four is possible, but only if it is specified against the hardest stage — usually dough release before the bake. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. Dough Release: Why Silicone-Coated Parchment Is the Default
 
@@ -99,9 +112,22 @@ Send suppliers this list:
 - Food-contact documentation: compliance declarations and fat-migration reports for the contact conditions actually used.
 - Trial terms: sample quantities sized for a real line trial, not a bench demo.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-Baking paper in pizza and par-baked crust operations is a process component, not a commodity purchase. Specify double-sided silicone-coated parchment for dough release and oven duty, dense low-moisture stock for frozen interleaving, and cut formats that match your pans and stackers — then price it per crust, including the failure costs the cheapest sheet quietly generates. A converter who answers the RFQ checklist with numbers is worth trialing.
+Baking paper in pizza and par-baked crust operations is a process component, not a commodity purchase. Specify double-sided silicone-coated parchment for dough release and oven duty, dense low-moisture stock for frozen interleaving, and cut formats that match your pans and stackers — then price it per crust, including the failure costs the cheapest sheet quietly generates. A converter who answers the RFQ checklist with numbers is worth trialing. Our [custom printed baking parchment paper](/products/baking-parchment-paper/) programme publishes the test data behind each grade so specifications can be verified before ordering.
 
 ### What is a par-baked pizza crust?
 

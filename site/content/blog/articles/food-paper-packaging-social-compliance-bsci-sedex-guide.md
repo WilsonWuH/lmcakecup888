@@ -24,15 +24,15 @@ Image 2 File: blog/food-paper-packaging-social-compliance-bsci-sedex-guide-facto
 
 ## Introduction
 
-A retailer's compliance questionnaire asks for the factory's social audit. The supplier sends a PDF: an audit report, a CAPR (corrective action plan), a certificate with a familiar logo. It looks complete. Months later, the retailer's own spot check finds excessive overtime and missing fire exits at the same site, and your account takes the reputational hit.
+A retailer's compliance questionnaire asks for the factory's social audit. The supplier sends a PDF: an audit report, a CAPR (corrective action plan), a certificate with a familiar logo. It looks complete. Months later, the retailer's own spot check finds excessive overtime and missing fire exits at the same site, and your account takes the reputational hit. Every document in our compliance library is tied to a specific construction; see how the [silicone-coated parchment sheets and rolls](/products/baking-parchment-paper/) programme aligns test reports with the exact grade supplied.
 
-Social compliance audits — amfori BSCI and Sedex SMETA above all — are the standard currency for labor-conditions assurance in the packaging supply chain. But a document proving an audit happened is not proof that conditions are compliant, and forged or recycled audit PDFs are common enough that verification is now a buyer skill, not a formality.
+Social compliance audits — amfori BSCI and Sedex SMETA above all — are the standard currency for labor-conditions assurance in the packaging supply chain. But a document proving an audit happened is not proof that conditions are compliant, and forged or recycled audit PDFs are common enough that verification is now a buyer skill, not a formality. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 This guide explains what each audit scheme actually covers, how the two differ, how to verify a report is genuine and current, which findings matter most, and what a supplier verification file should contain before you approve a paper packaging converter.
 
 ## 1. What amfori BSCI Actually Covers
 
-BSCI, now operated under the amfori trade association, is a social auditing system built around the amfori BSCI Code of Conduct. It is a supplier-facing program: the buyer (an amfori participant) requests that a factory be audited against thirteen performance areas.
+BSCI, now operated under the amfori trade association, is a social auditing system built around the amfori BSCI Code of Conduct. It is a supplier-facing program: the buyer (an amfori participant) requests that a factory be audited against thirteen performance areas. Documentation scope is confirmed per SKU and destination market, as outlined on our [food-grade die-cut parchment rounds](/products/baking-parchment-paper/) page.
 
 The core areas buyers should know:
 
@@ -43,7 +43,20 @@ The core areas buyers should know:
 - Health and safety — the area where most nonconformities are raised, especially in converting plants with cutting machinery
 - Discrimination, decent working conditions and no precarious employment through improper agency labor
 
-Audits are carried out only by approved auditing companies, and results are graded from A to E, with a zero-tolerance list (child labour, forced labour, immediate life-threatening hazards) that triggers escalation rather than a simple grade. One important structural point: BSCI is a monitoring system, not a certification. Suppliers receive an audit report and a corrective action plan — not a "BSCI certificate". Any supplier handing you a certificate with an expiry date should be asked what document they are actually holding.
+Audits are carried out only by approved auditing companies, and results are graded from A to E, with a zero-tolerance list (child labour, forced labour, immediate life-threatening hazards) that triggers escalation rather than a simple grade. One important structural point: BSCI is a monitoring system, not a certification. Suppliers receive an audit report and a corrective action plan — not a "BSCI certificate". Any supplier handing you a certificate with an expiry date should be asked what document they are actually holding. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. What Sedex SMETA Adds
 
@@ -97,9 +110,22 @@ Before approving a paper packaging supplier, assemble and date-stamp:
 
 Then set the maintenance rhythm: refresh the file after each new audit, re-verify the platform link annually, and re-review after any ownership change, site move or capacity jump — three triggers where social compliance most often drifts.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-BSCI and SMETA give wholesale buyers a common language for labor conditions in the paper packaging supply chain, but the value is only as good as the verification behind it. Check the scheme, the audit firm, the platform record and the internal consistency of the report; read the CAPR, not just the summary; and keep a dated verification file per supplier. Suppliers who cooperate smoothly with this process are demonstrating in the moment the transparency the audit is supposed to prove.
+BSCI and SMETA give wholesale buyers a common language for labor conditions in the paper packaging supply chain, but the value is only as good as the verification behind it. Check the scheme, the audit firm, the platform record and the internal consistency of the report; read the CAPR, not just the summary; and keep a dated verification file per supplier. Suppliers who cooperate smoothly with this process are demonstrating in the moment the transparency the audit is supposed to prove. Our [custom silicone-coated baking parchment paper](/products/baking-parchment-paper/) programme is audited against the same standards referenced in this guide.
 
 ### Is BSCI a certification?
 

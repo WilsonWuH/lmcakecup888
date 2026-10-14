@@ -24,15 +24,15 @@ Image 2 File: blog/cake-cup-size-chart-pan-compatibility-wholesale-guide-pan-fit
 
 ## Introduction
 
-Wholesale cake cup problems rarely start at the oven. They start at the pan: a rim that blocks the neighboring cavity, a base that tips in a shallow well, a wall too short to grip, or a cup that looked right in the sample box but leaves gaps across a full baking tray. Capacity charts tell you how much batter a cup holds, but they do not tell you whether the cup fits your pans, your tray layout and your depositor. That fit is a dimensions question, and dimensions are the one thing a wholesale buyer should always demand in writing before ordering.
+Wholesale cake cup problems rarely start at the oven. They start at the pan: a rim that blocks the neighboring cavity, a base that tips in a shallow well, a wall too short to grip, or a cup that looked right in the sample box but leaves gaps across a full baking tray. Capacity charts tell you how much batter a cup holds, but they do not tell you whether the cup fits your pans, your tray layout and your depositor. That fit is a dimensions question, and dimensions are the one thing a wholesale buyer should always demand in writing before ordering. Cup programmes usually ship alongside pan lining; our [silicone-coated parchment sheets and rolls](/products/baking-parchment-paper/) specs cover the sheets and rolls that pair with them.
 
-This guide provides a practical size chart for the main cake cup families, explains how each dimension interacts with standard muffin pans and baking trays, and shows how to run a fit check with suppliers so the first production delivery behaves like the approved sample.
+This guide provides a practical size chart for the main cake cup families, explains how each dimension interacts with standard muffin pans and baking trays, and shows how to run a fit check with suppliers so the first production delivery behaves like the approved sample. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 LANGMAI manufactures paper cake cups and baking cups for wholesale and private-label buyers and quotes against declared dimensions and tolerances. The framework below works with any supplier.
 
 ## Cake Cup Size Chart: The Core Families
 
-Most commercial cake cups fall into five families. Typical dimensions are ranges, because constructions vary between manufacturers; treat them as orientation, not as a substitute for a supplier specification sheet.
+Most commercial cake cups fall into five families. Typical dimensions are ranges, because constructions vary between manufacturers; treat them as orientation, not as a substitute for a supplier specification sheet. Where a bakery lines trays and moulds product in the same run, our [food-grade die-cut parchment rounds](/products/baking-parchment-paper/) are quoted with the cup programme for a single documentation package.
 
 | Family | Base diameter | Rim diameter (flared) | Wall height | Typical capacity |
 | --- | --- | --- | --- | --- |
@@ -42,7 +42,20 @@ Most commercial cake cups fall into five families. Typical dimensions are ranges
 | Jumbo cup | 55–65 mm | 85–100 mm | 35–45 mm | 120–180 ml |
 | Tulip / wrap style | 40–50 mm | 80–120 mm | 45–75 mm | 90–150 ml |
 
-Three numbers do most of the work: base diameter decides whether the cup sits flat and centered in the pan cavity; flared rim diameter decides whether the cup rests on the pan surface and holds shape; wall height decides how far the finished product stands above the pan and how easily operators grab it.
+Three numbers do most of the work: base diameter decides whether the cup sits flat and centered in the pan cavity; flared rim diameter decides whether the cup rests on the pan surface and holds shape; wall height decides how far the finished product stands above the pan and how easily operators grab it. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## Pan Compatibility: Making the Cup Fit the Cavity
 
@@ -101,9 +114,22 @@ The rim is too close to the cavity opening size. A rim barely wider than the ope
 
 Yes. LANGMAI supplies dimensional data and declared tolerances with quotations, supports sample baking for pan and depositor fit checks, and manufactures to buyer specification for wholesale and private-label programs. Contact Sales with your pan cavity dimensions and fill volumes for matched samples.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-A cake cup is a dimensional product, and the decisive dimensions are the ones that touch your equipment: base against the cavity floor, rim against the cavity opening, wall against the pan edge and the retail pack. Use the size chart to shortlist families, then convert interest into a signed specification with tolerances and a baked fit check. That discipline costs one sample round and prevents the expensive kind of discovery, which happens after a container arrives.
+A cake cup is a dimensional product, and the decisive dimensions are the ones that touch your equipment: base against the cavity floor, rim against the cavity opening, wall against the pan edge and the retail pack. Use the size chart to shortlist families, then convert interest into a signed specification with tolerances and a baked fit check. That discipline costs one sample round and prevents the expensive kind of discovery, which happens after a container arrives. Buyers standardising on one paper supplier can review our [custom silicone-coated baking parchment paper](/products/baking-parchment-paper/) next to their cup specifications.
 
 ## CTA
 

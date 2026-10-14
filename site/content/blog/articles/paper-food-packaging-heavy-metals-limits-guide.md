@@ -24,9 +24,9 @@ Image 2 File: blog/paper-food-packaging-heavy-metals-limits-guide-incoming-fibre
 
 ## Introduction
 
-Heavy metals are the quietest failure mode in paper food packaging. Grease resistance is visible on the line, and mineral oil migration is now widely discussed, but lead, cadmium, mercury and chromium can sit in a delivered lot with no sensory signal at all. They usually surface only when a retailer or importer asks for the documentation and finds it incomplete or out of date, by which point the packing run has often already started.
+Heavy metals are the quietest failure mode in paper food packaging. Grease resistance is visible on the line, and mineral oil migration is now widely discussed, but lead, cadmium, mercury and chromium can sit in a delivered lot with no sensory signal at all. They usually surface only when a retailer or importer asks for the documentation and finds it incomplete or out of date, by which point the packing run has often already started. Every document in our compliance library is tied to a specific construction; see how the [baking parchment paper manufacturing programme](/products/baking-parchment-paper/) programme aligns test reports with the exact grade supplied.
 
-The topic also produces more confusion than almost any other compliance area, because the numbers quoted by suppliers frequently cannot be compared with each other. One paper cites total content in mg/kg, another reports migration into a food simulant, a third gives an extractive value against a national recommendation, and a fourth simply says "not detected" without a detection limit. All four may be honest and still useless for a purchasing decision.
+The topic also produces more confusion than almost any other compliance area, because the numbers quoted by suppliers frequently cannot be compared with each other. One paper cites total content in mg/kg, another reports migration into a food simulant, a third gives an extractive value against a national recommendation, and a fourth simply says "not detected" without a detection limit. All four may be honest and still useless for a purchasing decision. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 This guide sets out which metals matter in paper food packaging, where they come from, how the main regulatory frameworks treat them, what a test result actually means, and what a buyer should require in every delivered lot.
 
@@ -34,9 +34,22 @@ LANGMAI manufactures baking paper, cake cups, greaseproof paper and food packagi
 
 ## Which Metals Matter, and Why
 
-The metals buyers are normally asked about are lead, cadmium, mercury and chromium, including hexavalent chromium. Lead and cadmium dominate retail requirements and state-level litigation in the United States; cadmium can also arrive through pigments and mineral filler contamination; chromium is relevant because some pigments and treatments introduce it and the oxidation state changes the risk profile. Arsenic, antimony and other elements are usually tested as part of a broad panel, driven more often by a customer or retailer specification than by a single regulation.
+The metals buyers are normally asked about are lead, cadmium, mercury and chromium, including hexavalent chromium. Lead and cadmium dominate retail requirements and state-level litigation in the United States; cadmium can also arrive through pigments and mineral filler contamination; chromium is relevant because some pigments and treatments introduce it and the oxidation state changes the risk profile. Arsenic, antimony and other elements are usually tested as part of a broad panel, driven more often by a customer or retailer specification than by a single regulation. Documentation scope is confirmed per SKU and destination market, as outlined on our [private-label parchment paper supplier](/products/baking-parchment-paper/) page.
 
-Two principles follow. Metals compliance is demonstrated against a defined panel and reporting basis, not a single headline number. And because food contact may be dry, fatty or moist, the relevant test depends on the intended use.
+Two principles follow. Metals compliance is demonstrated against a defined panel and reporting basis, not a single headline number. And because food contact may be dry, fatty or moist, the relevant test depends on the intended use. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## Where the Metals Come From in Paper Packaging
 
@@ -117,9 +130,22 @@ Total content measures how much of a metal is present in the paper, usually in m
 
 Because "not detected" without a stated detection limit and method tells the reviewer nothing about whether the test was sensitive enough for the applicable requirement. Reports should state the method, conditions, detection and quantification limits, and the sample lot, so the result can be assessed against a specific limit.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-Heavy metals in paper food packaging are a materials-and-documentation problem, not a process one. Identify the panel and limits for each destination market, understand whether a result is total content or migration, require reports with stated methods, limits and lot references, and re-test whenever fibre, pigment, ink or coating changes.
+Heavy metals in paper food packaging are a materials-and-documentation problem, not a process one. Identify the panel and limits for each destination market, understand whether a result is total content or migration, require reports with stated methods, limits and lot references, and re-test whenever fibre, pigment, ink or coating changes. Our [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) programme is audited against the same standards referenced in this guide.
 
 ## CTA
 

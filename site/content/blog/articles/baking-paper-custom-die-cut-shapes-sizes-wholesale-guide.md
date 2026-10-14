@@ -24,16 +24,29 @@ Image 2 File: blog/baking-paper-custom-die-cut-shapes-sizes-wholesale-guide-samp
 
 ## Introduction
 
-A standard circle is the cheapest shape a converting line can produce. The moment your brand needs a scalloped liner, a tray-shaped insert, a square sheet with rounded corners or a liner with lifting tabs, you enter the world of die cutting — and with it, tooling fees, minimum order quantities, tolerance discussions and a sampling cycle that most first-time buyers underestimate. None of this is a problem if you plan for it; all of it is a problem if you discover it after signing. This guide walks through how die cutting actually works for baking paper and greaseproof formats, what drives MOQ and cost, which tolerances are realistic on a production line, and how to structure the specification and sampling process so your tenth order matches your first.
+A standard circle is the cheapest shape a converting line can produce. The moment your brand needs a scalloped liner, a tray-shaped insert, a square sheet with rounded corners or a liner with lifting tabs, you enter the world of die cutting — and with it, tooling fees, minimum order quantities, tolerance discussions and a sampling cycle that most first-time buyers underestimate. None of this is a problem if you plan for it; all of it is a problem if you discover it after signing. This guide walks through how die cutting actually works for baking paper and greaseproof formats, what drives MOQ and cost, which tolerances are realistic on a production line, and how to structure the specification and sampling process so your tenth order matches your first. Buyers comparing these specifications can review our [private-label parchment paper supplier](/products/baking-parchment-paper/) programme, where coating weight, base grammage and release values are documented per construction.
 
 ## 1. How Die Cutting Works for Baking Paper Formats
 
-Die cutting stamps shapes from wide reels or pre-cut sheets using a steel-rule die — a plywood board set with shaped cutting blades. For baking paper, the process has two defining characteristics:
+Die cutting stamps shapes from wide reels or pre-cut sheets using a steel-rule die — a plywood board set with shaped cutting blades. For baking paper, the process has two defining characteristics: For production volumes, the same construction logic applies to our [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) line, quoted per roll, sheet or die-cut format.
 
 - **The web moves.** Most high-volume production runs die cut in-line or in a rotary press from master reels, so the shape must nest efficiently on the web width. An awkward shape wastes material, and material is the largest cost component.
 - **Silicone coating comes before cutting.** The paper is coated and cured as a reel, then cut. Cutting edges are therefore unsealed cut silicone-coated edges — normal for the industry, but worth confirming when your application involves wet doughs.
 
-Understanding this sequence explains most constraints: shape efficiency drives price, web width drives maximum dimensions, and the die itself is a physical tool with a lead time. The wider economics of roll usage are covered in the [roll width and yield optimization guide](https://www.lmcakecup.com/resources/baking-paper-roll-width-yield-optimization-wholesale/).
+Understanding this sequence explains most constraints: shape efficiency drives price, web width drives maximum dimensions, and the die itself is a physical tool with a lead time. The wider economics of roll usage are covered in the [roll width and yield optimization guide](https://www.lmcakecup.com/resources/baking-paper-roll-width-yield-optimization-wholesale/). The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. Tooling: Die Fees, Ownership and Lead Times
 
@@ -97,9 +110,22 @@ Plan around ±1.0–2.0 mm on cut dimensions for a well-maintained die, and expe
 
 Often yes, if the shapes share the same base paper and coating and nest efficiently on the same web width. Combining shapes into one campaign reduces make-ready waste and can help you reach economic quantities — ask the supplier to quote the combined layout before finalizing shape sizes.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-Custom die-cut baking paper is entirely routine for a capable converter — the risks come from unclear drawings, unconfirmed tooling ownership, impossible tolerances and skipped pre-production sampling. Write the specification with tolerances and a measurement method, treat the die fee as an owned asset, approve samples only from production-representative material, and lock a golden sample before the first full run. Buyers who follow that sequence get shapes that fit their trays, tabs that lift cleanly and repeat orders that match the first.
+Custom die-cut baking paper is entirely routine for a capable converter — the risks come from unclear drawings, unconfirmed tooling ownership, impossible tolerances and skipped pre-production sampling. Write the specification with tolerances and a measurement method, treat the die fee as an owned asset, approve samples only from production-representative material, and lock a golden sample before the first full run. Buyers who follow that sequence get shapes that fit their trays, tabs that lift cleanly and repeat orders that match the first. Our [custom printed baking parchment paper](/products/baking-parchment-paper/) programme publishes the test data behind each grade so specifications can be verified before ordering.
 
 ## CTA
 

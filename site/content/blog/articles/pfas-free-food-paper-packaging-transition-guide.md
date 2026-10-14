@@ -24,17 +24,30 @@ Image 2 File: blog/pfas-free-food-paper-packaging-transition-guide-packaging.web
 
 ## Introduction
 
-Buyers rarely choose to change a grease-resistant paper specification. They are moved to it, usually by a customer questionnaire, a retailer audit or a sales-market rule with a hard date attached. For food paper packaging the driver is almost always greasy-food performance: the property that made fluorochemical treatments attractive for decades is now the property that puts a product inside the scope of PFAS restrictions.
+Buyers rarely choose to change a grease-resistant paper specification. They are moved to it, usually by a customer questionnaire, a retailer audit or a sales-market rule with a hard date attached. For food paper packaging the driver is almost always greasy-food performance: the property that made fluorochemical treatments attractive for decades is now the property that puts a product inside the scope of PFAS restrictions. Every document in our compliance library is tied to a specific construction; see how the [custom silicone-coated baking parchment paper](/products/baking-parchment-paper/) programme aligns test reports with the exact grade supplied.
 
-The transition is manageable if it is treated as an engineering and documentation programme rather than a substitution. A buyer has to decide which SKUs are in scope, what grease load each must survive, which fluorochemical-free technology meets that load at acceptable cost, and what evidence the destination market expects. Skip any of those steps and the familiar failure follows: a cheaper alternative that passes on paper and fails under hot, fatty contact.
+The transition is manageable if it is treated as an engineering and documentation programme rather than a substitution. A buyer has to decide which SKUs are in scope, what grease load each must survive, which fluorochemical-free technology meets that load at acceptable cost, and what evidence the destination market expects. Skip any of those steps and the familiar failure follows: a cheaper alternative that passes on paper and fails under hot, fatty contact. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 This guide sets out why the rules are changing, what the US and EU positions look like in practice, how the main alternatives differ, and the document package to request before approving a new construction.
 
 ## 1. Why Greasy-Food Rules Drive the Change
 
-PFAS chemistry delivers oil and water resistance at very low treatment levels, which is why it became standard on microwave popcorn bags, fast-food wraps, pizza liners, bakery cups and moulded fibre trays. The regulatory response targets exactly that use: fibre-based packaging that contacts fatty or oily food.
+PFAS chemistry delivers oil and water resistance at very low treatment levels, which is why it became standard on microwave popcorn bags, fast-food wraps, pizza liners, bakery cups and moulded fibre trays. The regulatory response targets exactly that use: fibre-based packaging that contacts fatty or oily food. Documentation scope is confirmed per SKU and destination market, as outlined on our [wholesale parchment paper rolls and sheets](/products/baking-parchment-paper/) page.
 
-The practical consequence is scope confusion. Restrictions are generally written around PFAS that is intentionally added and around total fluorine as a screening proxy, not around a named product category. A plain uncoated kraft item can fall outside concern while a grease-resistant variant sits squarely in scope. Segment the range by declared function: anything sold on a grease-resistance or non-stick claim needs evidence, and anything without such a claim should still be checked for upstream contamination.
+The practical consequence is scope confusion. Restrictions are generally written around PFAS that is intentionally added and around total fluorine as a screening proxy, not around a named product category. A plain uncoated kraft item can fall outside concern while a grease-resistant variant sits squarely in scope. Segment the range by declared function: anything sold on a grease-resistance or non-stick claim needs evidence, and anything without such a claim should still be checked for upstream contamination. Where a PFAS-free declaration is required, our [PFAS-free baking paper programme](/pfas-free-baking-paper/) documents the transition grade by grade.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. The US Position: State Laws Ahead of Federal Action
 
@@ -79,9 +92,22 @@ Build the file per SKU, not per supplier. This set is reasonable to request befo
 
 Treat the test report as the load-bearing document. A declaration without an analytical report tied to the same code is a statement of intent, and mills change feedstock, so agree to re-test annually or after any formulation change.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-A PFAS-free transition works when it is scoped, tested and documented in that order. Segment the range by grease-resistance function, assume the strictest applicable standard covers the whole file, choose the technology against the real fat load and contact conditions rather than a catalogue description, and qualify it with an application trial on production-representative material. Then hold a per-SKU file with a dated third-party fluorine report, a product-specific declaration, method and scope, and change-notification terms. Buyers who do this convert a regulatory deadline into a one-off project; those who substitute on price alone repeat it.
+A PFAS-free transition works when it is scoped, tested and documented in that order. Segment the range by grease-resistance function, assume the strictest applicable standard covers the whole file, choose the technology against the real fat load and contact conditions rather than a catalogue description, and qualify it with an application trial on production-representative material. Then hold a per-SKU file with a dated third-party fluorine report, a product-specific declaration, method and scope, and change-notification terms. Buyers who do this convert a regulatory deadline into a one-off project; those who substitute on price alone repeat it. Our [baking parchment paper manufacturing programme](/products/baking-parchment-paper/) programme is audited against the same standards referenced in this guide.
 
 ### Does "PFAS-free" mean the same thing as compliant with state law?
 

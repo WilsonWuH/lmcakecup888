@@ -110,6 +110,23 @@ export function renderMarkdown(markdown, options = {}) {
       closeList();
       const label = line.replace("CTA button:", "").trim();
       html.push(`<p><a class="button primary" href="${ctaHref}">${esc(label || "Get a Quote")}</a></p>`);
+    } else if (line.startsWith("<!-- Embedded CTA Box:")) {
+      // Pre-rendered conversion-hook HTML block: emit verbatim (no escaping)
+      // from the opening comment through the closing </aside> tag.
+      closeList();
+      closeTable();
+      const block = [line];
+      let scan = index + 1;
+      while (scan < lines.length) {
+        block.push(lines[scan]);
+        if (lines[scan].includes("</aside>")) {
+          scan += 1;
+          break;
+        }
+        scan += 1;
+      }
+      html.push(block.join("\n"));
+      index = scan - 1;
     } else {
       closeList();
       html.push(`<p>${renderInline(line)}</p>`);

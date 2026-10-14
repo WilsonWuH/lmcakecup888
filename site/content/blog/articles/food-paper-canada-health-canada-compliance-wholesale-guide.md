@@ -24,17 +24,30 @@ Image 2 File: blog/food-paper-canada-health-canada-compliance-wholesale-guide-im
 
 ## Introduction
 
-Canadian buyers sit between two well-documented regimes they often know by heart — the US FDA system and the EU framework — and a Canadian system that works differently from both. There is no Health Canada certificate to file away, no pre-market notification number to quote, and no single positive list titled for packaging paper. That absence of paperwork is not an absence of obligation. Under the Food and Drug Regulations, a package that transfers a harmful substance to food makes the food itself illegal to sell, and the importer carries the consequences.
+Canadian buyers sit between two well-documented regimes they often know by heart — the US FDA system and the EU framework — and a Canadian system that works differently from both. There is no Health Canada certificate to file away, no pre-market notification number to quote, and no single positive list titled for packaging paper. That absence of paperwork is not an absence of obligation. Under the Food and Drug Regulations, a package that transfers a harmful substance to food makes the food itself illegal to sell, and the importer carries the consequences. Every document in our compliance library is tied to a specific construction; see how the [wholesale parchment paper rolls and sheets](/products/baking-parchment-paper/) programme aligns test reports with the exact grade supplied.
 
-This guide explains how food contact paper compliance actually works in Canada: the legal standard, the documents Health Canada and CFIA expect to see, the importer duties under the Safe Food for Canadians Regulations, and the labeling rules that apply when paper packaging reaches consumers. It closes with a verification checklist wholesale buyers can send to any supplier today.
+This guide explains how food contact paper compliance actually works in Canada: the legal standard, the documents Health Canada and CFIA expect to see, the importer duties under the Safe Food for Canadians Regulations, and the labeling rules that apply when paper packaging reaches consumers. It closes with a verification checklist wholesale buyers can send to any supplier today. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 ## 1. The Legal Standard: Division 23 of the Food and Drug Regulations
 
-Canada's core requirement lives in Division 23 of the Food and Drug Regulations (SOR/2016-193), section B.23.001. The rule is simple in form and demanding in effect: no person shall sell food in a package that may impart to the food any substance that could be harmful to the consumer. There is no moveable list of approved papers attached to the section — the standard is outcome-based, and the burden of demonstrating safety rests on the party placing the food on the market.
+Canada's core requirement lives in Division 23 of the Food and Drug Regulations (SOR/2016-193), section B.23.001. The rule is simple in form and demanding in effect: no person shall sell food in a package that may impart to the food any substance that could be harmful to the consumer. There is no moveable list of approved papers attached to the section — the standard is outcome-based, and the burden of demonstrating safety rests on the party placing the food on the market. Documentation scope is confirmed per SKU and destination market, as outlined on our [baking parchment paper manufacturing programme](/products/baking-parchment-paper/) page.
 
-Two consequences follow for packaging buyers. First, unlike the US system, Health Canada does not issue food contact notifications or approvals for packaging materials; there is no regulatory document that says "this parchment is approved." Second, compliance in Canada is demonstrated through evidence — composition disclosure, formulation review against recognized references, and migration or toxicological reasoning — rather than through a certificate. Health Canada's published guidance on packaging materials, including its guidelines for determining the acceptability of food packaging substances, describes exactly this process: evaluate the formulation against recognized references such as the US FDA's 21 CFR 176 for paper components, and confirm that migration to food is negligible under realistic conditions of use.
+Two consequences follow for packaging buyers. First, unlike the US system, Health Canada does not issue food contact notifications or approvals for packaging materials; there is no regulatory document that says "this parchment is approved." Second, compliance in Canada is demonstrated through evidence — composition disclosure, formulation review against recognized references, and migration or toxicological reasoning — rather than through a certificate. Health Canada's published guidance on packaging materials, including its guidelines for determining the acceptability of food packaging substances, describes exactly this process: evaluate the formulation against recognized references such as the US FDA's 21 CFR 176 for paper components, and confirm that migration to food is negligible under realistic conditions of use. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
 
 For buyers of baking paper and baking cups this is good news in practice: a paper that complies with FDA 21 CFR 176 and carries supporting formulation data is usually straightforward to justify for Canada. But "usually" is doing real work — the justification must exist on paper, in the buyer's file, before the first shipment clears.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. The Letter of Guarantee: Canada's Workhorse Document
 
@@ -74,9 +87,22 @@ A Letter of Guarantee is the supplier's signed attestation that the packaging ma
 
 They are a strong foundation, not a substitute. FDA 21 CFR 176 conformity and EU Framework Regulation 1935/2004 evidence support the safety argument Canada's outcome-based standard requires, but the buyer still needs a Canada-addressed LOG, the SFCR importer file (supplier approval, traceability, verification records), and bilingual labeling for any retail-bound packs.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-Canada asks a different question than the US or EU — not "who approved this?" but "can you show it is safe?" Buyers who understand that the Food and Drug Regulations' Division 23 standard is evidence-based, who hold a specification-specific Letter of Guarantee, who maintain the preventive-controls file the SFCR expects, and who keep an eye on PFAS and mineral-oil scrutiny, end up with a compliance posture that satisfies inspectors, retail auditors and end customers alike. The document file is the product; the paper is only half of it.
+Canada asks a different question than the US or EU — not "who approved this?" but "can you show it is safe?" Buyers who understand that the Food and Drug Regulations' Division 23 standard is evidence-based, who hold a specification-specific Letter of Guarantee, who maintain the preventive-controls file the SFCR expects, and who keep an eye on PFAS and mineral-oil scrutiny, end up with a compliance posture that satisfies inspectors, retail auditors and end customers alike. The document file is the product; the paper is only half of it. Our [private-label parchment paper supplier](/products/baking-parchment-paper/) programme is audited against the same standards referenced in this guide.
 
 ## CTA
 

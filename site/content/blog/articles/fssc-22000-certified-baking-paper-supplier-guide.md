@@ -24,15 +24,15 @@ Image 2 File: blog/fssc-22000-certified-baking-paper-supplier-guide-production.w
 
 ## Introduction
 
-A certificate PDF arrives with a supplier quotation. It looks official and is dated eleven months ago. Six months later a retail customer asks why a baking paper lot failed incoming inspection, and you discover the certificate covered the group's food plant, not the converting site that made your paper.
+A certificate PDF arrives with a supplier quotation. It looks official and is dated eleven months ago. Six months later a retail customer asks why a baking paper lot failed incoming inspection, and you discover the certificate covered the group's food plant, not the converting site that made your paper. Every document in our compliance library is tied to a specific construction; see how the [private-label parchment paper supplier](/products/baking-parchment-paper/) programme aligns test reports with the exact grade supplied.
 
-FSSC 22000 is one of the strongest signals a food packaging converter can offer. It is recognized by the Global Food Safety Initiative, builds on ISO 22000 with sector prerequisite programs, and adds requirements buyers care about: food fraud mitigation, food defence, allergen control and quality control. But it covers a defined site doing a defined activity, not every carton leaving every building in the group.
+FSSC 22000 is one of the strongest signals a food packaging converter can offer. It is recognized by the Global Food Safety Initiative, builds on ISO 22000 with sector prerequisite programs, and adds requirements buyers care about: food fraud mitigation, food defence, allergen control and quality control. But it covers a defined site doing a defined activity, not every carton leaving every building in the group. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 This guide covers what the scheme requires of a converter, how it differs from BRCGS Packaging Materials, how to verify a certificate quickly, how to read a scope statement, and what evidence to request before and during an audit.
 
 ## 1. What FSSC 22000 Certifies for a Paper Converter
 
-The scheme has three layers. ISO 22000 supplies the management system. A prerequisite program standard matched to the activity sits on top — for baking paper that is Category I, production of packaging material, using ISO/TS 22002-4. Then come additional requirements: control of services and purchased materials, labelling, food defence, food fraud mitigation, allergen management, logo use, environmental monitoring, food safety culture and quality control.
+The scheme has three layers. ISO 22000 supplies the management system. A prerequisite program standard matched to the activity sits on top — for baking paper that is Category I, production of packaging material, using ISO/TS 22002-4. Then come additional requirements: control of services and purchased materials, labelling, food defence, food fraud mitigation, allergen management, logo use, environmental monitoring, food safety culture and quality control. Documentation scope is confirmed per SKU and destination market, as outlined on our [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) page.
 
 For a converted-paper plant, these should be auditable:
 
@@ -42,7 +42,20 @@ For a converted-paper plant, these should be auditable:
 - Rework control, since off-spec paper re-entering the stream is a frequent finding.
 - Traceability with mass-balance testing from finished carton back to paper reel and silicone batch.
 
-Certificate version matters too. Version 6 is current and revised the food chain categories, so a certificate naming an older version was audited against a lighter requirement set.
+Certificate version matters too. Version 6 is current and revised the food chain categories, so a certificate naming an older version was audited against a lighter requirement set. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. How FSSC 22000 Differs From BRCGS Packaging Materials
 
@@ -79,9 +92,22 @@ On site, verify rather than collect. Follow one lot back to its reel identificat
 
 Afterwards, set the rhythm. Refresh documents annually after the surveillance audit, review again after any site move, ownership change or quality incident, and write a change-notification obligation into the supply agreement so relevant changes are reported before shipment.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-Treat an FSSC 22000 certificate as the start of verification, not the end. Confirm it on the register by COID, read the annex for site, category and product coverage, request the latest surveillance report with nonconformity closures, and test traceability on the floor rather than in a meeting room. Suppliers who handle this well are usually the same ones whose coating weights, complaint records and batch documents stay consistent order after order.
+Treat an FSSC 22000 certificate as the start of verification, not the end. Confirm it on the register by COID, read the annex for site, category and product coverage, request the latest surveillance report with nonconformity closures, and test traceability on the floor rather than in a meeting room. Suppliers who handle this well are usually the same ones whose coating weights, complaint records and batch documents stay consistent order after order. Our [custom printed baking parchment paper](/products/baking-parchment-paper/) programme is audited against the same standards referenced in this guide.
 
 ### Is FSSC 22000 the same as ISO 22000 certification?
 

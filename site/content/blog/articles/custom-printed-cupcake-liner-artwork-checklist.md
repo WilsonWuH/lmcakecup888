@@ -20,15 +20,15 @@ Publish Date: 2026-07-06
 
 ## Introduction
 
-To prepare custom cupcake liner artwork for production, start with the supplier's final dieline and printing method, then lock the artwork revision, color references, print-side orientation, safe zones and approval standard. Approve the design on the actual paper and formed cup rather than relying on a monitor image. The purchase specification should identify the approved file, proof, substrate, ink system and change-control rules.
+To prepare custom cupcake liner artwork for production, start with the supplier's final dieline and printing method, then lock the artwork revision, color references, print-side orientation, safe zones and approval standard. Approve the design on the actual paper and formed cup rather than relying on a monitor image. The purchase specification should identify the approved file, proof, substrate, ink system and change-control rules. Cup programmes usually ship alongside pan lining; our [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) specs cover the sheets and rolls that pair with them.
 
-This workflow prevents common failures: graphics hidden inside pleats, barcodes distorted by forming, unexpected color on brown paper, excessive ink coverage, set-off in nested cups and production that matches an old file. It also connects creative approval to food-contact and manufacturing controls.
+This workflow prevents common failures: graphics hidden inside pleats, barcodes distorted by forming, unexpected color on brown paper, excessive ink coverage, set-off in nested cups and production that matches an old file. It also connects creative approval to food-contact and manufacturing controls. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 EU [Regulation (EC) No 2023/2006](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32006R2023) requires good manufacturing practice for food-contact materials. Its printing-ink annex addresses transfer through the substrate and set-off in stacks or reels, and says printed surfaces must not directly contact food. Artwork approval cannot prove compliance by itself, but it should preserve the intended print orientation and construction used in the supplier's assessment.
 
 ## 1. Confirm the Cup Construction Before Designing
 
-Ask the manufacturer to identify the finished format: pleated liner, tulip cup, self-supporting formed cup, roll-mouth cup or another construction. Record top, bottom and wall dimensions, paper grade, color, treatment, forming method and printing process. A flat drawing is meaningful only when it corresponds to the production tooling.
+Ask the manufacturer to identify the finished format: pleated liner, tulip cup, self-supporting formed cup, roll-mouth cup or another construction. Record top, bottom and wall dimensions, paper grade, color, treatment, forming method and printing process. A flat drawing is meaningful only when it corresponds to the production tooling. Where a bakery lines trays and moulds product in the same run, our [custom printed baking parchment paper](/products/baking-parchment-paper/) are quoted with the cup programme for a single documentation package.
 
 Request a controlled dieline with:
 
@@ -40,9 +40,22 @@ Request a controlled dieline with:
 - artwork scale, units and revision identifier; and
 - any limits on ink coverage, minimum line width or reversed text.
 
-Do not scale a dieline to fit a design after approval. If cup dimensions or tooling change, treat the file as a new revision and repeat the relevant proofing steps.
+Do not scale a dieline to fit a design after approval. If cup dimensions or tooling change, treat the file as a new revision and repeat the relevant proofing steps. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
 
 For size selection and pan fit, use the [wholesale cupcake liner size guide](/resources/cupcake-liner-size-guide-wholesale-buyers/) before artwork begins.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. Build a Print-Ready File Package
 
@@ -146,9 +159,22 @@ Identify the SKU, dimensions, paper and treatment, ink or color references, artw
 
 Reapprove after any change that can affect print position, color, transfer, forming or readability, including dieline, tooling, substrate, ink, printing process, dimensions, white ink or pack orientation.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-Custom cupcake liner artwork is a controlled manufacturing input, not just a design file. Start with the production dieline, define visible and safe areas, make color targets substrate-specific, connect the revision to food-contact controls, approve formed and baked samples, and cite the exact approved evidence in the purchase order.
+Custom cupcake liner artwork is a controlled manufacturing input, not just a design file. Start with the production dieline, define visible and safe areas, make color targets substrate-specific, connect the revision to food-contact controls, approve formed and baked samples, and cite the exact approved evidence in the purchase order. Buyers standardising on one paper supplier can review our [silicone-coated parchment sheets and rolls](/products/baking-parchment-paper/) next to their cup specifications.
 
 ## CTA
 

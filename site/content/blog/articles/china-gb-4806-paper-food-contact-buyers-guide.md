@@ -24,18 +24,31 @@ Image 2 File: blog/china-gb-4806-paper-food-contact-buyers-guide-factory-audit.w
 
 ## Introduction
 
-Most baking paper and cake cups sold into North America, Europe and the Middle East are manufactured in China — which means buyers sit between two regulatory worlds. The destination market sets the bar that legally matters on arrival: FDA rules in the United States, Regulation (EC) 1935/2004 in the EU. But the factory that makes the product is regulated domestically by China's national food contact standards, the GB 4806 series, and a supplier's depth of GB 4806 compliance says a great deal about its quality systems, testing discipline and ability to hold export-market compliance over time. This guide explains what the GB 4806 framework covers, which parts apply to paper and paperboard, what documentation a credible manufacturer should produce, how to read a test report critically, and how GB 4806 evidence fits alongside the FDA and EU documents you actually need for import.
+Most baking paper and cake cups sold into North America, Europe and the Middle East are manufactured in China — which means buyers sit between two regulatory worlds. The destination market sets the bar that legally matters on arrival: FDA rules in the United States, Regulation (EC) 1935/2004 in the EU. But the factory that makes the product is regulated domestically by China's national food contact standards, the GB 4806 series, and a supplier's depth of GB 4806 compliance says a great deal about its quality systems, testing discipline and ability to hold export-market compliance over time. This guide explains what the GB 4806 framework covers, which parts apply to paper and paperboard, what documentation a credible manufacturer should produce, how to read a test report critically, and how GB 4806 evidence fits alongside the FDA and EU documents you actually need for import. Every document in our compliance library is tied to a specific construction; see how the [silicone-coated parchment sheets and rolls](/products/baking-parchment-paper/) programme aligns test reports with the exact grade supplied.
 
 ## 1. What the GB 4806 Framework Covers
 
-China's food contact material system is built on a pyramid of national standards:
+China's food contact material system is built on a pyramid of national standards: Documentation scope is confirmed per SKU and destination market, as outlined on our [food-grade die-cut parchment rounds](/products/baking-parchment-paper/) page.
 
 - **GB 4806.1 — general safety requirements** for all food contact materials and articles: the principles — safety in intended use, no unacceptable transfer to food, good manufacturing practice.
 - **GB 4806.8 — paper and paperboard.** This is the part that governs baking paper, cake cups, wrapping papers and other paper food contact materials: sensory requirements, heavy metal limits, fluorescent whitening agents, formaldehyde and migration-related parameters.
 - **GB 9685 — additives.** The positive list governing which additives may be used in food contact materials, including those in paper coatings and treatments, with migration limits.
 - **Testing methods (GB 31604 series)** — the standard methods labs use to generate the migration and content results behind a compliant report.
 
-The series has been progressively revised, and the paper standard has been updated in recent years to tighten migration requirements. The practical buyer takeaway: always check which version of each standard a test report cites. The [EU vs US compliance comparison](https://www.lmcakecup.com/resources/eu-us-baking-paper-compliance-comparison/) explains the export-market side in detail.
+The series has been progressively revised, and the paper standard has been updated in recent years to tighten migration requirements. The practical buyer takeaway: always check which version of each standard a test report cites. The [EU vs US compliance comparison](https://www.lmcakecup.com/resources/eu-us-baking-paper-compliance-comparison/) explains the export-market side in detail. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. What GB 4806.8 Means for Baking Paper and Cake Cups
 
@@ -110,9 +123,22 @@ Check the report's lab accreditation (CNAS or CMA for domestic labs), match the 
 
 Annually is a common contract term, plus retesting whenever the product construction, coating, ink or raw material changes. Make the retest cycle and change-notification obligations explicit in the supply agreement so compliance does not silently lapse between orders.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-GB 4806 compliance is the clearest window into how a Chinese paper packaging manufacturer actually runs its factory. Read the framework — GB 4806.1, GB 4806.8 and GB 9685 — know what a credible test report looks like, and use that evidence to separate disciplined manufacturers from document-only suppliers. Then layer the FDA and EU paperwork your import markets legally require on top. Suppliers who pass both audits are the ones who hold compliance for years, not shipments.
+GB 4806 compliance is the clearest window into how a Chinese paper packaging manufacturer actually runs its factory. Read the framework — GB 4806.1, GB 4806.8 and GB 9685 — know what a credible test report looks like, and use that evidence to separate disciplined manufacturers from document-only suppliers. Then layer the FDA and EU paperwork your import markets legally require on top. Suppliers who pass both audits are the ones who hold compliance for years, not shipments. Our [custom silicone-coated baking parchment paper](/products/baking-parchment-paper/) programme is audited against the same standards referenced in this guide.
 
 ## CTA
 

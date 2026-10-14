@@ -24,22 +24,35 @@ Image 2 File: blog/grease-resistance-kit-levels-explained-wholesale-guide-grease
 
 ## Introduction
 
-Ask three suppliers for "greaseproof paper" and you may receive three sheets that behave completely differently against fried pastry, salad dressing and warm chocolate. The word greaseproof describes a family of papers, not a performance level. The industry's common answer to this ambiguity is the Kit rating — a numbered scale that expresses how strongly a paper resists penetration by oils and fats. For wholesale buyers, Kit level is the difference between a specification that survives supplier changes and a purchasing habit that quietly produces stained cartons, translucent wraps and customer complaints.
+Ask three suppliers for "greaseproof paper" and you may receive three sheets that behave completely differently against fried pastry, salad dressing and warm chocolate. The word greaseproof describes a family of papers, not a performance level. The industry's common answer to this ambiguity is the Kit rating — a numbered scale that expresses how strongly a paper resists penetration by oils and fats. For wholesale buyers, Kit level is the difference between a specification that survives supplier changes and a purchasing habit that quietly produces stained cartons, translucent wraps and customer complaints. Buyers comparing these specifications can review our [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) programme, where coating weight, base grammage and release values are documented per construction.
 
-This guide explains what Kit levels are and how the scale is constructed, which test methods sit behind the number, how to match a Kit level to real applications, where Kit ratings have limits, and how to write grease resistance into a specification your supplier can certify lot by lot.
+This guide explains what Kit levels are and how the scale is constructed, which test methods sit behind the number, how to match a Kit level to real applications, where Kit ratings have limits, and how to write grease resistance into a specification your supplier can certify lot by lot. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 LANGMAI manufactures greaseproof and silicone-coated food packaging paper for wholesale buyers and declares grease resistance parameters with its specifications.
 
 ## What the Kit Rating Actually Measures
 
-The Kit test, based on TAPPI T559, exposes a paper sample to a graduated series of castor-oil-based reagents of increasing aggressiveness — the mixtures rise in strength through twelve numbered steps. The tester applies drops of each reagent to the paper, and after a defined contact time inspects for penetration and staining of the reverse side. The Kit value is the highest-numbered reagent the paper resists: a Kit 8 sheet withstands reagent 8 but fails at 9. The scale runs:
+The Kit test, based on TAPPI T559, exposes a paper sample to a graduated series of castor-oil-based reagents of increasing aggressiveness — the mixtures rise in strength through twelve numbered steps. The tester applies drops of each reagent to the paper, and after a defined contact time inspects for penetration and staining of the reverse side. The Kit value is the highest-numbered reagent the paper resists: a Kit 8 sheet withstands reagent 8 but fails at 9. The scale runs: For production volumes, the same construction logic applies to our [custom printed baking parchment paper](/products/baking-parchment-paper/) line, quoted per roll, sheet or die-cut format.
 
 - **Kit 1–3.** Modest resistance, suitable for dry or low-fat contact such as interleaving and bakery tissue.
 - **Kit 4–6.** General-purpose grease resistance, the range most sandwich wraps, basket liners and light bakery applications occupy.
 - **Kit 7–10.** High resistance for fatty, warm or extended-contact uses: burger wraps, fried snacks, oily pastry, deli meats.
 - **Kit 11–12.** Maximum resistance on the scale, used where oils contact the paper hot or for very long durations.
 
-Two properties of the scale matter to buyers. First, the ratings are not linear — the jump from Kit 6 to Kit 8 represents a far larger real-world performance difference than 6 to 4. Second, a Kit value is a snapshot under the test's contact time and temperature; hot, pressed or long-duration contact in production can defeat a paper whose static rating looked adequate.
+Two properties of the scale matter to buyers. First, the ratings are not linear — the jump from Kit 6 to Kit 8 represents a far larger real-world performance difference than 6 to 4. Second, a Kit value is a snapshot under the test's contact time and temperature; hot, pressed or long-duration contact in production can defeat a paper whose static rating looked adequate. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## The Test Methods Behind Grease Resistance Claims
 
@@ -103,9 +116,22 @@ Cobb (ISO 535) measures water absorption, not grease resistance, but the dense f
 
 Yes. LANGMAI declares Kit levels and penetration times in the specification, provides test reports with shipments and supports lot-based verification programs. Contact Sales with your application and fat-exposure profile for matched samples with declared grease resistance data.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-"Greaseproof" is a marketing word; Kit 8 with a penetration time of 40 seconds is a specification. Buyers who anchor grease resistance to the Kit scale, demand the test method behind every number, and match level to the real fat profile of each application pay for exactly the performance they need — no stained packaging, no wasted headroom, and no ambiguity when the supplier changes.
+"Greaseproof" is a marketing word; Kit 8 with a penetration time of 40 seconds is a specification. Buyers who anchor grease resistance to the Kit scale, demand the test method behind every number, and match level to the real fat profile of each application pay for exactly the performance they need — no stained packaging, no wasted headroom, and no ambiguity when the supplier changes. Our [silicone-coated parchment sheets and rolls](/products/baking-parchment-paper/) programme publishes the test data behind each grade so specifications can be verified before ordering.
 
 ## CTA
 

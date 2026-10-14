@@ -24,9 +24,9 @@ Image 2 File: blog/baking-paper-artisan-sourdough-high-hydration-wholesale-guide
 
 ## Introduction
 
-Sourdough is the least forgiving baked product for a paper liner. A shaped loaf at 75-85% hydration is sticky, acidic and slow-fermenting, and in most artisan bakeries it spends hours on a proofing surface before it ever reaches the oven. The liner then has to do three jobs at once: release a wet, sugar- and acid-rich dough without tearing the crust, survive a long bake at high deck temperature with steam, and stay flat through fast manual or automated loading.
+Sourdough is the least forgiving baked product for a paper liner. A shaped loaf at 75-85% hydration is sticky, acidic and slow-fermenting, and in most artisan bakeries it spends hours on a proofing surface before it ever reaches the oven. The liner then has to do three jobs at once: release a wet, sugar- and acid-rich dough without tearing the crust, survive a long bake at high deck temperature with steam, and stay flat through fast manual or automated loading. Buyers comparing these specifications can review our [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) programme, where coating weight, base grammage and release values are documented per construction.
 
-Most buyers discover the gap between a sample and production the same way. A single sheet trial at the bench releases cleanly, so the order is placed; three weeks later a handful of loaves per batch weld to the paper, or the sheet cockles in the steam and leaves a ribbed mark on the base. Both problems come from the same place, a liner chosen for grammage and price rather than for the release, heat and moisture conditions of a sourdough line.
+Most buyers discover the gap between a sample and production the same way. A single sheet trial at the bench releases cleanly, so the order is placed; three weeks later a handful of loaves per batch weld to the paper, or the sheet cockles in the steam and leaves a ribbed mark on the base. Both problems come from the same place, a liner chosen for grammage and price rather than for the release, heat and moisture conditions of a sourdough line. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 This guide explains how coated and parchmentised papers behave across a professional sourdough workflow, how proofing surfaces and bake liners differ, and what to write into a specification so the sample that released in your test bakery still releases in every container.
 
@@ -40,7 +40,20 @@ Three product properties push paper past its comfort zone:
 - **Acidity.** A mature starter produces organic acids that hold dough pH well below that of yeasted dough. Over a long proof, that acidic film interacts with the liner surface and can dull a release layer faster than a neutral dough.
 - **Long, hot bakes with steam.** Sourdough loaves typically bake longer, often with injected steam at the start. Steam plus a 230-260 degrees C deck is a demanding combination: the sheet absorbs moisture, then dries and can shrink against the pan, and any weakness in the coating shows up as a stuck patch.
 
-The practical consequence is that release is a system property, not a paper property. Hydration, retard time, pan material, steam schedule and liner coating act together, and a liner that works on one formula can fail on another in the same bakery.
+The practical consequence is that release is a system property, not a paper property. Hydration, retard time, pan material, steam schedule and liner coating act together, and a liner that works on one formula can fail on another in the same bakery. For production volumes, the same construction logic applies to our [custom printed baking parchment paper](/products/baking-parchment-paper/) line, quoted per roll, sheet or die-cut format.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## Proofing Surfaces and Bake Liners Are Different Jobs
 
@@ -109,9 +122,22 @@ Only if the supplier rates the liner for re-use and your trial confirms release 
 
 Plan for the format you actually feed, not the theoretical optimum. Teams that hand-load oversized sheets waste more paper through misfolds and double-sheeting than a slightly tighter cut would cost. LANGMAI supplies cut sheets matched to specific pan footprints and can also supply rolls for bakeries with mixed formats.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-Sourdough release is decided by the interaction of hydration, acidity, steam and coating, not by grammage alone. Map the workflow into proofing and baking stages, choose the coating family for the bake stage, size the sheet to the pan, and qualify the liner against the hardest loaf in the range across more than one production lot.
+Sourdough release is decided by the interaction of hydration, acidity, steam and coating, not by grammage alone. Map the workflow into proofing and baking stages, choose the coating family for the bake stage, size the sheet to the pan, and qualify the liner against the hardest loaf in the range across more than one production lot. Our [silicone-coated parchment sheets and rolls](/products/baking-parchment-paper/) programme publishes the test data behind each grade so specifications can be verified before ordering.
 
 ## CTA
 

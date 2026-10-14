@@ -24,13 +24,13 @@ Image 2 File: blog/brcgs-certified-baking-paper-supplier-guide-evidence.webp
 
 ## Introduction
 
-When a wholesale buyer qualifies a baking paper or baking cup factory, a certificate on the wall is not the deliverable. The deliverable is evidence that the plant can control every material and process that touches the food-contact surface of the paper. The BRCGS Packaging Materials standard is one of the most widely recognized frameworks for exactly that, and understanding what it actually requires helps buyers audit suppliers faster and with fewer arguments.
+When a wholesale buyer qualifies a baking paper or baking cup factory, a certificate on the wall is not the deliverable. The deliverable is evidence that the plant can control every material and process that touches the food-contact surface of the paper. The BRCGS Packaging Materials standard is one of the most widely recognized frameworks for exactly that, and understanding what it actually requires helps buyers audit suppliers faster and with fewer arguments. Every document in our compliance library is tied to a specific construction; see how the [silicone-coated parchment sheets and rolls](/products/baking-parchment-paper/) programme aligns test reports with the exact grade supplied.
 
-This guide explains what the standard covers for a baking paper or paper baking cup producer, how it relates to ISO 22000 and FSSC 22000, and what evidence a buyer should request during a desktop review, a remote audit or an on-site visit. The goal is practical: a checklist you can send before the audit, so audit day is spent verifying rather than hunting for documents.
+This guide explains what the standard covers for a baking paper or paper baking cup producer, how it relates to ISO 22000 and FSSC 22000, and what evidence a buyer should request during a desktop review, a remote audit or an on-site visit. The goal is practical: a checklist you can send before the audit, so audit day is spent verifying rather than hunting for documents. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 ## 1. What BRCGS Packaging Materials Actually Covers
 
-The BRCGS standard for packaging and packaging materials applies to manufacturers of food-contact and non-food-contact packaging, which includes converted paper products such as baking paper, greaseproof sheets, baking cups and muffin liners. For a converted-paper factory, the main areas a buyer should expect to see are:
+The BRCGS standard for packaging and packaging materials applies to manufacturers of food-contact and non-food-contact packaging, which includes converted paper products such as baking paper, greaseproof sheets, baking cups and muffin liners. For a converted-paper factory, the main areas a buyer should expect to see are: Documentation scope is confirmed per SKU and destination market, as outlined on our [food-grade die-cut parchment rounds](/products/baking-parchment-paper/) page.
 
 - **Senior management commitment and hazard and risk management.** A documented HACCP or equivalent risk assessment specific to paper converting, not a generic template borrowed from food production.
 - **Product safety and quality plan.** Control points covering incoming paper reels, silicone coatings, release agents, inks, adhesives and corrugated outer packaging.
@@ -40,7 +40,20 @@ The BRCGS standard for packaging and packaging materials applies to manufacturer
 - **Traceability and recall.** Mass-balance traceability tests from reel to finished carton and back, with defined timelines.
 - **Personnel.** Training records, hygiene rules and contractor control.
 
-The [BRCGS packaging materials standard](https://www.brcgs.com/) is published and maintained by BRCGS; buyers should confirm the audit scope explicitly names converted paper products, because a certificate for a different scope does not transfer to baking paper lines.
+The [BRCGS packaging materials standard](https://www.brcgs.com/) is published and maintained by BRCGS; buyers should confirm the audit scope explicitly names converted paper products, because a certificate for a different scope does not transfer to baking paper lines. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. How BRCGS Relates to ISO 22000 and FSSC 22000
 
@@ -126,9 +139,22 @@ Both are GFSI-recognized schemes with a packaging route. FSSC 22000 builds on IS
 
 Annually as a minimum is common practice, timed after the supplier's surveillance audit. A triggered review is also appropriate after any site move, major process change or quality complaint.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-A BRCGS Packaging Materials certificate tells you where to look, not what you will find. Use the standard's structure to build a focused evidence request, verify that the scope covers the exact grades you buy, confirm food-contact documentation for silicone treatments and inks, and test traceability live. A supplier that passes this review is easier to work with year after year, because the discipline behind the certificate shows up in batch records, complaint handling and change control.
+A BRCGS Packaging Materials certificate tells you where to look, not what you will find. Use the standard's structure to build a focused evidence request, verify that the scope covers the exact grades you buy, confirm food-contact documentation for silicone treatments and inks, and test traceability live. A supplier that passes this review is easier to work with year after year, because the discipline behind the certificate shows up in batch records, complaint handling and change control. Our [custom silicone-coated baking parchment paper](/products/baking-parchment-paper/) programme is audited against the same standards referenced in this guide.
 
 ## CTA
 

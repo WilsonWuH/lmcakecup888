@@ -20,9 +20,9 @@ Publish Date: 2026-07-15
 
 ## Introduction
 
-What should buyers verify before ordering air fryer paper liners wholesale? Start with the real appliance basket, food type and sales channel, then specify shape, base diameter, wall height, paper grammage, perforation, grease resistance, pack count, warning copy and food-contact evidence for that exact SKU. Do not buy only by a generic "fits most air fryers" description. The liner must fit the basket, stay under food weight, allow air circulation, perform under oily and moist foods, and carry clear use instructions for retail or foodservice users.
+What should buyers verify before ordering air fryer paper liners wholesale? Start with the real appliance basket, food type and sales channel, then specify shape, base diameter, wall height, paper grammage, perforation, grease resistance, pack count, warning copy and food-contact evidence for that exact SKU. Do not buy only by a generic "fits most air fryers" description. The liner must fit the basket, stay under food weight, allow air circulation, perform under oily and moist foods, and carry clear use instructions for retail or foodservice users. Cup programmes usually ship alongside pan lining; our [silicone-coated parchment sheets and rolls](/products/baking-parchment-paper/) specs cover the sheets and rolls that pair with them.
 
-Air fryer liners look simple, but they combine food-contact paper, heat exposure, consumer safety wording and retail packaging. A round bowl liner for a domestic basket, a square liner for a dual-zone appliance, and a flat perforated sheet for foodservice prep can have different risks. The buyer file should connect the product drawing, approved sample, test use, packaging artwork, declarations and inspection records.
+Air fryer liners look simple, but they combine food-contact paper, heat exposure, consumer safety wording and retail packaging. A round bowl liner for a domestic basket, a square liner for a dual-zone appliance, and a flat perforated sheet for foodservice prep can have different risks. The buyer file should connect the product drawing, approved sample, test use, packaging artwork, declarations and inspection records. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 For compliance planning, treat the liner as a finished food-contact article. In the EU, Regulation (EC) No 1935/2004 requires food-contact materials to be manufactured so they do not transfer constituents to food in quantities that could endanger health, cause unacceptable food changes or affect organoleptic characteristics under normal or foreseeable use. Regulation (EC) No 2023/2006 sets good manufacturing practice requirements for food-contact materials and articles. In the United States, buyers should evaluate the applicable food-contact substances and intended use conditions rather than relying on a broad "food grade" phrase.
 
@@ -30,7 +30,7 @@ This guide explains how to build a quote-ready specification, test samples and c
 
 ## 1. Define the Use Case Before Selecting the Liner
 
-The first sourcing question is not price; it is how the liner will be used. Air fryers rely on moving hot air around the food. A liner that blocks airflow, lifts during preheating or covers too much of the basket can create a poor cooking result and a safety concern. Your supplier needs the intended appliance type and food profile before recommending a liner.
+The first sourcing question is not price; it is how the liner will be used. Air fryers rely on moving hot air around the food. A liner that blocks airflow, lifts during preheating or covers too much of the basket can create a poor cooking result and a safety concern. Your supplier needs the intended appliance type and food profile before recommending a liner. Where a bakery lines trays and moulds product in the same run, our [food-grade die-cut parchment rounds](/products/baking-parchment-paper/) are quoted with the cup programme for a single documentation package.
 
 Create a use-case note for the RFQ:
 
@@ -42,7 +42,20 @@ Create a use-case note for the RFQ:
 - whether the order needs plain bulk packaging, private-label pouches or retail cartons;
 - whether the product will be sold as compostable, unbleached, PFAS-free or other claim-led SKU.
 
-If buyers skip this step, the purchase often turns into a size-only conversation. That is risky. A liner can be the right diameter but still too shallow for greasy food, too tall for a small basket, too dense for airflow, too weak after oil exposure or too loosely packed for e-commerce fulfillment.
+If buyers skip this step, the purchase often turns into a size-only conversation. That is risky. A liner can be the right diameter but still too shallow for greasy food, too tall for a small basket, too dense for airflow, too weak after oil exposure or too loosely packed for e-commerce fulfillment. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. Convert Appliance Fit Into a Drawing
 
@@ -241,9 +254,22 @@ Check dimensions, wall height, forming quality, perforation, odor, pack count, a
 
 LANGMAI supports custom food-paper packaging workflows, including liner size selection, sample review, artwork coordination and export carton planning. Buyers should provide destination market, pack count, warning requirements and annual volume when requesting a quote.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-Air fryer paper liners are a strong wholesale product when the specification is controlled. The buyer's job is to connect appliance fit, food use, paper structure, perforation, warning copy, packaging, documents and inspection into one file. That file protects retail trust and makes supplier comparison much clearer.
+Air fryer paper liners are a strong wholesale product when the specification is controlled. The buyer's job is to connect appliance fit, food use, paper structure, perforation, warning copy, packaging, documents and inspection into one file. That file protects retail trust and makes supplier comparison much clearer. Buyers standardising on one paper supplier can review our [custom silicone-coated baking parchment paper](/products/baking-parchment-paper/) next to their cup specifications.
 
 For a smoother sourcing process, send the intended basket size, liner dimensions, food type, pack count, artwork, market and document requirements before asking for final pricing. LANGMAI can use those details to recommend a sample route and quote-ready specification for wholesale or private-label air fryer paper liners.
 

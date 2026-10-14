@@ -20,13 +20,13 @@ Publish Date: 2026-07-06
 
 ## Introduction
 
-A paper baking cup packaging specification should define how cups are counted, oriented, protected, identified, packed into cartons and tested for the real distribution route. The goal is not simply to fit the most pieces into a box. Packaging must preserve cup shape, cleanliness, traceability, print condition and usable count from factory release through warehousing and customer handling.
+A paper baking cup packaging specification should define how cups are counted, oriented, protected, identified, packed into cartons and tested for the real distribution route. The goal is not simply to fit the most pieces into a box. Packaging must preserve cup shape, cleanliness, traceability, print condition and usable count from factory release through warehousing and customer handling. Cup programmes usually ship alongside pan lining; our [wholesale parchment paper rolls and sheets](/products/baking-parchment-paper/) specs cover the sheets and rolls that pair with them.
 
-Paper and paperboard properties can change with temperature and relative humidity. [ASTM D4332-22](https://store.astm.org/standards/d4332) provides conditioning atmospheres for containers, packages and packaging components and explains that cellulosic materials change physical properties as temperature and humidity vary. Use an agreed conditioning and distribution-test plan when transport risk justifies it; do not treat a dry factory sample as proof of route performance.
+Paper and paperboard properties can change with temperature and relative humidity. [ASTM D4332-22](https://store.astm.org/standards/d4332) provides conditioning atmospheres for containers, packages and packaging components and explains that cellulosic materials change physical properties as temperature and humidity vary. Use an agreed conditioning and distribution-test plan when transport risk justifies it; do not treat a dry factory sample as proof of route performance. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 ## 1. Define the Distribution System Before the Carton
 
-Map the shipment from factory to final user. Record transport modes, route duration, container loading, palletization, transfers, warehouse conditions, order picking, parcel delivery if used and expected stacking. Identify the points where moisture, compression, impact, vibration, contamination or misidentification can occur.
+Map the shipment from factory to final user. Record transport modes, route duration, container loading, palletization, transfers, warehouse conditions, order picking, parcel delivery if used and expected stacking. Identify the points where moisture, compression, impact, vibration, contamination or misidentification can occur. Where a bakery lines trays and moulds product in the same run, our [baking parchment paper manufacturing programme](/products/baking-parchment-paper/) are quoted with the cup programme for a single documentation package.
 
 The same baking cup may need different packaging for:
 
@@ -37,7 +37,20 @@ The same baking cup may need different packaging for:
 - humid or high-temperature routes; or
 - long storage followed by automated denesting.
 
-Define the acceptance point. Damage visible at the outer carton, inner pack or cup level may have different consequences, but all should have agreed defect definitions.
+Define the acceptance point. Damage visible at the outer carton, inner pack or cup level may have different consequences, but all should have agreed defect definitions. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. Specify the Primary or Inner Pack
 
@@ -169,9 +182,22 @@ At minimum, use an identification system that connects the product, SKU and prod
 
 Retest when a change can affect protection or distribution performance, including carton construction, dimensions, inner pack, count, pallet pattern, route, supplier or product geometry, and after relevant damage trends.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-Paper baking cup packaging should be treated as a controlled system. Define the route, inner pack, carton, labels, pallet and usable-count criteria; condition and test representative shipping units; preserve traceability and print orientation; and require approval before packaging changes.
+Paper baking cup packaging should be treated as a controlled system. Define the route, inner pack, carton, labels, pallet and usable-count criteria; condition and test representative shipping units; preserve traceability and print orientation; and require approval before packaging changes. Buyers standardising on one paper supplier can review our [private-label parchment paper supplier](/products/baking-parchment-paper/) next to their cup specifications.
 
 ## CTA
 

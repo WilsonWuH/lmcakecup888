@@ -24,17 +24,30 @@ Image 2 File: blog/baking-cups-aql-acceptable-quality-limits-wholesale-defect-sa
 
 ## Introduction
 
-Two shipments of baking cups can pass on the same purchase order terms and still perform completely differently on the line. One runs through the depositor with clean release and uniform sidewalls; the other produces leaning cups, grease show-through and rejected batches. The difference is usually visible at inspection — if the inspection was defined before the order was placed.
+Two shipments of baking cups can pass on the same purchase order terms and still perform completely differently on the line. One runs through the depositor with clean release and uniform sidewalls; the other produces leaning cups, grease show-through and rejected batches. The difference is usually visible at inspection — if the inspection was defined before the order was placed. Cup programmes usually ship alongside pan lining; our [custom silicone-coated baking parchment paper](/products/baking-parchment-paper/) specs cover the sheets and rolls that pair with them.
 
-That is what Acceptable Quality Limits (AQL) are for. Instead of arguing after delivery whether a shipment is "good enough", buyer and supplier agree in advance on how many pieces will be inspected, what counts as a defect, and how many defects are acceptable at each severity. This guide explains how AQL 2.5 and 4.0 apply to baking cups and cupcake liners, how to classify defects as critical, major or minor, how sampling plans are sized, what a usable inspection report contains, and how to write the inspection clause into your purchase agreement.
+That is what Acceptable Quality Limits (AQL) are for. Instead of arguing after delivery whether a shipment is "good enough", buyer and supplier agree in advance on how many pieces will be inspected, what counts as a defect, and how many defects are acceptable at each severity. This guide explains how AQL 2.5 and 4.0 apply to baking cups and cupcake liners, how to classify defects as critical, major or minor, how sampling plans are sized, what a usable inspection report contains, and how to write the inspection clause into your purchase agreement. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 ## 1. What AQL Means in Plain Terms
 
-AQL is the worst average quality level that is still considered acceptable for the process, expressed as a percentage of defects. Under the widely used ANSI/ASQ Z1.4 sampling standard (equivalent to ISO 2859-1), the buyer does not inspect every piece. A sample is drawn at random from the lot, and the lot is accepted or rejected based on the number of defects found in that sample.
+AQL is the worst average quality level that is still considered acceptable for the process, expressed as a percentage of defects. Under the widely used ANSI/ASQ Z1.4 sampling standard (equivalent to ISO 2859-1), the buyer does not inspect every piece. A sample is drawn at random from the lot, and the lot is accepted or rejected based on the number of defects found in that sample. Where a bakery lines trays and moulds product in the same run, our [wholesale parchment paper rolls and sheets](/products/baking-parchment-paper/) are quoted with the cup programme for a single documentation package.
 
-The key point buyers often miss: an AQL of 2.5 does not mean "2.5% defects are guaranteed acceptable". It means that if the lot contains roughly 2.5% defects, the sampling plan will usually (not certainly) accept it, and if quality is worse, the plan will usually reject. It is a statistical filter that balances inspection cost against the risk of accepting a bad lot — not a promise about any individual shipment.
+The key point buyers often miss: an AQL of 2.5 does not mean "2.5% defects are guaranteed acceptable". It means that if the lot contains roughly 2.5% defects, the sampling plan will usually (not certainly) accept it, and if quality is worse, the plan will usually reject. It is a statistical filter that balances inspection cost against the risk of accepting a bad lot — not a promise about any individual shipment. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
 
 For molded and converted paper products like baking cups, the industry convention is: critical defects AQL 0 (zero tolerance), major defects AQL 2.5, minor defects AQL 4.0.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## 2. Defect Classification for Baking Cups and Liners
 
@@ -77,9 +90,22 @@ The inspection clause is short but must be explicit. It should state: the AQL le
 
 Two clauses buyers frequently forget: lot traceability (each pallet labeled with lot codes so a defect found on the line maps back to the shipment), and disposition of failed lots (defective goods returned or destroyed with certificates, never diverted to another market).
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-AQL is not inspection bureaucracy — it is how a buyer converts quality expectations into numbers a supplier can be held to. For baking cups and cupcake liners, the standard package is zero tolerance for critical defects, AQL 2.5 for majors, 4.0 for minors, under ANSI/ASQ Z1.4 General Level II sampling, with defect definitions and report formats agreed before the purchase order. Suppliers who accept these terms and produce consistent reports are the ones worth scaling volume with.
+AQL is not inspection bureaucracy — it is how a buyer converts quality expectations into numbers a supplier can be held to. For baking cups and cupcake liners, the standard package is zero tolerance for critical defects, AQL 2.5 for majors, 4.0 for minors, under ANSI/ASQ Z1.4 General Level II sampling, with defect definitions and report formats agreed before the purchase order. Suppliers who accept these terms and produce consistent reports are the ones worth scaling volume with. Buyers standardising on one paper supplier can review our [baking parchment paper manufacturing programme](/products/baking-parchment-paper/) next to their cup specifications.
 
 ### What AQL should I use for baking cup inspection?
 

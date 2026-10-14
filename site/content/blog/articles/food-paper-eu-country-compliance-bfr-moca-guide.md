@@ -24,17 +24,30 @@ Image 2 File: blog/food-paper-eu-country-compliance-bfr-moca-guide-eu-documents.
 
 ## Introduction
 
-The European Union regulates food contact materials through a horizontal framework — Regulation (EC) No 1935/2004 — but it has never completed a harmonized specific measure for paper and board. In practice, the actual quality bar for baking paper, cake cups and food packaging paper is set at national level, and it is not the same in every country you sell into. A paper that satisfies a generic "EU compliant" declaration may still fail a German retailer's BfR check, an Italian authority's MOCA inspection or a French distributor's documentation review. For wholesale buyers supplying multiple EU markets, this gap between framework and national rules is the most common source of compliance surprises.
+The European Union regulates food contact materials through a horizontal framework — Regulation (EC) No 1935/2004 — but it has never completed a harmonized specific measure for paper and board. In practice, the actual quality bar for baking paper, cake cups and food packaging paper is set at national level, and it is not the same in every country you sell into. A paper that satisfies a generic "EU compliant" declaration may still fail a German retailer's BfR check, an Italian authority's MOCA inspection or a French distributor's documentation review. For wholesale buyers supplying multiple EU markets, this gap between framework and national rules is the most common source of compliance surprises. Every document in our compliance library is tied to a specific construction; see how the [food-grade die-cut parchment rounds](/products/baking-parchment-paper/) programme aligns test reports with the exact grade supplied.
 
-This guide explains the three national systems buyers encounter most — Germany's BfR recommendations, Italy's MOCA regime and France's national arrangements — how they differ, how mutual recognition works in theory and practice, and how to structure supplier documentation so one paper grade can serve several markets without re-negotiating compliance every time.
+This guide explains the three national systems buyers encounter most — Germany's BfR recommendations, Italy's MOCA regime and France's national arrangements — how they differ, how mutual recognition works in theory and practice, and how to structure supplier documentation so one paper grade can serve several markets without re-negotiating compliance every time. Buyers verifying these specifications can review the [certificate library](/factory-certificates/) alongside supplier documentation requests.
 
 LANGMAI manufactures food contact paper products for wholesale buyers across EU markets and supplies documentation aligned to the national requirements described below.
 
 ## Why "EU Compliant" Is Not a Complete Answer
 
-Regulation 1935/2004 sets the principles: materials must not transfer their constituents to food in quantities that endanger health or change composition or organoleptic properties. Regulation (EU) 2023/2006 requires good manufacturing practice. But the EU has no specific harmonized measure for paper and board, so member states apply their own rules, and the strictest national rule effectively becomes the de facto export standard for suppliers serving the whole region.
+Regulation 1935/2004 sets the principles: materials must not transfer their constituents to food in quantities that endanger health or change composition or organoleptic properties. Regulation (EU) 2023/2006 requires good manufacturing practice. But the EU has no specific harmonized measure for paper and board, so member states apply their own rules, and the strictest national rule effectively becomes the de facto export standard for suppliers serving the whole region. Documentation scope is confirmed per SKU and destination market, as outlined on our [custom silicone-coated baking parchment paper](/products/baking-parchment-paper/) page.
 
-The buyer consequence is concrete: your declaration of compliance should name not only 1935/2004 but the specific national measures that apply to your destination markets. A declaration citing only the framework regulation is, for paper, a statement of principle rather than evidence.
+The buyer consequence is concrete: your declaration of compliance should name not only 1935/2004 but the specific national measures that apply to your destination markets. A declaration citing only the framework regulation is, for paper, a statement of principle rather than evidence. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
 
 ## Germany: BfR Recommendation XXXVI
 
@@ -103,9 +116,22 @@ Yes, if it is built for it. A multi-market declaration should cite the EU framew
 
 Yes. LANGMAI issues declarations of compliance covering EU Regulation 1935/2004, GMP Regulation 2023/2006 and the German BfR, Italian MOCA and French national requirements for paper and board, supported by accredited laboratory test reports and retained samples. Contact Sales with your destination markets for a documentation set matched to them.
 
+<!-- Embedded CTA Box: Compliance & Custom Print -->
+<aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#fff;">Need PFAS-Free Declarations or FDA / LFGB Test Reports?</h3>
+<p style="font-size:15px;color:#cdd8cf;margin:0 0 18px 0;line-height:1.6;">
+We review food-contact compliance documents against your exact paper construction, flexo ink system, and destination market. Explore our <a href="/pfas-free-baking-paper/" style="color:#d8b45a;font-weight:600;text-decoration:underline;">PFAS-free baking paper program</a> or send your artwork for a custom printed quote.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Get Compliance & Quote Package</a>
+<a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
+</div>
+</aside>
+
 ## Conclusion
 
-For food contact paper, Europe's single market is enforced one country at a time: BfR XXXVI sets the expectation in Germany, the MOCA decrees define the lists and limits in Italy, and France applies its own arrangements with distinctive documentation demands. Wholesale buyers who name these measures in specifications, demand test evidence and require formulation change notifications convert compliance from a recurring risk into a stable, checkable input — opening all EU markets with one grade instead of one negotiation per country.
+For food contact paper, Europe's single market is enforced one country at a time: BfR XXXVI sets the expectation in Germany, the MOCA decrees define the lists and limits in Italy, and France applies its own arrangements with distinctive documentation demands. Wholesale buyers who name these measures in specifications, demand test evidence and require formulation change notifications convert compliance from a recurring risk into a stable, checkable input — opening all EU markets with one grade instead of one negotiation per country. Our [wholesale parchment paper rolls and sheets](/products/baking-parchment-paper/) programme is audited against the same standards referenced in this guide.
 
 ## CTA
 
