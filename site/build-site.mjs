@@ -182,6 +182,8 @@ const products = [
   {
     slug: "air-fryer-paper-liners",
     title: "Air Fryer Paper Liners in Bulk for Retail & Foodservice",
+    seoTitle: "Bulk Pre-Cut Parchment Paper Rounds & Liners | Direct Mill",
+    meta: "Custom diameter silicone parchment rounds for cake pans, burger presses & air fryers. Heat resistant up to 230°C (450°F). Low MOQ & fast global shipping.",
     short: "Round and square food-grade silicone paper liners for air fryers, ovens, supermarkets and ready-to-cook food packs.",
     image: "ai-air-fryer-liners-premium.jpg",
     gallery: ["ai-air-fryer-liners-premium.jpg", "air-fryer-liners-clean.jpg", "ai-quality-export-packaging.jpg"],
@@ -977,8 +979,8 @@ function homePage() {
   ${ctaBand("Ready to review your next food paper packaging program?")}`;
   return layout({
     route: "/",
-    title: "Baking Paper & Food Paper Packaging Manufacturer | LANGMAI",
-    description: "LANGMAI manufactures baking paper, food wrapping paper and paper beverage accessories for global B2B buyers, with custom printing, OEM development and product-specific document support.",
+    title: "Custom Baking Paper & Cupcake Liners Manufacturer | LANGMAI",
+    description: "Direct factory for wholesale parchment paper, greaseproof rolls & baking cups. FDA/EU food-grade certified, custom printing & sizes. Request free samples!",
     content,
     schema: [websiteSchema()],
     bodyClass: "preview-home",
@@ -1203,8 +1205,8 @@ function cakeCupsProductPage(product) {
   <section class="section"><h2>Related Bakery Packaging</h2><div class="link-grid"><a href="/products/muffin-baking-cups/">Muffin Baking Cups</a><a href="/products/tulip-muffin-cups/">Tulip Muffin Cups</a><a href="/products/custom-printed-baking-paper/">Custom Printed Baking Paper</a><a href="/applications/bakery/">Bakery Packaging Solutions</a></div></section>`;
   return layout({
     route: "/products/cake-cups/",
-    title: "Custom Cake Cups Manufacturer | Cupcake Liners Supplier | LANGMAI",
-    description: "LANGMAI manufactures custom food-contact paper cake cups and cupcake liners for bakeries, dessert brands and food manufacturers, with OEM sizes, printing and packing.",
+    title: "Custom Cupcake Liners & Muffin Cups Wholesale | Greaseproof",
+    description: "Manufacture greaseproof tulip, lotus & standard baking cups for industrial bakeries. Custom logo printing, fade-resistant & food safe. Free sample kit!",
     content,
     schema: [productSchema({ ...product, title, short: "Custom food-contact paper cake cups and cupcake liners with OEM size, print and packing support." }), faqSchema(faq)],
     bodyClass: "premium-product-page",
@@ -1283,8 +1285,8 @@ function bakingPaperHubPage() {
   <section class="section"><h2>Continue Your Product Review</h2><div class="link-grid"><a href="/products/baking-parchment-paper/">Baking Parchment Paper</a><a href="/products/air-fryer-paper-liners/">Air Fryer Paper Liners</a><a href="/products/custom-printed-baking-paper/">Custom Printed Baking Paper</a><a href="/applications/bakery/">Bakery Applications</a></div></section>`;
   return layout({
     route: "/products/baking-paper/",
-    title: "Baking Paper Manufacturer | Parchment & PFAS-Free Options | LANGMAI",
-    description: "Explore LANGMAI baking paper solutions including parchment, air fryer liners, pre-cut sheets and custom printed formats, with PFAS-free options and OEM support.",
+    title: "Wholesale Silicone Coated Baking Paper Rolls & Sheets | OEM",
+    description: "Bulk supply non-stick parchment paper in custom GSM & silicone coating weights (0.7g-1.5g). Unbleached or white virgin pulp. Get a fast factory quote!",
     content,
     schema: [faqSchema(faq)],
     bodyClass: "premium-product-page",
@@ -1477,8 +1479,8 @@ function productPage(product) {
   </section>`;
   return layout({
     route: `/products/${product.slug}/`,
-    title: `${product.title} | LANGMAI Manufacturer`,
-    description: product.short,
+    title: product.seoTitle || `${product.title} | LANGMAI Manufacturer`,
+    description: product.meta || product.short,
     content,
     schema: [productSchema(product), faqSchema(faq)],
   });
