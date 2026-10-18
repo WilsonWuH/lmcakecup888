@@ -77,7 +77,7 @@ Eine anfragefertige Spezifikation (RFQ) sollte für beide Konstruktionen Folgend
 - Zielmarkt und benötigte Dokumente für den Lebensmittelkontakt;
 - Verpackungskonfiguration, Kartoninhalt und Palettenmuster.
 
-Fordern Sie die Anzahl der beschichteten Flächen schriftlich und fragen Sie, wie der Lieferant sie verifiziert. Ein Randwinkel- oder Dyn-Test oder die unterschiedliche Wasseraufnahme der beiden Flächen unterscheidet die Ausführungen bei der Wareneingangsprüfung schnell.
+Fordern Sie die Anzahl der beschichteten Flächen schriftlich und fragen Sie, wie der Lieferant sie verifiziert. Ein Randwinkel- oder Dyn-Test oder die unterschiedliche Wasseraufnahme der beiden Flächen unterscheidet die Ausführungen bei der Wareneingangsprüfung schnell. Wenn das Papier zusätzlich mit einem eigenen Logo bedruckt werden soll, gehören Druckdaten und Freigabemuster in dieselbe Spezifikation – Orientierung zu Druck, Trocknung und Dokumenten gibt [Individuell bedrucktes Backpapier Großhandel](/de/produkte/individuell-bedrucktes-backpapier/).
 
 ## 6. Compliance, Dokumente und typische Fallstricke
 

@@ -54,6 +54,8 @@ Höhere Grammatur ist keine automatische Lösung. Mehr Masse kann Formgebung, Tr
 
 Für Formprodukte vergleichen Sie Formate mit dem Ratgeber zu Tulpen- versus Standard-Muffinformen und dem Ratgeber zu freistehenden Backförmchen.
 
+Soll der Bogen oder Liner mit einem eigenen Motiv bedruckt werden, sind neben der Grammatur auch Tintenhaftung, Trocknung und Sensorik freizugeben – einen eigenen Beschaffungsweg für Programme mit Logo-Druck beschreibt [Individuell bedrucktes Backpapier Großhandel](/de/produkte/individuell-bedrucktes-backpapier/).
+
 ## 3. Eine messbare Grammaturanforderung formulieren
 
 Eine brauchbare Einkaufsspezifikation legt Nennwert, Einheiten, Verfahren, Toleranz, Probenahmestellen, Chargendefinition und Entscheidungsregel fest. Bitten Sie den Lieferanten zu erläutern, ob die angegebene Toleranz für Einzelproben, Bogenmittelwerte, Rollenmittelwerte oder Chargenmittelwerte gilt. Das ist nicht gleichwertig.

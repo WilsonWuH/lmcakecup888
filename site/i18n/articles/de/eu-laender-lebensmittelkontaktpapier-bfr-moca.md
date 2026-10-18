@@ -38,7 +38,7 @@ Für Käufer sind die praktischen Punkte:
 - **Messbare Parameter.** Käufer verifizieren üblicherweise Formaldehyd, Schwermetalle und Extraktionsverhalten über anerkannte Prüfprotokolle; bei beschichteten Backpapieren muss auch die Beschichtung die einschlägige BfR-Empfehlung erfüllen.
 - **Dokumentationsstil.** Deutsche Kunden erwarten typischerweise, dass die Konformitätserklärung BfR XXXVI ausdrücklich zitiert, ergänzt um Prüfberichte zu dessen Parametern.
 
-Wenn Ihr Vertrieb deutsche Handels- oder Industriebäckerei-Kunden umfasst, ist BfR XXXVI nicht optional – sie sind die Eintrittskarte.
+Wenn Ihr Vertrieb deutsche Handels- oder Industriebäckerei-Kunden umfasst, ist BfR XXXVI nicht optional – sie sind die Eintrittskarte. Für Programme mit eigenem Markenaufdruck lassen sich BfR-XXXVI- und LFGB-konforme Nachweise direkt mit der Produktion abstimmen – die entsprechende Spezifikation ist unter [Individuell bedrucktes Backpapier Großhandel](/de/produkte/individuell-bedrucktes-backpapier/) beschrieben.
 
 ## Italien: MOCA und der nationale Dekreterahmen
 

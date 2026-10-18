@@ -751,6 +751,20 @@ function productIndex(locale) {
       )}</div></section>${cta(locale, de ? "Individuelle Abmessungen oder Druck anfragen" : "Demander dimensions ou impression personnalisées")}`,
   );
 }
+// Hand-tuned TDK overrides (2026-10-18). GSC: German query "bedrucktes
+// backpapier" shows 46 impressions / 0 clicks at avg position 11.15 — the page
+// needs a click-oriented B2B title and meta instead of the generated defaults.
+// Key: locale -> localized product slug -> { title, description }.
+const PRODUCT_SEO_OVERRIDES = {
+  de: {
+    "individuell-bedrucktes-backpapier": {
+      title:
+        "Individuell bedrucktes Backpapier Hersteller | Eigene Marke, BfR XXXVI & PFAS-frei",
+      description:
+        "Bedrucktes Backpapier & Einschlagpapier direkt vom Hersteller (30.000 m² Werk). Rollen & Bögen mit eigenem Logo, BfR XXXVI & LFGB konform. Jetzt kostenlose Muster anfordern!",
+    },
+  },
+};
 function productPage(locale, p) {
   const de = locale === "de",
     c = locales[locale],
@@ -760,9 +774,12 @@ function productPage(locale, p) {
   const base = `${x[1]} ${role}`;
   const full = `${base} | OEM & Private Label | LANGMAI`;
   const mid = `${base} | LANGMAI`;
+  const seoOverride = (PRODUCT_SEO_OVERRIDES[locale] || {})[x[0]];
   // Keep titles under ~60 chars for SERP display.
   const title =
-    full.length <= 60 ? full : mid.length <= 60 ? mid : `${x[1]} | LANGMAI`;
+    seoOverride?.title ||
+    (full.length <= 60 ? full : mid.length <= 60 ? mid : `${x[1]} | LANGMAI`);
+  const description = seoOverride?.description || x[2];
   const faq = de
       ? [
           [
@@ -799,7 +816,7 @@ function productPage(locale, p) {
     "product",
     p[0],
     title,
-    x[2],
+    description,
     content,
     "Product",
   );
