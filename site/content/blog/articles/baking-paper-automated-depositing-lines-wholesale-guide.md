@@ -2,16 +2,16 @@
 
 ## SEO Information
 
-- **SEO Title**: Baking Paper for Automated Depositing Lines: Wholesale Buyer Guide
-- **H1**: Baking Paper for Automated Depositing Lines: A Wholesale Buyer's Guide
-- **URL Slug**: /resources/baking-paper-automated-depositing-lines-wholesale-guide/
-- **Meta Description**: Specify silicone-coated baking paper for high-speed batter depositing lines. Compare GSM, coating weight, sheet feeding and compliance before ordering wholesale volumes.
-- **Primary Keyword**: baking paper for automated depositing lines
-- **Target Keywords**: depositing line parchment paper, die-cut parchment sheets for bakeries, silicone-coated baking paper wholesale, bakery production line baking paper
-- **Search Intent**: Commercial / B2B wholesale buyer research
-- **Publish Date**: 2026-10-25
-- **Image 1 File**: blog/baking-paper-automated-depositing-lines-wholesale-guide-depositing-line.webp
-- **Image 2 File**: blog/baking-paper-automated-depositing-lines-wholesale-guide-die-cut-sheets.webp
+SEO Title: Baking Paper for Automated Depositing Lines: Wholesale Buyer Guide
+H1: Baking Paper for Automated Depositing Lines: A Wholesale Buyer's Guide
+URL Slug: /resources/baking-paper-automated-depositing-lines-wholesale-guide/
+Meta Description: Specify silicone-coated baking paper for high-speed batter depositing lines. Compare GSM, coating weight, sheet feeding and compliance before ordering wholesale volumes.
+Primary Keyword: baking paper for automated depositing lines
+Target Keywords: depositing line parchment paper, die-cut parchment sheets for bakeries, silicone-coated baking paper wholesale, bakery production line baking paper
+Search Intent: Commercial / B2B wholesale buyer research
+Publish Date: 2026-10-25
+Image 1 File: blog/baking-paper-automated-depositing-lines-wholesale-guide-depositing-line.webp
+Image 2 File: blog/baking-paper-automated-depositing-lines-wholesale-guide-die-cut-sheets.webp
 
 ## Introduction
 
