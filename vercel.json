@@ -7,6 +7,16 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/products/baking-paper/",
+      "destination": "/products/baking-parchment-paper/",
+      "permanent": true
+    },
+    {
+      "source": "/products/baking-paper",
+      "destination": "/products/baking-parchment-paper/",
+      "permanent": true
+    },
+    {
       "source": "/de/eudr-traceability",
       "destination": "/de/eudr-rueckverfolgbarkeit/",
       "permanent": true

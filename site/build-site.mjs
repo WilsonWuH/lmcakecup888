@@ -406,6 +406,48 @@ const landingPages = [
     productSlug: "cake-cups",
     focus: "custom cupcake liners manufacturer",
   },
+  {
+    slug: "wholesale-baking-paper",
+    title: "Wholesale Baking Paper Supplier & Manufacturer",
+    description: "Factory-direct baking paper wholesale supply. Silicone-coated, PFAS-free sheets and rolls in 35-45gsm. FDA/LFGB certified, MOQ 500kg, free samples and bulk export packaging.",
+    productSlug: "baking-parchment-paper",
+    focus: "wholesale baking paper",
+  },
+  {
+    slug: "wholesale-parchment-paper",
+    title: "Wholesale Parchment Paper Supplier & Manufacturer",
+    description: "Factory-direct parchment paper wholesale supply. Silicone-coated, PFAS-free sheets and rolls in 35-45gsm. FDA/LFGB certified, MOQ 500kg, free samples and bulk export packaging.",
+    productSlug: "baking-parchment-paper",
+    focus: "wholesale parchment paper",
+  },
+  {
+    slug: "baking-paper-manufacturer",
+    title: "Baking Paper Manufacturer & Factory Direct Supply",
+    description: "Direct baking paper manufacturer with 30,000+ sqm factory, 18+ years production experience. Custom GSM, silicone coating, printing and private label programs for global buyers.",
+    productSlug: "baking-parchment-paper",
+    focus: "baking paper manufacturer",
+  },
+  {
+    slug: "parchment-paper-manufacturer",
+    title: "Parchment Paper Manufacturer & Factory Direct Supply",
+    description: "Direct parchment paper manufacturer with 30,000+ sqm factory, 18+ years production experience. Custom GSM, silicone coating, printing and private label programs for global buyers.",
+    productSlug: "baking-parchment-paper",
+    focus: "parchment paper manufacturer",
+  },
+  {
+    slug: "baking-paper-private-label",
+    title: "Baking Paper Private Label & White Label Program",
+    description: "Private label baking paper manufacturing with custom branding, packaging design and retail-ready formats. Low MOQ options, free samples and full OEM/ODM support for your brand.",
+    productSlug: "baking-parchment-paper",
+    focus: "baking paper private label",
+  },
+  {
+    slug: "parchment-paper-private-label",
+    title: "Parchment Paper Private Label & White Label Program",
+    description: "Private label parchment paper manufacturing with custom branding, packaging design and retail-ready formats. Low MOQ options, free samples and full OEM/ODM support for your brand.",
+    productSlug: "baking-parchment-paper",
+    focus: "parchment paper private label",
+  },
 ];
 
 const pages = [];
