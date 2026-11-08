@@ -2,16 +2,16 @@
 
 ## SEO Information
 
-- **SEO Title**: Bakery Trade Show Sampling Kits: Wholesale Paper Buyer Guide 2026
-- **H1**: Bakery Trade Show Sampling Kits: A Wholesale Buyer's Guide to Cake Cups and Paper Components
-- **URL Slug**: /resources/bakery-trade-show-sampling-kits-wholesale-guide/
-- **Meta Description**: How wholesale buyers build bakery trade show sampling kits — cake cup sizes, pre-cut parchment squares, greaseproof sheets, MOQ planning, food-contact documents and demo-day logistics.
-- **Primary Keyword**: bakery trade show sampling kits
-- **Target Keywords**: wholesale cake cup sampling program, pre-cut parchment squares for food sampling, trade show food sampling packaging, bakery demo kit paper components, sampling cup MOQ wholesale
-- **Search Intent**: Commercial investigation — B2B buyers (bakery brands, foodservice groups, distributors) planning sampling programmes for trade shows, expos and in-store demos.
-- **Publish Date**: 2026-11-03
-- **Image 1 File**: blog/bakery-trade-show-sampling-kits-wholesale-guide-sampling-kit-components.webp
-- **Image 2 File**: blog/bakery-trade-show-sampling-kits-wholesale-guide-trade-show-booth.webp
+SEO Title: Bakery Trade Show Sampling Kits: Wholesale Paper Buyer Guide 2026
+H1: Bakery Trade Show Sampling Kits: A Wholesale Buyer's Guide to Cake Cups and Paper Components
+URL Slug: /resources/bakery-trade-show-sampling-kits-wholesale-guide/
+Meta Description: How wholesale buyers build bakery trade show sampling kits — cake cup sizes, pre-cut parchment squares, greaseproof sheets, MOQ planning, food-contact documents and demo-day logistics.
+Primary Keyword: bakery trade show sampling kits
+Target Keywords: wholesale cake cup sampling program, pre-cut parchment squares for food sampling, trade show food sampling packaging, bakery demo kit paper components, sampling cup MOQ wholesale
+Search Intent: Commercial investigation — B2B buyers (bakery brands, foodservice groups, distributors) planning sampling programmes for trade shows, expos and in-store demos.
+Publish Date: 2026-11-03
+Image 1 File: blog/bakery-trade-show-sampling-kits-wholesale-guide-sampling-kit-components.webp
+Image 2 File: blog/bakery-trade-show-sampling-kits-wholesale-guide-trade-show-booth.webp
 
 ---
 
