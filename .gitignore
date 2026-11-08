@@ -8,3 +8,8 @@ node_modules
 .DS_Store
 Thumbs.db
 .env.local
+
+# Internal planning workspace: contains original test reports, report page scans,
+# extracted report text, supplier-related evidence and drafts. MUST NOT be published
+# to the public repository (owner decision: supplier identity stays confidential).
+.website-studio/

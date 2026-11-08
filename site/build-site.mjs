@@ -1,4 +1,4 @@
-﻿import fs from "node:fs";
+import fs from "node:fs";
 import path from "node:path";
 
 import { buildMarketSites, marketArticleMap } from "./market-sites.mjs";
@@ -138,6 +138,37 @@ const specs = {
     ["12 mm", "197 mm", "200 bags x 25 pcs/ctn"],
   ],
 };
+
+
+// Owner-confirmed commercial reference for the two coated base-paper grades (2026-11-07).
+// SCOPE: coated-paper group only. Do not reuse for baking paper, cake cups or finished bags.
+// ASSUMPTION: "grammage tolerance +/-2" is an absolute +/-2 g/m2, not +/-2%; owner to confirm.
+// All figures are typical planning values, confirmed in the approved specification / quotation.
+const COATED_PAPER_TERMS = {
+  toleranceShort: "±2 g/m² typical tolerance",
+  toleranceNote: "Typical grammage tolerance is ±2 g/m². The accepted tolerance for the specific grade is recorded in the approved specification and written quotation.",
+  widthShort: "Custom roll width",
+  widthNote: "Roll width can be customized to the converter's required dimension. The 960 mm and 975 mm widths in the available test reports are the nominal widths of those tested samples, not a limit on custom widths.",
+  leadShort: "Lead time by order quantity",
+  leadNote: "Lead time depends on the order quantity and production schedule. It is confirmed in the written quotation rather than published as a fixed number of days.",
+  moqShort: "5 t typical MOQ",
+  moqNote: "MOQ generally starts at 5 tonnes for coated base paper. The confirmed quantity depends on the selected grade, customization, packaging and order structure and is stated in the written quotation.",
+  sampleShort: "200 m sample by specification",
+};
+
+// Shared "jumbo roll -> converted packs" process banner for both coated-paper grades.
+// English only. Each product gets its own titled WebP variant so PLA is never
+// mislabelled as water-based coated paper.
+function processBannerFor(slug) {
+  return {
+    image: `${slug}-roll-to-pack-banner.webp`,
+    small: `${slug}-roll-to-pack-banner-800.webp`,
+    mobile: `${slug}-roll-to-pack-banner-mobile.webp`,
+    alt: "Illustrative process diagram: a coated paper jumbo roll unwinds into a paper ribbon leading to paper cups, a bowl, a folded food container and a paper bag, representing downstream converter applications",
+    caption: "Illustrative process diagram generated for this page \u2014 not a product photograph, factory view or test evidence. LANGMAI supplies coated base paper; the cups, bowl, container and bag shown represent downstream converter applications, not LANGMAI products.",
+    steps: ["Coated jumbo roll", "Slitting & printing", "Forming & sealing", "Converted food packs"],
+  };
+}
 
 const products = [
   {
@@ -302,6 +333,116 @@ const products = [
     formats: ["Pink butcher paper - verify availability", "White butcher paper - verify availability", "Brown butcher paper - verify availability", "Printed butcher paper - verify availability", "Butcher paper rolls", "Butcher paper sheets"],
     applications: ["Fresh meat wrapping - confirm direct-contact suitability", "Seafood wrapping - confirm intended conditions", "Deli counters", "Food preparation surfaces", "Restaurant and foodservice use", "Custom branded wrapping", "BBQ or smoked-meat use - requires product verification"],
     status: "requires-product-verification",
+  },
+  {
+    slug: "water-based-coated-paper",
+    group: "coated-paper",
+    template: "sustainable",
+    sourced: true,
+    title: "Water-Based Coated Paper for Food Packaging Converting",
+    cardTitle: "Water-Based Coated Paper",
+    seoTitle: "Water-Based Coated Paper for Cups, Containers & Bags | LANGMAI",
+    short: "Water-based coated base paper for cup, bowl, food-container and paper-bag converting, with grammage, coating, sample and document review.",
+    meta: "Water-based coated base paper, 60–300 gsm: ±2 g/m² typical tolerance, customizable roll width, MOQ generally from 5 t and 200 m samples by specification.",
+    image: "stock-water-based-coated-paper-rolls.webp",
+    imageAlt: "Representative brown paper rolls used as a generic coated base-paper illustration",
+    imageCredit: `Generic paper-industry image, shown as a representative illustration only — not a LANGMAI product, the quoted grade, or a LANGMAI facility. Source: <a href="https://www.pexels.com/photo/stack-of-paper-rolls-in-shelf-3720483/" target="_blank" rel="noopener noreferrer">Brett Sayles / Pexels</a> (Pexels License); cropped.`,
+    visual: "WB",
+    visualTitle: "Water-based barrier coating",
+    visualNote: "Base paper for converting · sample-led selection",
+    material: "Paper with a water-based barrier coating; base paper, coating side and finished construction are confirmed for the intended application",
+    features: ["60–300 gsm by application", COATED_PAPER_TERMS.toleranceShort, COATED_PAPER_TERMS.widthShort, COATED_PAPER_TERMS.moqShort, COATED_PAPER_TERMS.sampleShort],
+    applications: ["Base paper for paper cups", "Base paper for paper bowls and food containers", "Base paper for paper bags", "Custom printing and forming trials"],
+    specs: [
+      ["Cup, bowl and food-container paper", "170–210 gsm", "Coating side and custom roll width", "±2 g/m² typical"],
+      ["Cup, bowl and food-container paper", "230 / 250 / 280 / 300 gsm", "Coating side and custom roll width", "±2 g/m² typical"],
+      ["Paper-bag base paper", "60 / 70 / 80 / 95 / 120 gsm", "Custom roll width and barrier target by bag use", "±2 g/m² typical"],
+    ],
+    headers: ["Application", "Reference grammage", "Construction to confirm", "Typical tolerance"],
+    introTitle: "Select the coating around the converting process, not a generic eco label.",
+    intro: "This page concerns coated base paper for downstream converters. Finished cups, bowls, containers and paper bags are not implied. Share the food application, forming or sealing process, print requirement and destination market before a grade is recommended.",
+    selection: [
+      ["Barrier target", "Define food type, moisture, oil, contact time and temperature instead of assuming one coating fits every use."],
+      ["Forming and sealing", "Confirm equipment, forming method, sealing window and required bonding through a physical trial."],
+      ["Print and converting", "Review printing, slitting, custom roll width and the ±2 g/m² typical grammage tolerance against the downstream process."],
+      ["End-of-life claims", "Recyclability, repulpability and PFAS-related wording require separate evidence for the exact construction and market."],
+    ],
+    evidenceTitle: "A tested 246 gsm double-side coated reference sample",
+    evidenceText: "Available 2025 test evidence covers a roll sample made from 230 g/m² base paper with 8 g/m² coating on each side, for a nominal total of 246 g/m² and a nominal width of 960 mm. The report states that the tested items passed under the listed Chinese standards.",
+    evidenceRows: [
+      ["Tested construction", "Double-side coated roll; 230 + 8 + 8 g/m²; 960 mm nominal width"],
+      ["Referenced standards", "GB 4806.8-2022, GB 4806.10-2016 and GB 4806.13-2023, plus the listed product standard"],
+      ["Tested-item coverage", "Appearance, absorption, grease and leakage resistance, sensory, migration and other listed items"],
+      ["Evidence boundary", "Applies to the tested sample; other grammages and destination-market claims require separate review"],
+    ],
+    sampleTerms: "A 200 m sample length can be provided in any requested specification. Confirm grammage, coating side, width and shipping arrangements before dispatch.",
+    processBanner: processBannerFor("water-based-coated-paper"),
+    buyerLinks: [["Paper Converters", "/who-we-serve/paper-converters/"], ["Packaging Distributors", "/who-we-serve/packaging-distributors/"]],
+    solutionLink: ["Coated-Paper Converting Review", "/applications/coated-paper-converting/"],
+    guideLink: ["Compare Water-Based, PLA & PE Coatings", "/resources/water-based-vs-pla-vs-pe-coated-paper/"],
+    faq: [
+      ["Does this page supply finished paper cups or bowls?", "No. The current offer is coated base paper for converting. Finished products require a separately confirmed scope."],
+      ["What MOQ applies to water-based coated paper?", COATED_PAPER_TERMS.moqNote],
+      ["Can we specify a custom roll width and tolerance?", `Yes. ${COATED_PAPER_TERMS.widthNote} ${COATED_PAPER_TERMS.toleranceNote}`],
+      ["How is lead time determined?", COATED_PAPER_TERMS.leadNote],
+      ["Can we request a custom 200 m sample?", "Yes. A 200 m sample length can be provided in any requested specification after the grammage, coating, width and shipment details are confirmed."],
+      ["Does the test report prove recyclability or compostability?", "No. The reviewed report supports only its tested sample and listed items. Recyclability, repulpability and compostability are separate evidence questions."],
+    ],
+  },
+  {
+    slug: "pla-coated-paper",
+    group: "coated-paper",
+    template: "sustainable",
+    sourced: true,
+    title: "PLA-Coated Paper for Cup, Container and Bag Converting",
+    cardTitle: "PLA-Coated Paper",
+    seoTitle: "PLA-Coated Paper for Packaging Converters | 200 m Samples | LANGMAI",
+    short: "PLA-coated base paper for cup, bowl, food-container and bag converting, with defined grammage options, sample trials and sample-specific evidence.",
+    meta: "PLA-coated base paper, 70–300 gsm: ±2 g/m² typical tolerance, customizable roll width, MOQ generally from 5 t, 200 m samples and sample-level GB evidence.",
+    image: "stock-pla-coated-paper-jumbo-roll.webp",
+    imageAlt: "Representative jumbo paper roll on converting equipment, used as a generic coated base-paper illustration",
+    imageCredit: `Generic paper-industry image, shown as a representative illustration only — not a LANGMAI product, the quoted grade, or a LANGMAI facility. Source: <a href="https://commons.wikimedia.org/wiki/File:Tissue_Paper_Production_Machine.jpg" target="_blank" rel="noopener noreferrer">Sammutawe / Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>; cropped and resized.`,
+    visual: "PLA",
+    visualTitle: "PLA-coated base paper",
+    visualNote: "Application-led coating · documented sample reference",
+    material: "Paper with a PLA coating; base-paper grade, coating weight, coating side and roll dimensions are confirmed for the intended converting process",
+    features: ["70–300 gsm by application", COATED_PAPER_TERMS.toleranceShort, COATED_PAPER_TERMS.widthShort, COATED_PAPER_TERMS.moqShort, COATED_PAPER_TERMS.sampleShort],
+    applications: ["Base paper for paper cups", "Base paper for bowls and food containers", "Base paper for paper bags", "Custom printing, sealing and forming trials"],
+    specs: [
+      ["Cup, bowl and food-container paper", "170–210 gsm", "Coating weight, side and custom roll width", "±2 g/m² typical"],
+      ["Cup, bowl and food-container paper", "230 / 250 / 260 / 280 / 300 gsm", "Coating weight, side and custom roll width", "±2 g/m² typical"],
+      ["Paper-bag base paper", "70 / 80 / 95 / 120 gsm", "Custom roll width and barrier target by bag use", "±2 g/m² typical"],
+    ],
+    headers: ["Application", "Reference grammage", "Construction to confirm", "Typical tolerance"],
+    introTitle: "A distinct PLA coating route with product-level approval.",
+    intro: "PLA-coated paper should be selected around sealing, forming, barrier and documentation needs. PLA is a polymer, so this range is not described as plastic-free. Compostability and destination-market claims must be supported for the exact coated-paper grade.",
+    selection: [
+      ["Coating structure", "Confirm base-paper grammage, PLA coating weight, single or double-side coating and roll dimensions."],
+      ["Heat and sealing", "Test the actual forming and heat-sealing process, food temperature and contact conditions before approval."],
+      ["Print and adhesion", "Review ink, printing, paper bonding and converting behavior on the proposed construction."],
+      ["Compostability scope", "EN 13432, ASTM D6400 and related claims require separate product-specific certificates or evidence; a food-contact report is not a compostability certificate."],
+    ],
+    evidenceTitle: "A tested 330 gsm single-side PLA-coated reference sample",
+    evidenceText: "Available 2025 test evidence covers a single-side PLA-coated roll with nominal total grammage of 330 g/m², nominal PLA coating of 35 g/m² and nominal width of 975 mm. The report states that the tested items passed under the listed Chinese standards.",
+    evidenceRows: [
+      ["Tested construction", "Single-side PLA-coated roll; 330 g/m² total; 35 g/m² PLA; 975 mm nominal width"],
+      ["Referenced standards", "GB/T 36392-2018, GB 4806.8-2022, GB 4806.7-2023 and GB 4806.13-2023, plus the listed product standard"],
+      ["Tested-item coverage", "Appearance, dimensions, coating, leakage, sensory, migration, heavy metals and other listed items"],
+      ["Evidence boundary", "Applies to the tested sample; it does not by itself establish EN 13432 or ASTM D6400 certification"],
+    ],
+    sampleTerms: "A 200 m sample length can be provided in any requested specification. Confirm base-paper grammage, PLA coating, width and shipping arrangements before dispatch.",
+    processBanner: processBannerFor("pla-coated-paper"),
+    buyerLinks: [["Paper Converters", "/who-we-serve/paper-converters/"], ["Packaging Distributors", "/who-we-serve/packaging-distributors/"]],
+    solutionLink: ["Compare Coated-Paper Converting Options", "/applications/coated-paper-converting/"],
+    guideLink: ["Read the Coated-Paper Comparison Guide", "/resources/water-based-vs-pla-vs-pe-coated-paper/"],
+    faq: [
+      ["Is PLA-coated paper plastic-free?", "No. PLA is a polymer. The accurate description is PLA-coated paper, with claims limited to the exact product evidence."],
+      ["What MOQ applies to PLA-coated paper?", COATED_PAPER_TERMS.moqNote],
+      ["Can we specify a custom roll width and tolerance?", `Yes. ${COATED_PAPER_TERMS.widthNote} ${COATED_PAPER_TERMS.toleranceNote}`],
+      ["How is lead time determined?", COATED_PAPER_TERMS.leadNote],
+      ["Can we request a custom 200 m sample?", "Yes. A 200 m sample length can be provided in any requested specification after the construction, width and shipment details are confirmed."],
+      ["Does the food-contact test report prove compostability?", "No. Food-contact testing and compostability certification are different evidence routes. EN 13432 or ASTM D6400 coverage must be verified separately."],
+    ],
   },
   {
     slug: "paper-straws",
@@ -744,6 +885,7 @@ function siteHeader(route = "/") {
     <nav id="main-navigation" class="main-nav" aria-label="Main navigation">
       <a class="nav-link simple" href="/products/">Solutions</a>
       <a class="nav-link simple" href="/applications/">Applications</a>
+      <a class="nav-link simple" href="/who-we-serve/">Who We Serve</a>
       <a class="nav-link simple" href="/custom-oem/">Custom OEM</a>
       <a class="nav-link simple" href="/compliance/">Compliance</a>
       <a class="nav-link simple" href="/resources/">Resources</a>
@@ -787,6 +929,8 @@ function siteFooter() {
       <a href="/inquiry/">Request a Quote</a>
       <a href="/inquiry/#sample">Get Free Sample</a>
       <a href="/products/food-wrapping-paper/">Explore Food Wrapping Paper</a>
+      <a href="/products/#coated-paper">Coated Base Paper</a>
+      <a href="/who-we-serve/">Who We Serve</a>
       <a href="/custom-oem/">Custom Printing & OEM</a>
       <a href="/factory-certificates/">Factory & Quality</a>
       <a href="/assets/catalog-preview-clean.jpg" target="_blank" rel="noopener">View Catalogue Preview</a>
@@ -864,11 +1008,28 @@ function ipStickyCard(productTitle = "Custom cupcake liners") {
   </aside>`;
 }
 
+function technicalVisual(label, title, caption = "Specification-led product selection", className = "") {
+  return `<div class="technical-visual ${esc(className)}" role="img" aria-label="${esc(title)}"><span>${esc(label)}</span><strong>${esc(title)}</strong><small>${esc(caption)}</small></div>`;
+}
+
+function productMedia(product, eager = false) {
+  if (!product.image) return technicalVisual(product.visual, product.visualTitle, product.visualNote);
+  const image = `<img src="${relAsset(product.image)}" width="1200" height="800" loading="${eager ? "eager" : "lazy"}" decoding="async" alt="${esc(product.imageAlt || `${product.cardTitle || product.title} representative paper image`)}">`;
+  if (eager) {
+    return product.imageCredit
+      ? `<figure class="representative-product-image">${image}<figcaption>${product.imageCredit}</figcaption></figure>`
+      : image;
+  }
+  return product.imageCredit
+    ? `<figure class="representative-card-media">${image}<figcaption>Representative image</figcaption></figure>`
+    : image;
+}
+
 function productCards(items = products) {
   return `<div class="product-grid">${items
     .map(
       (p) => `<article class="product-card">
-      <img src="${relAsset(p.image)}" loading="lazy" decoding="async" alt="${esc(p.title)}">
+      ${productMedia(p)}
       <div>
         <h3><a href="/products/${p.slug}/">${esc(p.cardTitle || p.title)}</a></h3>
         <p>${esc(p.short)}</p>
@@ -993,7 +1154,7 @@ function eudrHomeSection() {
 function homePage() {
   const knowledge = [
     ["PFAS-Free Baking Paper Buyer Guide", "/pfas-free-baking-paper/", "Match material choices and available evidence to the finished food-contact product."],
-    ["How to Choose Custom Cupcake Liners", "/resources/choose-custom-cupcake-liners/", "Compare size, material, print, packing and approval requirements."],
+    ["Water-Based vs PLA vs PE Coated Paper", "/resources/water-based-vs-pla-vs-pe-coated-paper/", "Compare coating routes by application, converting, evidence and end-of-life scope."],
     ["Food Paper Certificate Guide", "/resources/food-paper-certificates/", "Understand which documents to review for a product and destination market."],
   ];
   const content = `<section class="home-hero">
@@ -1013,6 +1174,7 @@ function homePage() {
     <a href="/products/baking-parchment-paper/"><img src="/assets/home-generated-parchment.png" alt="Baking parchment paper"><h3>Baking Parchment Paper</h3><p>Sheets, rolls and die-cut sizes</p><strong>Explore →</strong></a>
     <a href="/products/air-fryer-paper-liners/"><img src="/assets/home-generated-air-fryer.png" alt="Air fryer paper liners"><h3>Air Fryer Liners</h3><p>Round, square and custom shapes</p><strong>Explore →</strong></a>
     <a href="/applications/food-service/"><img src="/assets/home-generated-wrapping.png" alt="Food wrapping paper"><h3>Food Wrapping Paper</h3><p>Greaseproof, wax paper and custom printing</p><strong>Explore →</strong></a>
+    <a class="reference-new-range" href="/products/#coated-paper"><figure class="representative-home-media"><img src="/assets/stock-water-based-coated-paper-rolls.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Representative brown paper rolls used as a generic coated base-paper illustration"><figcaption>Representative image</figcaption></figure><div><h3>Coated Base Paper</h3><p>Water-based and PLA-coated base paper for converter trials, with custom roll widths, a typical 5 t MOQ and 200 m samples.</p><strong>Explore the coated-paper range →</strong></div></a>
   </div></section>
   <section class="reference-story split-section"><div><p class="eyebrow">Supporting a better bakery industry</p><h2>Practical paper for real businesses</h2><p>Our baking paper products help bakeries, food manufacturers and foodservice operators improve efficiency, ensure food safety and deliver a better experience.</p><a class="button primary" href="/applications/bakery/">Learn more about our solutions</a></div><figure><img src="/assets/home-generated-story.png" alt="Bakery worker preparing cupcakes"><figcaption>Designed around dependable production and presentation.</figcaption></figure></section>
   <section class="reference-process section"><div class="section-heading"><p class="eyebrow">How we support your business</p><h2>From idea to shelf, we make custom paper solutions simple.</h2></div><div class="reference-steps"><article><span>01</span><img src="/assets/home-generated-needs.png" alt="Buyer reviewing paper samples"><h3>Understand your needs</h3><p>Tell us your product, process and market requirements.</p></article><article><span>02</span><img src="/assets/home-generated-develop.png" alt="Paper cup samples"><h3>Develop the solution</h3><p>Recommend the right paper, structure, printing and packaging.</p></article><article><span>03</span><img src="/assets/home-generated-approve.png" alt="Approved paper packaging sample"><h3>Sample approval</h3><p>Physical samples for your test and confirmation.</p></article><article><span>04</span><img src="/assets/factory-real-converting-1600.webp" alt="LANGMAI real paper converting production line"><h3>Mass production</h3><p>Printing, slitting, die-cutting, forming and packing.</p></article><article><span>05</span><img src="/assets/home-generated-delivery.png" alt="Export cartons ready for delivery"><h3>On-time delivery</h3><p>Careful packing and reliable shipping support.</p></article></div></section>
@@ -1030,8 +1192,9 @@ function homePage() {
 }
 
 function productsIndex() {
-  const bakingProducts = products.filter((product) => product.group !== "food-wrapping" && !["paper-straws", "party-accessories"].includes(product.slug));
+  const bakingProducts = products.filter((product) => !product.group && !["paper-straws", "party-accessories"].includes(product.slug));
   const foodWrappingProducts = products.filter((product) => product.group === "food-wrapping");
+  const coatedPaperProducts = products.filter((product) => product.group === "coated-paper");
   const supportingProducts = products.filter((product) => ["paper-straws", "party-accessories"].includes(product.slug));
   const content = `<section class="products-hero">
     <div><p class="eyebrow">Solutions</p><h1>Baking paper and food paper packaging products.</h1><p>Browse formats by food application, then confirm the material, dimensions, print, pack configuration and destination-market documents with the LANGMAI team.</p><div class="hero-actions"><a class="button primary" href="/inquiry/">Request Product Review</a><a class="button secondary" href="/custom-oem/">Discuss Custom OEM</a></div></div>
@@ -1040,12 +1203,13 @@ function productsIndex() {
   <section class="trust-strip" aria-label="Product range highlights"><span>Bakery paper</span><span>Food wrapping</span><span>Paper straws</span><span>OEM printing</span></section>
   <section class="section" id="baking-paper-products"><div class="section-heading"><p class="eyebrow">Bakery Packaging</p><h2>Cups, liners, parchment and cooking paper</h2><p>Core formats for bakeries, dessert brands, foodservice distributors and private-label retail programs.</p><a class="text-link" href="/products/baking-paper/">Explore all baking paper solutions →</a></div>${productCards(bakingProducts)}</section>
   <section class="section food-wrapping-range"><div class="section-heading"><p class="eyebrow">Food Wrapping</p><h2>Greaseproof paper for takeaway and service</h2><p>Greaseproof, burger, wax and butcher paper formats selected around the approved food application and print requirement.</p><a class="text-link" href="/products/food-wrapping-paper/">View the food wrapping category →</a></div>${productCards(foodWrappingProducts)}</section>
+  <section class="section coated-paper-range" id="coated-paper"><div class="section-heading"><p class="eyebrow">Coated Base Paper</p><h2>Two coating routes for converter-led specifications</h2><p>Compare water-based and PLA-coated base paper by food application, converting equipment, sealing, printing, sample trials and product-level evidence.</p><a class="text-link" href="/who-we-serve/">Choose a path by buyer type →</a></div>${productCards(coatedPaperProducts)}</section>
   <section class="section supporting-products"><div class="section-heading"><p class="eyebrow">Beverage & supporting formats</p><h2>Paper straws and selected paper accessories</h2><p>Straight or flexible bendable paper straws and related paper items for beverage, event and seasonal retail programs.</p></div>${productCards(supportingProducts)}</section>
   ${ctaBand("Need a mixed product program or custom printed set?")}`;
   return layout({
     route: "/products/",
-    title: "Baking Paper & Food Paper Products | LANGMAI",
-    description: "Browse LANGMAI baking cups, parchment, air fryer liners, food wrapping paper and paper straws for B2B buyers, with custom printing and OEM support.",
+    title: "Baking Paper, Coated Paper & Food Packaging Products | LANGMAI",
+    description: "Browse LANGMAI baking cups, parchment, food wrapping paper, water-based and PLA-coated base paper for B2B buyers and packaging converters.",
     content,
   });
 }
@@ -1411,7 +1575,57 @@ function paperStrawsProductPage(product) {
   });
 }
 
+function sustainableProductPage(product) {
+  const related = products.filter((item) => item.group === "coated-paper" && item.slug !== product.slug);
+  const content = `<section class="product-hero sustainable-product-hero">
+    <div>
+      <p class="eyebrow">Coated base paper</p>
+      <h1>${esc(product.title)}</h1>
+      <p>${esc(product.short)}</p>
+      <div class="hero-actions"><a class="button primary" href="#quote">Request Specification Review</a><a class="button secondary" href="#sample-terms">Review Sample Terms</a></div>
+    </div>
+    ${productMedia(product, true)}
+  </section>
+  <section class="trust-strip" aria-label="Product review highlights">${product.features.map((item) => `<span>${esc(item)}</span>`).join("")}</section>
+  <section class="section two-col sustainable-overview">
+    <div><p class="eyebrow">Product scope</p><h2>${esc(product.introTitle)}</h2><p>${esc(product.intro)}</p><p><strong>Material:</strong> ${esc(product.material)}.</p></div>
+    <div><p class="eyebrow">Applications</p><h2>Uses to confirm before sampling</h2><ul class="check-list">${product.applications.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></div>
+  </section>
+  ${product.processBanner ? `<section class="section process-banner-section"><figure class="process-banner"><picture><source media="(max-width: 900px)" srcset="/assets/${product.processBanner.mobile}"><img src="/assets/${product.processBanner.image}" srcset="/assets/${product.processBanner.small} 800w, /assets/${product.processBanner.image} 1600w" sizes="(max-width: 1180px) 100vw, 1180px" width="1600" height="1000" loading="lazy" decoding="async" alt="${esc(product.processBanner.alt)}"></picture><ol class="process-banner-steps">${product.processBanner.steps.map((s) => `<li>${esc(s)}</li>`).join("")}</ol><figcaption>${esc(product.processBanner.caption)}</figcaption></figure></section>` : ""}
+  <section class="section sustainable-specifications">
+    <div class="section-heading"><p class="eyebrow">Reference specifications</p><h2>Start with a grade or format, then approve the full specification</h2><p>Reference options are not stock promises. A ±2 g/m² typical grammage tolerance applies and roll width can be customized. Dimensions, coating construction, packaging and acceptance criteria are confirmed in the approved specification before production.</p></div>
+    <div class="table-wrap"><table><thead><tr>${product.headers.map((header) => `<th>${esc(header)}</th>`).join("")}</tr></thead><tbody>${product.specs.map((row) => `<tr>${row.map((cell) => `<td>${esc(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>
+  </section>
+  <section class="section"><div class="section-heading"><p class="eyebrow">Buyer decision guide</p><h2>Four checks before a quote becomes an order</h2></div><div class="solution-grid">${product.selection.map(([title, text]) => `<article><h3>${esc(title)}</h3><p>${esc(text)}</p></article>`).join("")}</div></section>
+  <section class="section product-evidence-panel">
+    <div class="section-heading"><p class="eyebrow">Evidence boundary</p><h2>${esc(product.evidenceTitle)}</h2><p>${esc(product.evidenceText)}</p></div>
+    ${product.evidenceRows.length ? `<div class="table-wrap"><table><thead><tr><th>Evidence item</th><th>What it supports</th></tr></thead><tbody>${product.evidenceRows.map(([label, value]) => `<tr><td>${esc(label)}</td><td>${esc(value)}</td></tr>`).join("")}</tbody></table></div>` : ""}
+    <p class="note">Supplier and report-holder identities are handled confidentially during buyer document review. Public claims remain limited to the relevant product and tested scope.</p>
+  </section>
+  <section class="section commercial-terms" id="sample-terms"><div class="section-heading"><p class="eyebrow">Production & commercial terms</p><h2>Typical tolerance, width, MOQ, lead time and samples</h2><p>These are general planning figures for the two coated base-paper grades, not unconditional commitments. The written specification and quotation state the confirmed figures for each order.</p></div><div class="evidence-grid">
+    <article><h3>Grammage tolerance</h3><p>${esc(COATED_PAPER_TERMS.toleranceNote)}</p></article>
+    <article><h3>Roll width</h3><p>${esc(COATED_PAPER_TERMS.widthNote)}</p></article>
+    <article><h3>MOQ</h3><p>${esc(COATED_PAPER_TERMS.moqNote)}</p></article>
+    <article><h3>Lead time</h3><p>${esc(COATED_PAPER_TERMS.leadNote)}</p></article>
+    <article><h3>Sample route</h3><p>${esc(product.sampleTerms)}</p></article>
+    <article><h3>Written approval</h3><p>The quotation and order should identify the approved product, grammage tolerance, dimensions, material or coating, print, packing, documents and delivery terms.</p></article>
+  </div></section>
+  <section class="section sustainable-relationships"><div><p class="eyebrow">Application path</p><h2>Continue with a solution review</h2><p>Move from an individual item to the converting or assortment decision that determines the right specification.</p></div><div class="link-grid"><a href="${product.solutionLink[1]}">${esc(product.solutionLink[0])}</a><a href="${product.guideLink[1]}">${esc(product.guideLink[0])}</a>${product.buyerLinks.map(([label, href]) => `<a href="${href}">${esc(label)}</a>`).join("")}</div></section>
+  <section class="section two-col" id="quote"><div><p class="eyebrow">Request a quote or sample</p><h2>Send a specification-led inquiry</h2><p>Include the application, reference option, dimensions or grammage, coating or thickness, quantity, destination market, packaging and required documents. For coated-paper samples, add the required width and 200 m sample request.</p></div>${leadForm(product.title)}</section>
+  <section class="section faq"><p class="eyebrow">FAQ</p><h2>${esc(product.cardTitle)} FAQ</h2>${product.faq.map(([question, answer]) => `<details><summary>${esc(question)}</summary><p>${esc(answer)}</p></details>`).join("")}</section>
+  <section class="section"><h2>Related coated-paper options</h2><div class="link-grid">${related.map((item) => `<a href="/products/${item.slug}/">${esc(item.cardTitle)}</a>`).join("")}<a href="/products/#coated-paper">View the Coated-Paper Range</a><a href="/who-we-serve/">Choose by Buyer Type</a></div></section>`;
+  return layout({
+    route: `/products/${product.slug}/`,
+    title: product.seoTitle,
+    description: product.meta,
+    content,
+    schema: [productSchema(product), faqSchema(product.faq)],
+    bodyClass: "sustainable-product-page",
+  });
+}
+
 function productPage(product) {
+  if (product.template === "sustainable") return sustainableProductPage(product);
   if (product.template === "food-wrapping") return foodWrappingProductPage(product);
   if (product.slug === "cake-cups") return cakeCupsProductPage(product);
   if (product.slug === "paper-straws") return paperStrawsProductPage(product);
@@ -1730,17 +1944,155 @@ function applicationLandingPage(type) {
         ["Can LANGMAI support restaurant-chain packing?", "LANGMAI can review repeat sizes, location or distributor pack counts, labels, cartons, inspection requirements and shipment planning for chain programs."],
       ],
     },
+    "coated-paper-converting": {
+      route: "/applications/coated-paper-converting/",
+      seoTitle: "Coated Paper Selection for Packaging Converters | LANGMAI",
+      meta: "Compare water-based and PLA-coated base paper by food application, forming, sealing, printing and evidence. Request a custom 200 m sample.",
+      eyebrow: "Coated-paper converting solutions",
+      title: "Select Coated Base Paper Around Your Converting Process",
+      description: "Compare water-based and PLA-coated paper by the package being converted, equipment, food-contact conditions, barrier target, print and required documents before approving a grade.",
+      image: "stock-coated-paper-inspection.webp",
+      visual: "CP",
+      alt: "Representative paper inspection image, not a LANGMAI factory photo",
+      imageNote: "Representative paper inspection image · not a LANGMAI factory photo",
+      sampleLabel: "Request a 200 m Sample Review",
+      trust: ["Two coating routes", COATED_PAPER_TERMS.toleranceShort, COATED_PAPER_TERMS.widthShort, COATED_PAPER_TERMS.moqShort],
+      challenges: [
+        ["Material Fit", "Start with food, moisture, oil, temperature and contact time rather than selecting a coating from a generic sustainability label."],
+        ["Converting Performance", "Test forming, sealing, adhesion, printing, slitting and dimensional behavior on the intended equipment."],
+        ["Evidence Scope", "Keep food-contact testing, compostability, recyclability and repulpability as separate review questions."],
+        ["Repeat Orders", "Record base paper, coating, grammage, width, printing and acceptance criteria so reorders use the approved version."],
+      ],
+      products: [
+        ["Water-Based Coated Paper", "/products/water-based-coated-paper/", "", "Cup, bowl, container and bag base-paper options with a tested double-side reference sample.", "WB"],
+        ["PLA-Coated Paper", "/products/pla-coated-paper/", "", "PLA-coated base-paper options with a tested single-side reference sample and separate compostability review.", "PLA"],
+      ],
+      scenarios: [
+        ["Cup and Bowl Converting", "Review forming, rim or seam requirements, sealing, food temperature and direct-contact evidence."],
+        ["Food-Container Converting", "Match container geometry, barrier target, closure or sealing process and packing format."],
+        ["Paper-Bag Converting", "Select lower grammage options around bag construction, print, handle or sealing requirements and intended contents."],
+        ["Distributor Qualification", "Compare sample evidence and custom options for converter customers without treating one report as coverage for every grade."],
+      ],
+      customization: ["Base-paper grammage and coating route", "Custom roll width and ±2 g/m² typical tolerance", "Coating side, coating weight, printing and slitting", "200 m sample in the requested specification", "MOQ generally from 5 t; lead time by order quantity"],
+      complianceTitle: "Use Sample Evidence Without Overextending It",
+      complianceText: "The available 2025 reports support only the tested coated-paper samples and listed items. They do not automatically cover other grammages, finished packages, EN 13432, ASTM D6400 or every destination market.",
+      complianceActions: [["Review Water-Based Evidence", "/products/water-based-coated-paper/"], ["Review PLA Evidence", "/products/pla-coated-paper/"], ["Compare Coating Routes", "/resources/water-based-vs-pla-vs-pe-coated-paper/"]],
+      buyerPaths: [["For Paper Converters", "/who-we-serve/paper-converters/"], ["For Packaging Distributors", "/who-we-serve/packaging-distributors/"]],
+      faq: [
+        ["Which coating is better for every converter?", "Neither is universally best. Food use, equipment, sealing, barrier, printing, documents and end-of-life requirements determine the appropriate trial."],
+        ["Can both papers be sampled at 200 m?", "Yes. A 200 m sample length can be provided in any requested specification after the construction, width and shipping details are confirmed."],
+        ["What MOQ and lead time should we plan for?", `${COATED_PAPER_TERMS.moqNote} ${COATED_PAPER_TERMS.leadNote}`],
+        ["Can we specify a custom roll width and tolerance?", `Yes. ${COATED_PAPER_TERMS.widthNote} ${COATED_PAPER_TERMS.toleranceNote}`],
+        ["Do the available reports certify finished cups or bags?", "No. The reports concern coated-paper samples. Finished-product evidence and converting approval remain separate."],
+      ],
+    },
+    "paper-converters": {
+      route: "/who-we-serve/paper-converters/",
+      seoTitle: "Coated Base Paper for Cup, Container & Paper-Packaging Converters | LANGMAI",
+      meta: "For paper packaging converters: compare water-based and PLA-coated base paper, test custom 200 m samples and confirm repeatable order specifications.",
+      eyebrow: "For paper packaging converters",
+      title: "Coated Base-Paper Selection for Repeatable Converting",
+      description: "For cup, bowl, food-container and paper-packaging converters that need a defined grade, physical converting trials, product-specific evidence and controlled repeat-order specifications.",
+      image: "",
+      visual: "PC",
+      alt: "Paper converter product qualification path",
+      sampleLabel: "Request a 200 m Converting Sample",
+      trust: ["Application-led grade review", "Custom 200 m samples", "Coating & width confirmation", "Repeat-order specification"],
+      challenges: [
+        ["Grade Selection", "Match grammage and coating to the product being converted instead of buying from a generic paper list."],
+        ["Machine Trials", "Evaluate forming, sealing, printing and slitting under the actual process before volume supply."],
+        ["Document Matching", "Check that a report's tested construction and standards match the proposed paper and intended food-contact use."],
+        ["Change Control", "Keep base paper, coating, width, print and acceptance criteria tied to the approved order version."],
+      ],
+      products: [
+        ["Water-Based Coated Paper", "/products/water-based-coated-paper/", "", "Review 60–300 gsm application options and the 246 gsm double-side tested reference sample.", "WB"],
+        ["PLA-Coated Paper", "/products/pla-coated-paper/", "", "Review 70–300 gsm application options and the 330 gsm single-side tested reference sample.", "PLA"],
+        ["Coated-Paper Converting Guide", "/applications/coated-paper-converting/", "", "Compare both routes by equipment, food application, sealing, printing and evidence.", "CP"],
+      ],
+      scenarios: [["Cup Plants", "Define cup stock, sealing, forming and food-contact conditions before a roll trial."], ["Bowl and Container Plants", "Match geometry, barrier, heat and sealing needs to the selected coating route."], ["Paper-Bag Plants", "Confirm lower grammage, print, dimensions and bag-making requirements."], ["Multi-Plant Programs", "Use one approved specification and change-control record for repeat supply across operations."]],
+      customization: ["Application and equipment review", "Base paper, coating and grammage selection", "Custom roll width and ±2 g/m² typical tolerance", "200 m sample in any requested specification", "MOQ generally from 5 t; lead time by order quantity"],
+      complianceTitle: "Qualification Is Product- and Process-Specific",
+      complianceText: "A tested reference sample helps structure due diligence but does not replace a converter's own machine trial, finished-product assessment or destination-market review.",
+      complianceActions: [["Compare Converting Options", "/applications/coated-paper-converting/"], ["Request Documents with Sample", "#application-quote"]],
+      buyerPaths: [["All Buyer Paths", "/who-we-serve/"], ["Coated-Paper Converting", "/applications/coated-paper-converting/"]],
+      faq: [["Can we test our exact paper specification?", "Yes. A 200 m sample length can be provided in any requested specification after construction, width and shipment details are confirmed."], ["Is a report enough to approve production?", "No. Review the report scope and run the actual converting and finished-product checks required by your process and market."], ["How is MOQ handled?", `${COATED_PAPER_TERMS.moqNote} ${COATED_PAPER_TERMS.leadNote}`]],
+    },
+    "packaging-distributors": {
+      route: "/who-we-serve/packaging-distributors/",
+      seoTitle: "Coated Base Paper & Food Paper for Distributors | LANGMAI",
+      meta: "For packaging importers and distributors: build a clear coated-paper and food-paper portfolio with sample, document and order controls.",
+      eyebrow: "For packaging importers and distributors",
+      title: "Build a Clear Coated-Paper and Food-Paper Portfolio",
+      description: "For importers and distributors serving converters, bakeries, foodservice channels and private-label brands with a controlled product and document set.",
+      image: "stock-coated-paper-inspection.webp",
+      visual: "PD",
+      alt: "Representative paper inspection image, not a LANGMAI factory photo",
+      imageNote: "Representative paper inspection image · not a LANGMAI factory photo",
+      sampleLabel: "Request a Portfolio Review",
+      trust: ["Two coated-paper routes", "Core food-paper portfolio", "Custom samples", "Product-level documents"],
+      challenges: [
+        ["Channel Fit", "Keep coated base paper for converters separate from finished food-paper products for foodservice and retail buyers."],
+        ["Portfolio Control", "Use approved reference specifications and custom requirements without publishing unverified stock or performance claims."],
+        ["Evidence Review", "Match available reports and declarations to the exact product, construction and destination market."],
+        ["Order Planning", "For coated base paper, plan around a typical 5 t MOQ; confirm the sample route, print, packaging, quantity-based lead time and documents per item."],
+      ],
+      products: [
+        ["Water-Based Coated Paper", "/products/water-based-coated-paper/", "", "Base-paper options and 200 m custom samples for converter customers.", "WB"],
+        ["PLA-Coated Paper", "/products/pla-coated-paper/", "", "PLA-coated base-paper options with product-specific test and compostability boundaries.", "PLA"],
+        ["Food-Paper Portfolio", "/products/", "", "Combine baking cups, parchment, wrapping paper and supporting formats for existing channels.", "FP"],
+      ],
+      scenarios: [["Converter Accounts", "Offer coating and grammage reviews supported by custom 200 m sample lengths."], ["Foodservice Accounts", "Coordinate baking, wrapping and printed paper formats with approved pack counts."], ["Private-Label Accounts", "Develop retail packs, artwork and product documentation under one approved specification."], ["New-Market Qualification", "Review required documents, labels and samples before committing to a volume program."]],
+      customization: ["Product and customer-channel mapping", "Reference option and custom specification review", "Custom roll width and ±2 g/m² typical tolerance for coated paper", "Samples by coated-paper length or finished food-paper format", "Coated-paper MOQ generally from 5 t; other lines by project"],
+      complianceTitle: "A Document Set for Each Product, Not a Blanket Claim",
+      complianceText: "Available coated-paper sample reports can support initial review within their scope. Other product claims require separate confirmation against the exact finished item and destination market.",
+      complianceActions: [["Coated-Paper Converting Path", "/applications/coated-paper-converting/"], ["Compare Coating Routes", "/resources/water-based-vs-pla-vs-pe-coated-paper/"]],
+      buyerPaths: [["All Buyer Paths", "/who-we-serve/"], ["For Retail & Private Label", "/who-we-serve/retail-private-label/"]],
+      faq: [["Can coated paper and finished food-paper products be reviewed in one inquiry?", "Yes. Send the target portfolio and identify each product's customer channel, specification, quantity, packing and evidence needs."], ["Is MOQ fixed across the range?", `No. For coated base paper MOQ generally starts at 5 tonnes; for existing food-paper lines it is confirmed by product, specification and order requirements. ${COATED_PAPER_TERMS.leadNote}`], ["Can the supplier identity be kept confidential?", "Public product pages do not disclose the upstream supplier. Document review is handled within the buyer qualification process."]],
+    },
+    "retail-private-label": {
+      route: "/who-we-serve/retail-private-label/",
+      seoTitle: "Private-Label Food Paper Packaging | LANGMAI",
+      meta: "For retail and brand buyers: develop private-label baking cups, parchment, printed food paper and retail packs with approved samples and documents.",
+      eyebrow: "For retail and private-label buyers",
+      title: "Develop the Pack, Artwork and Food-Paper SKU Together",
+      description: "For retailers and brand owners coordinating baking cups, parchment, printed food paper, pack count, artwork, labeling and product-specific evidence before a private-label launch.",
+      image: "real-cake-cups-assortment.jpg",
+      visual: "RL",
+      alt: "Assorted LANGMAI paper baking cups for private-label food-paper programs",
+      imageNote: "LANGMAI product example · private-label food paper",
+      sampleLabel: "Request a Private-Label Pack Review",
+      trust: ["Baking cups & parchment", "Printed food paper", "Retail pack development", "Sample approval"],
+      challenges: [
+        ["Consumer Use", "Define the food, size, temperature, contact conditions and format before approving a retail SKU."],
+        ["Brand Presentation", "Coordinate artwork, colors, print coverage, paper surface and shelf presentation."],
+        ["Pack Configuration", "Confirm pack count, label, barcode, retail presentation and master carton instead of assuming a standard pack."],
+        ["Claims Approval", "Review food-contact, PFAS-related and sourcing wording for the exact finished product and destination market."],
+      ],
+      products: [
+        ["Cake Cups & Baking Cups", "/products/cake-cups/", "", "Standard and custom printed baking cups for retail and bakery assortments.", "BC"],
+        ["Baking Parchment Paper", "/products/baking-parchment-paper/", "", "Sheets, rolls and pre-cut formats with custom pack and artwork review.", "BP"],
+        ["Custom OEM Process", "/custom-oem/", "", "Coordinate artwork, material, samples, inspection and export packing as one approval path.", "OEM"],
+      ],
+      scenarios: [["Retail Baking Assortments", "Confirm cup sizes, colors, print, pack count and display requirements."], ["Household Baking Paper", "Define sheet or roll dimensions, grease and release performance, packaging and instructions."], ["Private-Label Launch", "Approve a representative product and packaging sample before volume production."], ["Multi-Market Retail", "Review evidence, artwork and labels separately for each destination instead of reusing one universal claim."]],
+      customization: ["Product type, use and reference size", "Paper construction, print colors and artwork", "Pack count, labels and master cartons", "Approved samples and acceptance criteria", "MOQ and lead time by confirmed project"],
+      complianceTitle: "Match Documents to the Finished Food-Paper SKU",
+      complianceText: "Food-contact, PFAS-related and sourcing documents should be reviewed against the exact paper, coating, ink, print and finished packaging used for the retail product.",
+      complianceActions: [["Review Custom OEM", "/custom-oem/"], ["Request Product-Specific Documents", "#application-quote"]],
+      buyerPaths: [["All Buyer Paths", "/who-we-serve/"], ["For Packaging Distributors", "/who-we-serve/packaging-distributors/"]],
+      faq: [["Can retail packaging be customized?", "Pack count, artwork, labels and cartons can be reviewed for the selected food-paper product, but every detail must be confirmed before quotation and production."], ["Are coated-paper samples supplied by length?", "Yes. A 200 m coated-paper sample can be provided in the requested specification after construction, width and shipment details are confirmed."], ["Can we use one document for every private-label SKU?", "No. Document scope should be checked against the exact material, ink, construction, intended use and destination market."]],
+    },
   };
   const page = pages[type];
   const content = `<section class="industry-application-hero">
     <div><p class="eyebrow">${page.eyebrow}</p><h1>${page.title}</h1><p>${page.description}</p><div class="application-trust">${page.trust.map((item) => `<span>${esc(item)}</span>`).join("")}</div><div class="hero-actions"><a class="button primary" href="#application-quote">${page.sampleLabel}</a><a class="button secondary" href="/inquiry/">Talk to a Packaging Expert</a></div></div>
-    <div class="industry-hero-image"><img src="/assets/${page.image}" width="1200" height="800" fetchpriority="high" decoding="async" alt="${page.alt}"><span>Application-led product selection</span></div>
+    <div class="industry-hero-image">${page.image ? `<img src="/assets/${page.image}" width="1200" height="800" fetchpriority="high" decoding="async" alt="${page.alt}">` : technicalVisual(page.visual, page.title, page.eyebrow)}<span>${esc(page.imageNote || "Application-led product selection")}</span></div>
   </section>
   <section class="section industry-challenges"><div class="section-heading"><p class="eyebrow">Industry challenges</p><h2>Turn Operating Requirements into a Clear Packaging Specification</h2><p>Good packaging is not selected by appearance alone. Product use, performance, brand presentation and supply controls must be approved together.</p></div><div class="industry-challenge-grid">${page.challenges.map(([title, text], index) => `<article><span>0${index + 1}</span><h3>${title}</h3><p>${text}</p></article>`).join("")}</div></section>
-  <section class="section industry-products"><div class="section-heading"><p class="eyebrow">Complete solutions</p><h2>Relevant Products for This Application</h2><p>Open a product page for technical detail, or send one combined application brief for coordinated sampling.</p></div><div class="industry-product-grid">${page.products.map(([title, href, image, text], index) => `<a href="${href}"><img src="/assets/${image}" loading="lazy" decoding="async" alt="${esc(title)} for ${esc(page.eyebrow)}"><div><span>0${index + 1}</span><h3>${esc(title)}</h3><p>${esc(text)}</p><strong>Explore solution →</strong></div></a>`).join("")}</div></section>
+  <section class="section industry-products"><div class="section-heading"><p class="eyebrow">Complete solutions</p><h2>Relevant Products for This Application</h2><p>Open a product page for technical detail, or send one combined application brief for coordinated sampling.</p></div><div class="industry-product-grid">${page.products.map(([title, href, image, text, visual], index) => `<a href="${href}">${image ? `<img src="/assets/${image}" loading="lazy" decoding="async" alt="${esc(title)} for ${esc(page.eyebrow)}">` : technicalVisual(visual, title, "Open the product or selection path")}<div><span>0${index + 1}</span><h3>${esc(title)}</h3><p>${esc(text)}</p><strong>Explore solution →</strong></div></a>`).join("")}</div></section>
   <section class="section industry-scenarios"><div class="section-heading"><p class="eyebrow">Business scenarios</p><h2>Designed for Different Operating Models</h2></div><div class="industry-scenario-grid">${page.scenarios.map(([title, text]) => `<article><h3>${esc(title)}</h3><p>${esc(text)}</p></article>`).join("")}</div></section>
+  ${page.buyerPaths ? `<section class="section industry-buyer-paths"><div><p class="eyebrow">Related buyer paths</p><h2>Continue by customer type or application</h2></div><div class="link-grid">${page.buyerPaths.map(([label, href]) => `<a href="${href}">${esc(label)}</a>`).join("")}</div></section>` : ""}
   <section class="section industry-customization"><div class="industry-custom-copy"><p class="eyebrow">Custom OEM</p><h2>Build the Packaging Around Your Brand and Workflow</h2><p>LANGMAI connects product selection, artwork, sampling, production, inspection and delivery through one approved specification.</p><a class="button secondary" href="/custom-oem/">Review the Five-Step OEM Process</a></div><div class="industry-custom-list">${page.customization.map((item, index) => `<div><span>0${index + 1}</span><p>${esc(item)}</p></div>`).join("")}</div></section>
-  <section class="section industry-compliance"><div><p class="eyebrow">Food safety & sustainability</p><h2>${page.complianceTitle}</h2><p>${page.complianceText}</p><div class="hero-actions"><a class="button secondary" href="/compliance/">Visit Compliance Center</a><a class="button secondary" href="/factory-certificates/">View Document Previews</a></div></div><div class="industry-evidence"><h3>Confirm before approval</h3><ul class="check-list"><li>Exact product, material and finished construction</li><li>Food or beverage and real use conditions</li><li>Print, packaging and destination market</li><li>Required declarations, tests or sourcing records</li><li>Approved sample and repeat-order change control</li></ul></div></section>
+  <section class="section industry-compliance"><div><p class="eyebrow">Food safety & sustainability</p><h2>${page.complianceTitle}</h2><p>${page.complianceText}</p><div class="hero-actions">${(page.complianceActions || [["Visit Compliance Center", "/compliance/"], ["View Document Previews", "/factory-certificates/"]]).map(([label, href]) => `<a class="button secondary" href="${href}">${esc(label)}</a>`).join("")}</div></div><div class="industry-evidence"><h3>Confirm before approval</h3><ul class="check-list"><li>Exact product, material and finished construction</li><li>Food or beverage and real use conditions</li><li>Print, packaging and destination market</li><li>Required declarations, tests or sourcing records</li><li>Approved sample and repeat-order change control</li></ul></div></section>
   <section class="section industry-why"><div class="section-heading"><p class="eyebrow">Why LANGMAI</p><h2>A Practical Manufacturing Partner for Global Buyers</h2></div><div class="industry-why-grid"><article><h3>Professional Manufacturing</h3><p>Material, converting and packing are aligned to an approved product specification.</p></article><article><h3>Flexible OEM</h3><p>Sizes, artwork, samples and packing can be developed for the target channel.</p></article><article><h3>Quality Control</h3><p>Inspection points can cover dimensions, appearance, print, pack count and shipment preparation.</p></article><article><h3>Global Service</h3><p>Destination, documents, carton planning and buyer communication are reviewed before production.</p></article></div></section>
   <section class="section industry-quote" id="application-quote"><div><p class="eyebrow">Sample & inquiry</p><h2>Share the Conditions That Affect Product Fit</h2><p>Include the food or beverage, dimensions, use conditions, artwork, packing, destination, required documents and estimated quantity.</p></div>${leadForm(page.title)}</section>
   <section class="section faq"><p class="eyebrow">FAQ</p><h2>${esc(page.eyebrow)} FAQ</h2>${page.faq.map(([question, answer]) => `<details><summary>${esc(question)}</summary><p>${esc(answer)}</p></details>`).join("")}</section>
@@ -1925,23 +2277,49 @@ function applicationsPage() {
     ["Bakery Packaging", "/applications/bakery/", "ai-cake-cups-premium.jpg", "Cake cups, cupcake liners, baking paper and custom bakery packaging for artisan bakeries, chains, dessert brands and food manufacturers.", ["Cake cups", "Baking paper", "Custom OEM"]],
     ["Cafe Packaging", "/applications/cafe/", "banner-paper-straws-1448.webp", "Straight and bendable paper straws, bakery cups and greaseproof paper for coffee shops, cafe chains and beverage brands.", ["Paper straws", "Cafe bakery cups", "Greaseproof paper"]],
     ["Food Service Packaging", "/applications/food-service/", "food-wrap-burger.webp", "Greaseproof sheets, burger paper and food wrapping formats for restaurants, takeaway brands, chains and food manufacturers.", ["Greaseproof paper", "Burger wrapping", "Food wrapping"]],
+    ["Coated-Paper Converting", "/applications/coated-paper-converting/", "", "Water-based and PLA-coated base paper selected around converting equipment, food use, sealing, print and product evidence.", ["Two coating routes", "±2 g/m² typical tolerance", "5 t typical MOQ"], "CP"],
   ];
   const content = `<section class="applications-hub-hero">
     <p class="eyebrow">Packaging applications</p>
     <h1>Food Paper Packaging Solutions Built Around Your Industry</h1>
-    <p>Start with the way the packaging will be used. LANGMAI connects bakery, cafe and foodservice requirements with the right paper construction, format, OEM process and buyer evidence.</p>
+    <p>Start with the way the packaging will be used or converted. LANGMAI connects bakery, cafe, foodservice and coated-paper converting requirements with the right construction, format, sample and buyer evidence.</p>
     <div class="hero-actions"><a class="button primary" href="#application-paths">Explore Industry Solutions</a><a class="button secondary" href="/inquiry/">Request Relevant Samples</a></div>
   </section>
   <section class="section applications-hub-intro"><div><p class="eyebrow">Why application-led sourcing</p><h2>One Paper Product Can Perform Differently in Every Use</h2></div><p>Food, beverage, temperature, grease, contact time, equipment and selling format affect the final specification. These industry paths help buyers reach the relevant products and prepare a useful sample request faster.</p></section>
-  <section class="section applications-hub-grid" id="application-paths">${applications.map(([title, href, image, text, products], index) => `<a href="${href}" class="applications-hub-card"><img src="/assets/${image}" loading="${index === 0 ? "eager" : "lazy"}" decoding="async" alt="${esc(title)} solution from LANGMAI"><div><span>0${index + 1}</span><h2>${esc(title)}</h2><p>${esc(text)}</p><ul>${products.map((item) => `<li>${esc(item)}</li>`).join("")}</ul><strong>Explore ${esc(title)} →</strong></div></a>`).join("")}</section>
-  <section class="section application-conversion-flow"><div class="section-heading"><p class="eyebrow">From use case to approved order</p><h2>A Clear Path for B2B Packaging Buyers</h2></div><ol><li><span>01</span><h3>Choose an industry</h3><p>Start from the bakery, cafe or foodservice application.</p></li><li><span>02</span><h3>Review relevant products</h3><p>Compare formats that fit the food, beverage and workflow.</p></li><li><span>03</span><h3>Define the specification</h3><p>Confirm dimensions, performance, artwork, packing and evidence.</p></li><li><span>04</span><h3>Request samples</h3><p>Approve a representative product before bulk production.</p></li></ol></section>
+  <section class="section applications-hub-grid" id="application-paths">${applications.map(([title, href, image, text, products, visual], index) => `<a href="${href}" class="applications-hub-card">${image ? `<img src="/assets/${image}" loading="${index === 0 ? "eager" : "lazy"}" decoding="async" alt="${esc(title)} solution from LANGMAI">` : technicalVisual(visual, title, "Application-led product and evidence review")}<div><span>0${index + 1}</span><h2>${esc(title)}</h2><p>${esc(text)}</p><ul>${products.map((item) => `<li>${esc(item)}</li>`).join("")}</ul><strong>Explore ${esc(title)} →</strong></div></a>`).join("")}</section>
+  <section class="section application-conversion-flow"><div class="section-heading"><p class="eyebrow">From use case to approved order</p><h2>A Clear Path for B2B Packaging Buyers</h2></div><ol><li><span>01</span><h3>Choose an application</h3><p>Start from bakery, cafe, foodservice or coated-paper converting.</p></li><li><span>02</span><h3>Review relevant products</h3><p>Compare formats that fit the food, beverage and workflow.</p></li><li><span>03</span><h3>Define the specification</h3><p>Confirm dimensions, performance, artwork, packing and evidence.</p></li><li><span>04</span><h3>Request samples</h3><p>Approve a representative product before bulk production.</p></li></ol></section>
   <section class="section applications-hub-links"><div><p class="eyebrow">Buyer support</p><h2>Continue from Application to Approval</h2></div><div class="link-grid"><a href="/products/">Browse All Products</a><a href="/custom-oem/">Review Custom OEM</a><a href="/compliance/">Visit Compliance Center</a><a href="/inquiry/">Request Samples & Quote</a></div>
   </section>
   ${ctaBand("Tell us the application, destination and expected order")}`;
   return layout({
     route: "/applications/",
-    title: "Food Paper Packaging Applications | Bakery, Cafe & Food Service",
-    description: "Explore LANGMAI bakery, cafe and foodservice paper packaging solutions, with relevant products, custom OEM support, compliance review and sample inquiry paths.",
+    title: "Packaging Applications | Bakery, Food Service & Coated Paper",
+    description: "Explore LANGMAI bakery, cafe, foodservice and coated-paper converting solutions with relevant products, samples and evidence review.",
+    content,
+    bodyClass: "applications-hub-page",
+  });
+}
+
+function whoWeServePage() {
+  const buyers = [
+    ["Paper Converters", "/who-we-serve/paper-converters/", "PC", "For cup, bowl, food-container and paper-packaging converters comparing coating, grammage, roll dimensions, converting performance and repeat-order control.", ["Water-based coated paper", "PLA-coated paper", "200 m custom samples"]],
+    ["Packaging Distributors", "/who-we-serve/packaging-distributors/", "PD", "For importers and distributors building a coated-paper and finished food-paper portfolio for converter, foodservice and private-label channels.", ["Two coated-paper routes", "Core food-paper portfolio", "Product-level documents"]],
+    ["Retail & Private Label", "/who-we-serve/retail-private-label/", "RL", "For retail and brand buyers coordinating baking cups, parchment, printed food paper, artwork, pack count, labeling and exact product evidence.", ["Private-label food paper", "Print and pack review", "Sample approval"]],
+  ];
+  const content = `<section class="applications-hub-hero">
+    <p class="eyebrow">Who we serve</p><h1>Packaging Sourcing Paths Built Around Your Buying Role</h1>
+    <p>Start with your customer channel and approval responsibilities. LANGMAI connects paper converters, packaging distributors and retail buyers with relevant products, application reviews, samples and evidence boundaries.</p>
+    <div class="hero-actions"><a class="button primary" href="#buyer-paths">Choose Your Buyer Path</a><a class="button secondary" href="/products/#coated-paper">Explore Coated Paper</a></div>
+  </section>
+  <section class="section applications-hub-intro"><div><p class="eyebrow">Three distinct buying journeys</p><h2>The Same Product Range Requires Different Approval Questions</h2></div><p>Converters need grade and machine-fit review. Distributors need a coherent portfolio and clear product boundaries. Retail buyers need private-label artwork, pack and label approval. Each path keeps those decisions separate.</p></section>
+  <section class="section applications-hub-grid" id="buyer-paths">${buyers.map(([title, href, visual, text, products], index) => `<a href="${href}" class="applications-hub-card">${technicalVisual(visual, title, "Buyer-specific product and evidence path")}<div><span>0${index + 1}</span><h2>${esc(title)}</h2><p>${esc(text)}</p><ul>${products.map((item) => `<li>${esc(item)}</li>`).join("")}</ul><strong>Explore ${esc(title)} →</strong></div></a>`).join("")}</section>
+  <section class="section application-conversion-flow"><div class="section-heading"><p class="eyebrow">From buyer brief to approval</p><h2>A Clear Route for Each Customer Type</h2></div><ol><li><span>01</span><h3>Choose your role</h3><p>Identify whether you convert paper, distribute packaging or buy for retail.</p></li><li><span>02</span><h3>Review relevant products</h3><p>Open only the product and application paths relevant to your customers.</p></li><li><span>03</span><h3>Arrange samples and evidence</h3><p>Use custom 200 m coated-paper samples or approved food-paper samples with document review.</p></li><li><span>04</span><h3>Confirm commercial terms</h3><p>Confirm MOQ, specification, packing, lead time and delivery in the written quotation.</p></li></ol></section>
+  <section class="section applications-hub-links"><div><p class="eyebrow">Related applications</p><h2>Continue from Buyer Role to Product Decision</h2></div><div class="link-grid"><a href="/applications/coated-paper-converting/">Coated-Paper Converting</a><a href="/resources/water-based-vs-pla-vs-pe-coated-paper/">Coated-Paper Comparison Guide</a><a href="/products/">Browse All Products</a><a href="/inquiry/">Send a Buyer Brief</a></div></section>
+  ${ctaBand("Tell us your customer type, target product and destination market")}`;
+  return layout({
+    route: "/who-we-serve/",
+    title: "Who We Serve | Converters, Distributors & Retail Buyers | LANGMAI",
+    description: "LANGMAI buyer paths for paper converters, packaging distributors and retail private-label buyers sourcing coated base paper and food-paper packaging.",
     content,
     bodyClass: "applications-hub-page",
   });
@@ -2148,8 +2526,8 @@ function resourcesIndex() {
   const content = `<section class="resources-hero">
     <div class="resources-hero-inner">
       <p class="eyebrow">Resources</p>
-      <h1>Buyer Guides for Cupcake Liners and Baking Paper Products</h1>
-      <p>Practical knowledge on food-grade paper, baking and packaging applications, certifications and supplier selection to help you make better sourcing decisions.</p>
+      <h1>Buyer Guides for Food Paper and Coated Base Paper</h1>
+      <p>Practical knowledge on baking paper, coated base paper, converting, food-contact documents and supplier selection to help you make better sourcing decisions.</p>
     </div>
   </section>
   <section class="section resources-body">
@@ -2179,7 +2557,7 @@ function resourcesIndex() {
   return layout({
     route: "/resources/",
     title: "Resources | LANGMAI Buyer Guides",
-    description: "Buyer guides for custom cupcake liners, food paper packaging certificates, greaseproof paper, PET-coated paper and baking cup selection.",
+    description: "Buyer guides for baking paper, coated base paper, food-contact documents, packaging certificates, converting and custom OEM selection.",
     content,
   });
 }
@@ -2251,8 +2629,22 @@ We review food-contact compliance documents against your exact paper constructio
 </div>
 </aside>`;
 
+const RESOURCE_JOURNEYS = {
+  "water-based-vs-pla-vs-pe-coated-paper": {
+    title: "Turn the comparison into a converting trial",
+    text: "Send the package type, food-contact conditions, grammage, coating side, required roll width, machine process and destination market. Coated-paper samples can be supplied as 200 m in the requested specification after construction and shipping confirmation. Typical grammage tolerance is ±2 g/m², roll width is customizable, MOQ generally starts at 5 t and lead time depends on order quantity.",
+    links: [
+      ["Compare Coated-Paper Products", "/applications/coated-paper-converting/"],
+      ["For Paper Converters", "/who-we-serve/paper-converters/"],
+      ["Request a 200 m Sample Review", "/inquiry/"],
+    ],
+  },
+};
+
 function resourcePage(resource) {
-  const imageBlock = resource.images?.length ? `<figure class="article-image"><img src="${relAsset(resource.images[0])}" alt="${esc(resource.title)}"><figcaption>${esc(resource.title)}</figcaption></figure>` : "";
+  const journey = RESOURCE_JOURNEYS[resource.slug];
+  const showEudrNote = true;
+  const imageBlock = resource.images?.length ? `<figure class="article-image"><img src="${relAsset(resource.images[0])}" alt="${esc(resource.title)}" width="1600" height="900" decoding="async"><figcaption>${esc(resource.title)}</figcaption></figure>` : "";
   const secondImage = resource.images?.[1] ? `<figure class="article-image"><img src="${relAsset(resource.images[1])}" alt="${esc(resource.title)} factory testing and shipment inspection"><figcaption>Factory testing and shipment inspection help B2B buyers reduce order risk.</figcaption></figure>` : "";
   const eudrArticleNote = `<aside class="eudr-article-note" aria-labelledby="eudr-article-note-title">
       <p class="eyebrow">EUDR paper sourcing</p>
@@ -2266,14 +2658,13 @@ function resourcePage(resource) {
     ${resource.date ? `<p class="note">Published ${esc(resource.date)}</p>` : ""}
     <p class="lede">${esc(resource.description)}</p>
     <div class="badge-grid"><span>${esc(resource.intent || "Procurement research")}</span><span>Practical supplier selection</span></div>
-    ${eudrArticleNote}
+    ${showEudrNote ? eudrArticleNote : ""}
     ${imageBlock}
     <div class="article-body">${resource.html.replace("</h2>", `</h2>${secondImage}`)}</div>
     <aside class="article-cta">
-      <h2>Send your product requirements</h2>
-      <p>Share your product type, size, material, quantity, custom print and destination market. LANGMAI can recommend a sample route and quote-ready specification.</p>
-      <a class="button primary" href="/inquiry/">Send Your Requirements</a>
-      <a class="button secondary" href="/products/">View Products</a>
+      <h2>${esc(journey?.title || "Send your product requirements")}</h2>
+      <p>${esc(journey?.text || "Share your product type, size, material, quantity, custom print and destination market. LANGMAI can recommend a sample route and quote-ready specification.")}</p>
+      ${journey ? journey.links.map(([label, href], index) => `<a class="button ${index === journey.links.length - 1 ? "primary" : "secondary"}" href="${href}">${esc(label)}</a>`).join("") : `<a class="button primary" href="/inquiry/">Send Your Requirements</a><a class="button secondary" href="/products/">View Products</a>`}
     </aside>
   </article>` : `<article class="article">
     <p class="eyebrow">Buyer guide</p>
@@ -2375,10 +2766,10 @@ function productSchema(product) {
     "@type": "Product",
     name: product.title,
     description: product.short,
-    image: `${baseUrl}${relAsset(product.image)}`,
+    ...(product.image ? { image: `${baseUrl}${relAsset(product.image)}` } : {}),
     brand: { "@type": "Brand", name: "LANGMAI" },
-    manufacturer: { "@type": "Organization", name: company.name },
-    category: "Food paper packaging",
+    ...(!product.sourced ? { manufacturer: { "@type": "Organization", name: company.name } } : {}),
+    category: product.group === "coated-paper" ? "Coated base paper" : "Food paper packaging",
     material: product.material,
     additionalProperty: product.features.map((f) => ({ "@type": "PropertyValue", name: "Feature", value: f })),
   };
@@ -3069,6 +3460,30 @@ const redesignCss = `
 .home-hero-media{position:absolute;inset:0;height:100%;border-radius:0;box-shadow:none;background:#f6ead8;z-index:0}.home-hero-media img{width:100%;height:100%;object-fit:contain;object-position:center}.home-hero-media:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,248,238,.94) 0%,rgba(255,248,238,.82) 40%,rgba(255,248,238,.2) 72%,rgba(255,248,238,.04) 100%);pointer-events:none}.home-hero-media figcaption{color:#fff;text-shadow:0 2px 14px rgba(27,48,39,.7)}.home-hero-copy{position:relative;z-index:1;max-width:700px;padding:5.3rem 0 4.8rem}.home-hero-copy h1{max-width:700px;font-size:clamp(2.3rem,3.2vw,3.65rem);line-height:1.06;color:#294b3d}.home-hero-copy>p:not(.eyebrow){max-width:650px;color:#4f4a3f}.home-hero-copy .hero-proof span{background:rgba(255,253,248,.82);color:#294b3d;border-color:rgba(69,107,85,.35);box-shadow:0 5px 18px rgba(43,59,49,.08)}
 @media (max-width:900px){.home-hero{display:flex;min-height:0;aspect-ratio:auto;padding:0;flex-direction:column}.home-hero-copy{max-width:100%;padding:3.2rem 1rem 2.6rem;background:#fff8ee}.home-hero-copy h1{font-size:clamp(2.05rem,9vw,2.8rem);line-height:1.08}.home-hero-copy>p:not(.eyebrow){max-width:34rem}.home-hero .hero-proof{max-width:28rem}.home-hero-media{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:16/9;order:2}.home-hero-media img{object-fit:contain;object-position:center}.home-hero-media:after{display:none}.home-hero-media figcaption{font-size:.78rem}}
 .reference-solutions,.reference-process,.reference-projects{background:#fff}.reference-solutions{max-width:none;padding-left:max(1rem,calc((100vw - 1180px)/2));padding-right:max(1rem,calc((100vw - 1180px)/2));}.reference-product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;max-width:1180px;margin:auto}.reference-product-grid a,.reference-case-grid a{display:block;color:var(--ink);text-decoration:none;background:#fff;border:1px solid #e5e0d8;box-shadow:0 8px 24px rgba(36,47,41,.08);transition:transform .2s,box-shadow .2s}.reference-product-grid a:hover,.reference-case-grid a:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(36,47,41,.14)}.reference-product-grid img{display:block;width:100%;aspect-ratio:1.35;object-fit:cover}.reference-product-grid h3,.reference-product-grid p,.reference-product-grid strong{margin-left:1rem;margin-right:1rem}.reference-product-grid h3{margin-top:.9rem;margin-bottom:.25rem;color:#1e2f26}.reference-product-grid p{margin-top:0;color:#6d756d;font-size:.92rem;min-height:2.5em}.reference-product-grid strong{display:block;margin-bottom:1rem;color:#456b55}.reference-story{max-width:none;padding-left:max(1rem,calc((100vw - 1180px)/2));padding-right:max(1rem,calc((100vw - 1180px)/2));background:#f3ece2}.reference-story>div,.reference-story>figure,.reference-factory>div{max-width:580px}.reference-story figure{position:relative;margin:0;overflow:hidden}.reference-story figure img{width:100%;height:380px;object-fit:cover}.reference-story figcaption{position:absolute;left:1rem;bottom:1rem;color:#fff;font-weight:800;text-shadow:0 2px 8px #000}.reference-process{max-width:none;padding-left:max(1rem,calc((100vw - 1180px)/2));padding-right:max(1rem,calc((100vw - 1180px)/2));}.reference-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;max-width:1180px;margin:auto}.reference-steps article{text-align:center}.reference-steps span{display:flex;align-items:center;justify-content:center;width:56px;height:56px;margin:0 auto .65rem;border:2px solid #68816d;border-radius:50%;color:#294b3d;font-weight:900;background:#fff}.reference-steps img{width:112px;height:112px;border-radius:50%;object-fit:cover;border:2px solid #d6d0c7}.reference-steps h3{font-size:1rem;margin:.7rem 0 .35rem}.reference-steps p{font-size:.86rem;color:#6d756d;margin:0}.reference-projects{max-width:none;padding-left:max(1rem,calc((100vw - 1180px)/2));padding-right:max(1rem,calc((100vw - 1180px)/2));}.reference-case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;max-width:1180px;margin:auto}.reference-case-grid img{width:100%;height:220px;object-fit:cover}.reference-case-grid span,.reference-case-grid h3,.reference-case-grid p{display:block;margin-left:1rem;margin-right:1rem}.reference-case-grid span{margin-top:.8rem;color:#607563;font-size:.75rem;font-weight:900}.reference-case-grid h3{margin-top:.35rem;margin-bottom:.3rem}.reference-case-grid p{margin-top:0;color:#6d756d}.reference-factory{max-width:none;padding-left:max(1rem,calc((100vw - 1180px)/2));padding-right:max(1rem,calc((100vw - 1180px)/2));background:#f3ece2}.reference-factory .factory-photo-stack{max-width:580px}.reference-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0}.reference-stats strong{font-size:1.2rem;color:#294b3d}.reference-stats small{display:block;margin-top:.3rem;color:#6d756d;font-size:.76rem;font-weight:500}@media(max-width:900px){.reference-product-grid,.reference-steps,.reference-case-grid{grid-template-columns:1fr 1fr}.reference-story,.reference-factory{grid-template-columns:1fr}.reference-steps{gap:1.5rem}.reference-factory .factory-photo-stack{grid-row:2}.reference-stats{grid-template-columns:1fr}.reference-product-grid img{aspect-ratio:1.5}.reference-case-grid img{height:180px}}@media(max-width:560px){.reference-product-grid,.reference-steps,.reference-case-grid{grid-template-columns:1fr}.reference-story figure img{height:280px}}
+.technical-visual{position:relative;display:flex;flex-direction:column;justify-content:flex-end;gap:.55rem;min-height:240px;padding:1.6rem;overflow:hidden;background:linear-gradient(145deg,#f5efe3,#e4eee7);color:#294b3d;border:1px solid rgba(69,107,85,.18);isolation:isolate}
+.technical-visual:before{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(69,107,85,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(69,107,85,.08) 1px,transparent 1px);background-size:32px 32px;mask-image:linear-gradient(to bottom,#000,transparent 85%)}
+.technical-visual:after{content:"";position:absolute;width:180px;height:180px;right:-45px;top:-55px;border:32px solid rgba(164,90,50,.12);border-radius:50%;z-index:-1}
+.technical-visual>span{align-self:flex-start;padding:.35rem .55rem;background:#294b3d;color:#fff;font-size:.74rem;font-weight:900;letter-spacing:.12em}
+.technical-visual>strong{max-width:430px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.4rem,2.4vw,2.35rem);line-height:1.08}
+.technical-visual>small{max-width:420px;color:#617064;font-size:.8rem;line-height:1.45}
+.product-card>.technical-visual{width:100%;min-height:0;aspect-ratio:1.35;border:0;border-bottom:1px solid var(--line)}
+.product-card>.technical-visual>strong{font-size:1.35rem}.product-hero>.technical-visual{min-height:430px;border-radius:16px;box-shadow:0 25px 60px rgba(43,59,49,.12)}
+.product-hero>.representative-product-image{margin:0;overflow:hidden;border-radius:16px;background:#fff;box-shadow:0 25px 60px rgba(43,59,49,.12)}
+.product-hero>.representative-product-image img{display:block;width:100%;height:430px;object-fit:cover}
+.product-hero>.representative-product-image figcaption{padding:.7rem .9rem;color:#617064;background:#fff;font-size:.74rem;line-height:1.45}
+.product-hero>.representative-product-image figcaption a{color:#456b55;text-decoration:underline}
+@media (max-width:900px){.product-hero>.representative-product-image img{height:auto;max-height:330px;aspect-ratio:3/2;object-fit:cover}}
+.process-banner-steps{display:none}
+@media (max-width:900px){.process-banner-steps{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin:0;padding:.9rem 1.1rem;list-style:none;counter-reset:pbstep;background:#1f3a31;color:#fff}.process-banner-steps li{counter-increment:pbstep;font-size:.82rem;font-weight:750;line-height:1.35}.process-banner-steps li:before{content:"0" counter(pbstep);display:block;color:#d8a85c;font-size:.72rem;letter-spacing:.06em}}
+.process-banner-section{padding-top:0}.process-banner{margin:0;overflow:hidden;border-radius:16px;background:#fff;box-shadow:0 25px 60px rgba(43,59,49,.14)}.process-banner picture{display:block}.process-banner img{display:block;width:100%;height:auto}.process-banner figcaption{padding:.8rem 1.1rem;color:#617064;background:#fff;font-size:.78rem;line-height:1.55;border-top:1px solid rgba(217,168,92,.24)}
+.product-card>.representative-card-media{margin:0;position:relative;width:100%;border-bottom:1px solid var(--line)}
+.product-card>.representative-card-media>img{display:block;width:100%;height:240px;object-fit:cover}
+.product-card>.representative-card-media>figcaption{position:absolute;left:.55rem;bottom:.55rem;padding:.3rem .5rem;border-radius:4px;background:rgba(19,32,26,.82);color:#fff;font-size:.68rem;font-weight:750;line-height:1.2;letter-spacing:.01em}
+@media (max-width:900px){.product-card>.representative-card-media>img{height:auto;aspect-ratio:3/2}}
+.sustainable-product-hero{background:linear-gradient(135deg,#f7f2e8,#edf3ee)}.sustainable-overview p{line-height:1.75}.sustainable-specifications{background:#f7f3eb}.product-evidence-panel{background:#eef3ed;border-top:3px solid #6f8b65}.product-evidence-panel .section-heading{max-width:940px}.product-evidence-panel .note{margin-top:1.2rem}.commercial-terms .evidence-grid{margin:0}.sustainable-relationships{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;background:#f7f3eb}.sustainable-relationships h2{margin-top:.3rem}.sustainable-product-page .lead-form{background:#fff}
+.industry-hero-image>.technical-visual{height:100%;min-height:420px;border:0}.industry-product-grid>a>.technical-visual{min-height:0;aspect-ratio:1.8;border:0;border-bottom:1px solid var(--line)}.industry-product-grid>a>.technical-visual>strong{font-size:1.35rem}.industry-buyer-paths{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;background:#f3ecdf}.applications-hub-card>.technical-visual{min-height:0;aspect-ratio:1.65;border:0;border-bottom:1px solid var(--line)}.applications-hub-card>.technical-visual>strong{font-size:1.5rem}
+.reference-product-grid .reference-new-range{grid-column:1/-1;display:grid;grid-template-columns:minmax(280px,.75fr) 1.25fr;align-items:stretch}.reference-new-range>.representative-home-media{margin:0;position:relative;min-width:0;overflow:hidden;background:#fff}.reference-new-range>.representative-home-media>img{display:block;width:100%;height:100%;min-height:220px;object-fit:cover}.reference-new-range>.representative-home-media>figcaption{position:absolute;left:.6rem;bottom:.6rem;padding:.3rem .5rem;border-radius:4px;background:rgba(19,32,26,.82);color:#fff;font-size:.68rem;font-weight:750;line-height:1.2}.reference-new-range>.technical-visual{min-height:220px;border:0;border-right:1px solid var(--line)}.reference-new-range>div{align-self:center;padding:1.5rem}.reference-new-range h3,.reference-new-range p,.reference-new-range strong{margin-left:0;margin-right:0}.reference-new-range p{max-width:680px}
+@media (max-width:900px){.product-hero>.technical-visual{min-height:320px}.sustainable-relationships,.industry-buyer-paths{grid-template-columns:1fr}.industry-hero-image>.technical-visual{min-height:300px}.reference-product-grid .reference-new-range{grid-template-columns:1fr}.reference-new-range>.technical-visual{border-right:0;border-bottom:1px solid var(--line)}}
 `;
 
 writePage("/", homePage());
@@ -3080,6 +3495,11 @@ writePage("/applications/", applicationsPage());
 writePage("/applications/bakery/", applicationLandingPage("bakery"));
 writePage("/applications/cafe/", applicationLandingPage("cafe"));
 writePage("/applications/food-service/", applicationLandingPage("food-service"));
+writePage("/applications/coated-paper-converting/", applicationLandingPage("coated-paper-converting"));
+writePage("/who-we-serve/", whoWeServePage());
+writePage("/who-we-serve/paper-converters/", applicationLandingPage("paper-converters"));
+writePage("/who-we-serve/packaging-distributors/", applicationLandingPage("packaging-distributors"));
+writePage("/who-we-serve/retail-private-label/", applicationLandingPage("retail-private-label"));
 writePage("/cases/", casesPage());
 writePage("/customization/", customizationPage());
 writePage("/custom-oem/", customOemPage());
