@@ -326,10 +326,10 @@ const products = [
     seoTitle: "Interfolded Deli Paper Wholesale | Dry Wax, 500/Box | LANGMAI",
     short: "Interfolded deli paper made from 23 gsm or 30 gsm base paper with 5 gsm dry wax, five popular sheet sizes and 500 sheets per box.",
     meta: "Wholesale interfolded deli paper with dry wax coating. Choose 23 gsm or 30 gsm base paper with 5 gsm wax, five sheet sizes and 500 sheets per box.",
-    image: "dry-waxed-paper-sheets.webp",
-    imageAlt: "Interfolded dry wax deli paper sheets dispensed from a 500-sheet retail box",
-    imageWidth: "1280",
-    imageHeight: "720",
+    image: "dry-wax-paper/interfolded-deli-paper-demo-poster.webp",
+    imageAlt: "LANGMAI interfolded dry wax deli paper sheets in a 500-sheet dispenser box",
+    imageWidth: "1168",
+    imageHeight: "640",
     keywords: "interfolded deli paper, dry wax paper, dry waxed paper sheets, dry wax deli paper, 500 sheets box, 23 gsm wax paper, 30 gsm wax paper",
     material: "Food-contact base paper with a dry-wax coating: 23 gsm base paper + 5 gsm wax, or 30 gsm base paper + 5 gsm wax",
     features: ["23 gsm paper + 5 gsm wax", "30 gsm paper + 5 gsm wax", "Five popular sheet sizes", "500 sheets per box", "Interfolded dispensing", "Private-label packaging"],
@@ -1346,7 +1346,7 @@ function foodWrappingProductPage(product) {
   <section class="section dry-wax-media" aria-labelledby="dry-wax-media-title">
     <div class="section-heading"><p class="eyebrow">Product video</p><h2 id="dry-wax-media-title">See the LANGMAI interfolded dispenser box in use</h2><p>Watch the 10-second demonstration to review the paper appearance and smooth sheet dispensing before requesting a sample.</p></div>
     <div class="dry-wax-video-grid">
-      <figure><video controls muted playsinline preload="none" poster="/assets/dry-wax-paper/interfolded-deli-paper-demo-poster.webp" aria-label="LANGMAI interfolded dry wax deli paper dispensing demonstration"><source src="/assets/dry-wax-paper/interfolded-deli-paper-demo.mp4" type="video/mp4">Your browser does not support the video tag.</video><figcaption>LANGMAI interfolded deli paper · 500-sheet dispenser box</figcaption></figure>
+      <figure><video controls muted playsinline preload="metadata" poster="/assets/dry-wax-paper/interfolded-deli-paper-demo-poster.webp?v=20261112-2" aria-label="LANGMAI interfolded dry wax deli paper dispensing demonstration"><source src="/assets/dry-wax-paper/interfolded-deli-paper-demo.mp4?v=20261112-2" type="video/mp4">Your browser does not support the video tag.</video><figcaption>LANGMAI interfolded deli paper · 500-sheet dispenser box</figcaption></figure>
     </div>
   </section>` : ""}
   ${isWax ? `<section class="section wax-comparison"><div class="section-heading"><p class="eyebrow">Material selection</p><h2>Wax Paper vs. Baking Parchment</h2></div><div class="two-col"><article><h3>Wax paper</h3><p>Wax paper is generally used for wrapping, separation and moisture resistance.</p></article><article><h3>Baking parchment</h3><p>Baking parchment is designed for nonstick baking and higher-temperature cooking applications.</p></article></div><p class="note"><strong>Use reminder:</strong> Wax paper is intended for food wrapping, handling and separation applications. It should not be used as a substitute for baking parchment in direct high-temperature oven applications unless the selected specification has been confirmed for that use.</p><a class="text-link" href="/products/baking-parchment-paper/">Review baking parchment</a></section>` : ""}
