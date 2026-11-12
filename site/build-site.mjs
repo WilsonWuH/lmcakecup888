@@ -941,28 +941,35 @@ function megaNavItem(label, href, items, ctaLabel) {
 function siteFooter() {
   return `<footer class="site-footer">
   <div class="footer-grid">
-    <div>
-      <strong>${company.name}</strong>
-      <p>${company.brand} manufactures baking paper and food paper packaging for importers, distributors, foodservice operators and private-label brands.</p>
+    <div class="footer-brand">
+      <a class="footer-wordmark" href="/" aria-label="LANGMAI home">${company.brand}</a>
+      <p class="footer-company">${company.name}</p>
+      <p>Baking paper and food paper packaging for importers, distributors, foodservice operators and private-label brands.</p>
+      <div class="footer-actions"><a class="footer-action-primary" href="/inquiry/">Request a Quote</a><a class="footer-action-secondary" href="/inquiry/#sample">Get Free Sample</a></div>
     </div>
-    <div>
-      <h2>Start Here</h2>
-      <a href="/inquiry/">Request a Quote</a>
-      <a href="/inquiry/#sample">Get Free Sample</a>
-      <a href="/products/food-wrapping-paper/">Explore Food Wrapping Paper</a>
+    <nav class="footer-nav" aria-label="Footer product links">
+      <h2>Products</h2>
+      <a href="/products/baking-parchment-paper/">Baking Parchment Paper</a>
+      <a href="/products/interfolded-deli-paper/">Interfolded Deli Paper</a>
+      <a href="/products/food-wrapping-paper/">Food Wrapping Paper</a>
       <a href="/products/#coated-paper">Coated Base Paper</a>
+    </nav>
+    <nav class="footer-nav" aria-label="Footer company links">
+      <h2>Company</h2>
       <a href="/who-we-serve/">Who We Serve</a>
       <a href="/custom-oem/">Custom Printing & OEM</a>
       <a href="/factory-certificates/">Factory & Quality</a>
-      <a href="/assets/catalog-preview-clean.jpg" target="_blank" rel="noopener">View Catalogue Preview</a>
-    </div>
-    <div>
-      <h2>Factory Facts</h2>
-      <p>Founded in ${company.founded}. ${company.plant} manufacturing site. ${company.team}. Document review is product-, scope- and validity-specific; ask for the applicable ${company.certificates.join(", ")} or FDA-related support documents.</p>
-      <p>Contact: ${company.contact}<br>Email: ${company.email}<br>WhatsApp: ${company.whatsapp}</p>
+      <a href="/resources/">Resource Center</a>
+      <a href="/assets/catalog-preview-clean.jpg" target="_blank" rel="noopener">Catalogue Preview</a>
+    </nav>
+    <div class="footer-contact">
+      <h2>Contact</h2>
+      <p>Since ${company.founded} · ${company.city}<br>${company.plant} manufacturing site · ${company.team}</p>
+      <address><span>${company.contact}</span><a href="mailto:${company.email}">${company.email}</a><a href="https://wa.me/${company.whatsapp.replace(/[^\d]/g, "")}" target="_blank" rel="noopener">WhatsApp ${company.whatsapp}</a></address>
       ${socialIconLinks("footer-social")}
     </div>
   </div>
+  <div class="footer-bottom"><span>© ${new Date().getFullYear()} ${company.name} All rights reserved.</span><span>Baking paper · Food wrapping · OEM packaging</span></div>
 </footer>`;
 }
 
@@ -3126,6 +3133,27 @@ const productTemplateCss = `
 .video-frame{position:relative;max-width:420px;margin:auto;padding:12px;border-radius:14px;background:linear-gradient(145deg,#050608,#1e1705 62%,#070707);box-shadow:0 26px 80px rgba(0,0,0,.28),0 0 0 1px rgba(255,207,51,.26)}
 .video-frame:before{content:"";position:absolute;inset:0;border-radius:14px;background:radial-gradient(circle at 18% 10%,rgba(255,207,51,.26),transparent 34%);pointer-events:none}
 .home-video{position:relative;z-index:1;width:100%;aspect-ratio:9/16;max-height:760px;object-fit:cover;border-radius:10px;background:#000;box-shadow:inset 0 0 0 1px rgba(255,255,255,.16)}
+.site-footer{margin-top:4rem;border-top:1px solid rgba(216,180,90,.28)}
+.footer-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(140px,.8fr) minmax(140px,.8fr) minmax(0,1.15fr);gap:2.5rem;align-items:start;max-width:1180px;margin:auto;padding:3.5rem 1.5rem 2.75rem}
+.footer-grid h2{margin:0 0 1rem;color:#fff;font-family:Inter,Arial,sans-serif;font-size:.78rem;line-height:1.3;letter-spacing:.14em;text-transform:uppercase}
+.site-footer .footer-wordmark{display:inline-block;margin:0;color:#fff;font-family:Georgia,"Times New Roman",serif;font-size:2rem;font-weight:700;line-height:1;letter-spacing:.08em}
+.site-footer .footer-company{margin:.8rem 0 0;color:var(--gold-soft);font-size:.78rem;font-weight:700;line-height:1.5}
+.footer-brand>p:not(.footer-company){max-width:340px;margin:1rem 0 0;color:rgba(255,255,255,.7);font-size:.92rem;line-height:1.75}
+.footer-actions{display:flex;gap:.65rem;flex-wrap:wrap;margin-top:1.35rem}
+.site-footer .footer-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;margin:0;padding:.62rem .9rem;border-radius:6px;font-size:.82rem;font-weight:800;line-height:1.2;transition:background .16s ease,border-color .16s ease,color .16s ease}
+.site-footer .footer-actions .footer-action-primary{background:var(--gold);color:var(--deep)}
+.site-footer .footer-actions .footer-action-primary:hover{background:var(--gold-soft)}
+.site-footer .footer-actions .footer-action-secondary{border:1px solid rgba(255,255,255,.28);color:#fff}
+.site-footer .footer-actions .footer-action-secondary:hover{border-color:var(--gold);color:var(--gold-soft)}
+.site-footer .footer-nav a{display:block;margin:0;padding:.32rem 0;color:rgba(255,255,255,.7);font-size:.9rem;font-weight:500;line-height:1.45;transition:color .16s ease,transform .16s ease}
+.site-footer .footer-nav a:hover{color:#fff;transform:translateX(2px)}
+.footer-contact p{margin:0 0 1rem;font-size:.9rem;line-height:1.75}
+.footer-contact address{font-style:normal}
+.footer-contact address span{display:block;margin-bottom:.45rem;color:rgba(255,255,255,.62);font-size:.82rem}
+.site-footer .footer-contact address a{display:block;margin:.35rem 0;color:#fff;font-size:.9rem;font-weight:650;overflow-wrap:anywhere}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:1rem;max-width:1180px;margin:auto;padding:1.15rem 1.5rem;border-top:1px solid rgba(255,255,255,.13);color:rgba(255,255,255,.55);font-size:.76rem;line-height:1.5}
+@media (max-width:1050px){.footer-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem}.footer-brand{grid-column:1/-1}.footer-brand>p:not(.footer-company){max-width:620px}}
+@media (max-width:700px){.site-footer{margin-top:2.5rem}.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem 1.5rem;padding:2.5rem 1.25rem 2rem}.footer-brand,.footer-contact{grid-column:1/-1}.footer-bottom{align-items:flex-start;flex-direction:column;gap:.35rem;padding:1rem 4.5rem 1rem 1.25rem}}
 .footer-social{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:1rem}
 .footer-social a,.social-float a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;background:linear-gradient(145deg,#050608,#201706);border:1px solid rgba(255,207,51,.38);color:#ffcf33;box-shadow:0 10px 28px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.1);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
 .footer-social a:hover,.social-float a:hover{transform:translateY(-2px) scale(1.06);border-color:#ffcf33;box-shadow:0 16px 36px rgba(255,207,51,.22),0 12px 30px rgba(0,0,0,.26)}
