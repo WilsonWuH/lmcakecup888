@@ -2981,6 +2981,12 @@
       "destination": "/landing/custom-cupcake-liners-manufacturer/",
       "permanent": true
     },
+    {"source":"/products/dry-wax-paper/","destination":"/products/interfolded-deli-paper/","permanent":true},
+    {"source":"/products/dry-waxed-paper-sheets/","destination":"/products/interfolded-deli-paper/","permanent":true},
+    {"source":"/es/products/interfolded-deli-paper/","destination":"/products/interfolded-deli-paper/","permanent":true},
+    {"source":"/ru/products/interfolded-deli-paper/","destination":"/products/interfolded-deli-paper/","permanent":true},
+    {"source":"/ar/products/interfolded-deli-paper/","destination":"/products/interfolded-deli-paper/","permanent":true},
+    {"source":"/pt/products/interfolded-deli-paper/","destination":"/products/interfolded-deli-paper/","permanent":true},
     {"source":"/es/products/water-based-coated-paper/","destination":"/products/water-based-coated-paper/","permanent":true},
     {"source":"/ru/products/water-based-coated-paper/","destination":"/products/water-based-coated-paper/","permanent":true},
     {"source":"/ar/products/water-based-coated-paper/","destination":"/products/water-based-coated-paper/","permanent":true},

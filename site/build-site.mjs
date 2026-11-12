@@ -318,6 +318,27 @@ const products = [
     status: "confirmed-with-usage-disclaimer",
   },
   {
+    slug: "interfolded-deli-paper",
+    group: "food-wrapping",
+    template: "food-wrapping",
+    title: "Interfolded Deli Paper for Food Wrapping",
+    cardTitle: "Interfolded Deli Paper",
+    seoTitle: "Interfolded Deli Paper Wholesale | Dry Wax, 500/Box | LANGMAI",
+    short: "Interfolded deli paper made from 23 gsm or 30 gsm base paper with 5 gsm dry wax, five popular sheet sizes and 500 sheets per box.",
+    meta: "Wholesale interfolded deli paper with dry wax coating. Choose 23 gsm or 30 gsm base paper with 5 gsm wax, five sheet sizes and 500 sheets per box.",
+    image: "dry-waxed-paper-sheets.webp",
+    imageAlt: "Interfolded dry wax deli paper sheets dispensed from a 500-sheet retail box",
+    imageWidth: "1280",
+    imageHeight: "720",
+    keywords: "interfolded deli paper, dry wax paper, dry waxed paper sheets, dry wax deli paper, 500 sheets box, 23 gsm wax paper, 30 gsm wax paper",
+    material: "Food-contact base paper with a dry-wax coating: 23 gsm base paper + 5 gsm wax, or 30 gsm base paper + 5 gsm wax",
+    features: ["23 gsm paper + 5 gsm wax", "30 gsm paper + 5 gsm wax", "Five popular sheet sizes", "500 sheets per box", "Interfolded dispensing", "Private-label packaging"],
+    formats: ["6 × 10.75 in interfolded sheets", "8 × 10.75 in interfolded sheets", "10 × 10.75 in interfolded sheets", "12 × 10.75 in interfolded sheets", "15 × 10.75 in interfolded sheets", "500 sheets per dispenser box"],
+    applications: ["Deli and sandwich wrapping", "Bakery handling and separation", "Burger and patty separation", "Cheese and cold-food wrapping", "Food basket and tray liners", "Foodservice dispenser boxes"],
+    comparison: true,
+    status: "confirmed-with-usage-disclaimer",
+  },
+  {
     slug: "butcher-paper",
     group: "food-wrapping",
     template: "food-wrapping",
@@ -1202,7 +1223,7 @@ function productsIndex() {
   </section>
   <section class="trust-strip" aria-label="Product range highlights"><span>Bakery paper</span><span>Food wrapping</span><span>Paper straws</span><span>OEM printing</span></section>
   <section class="section" id="baking-paper-products"><div class="section-heading"><p class="eyebrow">Bakery Packaging</p><h2>Cups, liners, parchment and cooking paper</h2><p>Core formats for bakeries, dessert brands, foodservice distributors and private-label retail programs.</p><a class="text-link" href="/products/baking-paper/">Explore all baking paper solutions →</a></div>${productCards(bakingProducts)}</section>
-  <section class="section food-wrapping-range"><div class="section-heading"><p class="eyebrow">Food Wrapping</p><h2>Greaseproof paper for takeaway and service</h2><p>Greaseproof, burger, wax and butcher paper formats selected around the approved food application and print requirement.</p><a class="text-link" href="/products/food-wrapping-paper/">View the food wrapping category →</a></div>${productCards(foodWrappingProducts)}</section>
+  <section class="section food-wrapping-range"><div class="section-heading"><p class="eyebrow">Food Wrapping</p><h2>Greaseproof paper for takeaway and service</h2><p>Greaseproof, burger, wax, dry waxed deli and butcher paper formats selected around the approved food application and print requirement.</p><a class="text-link" href="/products/food-wrapping-paper/">View the food wrapping category →</a></div>${productCards(foodWrappingProducts)}</section>
   <section class="section coated-paper-range" id="coated-paper"><div class="section-heading"><p class="eyebrow">Coated Base Paper</p><h2>Two coating routes for converter-led specifications</h2><p>Compare water-based and PLA-coated base paper by food application, converting equipment, sealing, printing, sample trials and product-level evidence.</p><a class="text-link" href="/who-we-serve/">Choose a path by buyer type →</a></div>${productCards(coatedPaperProducts)}</section>
   <section class="section supporting-products"><div class="section-heading"><p class="eyebrow">Beverage & supporting formats</p><h2>Paper straws and selected paper accessories</h2><p>Straight or flexible bendable paper straws and related paper items for beverage, event and seasonal retail programs.</p></div>${productCards(supportingProducts)}</section>
   ${ctaBand("Need a mixed product program or custom printed set?")}`;
@@ -1215,15 +1236,16 @@ function productsIndex() {
 }
 
 function foodWrappingLeadForm(product) {
+  const isDryWax = product.slug === "interfolded-deli-paper";
   return `<form class="lead-form wrapping-inquiry-form" data-lead-form>
     <input class="hp-field" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
     <label>Email *<input type="email" name="email" placeholder="buyer@example.com" required></label>
     <label>Product type *<input name="product" value="${esc(product.cardTitle || product.title)}" required></label>
     <label>Food application<input name="foodApplication" placeholder="Bakery wrap, burger, deli, meat..."></label>
     <label>Paper color<input name="paperColor" placeholder="White, natural brown, other"></label>
-    <label>Paper grammage<input name="grammage" placeholder="Target gsm or ask us to recommend"></label>
-    <label>Sheet or roll<select name="format"><option value="">Select</option><option>Sheet</option><option>Roll</option><option>Interfolded</option><option>Not sure</option></select></label>
-    <label>Sheet size / roll dimensions<input name="dimensions" placeholder="Sheet L x W or roll width x length"></label>
+    <label>Paper grammage<input name="grammage" ${isDryWax ? 'value="23 gsm or 30 gsm base paper + 5 gsm wax"' : 'placeholder="Target gsm or ask us to recommend"'}></label>
+    <label>Sheet or roll<select name="format"><option value="">Select</option><option>Sheet</option><option>Roll</option><option ${isDryWax ? "selected" : ""}>Interfolded</option><option>Not sure</option></select></label>
+    <label>Sheet size / roll dimensions<input name="dimensions" placeholder="${isDryWax ? "6 / 8 / 10 / 12 / 15 x 10.75 in" : "Sheet L x W or roll width x length"}"></label>
     <label>Printing colors<input name="printingColors" placeholder="Unprinted, 1 color, 2 colors, multicolor"></label>
     <label>Food type<input name="foodType" placeholder="Pastry, fried food, burger, fresh meat..."></label>
     <label>Use temperature<input name="useTemperature" placeholder="Expected minimum / maximum"></label>
@@ -1232,7 +1254,7 @@ function foodWrappingLeadForm(product) {
     <label>PFAS requirement<input name="pfasRequirement" placeholder="Buyer protocol or destination requirement"></label>
     <label>Destination country *<input name="country" placeholder="United States, Germany, UAE..." required></label>
     <label>Order quantity *<input name="quantity" placeholder="Sheets, rolls, cartons or annual forecast" required></label>
-    <label>Retail / master carton requirements<input name="packaging" placeholder="Pack count, dispenser box, labels, cartons..."></label>
+    <label>Retail / master carton requirements<input name="packaging" ${isDryWax ? 'value="500 sheets per box"' : 'placeholder="Pack count, dispenser box, labels, cartons..."'}></label>
     <label>Additional message<textarea name="message" rows="4" placeholder="Artwork, target timing and other requirements"></textarea></label>
     <button class="button primary" type="submit">Request Product Review & Quote</button>
     <p class="form-note" data-form-note>Required: product, destination country, order quantity and email. Technical claims are confirmed against the selected specification.</p>
@@ -1242,7 +1264,7 @@ function foodWrappingLeadForm(product) {
 function foodWrappingCategoryPage() {
   const wrappingProducts = products.filter((product) => product.group === "food-wrapping");
   const faq = [
-    ["Which food wrapping paper formats are available?", "The planned range includes greaseproof paper, burger wrapping paper, wax paper and butcher paper in sheet, roll, printed, interfolded or private-label formats where applicable. The exact construction and supply format are confirmed for each inquiry."],
+    ["Which food wrapping paper formats are available?", "The range includes greaseproof paper, burger wrapping paper, wax paper, dry waxed deli paper and butcher paper in sheet, roll, printed, interfolded or private-label formats where applicable. The exact construction and supply format are confirmed for each inquiry."],
     ["Can food wrapping paper use custom printing?", "Custom printing can be discussed for greaseproof, burger wrapping, wax and butcher paper projects. Artwork, colors, paper grade, ink system, odor expectations and destination-market documents are reviewed before approval."],
     ["Are PFAS-free options available?", "PFAS-free material options can be discussed for applicable constructions. The intended claim and evidence must be matched to the selected paper, coating, print system and finished product."],
     ["Is wax paper suitable for oven baking?", "Wax paper is generally intended for wrapping, handling and separation. It should not replace baking parchment in direct high-temperature oven use unless the selected specification is explicitly confirmed for that application."],
@@ -1252,7 +1274,7 @@ function foodWrappingCategoryPage() {
     <div>
       <p class="eyebrow">Secondary product line</p>
       <h1>Food Wrapping Paper for Bakeries, Restaurants and Foodservice</h1>
-      <p>LANGMAI manufactures greaseproof paper, custom burger wrapping paper, food-grade wax paper and specification-led butcher paper for bakeries, restaurant chains, foodservice distributors and private-label packaging programs.</p>
+      <p>LANGMAI manufactures greaseproof paper, custom burger wrapping paper, food-grade wax paper, dry waxed deli paper and specification-led butcher paper for bakeries, restaurant chains, foodservice distributors and private-label packaging programs.</p>
       <p>Custom sizes, sheets, rolls, printing and retail packaging can be developed according to the food application and destination-market requirements.</p>
       <div class="hero-actions"><a class="button primary" href="#wrapping-products">Explore Wrapping Papers</a><a class="button secondary" href="/inquiry/">Request Samples & Documents</a></div>
     </div>
@@ -1283,7 +1305,8 @@ function foodWrappingProductPage(product) {
   const wrappingProducts = products.filter((item) => item.group === "food-wrapping" && item.slug !== product.slug);
   const isButcher = product.slug === "butcher-paper";
   const isBurger = product.slug === "burger-wrapping-paper";
-  const isWax = product.slug === "wax-paper";
+  const isDryWax = product.slug === "interfolded-deli-paper";
+  const isWax = ["wax-paper", "interfolded-deli-paper"].includes(product.slug);
   const faq = [
     [`Which formats are available for ${product.cardTitle}?`, `Available specifications may include ${product.formats.slice(0, 4).join(", ").toLowerCase()}. Final paper grade, construction, dimensions and packaging are subject to confirmation.`],
     ["Can LANGMAI provide custom sizes and printing?", "Yes, for applicable specifications. Send the sheet or roll dimensions, artwork, colors, food use, order quantity and packaging requirements for review and sample planning."],
@@ -1291,6 +1314,7 @@ function foodWrappingProductPage(product) {
     ["What information is required for a quote?", "Send the product, food application, paper color and grammage if known, sheet or roll dimensions, printing, destination country, order quantity, food-contact conditions and required documents."],
   ];
   if (isWax) faq.splice(1, 0, ["Can wax paper replace baking parchment?", "Wax paper is generally used for wrapping, handling, separation and moisture resistance. It should not be used as a substitute for baking parchment in direct high-temperature oven applications unless the selected specification is confirmed for that use."]);
+  if (isDryWax) faq.splice(2, 0, ["Which dry wax paper constructions and pack counts are available?", "The standard options are 23 gsm base paper + 5 gsm wax or 30 gsm base paper + 5 gsm wax. Both are available in 6 × 10.75, 8 × 10.75, 10 × 10.75, 12 × 10.75 and 15 × 10.75 inch sheets, packed 500 sheets per box."]);
   if (isButcher) faq.splice(1, 0, ["Is this butcher paper confirmed for BBQ, freezer or direct fresh-meat contact?", "Not yet as a blanket claim. Color, grammage, wet strength, coating, direct-contact suitability, freezer conditions, heat resistance, PFAS status and available reports must be verified for the selected specification before approval."]);
   const statusLabel = isButcher ? "Requires product verification" : isWax ? "Confirmed with usage disclaimer" : "Confirmed product category";
   const content = `<section class="product-hero wrapping-product-hero">
@@ -1300,7 +1324,7 @@ function foodWrappingProductPage(product) {
       <p>${esc(product.short)}</p>
       <div class="hero-actions"><a class="button primary" href="#quote">Request a Quote</a><a class="button secondary" href="/products/food-wrapping-paper/">View Wrapping Paper Range</a></div>
     </div>
-    <img src="/assets/${product.image}" width="1440" height="${product.slug === "greaseproof-paper" ? "768" : "960"}" decoding="async" alt="${esc(product.cardTitle)} sheets, rolls and food wrapping applications">
+    <img class="${isDryWax ? "dry-wax-hero-image" : ""}" src="/assets/${product.image}" width="${product.imageWidth || "1440"}" height="${product.imageHeight || (product.slug === "greaseproof-paper" ? "768" : "960")}" decoding="async" alt="${esc(product.imageAlt || `${product.cardTitle} sheets, rolls and food wrapping applications`)}">
   </section>
   <section class="trust-strip">${product.features.map((item) => `<span>${esc(item)}</span>`).join("")}</section>
   ${isButcher ? `<section class="section verification-alert"><p class="eyebrow">Specification gate</p><h2>Performance claims remain subject to product verification</h2><p>Before production or marketing approval, confirm available colors, grammage, wet strength, coating status, food-contact suitability, freezer conditions, direct fresh-meat contact, BBQ or smoker suitability, heat resistance, PFAS status, reports, roll widths and sheet sizes. The catalogue is a visual reference and does not replace product-level confirmation.</p></section>` : ""}
@@ -1308,6 +1332,25 @@ function foodWrappingProductPage(product) {
     <div><p class="eyebrow">${isBurger ? "Application and printing" : "Materials and formats"}</p><h2>${isBurger ? "Build the wrap around the restaurant program" : "Available formats may include"}</h2><p><strong>Material:</strong> ${esc(product.material)}.</p><div class="badge-grid">${product.formats.map((item) => `<span>${esc(item)}</span>`).join("")}</div></div>
     <div><p class="eyebrow">Applications</p><h2>Intended uses to confirm</h2><ul class="check-list">${product.applications.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></div>
   </section>
+  ${isDryWax ? `<section class="section dry-wax-specifications" aria-labelledby="dry-wax-spec-title">
+    <div class="section-heading"><p class="eyebrow">Common customer specifications</p><h2 id="dry-wax-spec-title">Two constructions, five sheet sizes, one convenient pack</h2><p>Select either base-paper weight for any of the five popular interfolded sheet sizes. Every listed option is packed 500 sheets per box.</p></div>
+    <div class="table-wrap"><table><thead><tr><th>Sheet size</th><th>Construction option A</th><th>Construction option B</th><th>Packaging</th></tr></thead><tbody>
+      <tr><td>6 × 10.75 in</td><td>23 gsm paper + 5 gsm wax</td><td>30 gsm paper + 5 gsm wax</td><td>500 sheets/box</td></tr>
+      <tr><td>8 × 10.75 in</td><td>23 gsm paper + 5 gsm wax</td><td>30 gsm paper + 5 gsm wax</td><td>500 sheets/box</td></tr>
+      <tr><td>10 × 10.75 in</td><td>23 gsm paper + 5 gsm wax</td><td>30 gsm paper + 5 gsm wax</td><td>500 sheets/box</td></tr>
+      <tr><td>12 × 10.75 in</td><td>23 gsm paper + 5 gsm wax</td><td>30 gsm paper + 5 gsm wax</td><td>500 sheets/box</td></tr>
+      <tr><td>15 × 10.75 in</td><td>23 gsm paper + 5 gsm wax</td><td>30 gsm paper + 5 gsm wax</td><td>500 sheets/box</td></tr>
+    </tbody></table></div>
+    <p class="note">Sheet dimensions are width × length. Custom sizes, printing, labels and master-carton requirements can be reviewed for each order.</p>
+  </section>
+  <section class="section dry-wax-media" aria-labelledby="dry-wax-media-title">
+    <div class="section-heading"><p class="eyebrow">Product videos</p><h2 id="dry-wax-media-title">See the sheets and interfolded dispenser box</h2><p>Review the paper appearance, sheet handling and two dispenser-pack examples before requesting a sample.</p></div>
+    <div class="dry-wax-video-grid">
+      <figure><video controls muted playsinline preload="none" poster="/assets/dry-wax-paper/dry-wax-paper-flat-sheets-poster.webp" aria-label="Dry wax paper flat-sheet handling and dispenser box demonstration"><source src="/assets/dry-wax-paper/dry-wax-paper-flat-sheets.mp4" type="video/mp4">Your browser does not support the video tag.</video><figcaption>Flat-sheet handling and dispenser opening</figcaption></figure>
+      <figure><video controls muted playsinline preload="none" poster="/assets/dry-waxed-paper-sheets.webp" aria-label="Interfolded dry wax deli paper dispensing demonstration"><source src="/assets/dry-wax-paper/dry-wax-paper-interfolded-box.mp4" type="video/mp4">Your browser does not support the video tag.</video><figcaption>Interfolded sheet dispensing from a 500-sheet box</figcaption></figure>
+    </div>
+    <p class="note">Videos show product and packaging references supplied for this range. Third-party branding and pack artwork are illustrative; final specifications and private-label packaging are confirmed per order.</p>
+  </section>` : ""}
   ${isWax ? `<section class="section wax-comparison"><div class="section-heading"><p class="eyebrow">Material selection</p><h2>Wax Paper vs. Baking Parchment</h2></div><div class="two-col"><article><h3>Wax paper</h3><p>Wax paper is generally used for wrapping, separation and moisture resistance.</p></article><article><h3>Baking parchment</h3><p>Baking parchment is designed for nonstick baking and higher-temperature cooking applications.</p></article></div><p class="note"><strong>Use reminder:</strong> Wax paper is intended for food wrapping, handling and separation applications. It should not be used as a substitute for baking parchment in direct high-temperature oven applications unless the selected specification has been confirmed for that use.</p><a class="text-link" href="/products/baking-parchment-paper/">Review baking parchment</a></section>` : ""}
   <section class="section specification-review">
     <div class="section-heading"><p class="eyebrow">Technical specification</p><h2>Confirm requirements before ordering</h2><p>Available specifications may include custom sizes, colors, coatings, printing and packaging. All performance data remains subject to the selected paper grade and approved finished construction.</p></div>
@@ -3078,6 +3121,7 @@ const productTemplateCss = `
 .ip-card ul{padding-left:1.1rem;margin:.75rem 0;color:var(--deep);font-weight:700}
 .ip-card .button{width:100%;margin-top:.55rem}
 .ip-note{display:block;margin-top:.75rem;color:var(--muted);font-size:.82rem;font-weight:800}
+.dry-wax-video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}.dry-wax-video-grid figure{margin:0;overflow:hidden;border:1px solid var(--line);border-radius:8px;background:var(--paper)}.dry-wax-video-grid video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#111}.dry-wax-video-grid figcaption{padding:.85rem 1rem;color:var(--muted);font-weight:700}.wrapping-product-hero img.dry-wax-hero-image{height:auto}@media (max-width:760px){.dry-wax-video-grid{grid-template-columns:1fr}.wrapping-product-hero img.dry-wax-hero-image{aspect-ratio:16/9;object-fit:contain;background:#f7f3ea}}
 .home-video-section{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,420px);gap:2rem;align-items:center}
 .video-copy h2{font-size:clamp(1.8rem,3vw,3rem);line-height:1.08;margin:.25rem 0 1rem}
 .video-copy p{color:var(--muted);font-size:1.08rem;max-width:620px}
