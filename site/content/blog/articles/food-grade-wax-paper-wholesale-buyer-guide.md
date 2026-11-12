@@ -138,7 +138,7 @@ Do not call EUDR a product certificate or assume FSC alone completes EUDR duties
 
 ## 8. Approve Samples Like a Production Lot
 
-Sample approval should replicate the real order. Interfolded sheets should be tested in dispenser boxes, retail rolls should include box, cutter, label and carton, and printed paper should be sampled as printed, not only as a plain base paper.
+Sample approval should replicate the real order. Interfolded sheets should be tested in dispenser boxes, retail rolls should include box, cutter, label and carton, and printed paper should be sampled as printed, not only as a plain base paper. For a specification-led example, review our [interfolded dry wax deli paper sheets](/products/interfolded-deli-paper/) with two base-paper weights and 500 sheets per box.
 
 Record the approval in a short file:
 

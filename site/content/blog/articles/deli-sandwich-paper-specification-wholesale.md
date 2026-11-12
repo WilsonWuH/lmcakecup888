@@ -39,6 +39,8 @@ Start the RFQ with a one-page requirement sheet. State the product name, intende
 - Pack-out: flat sheets, interfolded packs or dispenser boxes that keep paper clean and easy to pull at the counter.
 - Evidence: finished-item specification, food-contact evidence, print and ink details, pack-out, inspection and traceability.
 
+For counter service that requires one-at-a-time dispensing, compare these requirements with our [interfolded deli paper dispenser boxes](/products/interfolded-deli-paper/), available in five sizes with 500 sheets per box.
+
 <!-- Embedded CTA Box: Sample & Spec Match -->
 <aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
 <p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>

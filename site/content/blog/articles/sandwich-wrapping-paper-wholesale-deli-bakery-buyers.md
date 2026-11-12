@@ -136,7 +136,7 @@ Before asking for a final bulk price, send LANGMAI the sandwich type, sheet size
 
 ## 6. Choose Packing That Works at the Counter
 
-Sandwich wrapping paper must be easy for operators to use. If sheets stick together, the inner pack collapses, the count is inconsistent or cartons are too weak for distribution, the paper can slow service even when the material itself is acceptable.
+Sandwich wrapping paper must be easy for operators to use. If sheets stick together, the inner pack collapses, the count is inconsistent or cartons are too weak for distribution, the paper can slow service even when the material itself is acceptable. For high-throughput counters, review [interfolded deli paper for counter dispensing](/products/interfolded-deli-paper/) and test the actual box with operators before approving a bulk order.
 
 Specify the packaging hierarchy:
 
