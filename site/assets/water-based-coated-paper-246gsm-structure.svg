@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Tested 246 gsm water-based coated paper construction</title>
+  <desc id="desc">Illustrative cross-section showing 8 grams per square metre water-based coating on each side of a 230 grams per square metre base paper, for a nominal total of 246 grams per square metre.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dfcfb4"/>
+      <stop offset="1" stop-color="#bda27b"/>
+    </linearGradient>
+    <linearGradient id="coating" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e7bd70"/>
+      <stop offset="1" stop-color="#c98d3f"/>
+    </linearGradient>
+    <pattern id="fibres" width="48" height="34" patternUnits="userSpaceOnUse">
+      <path d="M3 9 C13 3 23 15 40 7 M8 27 C18 19 30 31 46 22" fill="none" stroke="#8f7656" stroke-width="2" opacity=".28"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#1f3a31" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="#f4efe5"/>
+  <path d="M0 120 H1200 M0 680 H1200" stroke="#d8a85c" stroke-width="1" opacity=".22"/>
+  <text x="64" y="64" fill="#8b5b35" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="2">REFERENCE SAMPLE CONSTRUCTION</text>
+  <text x="64" y="116" fill="#1f3a31" font-family="Georgia, serif" font-size="40" font-weight="700">246 gsm double-side coated paper</text>
+  <text x="1136" y="66" text-anchor="end" fill="#617064" font-family="Arial, sans-serif" font-size="16">ILLUSTRATIVE / NOT TO SCALE</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="158" width="1060" height="474" rx="18" fill="#fffdf8"/>
+  </g>
+
+  <text x="126" y="206" fill="#617064" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1.4">CROSS-SECTION</text>
+
+  <rect x="142" y="246" width="680" height="54" rx="5" fill="url(#coating)"/>
+  <path d="M160 273 H804" stroke="#fff7e8" stroke-width="2" stroke-dasharray="8 10" opacity=".8"/>
+  <rect x="142" y="312" width="680" height="142" rx="4" fill="url(#paper)"/>
+  <rect x="142" y="312" width="680" height="142" rx="4" fill="url(#fibres)"/>
+  <rect x="142" y="466" width="680" height="54" rx="5" fill="url(#coating)"/>
+  <path d="M160 493 H804" stroke="#fff7e8" stroke-width="2" stroke-dasharray="8 10" opacity=".8"/>
+
+  <path d="M872 246 V300 M862 246 H882 M862 300 H882" fill="none" stroke="#8b5b35" stroke-width="2"/>
+  <text x="904" y="264" fill="#1f3a31" font-family="Arial, sans-serif" font-size="21" font-weight="700">8 g/m² coating</text>
+  <text x="904" y="290" fill="#617064" font-family="Arial, sans-serif" font-size="16">Water-based · side 1</text>
+
+  <path d="M872 312 V454 M862 312 H882 M862 454 H882" fill="none" stroke="#8b5b35" stroke-width="2"/>
+  <text x="904" y="371" fill="#1f3a31" font-family="Arial, sans-serif" font-size="21" font-weight="700">230 g/m² base paper</text>
+  <text x="904" y="398" fill="#617064" font-family="Arial, sans-serif" font-size="16">Tested reference substrate</text>
+
+  <path d="M872 466 V520 M862 466 H882 M862 520 H882" fill="none" stroke="#8b5b35" stroke-width="2"/>
+  <text x="904" y="484" fill="#1f3a31" font-family="Arial, sans-serif" font-size="21" font-weight="700">8 g/m² coating</text>
+  <text x="904" y="510" fill="#617064" font-family="Arial, sans-serif" font-size="16">Water-based · side 2</text>
+
+  <rect x="126" y="560" width="948" height="1" fill="#e5ded2"/>
+  <text x="142" y="601" fill="#617064" font-family="Arial, sans-serif" font-size="17">Nominal total</text>
+  <text x="310" y="604" fill="#1f3a31" font-family="Arial, sans-serif" font-size="28" font-weight="700">230 + 8 + 8 = 246 g/m²</text>
+  <text x="1070" y="601" text-anchor="end" fill="#1f3a31" font-family="Arial, sans-serif" font-size="18" font-weight="700">Nominal width: 960 mm</text>
+
+  <text x="64" y="704" fill="#1f3a31" font-family="Arial, sans-serif" font-size="20" font-weight="700">One tested reference sample — not a universal structure for every grade.</text>
+  <text x="64" y="740" fill="#617064" font-family="Arial, sans-serif" font-size="16">Other grammages, coating sides, widths and performance requirements are confirmed separately before sampling or production.</text>
+</svg>
