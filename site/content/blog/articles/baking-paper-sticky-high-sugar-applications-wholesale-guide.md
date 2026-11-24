@@ -131,7 +131,7 @@ We review food-contact compliance documents against your exact paper constructio
 
 ## Conclusion
 
-Sticky, high-sugar products are the strictest release test a baking paper will face, and they expose weak coatings that mild bakes never reveal. Specify by silicone coating weight, coverage and cure quality, qualify suppliers with a bake trial on your worst-case product, and compare quotations on cost per intact unit — the liner that protects your yields is always the cheaper sheet. Our [baking parchment paper manufacturing programme](/products/baking-parchment-paper/) programme publishes the test data behind each grade so specifications can be verified before ordering.
+Sticky, high-sugar products are the strictest release test a baking paper will face, and they expose weak coatings that mild bakes never reveal. Specify by silicone coating weight, coverage and cure quality, qualify suppliers with a bake trial on your worst-case product, and compare quotations on cost per intact unit — the liner that protects your yields is always the cheaper sheet. Our [baking parchment paper manufacturing programme](/products/baking-parchment-paper/) programme publishes the test data behind each grade so specifications can be verified before ordering. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
 
 ## CTA
 

@@ -22,12 +22,6 @@ Baking paper competes in a category where the product itself is invisible: every
 
 The same logic applies one level up the chain. Category managers allocate shelf space by sales per facing, and a misleading pack — an overstated sheet count, a photo implying a roll when the box holds folded sheets — generates returns and delisting risk. Packaging design is therefore part of product quality: the dieline, the dispenser functionality and the accuracy of every printed claim are as contractual as the paper specification itself.
 
-## Choosing the Retail Format: Rolls, Folded Sheets, Pop-Up Boxes and Display Units
-
-Format selection is the most consequential design decision: it locks in packaging materials, filling equipment and cost structure. Parchment rolls remain the highest-velocity format in most markets, packaged either in a carton with a serrated cutting edge or in a printed wrap with an inner core; they maximise perceived value per unit but demand robust edge design, since a ragged-tearing cutting edge drives negative reviews. Folded sheet packs — typically 20 to 100 sheets in a flat carton or printed sleeve — suit occasional bakers and smaller shelf footprints, and pack efficiently for export because their geometry wastes no carton volume.
-
-Pop-up and interfolded dispensers occupy the premium end: sheets draw one at a time like tissue, but they require the underlying sheets to be die-cut and interfolded to tight tolerance before packing. Display-ready shippers that open into a shelf tray reduce retailer labour and win incremental facings in independent grocers. Each format implies a different board call, carton style and packing line configuration, so the format decision should be made before artwork begins, not after. For production volumes across these formats, the same construction logic applies to our [custom printed baking parchment paper](/products/baking-parchment-paper/) line, quoted per roll, sheet or die-cut format.
-
 <!-- Embedded CTA Box: Sample & Spec Match -->
 <aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
 <p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
@@ -40,6 +34,12 @@ Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-
 <a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
 </div>
 </aside>
+
+## Choosing the Retail Format: Rolls, Folded Sheets, Pop-Up Boxes and Display Units
+
+Format selection is the most consequential design decision: it locks in packaging materials, filling equipment and cost structure. Parchment rolls remain the highest-velocity format in most markets, packaged either in a carton with a serrated cutting edge or in a printed wrap with an inner core; they maximise perceived value per unit but demand robust edge design, since a ragged-tearing cutting edge drives negative reviews. Folded sheet packs — typically 20 to 100 sheets in a flat carton or printed sleeve — suit occasional bakers and smaller shelf footprints, and pack efficiently for export because their geometry wastes no carton volume.
+
+Pop-up and interfolded dispensers occupy the premium end: sheets draw one at a time like tissue, but they require the underlying sheets to be die-cut and interfolded to tight tolerance before packing. Display-ready shippers that open into a shelf tray reduce retailer labour and win incremental facings in independent grocers. Each format implies a different board call, carton style and packing line configuration, so the format decision should be made before artwork begins, not after. For production volumes across these formats, the same construction logic applies to our [custom printed baking parchment paper](/products/baking-parchment-paper/) line, quoted per roll, sheet or die-cut format.
 
 ## Print Technology, Materials and Food-Contact Rules for Retail Packaging
 

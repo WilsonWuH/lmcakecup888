@@ -34,12 +34,6 @@ A compostability claim on baking paper is rarely consumed by the buyer alone: th
 
 The cost asymmetry is unfavourable: asking for documentation before the order costs a few emails, while withdrawing a printed claim after packaging runs means reprints and regulatory exposure. Consumer-protection authorities in the US, the EU and the UK have all acted against vague environmental packaging claims, and "compostable" printed without naming the standard and the test environment is exactly the wording their guidance targets. Buying paper whose claim is already documented shifts that risk upstream.
 
-## EN 13432 and the Industrial vs Home Compostability Split
-
-EN 13432 is the reference standard for industrial compostability in Europe, and a certificate to it means four things were tested: disintegration (the material breaks apart within 12 weeks in a controlled composting process), biodegradation (at least 90% of the organic carbon converts to CO₂ within about 180 days under thermophilic conditions around 58 °C), ecotoxicity (the resulting compost does not harm seed germination or plant growth), and low heavy-metal levels. Home compostability is a different, harder claim: OK compost HOME certification requires materials to degrade at ambient outdoor temperatures without the sustained heat of an industrial plant, which is why a product can pass industrial requirements and still not qualify for a home-compost label.
-
-In North America the equivalent benchmark is ASTM D6400, with ASTM D6868 covering paper coatings intended for compostable packaging. The practical buying rule is simple: every compostability claim should name the standard, the certification body and the scope of the certificate. Buyers comparing constructions and their documented properties can review our [wholesale parchment paper rolls and sheets](/products/baking-parchment-paper/) line, where each grade's certifications and grammage are listed per construction rather than as a blanket family claim.
-
 <!-- Embedded CTA Box: Sample & Spec Match -->
 <aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
 <p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
@@ -52,6 +46,12 @@ Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-
 <a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
 </div>
 </aside>
+
+## EN 13432 and the Industrial vs Home Compostability Split
+
+EN 13432 is the reference standard for industrial compostability in Europe, and a certificate to it means four things were tested: disintegration (the material breaks apart within 12 weeks in a controlled composting process), biodegradation (at least 90% of the organic carbon converts to CO₂ within about 180 days under thermophilic conditions around 58 °C), ecotoxicity (the resulting compost does not harm seed germination or plant growth), and low heavy-metal levels. Home compostability is a different, harder claim: OK compost HOME certification requires materials to degrade at ambient outdoor temperatures without the sustained heat of an industrial plant, which is why a product can pass industrial requirements and still not qualify for a home-compost label.
+
+In North America the equivalent benchmark is ASTM D6400, with ASTM D6868 covering paper coatings intended for compostable packaging. The practical buying rule is simple: every compostability claim should name the standard, the certification body and the scope of the certificate. Buyers comparing constructions and their documented properties can review our [wholesale parchment paper rolls and sheets](/products/baking-parchment-paper/) line, where each grade's certifications and grammage are listed per construction rather than as a blanket family claim.
 
 ## How Unbleached and Kraft Baking Paper Actually Degrades
 

@@ -23,12 +23,6 @@ Blanket ordering works best on products with stable constructions, long shelf li
 
 That predictability is what a manufacturer needs to justify reserving line time and holding raw material positions. Paper mills and silicone coating lines reward forecastable demand with better pricing and priority scheduling, and those gains flow directly into the blanket price. Requests that combine categories can be quoted together; see the [baking parchment paper manufacturing programme](/products/baking-parchment-paper/) for the paper component when cups, wraps or liners are also in the same annual basket.
 
-## Structuring the Agreement: Volumes, Price Windows and Releases
-
-A workable baking paper blanket agreement has four load-bearing numbers. First, the annual volume: state it as a committed base quantity with a tolerance band — typically plus or minus 10 to 15 percent — so a demand surprise does not breach the contract or strand inventory. Second, the price window: a fixed unit price for 12 months is the normal ask; if a factory will only hold price for six, negotiate an index-linked adjustment rather than an open-ended clause. Third, the release schedule: most buyers release quarterly or monthly against agreed quantities, with the factory confirming a delivery date per release. Fourth, the minimum release quantity, which protects the factory from fragmented calls on production and should be set low enough to keep your working inventory lean.
-
-Forecast sharing is the clause buyers most often omit and most often regret. Provide a rolling forecast — confirmed for the next quarter, indicative for the following two — and the factory can pre-position base paper and coating capacity before your confirmed release arrives. This is also the natural place to agree specifications by reference: attach the approved construction, grammage, coating weight and packing format to the agreement itself, so every release ships to a documented standard rather than to memory.
-
 <!-- Embedded CTA Box: Sample & Spec Match -->
 <aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
 <p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
@@ -41,6 +35,12 @@ Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-
 <a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
 </div>
 </aside>
+
+## Structuring the Agreement: Volumes, Price Windows and Releases
+
+A workable baking paper blanket agreement has four load-bearing numbers. First, the annual volume: state it as a committed base quantity with a tolerance band — typically plus or minus 10 to 15 percent — so a demand surprise does not breach the contract or strand inventory. Second, the price window: a fixed unit price for 12 months is the normal ask; if a factory will only hold price for six, negotiate an index-linked adjustment rather than an open-ended clause. Third, the release schedule: most buyers release quarterly or monthly against agreed quantities, with the factory confirming a delivery date per release. Fourth, the minimum release quantity, which protects the factory from fragmented calls on production and should be set low enough to keep your working inventory lean.
+
+Forecast sharing is the clause buyers most often omit and most often regret. Provide a rolling forecast — confirmed for the next quarter, indicative for the following two — and the factory can pre-position base paper and coating capacity before your confirmed release arrives. This is also the natural place to agree specifications by reference: attach the approved construction, grammage, coating weight and packing format to the agreement itself, so every release ships to a documented standard rather than to memory.
 
 ## Capacity Reservation and Peak-Season Planning
 

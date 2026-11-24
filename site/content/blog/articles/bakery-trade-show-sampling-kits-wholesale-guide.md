@@ -25,18 +25,6 @@ Exhibition budgets go on floor space and stand construction, yet attendees remem
 
 There is also an operations argument. Many venues require that unpackaged food be served with tongs, picks or liners, and inspectors at public expos do issue warnings. A kit built around single-serve paper formats keeps the booth compliant by default and lets staff pre-portion product the night before. When one format serves both the expo and the follow-on retail demo programme, the per-event cost drops because the production run is amortised across the whole sampling calendar.
 
-## Building the Component List: What Goes Into a Wholesale Sampling Kit
-
-A complete kit covers four paper component groups, each with its own specification questions.
-
-**Single-serve cups and liners.** Fluted or self-supporting baking cups in 4–5 cm mini and standard sizes hold muffins, cheesecake bites and energy bites; tulip-style cups elevate premium samples and tolerate soft fillings. Wall height and capacity matter more than diameter — a cup 15% undersized turns a clean demo into a stained tablecloth.
-
-**Parchment formats for tray presentation.** Pre-cut squares and die-cut rounds sit under individual portions, separating product from the tray surface and absorbing surface oils. For buyers consolidating orders, the same construction logic applies to our [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/), quoted per sheet size and die-cut diameter. Squares in 10–15 cm sizes are the workhorse; rounds suit round product such as mini tarts.
-
-**Greaseproof wrap and basket liners.** Where samples are handed directly to visitors, greaseproof sheets or bags keep the hand-off clean and provide a printable surface; hand-held samples need a higher grease-resistance kit level than tray-presented ones.
-
-**Supporting items.** Tray liners sized to sheet pans and display platters, plus printed picks, round out the kit. Consolidating all four groups with one factory also simplifies colour matching across components.
-
 <!-- Embedded CTA Box: Sample & Spec Match -->
 <aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
 <p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
@@ -49,6 +37,18 @@ Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-
 <a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
 </div>
 </aside>
+
+## Building the Component List: What Goes Into a Wholesale Sampling Kit
+
+A complete kit covers four paper component groups, each with its own specification questions.
+
+**Single-serve cups and liners.** Fluted or self-supporting baking cups in 4–5 cm mini and standard sizes hold muffins, cheesecake bites and energy bites; tulip-style cups elevate premium samples and tolerate soft fillings. Wall height and capacity matter more than diameter — a cup 15% undersized turns a clean demo into a stained tablecloth.
+
+**Parchment formats for tray presentation.** Pre-cut squares and die-cut rounds sit under individual portions, separating product from the tray surface and absorbing surface oils. For buyers consolidating orders, the same construction logic applies to our [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/), quoted per sheet size and die-cut diameter. Squares in 10–15 cm sizes are the workhorse; rounds suit round product such as mini tarts.
+
+**Greaseproof wrap and basket liners.** Where samples are handed directly to visitors, greaseproof sheets or bags keep the hand-off clean and provide a printable surface; hand-held samples need a higher grease-resistance kit level than tray-presented ones.
+
+**Supporting items.** Tray liners sized to sheet pans and display platters, plus printed picks, round out the kit. Consolidating all four groups with one factory also simplifies colour matching across components.
 
 ## Specifying Formats, Print and Food-Contact Grade
 

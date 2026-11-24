@@ -23,12 +23,6 @@ A collar performs three jobs at once. First, it is the release surface at the wa
 
 Production conditions differ sharply between baked and chilled applications. In an oven, the paper must hold its seam, resist fat strike-through from rich batters and release cleanly at serving temperature. In chilled display, it must survive condensation, high-fat dairy fillings and days of contact without wrinkling or transferring fibre. Specifying one "all-purpose" collar for both cycles is the most common source of returns; the fix is declaring the application cycle on the purchase specification and letting the construction follow it.
 
-## Material and Construction Options
-
-Wholesale collars fall into a few practical families. Food-grade greaseproof paper collars suit most baked sponges and butter-rich batters, where grease holdout keeps the wall readable and the release clean. Double-side silicone-coated constructions are the choice where baked release is critical — chocolate sponges, caramelised sugars and sticky fruit preparations — because the coating, not the fibre, takes the release load. Heavier uncoated or lightly treated kraft constructions work for chilled mousse and cheesecake programmes where structure and presentation matter more than oven release, while fluted or embossed collars add stiffness and a decorative wall and smooth-wall formats print and wrap more easily.
-
-Two construction details are worth writing into the specification. One, the overlap seam: collars are supplied as pre-cut bands with a lap, or as rolls cut to length on the line, and the seam behaviour through filling and baking should be verified with the actual product. Two, food-contact status: the collar is in direct contact for the full product cycle, so the declaration must cover the exact construction, including any coating and ink. Where a programme also lines pan bases, our [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) are quoted alongside the collar construction so the full lining set ships under a single documentation package.
-
 <!-- Embedded CTA Box: Sample & Spec Match -->
 <aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
 <p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
@@ -41,6 +35,12 @@ Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-
 <a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
 </div>
 </aside>
+
+## Material and Construction Options
+
+Wholesale collars fall into a few practical families. Food-grade greaseproof paper collars suit most baked sponges and butter-rich batters, where grease holdout keeps the wall readable and the release clean. Double-side silicone-coated constructions are the choice where baked release is critical — chocolate sponges, caramelised sugars and sticky fruit preparations — because the coating, not the fibre, takes the release load. Heavier uncoated or lightly treated kraft constructions work for chilled mousse and cheesecake programmes where structure and presentation matter more than oven release, while fluted or embossed collars add stiffness and a decorative wall and smooth-wall formats print and wrap more easily.
+
+Two construction details are worth writing into the specification. One, the overlap seam: collars are supplied as pre-cut bands with a lap, or as rolls cut to length on the line, and the seam behaviour through filling and baking should be verified with the actual product. Two, food-contact status: the collar is in direct contact for the full product cycle, so the declaration must cover the exact construction, including any coating and ink. Where a programme also lines pan bases, our [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) are quoted alongside the collar construction so the full lining set ships under a single documentation package.
 
 ## Sizing, Tolerance and Fit
 

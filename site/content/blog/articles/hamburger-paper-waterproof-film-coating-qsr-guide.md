@@ -40,6 +40,19 @@ The word "greaseproof" is used loosely in the market; "waterproof film coating" 
 
 The practical consequence: "waterproof film coating" in an RFQ is a request for a moisture barrier as well as a grease barrier, and only PE coated construction answers both in one sheet. Buyers comparing these specifications can review our [silicone-coated parchment sheets and rolls](/products/baking-parchment-paper/) programme, where coating weight, base grammage and release values are documented per construction.
 
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
+<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
+<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
+Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
+<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
+</div>
+</aside>
+
 ## 2. PE Coated vs Greaseproof (KIT 12) vs Wax Paper: Head-to-Head
 
 The table below is the comparison a procurement team should build before requesting quotations. Values are typical ranges for QSR burger wraps; always confirm them against the supplier's own test reports for the exact grade offered.
@@ -56,19 +69,6 @@ The table below is the comparison a procurement team should build before request
 | Best QSR use | High-oil burgers, long hold, delivery, double-wrap programmes | Fresh-served burgers, short hold, craft positioning | Cost-driven, short-hold, single-serve applications |
 
 Two clarifications matter when reading this table. First, "greaseproof KIT 12" is not a universal product code — KIT measures grease resistance of the sheet, not moisture behaviour, so two KIT 12 papers from different mills can still behave differently on a wet burger. Second, a PE coated sheet still needs its film and ink system documented for food contact; a film that performs perfectly on the line is worthless if the declaration does not cover the destination market. For production volumes, the same construction logic applies to our [food-grade die-cut parchment rounds](/products/baking-parchment-paper/) line, quoted per roll, sheet or die-cut format.
-
-<!-- Embedded CTA Box: Sample & Spec Match -->
-<aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
-<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
-<h3 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 10px 0;color:#221b18;">Testing Parchment Release for Heavy-Oil or High-Heat Baking?</h3>
-<p style="font-size:15px;color:#6d625b;margin:0 0 18px 0;line-height:1.6;">
-Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-parchment-paper/" style="color:#a45a32;font-weight:600;text-decoration:underline;">custom silicone-coated baking parchment paper</a> (35–45+ gsm, customizable 0.7g–1.5g/m² coating) in sheets, rolls, and die-cut rounds. Approve a physical pre-production sample before mass production.
-</p>
-<div style="display:flex;gap:12px;flex-wrap:wrap;">
-<a href="/products/baking-parchment-paper/#rfq" style="display:inline-block;padding:11px 22px;background:#a45a32;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">Request Free Test Samples →</a>
-<a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
-</div>
-</aside>
 
 ## 3. Match the Wrap to the Menu and the Hold Time
 
@@ -140,10 +140,6 @@ Yes, with the right setup. The film surface usually needs treatment and compatib
 
 A food-contact declaration identifying the exact construction (base, film or coating, inks), the food types and conditions covered, PFAS-free declarations where the chain requires them, and market-specific reports such as FDA documentation for the US or LFGB / BfR-aligned declarations for the EU.
 
-## Conclusion
-
-For a QSR burger programme, "waterproof film coating" is a real construction choice, not marketing language: PE coated film paper blocks grease and moisture mechanically, greaseproof KIT 12 resists grease through fibre refining, and wax paper trades temperature headroom for cost. The right answer follows the menu's oil load, the hold time and the delivery window — and whichever construction wins, it only performs if the RFQ fixes the construction, the barrier evidence, the print side, the temperature and the document set before quotations are compared. The [custom printed baking parchment paper](/products/baking-parchment-paper/) programme publishes the test data behind each grade so specifications can be verified before ordering, and printed burger wrap formats are quoted per roll, sheet or die-cut.
-
 <!-- Embedded CTA Box: Compliance & Custom Print -->
 <aside style="margin:36px 0;padding:26px 28px;background:#1f3a31;color:#f4efe4;border-radius:3px;font-family:Inter,Arial,sans-serif;">
 <p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d8b45a;font-weight:600;margin:0 0 8px 0;">Compliance & OEM Support</p>
@@ -156,6 +152,10 @@ We review food-contact compliance documents against your exact paper constructio
 <a href="/factory-certificates/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-size:14px;text-decoration:none;border-radius:3px;">Browse Certificate Library</a>
 </div>
 </aside>
+
+## Conclusion
+
+For a QSR burger programme, "waterproof film coating" is a real construction choice, not marketing language: PE coated film paper blocks grease and moisture mechanically, greaseproof KIT 12 resists grease through fibre refining, and wax paper trades temperature headroom for cost. The right answer follows the menu's oil load, the hold time and the delivery window — and whichever construction wins, it only performs if the RFQ fixes the construction, the barrier evidence, the print side, the temperature and the document set before quotations are compared. The [custom printed baking parchment paper](/products/baking-parchment-paper/) programme publishes the test data behind each grade so specifications can be verified before ordering, and printed burger wrap formats are quoted per roll, sheet or die-cut.
 
 ## CTA
 

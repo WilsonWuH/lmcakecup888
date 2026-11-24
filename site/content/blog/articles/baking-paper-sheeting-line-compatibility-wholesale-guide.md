@@ -22,12 +22,6 @@ Dough sheeting equipment falls into three broad groups, and each places a differ
 
 Matching the paper to the station starts with being honest about which of these jobs it actually does. A grade that performs well as an oven liner is not automatically the right interleaving paper, and vice versa. Buyers who consolidate both applications onto one construction should ask the supplier to verify release and strength data at the relevant conditions rather than assuming the certificate covers every use.
 
-## Specification Parameters That Decide Compatibility
-
-Four parameters dominate sheeter performance. First, release: silicone coating weight determines how cleanly the paper separates from butter-rich dough, and heavier coatings generally hold up better across repeated lamination folds. Second, grammage and calibre: a base weight in the 35–45 gsm range with tight thickness tolerance keeps the roller gap predictable; papers that are too thin crease and tear, while papers that are too thick add to the finished laminate and waste material. Third, dimensional stability: the sheet should resist stretching under roller tension so edges stay square and the paper tracks straight through the machine. Fourth, width and cut accuracy: roll widths should be slit to the sheeter's working width with minimal tolerance, because a roll that is even a few millimetres narrow exposes the rollers to dough and forces frequent cleaning.
-
-Buyers should also agree on how these parameters are verified. A practical acceptance pack includes release testing against the buyer's own dough formulation, tensile strength values in both machine and cross directions, and a slit-width tolerance statement for roll stock. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims, so verification can happen before the first trial shipment rather than after it.
-
 <!-- Embedded CTA Box: Sample & Spec Match -->
 <aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
 <p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
@@ -40,6 +34,12 @@ Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-
 <a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
 </div>
 </aside>
+
+## Specification Parameters That Decide Compatibility
+
+Four parameters dominate sheeter performance. First, release: silicone coating weight determines how cleanly the paper separates from butter-rich dough, and heavier coatings generally hold up better across repeated lamination folds. Second, grammage and calibre: a base weight in the 35–45 gsm range with tight thickness tolerance keeps the roller gap predictable; papers that are too thin crease and tear, while papers that are too thick add to the finished laminate and waste material. Third, dimensional stability: the sheet should resist stretching under roller tension so edges stay square and the paper tracks straight through the machine. Fourth, width and cut accuracy: roll widths should be slit to the sheeter's working width with minimal tolerance, because a roll that is even a few millimetres narrow exposes the rollers to dough and forces frequent cleaning.
+
+Buyers should also agree on how these parameters are verified. A practical acceptance pack includes release testing against the buyer's own dough formulation, tensile strength values in both machine and cross directions, and a slit-width tolerance statement for roll stock. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims, so verification can happen before the first trial shipment rather than after it.
 
 ## Roll Versus Sheet Formats for Sheeting Programmes
 

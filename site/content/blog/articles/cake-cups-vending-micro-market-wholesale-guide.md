@@ -22,12 +22,6 @@ The vending and micro-market channel differs from retail grocery in three ways t
 
 Portion control is the other driver. Single-serve cups in the 60–240 ml range let operators price by portion, standardise nutrition labels, and fit products into narrow vending shelves. The geometry that works is usually straight-walled or slightly tapered with a defined nesting angle, not the flared tulip shapes favoured for bakery presentation. The difference from bakery sourcing: the machine, not a human, is the customer handling the pack.
 
-## Nesting and Denesting: The Behaviour That Makes or Breaks Automated Dispensing
-
-Nesting lets cups ship as compact stacks and load into machine canisters; denesting lets the dispenser separate exactly one cup at a time. The two forces are in permanent tension. If nesting friction is too high, cups cling together and the spiral drags out two or three at once. If it is too low, stacks vibrate apart in transit and arrive scuffed or interlocked at odd angles. Well-engineered vending cups hold separation force within a narrow, repeatable window — verified through denesting tests on loaded columns, not by feel on a sample of ten.
-
-Three specification levers control this behaviour. Side-wall angle determines how deeply cups seat into each other; a steeper taper means shallower nesting and easier separation. Rim geometry — rolled, curled or flat — sets the contact area between consecutive cups. Base stiffness prevents the bottom cup collapsing under the column weight above it, so paperboard selection matters more here than in hand-loaded display. Operators loading third-party machines should request denesting-force data for the target canister; suppliers running their own cup lines can tune these levers per machine model. Where a producer lines trays and moulds product in the same run, our [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) are quoted with the cup programme for a single documentation package.
-
 <!-- Embedded CTA Box: Sample & Spec Match -->
 <aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
 <p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
@@ -40,6 +34,12 @@ Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-
 <a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
 </div>
 </aside>
+
+## Nesting and Denesting: The Behaviour That Makes or Breaks Automated Dispensing
+
+Nesting lets cups ship as compact stacks and load into machine canisters; denesting lets the dispenser separate exactly one cup at a time. The two forces are in permanent tension. If nesting friction is too high, cups cling together and the spiral drags out two or three at once. If it is too low, stacks vibrate apart in transit and arrive scuffed or interlocked at odd angles. Well-engineered vending cups hold separation force within a narrow, repeatable window — verified through denesting tests on loaded columns, not by feel on a sample of ten.
+
+Three specification levers control this behaviour. Side-wall angle determines how deeply cups seat into each other; a steeper taper means shallower nesting and easier separation. Rim geometry — rolled, curled or flat — sets the contact area between consecutive cups. Base stiffness prevents the bottom cup collapsing under the column weight above it, so paperboard selection matters more here than in hand-loaded display. Operators loading third-party machines should request denesting-force data for the target canister; suppliers running their own cup lines can tune these levers per machine model. Where a producer lines trays and moulds product in the same run, our [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) are quoted with the cup programme for a single documentation package.
 
 ## Stiffness, Grease Barrier and Food-Contact Compliance for Ambient Shelf-Life Products
 

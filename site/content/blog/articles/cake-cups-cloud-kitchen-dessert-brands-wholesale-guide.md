@@ -118,7 +118,7 @@ We review food-contact compliance documents against your exact paper constructio
 
 ## Conclusion
 
-For cloud kitchen dessert brands, the cake cup is packaging, merchandising and quality control in one purchase. Size for the menu's economics and the camera, specify for transit rather than the display case, verify barriers against your real recipes, and buy in two standard capacities with volume commitments only on proven items. Brands that treat the cup as a specification — not a consumable — win the unboxing moment, order after order. Buyers standardising on one paper supplier can review our [silicone-coated parchment sheets and rolls](/products/baking-parchment-paper/) next to their cup specifications.
+For cloud kitchen dessert brands, the cake cup is packaging, merchandising and quality control in one purchase. Size for the menu's economics and the camera, specify for transit rather than the display case, verify barriers against your real recipes, and buy in two standard capacities with volume commitments only on proven items. Brands that treat the cup as a specification — not a consumable — win the unboxing moment, order after order. Buyers standardising on one paper supplier can review our [silicone-coated parchment sheets and rolls](/products/baking-parchment-paper/) next to their cup specifications. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
 
 ## CTA
 

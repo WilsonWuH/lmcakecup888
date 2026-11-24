@@ -23,12 +23,6 @@ For paper cake cups and muffin cups, base grammage typically sits anywhere betwe
 
 Three properties scale with grammage. First, sidewall stiffness: heavier base paper resists buckling under batter load and keeps a clean fluted or rolled rim after baking. Second, dimensional stability through moisture: as cups absorb steam in the oven, a heavier fibre network holds geometry better and sheds fewer fibres into product. Third, denesting behaviour: in automated feeders, cups that are too light stick together in the stack or mis-feed, while an over-heavy grade can jam the magazine. Weight is therefore not a "heavier is better" decision — it is a match to the filling process, the oven and the packaging line downstream.
 
-## Matching GSM to Cup Format and Application
-
-Format and application should drive the target band, and the bands overlap more than most catalogues admit. Standard fluted muffin and cupcake cups for tray baking commonly run in a mid-weight band because the pan supports the wall during baking; the paper's job is release, grease holdout and presentation. Self-supporting cups — the tall, free-standing formats used for display bakery and foodservice — need the upper part of the weight range, often with a reinforced rim, because the wall itself is the structure. Portion cups for chilled desserts, mousses and no-bake formats can drop lighter again, since cold fillings load the cup differently from hot batter.
-
-Application temperature and fat content matter as much as weight. A high-fat chocolate muffin batter stresses the grease barrier at the same time the oven stresses the fibre, so buyers frequently pair a mid-to-heavy grammage with a higher grease-resistance treatment rather than simply adding weight. Where cups travel straight from oven to chilled display, the construction also needs to survive the condensation cycle without softening at the rim. Documenting the full cycle — fill, bake, cool, pack, display — against a candidate grammage is the fastest way to avoid rework. Programmes that pair cups with pan lining can quote the matching [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) alongside the cup construction for a single documentation package.
-
 <!-- Embedded CTA Box: Sample & Spec Match -->
 <aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
 <p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
@@ -41,6 +35,12 @@ Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-
 <a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
 </div>
 </aside>
+
+## Matching GSM to Cup Format and Application
+
+Format and application should drive the target band, and the bands overlap more than most catalogues admit. Standard fluted muffin and cupcake cups for tray baking commonly run in a mid-weight band because the pan supports the wall during baking; the paper's job is release, grease holdout and presentation. Self-supporting cups — the tall, free-standing formats used for display bakery and foodservice — need the upper part of the weight range, often with a reinforced rim, because the wall itself is the structure. Portion cups for chilled desserts, mousses and no-bake formats can drop lighter again, since cold fillings load the cup differently from hot batter.
+
+Application temperature and fat content matter as much as weight. A high-fat chocolate muffin batter stresses the grease barrier at the same time the oven stresses the fibre, so buyers frequently pair a mid-to-heavy grammage with a higher grease-resistance treatment rather than simply adding weight. Where cups travel straight from oven to chilled display, the construction also needs to survive the condensation cycle without softening at the rim. Documenting the full cycle — fill, bake, cool, pack, display — against a candidate grammage is the fastest way to avoid rework. Programmes that pair cups with pan lining can quote the matching [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) alongside the cup construction for a single documentation package.
 
 ## Verifying Weight and Performance Before You Order
 

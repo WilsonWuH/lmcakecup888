@@ -30,10 +30,6 @@ A first bulk container of baking paper is the moment a buyer stops testing suppl
 
 The most common first-container mistake is buying to the best price break instead of to actual demand. Baking paper is dense, shelf-stable and Specification-stable, which makes it tempting to over-order — but coating constructions and cut sizes evolve, and cash parked in slow-moving stock is cash unavailable for the next negotiation. Start from a twelve-month consumption forecast per SKU, divide by planned replenishment cycles, and let the container quantity fall out of that arithmetic rather than the reverse. A useful rule for a first order: cover roughly four to six months of demand across a small number of constructions — for example, one 38–40 gsm sheet grade, one roll grade for dispensers, and one die-cut round for pans — rather than eight marginal SKUs at minimum runs. Buyers who later standardise constructions across sites will consolidate volume and unlock better pricing; a first container should leave that door open, not lock the assortment in.
 
-## 2. From MOQ to a Container Mix: What Actually Fits
-
-Manufacturer MOQs for baking paper are usually stated per construction — commonly one to two tonnes per grammage and coating combination, with lower minimums for die-cut formats that run on shared tooling. Against those minimums, the arithmetic of a container is straightforward. At 40 gsm, one tonne of paper is roughly 25,000 square metres, so a twenty-foot container loaded with 18–20 tonnes holds on the order of 450,000–500,000 m² — a figure that translates quickly into sheets, rolls or rounds once pack counts are fixed. In practice, first-time importers fill a container by allocating tonnage across three to five constructions, checking that each allocation clears its MOQ and that pallet and carton dimensions close the cube cleanly. Where one construction alone cannot justify a full load, some buyers combine categories from the same factory — cup stock alongside parchment — to reach the weight floor under a single documentation set. For production volumes, the same construction logic applies to our [food-grade die-cut parchment rounds](/products/baking-parchment-paper/) line, quoted per roll, sheet or die-cut format.
-
 <!-- Embedded CTA Box: Sample & Spec Match -->
 <aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
 <p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
@@ -46,6 +42,10 @@ Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-
 <a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
 </div>
 </aside>
+
+## 2. From MOQ to a Container Mix: What Actually Fits
+
+Manufacturer MOQs for baking paper are usually stated per construction — commonly one to two tonnes per grammage and coating combination, with lower minimums for die-cut formats that run on shared tooling. Against those minimums, the arithmetic of a container is straightforward. At 40 gsm, one tonne of paper is roughly 25,000 square metres, so a twenty-foot container loaded with 18–20 tonnes holds on the order of 450,000–500,000 m² — a figure that translates quickly into sheets, rolls or rounds once pack counts are fixed. In practice, first-time importers fill a container by allocating tonnage across three to five constructions, checking that each allocation clears its MOQ and that pallet and carton dimensions close the cube cleanly. Where one construction alone cannot justify a full load, some buyers combine categories from the same factory — cup stock alongside parchment — to reach the weight floor under a single documentation set. For production volumes, the same construction logic applies to our [food-grade die-cut parchment rounds](/products/baking-parchment-paper/) line, quoted per roll, sheet or die-cut format.
 
 ## 3. Trade Terms: Fix Responsibility Before the Booking
 

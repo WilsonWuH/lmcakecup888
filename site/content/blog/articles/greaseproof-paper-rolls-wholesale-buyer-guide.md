@@ -151,7 +151,7 @@ For the European market, the regulatory landscape involves broad framework regul
 - **Regulation (EC) No 2023/2006:** The Good Manufacturing Practice (GMP) regulation, ensuring that materials are consistently produced and controlled to meet quality standards appropriate for their intended use.
 - **Paper-specific references:** Where required by the buyer or market, review relevant [BfR recommendations](https://www.bfr.bund.de/en/service/databases/bfr-recommendations-on-food-contact-materials/) or other national guidance in addition to EU framework rules.
 
-The buyer's document checklist should identify the exact statement or report required, product identity, intended food and contact conditions, applicable law, issue date and change status. Any restricted-substance claim also needs a defined scope, method and reporting limit.
+The buyer's document checklist should identify the exact statement or report required, product identity, intended food and contact conditions, applicable law, issue date and change status. Any restricted-substance claim also needs a defined scope, method and reporting limit. The [factory and certificate library](/factory-certificates/) lists the third-party audits and test reports behind these claims.
 
 ## 7. Key Questions for Your Greaseproof Paper Roll Supplier
 

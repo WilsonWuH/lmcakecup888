@@ -22,12 +22,6 @@ A franchise system lives or dies on consistency. A customer who buys a kit in on
 
 Standardization also protects unit economics. Kits are costed to the cent, and paper is one of the few components where a specification change can silently alter yield, bake time, or complaint rates. When the paper is locked into the kit specification with documented test data, franchisors can audit performance objectively instead of relying on anecdotal franchisee feedback.
 
-## Specifying Paper Formats for Take-and-Bake Kits
-
-The first decision is format. Kits typically use one of three constructions: die-cut rounds for dough portions and pan bottoms, interfolded or flat sheets for layering and interleaving, and trimmed roll stock for co-packers who convert in-house. Die-cut rounds must match the tray or pan radius with a defined tolerance, because an undersized round exposes the pan and causes sticking, while an oversized round creases into the dough during lidding. Sheets used as interleaves between frozen dough pieces need enough wet strength to survive condensation during cold-chain distribution. Co-packers converting their own formats usually buy jumbo rolls and die-cut at the kit assembly line, which minimizes freight but requires the paper to run cleanly on converting equipment without curl or dusting.
-
-Freezer-to-oven performance is the second filter. Kit components often go from frozen distribution straight into a franchisee's oven, so the paper must release cleanly at bake temperatures without pre-thawing and must not curl when it hits thermal shock. For production volumes, the same construction logic applies to our [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) line, quoted per roll, sheet or die-cut format.
-
 <!-- Embedded CTA Box: Sample & Spec Match -->
 <aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
 <p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
@@ -40,6 +34,12 @@ Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-
 <a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
 </div>
 </aside>
+
+## Specifying Paper Formats for Take-and-Bake Kits
+
+The first decision is format. Kits typically use one of three constructions: die-cut rounds for dough portions and pan bottoms, interfolded or flat sheets for layering and interleaving, and trimmed roll stock for co-packers who convert in-house. Die-cut rounds must match the tray or pan radius with a defined tolerance, because an undersized round exposes the pan and causes sticking, while an oversized round creases into the dough during lidding. Sheets used as interleaves between frozen dough pieces need enough wet strength to survive condensation during cold-chain distribution. Co-packers converting their own formats usually buy jumbo rolls and die-cut at the kit assembly line, which minimizes freight but requires the paper to run cleanly on converting equipment without curl or dusting.
+
+Freezer-to-oven performance is the second filter. Kit components often go from frozen distribution straight into a franchisee's oven, so the paper must release cleanly at bake temperatures without pre-thawing and must not curl when it hits thermal shock. For production volumes, the same construction logic applies to our [pre-cut parchment paper sheets and rounds](/products/baking-parchment-paper/) line, quoted per roll, sheet or die-cut format.
 
 ## Portion Control and Yield: Sheet Sizes That Match Kit Recipes
 

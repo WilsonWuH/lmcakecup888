@@ -36,14 +36,6 @@ First, grease penetration. Butter fat migrates into any porous surface it touche
 
 Because the wrap sits at the head of the chain, its defects propagate downstream and get blamed on the pastry process. Specifying it deliberately removes one of the quieter variables in lamination yield.
 
-## Grease Penetration Control: Comparing Constructions
-
-The construction choice for butter contact comes down to three families. Dense greaseproof and glassine bases resist fat through refining — the fibres are beaten until the sheet is nearly pore-free — with resistance measured by the Kit rating used across greaseproof specifications. Silicone-coated parchment resists through surface chemistry: a silicone layer on a 35–45 gsm base releases fat on the surface instead of absorbing it, with coating weights from 0.7 g/m² up to 1.5 g/m² for sustained contact. Laminated or polymer-coated wraps offer the highest barrier but complicate repulping and food-contact documentation.
-
-For butter block work, the practical comparison is fat contact time. Blocks stored for days under sustained, full-surface contact punish any patchy barrier, which is why coating uniformity matters as much as total coating weight — a defect the size of a fingerprint will bleed while the rest of the sheet stays clean. Ask suppliers for grease-resistance data on the actual construction at chilled storage durations matching your distribution model, rather than accepting a generic "greaseproof" label. Where a PFAS-free declaration is required, our [PFAS-free baking paper programme](/pfas-free-baking-paper/) documents the transition grade by grade, since grease barriers historically relied on fluorochemical treatments that several markets now restrict.
-
-A useful acceptance test is simple: wrap a conditioned fat block, hold it at chill temperature for the longest realistic transit time, then inspect the outer face for wetting and weigh the sheet for fat pick-up.
-
 <!-- Embedded CTA Box: Sample & Spec Match -->
 <aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
 <p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
@@ -56,6 +48,14 @@ Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-
 <a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
 </div>
 </aside>
+
+## Grease Penetration Control: Comparing Constructions
+
+The construction choice for butter contact comes down to three families. Dense greaseproof and glassine bases resist fat through refining — the fibres are beaten until the sheet is nearly pore-free — with resistance measured by the Kit rating used across greaseproof specifications. Silicone-coated parchment resists through surface chemistry: a silicone layer on a 35–45 gsm base releases fat on the surface instead of absorbing it, with coating weights from 0.7 g/m² up to 1.5 g/m² for sustained contact. Laminated or polymer-coated wraps offer the highest barrier but complicate repulping and food-contact documentation.
+
+For butter block work, the practical comparison is fat contact time. Blocks stored for days under sustained, full-surface contact punish any patchy barrier, which is why coating uniformity matters as much as total coating weight — a defect the size of a fingerprint will bleed while the rest of the sheet stays clean. Ask suppliers for grease-resistance data on the actual construction at chilled storage durations matching your distribution model, rather than accepting a generic "greaseproof" label. Where a PFAS-free declaration is required, our [PFAS-free baking paper programme](/pfas-free-baking-paper/) documents the transition grade by grade, since grease barriers historically relied on fluorochemical treatments that several markets now restrict.
+
+A useful acceptance test is simple: wrap a conditioned fat block, hold it at chill temperature for the longest realistic transit time, then inspect the outer face for wetting and weigh the sheet for fat pick-up.
 
 ## Cold-Room Behaviour: Fold Integrity and Surface Condition
 

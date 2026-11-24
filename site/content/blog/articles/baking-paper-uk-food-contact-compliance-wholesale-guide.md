@@ -22,12 +22,6 @@ The cornerstone for Great Britain is assimilated Regulation (EC) No 1935/2004, w
 
 There is no UK-specific harmonised measure for paper and board comparable to the EU plastics regulation. Instead, buyers rely on the retained framework plus national regulations — such as the Materials and Articles in Contact with Food (England) Regulations 2012 and equivalents for Scotland and Wales — and on industry-recognised technical benchmarks. In practice, German BfR Recommendation XXXVI (paper and board) and the Council of Europe Resolution AP(2002)1 are the references most UK technical buyers ask for when a paper-grade specification is being verified, even though neither is binding in Britain. Treating them as de facto acceptance criteria in the purchase specification closes the gap between "legal" and "acceptable to the customer".
 
-## Declarations of Compliance, Migration Testing and the Documents That Matter
-
-Because Article 16 and 17 of the assimilated regulation survive in UK law, a Declaration of Compliance remains the anchor document for baking paper entering Great Britain. A sound DoC for a silicone-coated baking paper should identify the supplier and manufacturer, describe the paper construction (base grammage, bleaching route, silicone system), list applicable regulations and technical references, state the intended food types and temperature range, and be dated, versioned and signed. Batch-level traceability should link each delivered lot to the test record behind the declaration, so a retailer audit can walk from a pallet in a distribution centre back to a laboratory file.
-
-Migration expectations for the UK market follow the same logic as for the EU: overall migration plus specific migrations relevant to the construction — for silicone-coated grades, siloxane-related parameters; for printed or film-coated variants, the ink and coating constituents. Most UK buyers benchmark against LFGB (German food and feed code) and FDA 21 CFR 176 alongside the retained EU requirements, because these give a common, supplier-independent yardstick for a grade that has no harmonised UK paper measure. Documentation scope is confirmed per SKU and destination market, as outlined on our [factory certificates](/factory-certificates/) page, which lists the third-party audits and test reports behind each supplied construction.
-
 <!-- Embedded CTA Box: Sample & Spec Match -->
 <aside style="margin:36px 0;padding:24px 28px;background:#fff9ef;border:1px solid #e7dccb;border-left:4px solid #a45a32;border-radius:3px;font-family:Inter,Arial,sans-serif;color:#221b18;">
 <p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a45a32;font-weight:600;margin:0 0 8px 0;">Factory Direct · Custom Engineering</p>
@@ -40,6 +34,12 @@ Don't guess on GSM or coating weights. We manufacture <a href="/products/baking-
 <a href="/products/baking-parchment-paper/#performance" style="display:inline-block;padding:11px 22px;background:#fff;color:#221b18;border:1px solid #221b18;font-weight:600;font-size:14px;text-decoration:none;border-radius:3px;">View Technical Specs</a>
 </div>
 </aside>
+
+## Declarations of Compliance, Migration Testing and the Documents That Matter
+
+Because Article 16 and 17 of the assimilated regulation survive in UK law, a Declaration of Compliance remains the anchor document for baking paper entering Great Britain. A sound DoC for a silicone-coated baking paper should identify the supplier and manufacturer, describe the paper construction (base grammage, bleaching route, silicone system), list applicable regulations and technical references, state the intended food types and temperature range, and be dated, versioned and signed. Batch-level traceability should link each delivered lot to the test record behind the declaration, so a retailer audit can walk from a pallet in a distribution centre back to a laboratory file.
+
+Migration expectations for the UK market follow the same logic as for the EU: overall migration plus specific migrations relevant to the construction — for silicone-coated grades, siloxane-related parameters; for printed or film-coated variants, the ink and coating constituents. Most UK buyers benchmark against LFGB (German food and feed code) and FDA 21 CFR 176 alongside the retained EU requirements, because these give a common, supplier-independent yardstick for a grade that has no harmonised UK paper measure. Documentation scope is confirmed per SKU and destination market, as outlined on our [factory certificates](/factory-certificates/) page, which lists the third-party audits and test reports behind each supplied construction.
 
 ## PFAS, Evolving Chemical Rules and Retailer Standards
 
