@@ -73,7 +73,7 @@ Integrating paper packaging into automated baking lines introduces mechanical va
 
 - **Nest Height and Separation:** Liners are supplied in tightly nested stacks. If the paper lacks adequate stiffness or if nesting is overly compressed, mechanical denesters may pull multiple cups simultaneously or fail to release, halting production.
 
-- **Moisture and Thermal Stability:** During high-temperature baking, moisture within the batter turns to steam. The paper must permit controlled moisture vapor transmission while maintaining wet strength to prevent bottom blowouts or sidewall collapse. For operations analyzing specific structural formats, reviewing detailed insights in the [muffin baking cups commercial bakery guide](https://lmcakecup.com/resources/muffin-baking-cups-commercial-bakery-guide/) provides further context on industrial manufacturing tolerances.
+- **Moisture and Thermal Stability:** During high-temperature baking, moisture within the batter turns to steam. The paper must permit controlled moisture vapor transmission while maintaining wet strength to prevent bottom blowouts or sidewall collapse. For operations analyzing specific structural formats, reviewing detailed insights in the [muffin baking cups commercial bakery guide](https://www.lmcakecup.com/resources/muffin-baking-cups-commercial-bakery-guide/) provides further context on industrial manufacturing tolerances.
 
 ## Sample Design and Controlled Trials
 
@@ -83,7 +83,7 @@ Before committing to bulk volume, structured sample design and controlled trials
 
 - **Controlled Batter Trials:** Execute benchtop baking trials using representative batter formulations (e.g., high-fat, high-sugar, or high-protein mixes). Monitor how the paper interacts with moisture and fat over the full baking cycle.
 
-- **Line Trials:** Run sample lots through automated denesting, filling, and baking equipment to evaluate feed consistency, mechanical reliability, and structural retention under speed. For procedural alignment, consult the [paper baking cup samples approval checklist](https://lmcakecup.com/resources/paper-baking-cup-samples-approval-checklist/) for structured testing guidelines.
+- **Line Trials:** Run sample lots through automated denesting, filling, and baking equipment to evaluate feed consistency, mechanical reliability, and structural retention under speed. For procedural alignment, consult the [paper baking cup samples approval checklist](https://www.lmcakecup.com/resources/paper-baking-cup-samples-approval-checklist/) for structured testing guidelines.
 
 Use enough samples to expose normal variation across stacks rather than selecting only the best-looking pieces. Record the sample code, carton or inner-pack location, pan reference, recipe, fill amount, oven program, cooling point and operator observations. Photograph cups before filling, after baking, after cooling and after peeling. Where the finished product enters retail distribution, repeat the inspection after the normal display, chilling, freezing or transport simulation that applies to the SKU.
 

@@ -44,7 +44,7 @@ Each entry states only what official pages support; use them as a long list, not
 
 ### 1. LANGMAI (China)
 
-LANGMAI develops food-contact paper cake cups and cupcake liners for private-label bakery programs. Its product page documents 11 reference sizes from 55 to 150 mm top diameter, custom dimensions, logo and pattern development with proofing before mass production, and bulk or private-label retail packing. Verify paper, print system and documents against your bake and market. Source: [LANGMAI — Custom Cake Cups](https://lmcakecup.com/products/cake-cups).
+LANGMAI develops food-contact paper cake cups and cupcake liners for private-label bakery programs. Its product page documents 11 reference sizes from 55 to 150 mm top diameter, custom dimensions, logo and pattern development with proofing before mass production, and bulk or private-label retail packing. Verify paper, print system and documents against your bake and market. Source: [LANGMAI — Custom Cake Cups](https://www.lmcakecup.com/products/cake-cups/).
 
 ### 2. Tielman (Netherlands)
 
@@ -127,8 +127,8 @@ LANGMAI manufactures cake cups and baking cups with in-house custom printing, pr
 
 ## Sources
 
-- LANGMAI — Custom Cake Cups product page: https://lmcakecup.com/products/cake-cups
-- LANGMAI — Company overview and capabilities: https://lmcakecup.com/
+- LANGMAI — Custom Cake Cups product page: https://www.lmcakecup.com/products/cake-cups/
+- LANGMAI — Company overview and capabilities: https://www.lmcakecup.com/
 - Tielman — Baking Cups: https://www.tielman.com/products/baking-cups
 - Novacart — PBA Series paper baking cups: https://novacart.com/en/pba-series
 - Doric Crimped — Custom-made greaseproof baking cases and liners: https://www.doriccrimped.co.uk/

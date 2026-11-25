@@ -82,7 +82,7 @@ For wrapped or custom-branded products, testing must encompass secondary attribu
 
 - **Wrapper Sealing:** Verify seal continuity, wrapper opening and product protection using the agreed wrapper construction. Where moisture protection is required, validate the complete pack through the expected storage and distribution exposure rather than inferring it from appearance.
 
-- **Print Rub and Offset Test:** When customized logos or inks are applied, conduct dry and wet rub tests using an agreed abrasion method to ensure inks do not smear, flake, or transfer onto hands or beverages during handling (explore [private-label-paper-straws-wholesale](https://lmcakecup.com/resources/private-label-paper-straws-wholesale/)). For broader quality assurance protocols across paper goods, refer to [baking-paper-products-quality-control-inspection](https://lmcakecup.com/resources/baking-paper-products-quality-control-inspection/).
+- **Print Rub and Offset Test:** When customized logos or inks are applied, conduct dry and wet rub tests using an agreed abrasion method to ensure inks do not smear, flake, or transfer onto hands or beverages during handling (explore [private-label-paper-straws-wholesale](https://www.lmcakecup.com/resources/private-label-paper-straws-wholesale/)). For broader quality assurance protocols across paper goods, refer to [baking-paper-products-quality-control-inspection](https://www.lmcakecup.com/resources/baking-paper-products-quality-control-inspection/).
 
 ### Organoleptic Assessment (Odor, Taste, and Taint)
 
